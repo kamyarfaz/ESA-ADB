@@ -1,116 +1,289 @@
-<h1>ESA Anomaly Detection Benchmark</h1>
+# Anomaly Detection in Satellite Telemetry
 
-The European Space Agency Anomaly Detection Benchmark (ESA-ADB) consists of three main components (visualised in the figure below for easier comprehension):
-1.	Large-scale, curated, structured, ML-ready ESA Anomalies Dataset (ESA-AD, in short) of real-life satellite telemetry collected from three ESA missions (out of which two are selected for benchmarking in ESA-ADB), manually annotated by spacecraft operations engineers (SOEs) and ML experts, and cross-verified using state-of-the-art algorithms. It can be downloaded from here: https://doi.org/10.5281/zenodo.12528696
-2.	Evaluation pipeline designed by ML experts for the practical needs of SOEs from the ESA’s European Space Operations Centre (ESOC). It introduces new metrics designed for satellite telemetry according to the latest advancements in time series anomaly detection (TSAD) and simulates real operational scenarios, e.g. different mission phases and real-time monitoring. 
-3.	Benchmarking results of TSAD algorithms selected and improved to comply with the space operations requirements.
+Thesis research by **Kamyar Faz**, supervised by **Federico**, exploring a
+Transformer autoencoder and an MLP forecaster on ESA Mission 1 telemetry.
+The objective is to improve anomaly detection under space operational constraints,
+with a target **F0.5 ≥ 0.85**. That target is a research objective, **not a verified
+result of this repository**.
 
-<p align="center">
-<img src="./ESA-ADB.svg"/>
-</p>
+This repository extends the [ESA Anomaly Detection Benchmark](https://github.com/kplabs-pl/ESA-ADB).
+`esa_thesis/` contains the active research code; the original benchmark framework
+is retained for preprocessing, reference algorithms, and evaluation research.
+`main` contains the organized project. [`previous_experiments`](https://github.com/kamyarfaz/ESA-ADB/tree/previous_experiments)
+preserves the earlier layout.
 
-We hope that this unique benchmark will allow researchers and scientists from academia, research institutes, national and international space agencies, and industry to validate models and approaches on a common baseline as well as research and develop novel, computational-efficient approaches for anomaly detection in satellite telemetry data.
+## 1. Clone and check the software
 
-The dataset results from the work of an 18-month project carried by an industry Consortium composed of Airbus Defence and Space, KP Labs, and the European Space Agency’s European Space Operations Centre. The project, funded by the European Space Agency (ESA) under the contract number 4000137682/22/D/SR, is a part of The Artificial Intelligence for Automation (A²I) Roadmap (De Canio et al., Development of an actionable AI roadmap for automating mission operations, 2023 SpaceOps Conference), a large endeavour started in 2021 to automate space operations by leveraging artificial intelligence.
+The documented target is **Linux with Conda/Miniconda and Python 3.9**.
+The thesis pipeline uses PyTorch directly; Docker is only needed for the separate
+original benchmark algorithms. CPU works for startup and regression checks;
+full experiments benefit from an NVIDIA GPU and substantial RAM/storage.
+The author's training hardware is an RTX 3060, i9-10980XE, and about 64 GB RAM;
+this is context, not a tested minimum specification.
 
-The introduction below describes how to reproduce results presented in the ESA-ADB paper using the provided modified fork of the TimeEval framework.
+```bash
+git clone --depth 1 --branch main https://github.com/kamyarfaz/ESA-ADB.git
+cd ESA-ADB
+conda create -n esa-thesis python=3.9 pip -y
+conda activate esa-thesis
+python -m pip install --upgrade pip
 
+# CPU installation, suitable for software/regression checks:
+python -m pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+python -m pip install -r requirements-thesis.txt
 
-## Initial requirements
-
-- Some ESA-ADB functions work only on Linux (or Windows Subsystem for Linux 2), so we suggest using it as a development platform
-- The hard disk must be configured to use NTFS file system
-- It is recommended to have at least 512 GB free disk space to store artifacts from all experiments
-- It is recommended to use Nvidia GPU with compute capability >= 7.1
-- It is recommended to use a machine with at least 64 GB RAM (32 GB is an absolute minimum for the whole pipeline)
-
-For Windows it is recommended to run the following command before cloning to prevent issues when running the docker containers: `git config --global core.autocrlf false`.
-## Environment setup
-
-### Python environment
-1. Install Anaconda environment manager, version >= 22.
-2. Create a conda-environment and install all required dependencies.
-   Use the file [`environment.yml`](./environment.yml) for this:
-   `conda env create --file environment.yml`. Note that you should **not** install TimeEval from PyPI. Our repository contains the modified version of TimeEval in the "timeeval" folder.
-3. Activate the new environment `conda activate timeeval`.
-4. (This step is optional and should be used only if you face any problems with "import timeeval" in your environment and you do not plan to modify the code of TimeEval. Otherwise, the recommended way is to just run scripts from the main repo folder, so our timeeval folder is directly visible to them. Another option is to add the main repo folder to the system PATH) Install the local version of TimeEval: `python setup.py install`
-
-### Docker
-1. Install Docker Engine, version >= 23.
-2. Build Docker containers with algorithms of interest (e.g., listed in mission1_experiments.py) using instruction from README in the TimeEval-algorithms folder. 
-   For our Telemanom-ESA, it is enough to run `sudo docker build -t registry.gitlab.hpi.de/akita/i/telemanom_esa ./telemanom_esa`.
-   For our DC-VAE-ESA, it is enough to run `sudo docker build -t registry.gitlab.hpi.de/akita/i/dc_vae ./dc_vae`.
-
-## Preparing datasets
-
-Download raw ESA Anomalies Dataset from the link https://doi.org/10.5281/zenodo.12528696 and put ESA-Mission1 and ESA-Mission2 folders in the "data" folder.
-
-### Generating preprocessed data for experiments
-
-There are separate script to generate preprocessed data for TimeEval framework for each mission. The scripts are located in notebooks\data-prep folder. From the notebooks\data-prep folder run:
-
-Mission1: 
-```
-python Mission1_semisupervised_prep_from_raw.py ../../data/ESA-Mission1
-```
-Mission2: 
-```
-python Mission2_semiunsupervised_prep_from_raw.py ../../data/ESA-Mission2
+python -m esa_thesis --help
+python -m esa_thesis doctor --skip-data
+PYTHONPATH=. WANDB_MODE=disabled python tests/thesis/check_refactor.py
 ```
 
-The scripts generate all necessary files to data/preprocessed/multivariate folders and add records to data/preprocessed/datasets.csv if necessary (records for ESA-ADB are already added as a part of this repository). Note that the preprocessing may take a few hours on a standard PC.
+For an NVIDIA training machine, replace the CPU installation command with:
 
-## Running experiments
-There is a separate script in the main folder of the repo to run a full grid of experiments for each mission:
-- Mission1: mission1_experiments.py
-- Mission2: mission2_experiments.py
-
-The scripts configure and run all algorithms in Docker containers. Results are generated to 'results' folder. On a standard PC, it may be necessary to run algorithms separately, one by one.
-
-### Notes
-- evaluation pipeline with novel time-aware metrics can only be run for datasets following the same structure as ESA Anomalies Dataset (with labels.csv and anomaly_types.csv)
-- when analyzing results for different anomaly types for the lightweight subsets of channels, it is necessary to regenerate anomaly types using anomaly_types.csv using scripts/infer_anomaly_types.py. It is because anomaly types may depend on the analyzed subset of channels.
-- for now, all algorithms treat rare nominal events as anomalies. To change that behaviour, it would be necessary to modify the code of the framework and some algorithms
-
-
-## TimeEval
-The code of the benchmark is based on the [TimeEval framework](https://github.com/TimeEval/TimeEval). Please refer to its documentation in case of any detailed questions about API. 
-
-### TimeEval Citation
-
-If you use TimeEval in your project or research, please cite the demonstration paper:
-
-> Phillip Wenig, Sebastian Schmidl, and Thorsten Papenbrock.
-> TimeEval: A Benchmarking Toolkit for Time Series Anomaly Detection Algorithms. PVLDB, 15(12): 3678 - 3681, 2022.
-> doi:[10.14778/3554821.3554873](https://doi.org/10.14778/3554821.3554873)
-
-```bibtex
-@article{WenigEtAl2022TimeEval,
-  title = {TimeEval: {{A}} Benchmarking Toolkit for Time Series Anomaly Detection Algorithms},
-  author = {Wenig, Phillip and Schmidl, Sebastian and Papenbrock, Thorsten},
-  date = {2022},
-  journaltitle = {Proceedings of the {{VLDB Endowment}} ({{PVLDB}})},
-  volume = {15},
-  number = {12},
-  pages = {3678--3681},
-  doi = {10.14778/3554821.3554873}
-}
+```bash
+python -m pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cu124
 ```
 
-## ESA-ADB Citation
+Choose one build when setting up the environment. An existing CPU install can be
+replaced by adding `--force-reinstall` to the CUDA command. These build choices
+follow the [PyTorch 2.6 installation instructions](https://pytorch.org/get-started/previous-versions/#v260).
+The NVIDIA driver must support the chosen build. Check detection with
+`python -m esa_thesis doctor --skip-data`; the code otherwise selects CPU automatically.
 
-If you refer to ESA-ADB in your work, please cite our paper:
+Run commands from the repository root. There is no thesis `pip install -e .` step:
+the root `setup.py` packages the separate, older TimeEval framework.
+The version file records the research environment used for local checks; it is
+not a complete lockfile for all transitive dependencies or operating systems.
 
-> Krzysztof Kotowski, Christoph Haskamp, Jacek Andrzejewski, Bogdan Ruszczak, Jakub Nalepa, Daniel Lakey, Peter Collins, Aybike Kolmas, Mauro Bartesaghi, Jose Martínez-Heras, and Gabriele De Canio.
-> European Space Agency Benchmark for Anomaly Detection in Satellite Telemetry. arXiv, 2024.
-> doi:[10.48550/arXiv.2406.17826](https://doi.org/10.48550/arXiv.2406.17826)
+## 2. Data preparation
 
-```bibtex
-@article{kotowski_european_2024,
-  title = {European {Space} {Agency} {Benchmark} for {Anomaly} {Detection} in {Satellite} {Telemetry}},
-  author = {Kotowski, Krzysztof and Haskamp, Christoph and Andrzejewski, Jacek and Ruszczak, Bogdan and Nalepa, Jakub and Lakey, Daniel and Collins, Peter and Kolmas, Aybike and Bartesaghi, Mauro and Martinez-Heras, Jose and De Canio, Gabriele},
-  date = {2024},
-  publisher = {arXiv},
-  doi = {10.48550/arXiv.2406.17826}
-}
+**Telemetry, preprocessed CSVs, trained weights, cached scores, and experiment
+outputs are not distributed in this branch.** A fresh clone can run the software
+checks above, but training requires the data below.
+
+### Download the source dataset
+
+Use the original **version 1.0** [ESA Anomaly Dataset record](https://zenodo.org/records/12528696)
+for the preprocessing described here. Download `ESA-Mission1.zip` (about 3.8 GB).
+The record also offers Missions 2 and 3; they are not needed for the thesis default.
+A newer dataset version exists, so record any deliberate version change as a new experiment.
+
+From the repository root:
+
+```bash
+mkdir -p data
+curl --fail --location --continue-at - \
+  --output data/ESA-Mission1.zip \
+  'https://zenodo.org/records/12528696/files/ESA-Mission1.zip?download=1'
+printf '%s\n' '80750189d171f5f398fb3d96c49df12b  data/ESA-Mission1.zip' | md5sum -c -
+unzip data/ESA-Mission1.zip -d data
 ```
+
+Verify that extraction produces this structure (move an extra enclosing archive
+folder if necessary):
+
+```text
+data/ESA-Mission1/
+  channels/             channel_*.zip telemetry files
+  telecommands/         telecommand series
+  labels.csv
+  anomaly_types.csv
+  telecommands.csv
+```
+
+The archive is only the compressed source. Preprocessing and training create much
+larger files; reserve tens of GB beyond the download, with additional space for
+multiple runs. Do not place these artifacts in Git.
+
+### Generate benchmark CSVs in a separate environment
+
+The inherited preprocessing script imports the older TimeEval dependency stack.
+Keep it separate from the research environment to avoid NumPy/statsmodels conflicts:
+
+```bash
+# Run from the repository root; this environment is named timeeval.
+conda env create -f environment.yml
+conda activate timeeval
+PYTHONPATH=. python notebooks/data-prep/Mission1_semisupervised_prep_from_raw.py data/ESA-Mission1
+conda activate esa-thesis
+```
+
+If `timeeval` already exists and has been modified, create a fresh named environment
+with `conda env create -n esa-preprocess -f environment.yml` and activate that name.
+The script prepares several training durations, not just 84 months, and may take
+hours. It resamples telemetry at 30 seconds, transforms designated monotonic
+channels, encodes telecommands, assigns channel labels, and writes metadata.
+Its output location is relative to the repository, independently of `ESA_ADB_ROOT`.
+
+The thesis expects:
+
+```text
+data/preprocessed/multivariate/ESA-Mission1-semi-supervised/
+  84_months.train.csv
+  84_months.test.csv
+```
+
+Input columns include `channel_N` features and **per-channel `is_anomaly_*` labels**.
+A single global `is_anomaly` column is not a substitute. The inspected local files
+have 175 columns including timestamps, features, and labels. The preprocessor
+places training samples at/before 2007-01-01 and test samples after that boundary.
+
+```bash
+python -m esa_thesis doctor
+python -m esa_thesis train --dry-run
+```
+
+`doctor` checks imports, GPU availability, expected paths, feature columns, and
+label headers. It does not validate every row or certify the scientific evaluation.
+`--dry-run` prints the configuration without training or creating results.
+
+## 3. Launch an experiment
+
+Start with one channel group and a new output directory:
+
+```bash
+WANDB_MODE=disabled python -m esa_thesis train \
+  --runs fed_ch06_41_46 \
+  --output-root results_longrun/first_experiment
+```
+
+Despite its historical name, the exact channel list is defined in
+[`config.py`](esa_thesis/config.py). Inspect `RUN_SPECS` rather than inferring
+channels from a run name.
+
+- `python -m esa_thesis train` runs/resumes **all 31 configured experiments**.
+- `--runs NAME ...` selects experiments; each may train both AE and MLP.
+- `--output-root PATH` selects the sweep directory. Relative paths are resolved
+  against the project root. A timestamped run directory is created inside it.
+- Hyperparameters, channel groups, and `TRAIN_MLP` are in `esa_thesis/config.py`.
+- Resume uses `latest_run.txt`, checkpoints, and cached scores. **Use a new output
+  root after changing configuration**: cache compatibility is not validated.
+  Use a separate root for a subset run to avoid replacing an existing sweep summary.
+- W&B defaults to offline logging. `WANDB_MODE=disabled` disables it; a W&B account
+  is not required for local training.
+- `ESA_ADB_ROOT=/absolute/path` changes the root used for research data and default
+  output paths. External copies of old absolute `latest_run.txt` paths may need
+  correction before resuming.
+
+Outputs include model checkpoints, training histories, scalers, validation/test
+score arrays, selected thresholds, JSON/CSV summaries, and plots. They stay local
+under the chosen output root and are ignored by Git.
+
+## 4. Technical overview
+
+### Learning and scoring pipeline
+
+1. **Load a channel subset.** Parse the prepared CSVs, fill missing feature values,
+   and aggregate all positive `is_anomaly_*` labels into a binary event timeline.
+2. **Split and scale.** Reserve the last 20% of the provided training series for
+   validation. Fit per-channel median/IQR scaling on normal training points and
+   clip normalized values to ±10.
+3. **Construct windows.** AE input has shape `(batch, channels, 256, 1)`. Training
+   selects normal windows with stride 16, capped at 250,000. Current code falls
+   back to all windows if no normal windows exist; this needs care on new datasets.
+4. **Train the Transformer AE.** Split each channel into 16-sample patches, project
+   to 128 dimensions, and add patch-position and channel embeddings. Temporal and
+   channel attention encode the representation; corresponding decoders reconstruct
+   the input. The default uses 8 attention heads and 40 training epochs.
+5. **Train the MLP forecaster.** A separate feed-forward model predicts the next
+   32 samples from a 256-sample context. Absolute forecast error provides a
+   complementary anomaly score. Selected experiments also inject pseudo-anomalies
+   during AE training; this is an experimental variant.
+6. **Score and aggregate.** AE reconstruction errors are averaged over each window
+   and accumulated over overlapping positions; channel scores are reduced by max.
+   MLP errors are assigned to forecast positions. The ensemble takes the maximum
+   of separately min-max-normalized AE and MLP scores.
+7. **Choose thresholds and postprocess.** Sweep thresholds, merge short gaps, remove
+   short detections, and export event/point metrics and plots. Separate tools explore
+   reselection, channel subsets, coverage ensembles, EVT, and DSPOT.
+
+### Evaluation status and operational limitations
+
+F0.5 weights precision more heavily than recall, making false alarms particularly
+important. However, **the current custom F0.5 is not the official ESA/Kaggle metric**.
+The inherited precision calculation uses
+`TPe / (TPe + FPe + FPt/Nt)`, while the published formulation combines event
+precision with a nominal-time false-positive penalty multiplicatively.
+See the [research assessment](docs/thesis-research-context.md) and
+[benchmark paper](https://arxiv.org/abs/2406.17826).
+
+Other open issues are test-informed selections, normalization using each scored
+series, global event aggregation versus channel-aware annotations, and
+retrospective window scoring. Missing-value backfilling also needs review for
+causal operation. The current pipeline is offline research; it has not established
+onboard feasibility, real-time causality, or a verified F0.5 of 0.85.
+The folder refactor deliberately preserved existing numerical behavior.
+
+## 5. Code map
+
+| Location | Purpose |
+| --- | --- |
+| `esa_thesis/config.py` | Hyperparameters, paths, and experiment definitions |
+| `esa_thesis/data.py` | CSV loading, robust scaling, window datasets |
+| `esa_thesis/models.py` | Transformer AE and MLP architecture |
+| `esa_thesis/training.py` | Training and resume orchestration |
+| `esa_thesis/scoring.py` | Reconstruction, forecast, and ensemble scores |
+| `esa_thesis/metrics.py`, `thresholds.py` | Existing metric and threshold logic |
+| `esa_thesis/checkpoints.py`, `plots.py`, `tracking.py` | Persistence and reporting |
+| `esa_thesis/analysis/` | Correlations, importance, representative selection |
+| `esa_thesis/evaluation/`, `calibration/` | Post-hoc evaluation experiments |
+| `tests/thesis/` | Numerical refactor regression check |
+| `docs/` | Research findings, migration map, benchmark documentation |
+| `timeeval/`, `timeeval_experiments/`, `TimeEval-algorithms/` | Original benchmark stack |
+| `notebooks/data-prep/`, `scripts/`, `examples/` | Benchmark preparation and utilities |
+| `archive/` | Provenance notes and small regression source fixture |
+| `data/`, `results/`, `results_longrun/`, `logs/`, `wandb/` | Local data/output areas; README guides only in Git |
+
+For contributors and AI assistants: begin with this README and
+[`docs/thesis-research-context.md`](docs/thesis-research-context.md). Active thesis
+changes belong in `esa_thesis/`. Keep scientific corrections explicit and separately
+validated; do not treat historical score files or archived code as authoritative.
+The [migration map](docs/source-migration.json) connects old filenames to new modules.
+
+## 6. Other commands
+
+Run `python -m esa_thesis COMMAND --help` for arguments.
+
+| Commands | Purpose |
+| --- | --- |
+| `doctor` | Software and dataset-header checks |
+| `correlation`, `importance`, `representatives` | Channel analysis |
+| `score`, `evaluate` | Earlier scoring utilities |
+| `evaluate-ensemble`, `reselect` | AE/MLP ensembles and threshold reselection |
+| `subset`, `subset-v1`, `coverage` | Channel-subset and coverage experiments |
+| `evt`, `dspot` | Experimental threshold calibration |
+
+Analysis commands often require cached artifacts from a completed run and may write
+new summaries. Their defaults refer to the historical sweep; supply the appropriate
+run path shown by `--help` for your own experiments. They are not fresh-clone demos.
+
+## 7. Verification and troubleshooting
+
+The refactor check compares 43 extracted definitions with the small source fixture,
+loads identical model state dictionaries, compares CPU model outputs, and checks
+metric/postprocessing parity. No dataset is required. It preserves historical
+behavior rather than asserting that the metric is scientifically correct.
+
+| Symptom | Action |
+| --- | --- |
+| `No module named esa_thesis` | Run from the cloned repository root |
+| Missing train/test CSV | Complete Data preparation, then run `doctor` |
+| NumPy `MachAr` or statsmodels error in preprocessing | Use the separate, fresh `environment.yml` environment |
+| CUDA unavailable | Check `nvidia-smi` and the PyTorch build; CPU fallback is automatic |
+| GPU out of memory | Reduce training/scoring batch sizes in `config.py`; use a new output root |
+| Old results reused after an edit | Use a new output root; cached settings are not checked |
+| No results for an analysis command | Train first and select your run directory with that tool's arguments |
+
+Validation scope: the documented requirements were installed in a fresh Linux
+Python 3.9 CPU environment. Dependency consistency, all module imports, 13 command
+help pages, dry-run/error handling, and numerical regression passed against the
+publication files without local datasets. Dataset headers were also checked in
+the original workspace.
+Full raw-data preprocessing, a fresh installation on every platform, and GPU
+training were not rerun for this organization release.
+
+## Attribution and license
+
+Preserve the original [LICENSE](LICENSE) and [CITATION.cff](CITATION.cff).
+See [CONTRIBUTIONS.md](CONTRIBUTIONS.md) for thesis provenance and
+[original benchmark documentation](docs/benchmark-original.md) for ESA-ADB and
+TimeEval citations. The dataset has its own source record and terms.

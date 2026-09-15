@@ -142,7 +142,7 @@ if __name__ == "__main__":
             "Programming Language :: Python :: 3.8",
             "Programming Language :: Python :: 3.9"
         ],
-        packages=find_packages(exclude=("tests", "tests.*")),
+        packages=find_packages(include=("timeeval", "timeeval.*", "timeeval_experiments", "timeeval_experiments.*")),
         package_data={"timeeval": ["py.typed"], "timeeval_experiments": ["py.typed"]},
         install_requires=load_dependencies(),
         python_requires=">=3.7, <3.10",

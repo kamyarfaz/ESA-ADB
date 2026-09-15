@@ -1,0 +1,9 @@
+# Relevant versions in the locally validated Python 3.9 environment.
+# CUDA build/driver availability must be configured for the training host.
+numpy==1.26.4
+pandas==2.3.3
+torch==2.6.0
+matplotlib==3.5.3
+scipy==1.11.4
+scikit-learn==1.6.1
+wandb==0.26.1

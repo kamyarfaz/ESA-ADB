@@ -1,0 +1,16 @@
+{
+  "channel_correlation_analysis.py": "esa_thesis/analysis/correlation.py",
+  "channel_importance_analysis.py": "esa_thesis/analysis/importance.py",
+  "select_cluster_representatives.py": "esa_thesis/analysis/representatives.py",
+  "esa_score.py": "esa_thesis/evaluation/legacy_scores.py",
+  "evaluate_esa_f05.py": "esa_thesis/evaluation/legacy_evaluation.py",
+  "evaluate_mlp_ensemble.py": "esa_thesis/evaluation/mlp_ensemble.py",
+  "honest_reselect.py": "esa_thesis/evaluation/reselect.py",
+  "channel_aware_rescore.py": "esa_thesis/evaluation/subset_v1.py",
+  "channel_aware_rescore_v2.py": "esa_thesis/evaluation/subset.py",
+  "greedy_coverage_ensemble.py": "esa_thesis/evaluation/coverage.py",
+  "recalibrate_thresholds_evt.py": "esa_thesis/calibration/evt.py",
+  "recalibrate_thresholds_dspot.py": "esa_thesis/calibration/dspot.py",
+  "mission1_reconstruction_ae_sweep_optimized.py": "esa_thesis/training.py (split across package modules)",
+  "wandb_utils.py": "esa_thesis/tracking.py"
+}

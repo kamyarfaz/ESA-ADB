@@ -1,31 +1,24 @@
- Contributions
+# Contributions and provenance
 
-## Kamyar Faz — kamyarfaz
+## Thesis research
 
-The following Python scripts were added/developed under the
-`kamyarfaz` Git identity in commit `e2a2841`:
+Kamyar Faz (`kamyarfaz`) maintains the thesis experiments. The previous layout's
+research scripts were recorded in commit `e2a284198a34666548f1ed0707649de0be2680d4`.
+They now live in `esa_thesis/`; see `docs/source-migration.json`.
 
-- `channel_aware_rescore.py`
-- `channel_aware_rescore_v2.py`
-- `channel_correlation_analysis.py`
-- `channel_importance_analysis.py`
-- `esa_score.py`
-- `evaluate_esa_f05.py`
-- `evaluate_mlp_ensemble.py`
-- `honest_reselect.py`
-- `mission1_reconstruction_ae_sweep_optimized.py`
-- `recalibrate_thresholds_dspot.py`
-- `recalibrate_thresholds_evt.py`
-- `select_cluster_representatives.py`
-- `wandb_utils.py`
+The original Transformer autoencoder starting point was supplied by supervisor
+Federico. Subsequent experiments include MLP forecasting, channel-group studies,
+pseudo-anomaly variants, and ensemble/threshold analysis. Attribution of this
+starting point is distinct from the Git identity that added the files.
 
-Commit:
+Repository organization and documentation were prepared with AI assistance.
+Numerical behavior was preserved and regression-checked during extraction.
 
-`e2a284198a34666548f1ed0707649de0be2680d4`
+## Upstream benchmark
 
-Author:
+The TimeEval framework, ESA benchmark implementations, data preparation tools,
+notebooks, and their history retain their original authorship. See `LICENSE`,
+`CITATION.cff`, and `docs/benchmark-original.md`.
 
-`kamyarfaz <kamyarfaz@gmail.com>`
-
-Existing project history and contributions from other authors have
-not been rewritten or reassigned.
+The `previous_experiments` branch preserves the earlier project layout. Existing
+history and contributions are not rewritten or reassigned by this reorganization.

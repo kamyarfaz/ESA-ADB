@@ -38,7 +38,7 @@ TimeEval takes four inputs for the experiment creation:
 The following code snippet shows a simple example experiment evaluating `LOF <https://github.com/HPI-Information-Systems/TimeEval-algorithms/tree/main/lof>`_
 and a simple baseline algorithm on some test data:
 
-.. literalinclude:: ../easy-example-experiment.py
+.. literalinclude:: ../examples/easy-example-experiment.py
    :language: python
    :name: example-experiment-py
    :caption: Example usage of TimeEval
