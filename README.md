@@ -1,6 +1,6 @@
 # Anomaly Detection in Satellite Telemetry
 
-Thesis research by **Kamyar Faz**, supervised by **Federico**, exploring a
+Thesis research by **Kamyar Faz**, exploring a
 Transformer autoencoder and an MLP forecaster on ESA Mission 1 telemetry.
 The objective is to improve anomaly detection under space operational constraints,
 with a target **F0.5 ≥ 0.85**. That target is a research objective, **not a verified
