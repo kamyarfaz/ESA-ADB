@@ -29,7 +29,10 @@ def main():
         print('CPU execution is available; full training may be slow.')
     if not args.skip_data:
         import pandas as pd
-        from .config import TRAIN_FILE, TEST_FILE, RUN_SPECS
+        from .config import TRAIN_FILE, TEST_FILE, RUN_SPECS, ANNOTATIONS_FILE, ANOMALY_TYPES_FILE
+        for annotation in (ANNOTATIONS_FILE, ANOMALY_TYPES_FILE):
+            if not annotation.is_file():
+                errors.append(f'Missing raw annotation file: {annotation}')
         required = {f for spec in RUN_SPECS for f in spec['features']}
         for path in (TRAIN_FILE, TEST_FILE):
             path = Path(path)

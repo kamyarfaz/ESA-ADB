@@ -1,6 +1,6 @@
 """Thresholds components of the Mission 1 research pipeline.
 
-Extracted without changing numerical behavior; see docs/thesis-research-context.md.
+Uses corrected annotation-ID/duration evaluation; see docs/research/corrected-evaluation.md.
 """
 from __future__ import annotations
 
@@ -52,69 +52,46 @@ def thresholds(score: np.ndarray) -> List[float]:
     return [float(v) for v in np.unique(np.percentile(nz, THRESH_PERCENTILES)) if np.isfinite(v)]
 
 
-def sweep_thresholds(val_score: np.ndarray, y_val: np.ndarray,
-                     test_score: np.ndarray, y_test: np.ndarray) -> pd.DataFrame:
-    """
-    Speed-ups over original:
-    1. Threshold list de-duplicated (np.unique already done in thresholds())
-    2. For each threshold: create binary masks once, then iterate post-process params
-    3. Postprocess is now vectorised (no Python while-loops)
-    4. Skip (threshold, mg, md) combos where val is already saturated for mg=0, md=1
-       — if a threshold saturates at the loosest post-processing it will saturate
-       everywhere, so we skip the inner grid early.
-    """
+def sweep_thresholds(val_score: np.ndarray, *, evaluator,
+                     threshold_values=None, merge_gaps=None, min_durs=None) -> pd.DataFrame:
+    """Evaluate validation only. No test scores or labels enter this function."""
+    if not np.isfinite(val_score).all():
+        raise ValueError("Non-finite validation scores")
+    values = thresholds(val_score) if threshold_values is None else threshold_values
+    # A no-alarm candidate guarantees a defined conservative selection.
+    values = np.unique([*values, float(np.max(val_score))])
     rows = []
-    thr_list = thresholds(val_score)
-
-    for thr in thr_list:
-        val_raw  = (val_score  > thr).astype(np.int8)
-        test_raw = (test_score > thr).astype(np.int8)
-
-        # Early saturation check: if even no post-processing is already saturated
-        # on val, all (mg, md) combos will also be saturated → record cheaply
-        if val_raw.mean() > SATURATION_RATE:
-            # Still need one metrics call to produce a valid (saturated) row
-            vm = metrics(y_val,  val_raw)
-            tm = metrics(y_test, test_raw)
-            rows.append({
-                "threshold": thr, "merge_gap": 0, "min_dur": 1,
-                **{f"val_{k}":  v for k, v in vm.items()},
-                **{f"test_{k}": v for k, v in tm.items()},
-            })
-            continue
-
-        for mg in MERGE_GAPS:
-            for md in MIN_DURS:
-                vp = postprocess(val_raw,  mg, md)
-                tp = postprocess(test_raw, mg, md)
-                vm = metrics(y_val,  vp)
-                tm = metrics(y_test, tp)
-                rows.append({
-                    "threshold": thr, "merge_gap": mg, "min_dur": md,
-                    **{f"val_{k}":  v for k, v in vm.items()},
-                    **{f"test_{k}": v for k, v in tm.items()},
-                })
-
+    for thr in values:
+        raw = (val_score > thr).astype(np.int8)
+        for mg in (MERGE_GAPS if merge_gaps is None else merge_gaps):
+            for md in (MIN_DURS if min_durs is None else min_durs):
+                pred = postprocess(raw, mg, md)
+                event = evaluator.score(pred)
+                rows.append({"threshold": float(thr), "merge_gap": int(mg), "min_dur": int(md),
+                             "val_esa_f05": event["EW_F_0.50"],
+                             "val_event_f05": event["EW_F_0.50"],
+                             "val_event_precision": event["EW_precision"],
+                             "val_event_recall": event["EW_recall"],
+                             "val_pred_anomaly_rate": float(pred.mean()),
+                             "val_saturated": bool(pred.mean() > SATURATION_RATE),
+                             **{"val_" + k: v for k, v in event.items()}})
     return pd.DataFrame(rows)
 
 
 def select_rows(df: pd.DataFrame) -> pd.DataFrame:
-    rows = []
-    for max_rate in [0.01, 0.02, 0.03, 0.05, 0.075, 0.10, 0.15]:
-        sub = df[(df.val_pred_anomaly_rate <= max_rate) & (~df.val_saturated)].copy()
-        if len(sub):
-            sub = sub.sort_values(["val_esa_f05", "val_event_f05", "val_point_f05"], ascending=False)
-            r = sub.iloc[0].to_dict(); r["selection_name"] = f"best_val_esa_f05_val_pred_rate_lte_{max_rate:g}"; r["selection_type"] = "clean_validation_selected"; rows.append(r)
-            sub = sub.sort_values(["val_point_f05", "val_esa_f05", "val_event_f05"], ascending=False)
-            r = sub.iloc[0].to_dict(); r["selection_name"] = f"best_val_point_f05_val_pred_rate_lte_{max_rate:g}"; r["selection_type"] = "clean_validation_selected"; rows.append(r)
-    for max_rate in [0.05, 0.10, 0.15]:
-        sub = df[(df.test_pred_anomaly_rate <= max_rate) & (~df.test_saturated)].copy()
-        if len(sub):
-            sub = sub.sort_values(["test_esa_f05", "test_event_f05", "test_point_f05"], ascending=False)
-            r = sub.iloc[0].to_dict(); r["selection_name"] = f"diagnostic_best_test_esa_f05_test_pred_rate_lte_{max_rate:g}"; r["selection_type"] = "diagnostic_test_selected"; rows.append(r)
-            sub = sub.sort_values(["test_point_f05", "test_esa_f05", "test_event_f05"], ascending=False)
-            r = sub.iloc[0].to_dict(); r["selection_name"] = f"diagnostic_best_test_point_f05_test_pred_rate_lte_{max_rate:g}"; r["selection_type"] = "diagnostic_test_selected"; rows.append(r)
-    return pd.DataFrame(rows)
+    """Freeze one decision rule using corrected validation F0.5 and a 1% cap.
+
+    Ties favor less nominal alarm time and then a higher threshold. Test columns
+    cannot affect selection, even if a caller attaches them to the frame.
+    """
+    sub = df[(df.val_pred_anomaly_rate <= .01) & (~df.val_saturated)].copy()
+    if sub.empty:
+        raise ValueError("No validation candidate satisfies the 1% cap")
+    chosen = sub.sort_values(["val_esa_f05", "val_false_positive_seconds", "threshold", "merge_gap", "min_dur"],
+                             ascending=[False, True, False, True, True], kind="stable").iloc[0].to_dict()
+    chosen.update(selection_name="best_val_esa_f05_val_pred_rate_lte_0.01",
+                  selection_type="clean_validation_selected")
+    return pd.DataFrame([chosen])
 
 
 def pick_leakfree_row(seldf: pd.DataFrame) -> Dict:

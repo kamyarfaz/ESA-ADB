@@ -1,6 +1,6 @@
 """Config components of the Mission 1 research pipeline.
 
-Extracted without changing numerical behavior; see docs/thesis-research-context.md.
+Uses corrected annotation-ID/duration evaluation; see docs/research/corrected-evaluation.md.
 """
 from __future__ import annotations
 
@@ -20,7 +20,7 @@ TRAIN_FILE = project_path("data/preprocessed/multivariate/ESA-Mission1-semi-supe
 TEST_FILE  = project_path("data/preprocessed/multivariate/ESA-Mission1-semi-supervised/84_months.test.csv")
 
 
-OUT_ROOT   = project_path("results_longrun/mission1_reconstruction_ae_sweep_optimized")
+OUT_ROOT   = project_path("results_longrun/mission1_esa_ew_v1")
 
 
 SEED       = 42
@@ -74,7 +74,10 @@ WEIGHT_DECAY = 1e-4
 GRAD_CLIP  = 1.0
 
 
-VAL_FRACTION = 0.20
+VAL_MONTHS = 3
+
+ANNOTATIONS_FILE = project_path("data/ESA-Mission1/labels.csv")
+ANOMALY_TYPES_FILE = project_path("data/ESA-Mission1/anomaly_types.csv")
 
 
 MAX_TRAIN_WINDOWS = 250_000

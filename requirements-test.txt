@@ -1,0 +1,3 @@
+-r requirements-thesis.txt
+# Required only by the pinned upstream ESA metric parity tests.
+portion==2.4.1

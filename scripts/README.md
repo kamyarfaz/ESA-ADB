@@ -17,3 +17,9 @@ The thesis-specific alternatives live in `esa_thesis/analysis`,
 `esa_thesis/evaluation`, and `esa_thesis/calibration`, accessible through
 `python -m esa_thesis --help`. The original tools have not all been executed
 as part of repository organization.
+
+## Thesis research utilities
+
+`research/validate_mission1_csv.py` validates a complete prepared Mission 1
+84-month train/test CSV and writes a SHA256 integrity report. See
+[scoring comparison](../docs/research/scoring-comparison.md) for commands.

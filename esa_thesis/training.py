@@ -1,10 +1,12 @@
 """Training components of the Mission 1 research pipeline.
 
-Extracted without changing numerical behavior; see docs/thesis-research-context.md.
+Uses corrected annotation-ID/duration evaluation; see docs/research/corrected-evaluation.md.
 """
 from __future__ import annotations
 
 from .tracking import WandbRun
+from .protocol import validation_split, evaluator_for, read_timestamps, guard_run, manifest
+from .evaluation.esa import timestamps_ns, METRIC_VERSION
 from pathlib import Path
 from torch.utils.data import DataLoader, Dataset
 from typing import Dict, List, Tuple
@@ -17,7 +19,7 @@ import torch
 import torch.nn as nn
 from .augmentation import (make_pseudo_anomaly)
 from .checkpoints import (completed_run, load_json, load_training_history, save_best_checkpoint, save_json, save_training_checkpoint, save_training_history)
-from .config import (AMP, BATCH_SIZE, DEVICE, DROPOUT, D_MODEL, EPOCHS, GRAD_CLIP, LR, MAX_TRAIN_WINDOWS, MERGE_GAPS, MIN_DURS, MLP_BATCH, MLP_EPOCHS, MLP_HIDDEN, MLP_LAYERS, MLP_LR, N_HEADS, N_LAYERS, OUT_ROOT, PATCH_SIZE, PA_LAMBDA, PA_MARGIN, RUN_SPECS, SCORE_STRIDE, SEED, SEQ_LEN, STRIDE, TEST_FILE, TRAIN_FILE, TRAIN_MLP, VAL_FRACTION, WANDB_PROJECT, WEIGHT_DECAY)
+from .config import (AMP, BATCH_SIZE, DEVICE, DROPOUT, D_MODEL, EPOCHS, GRAD_CLIP, LR, MAX_TRAIN_WINDOWS, MERGE_GAPS, MIN_DURS, MLP_BATCH, MLP_EPOCHS, MLP_HIDDEN, MLP_LAYERS, MLP_LR, N_HEADS, N_LAYERS, OUT_ROOT, PATCH_SIZE, PA_LAMBDA, PA_MARGIN, RUN_SPECS, SCORE_STRIDE, SEED, SEQ_LEN, STRIDE, TEST_FILE, TRAIN_FILE, TRAIN_MLP, VAL_MONTHS, WANDB_PROJECT, WEIGHT_DECAY)
 from .data import (ForecastWindows, NormalWindows, RobustChannelScaler, get_y_any, load_frame, read_columns)
 from .metrics import (find_events, metrics)
 from .models import (MLPForecaster, MultivariateAE)
@@ -52,6 +54,8 @@ def train_one(spec: Dict, out_base: Path, available_cols: List[str]) -> Dict:
     plot_dir = out_base / "plots" / run
     plot_dir.mkdir(parents=True, exist_ok=True)
 
+    guard_run(run_dir, manifest(spec))
+
     if completed_run(run_dir, plot_dir):
         log(f"SKIP completed run {run}")
         return load_json(run_dir / "summary.json")
@@ -79,9 +83,12 @@ def train_one(spec: Dict, out_base: Path, available_cols: List[str]) -> Dict:
     df      = load_frame(TRAIN_FILE, features)
     y_full  = get_y_any(df)
     x_full  = df[features].to_numpy(np.float32)
+    train_times = timestamps_ns(df["timestamp"])
     del df
 
-    split   = max(SEQ_LEN, int(len(x_full) * (1 - VAL_FRACTION)))
+    split = validation_split(train_times)
+    val_evaluator = evaluator_for(train_times[split:])
+    test_evaluator = evaluator_for(read_timestamps(TEST_FILE))
     xtr_raw, ytr = x_full[:split], y_full[:split]
     xv_raw,  yv  = x_full[split:], y_full[split:]
 
@@ -187,8 +194,8 @@ def train_one(spec: Dict, out_base: Path, available_cols: List[str]) -> Dict:
                 for thr in thresholds(vs):
                     for mg in QUICK_MERGE_GAPS:
                         for md in QUICK_MIN_DURS:
-                            m = metrics(yv, postprocess((vs > thr).astype(np.int8), mg, md))
-                            if m["pred_anomaly_rate"] <= 0.15 and not m["saturated"]:
+                            m = metrics(yv, postprocess((vs > thr).astype(np.int8), mg, md), evaluator=val_evaluator)
+                            if m["pred_anomaly_rate"] <= 0.01 and not m["saturated"]:
                                 quick.append((m["esa_f05"], m["event_f05"], m["point_f05"],
                                               thr, mg, md, m["pred_anomaly_rate"]))
                 if quick:
@@ -370,8 +377,8 @@ def train_one(spec: Dict, out_base: Path, available_cols: List[str]) -> Dict:
                         for mg in [0, 64, 256]:
                             for md in [1, 16, 64]:
                                 m = metrics(yv, postprocess(
-                                    (mlp_vs > thr).astype(np.int8), mg, md))
-                                if m["pred_anomaly_rate"] <= 0.15 and not m["saturated"]:
+                                    (mlp_vs > thr).astype(np.int8), mg, md), evaluator=val_evaluator)
+                                if m["pred_anomaly_rate"] <= 0.01 and not m["saturated"]:
                                     quick_mlp.append((m["esa_f05"], thr))
                     if quick_mlp:
                         best_q = max(quick_mlp, key=lambda z: z[0])
@@ -471,7 +478,7 @@ def train_one(spec: Dict, out_base: Path, available_cols: List[str]) -> Dict:
         thdf = pd.read_csv(threshold_path)
     else:
         log(f"{run}: sweeping thresholds")
-        thdf = sweep_thresholds(vs, yv, ts, yt)
+        thdf = sweep_thresholds(vs, evaluator=val_evaluator)
         for col, val in [("run", run), ("group", spec.get("group", "")),
                          ("num_features", len(features)), ("features", ",".join(features))]:
             if col not in thdf.columns:
@@ -513,7 +520,12 @@ def train_one(spec: Dict, out_base: Path, available_cols: List[str]) -> Dict:
         vpred = postprocess((vs > thr).astype(np.int8), mg, md)
         np.save(val_pred_path, vpred.astype(np.int8))
 
+    prow.update({"val_" + k: v for k, v in metrics(yv, vpred, evaluator=val_evaluator).items()})
+    prow.update({"test_" + k: v for k, v in metrics(yt, pred, evaluator=test_evaluator).items()})
+    pd.DataFrame([prow]).to_csv(selected_path, index=False)
+
     torch.save({
+        "metric_version": METRIC_VERSION,
         "model_state_dict": model.state_dict(),
         "features":    features,
         "scaler_median": scaler.median_,
@@ -551,8 +563,9 @@ def train_one(spec: Dict, out_base: Path, available_cols: List[str]) -> Dict:
         "features": features, "num_features": len(features),
         "num_train_rows": int(len(xtr)), "num_val_rows": int(len(yv)),
         "num_test_rows": int(len(yt)),
-        "val_true_events":  len(find_events(yv)),
-        "test_true_events": len(find_events(yt)),
+        "val_true_events": len(val_evaluator.by_id),
+        "test_true_events": len(test_evaluator.by_id),
+        "evaluation": {"validation": val_evaluator.metadata(), "test": test_evaluator.metadata()},
         "best_epoch": int(best_epoch), "best_val_esa_quick": float(best_val),
         "history": hist, "plot_selection": prow,
         "outputs": {
@@ -590,44 +603,14 @@ def train_one(spec: Dict, out_base: Path, available_cols: List[str]) -> Dict:
 
 
 def combine(out_base: Path):
-    sels, ths = [], []
-    for sd in sorted(out_base.glob("*/selected_thresholds.csv")):
-        sels.append(pd.read_csv(sd))
-    for td in sorted(out_base.glob("*/threshold_sweep_val_to_test.csv")):
-        ths.append(pd.read_csv(td))
-    if sels:
-        allsel = pd.concat(sels, ignore_index=True)
-        allsel.to_csv(out_base / "selected_thresholds_all_runs.csv", index=False)
-        excel = allsel.copy()
-        for c in ["test_esa_f05","test_event_f05","test_point_f05","test_pred_anomaly_rate","val_esa_f05"]:
-            excel[c] = pd.to_numeric(excel[c], errors="coerce")
-        excel = excel.sort_values(
-            ["selection_type","test_esa_f05","test_event_f05","test_point_f05"],
-            ascending=[True,False,False,False])
-        keep = ["selection_type","selection_name","run","group","num_features","features",
-                "threshold","merge_gap","min_dur","val_esa_f05","val_event_f05",
-                "val_event_precision","val_event_recall","val_point_f05","val_point_precision",
-                "val_point_recall","val_pred_anomaly_rate","test_esa_f05","test_event_f05",
-                "test_event_precision","test_event_recall","test_TPe","test_FPe","test_FNe",
-                "test_num_true_events","test_num_pred_events","test_point_f05",
-                "test_point_precision","test_point_recall","test_TPt","test_FPt","test_TNt",
-                "test_FNt","test_pred_anomaly_rate","test_true_anomaly_rate"]
-        excel[[c for c in keep if c in excel.columns]].to_csv(
-            out_base / "excel_summary_rows.csv", index=False)
-        sat = allsel.test_saturated
-        if sat.dtype == object:
-            sat = sat.astype(str).str.lower().isin(["true","1","yes"])
-        practical = allsel[
-            (pd.to_numeric(allsel.test_pred_anomaly_rate, errors="coerce") <= .10) & (~sat)
-        ].copy()
-        if len(practical):
-            practical = practical.sort_values(
-                ["test_esa_f05","test_event_f05","test_point_f05"], ascending=False)
-            practical.to_csv(
-                out_base / "diagnostic_ranking_test_pred_rate_lte_0.10.csv", index=False)
-    if ths:
-        pd.concat(ths, ignore_index=True).to_csv(
-            out_base / "threshold_sweep_all_runs.csv", index=False)
+    selected = [pd.read_csv(p) for p in sorted(out_base.glob("*/selected_thresholds.csv"))]
+    if selected:
+        frame = pd.concat(selected, ignore_index=True).sort_values("val_esa_f05", ascending=False)
+        frame.to_csv(out_base / "selected_thresholds_all_runs.csv", index=False)
+        frame.to_csv(out_base / "excel_summary_rows.csv", index=False)
+    sweeps = [pd.read_csv(p) for p in sorted(out_base.glob("*/threshold_sweep_val_to_test.csv"))]
+    if sweeps:
+        pd.concat(sweeps, ignore_index=True).to_csv(out_base / "threshold_sweep_all_runs.csv", index=False)
 
 
 def write_error(out_base: Path, run: str, e: Exception):
@@ -660,10 +643,19 @@ def main():
     else:
         out_base.mkdir(parents=True, exist_ok=True)
 
+    # Fail before updating sweep summaries if any existing run is incompatible.
+    for spec in RUN_SPECS:
+        existing = out_base / spec["run"]
+        if existing.exists():
+            guard_run(existing, manifest(spec))
+
     latest_path.write_text(str(out_base.resolve()) + "\n", encoding="utf-8")
     (out_base / "plots").mkdir(exist_ok=True)
 
     available = read_columns(TRAIN_FILE)
+    missing = {f for spec in RUN_SPECS for f in spec["features"]} - set(available)
+    if missing:
+        raise ValueError(f"Configured input channels missing: {sorted(missing)}")
     planned   = [{**s, "features": [f for f in s["features"] if f in available]}
                  for s in RUN_SPECS]
     summary   = {
@@ -718,7 +710,6 @@ def main():
         "selected_thresholds_all_runs": str((out_base / "selected_thresholds_all_runs.csv").resolve()),
         "threshold_sweep_all_runs":     str((out_base / "threshold_sweep_all_runs.csv").resolve()),
         "excel_summary_rows":           str((out_base / "excel_summary_rows.csv").resolve()),
-        "diagnostic_ranking_test_pred_rate_lte_0.10": str((out_base / "diagnostic_ranking_test_pred_rate_lte_0.10.csv").resolve()),
         "plots_dir":                    str((out_base / "plots").resolve()),
     }
     (out_base / "summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
@@ -732,3 +723,6 @@ def main():
         cols = ["selection_type","selection_name","run","test_esa_f05","test_event_f05",
                 "test_point_f05","test_event_precision","test_event_recall","test_pred_anomaly_rate"]
         print(df[[c for c in cols if c in df.columns]].head(30).to_string(index=False), flush=True)
+
+    if summary["num_failed_runs"]:
+        raise RuntimeError(f"{summary['num_failed_runs']} training runs failed; inspect errors.csv")

@@ -30,7 +30,7 @@ python -m pip install --upgrade pip
 
 # CPU installation, suitable for software/regression checks:
 python -m pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cpu
-python -m pip install -r requirements-thesis.txt
+python -m pip install -r requirements-test.txt
 
 python -m esa_thesis --help
 python -m esa_thesis doctor --skip-data
@@ -156,7 +156,7 @@ channels from a run name.
   against the project root. A timestamped run directory is created inside it.
 - Hyperparameters, channel groups, and `TRAIN_MLP` are in `esa_thesis/config.py`.
 - Resume uses `latest_run.txt`, checkpoints, and cached scores. **Use a new output
-  root after changing configuration**: cache compatibility is not validated.
+  root after changing configuration**: incompatible/unversioned caches are rejected.
   Use a separate root for a subset run to avoid replacing an existing sweep summary.
 - W&B defaults to offline logging. `WANDB_MODE=disabled` disables it; a W&B account
   is not required for local training.
@@ -174,7 +174,7 @@ under the chosen output root and are ignored by Git.
 
 1. **Load a channel subset.** Parse the prepared CSVs, fill missing feature values,
    and aggregate all positive `is_anomaly_*` labels into a binary event timeline.
-2. **Split and scale.** Reserve the last 20% of the provided training series for
+2. **Split and scale.** Reserve the last three calendar months of the provided training series for
    validation. Fit per-channel median/IQR scaling on normal training points and
    clip normalized values to ±10.
 3. **Construct windows.** AE input has shape `(batch, channels, 256, 1)`. Training
@@ -198,20 +198,22 @@ under the chosen output root and are ignored by Git.
 
 ### Evaluation status and operational limitations
 
-F0.5 weights precision more heavily than recall, making false alarms particularly
-important. However, **the current custom F0.5 is not the official ESA/Kaggle metric**.
-The inherited precision calculation uses
-`TPe / (TPe + FPe + FPt/Nt)`, while the published formulation combines event
-precision with a nominal-time false-positive penalty multiplicatively.
-See the [research assessment](docs/thesis-research-context.md) and
-[benchmark paper](https://arxiv.org/abs/2406.17826).
+The active pipeline now computes corrected event-wise F0.5 with raw annotation IDs,
+timestamps, and a multiplicative nominal-time false-alarm penalty. The fast evaluator
+is checked against the pinned upstream `ESAScores` implementation. Validation alone
+selects checkpoints and thresholds, and training uses the last three calendar months
+for validation. See [implementation and baseline notes](docs/research/corrected-evaluation.md).
 
-Other open issues are test-informed selections, normalization using each scored
-series, global event aggregation versus channel-aware annotations, and
-retrospective window scoring. Missing-value backfilling also needs review for
-causal operation. The current pipeline is offline research; it has not established
-onboard feasibility, real-time causality, or a verified F0.5 of 0.85.
-The folder refactor deliberately preserved existing numerical behavior.
+Historical scores used a different formula and must not be compared as if equivalent.
+Historical evaluation commands require `--allow-legacy-metric`; use `recalibrate`
+for a corrected diagnostic evaluation of saved scores. Legacy caches cannot be
+resumed by new training. The default output root is `results_longrun/mission1_esa_ew_v1`.
+
+The 0.85 target remains unverified. Full-series ensemble normalization, retrospective
+reconstruction, future-based filling, and historical test exposure remain research
+limitations. Point-label diagnostics still reflect the prepared binary labels;
+annotation-ID event metrics are authoritative for the corrected event score.
+Model architecture and score generation have not changed in this evaluation phase.
 
 ## 5. Code map
 
@@ -246,6 +248,8 @@ Run `python -m esa_thesis COMMAND --help` for arguments.
 | Commands | Purpose |
 | --- | --- |
 | `doctor` | Software and dataset-header checks |
+| `compare-scoring` | Same-weights window/per-timestep comparison; [instructions](docs/research/scoring-comparison.md) |
+| `recalibrate` | Validation-only corrected evaluation of cached AE/MLP scores |
 | `correlation`, `importance`, `representatives` | Channel analysis |
 | `score`, `evaluate` | Earlier scoring utilities |
 | `evaluate-ensemble`, `reselect` | AE/MLP ensembles and threshold reselection |
@@ -258,10 +262,15 @@ run path shown by `--help` for your own experiments. They are not fresh-clone de
 
 ## 7. Verification and troubleshooting
 
-The refactor check compares 43 extracted definitions with the small source fixture,
+The refactor check compares 11 intentionally unchanged definitions with the source fixture,
 loads identical model state dictionaries, compares CPU model outputs, and checks
-metric/postprocessing parity. No dataset is required. It preserves historical
-behavior rather than asserting that the metric is scientifically correct.
+legacy-metric/postprocessing parity. Separate tests check the corrected metric. No dataset is required. It preserves the unchanged model/scoring behavior. Run the corrected metric and
+selection checks with:
+
+```bash
+PYTHONPATH=. python -m unittest discover -s tests/thesis -p 'test_*.py' -v
+PYTHONPATH=. WANDB_MODE=disabled python tests/thesis/smoke_training.py
+```
 
 | Symptom | Action |
 | --- | --- |
@@ -270,7 +279,7 @@ behavior rather than asserting that the metric is scientifically correct.
 | NumPy `MachAr` or statsmodels error in preprocessing | Use the separate, fresh `environment.yml` environment |
 | CUDA unavailable | Check `nvidia-smi` and the PyTorch build; CPU fallback is automatic |
 | GPU out of memory | Reduce training/scoring batch sizes in `config.py`; use a new output root |
-| Old results reused after an edit | Use a new output root; cached settings are not checked |
+| Old results reused after an edit | Use a new output root; incompatible caches are rejected |
 | No results for an analysis command | Train first and select your run directory with that tool's arguments |
 
 Validation scope: the documented requirements were installed in a fresh Linux

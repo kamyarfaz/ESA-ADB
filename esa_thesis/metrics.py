@@ -1,6 +1,6 @@
 """Metrics components of the Mission 1 research pipeline.
 
-Extracted without changing numerical behavior; see docs/thesis-research-context.md.
+Uses corrected annotation-ID/duration evaluation; see docs/research/corrected-evaluation.md.
 """
 from __future__ import annotations
 
@@ -33,7 +33,7 @@ def fbeta(p: float, r: float, beta: float = 0.5) -> float:
     return 0.0 if den <= 0 else (1 + b2) * p * r / den
 
 
-def metrics(gt: np.ndarray, pred: np.ndarray) -> Dict:
+def legacy_metrics(gt: np.ndarray, pred: np.ndarray) -> Dict:
     gt   = (gt > 0).astype(np.int8)
     pred = (pred > 0).astype(np.int8)
 
@@ -104,3 +104,23 @@ def metrics(gt: np.ndarray, pred: np.ndarray) -> Dict:
         "true_anomaly_rate": float(gt.mean()),
         "saturated": bool(pred_rate > SATURATION_RATE),
     }
+
+
+def metrics(gt: np.ndarray, pred: np.ndarray, *, evaluator) -> Dict:
+    """Point diagnostics plus official ID/duration event scores.
+
+    The annotation evaluator is mandatory: binary labels cannot reconstruct IDs.
+    Legacy values are retained only under an explicit legacy_ prefix.
+    """
+    result = legacy_metrics(gt, pred)
+    official = evaluator.score(pred)
+    for key in ('esa_f05', 'esa_precision_c', 'esa_recall_e', 'event_f05',
+                'event_f1', 'event_precision', 'event_recall', 'TPe', 'FPe',
+                'FNe', 'num_true_events', 'num_pred_events'):
+        result['legacy_' + key] = result.pop(key)
+    precision, recall = official['EW_precision'], official['EW_recall']
+    result.update(official)
+    result.update(esa_f05=official['EW_F_0.50'], esa_precision_c=precision,
+                  esa_recall_e=recall, event_precision=precision, event_recall=recall,
+                  event_f05=official['EW_F_0.50'], event_f1=fbeta(precision, recall, 1.0))
+    return result

@@ -30,7 +30,7 @@ def get_y_any(df: pd.DataFrame) -> np.ndarray:
 def load_frame(path: Path, features: List[str]) -> pd.DataFrame:
     cols   = read_columns(path)
     labels = [c for c in cols if c.startswith("is_anomaly_")]
-    need   = list(dict.fromkeys(features + labels))
+    need   = list(dict.fromkeys(["timestamp"] + features + labels))
     df     = pd.read_csv(path, usecols=lambda c: c in need, low_memory=False)
     for f in features:
         if f not in df.columns:

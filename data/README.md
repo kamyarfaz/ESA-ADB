@@ -8,3 +8,6 @@ The thesis currently uses Mission 1's 84-month split under
 Source datasets are retained at their original locations. Do not mix experiment
 outputs into these directories or overwrite source annotations.
 Dataset preprocessing tools are indexed in `../scripts/README.md`.
+
+`repairs/` contains local integrity reports and preserved damaged-file backups.
+These artifacts, like the datasets themselves, are excluded from Git.

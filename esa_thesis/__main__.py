@@ -3,11 +3,17 @@ import argparse
 import importlib
 import sys
 
-COMMANDS = {'doctor': 'esa_thesis.doctor', 'correlation': 'esa_thesis.analysis.correlation', 'importance': 'esa_thesis.analysis.importance', 'representatives': 'esa_thesis.analysis.representatives', 'score': 'esa_thesis.evaluation.legacy_scores', 'evaluate': 'esa_thesis.evaluation.legacy_evaluation', 'evaluate-ensemble': 'esa_thesis.evaluation.mlp_ensemble', 'reselect': 'esa_thesis.evaluation.reselect', 'subset-v1': 'esa_thesis.evaluation.subset_v1', 'subset': 'esa_thesis.evaluation.subset', 'coverage': 'esa_thesis.evaluation.coverage', 'evt': 'esa_thesis.calibration.evt', 'dspot': 'esa_thesis.calibration.dspot'}
+COMMANDS = {'compare-scoring': 'esa_thesis.evaluation.compare_scoring', 'recalibrate': 'esa_thesis.evaluation.recalibrate', 'doctor': 'esa_thesis.doctor', 'correlation': 'esa_thesis.analysis.correlation', 'importance': 'esa_thesis.analysis.importance', 'representatives': 'esa_thesis.analysis.representatives', 'score': 'esa_thesis.evaluation.legacy_scores', 'evaluate': 'esa_thesis.evaluation.legacy_evaluation', 'evaluate-ensemble': 'esa_thesis.evaluation.mlp_ensemble', 'reselect': 'esa_thesis.evaluation.reselect', 'subset-v1': 'esa_thesis.evaluation.subset_v1', 'subset': 'esa_thesis.evaluation.subset', 'coverage': 'esa_thesis.evaluation.coverage', 'evt': 'esa_thesis.calibration.evt', 'dspot': 'esa_thesis.calibration.dspot'}
 
 def main(argv=None):
     argv = list(sys.argv[1:] if argv is None else argv)
     if argv and argv[0] in COMMANDS:
+        historical = {'score', 'evaluate', 'evaluate-ensemble', 'reselect', 'subset-v1', 'subset', 'coverage', 'evt', 'dspot'}
+        if argv[0] in historical and '--help' not in argv and '-h' not in argv:
+            if '--allow-legacy-metric' not in argv:
+                raise SystemExit('Historical evaluator: use recalibrate for corrected ESA scores. To reproduce old results only, pass --allow-legacy-metric.')
+            argv.remove('--allow-legacy-metric')
+            print('WARNING: historical evaluation; outputs are not official ESA scores.', file=sys.stderr)
         module = importlib.import_module(COMMANDS[argv[0]])
         previous = sys.argv
         try:
