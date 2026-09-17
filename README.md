@@ -248,6 +248,8 @@ Run `python -m esa_thesis COMMAND --help` for arguments.
 | Commands | Purpose |
 | --- | --- |
 | `doctor` | Software and dataset-header checks |
+| `forecast-develop` | Causal Transformer, MLP, and persistence comparison; [instructions](docs/research/forecast-development.md) |
+| `develop` | Chronological Transformer baseline; [instructions](docs/research/chronological-development.md) |
 | `compare-scoring` | Same-weights window/per-timestep comparison; [instructions](docs/research/scoring-comparison.md) |
 | `recalibrate` | Validation-only corrected evaluation of cached AE/MLP scores |
 | `correlation`, `importance`, `representatives` | Channel analysis |

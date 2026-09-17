@@ -14,6 +14,16 @@
 
 - [Controlled scoring comparison](research/scoring-comparison.md): paired inference, validation-only selection, and GPU command.
 
+- [Chronological development baseline](research/chronological-development.md): fixed folds, isolated assessment, and training commands.
+
+- [Development baseline findings](research/development-baseline-findings.md): verified missed events, false-alarm attribution, and next experiment specification.
+
+- [Forecasting development comparison](research/forecast-development.md): causal scoring, matched controls, and run commands.
+
+- [Causal alarm findings](research/causal-alarm-findings.md): frozen-score confirmation experiment, false alarms, and detection delays.
+
+- [Expanded-channel AE experiment](research/expanded-channel-ae.md): fixed 11-channel comparison against the existing baseline.
+
 ## Original benchmark
 
 - [Benchmark instructions](benchmark-original.md).

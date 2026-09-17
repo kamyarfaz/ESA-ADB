@@ -3,7 +3,7 @@ import argparse
 import importlib
 import sys
 
-COMMANDS = {'compare-scoring': 'esa_thesis.evaluation.compare_scoring', 'recalibrate': 'esa_thesis.evaluation.recalibrate', 'doctor': 'esa_thesis.doctor', 'correlation': 'esa_thesis.analysis.correlation', 'importance': 'esa_thesis.analysis.importance', 'representatives': 'esa_thesis.analysis.representatives', 'score': 'esa_thesis.evaluation.legacy_scores', 'evaluate': 'esa_thesis.evaluation.legacy_evaluation', 'evaluate-ensemble': 'esa_thesis.evaluation.mlp_ensemble', 'reselect': 'esa_thesis.evaluation.reselect', 'subset-v1': 'esa_thesis.evaluation.subset_v1', 'subset': 'esa_thesis.evaluation.subset', 'coverage': 'esa_thesis.evaluation.coverage', 'evt': 'esa_thesis.calibration.evt', 'dspot': 'esa_thesis.calibration.dspot'}
+COMMANDS = {'forecast-develop': 'esa_thesis.forecast_development', 'develop': 'esa_thesis.development', 'compare-scoring': 'esa_thesis.evaluation.compare_scoring', 'recalibrate': 'esa_thesis.evaluation.recalibrate', 'doctor': 'esa_thesis.doctor', 'correlation': 'esa_thesis.analysis.correlation', 'importance': 'esa_thesis.analysis.importance', 'representatives': 'esa_thesis.analysis.representatives', 'score': 'esa_thesis.evaluation.legacy_scores', 'evaluate': 'esa_thesis.evaluation.legacy_evaluation', 'evaluate-ensemble': 'esa_thesis.evaluation.mlp_ensemble', 'reselect': 'esa_thesis.evaluation.reselect', 'subset-v1': 'esa_thesis.evaluation.subset_v1', 'subset': 'esa_thesis.evaluation.subset', 'coverage': 'esa_thesis.evaluation.coverage', 'evt': 'esa_thesis.calibration.evt', 'dspot': 'esa_thesis.calibration.dspot'}
 
 def main(argv=None):
     argv = list(sys.argv[1:] if argv is None else argv)
