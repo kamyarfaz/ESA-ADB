@@ -54,6 +54,29 @@ the root `setup.py` packages the separate, older TimeEval framework.
 The version file records the research environment used for local checks; it is
 not a complete lockfile for all transitive dependencies or operating systems.
 
+### Restore saved research on another computer
+
+The code setup above is sufficient for a fresh start. To recover saved checkpoints
+and recent experiment results, also download the attachments from the
+[essential migration backup release](https://github.com/kamyarfaz/ESA-ADB/releases/tag/migration-backup-2026-09-17).
+**Cloning the repository does not download release attachments.**
+
+1. Download `esa-thesis-essential-20260917.tar.gz`, `manifest.json`, `RESTORE.md`,
+   and `SHA256SUMS` into one separate download directory.
+2. In that directory, run `sha256sum -c SHA256SUMS`.
+3. Extract into your **newly cloned** project (replace both example paths):
+   `tar -xzf /path/to/esa-thesis-essential-20260917.tar.gz -C /path/to/ESA-ADB`.
+4. From the project root, run `python migration-backup/verify.py .`.
+5. Download and prepare Mission 1 using Section 2 below, then run the data checks.
+
+The 17 September snapshot contains 1,583 files in an approximately 1.28 GiB
+archive. It excludes datasets, damaged CSV copies, and older score arrays outside
+the recent development/scoring-comparison/audit directories. The expanded-channel
+run was still in progress: this snapshot is partial and cannot resume that training
+run. Consult the release notes for snapshot coverage; a final backup is still
+needed after the running experiment completes. Saved JSON files may contain old
+absolute paths as provenance; use the new repository paths when launching commands.
+
 ## 2. Data preparation
 
 **Telemetry, preprocessed CSVs, trained weights, cached scores, and experiment
@@ -92,7 +115,10 @@ data/ESA-Mission1/
 
 The archive is only the compressed source. Preprocessing and training create much
 larger files; reserve tens of GB beyond the download, with additional space for
-multiple runs. Do not place these artifacts in Git.
+multiple runs. The two 84-month prepared CSVs occupy about **6.9 GiB each**
+(**13.8 GiB combined**); other generated splits require additional space.
+The source dataset can be downloaded again and is intentionally excluded from
+the migration backup. Do not place these artifacts in Git.
 
 ### Generate benchmark CSVs in a separate environment
 
@@ -135,6 +161,22 @@ python -m esa_thesis train --dry-run
 `doctor` checks imports, GPU availability, expected paths, feature columns, and
 label headers. It does not validate every row or certify the scientific evaluation.
 `--dry-run` prints the configuration without training or creating results.
+
+For complete structural validation of the prepared inputs (this reads every row):
+
+```bash
+python scripts/research/validate_mission1_csv.py \
+  data/preprocessed/multivariate/ESA-Mission1-semi-supervised/84_months.train.csv \
+  --split train --report data/repairs/train_validation.json
+python scripts/research/validate_mission1_csv.py \
+  data/preprocessed/multivariate/ESA-Mission1-semi-supervised/84_months.test.csv \
+  --split test --report data/repairs/test_validation.json
+```
+
+These checks validate numeric fields, labels, timestamps, expected extent, and
+record SHA256 hashes. They do not prove every value matches raw telemetry.
+Historical repair scripts in the backup are records of the old machine's repair;
+do not apply them automatically to newly generated data.
 
 ## 3. Launch an experiment
 
