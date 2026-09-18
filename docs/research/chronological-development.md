@@ -46,8 +46,10 @@ python -m esa_thesis develop \
 ```
 
 A one-epoch run is a pipeline smoke check, not a comparable research result.
-Existing output directories are rejected. This initial runner does not resume
-interrupted runs; retain partial artifacts and choose a new directory for a retry.
+Existing output directories require `--resume`. New runs save full epoch checkpoints.
+Older partial runs without them require `--resume --restart-incomplete`, which
+archives the partial fold before restarting it; completed folds are skipped.
+See the [recovery and tmux instructions](expanded-channel-ae.md#recover-the-interrupted-september-run-and-survive-logout).
 It uses float32 training, without AMP, and a fixed seed. Exact GPU bitwise
 reproducibility is not guaranteed. Each fold caps nominal windows using the existing
 250,000-window policy; the configuration and source hashes are recorded.

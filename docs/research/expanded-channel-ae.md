@@ -47,9 +47,17 @@ python -m esa_thesis develop \
 
 The folds run sequentially. Append `--dry-run` to inspect the configuration without
 training or creating output. To run separately, specify one fold and a different
-output directory per run. Existing output directories are rejected; interrupted
-training cannot resume. Completed-fold artifacts are preserved, so retries can
-request only missing folds in a new directory.
+output directory per run. Existing output directories require `--resume`. Completed folds are skipped.
+New runs save an atomic full checkpoint after each epoch, including optimizer,
+scheduler, random states and the selected model. A disconnect loses at most the
+in-progress epoch. Use identical arguments plus `--resume` to continue.
+
+Old partial folds from before this feature have only selected model weights and
+cannot resume faithfully. Add `--restart-incomplete` to preserve those files under
+`interrupted/` and retrain only the incomplete fold from epoch 1. Completed folds
+remain untouched. Original protocol files are retained, and a separate recovery
+manifest records the upgraded implementation. Settings/data/source mismatches are
+rejected; GPU bitwise determinism is still not guaranteed.
 
 ## Compare with the frozen baseline
 
@@ -72,3 +80,30 @@ check that verifies no mutation of the original channel set. A separate syntheti
 one-epoch run exercised the 11-channel AE, pseudo-anomaly loss, scaler, checkpoint
 save/load, calibration, and assessment with the benchmark test file absent.
 Real-data GPU training has not been launched by the preparation step.
+
+## Recover the interrupted September run and survive logout
+
+`tmux` is installed on the current Linux server. Start a persistent session:
+
+```bash
+tmux new -s esa-expanded
+```
+
+Inside that session, run:
+
+```bash
+conda activate timeeval
+cd ~/projects/ESA-ADB
+python -m esa_thesis develop \
+  --channel-set expanded --folds 2003 2004 2005 \
+  --output results_longrun/development/ae_expanded_seed42 \
+  --device cuda --batch-size 64 --epochs 40 --seed 42 \
+  --resume --restart-incomplete
+```
+
+For this legacy run, 2003 and 2004 are complete and are skipped; 2005's partial
+31-epoch run is archived and restarted because no optimizer state was saved.
+Detach using **Ctrl+B, then D** before logging out. Reconnect with
+`tmux attach -t esa-expanded`. Do not start duplicate sessions for the same output.
+Tmux protects against terminal logout, not a server reboot; epoch checkpoints
+provide recovery after process/server failure. Future retries need only `--resume`.

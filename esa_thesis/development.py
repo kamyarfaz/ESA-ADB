@@ -14,6 +14,7 @@ from .evaluation.compare_scoring import paired_scores
 from .models import MultivariateAE
 from .protocol import evaluator_for
 from .runtime import set_seed
+from .development_recovery import atomic_save, capture_rng, restore_rng, check_protocol, prepare_fold
 from .thresholds import sweep_thresholds, select_rows, postprocess
 
 FOLDS = {str(year): (f'{year}-01-01', f'{year}-04-01', f'{year+1}-01-01')
@@ -88,7 +89,26 @@ def run_fold(spec, boundaries, output, *, epochs, device, batch_size, seed):
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=epochs, eta_min=1e-6)
     best = None
     history = []
-    for epoch in range(1, epochs+1):
+    best_checkpoint = best_grid = None
+    start_epoch = 1
+    latest = output/'checkpoint_last.pt'
+    if latest.exists():
+        saved = torch.load(latest, map_location='cpu', weights_only=False)
+        model.load_state_dict(saved['model'])
+        optimizer.load_state_dict(saved['optimizer'])
+        scheduler.load_state_dict(saved['scheduler'])
+        best, history = saved['best'], saved['history']
+        best_checkpoint, best_grid = saved['best_checkpoint'], saved['best_grid']
+        if not np.array_equal(scaler.median_, saved['scaler_median']) or not np.array_equal(scaler.iqr_, saved['scaler_iqr']):
+            raise ValueError('Training scaler differs from checkpoint')
+        start_epoch = saved['epoch']+1
+        if best_checkpoint is not None:
+            atomic_save(best_checkpoint, output/'model_checkpoint.pt')
+            pd.DataFrame(best_grid).to_csv(output/'calibration_candidates.csv', index=False)
+        pd.DataFrame(history).to_csv(output/'history.csv', index=False)
+        restore_rng(saved['rng'])
+        print(f'{output.name}: resuming at epoch {start_epoch}', flush=True)
+    for epoch in range(start_epoch, epochs+1):
         model.train()
         losses = []
         for inputs in loader:
@@ -118,11 +138,17 @@ def run_fold(spec, boundaries, output, *, epochs, device, batch_size, seed):
             # Equal scores retain the earlier checkpoint, independently of assessment.
             if best is None or rule['val_esa_f05'] > best['rule']['val_esa_f05']:
                 best = {'epoch': epoch, 'rule': rule, 'uncovered_calibration_samples': uncovered}
-                torch.save({'model_state_dict': model.state_dict(), 'features': features,
-                            'scaler_median': scaler.median_, 'scaler_iqr': scaler.iqr_}, output/'model_checkpoint.pt')
+                best_checkpoint = {'model_state_dict': {k: v.detach().cpu().clone() for k, v in model.state_dict().items()},
+                                   'features': features, 'scaler_median': scaler.median_, 'scaler_iqr': scaler.iqr_}
+                best_grid = grid.to_dict('records')
+                atomic_save(best_checkpoint, output/'model_checkpoint.pt')
                 grid.to_csv(output/'calibration_candidates.csv', index=False)
         history.append(row)
         pd.DataFrame(history).to_csv(output/'history.csv', index=False)
+        atomic_save({'epoch': epoch, 'model': model.state_dict(), 'optimizer': optimizer.state_dict(),
+                     'scheduler': scheduler.state_dict(), 'best': best, 'history': history,
+                     'best_checkpoint': best_checkpoint, 'best_grid': best_grid,
+                     'scaler_median': scaler.median_, 'scaler_iqr': scaler.iqr_, 'rng': capture_rng()}, latest)
         print(output.name, row, flush=True)
     # Freeze decisions on disk before loading assessment observations.
     (output/'frozen_rule.json').write_text(json.dumps(best, indent=2))
@@ -138,7 +164,9 @@ def run_fold(spec, boundaries, output, *, epochs, device, batch_size, seed):
               **evaluator_for(times).score(prediction), 'uncovered_assessment_samples': uncovered}
     np.save(output/'assessment_score.npy', score)
     np.save(output/'assessment_prediction.npy', prediction)
-    (output/'results.json').write_text(json.dumps(result, indent=2))
+    result_temp = output/'results.json.tmp'
+    result_temp.write_text(json.dumps(result, indent=2))
+    result_temp.replace(output/'results.json')
     return result
 
 
@@ -152,11 +180,17 @@ def main():
     parser.add_argument('--device', choices=['cpu', 'cuda'], default=config.DEVICE)
     parser.add_argument('--seed', type=int, default=42)
     parser.add_argument('--dry-run', action='store_true')
+    parser.add_argument('--resume', action='store_true', help='Skip complete folds and restore full epoch checkpoints')
+    parser.add_argument('--restart-incomplete', action='store_true', help='With --resume, archive and restart old partial folds lacking full checkpoints')
     args = parser.parse_args()
     if args.epochs < 1 or args.batch_size < 1 or len(set(args.folds)) != len(args.folds):
         parser.error('Positive epochs/batch size and unique folds required')
-    if args.output.exists():
-        parser.error('Output exists; choose a new directory (resume is not supported)')
+    if args.restart_incomplete and not args.resume:
+        parser.error('--restart-incomplete requires --resume')
+    if args.resume and not (args.output/'protocol.json').is_file():
+        parser.error('--resume requires an existing protocol.json')
+    if args.output.exists() and not args.resume:
+        parser.error('Output exists; use --resume or choose a new directory')
     spec = development_spec(args.channel_set)
     plan = {'channel_set': args.channel_set, 'spec': spec, 'folds': {f: FOLDS[f] for f in args.folds},
             'intervals': '[start,end); expanding train, 3-month calibration, 9-month assessment',
@@ -176,14 +210,16 @@ def main():
     plan['inputs'] = {}
     for p in (config.TRAIN_FILE, config.ANNOTATIONS_FILE, config.ANOMALY_TYPES_FILE):
         plan['inputs'][str(p)] = {'size': p.stat().st_size, 'mtime_ns': p.stat().st_mtime_ns}
-    args.output.mkdir(parents=True)
-    (args.output/'protocol.json').write_text(json.dumps(plan, indent=2, default=str))
+    check_protocol(args.output, plan, args.resume)
     results = []
     for fold in args.folds:
         output = args.output/fold
-        output.mkdir()
-        result = run_fold(spec, FOLDS[fold], output, epochs=args.epochs, device=args.device,
-                          batch_size=args.batch_size, seed=args.seed)
+        result = prepare_fold(output, args.resume, args.restart_incomplete)
+        if result is None:
+            result = run_fold(spec, FOLDS[fold], output, epochs=args.epochs, device=args.device,
+                              batch_size=args.batch_size, seed=args.seed)
+        else:
+            print(f'SKIP completed fold {fold}', flush=True)
         results.append({'fold': fold, **result})
         pd.DataFrame(results).to_csv(args.output/'results.csv', index=False)
     print(pd.DataFrame(results).to_string(index=False))
