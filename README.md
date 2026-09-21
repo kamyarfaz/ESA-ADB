@@ -69,13 +69,20 @@ and recent experiment results, also download the attachments from the
 4. From the project root, run `python migration-backup/verify.py .`.
 5. Download and prepare Mission 1 using Section 2 below, then run the data checks.
 
-The 17 September snapshot contains 1,583 files in an approximately 1.28 GiB
-archive. It excludes datasets, damaged CSV copies, and older score arrays outside
-the recent development/scoring-comparison/audit directories. The expanded-channel
-run was still in progress: this snapshot is partial and cannot resume that training
-run. Consult the release notes for snapshot coverage; a final backup is still
-needed after the running experiment completes. Saved JSON files may contain old
-absolute paths as provenance; use the new repository paths when launching commands.
+The 17 September base snapshot contains 1,583 files in approximately 1.28 GiB.
+After restoring and verifying it, also download and apply the
+[21 September completed-experiment update](https://github.com/kamyarfaz/ESA-ADB/releases/tag/migration-update-2026-09-21)
+(about 40 MB). It contains the completed expanded-channel folds and recovery
+checkpoint. Read that release's `RESTORE.md`: download each release to a separate
+folder, verify the base before applying the update, then run
+`python migration-update-20260921/verify.py .` from the restored project.
+The update intentionally replaces older snapshot files, so their old base-manifest
+hashes will differ afterward. **Both releases are needed for the full essential backup.**
+
+Datasets, damaged CSV copies, and older score arrays outside the recent
+development/scoring-comparison/audit directories remain excluded. Saved JSON files
+may contain old absolute paths as provenance; use the new repository paths when
+launching commands.
 
 ## 2. Data preparation
 
