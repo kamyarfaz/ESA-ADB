@@ -62,8 +62,23 @@ class PatchForecaster(nn.Module):
         return self.head(self.encoder(tokens).flatten(1)).reshape(batch, channels, HORIZON, 1)
 
 
+class LevelResidualForecaster(PatchForecaster):
+    """Predict deviations from the last observed level, then restore that level.
+
+    Center each channel independently using history only. Targets and anomaly
+    scores retain the existing scaled units; a new target jump is still scored.
+    This adds no parameters and preserves the control's initialization.
+    """
+
+    def forward(self, x):
+        level = x[:, :, -1:, :]
+        return level + super().forward(x - level)
+
+
 def make_model(name):
-    return {'persistence': Persistence, 'mlp': ForecastMLP, 'transformer': PatchForecaster}[name]()
+    return {'persistence': Persistence, 'mlp': ForecastMLP,
+            'transformer': PatchForecaster,
+            'transformer_residual': LevelResidualForecaster}[name]()
 
 
 class NominalForecastWindows(Dataset):

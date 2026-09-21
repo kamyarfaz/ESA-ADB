@@ -36,3 +36,4 @@
 - `_static/`: Sphinx styling; `conf.py`, `Makefile`, `requirements.txt`: docs tooling.
 
 - [Channel operating ranges](research/channel-regime-findings.md): 2005 range shifts, clipping checks, and alarm-context diagnostics.
+- [Residual Transformer experiment](research/residual-transformer.md): history-only level centering and a matched forecasting comparison.

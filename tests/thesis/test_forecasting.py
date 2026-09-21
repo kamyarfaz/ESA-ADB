@@ -53,6 +53,28 @@ class ForecastTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'No complete nominal'):
             NominalForecastWindows(values, np.ones(300))
 
+    def test_residual_translation_equivariance_and_matched_initialization(self):
+        torch.manual_seed(42)
+        control = make_model('transformer')
+        torch.manual_seed(42)
+        model = make_model('transformer_residual').eval()
+        for name, parameter in control.state_dict().items():
+            torch.testing.assert_close(parameter, model.state_dict()[name], rtol=0, atol=0)
+        x = torch.randn(2, 3, CONTEXT, 1)
+        offset = torch.tensor([2., -3., 4.]).reshape(1, 3, 1, 1)
+        with torch.no_grad():
+            torch.testing.assert_close(model(x + offset), model(x) + offset, rtol=1e-5, atol=2e-6)
+
+    def test_residual_zero_head_persists_and_detects_target_jump(self):
+        model = make_model('transformer_residual')
+        with torch.no_grad():
+            model.head.weight.zero_()
+            model.head.bias.zero_()
+        values = np.full((CONTEXT + HORIZON, 2), 3., dtype=np.float32)
+        values[CONTEXT:, 0] = 5.
+        score, covered = forecast_scores(model, values)
+        np.testing.assert_array_equal(score[covered], 4.)
+
     def test_all_models_freeze_before_assessment_without_test_access(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

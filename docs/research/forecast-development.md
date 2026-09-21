@@ -109,3 +109,9 @@ The full thesis suite passes 24 tests, including:
 ```bash
 python -m unittest discover -s tests/thesis -p 'test_*.py' -q
 ```
+
+## Optional level-residual variant
+
+The explicit `--models transformer_residual` option adds a matched level-centered
+Transformer. The original default model list is unchanged. See the
+[experiment protocol and tmux command](residual-transformer.md).

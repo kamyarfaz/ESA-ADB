@@ -16,7 +16,8 @@ from .protocol import evaluator_for
 from .runtime import set_seed
 from .thresholds import sweep_thresholds, select_rows
 
-MODELS = ('persistence', 'mlp', 'transformer')
+DEFAULT_MODELS = ('persistence', 'mlp', 'transformer')
+MODELS = (*DEFAULT_MODELS, 'transformer_residual')
 
 
 def calibrate(model, values, evaluator, *, device, batch_size):
@@ -109,7 +110,7 @@ def run_model(name, features, boundaries, output, *, epochs, device, batch_size,
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--folds', nargs='+', choices=list(FOLDS), default=list(FOLDS))
-    parser.add_argument('--models', nargs='+', choices=MODELS, default=list(MODELS))
+    parser.add_argument('--models', nargs='+', choices=MODELS, default=list(DEFAULT_MODELS))
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--epochs', type=int, default=40)
     parser.add_argument('--batch-size', type=int, default=64)
@@ -135,6 +136,7 @@ def main():
             'quantiles': QUANTILES, 'selection': 'calibration F0.5 every 5 epochs and last; earliest tie; 1% cap',
             'warmup': 'first 256 samples of each period unscored; zero alarms; full-period evaluation',
             'training': 'nominal contexts AND targets; training-only robust scaler; no pseudo anomalies',
+            'residual_variant': 'transformer_residual centers context on its last observed value and adds that value to predicted deviations; targets and score units unchanged',
             'limitations': 'development folds; sparse calibration; AE has different information and alarm policies; GPU bitwise determinism not guaranteed',
             'software': {'torch': torch.__version__, 'numpy': np.__version__, 'pandas': pd.__version__}}
     print(json.dumps(plan, indent=2), flush=True)
