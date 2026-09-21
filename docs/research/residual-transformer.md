@@ -74,3 +74,40 @@ equivariance, retained sensitivity to a new target jump, prefix causality, cover
 and a synthetic full training/calibration/assessment run for this model. The
 synthetic workflow verifies that the rule exists before assessment is loaded and
 that the benchmark test CSV is not accessed.
+
+## Completed 2003 result and architecture correction
+
+The completed saved run selected epoch 15, with calibration F0.5 0.057466.
+Assessment results:
+
+| Forecast model | F0.5 | TPe | FPe | FNe | False-positive seconds |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Original Transformer | 0.086696 | 6 | 79 | 0 | 2400 |
+| Level-residual Transformer | 0.070614 | 5 | 82 | 1 | 2490 |
+
+Both have 302,224 parameters. The residual variant loses one detected event and
+adds three false alarm events. This fold provides no evidence of improvement;
+further residual-forecasting runs are paused. These findings do not establish
+that centering fails for all datasets or models.
+
+**The existing AE baseline already is a Transformer reconstruction model.**
+`development.run_fold` instantiates `models.MultivariateAE`, which contains
+Transformer temporal and channel encoders and decoders. The saved eight-channel
+2003 checkpoint loads strictly into this model with every key matching, and has
+1,333,392 parameters. The earlier conversational suggestion to introduce a
+Transformer reconstruction model overlooked this existing architecture.
+There is no need to create or train a duplicate to meet the architectural part
+of the thesis requirement. Retrospective scoring still needs to be distinguished
+from an operationally causal detector; the target score has not been established
+robustly across development folds.
+
+The next useful controlled question is whether the existing pseudo-anomaly
+training objective helps the Transformer AE. A future nominal-reconstruction-only
+ablation should keep architecture, channels, folds, scaler, training budget,
+scoring and calibration selection fixed. No such ablation is implemented or
+started by this result report. Preserve the current baseline and all negative
+results; do not retune on the benchmark test data.
+
+The complete residual run is backed up as
+`residual-transformer-2003-20260921.tar.gz` on the September 21 migration release,
+with a separate SHA256 checksum. It includes protocol, weights, scores and results.
