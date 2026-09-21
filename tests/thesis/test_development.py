@@ -32,6 +32,24 @@ class DevelopmentTests(unittest.TestCase):
                 self.assertFalse(output.exists())
         self.assertEqual(development_spec('baseline'), baseline)
 
+    def test_reconstruction_cli_and_resume_objective_guard(self):
+        from esa_thesis.development_recovery import check_protocol
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory)/'out'
+            stream = io.StringIO()
+            with patch.object(sys, 'argv', ['develop', '--objective', 'reconstruction',
+                                           '--output', str(output), '--dry-run']), \
+                 contextlib.redirect_stdout(stream):
+                main()
+            plan = json.loads(stream.getvalue())
+            self.assertFalse(plan['spec']['pseudo'])
+            self.assertEqual(plan['spec']['features'], development_spec('baseline')['features'])
+            self.assertFalse(output.exists())
+            check_protocol(output, plan, False)
+            changed = {**plan, 'spec': development_spec('baseline')}
+            with self.assertRaisesRegex(ValueError, 'protocol differs'):
+                check_protocol(output, changed, True)
+
     def test_predeclared_folds_do_not_touch_final_validation(self):
         for train_end, cal_end, assess_end in FOLDS.values():
             self.assertLess(train_end, cal_end)
@@ -75,6 +93,11 @@ class DevelopmentTests(unittest.TestCase):
                  patch('esa_thesis.development.load_period', side_effect=checked_load):
                 result = run_fold({'features': ['channel_1'], 'pseudo': True}, boundaries, output,
                                   epochs=1, device='cpu', batch_size=8, seed=42)
+                output = root/'reconstruction'; output.mkdir()
+                with patch('esa_thesis.development.make_pseudo_anomaly',
+                           side_effect=AssertionError('Reconstruction must not generate pseudo anomalies')):
+                    result = run_fold({'features': ['channel_1'], 'pseudo': False}, boundaries, output,
+                                      epochs=1, device='cpu', batch_size=8, seed=42)
             self.assertEqual(result['epoch'], 1)
             self.assertEqual(len(np.load(output/'assessment_prediction.npy')), 320)
             self.assertEqual(json.loads((output/'frozen_rule.json').read_text())['epoch'], 1)

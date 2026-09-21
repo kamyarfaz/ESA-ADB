@@ -87,3 +87,8 @@ one-epoch pseudo-anomaly training run. Full ESA GPU training is user-run.
 The default remains `--channel-set baseline`. The separately documented
 [expanded-channel experiment](expanded-channel-ae.md) adds channels 14, 21, and 29
 using `--channel-set expanded`, with the same training and evaluation settings.
+
+## Training objective ablation
+
+The default pseudo-anomaly objective is unchanged. Use explicit
+`--objective reconstruction` for the [nominal reconstruction-only comparison](reconstruction-objective.md).
