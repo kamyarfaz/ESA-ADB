@@ -26,6 +26,8 @@
 
 - [Expanded-channel results](research/expanded-channel-results.md): completed three-fold comparison and verified event recovery.
 
+- [Channel-error diagnosis](research/channel-error-findings.md): training residual scales and verified false-alarm channel attribution.
+
 ## Original benchmark
 
 - [Benchmark instructions](benchmark-original.md).
