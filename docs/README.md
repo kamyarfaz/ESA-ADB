@@ -24,6 +24,8 @@
 
 - [Expanded-channel AE experiment](research/expanded-channel-ae.md): fixed 11-channel comparison against the existing baseline.
 
+- [Expanded-channel results](research/expanded-channel-results.md): completed three-fold comparison and verified event recovery.
+
 ## Original benchmark
 
 - [Benchmark instructions](benchmark-original.md).
