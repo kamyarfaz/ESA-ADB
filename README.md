@@ -347,3 +347,8 @@ Preserve the original [LICENSE](LICENSE) and [CITATION.cff](CITATION.cff).
 See [CONTRIBUTIONS.md](CONTRIBUTIONS.md) for thesis provenance and
 [original benchmark documentation](docs/benchmark-original.md) for ESA-ADB and
 TimeEval citations. The dataset has its own source record and terms.
+
+## Copy this complete working folder to another server
+
+For external-drive transfer including local datasets and all experiment outputs,
+follow [MIGRATION.md](MIGRATION.md). It includes SHA256 verification and environment setup.

@@ -259,3 +259,6 @@ dask-worker-space
 *.ckpt
 *.npy
 *.npz
+
+# Local full-transfer manifests and environment evidence
+/migration/
