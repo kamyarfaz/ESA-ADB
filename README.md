@@ -352,3 +352,8 @@ TimeEval citations. The dataset has its own source record and terms.
 
 For external-drive transfer including local datasets and all experiment outputs,
 follow [MIGRATION.md](MIGRATION.md). It includes SHA256 verification and environment setup.
+
+## Continue with a new AI assistant
+
+Start with [AI_HANDOFF.md](AI_HANDOFF.md) for research state, results and migration
+context. Repository guidance is in [AGENTS.md](AGENTS.md).
