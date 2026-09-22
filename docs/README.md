@@ -38,3 +38,4 @@
 - [Channel operating ranges](research/channel-regime-findings.md): 2005 range shifts, clipping checks, and alarm-context diagnostics.
 - [Residual Transformer experiment](research/residual-transformer.md): history-only level centering and a matched forecasting comparison.
 - [Reconstruction-only AE ablation](research/reconstruction-objective.md): test the pseudo-anomaly objective with architecture and evaluation fixed.
+- [2004 baseline alarm audit](research/baseline-2004-findings.md): frozen false alarms, score overlap and missed-event coverage.
