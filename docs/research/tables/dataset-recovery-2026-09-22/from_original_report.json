@@ -1,0 +1,18 @@
+{
+  "source_sha256": "fe6812dd5d324fe2eb347a703894551f0a03f40253742a3cd35f42d02fdb80ad",
+  "candidate_sha256": "fe6812dd5d324fe2eb347a703894551f0a03f40253742a3cd35f42d02fdb80ad",
+  "expected_sha256": "fe6812dd5d324fe2eb347a703894551f0a03f40253742a3cd35f42d02fdb80ad",
+  "changes": [
+    {
+      "offset": 4500371516,
+      "old": 49,
+      "new": 49
+    },
+    {
+      "offset": 4500374716,
+      "old": 54,
+      "new": 54
+    }
+  ],
+  "bytes": 7323166601
+}

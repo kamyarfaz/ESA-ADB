@@ -11,6 +11,10 @@ approved implementing the separate channels 14/21/29 Transformer and a combined
 calibration workflow. Implementation and tests are complete; the user should run
 the GPU experiment from `docs/research/specialist-detector.md`. No real training
 has been started by the assistant and no specialist result is available yet.
+The initial specialist run failed before training because of CSV corruption.
+See docs/research/dataset-recovery-2026-09-22.md. The known-good CSV was restored;
+use a fresh output ae_specialist_seed42_verified, including as the combination root.
+No specialist training result exists yet.
 The old transfer manifest is stale after these edits. Regenerate it only if
 migration is requested again; the prior checks do not verify this changed tree.
 

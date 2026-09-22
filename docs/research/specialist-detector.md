@@ -23,7 +23,7 @@ conda activate timeeval
 python -m esa_thesis develop \
   --channel-set specialist --objective pseudo-anomaly \
   --folds 2003 2004 2005 \
-  --output results_longrun/development/ae_specialist_seed42 \
+  --output results_longrun/development/ae_specialist_seed42_verified \
   --device cuda --batch-size 64 --epochs 40 --seed 42
 ```
 
@@ -39,7 +39,7 @@ After all specialist folds complete:
 
 ```bash
 python -m esa_thesis combine-specialist \
-  --specialist-root results_longrun/development/ae_specialist_seed42 \
+  --specialist-root results_longrun/development/ae_specialist_seed42_verified \
   --folds 2003 2004 2005 \
   --output results_longrun/development/combined_specialist_seed42 \
   --device cuda --batch-size 64
@@ -96,3 +96,8 @@ calibration score arrays, all calibration candidates, frozen rule/source hashes,
 three assessment masks, and per-fold plus combined result tables. Fresh artifact
 backups should be made after the experiment completes. The earlier external-drive
 manifest is stale after code changes; regenerate it if migration is requested again.
+
+## Failed initial launch
+
+The initial output `ae_specialist_seed42` contains a pre-training CSV read failure.
+The commands above use a new directory after [dataset recovery](dataset-recovery-2026-09-22.md).
