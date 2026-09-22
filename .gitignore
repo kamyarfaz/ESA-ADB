@@ -262,3 +262,9 @@ dask-worker-space
 
 # Local full-transfer manifests and environment evidence
 /migration/
+
+# Derived private working samples and spreadsheet previews
+/research_workspace/*
+!/research_workspace/README.md
+/outputs/**/preview_*.png
+/outputs/**/*.inspect.ndjson

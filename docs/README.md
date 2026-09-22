@@ -40,3 +40,4 @@
 - [Reconstruction-only AE ablation](research/reconstruction-objective.md): test the pseudo-anomaly objective with architecture and evaluation fixed.
 - [2004 baseline alarm audit](research/baseline-2004-findings.md): frozen false alarms, score overlap and missed-event coverage.
 - [Separate specialist detector](research/specialist-detector.md): channels 14/21/29 and frozen-baseline combined calibration.
+- [Data-first supervisor plan](research/data-first-plan.md): training-only channel audit, small-subset screening and presentation structure.

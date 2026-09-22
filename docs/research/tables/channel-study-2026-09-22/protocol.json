@@ -1,0 +1,16 @@
+{
+  "scope": "2000-01-01 inclusive to 2003-01-01 exclusive; first-fold training only",
+  "source": "data/preprocessed/multivariate/ESA-Mission1-semi-supervised/84_months.train.csv",
+  "source_size": 7323166601,
+  "source_mtime_ns": 1790080947520719903,
+  "rows": 3156480,
+  "nominal_rows": 2819808,
+  "features": 87,
+  "hourly_nominal_sample_rows": 23495,
+  "normal_definition": "all 87 paired annotation columns equal zero",
+  "sampling": "one fixed-grid row every 120 records, then retain nominal rows; no interpolation",
+  "constant_definition": "exact min=max across all nominal training rows",
+  "correlation": "Pearson and rank Spearman on hourly nominal sample; flagged if either absolute value >=0.95",
+  "limitations": "Prepared data only; imputation can hide raw missingness. Hourly sampling can miss short events or alias cycles. No physical unit meanings inferred. Constant nominal signals may still detect anomalies. No channels removed; no tuning or assessment access.",
+  "script_sha256": "cb0f6265c5371138117c206c4233afda08def0c64789e2596adb4a81fdf1e555"
+}

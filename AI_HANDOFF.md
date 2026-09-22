@@ -6,6 +6,23 @@ has changed. Paths below are relative to this repository so the folder can move.
 
 ## Start here: current user intent
 
+Latest supervisor feedback: prioritize understanding and cleaning the data,
+channel informativeness/redundancy, small controlled subsets before full training,
+and a presentation Excel with one row per year/subset and separate validation /
+assessment metrics. See docs/research/data-first-plan.md. A training-only
+2000–2002 audit and presentation workbook are complete; a full raw-data audit
+and justified channel removal are NOT complete. The ongoing specialist run was
+left untouched. Do not change esa_thesis source while that run is active because
+its recovery manifest hashes those files. No additional training was launched.
+The data pilot found 76 telemetry inputs plus 11 telecommands, 10 nominal-training
+constant inputs and 9 sample-constant but full-resolution variable inputs. Do not
+auto-delete these or correlated pairs. Metadata physical meanings are anonymized.
+Workbook: outputs/esa-thesis-review-20260922/ESA_research_review.xlsx.
+Results are a fixed snapshot with 14 completed rows and 2 pending specialist folds;
+refresh from actual saved results before the meeting. This snapshot does not
+claim the running campaign is finished. Keep code-side data selection training-only.
+
+
 Migration was postponed and research resumed on 22 September 2026. The user
 approved implementing the separate channels 14/21/29 Transformer and a combined
 calibration workflow. Implementation and tests are complete; the user should run
