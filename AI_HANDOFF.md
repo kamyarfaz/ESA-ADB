@@ -6,11 +6,13 @@ has changed. Paths below are relative to this repository so the folder can move.
 
 ## Start here: current user intent
 
-The user is moving this entire project by external hard drive to another server
-and may lose the chat. **Research is paused.** The latest request is to preserve
-context for a new AI assistant. No new training is authorized or running as part
-of this handoff. First help verify the transfer and recreate the environment.
-Read `MIGRATION.md`; do not assume a copied Conda environment will work.
+Migration was postponed and research resumed on 22 September 2026. The user
+approved implementing the separate channels 14/21/29 Transformer and a combined
+calibration workflow. Implementation and tests are complete; the user should run
+the GPU experiment from `docs/research/specialist-detector.md`. No real training
+has been started by the assistant and no specialist result is available yet.
+The old transfer manifest is stale after these edits. Regenerate it only if
+migration is requested again; the prior checks do not verify this changed tree.
 
 The user values direct, practical help and explicit runnable commands. They have
 asked for code, documentation and essential experiment artifacts to be backed up
@@ -151,11 +153,13 @@ Missed IDs: id_91, id_92, id_94, id_97. Three are annotated only on 14/21/29,
 outside baseline inputs; id_91 includes input channel 47. Missing channel coverage
 is not proof of an absolute recall ceiling because correlated signals may exist.
 
-Last suggested research direction (NOT implemented or authorized to run now):
-a separate detector for channels 14/21/29, retaining the eight-channel model,
-with a predeclared combined calibration policy and false-alarm budget.
-Naive OR fusion can increase false alarms. The user said “not now”; migration
-became the active task. Do not turn this suggestion into an automatic run.
+Current approved research direction: a separate detector for channels 14/21/29,
+retaining the eight-channel model. Implemented as `develop --channel-set specialist`.
+`combine-specialist` retains the baseline rule and calibrates an optional specialist
+OR branch: <=1% combined calibration prediction rate, no extra calibration false
+alarm events, ties disable the branch. See `docs/research/specialist-detector.md`.
+These constraints do not guarantee assessment performance. The specialist run and
+combination have not yet been run on real data. Existing baselines remain intact.
 
 ## Code map and verification
 
@@ -169,7 +173,7 @@ became the active task. Do not turn this suggestion into an automatic run.
 - `docs/README.md`: research documentation index.
 
 Full thesis test command: `python -m unittest discover -s tests/thesis -p 'test_*.py' -q`.
-36 tests passed during migration preparation. The doctor passed dataset/header
+36 tests passed during migration preparation; 40 pass after the specialist workflow. The doctor passed dataset/header
 checks; it does not certify full CSV contents or GPU training.
 Python 3.9 environment, torch 2.6.0+cu124, numpy 1.26.4, pandas 2.3.3.
 Dependencies and installation instructions are in README and requirements-test.txt.
@@ -199,8 +203,8 @@ Verified prepared-file SHA256:
 
 `MIGRATION.md` explains full external-disk copy/archive, destination checksum
 verification and environment recreation. `migration/manifest.json` is local,
-ignored by Git, and describes the source snapshot. It must be regenerated after
-this handoff is committed/pushed because Git metadata and documents changed.
+ignored by Git, and describes the source snapshot. It is now stale because research code and Git metadata changed after migration
+preparation. Regenerate it before any future transfer.
 Verify the destination BEFORE running imports or Git that may alter caches.
 Keep the original until destination verification reports zero failures.
 
@@ -227,6 +231,6 @@ contains more than the GitHub essential backup.
 ## First message to a replacement assistant
 
 “Read AGENTS.md, AI_HANDOFF.md and MIGRATION.md in this project. We moved servers
-and may have lost the old chat. First verify the transferred files and environment.
-Research is paused; do not train or delete anything. Summarize the current verified
-results and ask what I want to do next after migration checks are complete.”
+and may have lost the old chat. Check whether migration actually happened. Research resumed with an approved
+three-channel specialist experiment; read its protocol and inspect saved outputs
+to determine whether it has run. Do not delete artifacts or assume results exist.”

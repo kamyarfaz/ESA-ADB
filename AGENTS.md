@@ -4,9 +4,10 @@ Read `AI_HANDOFF.md` first. It records the research state and the user's current
 intent. Then read the documents and saved result files relevant to the task.
 This file supplements, and does not override, the user's current instructions.
 
-- Current priority is safe migration to another server. Research is paused.
-  Do not start training, delete artifacts or initiate a new experiment unless
-  the user requests it. Suggestions in research reports are not approved runs.
+- Migration is postponed; research resumed on 22 September 2026. The user
+  approved the separate three-channel detector and combined calibration workflow.
+  See AI_HANDOFF.md and docs/research/specialist-detector.md for the current plan.
+  Do not delete artifacts or treat unrelated report suggestions as approved runs.
 - The baseline `MultivariateAE` already uses Transformers. Do not propose adding
   a Transformer as though the baseline were a conventional dense autoencoder.
 - Preserve existing results. Use new output directories for new experiments.

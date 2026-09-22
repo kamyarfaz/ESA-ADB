@@ -24,7 +24,7 @@ QUANTILES = [90, 95, 97.5, 98, 99, 99.5, 99.75, 99.9, 99.95, 99.99, 100]
 
 def development_spec(channel_set, objective='pseudo-anomaly'):
     """Keep the original channel order, then append the fixed coverage ablation."""
-    if channel_set not in ('baseline', 'expanded'):
+    if channel_set not in ('baseline', 'expanded', 'specialist'):
         raise ValueError('Unknown channel set')
     if objective not in ('pseudo-anomaly', 'reconstruction'):
         raise ValueError('Unknown training objective')
@@ -33,6 +33,9 @@ def development_spec(channel_set, objective='pseudo-anomaly'):
     if channel_set == 'expanded':
         spec['run'] = 'pa_center_ch08_40_47_plus14_21_29'
         spec['features'] += ['channel_14', 'channel_21', 'channel_29']
+    elif channel_set == 'specialist':
+        spec['run'] = 'pa_center_ch03_14_21_29'
+        spec['features'] = ['channel_14', 'channel_21', 'channel_29']
     if objective == 'reconstruction':
         spec['run'] = spec['run'].replace('pa_center_', 'reconstruction_')
         spec['pseudo'] = False
@@ -180,7 +183,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--folds', nargs='+', choices=list(FOLDS), default=list(FOLDS))
     parser.add_argument('--output', type=Path, required=True)
-    parser.add_argument('--channel-set', choices=['baseline', 'expanded'], default='baseline')
+    parser.add_argument('--channel-set', choices=['baseline', 'expanded', 'specialist'], default='baseline')
     parser.add_argument('--objective', choices=['pseudo-anomaly', 'reconstruction'],
                         default='pseudo-anomaly', help='Training loss; default preserves the existing pseudo-anomaly baseline')
     parser.add_argument('--epochs', type=int, default=config.EPOCHS)

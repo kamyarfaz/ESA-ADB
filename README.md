@@ -357,3 +357,8 @@ follow [MIGRATION.md](MIGRATION.md). It includes SHA256 verification and environ
 
 Start with [AI_HANDOFF.md](AI_HANDOFF.md) for research state, results and migration
 context. Repository guidance is in [AGENTS.md](AGENTS.md).
+
+### Current research experiment
+
+Migration is postponed. The [separate three-channel Transformer experiment](docs/research/specialist-detector.md)
+provides training and calibration-only combination commands. No improvement is claimed before it completes.
