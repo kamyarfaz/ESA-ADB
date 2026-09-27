@@ -1,0 +1,794 @@
+{
+  "experiment": "long-baseline-v1",
+  "spec": {
+    "run": "pa_center_ch08_40_47",
+    "features": [
+      "channel_40",
+      "channel_41",
+      "channel_42",
+      "channel_43",
+      "channel_44",
+      "channel_45",
+      "channel_46",
+      "channel_47"
+    ],
+    "pseudo": true,
+    "group": "pseudo_anomaly"
+  },
+  "train": [
+    "2000-01-01",
+    "2006-01-01"
+  ],
+  "calibration": [
+    "2006-01-01",
+    "2007-01-01"
+  ],
+  "assessment": [
+    "2007-01-01",
+    "2014-01-01"
+  ],
+  "intervals": "[start,end)",
+  "epochs": 40,
+  "batch_size": 64,
+  "seed": 42,
+  "device": "cuda",
+  "max_train_windows": 0,
+  "window_policy": "all globally nominal stride-16 windows, length 256; no random window cap",
+  "scoring": "window_mean",
+  "precision": "float32",
+  "quantiles": [
+    90,
+    95,
+    97.5,
+    98,
+    99,
+    99.5,
+    99.75,
+    99.9,
+    99.95,
+    99.99,
+    100
+  ],
+  "merge_gaps": [
+    0,
+    16,
+    64
+  ],
+  "min_durs": [
+    1,
+    8,
+    32
+  ],
+  "checkpoint_selection": "2006 corrected calibration F0.5 every 5 epochs and final epoch; earliest tie",
+  "assessment_policy": "one frozen rule; continuous 2007\u20132013 scoring; pooled primary metric plus calendar-year slices, no yearly retuning",
+  "limitations": "Retrospective AE; inherited prepared preprocessing; later-period covariates and historical test results previously inspected; not untouched test. More years and uncapped window budget both differ from historical development runs.",
+  "inputs": {
+    "/home/k_faz/projects/ESA-ADB/data/preprocessed/multivariate/ESA-Mission1-semi-supervised/84_months.train.csv": {
+      "sha256": "fe6812dd5d324fe2eb347a703894551f0a03f40253742a3cd35f42d02fdb80ad",
+      "size": 7323166601,
+      "mtime_ns": 1790080947520719903
+    },
+    "/home/k_faz/projects/ESA-ADB/data/preprocessed/multivariate/ESA-Mission1-semi-supervised/84_months.test.csv": {
+      "sha256": "9990c46dba0101074a19b7e58382bee787ea9a2051230a5b1716d207d8315f6c",
+      "size": 7314490340,
+      "mtime_ns": 1790154857674108203
+    },
+    "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/labels.csv": {
+      "sha256": "1564d630f1ec1387d699ec81531ce57118051a220c8b7cba050a446a652b9082"
+    },
+    "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/anomaly_types.csv": {
+      "sha256": "e0cadee4ee9697c5ca8d4f9e81067454d7d7a00d063ee0de33cbc77660eec8bc"
+    }
+  },
+  "settings": {
+    "WANDB_PROJECT": "esa-adb-mission1",
+    "TRAIN_FILE": "/home/k_faz/projects/ESA-ADB/data/preprocessed/multivariate/ESA-Mission1-semi-supervised/84_months.train.csv",
+    "TEST_FILE": "/home/k_faz/projects/ESA-ADB/data/preprocessed/multivariate/ESA-Mission1-semi-supervised/84_months.test.csv",
+    "OUT_ROOT": "/home/k_faz/projects/ESA-ADB/results_longrun/mission1_esa_ew_v1",
+    "SEED": 42,
+    "DEVICE": "cuda",
+    "SEQ_LEN": 256,
+    "PATCH_SIZE": 16,
+    "STRIDE": 16,
+    "SCORE_STRIDE": 32,
+    "D_MODEL": 128,
+    "N_HEADS": 8,
+    "N_LAYERS": 4,
+    "D_FF_MULT": 2,
+    "DROPOUT": 0.1,
+    "EPOCHS": 40,
+    "BATCH_SIZE": 128,
+    "EVAL_BATCH_SIZE": 256,
+    "LR": 0.0001,
+    "WEIGHT_DECAY": 0.0001,
+    "GRAD_CLIP": 1.0,
+    "VAL_MONTHS": 3,
+    "ANNOTATIONS_FILE": "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/labels.csv",
+    "ANOMALY_TYPES_FILE": "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/anomaly_types.csv",
+    "MAX_TRAIN_WINDOWS": 250000,
+    "CLIP_Z": 10.0,
+    "AMP": false,
+    "TRAIN_MLP": true,
+    "MLP_PRED_LEN": 32,
+    "MLP_HIDDEN": 256,
+    "MLP_LAYERS": 4,
+    "MLP_EPOCHS": 30,
+    "MLP_LR": 0.0003,
+    "MLP_BATCH": 512,
+    "THRESH_PERCENTILES": [
+      50.0,
+      55.0,
+      60.0,
+      65.0,
+      70.0,
+      75.0,
+      80.0,
+      85.0,
+      90.0,
+      95.0,
+      96.0,
+      97.0,
+      98.0,
+      99.0,
+      99.3,
+      99.5,
+      99.7,
+      99.8,
+      99.9,
+      99.95,
+      99.97,
+      99.99
+    ],
+    "MERGE_GAPS": [
+      0,
+      16,
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "MIN_DURS": [
+      1,
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "SATURATION_RATE": 0.8,
+    "MAX_ZOOM_EVENTS": 24,
+    "ZOOM_PAD": 4096,
+    "PA_LAMBDA": 1.0,
+    "PA_MARGIN": 10.0,
+    "PA_SUBWIN": [
+      0.05,
+      0.33
+    ],
+    "RUN_SPECS": [
+      {
+        "run": "fed_ch06_41_46",
+        "features": [
+          "channel_41",
+          "channel_42",
+          "channel_43",
+          "channel_44",
+          "channel_45",
+          "channel_46"
+        ],
+        "group": "reference_like"
+      },
+      {
+        "run": "center_ch08_40_47",
+        "features": [
+          "channel_40",
+          "channel_41",
+          "channel_42",
+          "channel_43",
+          "channel_44",
+          "channel_45",
+          "channel_46",
+          "channel_47"
+        ],
+        "group": "previous_best_region"
+      },
+      {
+        "run": "center_ch12_38_49",
+        "features": [
+          "channel_38",
+          "channel_39",
+          "channel_40",
+          "channel_41",
+          "channel_42",
+          "channel_43",
+          "channel_44",
+          "channel_45",
+          "channel_46",
+          "channel_47",
+          "channel_48",
+          "channel_49"
+        ],
+        "group": "previous_best_region"
+      },
+      {
+        "run": "block_ch08_01_08",
+        "features": [
+          "channel_1",
+          "channel_2",
+          "channel_3",
+          "channel_4",
+          "channel_5",
+          "channel_6",
+          "channel_7",
+          "channel_8"
+        ],
+        "group": "block_best_event"
+      },
+      {
+        "run": "block_ch08_17_24",
+        "features": [
+          "channel_17",
+          "channel_18",
+          "channel_19",
+          "channel_20",
+          "channel_21",
+          "channel_22",
+          "channel_23",
+          "channel_24"
+        ],
+        "group": "block_good_point"
+      },
+      {
+        "run": "block_ch08_33_40",
+        "features": [
+          "channel_33",
+          "channel_34",
+          "channel_35",
+          "channel_36",
+          "channel_37",
+          "channel_38",
+          "channel_39",
+          "channel_40"
+        ],
+        "group": "block_best_point"
+      },
+      {
+        "run": "fine_ch08_03_10",
+        "features": [
+          "channel_3",
+          "channel_4",
+          "channel_5",
+          "channel_6",
+          "channel_7",
+          "channel_8",
+          "channel_9",
+          "channel_10"
+        ],
+        "group": "fine_early"
+      },
+      {
+        "run": "fine_ch08_05_12",
+        "features": [
+          "channel_5",
+          "channel_6",
+          "channel_7",
+          "channel_8",
+          "channel_9",
+          "channel_10",
+          "channel_11",
+          "channel_12"
+        ],
+        "group": "fine_early"
+      },
+      {
+        "run": "fine_ch08_13_20",
+        "features": [
+          "channel_13",
+          "channel_14",
+          "channel_15",
+          "channel_16",
+          "channel_17",
+          "channel_18",
+          "channel_19",
+          "channel_20"
+        ],
+        "group": "fine_middle_low"
+      },
+      {
+        "run": "fine_ch08_15_22",
+        "features": [
+          "channel_15",
+          "channel_16",
+          "channel_17",
+          "channel_18",
+          "channel_19",
+          "channel_20",
+          "channel_21",
+          "channel_22"
+        ],
+        "group": "fine_middle_low"
+      },
+      {
+        "run": "fine_ch08_19_26",
+        "features": [
+          "channel_19",
+          "channel_20",
+          "channel_21",
+          "channel_22",
+          "channel_23",
+          "channel_24",
+          "channel_25",
+          "channel_26"
+        ],
+        "group": "fine_middle_low"
+      },
+      {
+        "run": "fine_ch08_21_28",
+        "features": [
+          "channel_21",
+          "channel_22",
+          "channel_23",
+          "channel_24",
+          "channel_25",
+          "channel_26",
+          "channel_27",
+          "channel_28"
+        ],
+        "group": "fine_middle_low"
+      },
+      {
+        "run": "fine_ch08_29_36",
+        "features": [
+          "channel_29",
+          "channel_30",
+          "channel_31",
+          "channel_32",
+          "channel_33",
+          "channel_34",
+          "channel_35",
+          "channel_36"
+        ],
+        "group": "fine_middle_high"
+      },
+      {
+        "run": "fine_ch08_31_38",
+        "features": [
+          "channel_31",
+          "channel_32",
+          "channel_33",
+          "channel_34",
+          "channel_35",
+          "channel_36",
+          "channel_37",
+          "channel_38"
+        ],
+        "group": "fine_middle_high"
+      },
+      {
+        "run": "fine_ch08_35_42",
+        "features": [
+          "channel_35",
+          "channel_36",
+          "channel_37",
+          "channel_38",
+          "channel_39",
+          "channel_40",
+          "channel_41",
+          "channel_42"
+        ],
+        "group": "fine_middle_high"
+      },
+      {
+        "run": "fine_ch08_37_44",
+        "features": [
+          "channel_37",
+          "channel_38",
+          "channel_39",
+          "channel_40",
+          "channel_41",
+          "channel_42",
+          "channel_43",
+          "channel_44"
+        ],
+        "group": "fine_middle_high"
+      },
+      {
+        "run": "combo_ch16_01_16",
+        "features": [
+          "channel_1",
+          "channel_2",
+          "channel_3",
+          "channel_4",
+          "channel_5",
+          "channel_6",
+          "channel_7",
+          "channel_8",
+          "channel_9",
+          "channel_10",
+          "channel_11",
+          "channel_12",
+          "channel_13",
+          "channel_14",
+          "channel_15",
+          "channel_16"
+        ],
+        "group": "combo"
+      },
+      {
+        "run": "combo_ch16_17_32",
+        "features": [
+          "channel_17",
+          "channel_18",
+          "channel_19",
+          "channel_20",
+          "channel_21",
+          "channel_22",
+          "channel_23",
+          "channel_24",
+          "channel_25",
+          "channel_26",
+          "channel_27",
+          "channel_28",
+          "channel_29",
+          "channel_30",
+          "channel_31",
+          "channel_32"
+        ],
+        "group": "combo"
+      },
+      {
+        "run": "combo_ch16_29_44",
+        "features": [
+          "channel_29",
+          "channel_30",
+          "channel_31",
+          "channel_32",
+          "channel_33",
+          "channel_34",
+          "channel_35",
+          "channel_36",
+          "channel_37",
+          "channel_38",
+          "channel_39",
+          "channel_40",
+          "channel_41",
+          "channel_42",
+          "channel_43",
+          "channel_44"
+        ],
+        "group": "combo"
+      },
+      {
+        "run": "combo_ch24_17_40",
+        "features": [
+          "channel_17",
+          "channel_18",
+          "channel_19",
+          "channel_20",
+          "channel_21",
+          "channel_22",
+          "channel_23",
+          "channel_24",
+          "channel_25",
+          "channel_26",
+          "channel_27",
+          "channel_28",
+          "channel_29",
+          "channel_30",
+          "channel_31",
+          "channel_32",
+          "channel_33",
+          "channel_34",
+          "channel_35",
+          "channel_36",
+          "channel_37",
+          "channel_38",
+          "channel_39",
+          "channel_40"
+        ],
+        "group": "combo"
+      },
+      {
+        "run": "corr_ch24_12_35",
+        "features": [
+          "channel_12",
+          "channel_13",
+          "channel_14",
+          "channel_15",
+          "channel_16",
+          "channel_17",
+          "channel_18",
+          "channel_19",
+          "channel_20",
+          "channel_21",
+          "channel_22",
+          "channel_23",
+          "channel_24",
+          "channel_25",
+          "channel_26",
+          "channel_27",
+          "channel_28",
+          "channel_29",
+          "channel_30",
+          "channel_31",
+          "channel_32",
+          "channel_33",
+          "channel_34",
+          "channel_35"
+        ],
+        "group": "corr_cluster_a_core"
+      },
+      {
+        "run": "corr_ch19_17_35",
+        "features": [
+          "channel_17",
+          "channel_18",
+          "channel_19",
+          "channel_20",
+          "channel_21",
+          "channel_22",
+          "channel_23",
+          "channel_24",
+          "channel_25",
+          "channel_26",
+          "channel_27",
+          "channel_28",
+          "channel_29",
+          "channel_30",
+          "channel_31",
+          "channel_32",
+          "channel_33",
+          "channel_34",
+          "channel_35"
+        ],
+        "group": "corr_cluster_a_tight"
+      },
+      {
+        "run": "corr_ch12_41_52",
+        "features": [
+          "channel_41",
+          "channel_42",
+          "channel_43",
+          "channel_44",
+          "channel_45",
+          "channel_46",
+          "channel_47",
+          "channel_48",
+          "channel_49",
+          "channel_50",
+          "channel_51",
+          "channel_52"
+        ],
+        "group": "corr_cluster_b"
+      },
+      {
+        "run": "corr_ch26_20_45",
+        "features": [
+          "channel_20",
+          "channel_21",
+          "channel_22",
+          "channel_23",
+          "channel_24",
+          "channel_25",
+          "channel_26",
+          "channel_27",
+          "channel_28",
+          "channel_29",
+          "channel_30",
+          "channel_31",
+          "channel_32",
+          "channel_33",
+          "channel_34",
+          "channel_35",
+          "channel_36",
+          "channel_37",
+          "channel_38",
+          "channel_39",
+          "channel_40",
+          "channel_41",
+          "channel_42",
+          "channel_43",
+          "channel_44",
+          "channel_45"
+        ],
+        "group": "corr_cross_cluster"
+      },
+      {
+        "run": "corr_ch29_12_40",
+        "features": [
+          "channel_12",
+          "channel_13",
+          "channel_14",
+          "channel_15",
+          "channel_16",
+          "channel_17",
+          "channel_18",
+          "channel_19",
+          "channel_20",
+          "channel_21",
+          "channel_22",
+          "channel_23",
+          "channel_24",
+          "channel_25",
+          "channel_26",
+          "channel_27",
+          "channel_28",
+          "channel_29",
+          "channel_30",
+          "channel_31",
+          "channel_32",
+          "channel_33",
+          "channel_34",
+          "channel_35",
+          "channel_36",
+          "channel_37",
+          "channel_38",
+          "channel_39",
+          "channel_40"
+        ],
+        "group": "corr_cluster_a_full"
+      },
+      {
+        "run": "corr_neg_ch30_12_40_p61",
+        "features": [
+          "channel_12",
+          "channel_13",
+          "channel_14",
+          "channel_15",
+          "channel_16",
+          "channel_17",
+          "channel_18",
+          "channel_19",
+          "channel_20",
+          "channel_21",
+          "channel_22",
+          "channel_23",
+          "channel_24",
+          "channel_25",
+          "channel_26",
+          "channel_27",
+          "channel_28",
+          "channel_29",
+          "channel_30",
+          "channel_31",
+          "channel_32",
+          "channel_33",
+          "channel_34",
+          "channel_35",
+          "channel_36",
+          "channel_37",
+          "channel_38",
+          "channel_39",
+          "channel_40",
+          "channel_61"
+        ],
+        "group": "corr_neg_exploit"
+      },
+      {
+        "run": "clust_med_t03_6ch",
+        "features": [
+          "channel_3",
+          "channel_5",
+          "channel_13",
+          "channel_29",
+          "channel_48",
+          "channel_57"
+        ],
+        "selection": "clust_med_t03",
+        "group": "cluster_rep_leakfree"
+      },
+      {
+        "run": "clust_pair_t03_12ch",
+        "features": [
+          "channel_1",
+          "channel_3",
+          "channel_5",
+          "channel_6",
+          "channel_13",
+          "channel_29",
+          "channel_38",
+          "channel_39",
+          "channel_42",
+          "channel_48",
+          "channel_57",
+          "channel_60"
+        ],
+        "selection": "clust_pair_t03",
+        "group": "cluster_rep_leakfree"
+      },
+      {
+        "run": "pa_center_ch12_38_49",
+        "features": [
+          "channel_38",
+          "channel_39",
+          "channel_40",
+          "channel_41",
+          "channel_42",
+          "channel_43",
+          "channel_44",
+          "channel_45",
+          "channel_46",
+          "channel_47",
+          "channel_48",
+          "channel_49"
+        ],
+        "pseudo": true,
+        "group": "pseudo_anomaly"
+      },
+      {
+        "run": "pa_center_ch08_40_47",
+        "features": [
+          "channel_40",
+          "channel_41",
+          "channel_42",
+          "channel_43",
+          "channel_44",
+          "channel_45",
+          "channel_46",
+          "channel_47"
+        ],
+        "pseudo": true,
+        "group": "pseudo_anomaly"
+      },
+      {
+        "run": "pa_clust_med_t03_6ch",
+        "features": [
+          "channel_3",
+          "channel_5",
+          "channel_13",
+          "channel_29",
+          "channel_48",
+          "channel_57"
+        ],
+        "pseudo": true,
+        "selection": "clust_med_t03",
+        "group": "pseudo_anomaly"
+      }
+    ]
+  },
+  "source_sha256": {
+    "__init__.py": "c1a203ab62c1da4e9e29a56d18d05227c5546b02e612b11e5b00b508eb39c38e",
+    "__main__.py": "a3384088bc8b9c94ba9d240d68b7635b8dde94faa62151f5f8754eb6c8e27776",
+    "analysis/__init__.py": "29734b61efe34fab06735701fc7f80a115217f3c16e76c0fdb736317f5c5e825",
+    "analysis/correlation.py": "d1a121a0cfef43939edadffd58cdf7d180bb1c654202c5e65f76efe38a11de15",
+    "analysis/importance.py": "bc6c0fdfdf32e711b89eb96495976543182921aa5dcb3fdc2b9a0d8fd94df283",
+    "analysis/representatives.py": "4636ee4ac6d0f92ca4c1381d480d488be206183a9c14f961abefc169b0b796d8",
+    "augmentation.py": "2e4d7430d43f4cf2ade702ed04b4b690210198a78c1b5b677cc919b54222dcef",
+    "calibration/__init__.py": "a90e2369fc7de4729a9add632255a90dc8eb9bff64c09ddf5722b7c5a1da6aec",
+    "calibration/dspot.py": "38393323bc2f97b40438a986c02aa4a455d4ead0f32e8a557b5e408148ae5aa8",
+    "calibration/evt.py": "0763733ce48104de85db541b6ed81b2c7ef0c01dda38b54c3eb53e7b33d9fa49",
+    "checkpoints.py": "c5693341097578b4c299862def7c5e8ba22e89cf302e715e47ebcb88d4a712d7",
+    "combine_specialist.py": "ffd19a13565fe1dfe1289ba98f92309e16a07e528ff3ecf4c62e50fbbd62b152",
+    "config.py": "f6d0957cabf5a0005483710f1386093a8758ba20e8c61fcb9e5fcded61a7f18d",
+    "data.py": "c2fa6c8e3757d2fa95c865283bccd143ddb1229b451b82c308805e9b61385972",
+    "development.py": "2625ae8ff33142f26099132e6c2127a13608111b9c268361820375b5cead1d34",
+    "development_recovery.py": "dc6cd0786b69af6d11db0bc0b89cc8f7729f875ff9cbc897180a60a160d27be0",
+    "doctor.py": "919f34c1ccc80428b55cc5b0a3c985ef89ff5e4c64f2712f43b30527ac4c2a11",
+    "evaluation/__init__.py": "82bb137ec6f58f9641a1a0b2f2023922c5a4f536663cf8a3900c146c0bc627cf",
+    "evaluation/causal_alarms.py": "d3dc621b63c1ae01de85b696187110cc3350538a2d08645f0c188dbc83f25460",
+    "evaluation/compare_scoring.py": "88f3bb119271d95c7c1b744ac4bb732deb7b3064cc5f4864ed08786a79d9e1de",
+    "evaluation/coverage.py": "a3ae40e95092e93d43803ac91f075e343cff86aeb19e93a5dfad5c6dcc3261e0",
+    "evaluation/esa.py": "8a93619dc08c1127249e92956cd5d03a420dcddb8d7e8e5c0683477255d19cdf",
+    "evaluation/legacy_evaluation.py": "17870d38fdbd1a4a1bf610da802350765f4770e0dd557a412fca1d680758b74f",
+    "evaluation/legacy_scores.py": "e972f0c8ec4e86dd7058e4dba7b4f504ce5549406106311e56b26d54a0e75f6b",
+    "evaluation/mlp_ensemble.py": "29849ea14f9caf8a4d0e84e559b28aac6a6bdbf3e9add9fd396792590b543c5b",
+    "evaluation/recalibrate.py": "a5c9744245deae32f414b5b7c111fbf86b4c4ac90186106653c63689b229c2fc",
+    "evaluation/reselect.py": "e44c0629d9cf0db1246c2cb530b157d884f588947e28dbfe5f9d9ebb9fb24c03",
+    "evaluation/subset.py": "f1f9d2231afd5e9fee7d88a64a8052a5187d95c2c9ef88b6b3821d03a9409024",
+    "evaluation/subset_v1.py": "6e55977f26774784fa196c1b2148140ab0bbce033170c7ca6ceec5c8b7570c7f",
+    "forecast_development.py": "361cc221bdb18fc0355ff2d7df8ca82e9e94a664a340a8a8ada83476f0a545e4",
+    "forecasting.py": "8f328f8ce6b09efd014d82cf744880ee1c56b7e5b3adbe685287bca5880da494",
+    "long_baseline.py": "75c436e430abafe89522774bda92aed7a18bd24e14e15db06f5f7abd71ac0fd2",
+    "metrics.py": "35aa1359bc694d05b8d5317e3bbfc5d4125d975720f98eb7ca931fcadb15f857",
+    "models.py": "3f8137d6640a15d2d51594c8a2f337a57f3c17882944b14a0c00bd4ce5fa38c6",
+    "paths.py": "dbe622eba7b734711b021f1d3f682fc689ca93beb924d81c35b4f8804cf11d1e",
+    "plots.py": "a8915fafcbbfacb500f08c24cc63cedac970f79af9cdf293aa2c2908354a9e1c",
+    "protocol.py": "fa2b4fab33d2dd5ab651d47f714a12cc124b2eccb309a7ba2305cb460d501039",
+    "runtime.py": "dded85c44cb7d74c7964fc72046122b7999849d88ac9ec423557c2f2772162ba",
+    "scoring.py": "e86da8c7a63862edb4995b521d65a6b79ccf6a1ec21a0ae3ae79c2537c857d4b",
+    "thresholds.py": "85e5743196eec94d3580e381126080c9757f89ec3d467b5df6d8943b3e6e864c",
+    "tracking.py": "4d44a019ac7270e09c1e51e8fe5d60e4f02162b718c42e31e782f55c51f8f363",
+    "training.py": "fd67f2d890a98da309edf88ba01d5208d987c300baaf46ad69daaf43b00bb8a0"
+  }
+}

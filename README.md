@@ -12,6 +12,14 @@ is retained for preprocessing, reference algorithms, and evaluation research.
 `main` contains the organized project. [`previous_experiments`](https://github.com/kamyarfaz/ESA-ADB/tree/previous_experiments)
 preserves the earlier layout.
 
+## Current research status — 27 September 2026
+
+The full-period channels40–47 baseline reproduced system F0.5 **0.80572**.
+New experimental short coordinated augmentation is tested but not connected to a
+training command yet. See [AI handoff](AI_HANDOFF.md) for the latest state and
+[GitHub artifact backup](docs/research/github-backup-2026-09-27.md) for restoring
+recent selected checkpoints and results.
+
 ## 1. Clone and check the software
 
 The documented target is **Linux with Conda/Miniconda and Python 3.9**.
@@ -362,3 +370,7 @@ context. Repository guidance is in [AGENTS.md](AGENTS.md).
 
 Migration is postponed. The [separate three-channel Transformer experiment](docs/research/specialist-detector.md)
 provides training and calibration-only combination commands. No improvement is claimed before it completes.
+
+### Long-period eight-channel experiment
+
+See [the fixed protocol and GPU/resume commands](docs/research/long-baseline.md) for training on 2000–2005, calibration on 2006 and frozen evaluation on 2007–2013. This is a new experiment, not a completed result.

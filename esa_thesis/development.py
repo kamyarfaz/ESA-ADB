@@ -56,7 +56,17 @@ def load_period(path, features, start, end):
             keep = times < pd.Timestamp(end, tz='UTC')
             if start is not None:
                 keep &= times >= pd.Timestamp(start, tz='UTC')
-            frames.append(frame.loc[keep])
+            selected = frame.loc[keep].copy()
+            # Validate bounded columns before narrowing. Never coerce invalid labels
+            # to nominal, and avoid NumPy isin's large integer lookup-table path.
+            for column in labels:
+                values = selected[column].to_numpy()
+                valid = (values == 0) | (values == 1) | (values == 2) | (values == 3)
+                if not valid.all():
+                    bad = np.flatnonzero(~valid)[0]
+                    raise ValueError(f'Invalid label in {column} at {selected.iloc[bad]["timestamp"]}: {values[bad]!r}; validate the source CSV')
+                selected[column] = values.astype(np.int8)
+            frames.append(selected)
             if (times >= pd.Timestamp(end, tz='UTC')).any():
                 break
     frame = pd.concat(frames, ignore_index=True)
@@ -67,12 +77,13 @@ def load_period(path, features, start, end):
     if times[0] != expected_start or times[-1] != pd.Timestamp(end, tz='UTC').value-30_000_000_000:
         raise ValueError('Period does not cover its declared boundaries')
     values = frame[features].to_numpy(dtype=np.float32)
-    if not np.isfinite(values).all() or not np.isin(frame[labels].to_numpy(), [0, 1, 2, 3]).all():
+    if not np.isfinite(values).all():
         raise ValueError('Invalid features or labels; validate the source CSV')
     return values, get_y_any(frame), times
 
 
-def run_fold(spec, boundaries, output, *, epochs, device, batch_size, seed):
+def run_fold(spec, boundaries, output, *, epochs, device, batch_size, seed,
+             assessment_path=None, max_windows=config.MAX_TRAIN_WINDOWS):
     train_end, calibration_end, assessment_end = boundaries
     set_seed(seed)
     features = spec['features']
@@ -87,7 +98,7 @@ def run_fold(spec, boundaries, output, *, epochs, device, batch_size, seed):
         raise ValueError('No nominal training windows')
     if np.count_nonzero(y == 0) < 100:
         raise ValueError('Insufficient nominal samples for scaler')
-    dataset = NormalWindows(x, y)
+    dataset = NormalWindows(x, y, max_windows=max_windows)
     loader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
     print(f'{output.name}: {len(dataset)} nominal windows; loading calibration', flush=True)
     val, _, times = load_period(config.TRAIN_FILE, features, train_end, calibration_end)
@@ -164,7 +175,8 @@ def run_fold(spec, boundaries, output, *, epochs, device, batch_size, seed):
     saved = torch.load(output/'model_checkpoint.pt', map_location=device, weights_only=False)
     model.load_state_dict(saved['model_state_dict'])
     print(f'{output.name}: decision frozen; scoring assessment', flush=True)
-    assessment, _, times = load_period(config.TRAIN_FILE, features, calibration_end, assessment_end)
+    assessment, _, times = load_period(config.TRAIN_FILE if assessment_path is None else assessment_path,
+                                       features, calibration_end, assessment_end)
     scores, uncovered = paired_scores(model, scaler.transform(assessment), device=device, batch_size=batch_size)
     score = scores['window_mean']
     rule = best['rule']

@@ -1,0 +1,83 @@
+{
+  "metadata_equal": true,
+  "stages": [
+    {
+      "stage": "raw",
+      "exact_equal": true,
+      "differing_elements": 0,
+      "sha256_a": "ebbd1d1560a14db77731ba0dfd73c48a38f4c09f34c355feaa65a60b7dc293bd",
+      "sha256_b": "ebbd1d1560a14db77731ba0dfd73c48a38f4c09f34c355feaa65a60b7dc293bd",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "stage": "scaled",
+      "exact_equal": true,
+      "differing_elements": 0,
+      "sha256_a": "ae263dcc43aa091df0cc8b569cb37d7720afe4e9201b1a2c80bcd2f1b170c528",
+      "sha256_b": "ae263dcc43aa091df0cc8b569cb37d7720afe4e9201b1a2c80bcd2f1b170c528",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "stage": "timestamps",
+      "exact_equal": true,
+      "differing_elements": 0,
+      "sha256_a": "058ba95eef75aa6552400f600401dadec012ce780c21bead42f661b90c14534a",
+      "sha256_b": "058ba95eef75aa6552400f600401dadec012ce780c21bead42f661b90c14534a"
+    },
+    {
+      "stage": "reconstruction",
+      "exact_equal": true,
+      "differing_elements": 0,
+      "sha256_a": "bb1b84d88723842722e7cac2b859150d70cab2852d70f3302cd5dc8a3fce0e1a",
+      "sha256_b": "bb1b84d88723842722e7cac2b859150d70cab2852d70f3302cd5dc8a3fce0e1a",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "stage": "errors",
+      "exact_equal": true,
+      "differing_elements": 0,
+      "sha256_a": "4f84f6aa91eaa42d3c6b84c78aac5661c04dd6c3affc51a5eec4fd3757b5da75",
+      "sha256_b": "4f84f6aa91eaa42d3c6b84c78aac5661c04dd6c3affc51a5eec4fd3757b5da75",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "stage": "scores",
+      "exact_equal": true,
+      "differing_elements": 0,
+      "sha256_a": "0872fb62ca5f81868e665aedbbe7cec8a26b2b870040a9b72e32fd4f16d32fa1",
+      "sha256_b": "0872fb62ca5f81868e665aedbbe7cec8a26b2b870040a9b72e32fd4f16d32fa1",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "stage": "predictions",
+      "exact_equal": true,
+      "differing_elements": 0,
+      "sha256_a": "630f14e8710c290237b5289a97fd67a6ed69c4538cfd756b21d3048ba67717aa",
+      "sha256_b": "630f14e8710c290237b5289a97fd67a6ed69c4538cfd756b21d3048ba67717aa"
+    }
+  ],
+  "all_exact": true,
+  "protocol": {
+    "device": "cpu",
+    "threads": 1,
+    "epoch": 35,
+    "anchors": [
+      "2004-01-01 05:00",
+      "2004-01-24 08:00",
+      "2004-02-14 15:00",
+      "2004-03-01 12:00"
+    ],
+    "blocks": 4,
+    "samples_per_block": 2048,
+    "windows": 228,
+    "input_tensor_sha256": "1aec24f9f48f66358da7e9f52763ec774ac2d3b5497b9d936c73665608c048a2",
+    "model_sha256": "2c67262d16d02249beea5b7751b4775ce94bf067d022e927ff115aa01f91569a",
+    "source_sha256": {
+      "results_longrun/diagnostics/baseline_2004_epoch35_v2/calibration_inputs.npz": "7546a590badcf575cf501c5842138484766b94ecab222823d759be607b2d997c",
+      "results_longrun/development/ae_baseline_remaining_seed42/2004/model_checkpoint.pt": "504866e28aa6fb0cff9b5d6b7323c9c008b897d3186521a2c2d0178db96bebb3",
+      "results_longrun/development/ae_baseline_remaining_seed42/2004/frozen_rule.json": "b77c5359b6be1e6c43ea94df9b6928a1389eea0b60ffe71f402bb9e49b4d0fcd"
+    },
+    "threshold": 3.132171630859375,
+    "scope": "Fixed calibration blocks; edge context differs from full calibration aggregation. No event metrics, tuning, assessment or training."
+  }
+}

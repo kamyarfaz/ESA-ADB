@@ -1,0 +1,5 @@
+{
+  "status": "provisional_integrity_failures",
+  "reason": "Initial full pass completed, but verification reruns failed: channel43 ZIP CRC error then channel44 nonincreasing native timestamps. Subsequent isolated checks do not establish root cause or durable recovery. Do not use outputs to select preprocessing or train models.",
+  "additional_caveat": "Initial sample table includes one window starting before first native observation among no-old-observation windows; revised script separates incomplete history, but full revised verification has not passed."
+}

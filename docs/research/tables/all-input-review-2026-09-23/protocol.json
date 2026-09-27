@@ -1,0 +1,9 @@
+{
+  "interval": "[2000-01-01,2003-01-01)",
+  "telemetry": 76,
+  "telecommands": 698,
+  "physical_meanings": "Anonymized codes; no engineering semantics inferred.",
+  "review": "No source deletion or automatic model-input exclusion. No assessment statistics or training.",
+  "limitations": "Monthly raw envelopes include annotations and do not quantify nominal usefulness. Telecommand payload constancy does not mean inactivity. Correlations remain earlier hourly nominal exploratory estimates. No new preprocessing or predictive utility validated.",
+  "script_sha256": "a14869f71bc4ab03f9872f68d3a7174a84754b7ed0d8789e3e340ff3f9dcebc7"
+}

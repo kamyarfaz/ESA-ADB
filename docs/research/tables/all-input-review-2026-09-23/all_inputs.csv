@@ -1,0 +1,775 @@
+feature,kind,training_rows,duplicate_timestamps,backwards_steps,nonfinite,raw_unique,raw_changes,first,last,priority,subsystem,unit_code,target,currently_prepared,training_event_ids,source_bytes,source_mtime_ns,active_months,review
+channel_1,telemetry,1646573,0,0,0,3445,3698.0,2000-01-01 00:00:02.805000,2002-12-31 23:59:59.685000,,subsystem_1,physical_unit_1,NO,True,0,49309218,1711462390000000000,36,variable telemetry; review quality and complementarity
+channel_2,telemetry,1646573,0,0,0,2701,2863.0,2000-01-01 00:00:02.805000,2002-12-31 23:59:59.685000,,subsystem_1,physical_unit_1,NO,True,0,49264349,1711462398000000000,36,variable telemetry; review quality and complementarity
+channel_3,telemetry,1646573,0,0,0,19561,28424.0,2000-01-01 00:00:02.805000,2002-12-31 23:59:59.685000,,subsystem_1,physical_unit_1,NO,True,0,49793655,1711462468000000000,36,variable telemetry; review quality and complementarity
+channel_4,telemetry,593156,0,0,0,173,172.0,2000-01-01 00:01:51.549000,2002-12-31 23:59:47.682000,,subsystem_1,physical_unit_2,NO,True,0,18001425,1711462524000000000,36,variable telemetry; review quality and complementarity
+channel_5,telemetry,593156,0,0,0,173,172.0,2000-01-01 00:01:51.549000,2002-12-31 23:59:47.682000,,subsystem_1,physical_unit_2,NO,True,0,17995616,1711462580000000000,36,variable telemetry; review quality and complementarity
+channel_6,telemetry,593156,0,0,0,394,393.0,2000-01-01 00:01:51.549000,2002-12-31 23:59:47.682000,,subsystem_1,physical_unit_2,NO,True,0,18005576,1711462690000000000,36,variable telemetry; review quality and complementarity
+channel_7,telemetry,593156,0,0,0,193,192.0,2000-01-01 00:01:51.549000,2002-12-31 23:59:47.682000,,subsystem_1,physical_unit_2,NO,True,0,18002199,1711462782000000000,36,variable telemetry; review quality and complementarity
+channel_8,telemetry,593156,0,0,0,293,292.0,2000-01-01 00:01:51.549000,2002-12-31 23:59:47.682000,,subsystem_1,physical_unit_2,NO,True,0,17976890,1711462814000000000,36,variable telemetry; review quality and complementarity
+channel_9,telemetry,593156,0,0,0,293,292.0,2000-01-01 00:01:51.549000,2002-12-31 23:59:47.682000,,subsystem_1,physical_unit_2,NO,True,0,17976656,1711462892000000000,36,variable telemetry; review quality and complementarity
+channel_10,telemetry,593156,0,0,0,76,75.0,2000-01-01 00:01:51.549000,2002-12-31 23:59:47.682000,,subsystem_1,physical_unit_2,NO,True,0,17983810,1711462894000000000,36,variable telemetry; review quality and complementarity
+channel_11,telemetry,593156,0,0,0,170,169.0,2000-01-01 00:01:51.549000,2002-12-31 23:59:47.682000,,subsystem_1,physical_unit_2,NO,True,0,17973322,1711462400000000000,36,variable telemetry; review quality and complementarity
+channel_12,telemetry,1181414,0,0,0,116,376187.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,8,68102060,1711462408000000000,36,variable telemetry; review quality and complementarity
+channel_13,telemetry,1181414,0,0,0,109,396189.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,8,68164831,1711462416000000000,36,variable telemetry; review quality and complementarity
+channel_14,telemetry,1181414,0,0,0,153,393613.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,18,26546481,1711462420000000000,36,variable telemetry; review quality and complementarity
+channel_15,telemetry,1181414,0,0,0,145,410559.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,6,26647827,1711462424000000000,36,variable telemetry; review quality and complementarity
+channel_16,telemetry,1181414,0,0,0,152,386559.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,7,26439992,1711462426000000000,36,variable telemetry; review quality and complementarity
+channel_17,telemetry,1181414,0,0,0,146,405448.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,8,68367825,1711462434000000000,36,variable telemetry; review quality and complementarity
+channel_18,telemetry,1181414,0,0,0,142,413426.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,8,68622193,1711462444000000000,36,variable telemetry; review quality and complementarity
+channel_19,telemetry,1181414,0,0,0,166,405445.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,8,68615662,1711462452000000000,36,variable telemetry; review quality and complementarity
+channel_20,telemetry,1181414,0,0,0,131,401046.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,8,68352449,1711462462000000000,36,variable telemetry; review quality and complementarity
+channel_21,telemetry,1181414,0,0,0,153,403634.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,18,26594478,1711462470000000000,36,variable telemetry; review quality and complementarity
+channel_22,telemetry,1181414,0,0,0,155,390608.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,7,26426476,1711462474000000000,36,variable telemetry; review quality and complementarity
+channel_23,telemetry,1181414,0,0,0,137,405096.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,6,26636117,1711462476000000000,36,variable telemetry; review quality and complementarity
+channel_24,telemetry,1181414,0,0,0,155,379752.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,7,26429623,1711462480000000000,36,variable telemetry; review quality and complementarity
+channel_25,telemetry,1181414,0,0,0,127,422648.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,8,68617780,1711462488000000000,36,variable telemetry; review quality and complementarity
+channel_26,telemetry,1181414,0,0,0,115,421433.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,8,68595311,1711462498000000000,36,variable telemetry; review quality and complementarity
+channel_27,telemetry,1181414,0,0,0,145,411944.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,8,68463629,1711462506000000000,36,variable telemetry; review quality and complementarity
+channel_28,telemetry,1181414,0,0,0,155,408796.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,8,68618350,1711462516000000000,36,variable telemetry; review quality and complementarity
+channel_29,telemetry,1181414,0,0,0,148,390006.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,18,26497708,1711462520000000000,36,variable telemetry; review quality and complementarity
+channel_30,telemetry,1181414,0,0,0,98,403081.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,5,26470872,1711462522000000000,36,variable telemetry; review quality and complementarity
+channel_31,telemetry,1181414,0,0,0,155,391812.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,7,26473704,1711462528000000000,36,variable telemetry; review quality and complementarity
+channel_32,telemetry,1181414,0,0,0,201,387488.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,7,26448960,1711462532000000000,36,variable telemetry; review quality and complementarity
+channel_33,telemetry,1181414,0,0,0,120,405115.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,7,26563098,1711462534000000000,36,variable telemetry; review quality and complementarity
+channel_34,telemetry,1181414,0,0,0,115,415402.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,8,68371615,1711462544000000000,36,variable telemetry; review quality and complementarity
+channel_35,telemetry,1181414,0,0,0,121,417341.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,8,68660877,1711462552000000000,36,variable telemetry; review quality and complementarity
+channel_36,telemetry,1181414,0,0,0,159,413539.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,8,68652778,1711462560000000000,36,variable telemetry; review quality and complementarity
+channel_37,telemetry,1181414,0,0,0,141,409789.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,8,68539078,1711462570000000000,36,variable telemetry; review quality and complementarity
+channel_38,telemetry,1181414,0,0,0,98,398505.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,5,26483886,1711462572000000000,36,variable telemetry; review quality and complementarity
+channel_39,telemetry,1181414,0,0,0,159,391417.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,7,26467974,1711462576000000000,36,variable telemetry; review quality and complementarity
+channel_40,telemetry,1181414,0,0,0,119,390608.0,2000-01-01 00:00:06.633000,2002-12-31 23:58:45.513000,,subsystem_6,physical_unit_3,YES,True,7,26533933,1711462578000000000,36,variable telemetry; review quality and complementarity
+channel_41,telemetry,3308533,0,0,0,296,2687140.0,2000-01-01 00:00:16.353000,2002-12-31 23:59:55.233000,,subsystem_5,physical_unit_4,YES,True,22,83216184,1711462592000000000,36,variable telemetry; review quality and complementarity
+channel_42,telemetry,3308533,0,0,0,336,3026747.0,2000-01-01 00:00:16.353000,2002-12-31 23:59:55.233000,,subsystem_5,physical_unit_4,YES,True,22,85752416,1711462606000000000,36,variable telemetry; review quality and complementarity
+channel_43,telemetry,3308533,0,0,0,293,2710900.0,2000-01-01 00:00:16.353000,2002-12-31 23:59:55.233000,,subsystem_5,physical_unit_4,YES,True,22,83202471,1711462618000000000,36,variable telemetry; review quality and complementarity
+channel_44,telemetry,3308533,0,0,0,325,2990269.0,2000-01-01 00:00:16.353000,2002-12-31 23:59:55.233000,,subsystem_5,physical_unit_4,YES,True,22,85209141,1711462630000000000,36,variable telemetry; review quality and complementarity
+channel_45,telemetry,3308533,0,0,0,304,2743505.0,2000-01-01 00:00:16.353000,2002-12-31 23:59:55.233000,,subsystem_5,physical_unit_4,YES,True,22,83395435,1711462642000000000,36,variable telemetry; review quality and complementarity
+channel_46,telemetry,3308533,0,0,0,332,3008525.0,2000-01-01 00:00:16.353000,2002-12-31 23:59:55.233000,,subsystem_5,physical_unit_4,YES,True,21,85564289,1711462654000000000,36,variable telemetry; review quality and complementarity
+channel_47,telemetry,3150732,0,0,0,382,1103766.0,2000-01-01 00:00:16.353000,2002-12-31 23:59:55.233000,,subsystem_6,physical_unit_3,YES,True,15,73067793,1711462664000000000,36,variable telemetry; review quality and complementarity
+channel_48,telemetry,3150732,0,0,0,398,1070988.0,2000-01-01 00:00:16.353000,2002-12-31 23:59:55.233000,,subsystem_6,physical_unit_3,YES,True,15,72939166,1711462674000000000,36,variable telemetry; review quality and complementarity
+channel_49,telemetry,3150732,0,0,0,402,1065971.0,2000-01-01 00:00:16.353000,2002-12-31 23:59:55.233000,,subsystem_6,physical_unit_3,YES,True,15,72978527,1711462684000000000,36,variable telemetry; review quality and complementarity
+channel_50,telemetry,1134347,0,0,0,382,398168.0,2000-01-01 00:00:58.731000,2002-12-31 23:59:37.611000,,subsystem_6,physical_unit_3,YES,True,15,25693020,1711462688000000000,36,variable telemetry; review quality and complementarity
+channel_51,telemetry,1134347,0,0,0,399,387474.0,2000-01-01 00:00:58.731000,2002-12-31 23:59:37.611000,,subsystem_6,physical_unit_3,YES,True,15,25654814,1711462692000000000,36,variable telemetry; review quality and complementarity
+channel_52,telemetry,1134347,0,0,0,402,383497.0,2000-01-01 00:00:58.731000,2002-12-31 23:59:37.611000,,subsystem_6,physical_unit_3,YES,True,15,25664721,1711462696000000000,36,variable telemetry; review quality and complementarity
+channel_53,telemetry,3151584,0,0,0,5,1114708.0,2000-01-01 00:00:23.847000,2002-12-31 23:59:32.727000,,subsystem_3,physical_unit_5,NO,True,0,72835215,1711462706000000000,36,variable telemetry; review quality and complementarity
+channel_54,telemetry,3151584,0,0,0,5,858921.0,2000-01-01 00:00:23.847000,2002-12-31 23:59:32.727000,,subsystem_3,physical_unit_5,NO,True,0,72234536,1711462716000000000,36,variable telemetry; review quality and complementarity
+channel_55,telemetry,3151584,0,0,0,5,867572.0,2000-01-01 00:00:23.847000,2002-12-31 23:59:32.727000,,subsystem_3,physical_unit_5,NO,True,0,72118896,1711462724000000000,36,variable telemetry; review quality and complementarity
+channel_56,telemetry,3151584,0,0,0,5,1438235.0,2000-01-01 00:00:23.847000,2002-12-31 23:59:32.727000,,subsystem_3,physical_unit_5,NO,True,0,73428153,1711462736000000000,36,variable telemetry; review quality and complementarity
+channel_57,telemetry,3151584,0,0,0,288,1084286.0,2000-01-01 00:00:23.847000,2002-12-31 23:59:32.727000,,subsystem_6,physical_unit_3,YES,True,5,73445711,1711462748000000000,36,variable telemetry; review quality and complementarity
+channel_58,telemetry,3151584,0,0,0,231,1101199.0,2000-01-01 00:00:23.847000,2002-12-31 23:59:32.727000,,subsystem_6,physical_unit_3,YES,True,5,73397223,1711462758000000000,36,variable telemetry; review quality and complementarity
+channel_59,telemetry,3151584,0,0,0,347,1047161.0,2000-01-01 00:00:23.847000,2002-12-31 23:59:32.727000,,subsystem_6,physical_unit_3,YES,True,5,73310160,1711462770000000000,36,variable telemetry; review quality and complementarity
+channel_60,telemetry,3151584,0,0,0,226,1112591.0,2000-01-01 00:00:23.847000,2002-12-31 23:59:32.727000,,subsystem_6,physical_unit_3,YES,True,5,73419613,1711462780000000000,36,variable telemetry; review quality and complementarity
+channel_61,telemetry,104998,0,0,0,366,365.0,2000-01-01 00:06:45.177000,2002-12-31 23:57:54.057000,,subsystem_1,physical_unit_6,YES,True,0,2644244,1711462782000000000,36,variable telemetry; review quality and complementarity
+channel_62,telemetry,104998,0,0,0,366,365.0,2000-01-01 00:06:45.177000,2002-12-31 23:57:54.057000,,subsystem_1,physical_unit_6,YES,True,0,2644247,1711462782000000000,36,variable telemetry; review quality and complementarity
+channel_63,telemetry,104998,0,0,0,366,365.0,2000-01-01 00:06:45.177000,2002-12-31 23:57:54.057000,,subsystem_1,physical_unit_6,YES,True,0,2643865,1711462782000000000,36,variable telemetry; review quality and complementarity
+channel_64,telemetry,941650,0,0,0,13,5776.0,2000-01-01 00:02:24.552000,2002-12-31 23:59:33.429000,,subsystem_6,physical_unit_3,YES,True,1,22687286,1711462786000000000,36,variable telemetry; review quality and complementarity
+channel_65,telemetry,941650,0,0,0,13,13808.0,2000-01-01 00:02:24.552000,2002-12-31 23:59:33.429000,,subsystem_6,physical_unit_3,YES,True,1,22733515,1711462788000000000,36,variable telemetry; review quality and complementarity
+channel_66,telemetry,941650,0,0,0,106,192431.0,2000-01-01 00:02:24.552000,2002-12-31 23:59:33.429000,,subsystem_6,physical_unit_3,YES,True,4,23148991,1711462792000000000,36,variable telemetry; review quality and complementarity
+channel_67,telemetry,941650,0,0,0,11,281982.0,2000-01-01 00:02:24.552000,2002-12-31 23:59:33.429000,,subsystem_1,physical_unit_5,NO,True,0,23441566,1711462794000000000,36,variable telemetry; review quality and complementarity
+channel_68,telemetry,941650,0,0,0,4,63806.0,2000-01-01 00:02:24.552000,2002-12-31 23:59:33.429000,,subsystem_1,physical_unit_5,NO,True,0,23027243,1711462796000000000,36,variable telemetry; review quality and complementarity
+channel_69,telemetry,941650,0,0,0,7,12203.0,2000-01-01 00:02:24.552000,2002-12-31 23:59:33.429000,,subsystem_1,physical_unit_5,NO,True,0,22734765,1711462800000000000,36,variable telemetry; review quality and complementarity
+channel_70,telemetry,3150161,0,0,0,54,3086274.0,2000-01-01 00:00:05.463000,2002-12-31 23:59:44.343000,,subsystem_3,physical_unit_4,YES,True,3,80478464,1711462812000000000,36,variable telemetry; review quality and complementarity
+channel_71,telemetry,3149801,0,0,0,49,3142344.0,2000-01-01 00:00:19.344000,2002-12-31 23:59:58.224000,,subsystem_3,physical_unit_4,YES,True,3,79759647,1711462826000000000,36,variable telemetry; review quality and complementarity
+channel_72,telemetry,3149867,0,0,0,55,3135443.0,2000-01-01 00:00:03.219000,2002-12-31 23:59:42.099000,,subsystem_3,physical_unit_4,YES,True,4,80059251,1711462838000000000,36,variable telemetry; review quality and complementarity
+channel_73,telemetry,3150043,0,0,0,59,3129173.0,2000-01-01 00:00:17.094000,2002-12-31 23:59:55.974000,,subsystem_3,physical_unit_4,YES,True,11,80415987,1711462850000000000,36,variable telemetry; review quality and complementarity
+channel_74,telemetry,7769360,0,0,0,60,7638736.0,2000-01-01 00:00:00.969000,2002-12-31 23:59:39.849000,,subsystem_3,physical_unit_4,YES,True,10,106489224,1711462866000000000,36,variable telemetry; review quality and complementarity
+channel_75,telemetry,3150573,0,0,0,48,3027633.0,2000-01-01 00:00:14.847000,2002-12-31 23:59:53.727000,,subsystem_3,physical_unit_4,YES,True,11,80042256,1711462878000000000,36,variable telemetry; review quality and complementarity
+channel_76,telemetry,3150114,0,0,0,46,3036233.0,2000-01-01 00:00:28.722000,2002-12-31 23:59:37.599000,,subsystem_3,physical_unit_4,YES,True,8,79717520,1711462890000000000,36,variable telemetry; review quality and complementarity
+telecommand_1,telecommand,1,0,0,0,1,,2001-06-12 22:27:20.292000,2001-06-12 22:27:20.292000,1.0,,,,False,0,820,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_2,telecommand,2,0,0,0,1,,2000-03-21 01:45:02.979000,2000-03-21 01:45:04.152000,1.0,,,,False,0,838,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_3,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,689,1711462894000000000,0,no occurrences in first-fold training
+telecommand_4,telecommand,58,0,0,0,1,,2000-02-10 15:30:02.853000,2002-12-21 12:53:54.993000,1.0,,,,False,0,5823,1711462894000000000,19,event context candidate; constant payload is not uninformative
+telecommand_5,telecommand,13,0,0,0,1,,2000-02-10 22:08:54.297000,2002-06-23 20:01:59.508000,1.0,,,,False,0,3015,1711462894000000000,6,event context candidate; constant payload is not uninformative
+telecommand_6,telecommand,10,0,0,0,1,,2000-02-10 01:30:47.490000,2002-02-15 01:21:56.688000,1.0,,,,False,0,1200,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_7,telecommand,10,0,0,0,1,,2000-02-10 01:46:29.490000,2002-02-15 01:39:46.188000,1.0,,,,False,0,1202,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_8,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,703,1711462896000000000,0,no occurrences in first-fold training
+telecommand_9,telecommand,1184,0,0,0,1,,2000-01-01 14:59:47.064000,2002-12-31 00:48:38.148000,1.0,,,,False,0,35547,1711462896000000000,36,event context candidate; constant payload is not uninformative
+telecommand_10,telecommand,49,0,0,0,1,,2000-02-10 15:30:02.853000,2002-07-08 16:39:30.969000,1.0,,,,False,0,5228,1711462896000000000,6,event context candidate; constant payload is not uninformative
+telecommand_11,telecommand,10,0,0,0,1,,2000-02-10 01:30:47.490000,2002-02-15 01:21:56.688000,1.0,,,,False,0,1203,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_12,telecommand,3,0,0,0,1,,2000-03-21 01:45:13.368000,2001-08-30 12:00:56.397000,1.0,,,,False,0,877,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_13,telecommand,1,0,0,0,1,,2000-03-21 01:45:05.322000,2000-03-21 01:45:05.322000,1.0,,,,False,0,776,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_14,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,1988,1711462894000000000,0,no occurrences in first-fold training
+telecommand_15,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,709,1711462894000000000,0,no occurrences in first-fold training
+telecommand_16,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,767,1711462894000000000,0,no occurrences in first-fold training
+telecommand_17,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,704,1711462894000000000,0,no occurrences in first-fold training
+telecommand_18,telecommand,7,0,0,0,1,,2001-04-23 17:56:30.930000,2002-06-23 16:13:23.856000,1.0,,,,False,0,861,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_19,telecommand,12,0,0,0,1,,2000-02-10 15:43:08.568000,2002-06-23 19:49:02.610000,1.0,,,,False,0,944,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_20,telecommand,1,0,0,0,1,,2001-06-12 22:57:34.590000,2001-06-12 22:57:34.590000,1.0,,,,False,0,759,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_21,telecommand,2,0,0,0,1,,2001-06-12 22:52:28.314000,2001-06-12 23:02:11.514000,1.0,,,,False,0,2106,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_22,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,680,1711462894000000000,0,no occurrences in first-fold training
+telecommand_23,telecommand,1,0,0,0,1,,2001-06-12 22:55:02.418000,2001-06-12 22:55:02.418000,1.0,,,,False,0,734,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_24,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,737,1711462894000000000,0,no occurrences in first-fold training
+telecommand_25,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,721,1711462894000000000,0,no occurrences in first-fold training
+telecommand_26,telecommand,16,0,0,0,1,,2000-02-10 01:29:44.490000,2002-02-15 01:38:31.188000,1.0,,,,False,0,1467,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_27,telecommand,16,0,0,0,1,,2000-02-10 01:29:38.490000,2002-02-15 01:38:25.188000,1.0,,,,False,0,1470,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_28,telecommand,81,0,0,0,1,,2000-02-10 02:03:13.728000,2002-08-22 21:27:44.640000,1.0,,,,False,0,3020,1711462894000000000,8,event context candidate; constant payload is not uninformative
+telecommand_29,telecommand,83,0,0,0,1,,2000-02-10 01:12:40.728000,2002-08-22 21:22:56.163000,1.0,,,,False,0,2806,1711462894000000000,9,event context candidate; constant payload is not uninformative
+telecommand_30,telecommand,2,0,0,0,1,,2002-08-22 21:18:29.547000,2002-08-22 21:24:55.302000,1.0,,,,False,0,778,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_31,telecommand,15,0,0,0,1,,2000-02-10 01:29:59.490000,2002-08-22 21:26:14.337000,1.0,,,,False,0,1727,1711462894000000000,7,event context candidate; constant payload is not uninformative
+telecommand_32,telecommand,16,0,0,0,1,,2000-01-26 21:43:11.415000,2001-04-23 21:01:12,1.0,,,,False,0,959,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_33,telecommand,17,0,0,0,1,,2000-01-26 20:43:41.418000,2001-04-23 20:48:36,1.0,,,,False,0,951,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_34,telecommand,6,0,0,0,1,,2000-02-10 01:10:40.728000,2002-02-15 01:02:50.661000,2.0,,,,False,0,1000,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_35,telecommand,5,0,0,0,1,,2000-02-10 01:31:17.490000,2002-02-15 01:22:23.688000,2.0,,,,False,0,1008,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_36,telecommand,14,0,0,0,1,,2000-02-10 00:55:40.728000,2002-02-15 01:59:50.661000,3.0,,,,True,0,1262,1711462894000000000,6,event context candidate; constant payload is not uninformative
+telecommand_37,telecommand,0,0,0,0,0,,,,2.0,,,,False,0,704,1711462894000000000,0,no occurrences in first-fold training
+telecommand_38,telecommand,8,0,0,0,1,,2000-02-10 00:55:10.728000,2002-02-15 00:47:20.661000,3.0,,,,True,0,1022,1711462894000000000,6,event context candidate; constant payload is not uninformative
+telecommand_39,telecommand,8,0,0,0,1,,2000-02-10 03:37:40.728000,2002-02-15 03:29:50.661000,3.0,,,,True,0,1052,1711462894000000000,6,event context candidate; constant payload is not uninformative
+telecommand_40,telecommand,8,0,0,0,1,,2000-02-10 03:37:10.728000,2002-02-15 03:29:20.661000,3.0,,,,True,0,1050,1711462894000000000,6,event context candidate; constant payload is not uninformative
+telecommand_41,telecommand,10,0,0,0,1,,2000-02-10 03:36:40.728000,2002-02-15 03:28:50.661000,2.0,,,,False,0,1147,1711462894000000000,8,event context candidate; constant payload is not uninformative
+telecommand_42,telecommand,18,0,0,0,1,,2000-02-10 03:36:10.728000,2002-02-15 03:28:20.661000,1.0,,,,False,0,1153,1711462894000000000,10,event context candidate; constant payload is not uninformative
+telecommand_43,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,1394,1711462894000000000,0,no occurrences in first-fold training
+telecommand_44,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,1398,1711462894000000000,0,no occurrences in first-fold training
+telecommand_45,telecommand,141,0,0,0,1,,2000-01-06 23:55:50.160000,2002-12-21 23:55:45.714000,1.0,,,,False,0,5608,1711462894000000000,36,event context candidate; constant payload is not uninformative
+telecommand_46,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,752,1711462894000000000,0,no occurrences in first-fold training
+telecommand_47,telecommand,5,0,0,0,1,,2000-02-10 01:30:05.490000,2002-02-15 01:21:11.688000,1.0,,,,False,0,1015,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_48,telecommand,5,0,0,0,1,,2000-02-10 01:30:08.490000,2002-02-15 01:21:14.688000,1.0,,,,False,0,1004,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_49,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,706,1711462894000000000,0,no occurrences in first-fold training
+telecommand_50,telecommand,1,0,0,0,1,,2002-06-23 19:18:27.396000,2002-06-23 19:18:27.396000,1.0,,,,False,0,696,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_51,telecommand,2,0,0,0,1,,2001-04-23 17:19:58.482000,2001-04-23 21:28:17.457000,1.0,,,,False,0,731,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_52,telecommand,1,0,0,0,1,,2002-06-23 15:09:41.736000,2002-06-23 15:09:41.736000,1.0,,,,False,0,691,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_53,telecommand,2,0,0,0,1,,2000-02-10 15:41:12.351000,2001-04-23 12:43:49.719000,1.0,,,,False,0,750,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_54,telecommand,3,0,0,0,1,,2000-02-10 20:25:25.275000,2002-06-23 19:52:27.960000,1.0,,,,False,0,761,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_55,telecommand,16,0,0,0,1,,2000-02-10 01:29:17.490000,2002-02-15 01:38:04.188000,1.0,,,,False,0,1467,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_56,telecommand,6,0,0,0,1,,2000-02-10 01:44:20.490000,2002-02-15 01:37:34.188000,1.0,,,,False,0,1040,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_57,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,729,1711462894000000000,0,no occurrences in first-fold training
+telecommand_58,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,708,1711462894000000000,0,no occurrences in first-fold training
+telecommand_59,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,708,1711462894000000000,0,no occurrences in first-fold training
+telecommand_60,telecommand,365,0,0,0,1,,2000-01-02 15:00:03.006000,2002-12-29 15:00:00.006000,1.0,,,,False,0,10494,1711462894000000000,36,event context candidate; constant payload is not uninformative
+telecommand_61,telecommand,32,0,0,0,1,,2000-02-10 01:29:20.490000,2002-02-15 01:38:10.188000,1.0,,,,False,0,1987,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_62,telecommand,16,0,0,0,1,,2000-02-10 01:29:26.490000,2002-02-15 01:38:13.188000,1.0,,,,False,0,1468,1711462896000000000,5,event context candidate; constant payload is not uninformative
+telecommand_63,telecommand,16,0,0,0,1,,2000-02-10 01:29:29.490000,2002-02-15 01:38:16.188000,1.0,,,,False,0,1466,1711462896000000000,5,event context candidate; constant payload is not uninformative
+telecommand_64,telecommand,16,0,0,0,1,,2000-02-10 01:29:32.490000,2002-02-15 01:38:19.188000,1.0,,,,False,0,1469,1711462896000000000,5,event context candidate; constant payload is not uninformative
+telecommand_65,telecommand,16,0,0,0,1,,2000-02-10 01:29:35.490000,2002-02-15 01:38:22.188000,1.0,,,,False,0,1470,1711462896000000000,5,event context candidate; constant payload is not uninformative
+telecommand_66,telecommand,16,0,0,0,1,,2000-02-10 01:29:41.490000,2002-02-15 01:38:28.188000,1.0,,,,False,0,1465,1711462896000000000,5,event context candidate; constant payload is not uninformative
+telecommand_67,telecommand,16,0,0,0,1,,2000-02-10 01:29:47.490000,2002-02-15 01:38:34.188000,1.0,,,,False,0,1469,1711462896000000000,5,event context candidate; constant payload is not uninformative
+telecommand_68,telecommand,5,0,0,0,1,,2000-02-10 01:30:35.490000,2002-02-15 01:21:41.688000,1.0,,,,False,0,1006,1711462896000000000,5,event context candidate; constant payload is not uninformative
+telecommand_69,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,707,1711462896000000000,0,no occurrences in first-fold training
+telecommand_70,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,707,1711462896000000000,0,no occurrences in first-fold training
+telecommand_71,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,705,1711462896000000000,0,no occurrences in first-fold training
+telecommand_72,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,720,1711462896000000000,0,no occurrences in first-fold training
+telecommand_73,telecommand,1,0,0,0,1,,2001-03-12 21:03:00,2001-03-12 21:03:00,1.0,,,,False,0,693,1711462896000000000,1,event context candidate; constant payload is not uninformative
+telecommand_74,telecommand,1,0,0,0,1,,2001-03-12 21:03:30,2001-03-12 21:03:30,1.0,,,,False,0,696,1711462896000000000,1,event context candidate; constant payload is not uninformative
+telecommand_75,telecommand,1,0,0,0,1,,2001-03-12 21:03:03,2001-03-12 21:03:03,1.0,,,,False,0,692,1711462896000000000,1,event context candidate; constant payload is not uninformative
+telecommand_76,telecommand,1,0,0,0,1,,2001-03-12 21:03:33,2001-03-12 21:03:33,1.0,,,,False,0,692,1711462896000000000,1,event context candidate; constant payload is not uninformative
+telecommand_77,telecommand,5,0,0,0,1,,2000-02-10 01:46:20.490000,2002-02-15 01:39:34.188000,1.0,,,,False,0,998,1711462896000000000,5,event context candidate; constant payload is not uninformative
+telecommand_78,telecommand,5,0,0,0,1,,2000-02-10 01:45:50.490000,2002-02-15 01:39:04.188000,1.0,,,,False,0,1034,1711462896000000000,5,event context candidate; constant payload is not uninformative
+telecommand_79,telecommand,2,0,0,0,1,,2000-01-26 21:08:51.939000,2000-07-31 05:04:48.693000,1.0,,,,False,0,706,1711462896000000000,2,event context candidate; constant payload is not uninformative
+telecommand_80,telecommand,2,0,0,0,1,,2000-01-26 21:12:59.286000,2000-07-31 05:07:00.585000,1.0,,,,False,0,706,1711462896000000000,2,event context candidate; constant payload is not uninformative
+telecommand_81,telecommand,2,0,0,0,1,,2000-01-26 21:15:45.516000,2000-07-31 05:09:51.477000,1.0,,,,False,0,706,1711462896000000000,2,event context candidate; constant payload is not uninformative
+telecommand_82,telecommand,2,0,0,0,1,,2000-01-26 21:18:46.614000,2000-07-31 05:12:50.118000,1.0,,,,False,0,703,1711462896000000000,2,event context candidate; constant payload is not uninformative
+telecommand_83,telecommand,2,0,0,0,1,,2000-01-26 21:23:48.651000,2000-07-31 05:15:38.247000,1.0,,,,False,0,703,1711462896000000000,2,event context candidate; constant payload is not uninformative
+telecommand_84,telecommand,2,0,0,0,1,,2000-01-26 21:30:45.558000,2000-07-31 05:21:53.454000,1.0,,,,False,0,706,1711462896000000000,2,event context candidate; constant payload is not uninformative
+telecommand_85,telecommand,2,0,0,0,1,,2000-01-26 21:32:53.070000,2000-07-31 05:23:58.710000,1.0,,,,False,0,704,1711462896000000000,2,event context candidate; constant payload is not uninformative
+telecommand_86,telecommand,2,0,0,0,1,,2000-01-26 21:36:59.790000,2000-07-31 05:27:44.130000,1.0,,,,False,0,706,1711462896000000000,2,event context candidate; constant payload is not uninformative
+telecommand_87,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,681,1711462896000000000,0,no occurrences in first-fold training
+telecommand_88,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,680,1711462896000000000,0,no occurrences in first-fold training
+telecommand_89,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,681,1711462896000000000,0,no occurrences in first-fold training
+telecommand_90,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,681,1711462896000000000,0,no occurrences in first-fold training
+telecommand_91,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,681,1711462896000000000,0,no occurrences in first-fold training
+telecommand_92,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,681,1711462896000000000,0,no occurrences in first-fold training
+telecommand_93,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,681,1711462896000000000,0,no occurrences in first-fold training
+telecommand_94,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,681,1711462896000000000,0,no occurrences in first-fold training
+telecommand_95,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,706,1711462896000000000,0,no occurrences in first-fold training
+telecommand_96,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,706,1711462896000000000,0,no occurrences in first-fold training
+telecommand_97,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,706,1711462896000000000,0,no occurrences in first-fold training
+telecommand_98,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,704,1711462896000000000,0,no occurrences in first-fold training
+telecommand_99,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,706,1711462896000000000,0,no occurrences in first-fold training
+telecommand_100,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,705,1711462896000000000,0,no occurrences in first-fold training
+telecommand_101,telecommand,16,0,0,0,1,,2000-02-10 01:29:53.490000,2002-02-15 01:38:40.188000,1.0,,,,False,0,1473,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_102,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,830,1711462894000000000,0,no occurrences in first-fold training
+telecommand_103,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,753,1711462894000000000,0,no occurrences in first-fold training
+telecommand_104,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,753,1711462894000000000,0,no occurrences in first-fold training
+telecommand_105,telecommand,5,0,0,0,1,,2000-02-10 01:30:14.490000,2002-02-15 01:21:20.688000,1.0,,,,False,0,1011,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_106,telecommand,5,0,0,0,1,,2000-02-10 01:30:17.490000,2002-02-15 01:21:23.688000,1.0,,,,False,0,1013,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_107,telecommand,1,0,0,0,1,,2000-07-06 16:44:59.127000,2000-07-06 16:44:59.127000,1.0,,,,False,0,695,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_108,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,682,1711462894000000000,0,no occurrences in first-fold training
+telecommand_109,telecommand,1,0,0,0,1,,2000-07-06 17:20:30.336000,2000-07-06 17:20:30.336000,1.0,,,,False,0,695,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_110,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,683,1711462894000000000,0,no occurrences in first-fold training
+telecommand_111,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,807,1711462894000000000,0,no occurrences in first-fold training
+telecommand_112,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,723,1711462894000000000,0,no occurrences in first-fold training
+telecommand_113,telecommand,12,0,0,0,1,,2000-02-10 01:11:10.728000,2002-02-15 01:59:20.661000,1.0,,,,False,0,1240,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_114,telecommand,6,0,0,0,1,,2000-02-10 02:04:43.728000,2002-02-15 01:56:53.661000,1.0,,,,False,0,1021,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_115,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,763,1711462894000000000,0,no occurrences in first-fold training
+telecommand_116,telecommand,14,0,0,0,1,,2000-02-10 02:00:10.728000,2002-02-15 01:54:20.661000,1.0,,,,False,0,1296,1711462894000000000,6,event context candidate; constant payload is not uninformative
+telecommand_117,telecommand,98,0,0,0,1,,2000-02-07 18:00:29.997000,2002-12-02 19:25:26.448000,1.0,,,,False,0,3567,1711462894000000000,34,event context candidate; constant payload is not uninformative
+telecommand_118,telecommand,98,0,0,0,1,,2000-02-07 17:59:59.997000,2002-12-02 19:24:56.448000,1.0,,,,False,0,3552,1711462894000000000,34,event context candidate; constant payload is not uninformative
+telecommand_119,telecommand,802,0,0,0,1,,2000-01-01 14:59:44.064000,2002-12-31 00:48:35.148000,1.0,,,,False,0,24119,1711462894000000000,36,event context candidate; constant payload is not uninformative
+telecommand_120,telecommand,5,0,0,0,1,,2000-02-10 01:54:25.728000,2002-02-15 03:40:20.661000,1.0,,,,False,0,988,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_121,telecommand,5,0,0,0,1,,2000-02-10 01:30:11.490000,2002-02-15 01:21:17.688000,1.0,,,,False,0,1007,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_122,telecommand,6,0,0,0,1,,2000-02-10 01:13:16.728000,2002-02-15 01:05:26.661000,1.0,,,,False,0,1028,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_123,telecommand,6,0,0,0,1,,2000-02-10 01:52:40.728000,2002-02-15 01:44:50.661000,1.0,,,,False,0,1043,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_124,telecommand,0,0,0,0,0,,,,2.0,,,,False,0,746,1711462894000000000,0,no occurrences in first-fold training
+telecommand_125,telecommand,0,0,0,0,0,,,,2.0,,,,False,0,744,1711462894000000000,0,no occurrences in first-fold training
+telecommand_126,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,743,1711462894000000000,0,no occurrences in first-fold training
+telecommand_127,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,697,1711462894000000000,0,no occurrences in first-fold training
+telecommand_128,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,696,1711462894000000000,0,no occurrences in first-fold training
+telecommand_129,telecommand,1,0,0,0,1,,2001-04-23 20:46:06,2001-04-23 20:46:06,1.0,,,,False,0,735,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_130,telecommand,1,0,0,0,1,,2001-04-23 20:48:36,2001-04-23 20:48:36,1.0,,,,False,0,724,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_131,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,712,1711462894000000000,0,no occurrences in first-fold training
+telecommand_132,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,746,1711462894000000000,0,no occurrences in first-fold training
+telecommand_133,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,697,1711462894000000000,0,no occurrences in first-fold training
+telecommand_134,telecommand,8,0,0,0,1,,2000-02-10 03:33:10.728000,2002-02-15 03:25:20.661000,1.0,,,,False,0,1053,1711462894000000000,6,event context candidate; constant payload is not uninformative
+telecommand_135,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,710,1711462894000000000,0,no occurrences in first-fold training
+telecommand_136,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,712,1711462894000000000,0,no occurrences in first-fold training
+telecommand_137,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,713,1711462894000000000,0,no occurrences in first-fold training
+telecommand_138,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,712,1711462894000000000,0,no occurrences in first-fold training
+telecommand_139,telecommand,16,0,0,0,1,,2000-02-10 01:29:50.490000,2002-02-15 01:38:37.188000,1.0,,,,False,0,1472,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_140,telecommand,23,0,0,0,1,,2000-02-10 01:10:10.728000,2002-02-15 02:00:20.661000,1.0,,,,False,0,1705,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_141,telecommand,12,0,0,0,1,,2000-02-10 15:30:02.853000,2002-06-23 14:49:23.568000,1.0,,,,False,0,969,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_142,telecommand,10,0,0,0,1,,2000-02-10 01:30:47.490000,2002-02-15 01:21:56.688000,1.0,,,,False,0,1205,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_143,telecommand,22,0,0,0,1,,2000-02-10 01:30:47.490000,2002-06-23 14:49:23.568000,1.0,,,,False,0,1431,1711462894000000000,8,event context candidate; constant payload is not uninformative
+telecommand_144,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,732,1711462894000000000,0,no occurrences in first-fold training
+telecommand_145,telecommand,10,0,0,0,1,,2000-02-10 01:30:02.490000,2002-02-15 01:39:37.188000,1.0,,,,False,0,1263,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_146,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,713,1711462894000000000,0,no occurrences in first-fold training
+telecommand_147,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,712,1711462894000000000,0,no occurrences in first-fold training
+telecommand_148,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,732,1711462894000000000,0,no occurrences in first-fold training
+telecommand_149,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,730,1711462894000000000,0,no occurrences in first-fold training
+telecommand_150,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,726,1711462894000000000,0,no occurrences in first-fold training
+telecommand_151,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,728,1711462894000000000,0,no occurrences in first-fold training
+telecommand_152,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,695,1711462894000000000,0,no occurrences in first-fold training
+telecommand_153,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,695,1711462894000000000,0,no occurrences in first-fold training
+telecommand_154,telecommand,1,0,0,0,1,,2000-07-27 18:26:58.509000,2000-07-27 18:26:58.509000,1.0,,,,False,0,727,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_155,telecommand,2,0,0,0,1,,2000-07-27 16:54:55.836000,2000-07-27 19:38:30.120000,1.0,,,,False,0,745,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_156,telecommand,6,0,0,0,1,,2000-07-27 16:58:55.287000,2000-07-31 03:01:20.685000,1.0,,,,False,0,837,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_157,telecommand,6,0,0,0,1,,2000-07-27 16:56:28.086000,2000-07-31 02:58:32.007000,1.0,,,,False,0,837,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_158,telecommand,2,0,0,0,1,,2000-07-27 19:48:58.587000,2000-07-31 03:33:00.303000,2.0,,,,False,0,771,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_159,telecommand,2,0,0,0,1,,2000-07-28 06:55:12.657000,2000-07-31 04:17:27.882000,2.0,,,,False,0,777,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_160,telecommand,1,0,0,0,1,,2000-07-27 19:55:14.133000,2000-07-27 19:55:14.133000,1.0,,,,False,0,722,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_161,telecommand,1,0,0,0,1,,2000-07-27 20:50:46.002000,2000-07-27 20:50:46.002000,1.0,,,,False,0,734,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_162,telecommand,5,0,0,0,1,,2000-07-27 19:58:49.515000,2000-07-31 03:54:12.177000,1.0,,,,False,0,824,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_163,telecommand,5,0,0,0,1,,2000-07-27 19:56:26.016000,2000-07-31 03:37:54.015000,1.0,,,,False,0,826,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_164,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,693,1711462894000000000,0,no occurrences in first-fold training
+telecommand_165,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,693,1711462894000000000,0,no occurrences in first-fold training
+telecommand_166,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,793,1711462894000000000,0,no occurrences in first-fold training
+telecommand_167,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,757,1711462894000000000,0,no occurrences in first-fold training
+telecommand_168,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,698,1711462894000000000,0,no occurrences in first-fold training
+telecommand_169,telecommand,13,0,0,0,1,,2000-03-20 01:45:57.648000,2000-07-06 17:18:00,0.0,,,,False,0,2563,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_170,telecommand,6,0,0,0,1,,2000-03-20 01:45:44.586000,2000-07-06 17:18:00,0.0,,,,False,0,2123,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_171,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,808,1711462894000000000,0,no occurrences in first-fold training
+telecommand_172,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,775,1711462894000000000,0,no occurrences in first-fold training
+telecommand_173,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,720,1711462894000000000,0,no occurrences in first-fold training
+telecommand_174,telecommand,21,0,0,0,1,,2000-03-20 17:23:16.341000,2002-08-22 21:28:07.350000,0.0,,,,False,0,1954,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_175,telecommand,25,0,0,0,1,,2000-03-20 01:45:57.648000,2001-04-05 15:00:00,0.0,,,,False,0,2883,1711462894000000000,6,event context candidate; constant payload is not uninformative
+telecommand_176,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,746,1711462894000000000,0,no occurrences in first-fold training
+telecommand_177,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,1995,1711462894000000000,0,no occurrences in first-fold training
+telecommand_178,telecommand,4,0,0,0,1,,2001-04-23 20:45:15,2001-04-23 20:49:09,0.0,,,,False,0,937,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_179,telecommand,82,0,0,0,1,,2000-03-29 21:30:00,2002-11-14 16:58:59.238000,0.0,,,,False,0,21938,1711462894000000000,12,event context candidate; constant payload is not uninformative
+telecommand_180,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,1340,1711462894000000000,0,no occurrences in first-fold training
+telecommand_181,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,10924,1711462894000000000,0,no occurrences in first-fold training
+telecommand_182,telecommand,2,0,0,0,1,,2000-07-27 19:50:21.264000,2000-07-31 03:34:24.783000,0.0,,,,False,0,780,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_183,telecommand,3,0,0,0,1,,2000-03-20 10:42:19.014000,2000-03-21 02:24:34.254000,0.0,,,,False,0,977,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_184,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,709,1711462894000000000,0,no occurrences in first-fold training
+telecommand_185,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,683,1711462894000000000,0,no occurrences in first-fold training
+telecommand_186,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,683,1711462894000000000,0,no occurrences in first-fold training
+telecommand_187,telecommand,2,0,0,0,1,,2001-06-12 22:51:38.958000,2001-06-12 23:00:19.314000,0.0,,,,False,0,2055,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_188,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,792,1711462894000000000,0,no occurrences in first-fold training
+telecommand_189,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,683,1711462894000000000,0,no occurrences in first-fold training
+telecommand_190,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,751,1711462894000000000,0,no occurrences in first-fold training
+telecommand_191,telecommand,1,0,0,0,1,,2000-03-21 02:26:49.590000,2000-03-21 02:26:49.590000,0.0,,,,False,0,799,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_192,telecommand,1,0,0,0,1,,2000-03-21 02:26:59.310000,2000-03-21 02:26:59.310000,0.0,,,,False,0,801,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_193,telecommand,1,0,0,0,1,,2000-03-21 02:27:14.934000,2000-03-21 02:27:14.934000,0.0,,,,False,0,800,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_194,telecommand,1,0,0,0,1,,2000-03-21 02:27:30.486000,2000-03-21 02:27:30.486000,0.0,,,,False,0,803,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_195,telecommand,647,0,0,0,1,,2000-01-03 07:42:41.241000,2002-12-29 12:00:19.956000,0.0,,,,False,0,23101,1711462894000000000,31,event context candidate; constant payload is not uninformative
+telecommand_196,telecommand,302,0,0,0,1,,2000-03-23 14:19:52.851000,2002-03-03 22:30:09.375000,0.0,,,,False,0,9915,1711462894000000000,8,event context candidate; constant payload is not uninformative
+telecommand_197,telecommand,469,0,0,0,1,,2000-01-03 07:29:25.524000,2002-12-29 11:49:34.641000,0.0,,,,False,0,15091,1711462894000000000,33,event context candidate; constant payload is not uninformative
+telecommand_198,telecommand,94308,0,0,0,1,,2000-01-03 07:29:27.549000,2002-12-29 11:50:04.812000,0.0,,,,False,0,1291668,1711462894000000000,31,event context candidate; constant payload is not uninformative
+telecommand_199,telecommand,464,0,0,0,1,,2000-01-03 07:30:17.874000,2002-12-29 11:50:05.979000,0.0,,,,False,0,15162,1711462894000000000,33,event context candidate; constant payload is not uninformative
+telecommand_200,telecommand,6,0,0,0,1,,2000-07-12 18:57:53.622000,2000-11-30 14:12:38.949000,0.0,,,,False,0,763,1711462894000000000,4,event context candidate; constant payload is not uninformative
+telecommand_201,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,715,1711462894000000000,0,no occurrences in first-fold training
+telecommand_202,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,716,1711462894000000000,0,no occurrences in first-fold training
+telecommand_203,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,1087,1711462894000000000,0,no occurrences in first-fold training
+telecommand_204,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,707,1711462894000000000,0,no occurrences in first-fold training
+telecommand_205,telecommand,1,0,0,0,1,,2000-03-21 01:49:15.825000,2000-03-21 01:49:15.825000,0.0,,,,False,0,764,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_206,telecommand,4,0,0,0,1,,2000-03-21 01:48:57.117000,2001-06-12 22:30:35.346000,0.0,,,,False,0,2161,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_207,telecommand,37,0,0,0,1,,2000-03-20 01:45:44.586000,2000-03-21 02:02:55.512000,0.0,,,,False,0,7045,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_208,telecommand,1,0,0,0,1,,2001-06-12 22:30:26.034000,2001-06-12 22:30:26.034000,0.0,,,,False,0,945,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_209,telecommand,4,0,0,0,1,,2000-03-21 01:49:00.246000,2001-06-12 22:30:38.424000,0.0,,,,False,0,2164,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_210,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,829,1711462894000000000,0,no occurrences in first-fold training
+telecommand_211,telecommand,4,0,0,0,1,,2000-03-21 01:49:03.393000,2001-06-12 22:30:41.556000,0.0,,,,False,0,2156,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_212,telecommand,4,0,0,0,1,,2000-03-21 01:49:06.537000,2001-06-12 22:30:44.706000,0.0,,,,False,0,2137,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_213,telecommand,2,0,0,0,1,,2001-01-30 01:33:16.770000,2001-01-30 01:38:03.810000,0.0,,,,False,0,774,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_214,telecommand,10,0,0,0,1,,2000-03-21 01:49:18.945000,2000-06-30 22:31:04.794000,0.0,,,,False,0,1846,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_215,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,713,1711462894000000000,0,no occurrences in first-fold training
+telecommand_216,telecommand,6,0,0,0,1,,2000-03-21 01:49:09.549000,2001-06-12 22:30:47.835000,0.0,,,,False,0,2221,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_217,telecommand,5,0,0,0,1,,2000-04-07 22:00:38.172000,2000-04-07 22:06:09.528000,0.0,,,,False,0,1009,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_218,telecommand,7,0,0,0,1,,2000-04-07 21:28:01.803000,2001-08-30 12:05:19.323000,0.0,,,,False,0,750,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_219,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,15271,1711462894000000000,0,no occurrences in first-fold training
+telecommand_220,telecommand,2,0,0,0,1,,2001-06-12 22:30:29.148000,2001-06-12 22:30:32.280000,0.0,,,,False,0,861,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_221,telecommand,4,0,0,0,1,,2000-03-21 01:49:12.678000,2001-06-12 22:30:50.985000,0.0,,,,False,0,2160,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_222,telecommand,2,0,0,0,1,,2001-01-30 01:30:07.218000,2001-01-30 01:34:23.418000,0.0,,,,False,0,720,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_223,telecommand,121,0,0,0,1,,2000-01-07 02:57:44.295000,2002-12-22 06:07:46.719000,0.0,,,,False,0,5383,1711462894000000000,34,event context candidate; constant payload is not uninformative
+telecommand_224,telecommand,119,0,0,0,1,,2000-01-07 03:05:00.882000,2002-12-22 06:08:52.098000,0.0,,,,False,0,5370,1711462894000000000,34,event context candidate; constant payload is not uninformative
+telecommand_225,telecommand,980,0,0,0,1,,2000-01-03 06:36:40.683000,2002-12-29 11:31:59.826000,0.0,,,,False,0,33861,1711462894000000000,36,event context candidate; constant payload is not uninformative
+telecommand_226,telecommand,2,0,0,0,1,,2001-06-12 22:55:49.152000,2002-03-29 00:53:39.339000,0.0,,,,False,0,926,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_227,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,690,1711462894000000000,0,no occurrences in first-fold training
+telecommand_228,telecommand,33,0,0,0,1,,2000-02-13 13:46:15,2002-03-29 01:05:03.339000,0.0,,,,False,0,1465,1711462894000000000,11,event context candidate; constant payload is not uninformative
+telecommand_229,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,716,1711462894000000000,0,no occurrences in first-fold training
+telecommand_230,telecommand,34,0,0,0,1,,2000-02-13 13:46:30,2002-03-29 01:06:36.345000,0.0,,,,False,0,2623,1711462894000000000,11,event context candidate; constant payload is not uninformative
+telecommand_231,telecommand,1690,0,0,0,1,,2000-01-01 14:03:11.061000,2002-12-30 09:53:17.208000,0.0,,,,False,0,33937,1711462894000000000,36,event context candidate; constant payload is not uninformative
+telecommand_232,telecommand,3380,0,0,0,1,,2000-01-01 14:03:14.061000,2002-12-30 09:53:23.208000,0.0,,,,False,0,54414,1711462894000000000,36,event context candidate; constant payload is not uninformative
+telecommand_233,telecommand,3991,0,0,0,1,,2000-01-03 08:07:30.690000,2002-12-30 03:53:51.294000,0.0,,,,False,0,116347,1711462894000000000,36,event context candidate; constant payload is not uninformative
+telecommand_234,telecommand,428,0,0,0,1,,2000-07-27 16:05:40.389000,2001-10-11 13:44:14.826000,0.0,,,,False,0,4564,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_235,telecommand,4,0,0,0,1,,2000-04-17 03:25:27.678000,2001-10-11 13:42:17.916000,0.0,,,,False,0,5989,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_236,telecommand,3,0,0,0,1,,2001-10-11 13:11:39.603000,2001-10-11 13:41:24.645000,0.0,,,,False,0,808,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_237,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,709,1711462894000000000,0,no occurrences in first-fold training
+telecommand_238,telecommand,3,0,0,0,1,,2000-07-06 17:16:30,2000-07-06 17:16:36,1.0,,,,False,0,716,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_239,telecommand,24,0,0,0,1,,2000-07-06 17:16:30,2000-07-06 17:16:38.625000,1.0,,,,False,0,845,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_240,telecommand,1,0,0,0,1,,2000-03-20 23:15:00,2000-03-20 23:15:00,1.0,,,,False,0,784,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_241,telecommand,1,0,0,0,1,,2000-10-23 00:03:51,2000-10-23 00:03:51,1.0,,,,False,0,692,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_242,telecommand,3,0,0,0,1,,2000-10-23 00:03:15,2000-10-23 00:06:42,1.0,,,,False,0,719,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_243,telecommand,1,0,0,0,1,,2000-03-20 23:15:09,2000-03-20 23:15:09,1.0,,,,False,0,780,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_244,telecommand,2,0,0,0,1,,2000-03-20 18:28:31.965000,2000-03-20 22:03:24.984000,3.0,,,,True,0,818,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_245,telecommand,3,0,0,0,1,,2000-10-23 00:03:24,2000-10-23 00:06:51,1.0,,,,False,0,717,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_246,telecommand,1,0,0,0,1,,2000-03-20 23:15:06,2000-03-20 23:15:06,1.0,,,,False,0,782,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_247,telecommand,1,0,0,0,1,,2000-10-23 00:05:36,2000-10-23 00:05:36,1.0,,,,False,0,696,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_248,telecommand,3,0,0,0,1,,2000-10-23 00:03:21,2000-10-23 00:06:48,1.0,,,,False,0,719,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_249,telecommand,1,0,0,0,1,,2000-03-20 23:15:03,2000-03-20 23:15:03,1.0,,,,False,0,784,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_250,telecommand,3,0,0,0,1,,2000-10-23 00:03:18,2000-10-23 00:06:45,1.0,,,,False,0,714,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_251,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,704,1711462894000000000,0,no occurrences in first-fold training
+telecommand_252,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,736,1711462894000000000,0,no occurrences in first-fold training
+telecommand_253,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,708,1711462894000000000,0,no occurrences in first-fold training
+telecommand_254,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,708,1711462894000000000,0,no occurrences in first-fold training
+telecommand_255,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,711,1711462894000000000,0,no occurrences in first-fold training
+telecommand_256,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,711,1711462894000000000,0,no occurrences in first-fold training
+telecommand_257,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,708,1711462894000000000,0,no occurrences in first-fold training
+telecommand_258,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,709,1711462894000000000,0,no occurrences in first-fold training
+telecommand_259,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,721,1711462894000000000,0,no occurrences in first-fold training
+telecommand_260,telecommand,7,0,0,0,1,,2000-02-10 02:00:25.728000,2002-02-15 01:52:35.661000,0.0,,,,False,0,1052,1711462894000000000,6,event context candidate; constant payload is not uninformative
+telecommand_261,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,734,1711462894000000000,0,no occurrences in first-fold training
+telecommand_262,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,730,1711462894000000000,0,no occurrences in first-fold training
+telecommand_263,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,729,1711462894000000000,0,no occurrences in first-fold training
+telecommand_264,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,734,1711462894000000000,0,no occurrences in first-fold training
+telecommand_265,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,733,1711462894000000000,0,no occurrences in first-fold training
+telecommand_266,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,731,1711462894000000000,0,no occurrences in first-fold training
+telecommand_267,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,1997,1711462894000000000,0,no occurrences in first-fold training
+telecommand_268,telecommand,43,0,0,0,1,,2000-02-13 13:45:00,2002-03-27 03:45:00,0.0,,,,False,0,1150,1711462894000000000,11,event context candidate; constant payload is not uninformative
+telecommand_269,telecommand,7,0,0,0,1,,2002-03-26 23:45:00,2002-03-26 23:46:30,0.0,,,,False,0,775,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_270,telecommand,59257,0,0,0,1,,2000-01-03 07:42:40.293000,2002-12-29 12:00:30.573000,0.0,,,,False,0,1441210,1711462894000000000,36,event context candidate; constant payload is not uninformative
+telecommand_271,telecommand,1,0,0,0,1,,2000-08-03 07:53:15.849000,2000-08-03 07:53:15.849000,0.0,,,,False,0,848,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_272,telecommand,1,0,0,0,1,,2000-10-16 20:16:19.422000,2000-10-16 20:16:19.422000,0.0,,,,False,0,756,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_273,telecommand,2,0,0,0,1,,2000-02-04 13:59:57.990000,2001-08-30 12:32:22.677000,0.0,,,,False,0,736,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_274,telecommand,263,0,0,0,1,,2000-01-03 07:45:19.260000,2002-12-29 12:03:19.707000,0.0,,,,False,0,13076,1711462894000000000,26,event context candidate; constant payload is not uninformative
+telecommand_275,telecommand,2,0,0,0,1,,2000-03-21 00:05:12.675000,2001-06-05 04:06:28.728000,0.0,,,,False,0,870,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_276,telecommand,598,0,0,0,1,,2000-03-17 22:46:42.768000,2002-12-30 07:43:42.468000,0.0,,,,False,0,16411,1711462894000000000,29,event context candidate; constant payload is not uninformative
+telecommand_277,telecommand,530,0,0,0,1,,2000-04-05 13:34:04.062000,2002-12-30 07:44:28.026000,0.0,,,,False,0,15245,1711462894000000000,13,event context candidate; constant payload is not uninformative
+telecommand_278,telecommand,3,0,0,0,1,,2000-02-25 04:36:43.230000,2000-02-25 04:58:59.988000,0.0,,,,False,0,720,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_279,telecommand,4,0,0,0,1,,2000-02-25 03:34:04.590000,2000-02-25 04:57:20.586000,0.0,,,,False,0,728,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_280,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,723,1711462894000000000,0,no occurrences in first-fold training
+telecommand_281,telecommand,1117,0,0,0,1,,2000-01-03 05:54:57.450000,2002-12-29 09:56:08.151000,0.0,,,,False,0,39205,1711462894000000000,36,event context candidate; constant payload is not uninformative
+telecommand_282,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,720,1711462894000000000,0,no occurrences in first-fold training
+telecommand_283,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,694,1711462894000000000,0,no occurrences in first-fold training
+telecommand_284,telecommand,1047,0,0,0,1,,2000-01-01 14:41:39.381000,2002-12-30 07:44:07.032000,0.0,,,,False,0,37948,1711462894000000000,36,event context candidate; constant payload is not uninformative
+telecommand_285,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,693,1711462894000000000,0,no occurrences in first-fold training
+telecommand_286,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,10592,1711462894000000000,0,no occurrences in first-fold training
+telecommand_287,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,10432,1711462894000000000,0,no occurrences in first-fold training
+telecommand_288,telecommand,523,0,0,0,1,,2000-01-03 05:55:24.870000,2002-12-29 09:55:59.451000,0.0,,,,False,0,21274,1711462894000000000,36,event context candidate; constant payload is not uninformative
+telecommand_289,telecommand,496,0,0,0,1,,2000-01-01 14:42:06.612000,2002-12-30 07:43:57.921000,0.0,,,,False,0,20749,1711462894000000000,36,event context candidate; constant payload is not uninformative
+telecommand_290,telecommand,1099,0,0,0,1,,2000-01-03 05:55:06.489000,2002-12-29 09:56:17.328000,0.0,,,,False,0,39188,1711462894000000000,36,event context candidate; constant payload is not uninformative
+telecommand_291,telecommand,1093,0,0,0,1,,2000-01-03 05:55:15.600000,2002-12-29 09:56:26.427000,0.0,,,,False,0,39046,1711462894000000000,36,event context candidate; constant payload is not uninformative
+telecommand_292,telecommand,1042,0,0,0,1,,2000-01-01 14:41:57.744000,2002-12-30 07:44:25.464000,0.0,,,,False,0,37898,1711462894000000000,36,event context candidate; constant payload is not uninformative
+telecommand_293,telecommand,1043,0,0,0,1,,2000-01-01 14:41:48.471000,2002-12-30 07:44:16.182000,0.0,,,,False,0,37892,1711462894000000000,36,event context candidate; constant payload is not uninformative
+telecommand_294,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,1994,1711462894000000000,0,no occurrences in first-fold training
+telecommand_295,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,8851,1711462894000000000,0,no occurrences in first-fold training
+telecommand_296,telecommand,1,0,0,0,1,,2000-04-05 15:34:20.589000,2000-04-05 15:34:20.589000,0.0,,,,False,0,2032,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_297,telecommand,1,0,0,0,1,,2000-04-05 15:34:40.461000,2000-04-05 15:34:40.461000,0.0,,,,False,0,2047,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_298,telecommand,6,0,0,0,1,,2000-03-20 01:42:33.525000,2000-06-21 16:59:34.878000,0.0,,,,False,0,1166,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_299,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,754,1711462894000000000,0,no occurrences in first-fold training
+telecommand_300,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,716,1711462894000000000,0,no occurrences in first-fold training
+telecommand_301,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,750,1711462894000000000,0,no occurrences in first-fold training
+telecommand_302,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,738,1711462894000000000,0,no occurrences in first-fold training
+telecommand_303,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,764,1711462894000000000,0,no occurrences in first-fold training
+telecommand_304,telecommand,1,0,0,0,1,,2000-03-20 23:16:48,2000-03-20 23:16:48,0.0,,,,False,0,779,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_305,telecommand,2,0,0,0,1,,2000-03-20 18:40:12.165000,2000-03-20 22:11:28.113000,0.0,,,,False,0,820,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_306,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,712,1711462894000000000,0,no occurrences in first-fold training
+telecommand_307,telecommand,2,0,0,0,1,,2000-03-20 18:24:09.657000,2000-03-20 21:57:49.266000,0.0,,,,False,0,816,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_308,telecommand,2,0,0,0,1,,2000-03-20 23:31:48,2001-03-27 06:00:00,0.0,,,,False,0,853,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_309,telecommand,1,0,0,0,1,,2001-03-26 12:00:00,2001-03-26 12:00:00,0.0,,,,False,0,770,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_310,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,914,1711462894000000000,0,no occurrences in first-fold training
+telecommand_311,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,905,1711462894000000000,0,no occurrences in first-fold training
+telecommand_312,telecommand,1,0,0,0,1,,2000-03-20 23:15:24,2000-03-20 23:15:24,0.0,,,,False,0,793,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_313,telecommand,1,0,0,0,1,,2000-03-20 23:15:27,2000-03-20 23:15:27,0.0,,,,False,0,790,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_314,telecommand,1,0,0,0,1,,2000-03-20 23:15:30,2000-03-20 23:15:30,0.0,,,,False,0,784,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_315,telecommand,1,0,0,0,1,,2000-03-20 23:15:33,2000-03-20 23:15:33,0.0,,,,False,0,786,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_316,telecommand,1,0,0,0,1,,2000-03-20 23:15:36,2000-03-20 23:15:36,0.0,,,,False,0,786,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_317,telecommand,1,0,0,0,1,,2000-03-20 23:15:39,2000-03-20 23:15:39,0.0,,,,False,0,784,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_318,telecommand,1,0,0,0,1,,2000-03-20 23:15:42,2000-03-20 23:15:42,0.0,,,,False,0,780,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_319,telecommand,1,0,0,0,1,,2000-03-20 23:15:45,2000-03-20 23:15:45,0.0,,,,False,0,783,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_320,telecommand,1,0,0,0,1,,2000-03-20 23:15:48,2000-03-20 23:15:48,0.0,,,,False,0,781,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_321,telecommand,1,0,0,0,1,,2000-03-20 23:15:51,2000-03-20 23:15:51,0.0,,,,False,0,785,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_322,telecommand,1,0,0,0,1,,2000-03-20 23:15:54,2000-03-20 23:15:54,0.0,,,,False,0,782,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_323,telecommand,1,0,0,0,1,,2000-03-20 23:15:57,2000-03-20 23:15:57,0.0,,,,False,0,785,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_324,telecommand,1,0,0,0,1,,2000-03-20 23:16:00,2000-03-20 23:16:00,0.0,,,,False,0,784,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_325,telecommand,1,0,0,0,1,,2000-03-20 23:16:03,2000-03-20 23:16:03,0.0,,,,False,0,784,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_326,telecommand,1,0,0,0,1,,2000-03-20 23:16:06,2000-03-20 23:16:06,0.0,,,,False,0,781,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_327,telecommand,1,0,0,0,1,,2000-03-20 23:16:09,2000-03-20 23:16:09,0.0,,,,False,0,786,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_328,telecommand,1,0,0,0,1,,2000-03-20 23:16:12,2000-03-20 23:16:12,0.0,,,,False,0,784,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_329,telecommand,1,0,0,0,1,,2000-03-20 23:16:15,2000-03-20 23:16:15,0.0,,,,False,0,782,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_330,telecommand,1,0,0,0,1,,2000-03-20 23:16:18,2000-03-20 23:16:18,0.0,,,,False,0,784,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_331,telecommand,1,0,0,0,1,,2000-03-20 23:16:21,2000-03-20 23:16:21,0.0,,,,False,0,784,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_332,telecommand,1,0,0,0,1,,2000-03-20 23:16:24,2000-03-20 23:16:24,0.0,,,,False,0,784,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_333,telecommand,1,0,0,0,1,,2000-03-20 23:16:27,2000-03-20 23:16:27,0.0,,,,False,0,783,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_334,telecommand,1,0,0,0,1,,2000-03-20 23:16:30,2000-03-20 23:16:30,0.0,,,,False,0,788,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_335,telecommand,1,0,0,0,1,,2000-03-20 23:16:33,2000-03-20 23:16:33,0.0,,,,False,0,786,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_336,telecommand,1,0,0,0,1,,2000-03-20 23:16:36,2000-03-20 23:16:36,0.0,,,,False,0,783,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_337,telecommand,1,0,0,0,1,,2000-03-20 23:16:39,2000-03-20 23:16:39,0.0,,,,False,0,783,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_338,telecommand,1,0,0,0,1,,2000-03-20 23:16:42,2000-03-20 23:16:42,0.0,,,,False,0,782,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_339,telecommand,1,0,0,0,1,,2000-03-20 23:16:45,2000-03-20 23:16:45,0.0,,,,False,0,784,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_340,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,696,1711462894000000000,0,no occurrences in first-fold training
+telecommand_341,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,694,1711462894000000000,0,no occurrences in first-fold training
+telecommand_342,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,693,1711462894000000000,0,no occurrences in first-fold training
+telecommand_343,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,714,1711462894000000000,0,no occurrences in first-fold training
+telecommand_344,telecommand,2,0,0,0,1,,2000-04-25 14:18:36.417000,2002-05-21 15:44:11.241000,1.0,,,,False,0,707,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_345,telecommand,4,0,0,0,1,,2000-10-23 00:03:09,2000-10-23 00:06:36,1.0,,,,False,0,724,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_346,telecommand,4,0,0,0,1,,2000-10-23 00:03:12,2000-10-23 00:06:39,1.0,,,,False,0,727,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_347,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,693,1711462894000000000,0,no occurrences in first-fold training
+telecommand_348,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,692,1711462894000000000,0,no occurrences in first-fold training
+telecommand_349,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,695,1711462894000000000,0,no occurrences in first-fold training
+telecommand_350,telecommand,31,0,0,0,1,,2001-03-30 09:18:00,2001-04-05 06:07:30,3.0,,,,True,0,1129,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_351,telecommand,10,0,0,0,1,,2001-03-21 21:03:36.780000,2001-04-05 00:00:00,3.0,,,,True,0,1011,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_352,telecommand,15,0,0,0,1,,2001-03-21 21:11:49.704000,2001-04-05 06:00:06,3.0,,,,True,0,1031,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_353,telecommand,16,0,0,0,1,,2001-03-21 21:18:50.571000,2001-04-05 06:00:03,3.0,,,,True,0,1036,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_354,telecommand,16,0,0,0,1,,2001-03-21 21:23:02.670000,2001-04-05 06:00:00,3.0,,,,True,0,1040,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_355,telecommand,2,0,0,0,1,,2000-10-23 00:04:21,2000-10-23 00:06:06,1.0,,,,False,0,708,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_356,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,711,1711462894000000000,0,no occurrences in first-fold training
+telecommand_357,telecommand,2,0,0,0,1,,2000-03-20 18:20:28.029000,2000-03-20 21:56:23.976000,1.0,,,,False,0,822,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_358,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,707,1711462894000000000,0,no occurrences in first-fold training
+telecommand_359,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,724,1711462894000000000,0,no occurrences in first-fold training
+telecommand_360,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,710,1711462894000000000,0,no occurrences in first-fold training
+telecommand_361,telecommand,2,0,0,0,1,,2000-03-20 18:20:36.357000,2000-03-20 21:56:34.488000,1.0,,,,False,0,816,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_362,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,706,1711462894000000000,0,no occurrences in first-fold training
+telecommand_363,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,706,1711462894000000000,0,no occurrences in first-fold training
+telecommand_364,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,712,1711462894000000000,0,no occurrences in first-fold training
+telecommand_365,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,693,1711462894000000000,0,no occurrences in first-fold training
+telecommand_366,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,696,1711462894000000000,0,no occurrences in first-fold training
+telecommand_367,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,693,1711462894000000000,0,no occurrences in first-fold training
+telecommand_368,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,709,1711462894000000000,0,no occurrences in first-fold training
+telecommand_369,telecommand,3,0,0,0,1,,2000-10-11 00:14:50.973000,2002-09-25 12:09:51.105000,1.0,,,,False,0,756,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_370,telecommand,6,0,0,0,1,,2000-10-11 01:57:08.412000,2002-09-25 14:56:26.127000,1.0,,,,False,0,812,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_371,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,745,1711462894000000000,0,no occurrences in first-fold training
+telecommand_372,telecommand,32,0,0,0,1,,2000-02-03 02:30:47.517000,2002-10-06 13:23:17.421000,1.0,,,,False,0,3669,1711462894000000000,16,event context candidate; constant payload is not uninformative
+telecommand_373,telecommand,21,0,0,0,1,,2000-10-11 01:59:41.652000,2002-09-25 15:03:39.483000,1.0,,,,False,0,915,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_374,telecommand,3,0,0,0,1,,2000-10-11 00:13:53.706000,2002-09-25 12:09:21.036000,1.0,,,,False,0,759,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_375,telecommand,3,0,0,0,1,,2000-10-11 00:10:55.968000,2002-09-25 12:08:50.865000,1.0,,,,False,0,764,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_376,telecommand,33,0,0,0,1,,2000-10-11 00:49:39.030000,2002-09-25 13:02:31.182000,3.0,,,,True,0,1019,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_377,telecommand,3,0,0,0,1,,2000-10-11 01:01:22.422000,2002-09-25 13:03:01.200000,1.0,,,,False,0,801,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_378,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,712,1711462894000000000,0,no occurrences in first-fold training
+telecommand_379,telecommand,3,0,0,0,1,,2000-10-11 01:11:00.567000,2002-09-25 13:18:11.454000,1.0,,,,False,0,762,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_380,telecommand,69,0,0,0,1,,2000-10-11 01:18:51.579000,2002-09-25 14:43:14.007000,1.0,,,,False,0,1271,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_381,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,692,1711462894000000000,0,no occurrences in first-fold training
+telecommand_382,telecommand,16,0,0,0,1,,2000-02-25 11:11:30,2002-09-25 15:36:23.940000,1.0,,,,False,0,908,1711462894000000000,6,event context candidate; constant payload is not uninformative
+telecommand_383,telecommand,16,0,0,0,1,,2000-02-25 11:09:30,2002-09-25 15:06:28.875000,1.0,,,,False,0,901,1711462894000000000,6,event context candidate; constant payload is not uninformative
+telecommand_384,telecommand,25,0,0,0,1,,2000-02-25 11:11:00,2002-09-25 15:31:18.297000,1.0,,,,False,0,981,1711462894000000000,6,event context candidate; constant payload is not uninformative
+telecommand_385,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,695,1711462894000000000,0,no occurrences in first-fold training
+telecommand_386,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,697,1711462894000000000,0,no occurrences in first-fold training
+telecommand_387,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,695,1711462894000000000,0,no occurrences in first-fold training
+telecommand_388,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,779,1711462894000000000,0,no occurrences in first-fold training
+telecommand_389,telecommand,10,0,0,0,1,,2000-03-20 01:45:55.788000,2000-10-22 23:48:09,0.0,,,,False,0,1855,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_390,telecommand,8,0,0,0,1,,2000-03-20 01:45:42.969000,2000-10-23 00:07:06,0.0,,,,False,0,1647,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_391,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,871,1711462894000000000,0,no occurrences in first-fold training
+telecommand_392,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,815,1711462894000000000,0,no occurrences in first-fold training
+telecommand_393,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,708,1711462894000000000,0,no occurrences in first-fold training
+telecommand_394,telecommand,35,0,0,0,1,,2000-03-20 18:17:13.353000,2002-03-09 03:03:57,0.0,,,,False,0,3300,1711462894000000000,4,event context candidate; constant payload is not uninformative
+telecommand_395,telecommand,14,0,0,0,1,,2000-03-20 01:45:55.788000,2001-04-01 06:00:00,0.0,,,,False,0,2157,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_396,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,1995,1711462894000000000,0,no occurrences in first-fold training
+telecommand_397,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,725,1711462894000000000,0,no occurrences in first-fold training
+telecommand_398,telecommand,2,0,0,0,1,,2001-06-12 22:53:14.562000,2001-06-12 23:03:46.080000,0.0,,,,False,0,2057,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_399,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,683,1711462894000000000,0,no occurrences in first-fold training
+telecommand_400,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,719,1711462894000000000,0,no occurrences in first-fold training
+telecommand_401,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,790,1711462894000000000,0,no occurrences in first-fold training
+telecommand_402,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,707,1711462894000000000,0,no occurrences in first-fold training
+telecommand_403,telecommand,8,0,0,0,1,,2000-03-21 00:28:37.716000,2000-03-21 00:28:49.794000,0.0,,,,False,0,3205,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_404,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,1088,1711462894000000000,0,no occurrences in first-fold training
+telecommand_405,telecommand,1,0,0,0,1,,2000-03-21 00:28:37.716000,2000-03-21 00:28:37.716000,0.0,,,,False,0,802,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_406,telecommand,2,0,0,0,1,,2000-03-20 18:07:30.240000,2000-03-20 21:53:43.128000,0.0,,,,False,0,830,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_407,telecommand,1,0,0,0,1,,2000-03-21 00:28:37.716000,2000-03-21 00:28:37.716000,0.0,,,,False,0,815,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_408,telecommand,53,0,0,0,1,,2000-03-21 02:29:53.550000,2002-03-06 21:00:42,0.0,,,,False,0,1889,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_409,telecommand,50,0,0,0,1,,2000-03-20 23:53:21.579000,2002-03-09 03:02:57,0.0,,,,False,0,1875,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_410,telecommand,122,0,0,0,1,,2001-03-30 09:00:03,2002-03-09 03:02:09,0.0,,,,False,0,2367,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_411,telecommand,129,0,0,0,1,,2001-03-30 09:00:00,2002-03-09 03:02:12,0.0,,,,False,0,1597,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_412,telecommand,45,0,0,0,1,,2001-04-05 13:30:09,2002-03-09 03:03:42,0.0,,,,False,0,1733,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_413,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,724,1711462894000000000,0,no occurrences in first-fold training
+telecommand_414,telecommand,1,0,0,0,1,,2000-03-21 00:45:24,2000-03-21 00:45:24,0.0,,,,False,0,763,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_415,telecommand,1,0,0,0,1,,2000-03-21 00:46:09,2000-03-21 00:46:09,0.0,,,,False,0,764,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_416,telecommand,1,0,0,0,1,,2000-10-22 23:48:09,2000-10-22 23:48:09,0.0,,,,False,0,697,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_417,telecommand,1,0,0,0,1,,2000-10-22 23:48:09,2000-10-22 23:48:09,0.0,,,,False,0,697,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_418,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,697,1711462894000000000,0,no occurrences in first-fold training
+telecommand_419,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,708,1711462894000000000,0,no occurrences in first-fold training
+telecommand_420,telecommand,1354,0,0,0,1,,2000-01-01 00:03:00,2002-09-29 00:47:06,0.0,,,,False,0,14332,1711462894000000000,24,event context candidate; constant payload is not uninformative
+telecommand_421,telecommand,3,0,0,0,1,,2000-10-10 23:52:04.605000,2002-09-25 11:55:22.752000,0.0,,,,False,0,758,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_422,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,709,1711462894000000000,0,no occurrences in first-fold training
+telecommand_423,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,711,1711462894000000000,0,no occurrences in first-fold training
+telecommand_424,telecommand,1,0,0,0,1,,2001-10-05 12:16:00,2001-10-05 12:16:00,0.0,,,,False,0,721,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_425,telecommand,1,0,0,0,1,,2001-10-05 13:46:00,2001-10-05 13:46:00,0.0,,,,False,0,720,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_426,telecommand,3,0,0,0,1,,2001-10-05 12:30:30,2001-10-05 12:45:30,0.0,,,,False,0,808,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_427,telecommand,130,0,0,0,1,,2001-04-02 18:00:00,2001-04-27 23:58:30,0.0,,,,False,0,1563,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_428,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,888,1711462894000000000,0,no occurrences in first-fold training
+telecommand_429,telecommand,3,0,0,0,1,,2000-10-10 23:56:57.837000,2002-09-25 12:00:21.396000,0.0,,,,False,0,755,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_430,telecommand,13,0,0,0,1,,2000-02-25 11:11:45,2002-09-25 15:59:05.115000,0.0,,,,False,0,932,1711462894000000000,6,event context candidate; constant payload is not uninformative
+telecommand_431,telecommand,10,0,0,0,1,,2000-02-25 11:09:00,2002-02-15 02:04:19.284000,0.0,,,,False,0,887,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_432,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,694,1711462894000000000,0,no occurrences in first-fold training
+telecommand_433,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,695,1711462894000000000,0,no occurrences in first-fold training
+telecommand_434,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,708,1711462894000000000,0,no occurrences in first-fold training
+telecommand_435,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,705,1711462894000000000,0,no occurrences in first-fold training
+telecommand_436,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,710,1711462894000000000,0,no occurrences in first-fold training
+telecommand_437,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,709,1711462894000000000,0,no occurrences in first-fold training
+telecommand_438,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,710,1711462894000000000,0,no occurrences in first-fold training
+telecommand_439,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,709,1711462894000000000,0,no occurrences in first-fold training
+telecommand_440,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,723,1711462894000000000,0,no occurrences in first-fold training
+telecommand_441,telecommand,101,0,0,0,1,,2000-07-23 06:00:03,2002-09-03 13:30:03,0.0,,,,False,0,3051,1711462894000000000,16,event context candidate; constant payload is not uninformative
+telecommand_442,telecommand,101,0,0,0,1,,2000-07-11 18:00:03,2002-03-30 11:00:03,0.0,,,,False,0,3101,1711462894000000000,13,event context candidate; constant payload is not uninformative
+telecommand_443,telecommand,101,0,0,0,1,,2000-07-11 18:15:03,2002-03-30 11:30:03,0.0,,,,False,0,3053,1711462894000000000,13,event context candidate; constant payload is not uninformative
+telecommand_444,telecommand,263,0,0,0,1,,2000-01-01 00:09:03,2002-09-29 00:00:03,0.0,,,,False,0,4818,1711462894000000000,23,event context candidate; constant payload is not uninformative
+telecommand_445,telecommand,289,0,0,0,1,,2000-01-01 00:03:03,2002-09-29 00:15:03,0.0,,,,False,0,4826,1711462894000000000,23,event context candidate; constant payload is not uninformative
+telecommand_446,telecommand,151,0,0,0,1,,2000-02-26 03:36:45,2002-09-29 00:30:03,0.0,,,,False,0,3998,1711462894000000000,18,event context candidate; constant payload is not uninformative
+telecommand_447,telecommand,146,0,0,0,1,,2000-03-23 18:39:56.334000,2002-09-29 00:45:03,0.0,,,,False,0,3969,1711462894000000000,17,event context candidate; constant payload is not uninformative
+telecommand_448,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,698,1711462894000000000,0,no occurrences in first-fold training
+telecommand_449,telecommand,1,0,0,0,1,,2001-04-05 15:03:15,2001-04-05 15:03:15,0.0,,,,False,0,697,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_450,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,696,1711462894000000000,0,no occurrences in first-fold training
+telecommand_451,telecommand,1,0,0,0,1,,2001-04-05 15:03:45,2001-04-05 15:03:45,0.0,,,,False,0,696,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_452,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,694,1711462894000000000,0,no occurrences in first-fold training
+telecommand_453,telecommand,1,0,0,0,1,,2001-04-05 15:04:15,2001-04-05 15:04:15,0.0,,,,False,0,694,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_454,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,696,1711462894000000000,0,no occurrences in first-fold training
+telecommand_455,telecommand,55,0,0,0,1,,2000-07-23 06:01:42,2002-03-15 00:41:57,0.0,,,,False,0,2359,1711462894000000000,8,event context candidate; constant payload is not uninformative
+telecommand_456,telecommand,54,0,0,0,1,,2000-07-23 06:31:42,2002-03-15 01:41:57,0.0,,,,False,0,2424,1711462894000000000,7,event context candidate; constant payload is not uninformative
+telecommand_457,telecommand,55,0,0,0,1,,2000-07-23 07:01:42,2002-03-15 02:41:45,0.0,,,,False,0,2351,1711462894000000000,8,event context candidate; constant payload is not uninformative
+telecommand_458,telecommand,78,0,0,0,1,,2000-07-23 07:31:42,2002-03-15 03:51:06,0.0,,,,False,0,3144,1711462894000000000,7,event context candidate; constant payload is not uninformative
+telecommand_459,telecommand,79,0,0,0,1,,2000-07-23 08:01:42,2002-03-15 05:51:06,0.0,,,,False,0,3039,1711462894000000000,8,event context candidate; constant payload is not uninformative
+telecommand_460,telecommand,80,0,0,0,1,,2000-02-26 03:36:30,2002-03-15 07:51:06,0.0,,,,False,0,3041,1711462894000000000,9,event context candidate; constant payload is not uninformative
+telecommand_461,telecommand,79,0,0,0,1,,2000-07-23 09:01:42,2002-03-15 09:51:06,0.0,,,,False,0,3023,1711462894000000000,8,event context candidate; constant payload is not uninformative
+telecommand_462,telecommand,58,0,0,0,1,,2000-04-17 02:42:38.469000,2002-03-30 10:40:15,0.0,,,,False,0,1961,1711462894000000000,8,event context candidate; constant payload is not uninformative
+telecommand_463,telecommand,57,0,0,0,1,,2000-04-17 02:45:21.081000,2002-03-30 11:10:15,0.0,,,,False,0,2021,1711462894000000000,9,event context candidate; constant payload is not uninformative
+telecommand_464,telecommand,57,0,0,0,1,,2000-04-17 02:47:12.267000,2002-03-30 11:40:15,0.0,,,,False,0,1967,1711462894000000000,8,event context candidate; constant payload is not uninformative
+telecommand_465,telecommand,87,0,0,0,1,,2000-03-23 14:19:52.476000,2002-03-30 12:10:15,0.0,,,,False,0,2837,1711462894000000000,11,event context candidate; constant payload is not uninformative
+telecommand_466,telecommand,82,0,0,0,1,,2000-02-13 14:04:15.744000,2002-03-30 12:40:15,0.0,,,,False,0,2733,1711462894000000000,12,event context candidate; constant payload is not uninformative
+telecommand_467,telecommand,102,0,0,0,1,,2000-02-26 03:30:30,2002-03-30 13:10:15,0.0,,,,False,0,2809,1711462894000000000,12,event context candidate; constant payload is not uninformative
+telecommand_468,telecommand,75,0,0,0,1,,2000-03-23 18:44:16.914000,2002-03-30 13:40:15,0.0,,,,False,0,2652,1711462894000000000,10,event context candidate; constant payload is not uninformative
+telecommand_469,telecommand,45,0,0,0,1,,2000-02-25 11:10:00,2002-09-25 15:30:16.956000,0.0,,,,False,0,1408,1711462894000000000,6,event context candidate; constant payload is not uninformative
+telecommand_470,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,726,1711462894000000000,0,no occurrences in first-fold training
+telecommand_471,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,713,1711462894000000000,0,no occurrences in first-fold training
+telecommand_472,telecommand,5,0,0,0,1,,2001-06-12 22:27:20.292000,2001-06-12 22:27:26.163000,0.0,,,,False,0,1056,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_473,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,786,1711462894000000000,0,no occurrences in first-fold training
+telecommand_474,telecommand,11,0,0,0,1,,2000-03-20 01:46:01.284000,2002-09-25 11:49:05.997000,0.0,,,,False,0,2293,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_475,telecommand,5,0,0,0,1,,2000-03-20 01:45:44.586000,2001-10-05 13:47:00,0.0,,,,False,0,1765,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_476,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,729,1711462894000000000,0,no occurrences in first-fold training
+telecommand_477,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,696,1711462894000000000,0,no occurrences in first-fold training
+telecommand_478,telecommand,6,0,0,0,1,,2000-10-10 23:55:23.997000,2002-09-25 12:01:51.480000,0.0,,,,False,0,1051,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_479,telecommand,17,0,0,0,1,,2000-01-14 18:51:31.137000,2001-01-26 19:07:52.200000,0.0,,,,False,0,2261,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_480,telecommand,3,0,0,0,1,,2000-07-24 19:35:51.993000,2002-09-27 20:53:33.927000,0.0,,,,False,0,753,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_481,telecommand,6,0,0,0,1,,2000-07-24 17:09:59.133000,2002-09-27 20:54:35.118000,0.0,,,,False,0,2088,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_482,telecommand,86790,0,0,0,1,,2000-02-26 03:32:09,2002-03-03 22:32:18,0.0,,,,False,0,2266256,1711462894000000000,8,event context candidate; constant payload is not uninformative
+telecommand_483,telecommand,164,0,0,0,1,,2000-02-13 14:04:24.918000,2002-09-25 15:16:34.227000,0.0,,,,False,0,2468,1711462894000000000,17,event context candidate; constant payload is not uninformative
+telecommand_484,telecommand,2,0,0,0,1,,2000-02-26 03:35:09,2000-03-09 10:20:09,0.0,,,,False,0,746,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_485,telecommand,3,0,0,0,1,,2001-10-05 12:30:00,2001-10-05 12:45:00,0.0,,,,False,0,812,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_486,telecommand,29,0,0,0,1,,2000-02-13 13:45:45,2002-03-29 00:46:53.622000,0.0,,,,False,0,1090,1711462894000000000,10,event context candidate; constant payload is not uninformative
+telecommand_487,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,824,1711462894000000000,0,no occurrences in first-fold training
+telecommand_488,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,693,1711462894000000000,0,no occurrences in first-fold training
+telecommand_489,telecommand,32,0,0,0,1,,2000-02-13 13:46:00,2002-03-29 00:48:19.617000,0.0,,,,False,0,2492,1711462894000000000,11,event context candidate; constant payload is not uninformative
+telecommand_490,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,683,1711462894000000000,0,no occurrences in first-fold training
+telecommand_491,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,842,1711462894000000000,0,no occurrences in first-fold training
+telecommand_492,telecommand,1,0,0,0,1,,2002-03-29 00:41:07.833000,2002-03-29 00:41:07.833000,0.0,,,,False,0,718,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_493,telecommand,15689,0,0,0,1,,2000-01-01 00:00:00,2002-12-31 15:51:48.750000,0.0,,,,False,0,536478,1711462894000000000,36,event context candidate; constant payload is not uninformative
+telecommand_494,telecommand,4,0,0,0,1,,2000-10-11 05:03:36.369000,2002-09-25 16:11:08.304000,0.0,,,,False,0,3389,1711462894000000000,4,event context candidate; constant payload is not uninformative
+telecommand_495,telecommand,4,0,0,0,1,,2000-10-10 23:43:44.733000,2002-09-25 11:48:35.268000,0.0,,,,False,0,3203,1711462894000000000,4,event context candidate; constant payload is not uninformative
+telecommand_496,telecommand,2,0,0,0,1,,2000-10-11 04:50:03.135000,2002-03-28 23:36:03.273000,0.0,,,,False,0,836,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_497,telecommand,4,0,0,0,1,,2000-10-11 04:46:38.787000,2002-03-28 23:38:14.667000,0.0,,,,False,0,1152,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_498,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,797,1711462894000000000,0,no occurrences in first-fold training
+telecommand_499,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,792,1711462894000000000,0,no occurrences in first-fold training
+telecommand_500,telecommand,905,0,0,0,1,,2000-01-01 15:05:44.064000,2002-12-31 00:54:35.148000,0.0,,,,False,0,27798,1711462894000000000,36,event context candidate; constant payload is not uninformative
+telecommand_501,telecommand,895,0,0,0,1,,2000-01-01 13:51:11.061000,2002-12-31 20:48:20.145000,0.0,,,,False,0,26847,1711462894000000000,36,event context candidate; constant payload is not uninformative
+telecommand_502,telecommand,58481,0,0,0,1,,2000-01-01 00:03:24,2002-09-29 00:46:06,0.0,,,,False,0,554654,1711462894000000000,23,event context candidate; constant payload is not uninformative
+telecommand_503,telecommand,107,0,0,0,1,,2000-02-25 11:10:33,2002-09-25 15:27:47.373000,0.0,,,,False,0,1526,1711462894000000000,6,event context candidate; constant payload is not uninformative
+telecommand_504,telecommand,3,0,0,0,1,,2000-10-11 00:39:30.144000,2002-09-25 12:44:47.847000,0.0,,,,False,0,734,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_505,telecommand,4,0,0,0,1,,2000-10-11 03:22:15.009000,2002-09-25 15:37:26.592000,0.0,,,,False,0,818,1711462894000000000,4,event context candidate; constant payload is not uninformative
+telecommand_506,telecommand,5,0,0,0,1,,2000-10-11 03:24:05.769000,2002-09-25 15:40:43.464000,0.0,,,,False,0,830,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_507,telecommand,4,0,0,0,1,,2000-10-11 03:26:29.052000,2002-09-25 15:42:18.924000,0.0,,,,False,0,812,1711462894000000000,4,event context candidate; constant payload is not uninformative
+telecommand_508,telecommand,4,0,0,0,1,,2000-10-11 03:30:19.206000,2002-09-25 15:43:50.436000,0.0,,,,False,0,812,1711462894000000000,4,event context candidate; constant payload is not uninformative
+telecommand_509,telecommand,4,0,0,0,1,,2000-10-11 03:32:49.098000,2002-09-25 15:45:03.168000,0.0,,,,False,0,807,1711462894000000000,4,event context candidate; constant payload is not uninformative
+telecommand_510,telecommand,4,0,0,0,1,,2000-10-11 03:35:08.385000,2002-09-25 15:47:15.846000,0.0,,,,False,0,833,1711462894000000000,4,event context candidate; constant payload is not uninformative
+telecommand_511,telecommand,4,0,0,0,1,,2000-10-11 03:37:09.666000,2002-09-25 15:48:48.312000,0.0,,,,False,0,810,1711462894000000000,4,event context candidate; constant payload is not uninformative
+telecommand_512,telecommand,4,0,0,0,1,,2000-10-11 03:39:10.089000,2002-09-25 15:51:55.728000,0.0,,,,False,0,805,1711462894000000000,4,event context candidate; constant payload is not uninformative
+telecommand_513,telecommand,4,0,0,0,1,,2000-10-11 03:41:13.134000,2002-09-25 15:53:59.112000,0.0,,,,False,0,809,1711462894000000000,4,event context candidate; constant payload is not uninformative
+telecommand_514,telecommand,4,0,0,0,1,,2000-10-11 03:21:23.625000,2002-09-25 15:37:17.400000,0.0,,,,False,0,822,1711462894000000000,4,event context candidate; constant payload is not uninformative
+telecommand_515,telecommand,5,0,0,0,1,,2000-10-11 03:23:20.625000,2002-09-25 15:40:34.326000,0.0,,,,False,0,827,1711462894000000000,5,event context candidate; constant payload is not uninformative
+telecommand_516,telecommand,4,0,0,0,1,,2000-10-11 03:25:21.513000,2002-09-25 15:42:09.816000,0.0,,,,False,0,809,1711462894000000000,4,event context candidate; constant payload is not uninformative
+telecommand_517,telecommand,4,0,0,0,1,,2000-10-11 03:29:01.041000,2002-09-25 15:43:41.280000,0.0,,,,False,0,811,1711462894000000000,4,event context candidate; constant payload is not uninformative
+telecommand_518,telecommand,4,0,0,0,1,,2000-10-11 03:31:44.622000,2002-09-25 15:44:54,0.0,,,,False,0,804,1711462894000000000,4,event context candidate; constant payload is not uninformative
+telecommand_519,telecommand,4,0,0,0,1,,2000-10-11 03:34:21.390000,2002-09-25 15:47:06.744000,0.0,,,,False,0,837,1711462894000000000,4,event context candidate; constant payload is not uninformative
+telecommand_520,telecommand,4,0,0,0,1,,2000-10-11 03:36:18.849000,2002-09-25 15:48:39.216000,0.0,,,,False,0,809,1711462894000000000,4,event context candidate; constant payload is not uninformative
+telecommand_521,telecommand,4,0,0,0,1,,2000-10-11 03:38:22.992000,2002-09-25 15:51:46.656000,0.0,,,,False,0,810,1711462894000000000,4,event context candidate; constant payload is not uninformative
+telecommand_522,telecommand,4,0,0,0,1,,2000-10-11 03:40:19.509000,2002-09-25 15:53:49.953000,0.0,,,,False,0,810,1711462894000000000,4,event context candidate; constant payload is not uninformative
+telecommand_523,telecommand,3,0,0,0,1,,2000-10-11 00:38:17.334000,2002-09-25 12:44:16.785000,0.0,,,,False,0,732,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_524,telecommand,16,0,0,0,1,,2000-02-25 11:10:30,2000-10-11 03:18:30.498000,0.0,,,,False,0,814,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_525,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,695,1711462894000000000,0,no occurrences in first-fold training
+telecommand_526,telecommand,12,0,0,0,1,,2000-12-24 22:07:10.671000,2002-09-25 15:20:07.509000,0.0,,,,False,0,866,1711462894000000000,4,event context candidate; constant payload is not uninformative
+telecommand_527,telecommand,2,0,0,0,1,,2000-12-24 22:14:58.665000,2002-09-25 15:27:46.203000,0.0,,,,False,0,737,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_528,telecommand,2,0,0,0,1,,2000-12-24 22:18:38.541000,2002-09-25 15:30:48.201000,0.0,,,,False,0,737,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_529,telecommand,2,0,0,0,1,,2000-12-24 22:18:39.768000,2002-09-25 15:30:49.377000,0.0,,,,False,0,736,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_530,telecommand,2,0,0,0,1,,2000-12-24 22:18:39.768000,2002-09-25 15:30:50.556000,0.0,,,,False,0,733,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_531,telecommand,2,0,0,0,1,,2000-12-24 22:18:40.986000,2002-09-25 15:30:51.717000,0.0,,,,False,0,737,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_532,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,695,1711462894000000000,0,no occurrences in first-fold training
+telecommand_533,telecommand,2,0,0,0,1,,2001-04-23 17:52:13.128000,2002-06-23 15:28:33.222000,2.0,,,,False,0,730,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_534,telecommand,2,0,0,0,1,,2001-04-23 19:13:36.831000,2002-06-23 16:01:56.835000,2.0,,,,False,0,723,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_535,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,692,1711462894000000000,0,no occurrences in first-fold training
+telecommand_536,telecommand,1,0,0,0,1,,2001-04-23 18:45:15,2001-04-23 18:45:15,1.0,,,,False,0,694,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_537,telecommand,3,0,0,0,1,,2000-02-10 15:57:14.265000,2001-04-23 21:39:27.873000,2.0,,,,False,0,761,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_538,telecommand,2,0,0,0,1,,2000-02-10 16:24:58.377000,2001-04-23 13:58:36.039000,2.0,,,,False,0,751,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_539,telecommand,1,0,0,0,1,,2001-04-23 22:30:15,2001-04-23 22:30:15,1.0,,,,False,0,695,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_540,telecommand,3,0,0,0,1,,2000-03-20 01:46:01.284000,2000-03-21 02:02:55.512000,0.0,,,,False,0,1163,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_541,telecommand,3,0,0,0,1,,2000-03-20 01:45:44.586000,2000-03-21 02:02:28.977000,0.0,,,,False,0,1044,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_542,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,693,1711462894000000000,0,no occurrences in first-fold training
+telecommand_543,telecommand,3,0,0,0,1,,2000-03-20 01:46:01.284000,2000-03-21 02:02:55.512000,0.0,,,,False,0,1162,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_544,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,1997,1711462894000000000,0,no occurrences in first-fold training
+telecommand_545,telecommand,2,0,0,0,1,,2001-06-12 22:50:46.818000,2001-06-12 22:59:29.658000,0.0,,,,False,0,2044,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_546,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,683,1711462894000000000,0,no occurrences in first-fold training
+telecommand_547,telecommand,2,0,0,0,1,,2001-01-29 08:57:54,2001-01-29 08:58:00,0.0,,,,False,0,745,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_548,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,717,1711462894000000000,0,no occurrences in first-fold training
+telecommand_549,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,1086,1711462894000000000,0,no occurrences in first-fold training
+telecommand_550,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,706,1711462894000000000,0,no occurrences in first-fold training
+telecommand_551,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,710,1711462894000000000,0,no occurrences in first-fold training
+telecommand_552,telecommand,1,0,0,0,1,,2000-07-31 02:48:57.138000,2000-07-31 02:48:57.138000,0.0,,,,False,0,693,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_553,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,739,1711462894000000000,0,no occurrences in first-fold training
+telecommand_554,telecommand,3,0,0,0,1,,2001-01-29 08:56:30,2001-02-19 12:22:44.973000,0.0,,,,False,0,829,1711462894000000000,2,event context candidate; constant payload is not uninformative
+telecommand_555,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,1563,1711462894000000000,0,no occurrences in first-fold training
+telecommand_556,telecommand,337,0,0,0,1,,2000-01-03 07:48:03.006000,2002-12-29 12:06:54.912000,0.0,,,,False,0,14654,1711462894000000000,31,event context candidate; constant payload is not uninformative
+telecommand_557,telecommand,371,0,0,0,1,,2000-01-03 07:47:12.642000,2002-12-29 12:05:57.456000,0.0,,,,False,0,14070,1711462894000000000,32,event context candidate; constant payload is not uninformative
+telecommand_558,telecommand,321,0,0,0,1,,2000-01-03 07:50:38.079000,2002-12-29 12:10:41.796000,0.0,,,,False,0,17635,1711462894000000000,32,event context candidate; constant payload is not uninformative
+telecommand_559,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,745,1711462894000000000,0,no occurrences in first-fold training
+telecommand_560,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,740,1711462894000000000,0,no occurrences in first-fold training
+telecommand_561,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,696,1711462894000000000,0,no occurrences in first-fold training
+telecommand_562,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,777,1711462894000000000,0,no occurrences in first-fold training
+telecommand_563,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,771,1711462894000000000,0,no occurrences in first-fold training
+telecommand_564,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,692,1711462894000000000,0,no occurrences in first-fold training
+telecommand_565,telecommand,1690,0,0,0,1,,2000-01-01 14:03:20.061000,2002-12-30 09:53:26.208000,0.0,,,,False,0,33961,1711462894000000000,36,event context candidate; constant payload is not uninformative
+telecommand_566,telecommand,2,0,0,0,1,,2000-03-20 01:33:05.439000,2000-03-20 19:37:44.130000,0.0,,,,False,0,804,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_567,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,8607,1711462894000000000,0,no occurrences in first-fold training
+telecommand_568,telecommand,2,0,0,0,1,,2000-03-20 01:17:10.518000,2000-03-20 19:21:15.075000,0.0,,,,False,0,941,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_569,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,4791,1711462894000000000,0,no occurrences in first-fold training
+telecommand_570,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,708,1711462894000000000,0,no occurrences in first-fold training
+telecommand_571,telecommand,1,0,0,0,1,,2000-12-15 17:21:04.152000,2000-12-15 17:21:04.152000,2.0,,,,False,0,696,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_572,telecommand,80,0,0,0,1,,2000-07-23 06:00:30,2002-03-15 00:51:27,1.0,,,,False,0,2703,1711462894000000000,6,event context candidate; constant payload is not uninformative
+telecommand_573,telecommand,6,0,0,0,1,,2000-09-05 04:31:21.183000,2002-03-30 10:31:45,1.0,,,,False,0,804,1711462894000000000,4,event context candidate; constant payload is not uninformative
+telecommand_574,telecommand,8,0,0,0,1,,2000-09-05 04:38:21.984000,2002-03-30 10:38:45,1.0,,,,False,0,814,1711462894000000000,4,event context candidate; constant payload is not uninformative
+telecommand_575,telecommand,132,0,0,0,1,,2000-07-23 06:13:48,2002-09-03 13:30:57,1.0,,,,False,0,2699,1711462894000000000,15,event context candidate; constant payload is not uninformative
+telecommand_576,telecommand,2,0,0,0,1,,2000-12-15 16:14:51.213000,2000-12-15 17:11:34.896000,1.0,,,,False,0,711,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_577,telecommand,6,0,0,0,1,,2000-09-05 04:35:51.465000,2002-03-30 10:36:15,1.0,,,,False,0,802,1711462894000000000,4,event context candidate; constant payload is not uninformative
+telecommand_578,telecommand,2,0,0,0,1,,2001-05-04 00:15:57,2001-05-04 00:48:03,1.0,,,,False,0,815,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_579,telecommand,191,0,0,0,1,,2000-07-23 06:01:24,2002-03-15 00:49:30,1.0,,,,False,0,5707,1711462894000000000,8,event context candidate; constant payload is not uninformative
+telecommand_580,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,709,1711462894000000000,0,no occurrences in first-fold training
+telecommand_581,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,712,1711462894000000000,0,no occurrences in first-fold training
+telecommand_582,telecommand,4,0,0,0,1,,2001-12-13 18:47:05.907000,2001-12-13 19:06:02.094000,1.0,,,,False,0,806,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_583,telecommand,1554,0,0,0,1,,2000-01-01 00:00:03,2002-12-31 15:51:45.750000,1.0,,,,False,0,54478,1711462894000000000,36,event context candidate; constant payload is not uninformative
+telecommand_584,telecommand,6,0,0,0,1,,2000-09-05 04:30:51.009000,2002-03-30 10:31:15,1.0,,,,False,0,798,1711462894000000000,4,event context candidate; constant payload is not uninformative
+telecommand_585,telecommand,8,0,0,0,1,,2000-09-05 04:37:51.873000,2002-03-30 10:38:15,1.0,,,,False,0,822,1711462894000000000,4,event context candidate; constant payload is not uninformative
+telecommand_586,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,880,1711462894000000000,0,no occurrences in first-fold training
+telecommand_587,telecommand,91,0,0,0,1,,2000-07-23 06:00:09,2002-09-03 13:30:54,1.0,,,,False,0,2376,1711462894000000000,16,event context candidate; constant payload is not uninformative
+telecommand_588,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,708,1711462894000000000,0,no occurrences in first-fold training
+telecommand_589,telecommand,1,0,0,0,1,,2000-12-15 21:31:32.541000,2000-12-15 21:31:32.541000,2.0,,,,False,0,697,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_590,telecommand,80,0,0,0,1,,2000-07-23 06:30:30,2002-03-15 01:51:27,1.0,,,,False,0,2693,1711462894000000000,6,event context candidate; constant payload is not uninformative
+telecommand_591,telecommand,5,0,0,0,1,,2000-12-15 19:55:46.446000,2002-03-30 11:01:45,1.0,,,,False,0,790,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_592,telecommand,7,0,0,0,1,,2000-12-15 20:02:46.809000,2002-03-30 11:08:45,1.0,,,,False,0,810,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_593,telecommand,133,0,0,0,1,,2000-07-11 18:02:27,2002-03-30 11:15:30,1.0,,,,False,0,2687,1711462894000000000,13,event context candidate; constant payload is not uninformative
+telecommand_594,telecommand,2,0,0,0,1,,2000-12-15 20:24:49.770000,2000-12-15 21:21:15.201000,1.0,,,,False,0,708,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_595,telecommand,5,0,0,0,1,,2000-12-15 20:00:16.440000,2002-03-30 11:06:15,1.0,,,,False,0,796,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_596,telecommand,2,0,0,0,1,,2001-05-10 00:15:57,2001-05-10 00:48:03,1.0,,,,False,0,818,1711462894000000000,1,event context candidate; constant payload is not uninformative
+telecommand_597,telecommand,191,0,0,0,1,,2000-07-23 06:31:24,2002-03-15 01:49:30,1.0,,,,False,0,5774,1711462894000000000,8,event context candidate; constant payload is not uninformative
+telecommand_598,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,706,1711462894000000000,0,no occurrences in first-fold training
+telecommand_599,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,710,1711462894000000000,0,no occurrences in first-fold training
+telecommand_600,telecommand,1487,0,0,0,1,,2000-01-01 00:00:15,2002-12-30 06:16:22.500000,1.0,,,,False,0,54264,1711462894000000000,36,event context candidate; constant payload is not uninformative
+telecommand_601,telecommand,5,0,0,0,1,,2000-12-15 19:55:16.506000,2002-03-30 11:01:15,1.0,,,,False,0,791,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_602,telecommand,7,0,0,0,1,,2000-12-15 20:02:16.632000,2002-03-30 11:08:15,1.0,,,,False,0,810,1711462894000000000,3,event context candidate; constant payload is not uninformative
+telecommand_603,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,878,1711462894000000000,0,no occurrences in first-fold training
+telecommand_604,telecommand,91,0,0,0,1,,2000-07-11 18:00:09,2002-03-30 11:15:27,1.0,,,,False,0,2270,1711462894000000000,13,event context candidate; constant payload is not uninformative
+telecommand_605,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,707,1711462894000000000,0,no occurrences in first-fold training
+telecommand_606,telecommand,1,0,0,0,1,,2000-12-16 02:47:16.248000,2000-12-16 02:47:16.248000,2.0,,,,False,0,693,1711462896000000000,1,event context candidate; constant payload is not uninformative
+telecommand_607,telecommand,80,0,0,0,1,,2000-07-23 07:00:30,2002-03-15 02:51:09,1.0,,,,False,0,2682,1711462896000000000,6,event context candidate; constant payload is not uninformative
+telecommand_608,telecommand,6,0,0,0,1,,2000-09-05 05:15:01.137000,2002-03-30 11:31:45,1.0,,,,False,0,807,1711462896000000000,4,event context candidate; constant payload is not uninformative
+telecommand_609,telecommand,8,0,0,0,1,,2000-09-05 05:22:01.830000,2002-03-30 11:38:45,1.0,,,,False,0,827,1711462896000000000,4,event context candidate; constant payload is not uninformative
+telecommand_610,telecommand,134,0,0,0,1,,2000-07-11 18:17:27,2002-03-30 11:45:27,1.0,,,,False,0,2751,1711462896000000000,13,event context candidate; constant payload is not uninformative
+telecommand_611,telecommand,2,0,0,0,1,,2000-12-16 01:31:35.136000,2000-12-16 02:38:04.632000,1.0,,,,False,0,708,1711462896000000000,1,event context candidate; constant payload is not uninformative
+telecommand_612,telecommand,6,0,0,0,1,,2000-09-05 05:19:31.647000,2002-03-30 11:36:15,1.0,,,,False,0,810,1711462896000000000,4,event context candidate; constant payload is not uninformative
+telecommand_613,telecommand,2,0,0,0,1,,2001-05-16 00:15:57,2001-05-16 00:48:03,1.0,,,,False,0,816,1711462896000000000,1,event context candidate; constant payload is not uninformative
+telecommand_614,telecommand,146,0,0,0,1,,2000-07-23 07:01:24,2002-03-15 02:51:15,1.0,,,,False,0,4463,1711462896000000000,6,event context candidate; constant payload is not uninformative
+telecommand_615,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,709,1711462896000000000,0,no occurrences in first-fold training
+telecommand_616,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,707,1711462896000000000,0,no occurrences in first-fold training
+telecommand_617,telecommand,1372,0,0,0,1,,2000-01-03 07:39:54.558000,2002-12-28 09:07:39.375000,1.0,,,,False,0,50985,1711462896000000000,35,event context candidate; constant payload is not uninformative
+telecommand_618,telecommand,6,0,0,0,1,,2000-09-05 05:14:31.065000,2002-03-30 11:31:15,1.0,,,,False,0,812,1711462896000000000,4,event context candidate; constant payload is not uninformative
+telecommand_619,telecommand,8,0,0,0,1,,2000-09-05 05:21:31.923000,2002-03-30 11:38:15,1.0,,,,False,0,829,1711462896000000000,4,event context candidate; constant payload is not uninformative
+telecommand_620,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,863,1711462896000000000,0,no occurrences in first-fold training
+telecommand_621,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,869,1711462896000000000,0,no occurrences in first-fold training
+telecommand_622,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,710,1711462896000000000,0,no occurrences in first-fold training
+telecommand_623,telecommand,3,0,0,0,1,,2000-03-23 16:01:37.059000,2000-12-17 21:46:49.323000,2.0,,,,False,0,722,1711462896000000000,3,event context candidate; constant payload is not uninformative
+telecommand_624,telecommand,80,0,0,0,1,,2000-07-23 07:30:30,2002-03-15 04:02:21,1.0,,,,False,0,2702,1711462896000000000,6,event context candidate; constant payload is not uninformative
+telecommand_625,telecommand,6,0,0,0,1,,2000-04-10 23:46:00,2002-03-30 12:01:45,1.0,,,,False,0,825,1711462896000000000,4,event context candidate; constant payload is not uninformative
+telecommand_626,telecommand,12,0,0,0,1,,2000-03-23 14:46:22.848000,2002-03-30 12:08:45,1.0,,,,False,0,881,1711462896000000000,6,event context candidate; constant payload is not uninformative
+telecommand_627,telecommand,419,0,0,0,1,,2000-01-01 00:09:30,2002-09-29 00:01:57,1.0,,,,False,0,4691,1711462896000000000,23,event context candidate; constant payload is not uninformative
+telecommand_628,telecommand,6,0,0,0,1,,2000-03-23 14:39:15.378000,2000-12-17 21:33:37.533000,1.0,,,,False,0,753,1711462896000000000,3,event context candidate; constant payload is not uninformative
+telecommand_629,telecommand,6,0,0,0,1,,2000-04-10 23:50:30,2002-03-30 12:06:15,1.0,,,,False,0,827,1711462896000000000,4,event context candidate; constant payload is not uninformative
+telecommand_630,telecommand,2,0,0,0,1,,2001-05-22 00:15:57,2001-05-22 00:48:03,1.0,,,,False,0,814,1711462896000000000,1,event context candidate; constant payload is not uninformative
+telecommand_631,telecommand,206,0,0,0,1,,2000-07-23 07:31:24,2002-03-15 04:02:27,1.0,,,,False,0,6281,1711462896000000000,8,event context candidate; constant payload is not uninformative
+telecommand_632,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,708,1711462896000000000,0,no occurrences in first-fold training
+telecommand_633,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,707,1711462896000000000,0,no occurrences in first-fold training
+telecommand_634,telecommand,1638,0,0,0,1,,2000-01-01 00:09:36,2002-12-30 21:51:02.250000,1.0,,,,False,0,55289,1711462896000000000,35,event context candidate; constant payload is not uninformative
+telecommand_635,telecommand,6,0,0,0,1,,2000-04-10 23:45:30,2002-03-30 12:01:15,1.0,,,,False,0,826,1711462896000000000,4,event context candidate; constant payload is not uninformative
+telecommand_636,telecommand,12,0,0,0,1,,2000-03-23 14:43:45.474000,2002-03-30 12:08:15,1.0,,,,False,0,885,1711462896000000000,6,event context candidate; constant payload is not uninformative
+telecommand_637,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,905,1711462896000000000,0,no occurrences in first-fold training
+telecommand_638,telecommand,546,0,0,0,1,,2000-01-01 00:09:42,2002-09-29 00:01:54,1.0,,,,False,0,5276,1711462896000000000,22,event context candidate; constant payload is not uninformative
+telecommand_639,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,706,1711462896000000000,0,no occurrences in first-fold training
+telecommand_640,telecommand,3,0,0,0,1,,2000-05-28 23:07:19.260000,2000-12-06 14:31:26.859000,2.0,,,,False,0,719,1711462896000000000,3,event context candidate; constant payload is not uninformative
+telecommand_641,telecommand,80,0,0,0,1,,2000-07-23 08:00:30,2002-03-15 06:02:21,1.0,,,,False,0,2703,1711462896000000000,6,event context candidate; constant payload is not uninformative
+telecommand_642,telecommand,7,0,0,0,1,,2000-04-11 00:31:00,2002-03-30 12:31:45,1.0,,,,False,0,834,1711462896000000000,6,event context candidate; constant payload is not uninformative
+telecommand_643,telecommand,14,0,0,0,1,,2000-04-11 00:37:30,2002-03-30 12:38:45,1.0,,,,False,0,894,1711462896000000000,7,event context candidate; constant payload is not uninformative
+telecommand_644,telecommand,560,0,0,0,1,,2000-01-01 00:03:30,2002-09-29 00:16:57,1.0,,,,False,0,5327,1711462896000000000,23,event context candidate; constant payload is not uninformative
+telecommand_645,telecommand,6,0,0,0,1,,2000-05-28 20:58:42.309000,2000-12-06 14:20:23.976000,1.0,,,,False,0,751,1711462896000000000,3,event context candidate; constant payload is not uninformative
+telecommand_646,telecommand,9,0,0,0,1,,2000-04-11 00:35:30,2002-03-30 12:36:15,1.0,,,,False,0,849,1711462896000000000,6,event context candidate; constant payload is not uninformative
+telecommand_647,telecommand,2,0,0,0,1,,2001-05-28 00:15:57,2001-05-28 00:48:03,1.0,,,,False,0,805,1711462896000000000,1,event context candidate; constant payload is not uninformative
+telecommand_648,telecommand,206,0,0,0,1,,2000-07-23 08:01:24,2002-03-15 06:02:27,1.0,,,,False,0,6169,1711462896000000000,8,event context candidate; constant payload is not uninformative
+telecommand_649,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,731,1711462896000000000,0,no occurrences in first-fold training
+telecommand_650,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,708,1711462896000000000,0,no occurrences in first-fold training
+telecommand_651,telecommand,1673,0,0,0,1,,2000-01-01 00:03:36,2002-12-30 18:57:22.500000,1.0,,,,False,0,54404,1711462896000000000,35,event context candidate; constant payload is not uninformative
+telecommand_652,telecommand,7,0,0,0,1,,2000-04-11 00:30:30,2002-03-30 12:31:15,1.0,,,,False,0,838,1711462896000000000,6,event context candidate; constant payload is not uninformative
+telecommand_653,telecommand,14,0,0,0,1,,2000-04-11 00:37:00,2002-03-30 12:38:15,1.0,,,,False,0,901,1711462896000000000,7,event context candidate; constant payload is not uninformative
+telecommand_654,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,919,1711462896000000000,0,no occurrences in first-fold training
+telecommand_655,telecommand,658,0,0,0,1,,2000-01-01 00:03:42,2002-09-29 00:16:54,1.0,,,,False,0,5777,1711462896000000000,22,event context candidate; constant payload is not uninformative
+telecommand_656,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,710,1711462896000000000,0,no occurrences in first-fold training
+telecommand_657,telecommand,3,0,0,0,1,,2000-03-23 18:16:41.655000,2000-12-18 00:36:35.304000,2.0,,,,False,0,722,1711462896000000000,3,event context candidate; constant payload is not uninformative
+telecommand_658,telecommand,80,0,0,0,1,,2000-07-23 08:30:30,2002-03-15 08:02:21,1.0,,,,False,0,2689,1711462896000000000,6,event context candidate; constant payload is not uninformative
+telecommand_659,telecommand,8,0,0,0,1,,2000-04-11 01:22:00,2002-03-30 13:01:45,1.0,,,,False,0,845,1711462896000000000,6,event context candidate; constant payload is not uninformative
+telecommand_660,telecommand,14,0,0,0,1,,2000-03-23 17:10:26.259000,2002-03-30 13:08:45,1.0,,,,False,0,897,1711462896000000000,7,event context candidate; constant payload is not uninformative
+telecommand_661,telecommand,196,0,0,0,1,,2000-04-09 06:18:30,2002-09-29 00:31:57,1.0,,,,False,0,3366,1711462896000000000,16,event context candidate; constant payload is not uninformative
+telecommand_662,telecommand,6,0,0,0,1,,2000-03-23 17:03:23.835000,2000-12-18 00:23:54.273000,1.0,,,,False,0,750,1711462896000000000,3,event context candidate; constant payload is not uninformative
+telecommand_663,telecommand,8,0,0,0,1,,2000-04-11 01:26:30,2002-03-30 13:06:15,1.0,,,,False,0,844,1711462896000000000,6,event context candidate; constant payload is not uninformative
+telecommand_664,telecommand,2,0,0,0,1,,2001-06-03 00:15:57,2001-06-03 00:48:03,1.0,,,,False,0,813,1711462896000000000,1,event context candidate; constant payload is not uninformative
+telecommand_665,telecommand,206,0,0,0,1,,2000-07-23 08:31:24,2002-03-15 08:02:27,1.0,,,,False,0,6154,1711462896000000000,8,event context candidate; constant payload is not uninformative
+telecommand_666,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,709,1711462896000000000,0,no occurrences in first-fold training
+telecommand_667,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,706,1711462896000000000,0,no occurrences in first-fold training
+telecommand_668,telecommand,1493,0,0,0,1,,2000-01-01 00:24:58.038000,2002-12-22 11:46:03,1.0,,,,False,0,52712,1711462896000000000,35,event context candidate; constant payload is not uninformative
+telecommand_669,telecommand,8,0,0,0,1,,2000-04-11 01:21:30,2002-03-30 13:01:15,1.0,,,,False,0,844,1711462896000000000,6,event context candidate; constant payload is not uninformative
+telecommand_670,telecommand,14,0,0,0,1,,2000-03-23 17:06:01.845000,2002-03-30 13:08:15,1.0,,,,False,0,895,1711462896000000000,7,event context candidate; constant payload is not uninformative
+telecommand_671,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,910,1711462896000000000,0,no occurrences in first-fold training
+telecommand_672,telecommand,202,0,0,0,1,,2000-04-09 06:18:42,2002-09-29 00:31:54,1.0,,,,False,0,3378,1711462896000000000,15,event context candidate; constant payload is not uninformative
+telecommand_673,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,722,1711462896000000000,0,no occurrences in first-fold training
+telecommand_674,telecommand,3,0,0,0,1,,2000-03-23 20:15:52.572000,2000-12-18 06:24:59.496000,2.0,,,,False,0,723,1711462896000000000,3,event context candidate; constant payload is not uninformative
+telecommand_675,telecommand,80,0,0,0,1,,2000-07-23 09:00:30,2002-03-15 10:02:21,1.0,,,,False,0,2702,1711462896000000000,6,event context candidate; constant payload is not uninformative
+telecommand_676,telecommand,6,0,0,0,1,,2000-04-10 21:46:00,2002-03-30 13:31:45,1.0,,,,False,0,828,1711462896000000000,4,event context candidate; constant payload is not uninformative
+telecommand_677,telecommand,12,0,0,0,1,,2000-03-23 19:06:32.946000,2002-03-30 13:38:45,1.0,,,,False,0,882,1711462896000000000,6,event context candidate; constant payload is not uninformative
+telecommand_678,telecommand,186,0,0,0,1,,2000-04-09 06:27:30,2002-09-29 00:46:57,1.0,,,,False,0,3337,1711462896000000000,16,event context candidate; constant payload is not uninformative
+telecommand_679,telecommand,6,0,0,0,1,,2000-03-23 19:02:11.973000,2000-12-18 06:15:26.964000,1.0,,,,False,0,747,1711462896000000000,3,event context candidate; constant payload is not uninformative
+telecommand_680,telecommand,6,0,0,0,1,,2000-04-10 21:50:30,2002-03-30 13:36:15,1.0,,,,False,0,828,1711462896000000000,4,event context candidate; constant payload is not uninformative
+telecommand_681,telecommand,2,0,0,0,1,,2001-06-09 00:15:57,2001-06-09 00:48:03,1.0,,,,False,0,832,1711462896000000000,1,event context candidate; constant payload is not uninformative
+telecommand_682,telecommand,206,0,0,0,1,,2000-07-23 09:01:24,2002-03-15 10:02:27,1.0,,,,False,0,6157,1711462896000000000,8,event context candidate; constant payload is not uninformative
+telecommand_683,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,723,1711462896000000000,0,no occurrences in first-fold training
+telecommand_684,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,723,1711462896000000000,0,no occurrences in first-fold training
+telecommand_685,telecommand,1494,0,0,0,1,,2000-01-01 13:28:48.939000,2002-12-30 03:50:19.875000,1.0,,,,False,0,50469,1711462896000000000,35,event context candidate; constant payload is not uninformative
+telecommand_686,telecommand,6,0,0,0,1,,2000-04-10 21:45:30,2002-03-30 13:31:15,1.0,,,,False,0,823,1711462896000000000,4,event context candidate; constant payload is not uninformative
+telecommand_687,telecommand,12,0,0,0,1,,2000-03-23 19:05:10.743000,2002-03-30 13:38:15,1.0,,,,False,0,881,1711462896000000000,6,event context candidate; constant payload is not uninformative
+telecommand_688,telecommand,0,0,0,0,0,,,,1.0,,,,False,0,1088,1711462896000000000,0,no occurrences in first-fold training
+telecommand_689,telecommand,192,0,0,0,1,,2000-04-09 06:27:42,2002-09-29 00:46:54,1.0,,,,False,0,3492,1711462896000000000,15,event context candidate; constant payload is not uninformative
+telecommand_690,telecommand,204,0,0,0,1,,2000-07-23 06:00:15,2002-09-03 13:30:27,0.0,,,,False,0,4908,1711462896000000000,14,event context candidate; constant payload is not uninformative
+telecommand_691,telecommand,202,0,0,0,1,,2000-07-11 18:00:15,2002-03-15 01:50:06,0.0,,,,False,0,5017,1711462896000000000,12,event context candidate; constant payload is not uninformative
+telecommand_692,telecommand,204,0,0,0,1,,2000-07-11 18:15:15,2002-03-15 02:49:48,0.0,,,,False,0,4917,1711462896000000000,12,event context candidate; constant payload is not uninformative
+telecommand_693,telecommand,378,0,0,0,1,,2000-01-01 00:09:15,2002-09-29 00:00:57,0.0,,,,False,0,6737,1711462896000000000,22,event context candidate; constant payload is not uninformative
+telecommand_694,telecommand,400,0,0,0,1,,2000-01-01 00:03:15,2002-09-29 00:15:57,0.0,,,,False,0,6697,1711462896000000000,22,event context candidate; constant payload is not uninformative
+telecommand_695,telecommand,267,0,0,0,1,,2000-04-09 06:18:15,2002-09-29 00:30:57,0.0,,,,False,0,5905,1711462896000000000,15,event context candidate; constant payload is not uninformative
+telecommand_696,telecommand,264,0,0,0,1,,2000-04-09 06:27:15,2002-09-29 00:45:57,0.0,,,,False,0,5886,1711462896000000000,15,event context candidate; constant payload is not uninformative
+telecommand_697,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,694,1711462896000000000,0,no occurrences in first-fold training
+telecommand_698,telecommand,0,0,0,0,0,,,,0.0,,,,False,0,692,1711462896000000000,0,no occurrences in first-fold training

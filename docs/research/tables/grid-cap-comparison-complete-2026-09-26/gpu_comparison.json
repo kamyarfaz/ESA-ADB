@@ -1,0 +1,12 @@
+{
+  "identical_inputs": true,
+  "matching_checkpoint_and_rule_hashes": true,
+  "prediction_differences": 32,
+  "cpu_boundary_scores": [
+    6.974298000335693
+  ],
+  "gpu_boundary_scores": [
+    6.974297523498535
+  ],
+  "max_score_difference": 3.5762786865234375e-06
+}

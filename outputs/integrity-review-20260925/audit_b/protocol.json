@@ -1,0 +1,75 @@
+{
+  "interval": "[2000-01-01,2004-04-01)",
+  "training": "2000\u20132003",
+  "calibration": "Jan\u2013Mar2004",
+  "reference": "Per-channel median positive native interval in training",
+  "definitions": "Observation age at30s grid; descriptive thresholds strictly>2x and>5x training cadence. Missing initial history separately counted.",
+  "scope": "Full-period summaries include annotated data; sample window analysis uses saved8000 wholly nominal reference windows, not all optimization windows.",
+  "limitations": "Staleness is not a packet-loss label. Whole-mission pickles read then restricted; no later-period analysis. File stats checked, not upstream cryptographic provenance. No alarm suppression/model/threshold changes.",
+  "sources": [
+    {
+      "channel": "channel_40",
+      "bytes": 26533933,
+      "mtime_ns": 1711462578000000000,
+      "compressed_sha256": "0e0d0517b55916847492e24e3328713281b7e6720dc178e0e77f4900db12cc4d",
+      "decoded_sha256": "e3416e900226711fa4348278d297e389512ec9807cf00ab827397e2200874f90",
+      "native_timestamps_sha256": "32774b50bbbdab248e18bb8a6b19110b02f93f26abdb17076417a5030c32e6f8"
+    },
+    {
+      "channel": "channel_41",
+      "bytes": 83216184,
+      "mtime_ns": 1711462592000000000,
+      "compressed_sha256": "32cabd39524c5c5fe972255f158e0ba933cdb0609efe88782e6217f3782d20d0",
+      "decoded_sha256": "8f85fa88527ba4d326a0115c6ce0507c51fa611029e0ecfb63a0180a2e693a63",
+      "native_timestamps_sha256": "c3f327d43784d03322051813e1b0af7e03e9a4b73ce15ab2f4f8b31ac71ad9da"
+    },
+    {
+      "channel": "channel_42",
+      "bytes": 85752416,
+      "mtime_ns": 1711462606000000000,
+      "compressed_sha256": "ef01d2afdfd6926f69fc7b427eaa63565a7b218d81317027420d22f2aa34854a",
+      "decoded_sha256": "8ece634f55e7a3a4122dbe2570b9d0cf220615609bc88be91a58225c729eaf5d",
+      "native_timestamps_sha256": "c3f327d43784d03322051813e1b0af7e03e9a4b73ce15ab2f4f8b31ac71ad9da"
+    },
+    {
+      "channel": "channel_43",
+      "bytes": 83202471,
+      "mtime_ns": 1711462618000000000,
+      "compressed_sha256": "e664ea5b64ccea49796f32c9fd97cb6584c16d837442aebb2a6926c6f7413289",
+      "decoded_sha256": "69d2df72e4f015a95982efc5be1df5b6557c6be5d832e4ca37daa74272edcc7a",
+      "native_timestamps_sha256": "c3f327d43784d03322051813e1b0af7e03e9a4b73ce15ab2f4f8b31ac71ad9da"
+    },
+    {
+      "channel": "channel_44",
+      "bytes": 85209141,
+      "mtime_ns": 1711462630000000000,
+      "compressed_sha256": "b5fa421b1e5828441a0e61fe489fb3fca3036db2de8c6fbb599be39acdd5de18",
+      "decoded_sha256": "06a27575182a51665994ac669bd38a90e4a159fdd3dd17fbc9028a98d7bc82f5",
+      "native_timestamps_sha256": "c3f327d43784d03322051813e1b0af7e03e9a4b73ce15ab2f4f8b31ac71ad9da"
+    },
+    {
+      "channel": "channel_45",
+      "bytes": 83395435,
+      "mtime_ns": 1711462642000000000,
+      "compressed_sha256": "d98bce78727df6125ad82de764af68c20027b85ef3fe64c8b3dc402d3c58d57e",
+      "decoded_sha256": "b1320c7212c7b8fa5e9795921e3bd34d4db2b3c727b8bf20e3d8f3a4b57d2045",
+      "native_timestamps_sha256": "c3f327d43784d03322051813e1b0af7e03e9a4b73ce15ab2f4f8b31ac71ad9da"
+    },
+    {
+      "channel": "channel_46",
+      "bytes": 85564289,
+      "mtime_ns": 1711462654000000000,
+      "compressed_sha256": "9cf536c62cf3db9e54c0da0c1b9b2988fb92b21e3652da472ff3f5725799ea08",
+      "decoded_sha256": "2bdaf17dbe74479c55357d7267c60dc960e407a846bbe159bcd625c3be9a520e",
+      "native_timestamps_sha256": "c3f327d43784d03322051813e1b0af7e03e9a4b73ce15ab2f4f8b31ac71ad9da"
+    },
+    {
+      "channel": "channel_47",
+      "bytes": 73067793,
+      "mtime_ns": 1711462664000000000,
+      "compressed_sha256": "eca21d8c0eae85dc72febc30ce73621d67c29403cfd95bdb0d30df5281c6b9a0",
+      "decoded_sha256": "1a920414ed5da017843084bc4e52be554153820910972ab67de310aa68b941a7",
+      "native_timestamps_sha256": "59f76c084b442eebad241089e0e4f1297ed23dafdeee3abe2829b912916b5c39"
+    }
+  ]
+}

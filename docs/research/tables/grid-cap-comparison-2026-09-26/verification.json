@@ -1,0 +1,28 @@
+{
+  "inputs": {
+    "2004": {
+      "results_longrun/development/ae_baseline_remaining_seed42/2004/frozen_rule.json": "b77c5359b6be1e6c43ea94df9b6928a1389eea0b60ffe71f402bb9e49b4d0fcd",
+      "results_longrun/development/ae_baseline_remaining_seed42/2004/calibration_candidates.csv": "1e5bfb0dded9a1d0f91e3022dc2efd4545bbfae8bce8f08e84dfcdebe9b0a383",
+      "results_longrun/diagnostics/baseline_2004_epoch35_v2/calibration_channel_scores.npz": "1fc7ec8146c7c20bd1bd04db66dc89c7ed1196325e1039646ca5225be057c4cb",
+      "results_longrun/diagnostics/baseline_2004_epoch35_v2/results.json": "155355770355f148879edf2b8b2fefd6da3931fadbe16c734105011f17767592",
+      "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/labels.csv": "1564d630f1ec1387d699ec81531ce57118051a220c8b7cba050a446a652b9082",
+      "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/anomaly_types.csv": "e0cadee4ee9697c5ca8d4f9e81067454d7d7a00d063ee0de33cbc77660eec8bc"
+    },
+    "2005": {
+      "results_longrun/development/ae_baseline_remaining_seed42/2005/frozen_rule.json": "cf490ec62aa03f868c2936da5a6f7e3712eb53802b4b2c51ba1b8c1a4510b1b2",
+      "results_longrun/development/ae_baseline_remaining_seed42/2005/calibration_candidates.csv": "336c899989d14b2d607406c5a71658e40b4a2b5dee78e1b46ce9c4de9f4b25ba",
+      "results_longrun/diagnostics/baseline_2005_epoch5_v1/calibration_channel_scores.npz": "d5bd52723415134aeafcb3bcb123456a41d84000a8f3d5f54f38be5ce51639b6",
+      "results_longrun/diagnostics/baseline_2005_epoch5_v1/results.json": "aa11843f9c047b6e7c1fe046a39ae84d4947a7f30fc739d00ad7c7b9c63d02d8",
+      "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/labels.csv": "1564d630f1ec1387d699ec81531ce57118051a220c8b7cba050a446a652b9082",
+      "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/anomaly_types.csv": "e0cadee4ee9697c5ca8d4f9e81067454d7d7a00d063ee0de33cbc77660eec8bc"
+    }
+  },
+  "status": "partial",
+  "blocked": [
+    {
+      "year": 2003,
+      "reason": "No completed verified diagnostic; omitted, not accepted"
+    }
+  ],
+  "reproduction": "Included folds reproduced frozen predictions and calibration metrics"
+}

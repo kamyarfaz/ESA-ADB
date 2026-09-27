@@ -1,0 +1,17 @@
+{
+  "interval": "[2000-01-01,2006-01-01)",
+  "rows": 6312960,
+  "nominal_rows": 5615041,
+  "telemetry": 76,
+  "label_columns": 87,
+  "nominal": "All 87 paired labels equal zero",
+  "pearson": "All eligible 30-second samples; stable centered covariance aggregation",
+  "differences": "Adjacent 30-second samples both nominal, same calendar year; no bridging excluded periods",
+  "spearman": "Exploratory fixed hourly nominal sample only",
+  "sample_rows": 46785,
+  "clustering": "Complete linkage on 1-min(abs(yearly Pearson)), same sign and defined in all six years; diagnostic 0.90 and 0.95 cuts; retain all singletons",
+  "limitations": "Prepared-data relationships; inherited imputation; Pearson is linear association, not utility/causality. No automatic input selection or training.",
+  "source_size": 7323166601,
+  "source_mtime_ns": 1790080947520719903,
+  "script_sha256": "bb4fa07232489645f14670f2cde068fce39a6ee0c94f119a1a06ca2af4b43b1e"
+}

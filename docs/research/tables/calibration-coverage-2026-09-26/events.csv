@@ -1,0 +1,9 @@
+year,event_id,annotated_on_inputs,input_channels,clipped_union_hours,starts_before_calibration,extends_beyond_calibration,event_detection_status
+2003,id_8,False,,5.475,False,False,not inferred from aggregate counts
+2003,id_87,True,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,261.12632666666667,False,False,not inferred from aggregate counts
+2003,id_9,False,,1.1,False,False,not inferred from aggregate counts
+2004,id_12,True,channel_40;channel_47,180.0,True,False,not inferred from aggregate counts
+2005,id_10,True,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,15.7421875,False,True,not inferred from aggregate counts
+2005,id_17,True,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,65.1185325,False,False,not inferred from aggregate counts
+2005,id_98,True,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,76.86666666666666,False,False,not inferred from aggregate counts
+2005,id_99,False,,3.6,False,False,not inferred from aggregate counts

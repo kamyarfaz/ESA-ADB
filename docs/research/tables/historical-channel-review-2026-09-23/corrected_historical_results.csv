@@ -1,0 +1,10 @@
+run,val_esa_f05,test_EW_F_0.50,test_metric_version,source
+clust_med_t03_6ch,0.5873641141599666,0.196336115678596,esa-ew-id-duration-v1,results_longrun/audits/f05_corrected_baseline_2026-09-16/results.csv
+clust_pair_t03_12ch,0.8799026019384373,0.6752965466742926,esa-ew-id-duration-v1,results_longrun/audits/f05_corrected_baseline_2026-09-16/results.csv
+corr_ch12_41_52,0.8799026019384373,0.7652418847247926,esa-ew-id-duration-v1,results_longrun/audits/f05_corrected_baseline_2026-09-16/results.csv
+corr_ch19_17_35,0.0811875073820954,0.052522625704545,esa-ew-id-duration-v1,results_longrun/audits/f05_corrected_baseline_2026-09-16/results.csv
+corr_ch24_12_35,0.5878821276993345,0.1632548196410331,esa-ew-id-duration-v1,results_longrun/audits/f05_corrected_baseline_2026-09-16/results.csv
+corr_ch26_20_45,0.8799026019384373,0.5395645974799141,esa-ew-id-duration-v1,results_longrun/audits/f05_corrected_baseline_2026-09-16/results.csv
+corr_ch29_12_40,0.5877732345090992,0.0961381488983643,esa-ew-id-duration-v1,results_longrun/audits/f05_corrected_baseline_2026-09-16/results.csv
+corr_neg_ch30_12_40_p61,0.5879365679973385,0.2936665848988549,esa-ew-id-duration-v1,results_longrun/audits/f05_corrected_baseline_2026-09-16/results.csv
+pa_clust_med_t03_6ch,0.8821083772897611,0.6649373697561954,esa-ew-id-duration-v1,results_longrun/audits/f05_corrected_baseline_2026-09-16/results.csv

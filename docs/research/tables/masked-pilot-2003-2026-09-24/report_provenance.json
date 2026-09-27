@@ -1,0 +1,13 @@
+{
+  "source_files": {
+    "results_longrun/development/masked_pilot_2003_seed42_v1/baseline/development_prediction.npy": "c6c7fd9e7188da948e10b53bc77fd39040bd54bac9d69f0a00da0edb95f2c889",
+    "results_longrun/development/masked_pilot_2003_seed42_v1/baseline/development_score.npy": "eef489e678f673fcafa36117f57f65dc86d116470eae0f51b702be0b07aaf2dc",
+    "results_longrun/development/masked_pilot_2003_seed42_v1/baseline/frozen_rule.json": "5282888bc518a54d4809bdb422747e7fc06d544107c8430fbda9f0dcec09b3e4",
+    "results_longrun/development/masked_pilot_2003_seed42_v1/baseline/model_checkpoint.pt": "9a3326c465044f718e1d6e2f81ca876994efa29bb7c4c656d228027148614ec8",
+    "results_longrun/development/masked_pilot_2003_seed42_v1/masked/development_prediction.npy": "6137309dc5cf3226ac12e98ead2e3d2fa8920d3eb56921ec5ea2fbe903d7b8e3",
+    "results_longrun/development/masked_pilot_2003_seed42_v1/masked/development_score.npy": "0726c8be65a48e84b32009009690a55444496cd1bbdefa8b0b326a3ebcadfb18",
+    "results_longrun/development/masked_pilot_2003_seed42_v1/masked/frozen_rule.json": "305b935b3af10a23e676b0818470c88cf0c9b41f504b6f9ad944bed009ff5665",
+    "results_longrun/development/masked_pilot_2003_seed42_v1/masked/model_checkpoint.pt": "b824fcb89705bbd994dae33203a6573354a7d226e455d862aa39052bcb13aedf"
+  },
+  "verification": "Both5epoch histories, earliest selected epoch1, prediction equality to frozen threshold/postprocessing, system-score equality within1e-12. Local scope retains other annotations as neutral."
+}

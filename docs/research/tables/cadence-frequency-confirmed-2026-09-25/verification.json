@@ -1,0 +1,10 @@
+{
+  "age_frequency.csv": "9ded38dfbb26b85ba924b597497e0fb10b5a139d959f7ce79f514814d1c720de",
+  "nominal_training_windows.csv": "fb0099821e7f06c4aade9ca157c93d1e7454750ca00fd6728e4a5f6c43328adf",
+  "status": "two_guarded_runs_match_exactly",
+  "runs": [
+    "outputs/integrity-review-20260925/audit_b",
+    "outputs/integrity-review-20260925/audit_cpu2"
+  ],
+  "limitation": "Bounded audit reproduced; intermittent machine/read/computation faults remain unresolved. Successful CPU2 execution is not proof of a reliable core."
+}

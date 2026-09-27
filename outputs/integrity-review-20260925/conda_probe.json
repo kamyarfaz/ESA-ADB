@@ -1,0 +1,98 @@
+[
+  {
+    "channel": 43,
+    "trial": 0,
+    "python": "/home/k_faz/miniconda3/envs/timeeval/bin/python",
+    "compressed_sha": "e664ea5b64ccea49796f32c9fd97cb6584c16d837442aebb2a6926c6f7413289",
+    "decoded_sha": "69d2df72e4f015a95982efc5be1df5b6557c6be5d832e4ca37daa74272edcc7a",
+    "compressed_sha_after": "e664ea5b64ccea49796f32c9fd97cb6584c16d837442aebb2a6926c6f7413289"
+  },
+  {
+    "channel": 43,
+    "trial": 1,
+    "python": "/home/k_faz/miniconda3/envs/timeeval/bin/python",
+    "compressed_sha": "e664ea5b64ccea49796f32c9fd97cb6584c16d837442aebb2a6926c6f7413289",
+    "decoded_sha": "69d2df72e4f015a95982efc5be1df5b6557c6be5d832e4ca37daa74272edcc7a",
+    "compressed_sha_after": "e664ea5b64ccea49796f32c9fd97cb6584c16d837442aebb2a6926c6f7413289"
+  },
+  {
+    "channel": 43,
+    "trial": 2,
+    "python": "/home/k_faz/miniconda3/envs/timeeval/bin/python",
+    "compressed_sha": "e664ea5b64ccea49796f32c9fd97cb6584c16d837442aebb2a6926c6f7413289",
+    "decoded_sha": "69d2df72e4f015a95982efc5be1df5b6557c6be5d832e4ca37daa74272edcc7a",
+    "compressed_sha_after": "e664ea5b64ccea49796f32c9fd97cb6584c16d837442aebb2a6926c6f7413289"
+  },
+  {
+    "channel": 43,
+    "trial": 3,
+    "python": "/home/k_faz/miniconda3/envs/timeeval/bin/python",
+    "compressed_sha": "e664ea5b64ccea49796f32c9fd97cb6584c16d837442aebb2a6926c6f7413289",
+    "decoded_sha": "69d2df72e4f015a95982efc5be1df5b6557c6be5d832e4ca37daa74272edcc7a",
+    "compressed_sha_after": "e664ea5b64ccea49796f32c9fd97cb6584c16d837442aebb2a6926c6f7413289"
+  },
+  {
+    "channel": 43,
+    "trial": 4,
+    "python": "/home/k_faz/miniconda3/envs/timeeval/bin/python",
+    "compressed_sha": "e664ea5b64ccea49796f32c9fd97cb6584c16d837442aebb2a6926c6f7413289",
+    "decoded_sha": "69d2df72e4f015a95982efc5be1df5b6557c6be5d832e4ca37daa74272edcc7a",
+    "compressed_sha_after": "e664ea5b64ccea49796f32c9fd97cb6584c16d837442aebb2a6926c6f7413289"
+  },
+  {
+    "channel": 43,
+    "trial": 5,
+    "python": "/home/k_faz/miniconda3/envs/timeeval/bin/python",
+    "compressed_sha": "e664ea5b64ccea49796f32c9fd97cb6584c16d837442aebb2a6926c6f7413289",
+    "decoded_sha": "69d2df72e4f015a95982efc5be1df5b6557c6be5d832e4ca37daa74272edcc7a",
+    "compressed_sha_after": "e664ea5b64ccea49796f32c9fd97cb6584c16d837442aebb2a6926c6f7413289"
+  },
+  {
+    "channel": 44,
+    "trial": 0,
+    "python": "/home/k_faz/miniconda3/envs/timeeval/bin/python",
+    "compressed_sha": "b5fa421b1e5828441a0e61fe489fb3fca3036db2de8c6fbb599be39acdd5de18",
+    "decoded_sha": "06a27575182a51665994ac669bd38a90e4a159fdd3dd17fbc9028a98d7bc82f5",
+    "compressed_sha_after": "b5fa421b1e5828441a0e61fe489fb3fca3036db2de8c6fbb599be39acdd5de18"
+  },
+  {
+    "channel": 44,
+    "trial": 1,
+    "python": "/home/k_faz/miniconda3/envs/timeeval/bin/python",
+    "compressed_sha": "b5fa421b1e5828441a0e61fe489fb3fca3036db2de8c6fbb599be39acdd5de18",
+    "decoded_sha": "06a27575182a51665994ac669bd38a90e4a159fdd3dd17fbc9028a98d7bc82f5",
+    "compressed_sha_after": "b5fa421b1e5828441a0e61fe489fb3fca3036db2de8c6fbb599be39acdd5de18"
+  },
+  {
+    "channel": 44,
+    "trial": 2,
+    "python": "/home/k_faz/miniconda3/envs/timeeval/bin/python",
+    "compressed_sha": "b5fa421b1e5828441a0e61fe489fb3fca3036db2de8c6fbb599be39acdd5de18",
+    "decoded_sha": "06a27575182a51665994ac669bd38a90e4a159fdd3dd17fbc9028a98d7bc82f5",
+    "compressed_sha_after": "b5fa421b1e5828441a0e61fe489fb3fca3036db2de8c6fbb599be39acdd5de18"
+  },
+  {
+    "channel": 44,
+    "trial": 3,
+    "python": "/home/k_faz/miniconda3/envs/timeeval/bin/python",
+    "compressed_sha": "b5fa421b1e5828441a0e61fe489fb3fca3036db2de8c6fbb599be39acdd5de18",
+    "decoded_sha": "06a27575182a51665994ac669bd38a90e4a159fdd3dd17fbc9028a98d7bc82f5",
+    "compressed_sha_after": "b5fa421b1e5828441a0e61fe489fb3fca3036db2de8c6fbb599be39acdd5de18"
+  },
+  {
+    "channel": 44,
+    "trial": 4,
+    "python": "/home/k_faz/miniconda3/envs/timeeval/bin/python",
+    "compressed_sha": "b5fa421b1e5828441a0e61fe489fb3fca3036db2de8c6fbb599be39acdd5de18",
+    "decoded_sha": "06a27575182a51665994ac669bd38a90e4a159fdd3dd17fbc9028a98d7bc82f5",
+    "compressed_sha_after": "b5fa421b1e5828441a0e61fe489fb3fca3036db2de8c6fbb599be39acdd5de18"
+  },
+  {
+    "channel": 44,
+    "trial": 5,
+    "python": "/home/k_faz/miniconda3/envs/timeeval/bin/python",
+    "compressed_sha": "b5fa421b1e5828441a0e61fe489fb3fca3036db2de8c6fbb599be39acdd5de18",
+    "decoded_sha": "06a27575182a51665994ac669bd38a90e4a159fdd3dd17fbc9028a98d7bc82f5",
+    "compressed_sha_after": "b5fa421b1e5828441a0e61fe489fb3fca3036db2de8c6fbb599be39acdd5de18"
+  }
+]

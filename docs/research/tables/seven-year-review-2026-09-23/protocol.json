@@ -1,0 +1,9 @@
+{
+  "interval": "[2000-01-01,2007-01-01)",
+  "scope": "76 telemetry channels and 698 telecommand types; annual statistics",
+  "use": "Descriptive exploration only, not channel selection or model tuning.",
+  "labels": "No anomaly-label file or model results loaded.",
+  "validation": "2006 covariates inspected; no longer completely unseen. Reserved from tuning; do not use these summaries to adapt a model and then claim independent 2006 validation.",
+  "limitations": "Raw statistics include all periods without nominal filtering. Within-year intervals omit cross-year gaps. Size/mtime checks are not checksums. Anonymized units. No predictive utility inferred.",
+  "script_sha256": "9dd327a3b5b76ab818e52ad49eb5a0dbbd3887e19019e56f872a884f500e0ca5"
+}

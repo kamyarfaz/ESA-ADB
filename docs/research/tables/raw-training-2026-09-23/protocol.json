@@ -1,0 +1,11 @@
+{
+  "interval": "[2000-01-01,2003-01-01)",
+  "selection": "training only; no assessment statistics",
+  "coverage": "76 raw telemetry channels; prepared profile includes 11 telecommands",
+  "caveats": [
+    "Intervals over one hour are descriptive, not proven missing packets.",
+    "Raw statistics include annotated periods; prepared profile is nominal only.",
+    "No channels removed; no data transformed; source size/mtime checked, not content hashes.",
+    "Physical metadata is anonymized; no engineering meaning inferred."
+  ]
+}

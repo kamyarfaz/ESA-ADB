@@ -1,0 +1,6 @@
+{
+  "scope": "[2000-01-01,2003-01-01); channels 4\u201311 native resolution",
+  "boundary": "Both difference endpoints inside training; final raw sample not differenced.",
+  "labels": "Raw channel annotations; overlap uses left difference timestamp, inclusive annotation ends.",
+  "caution": "Outside event annotations does not mean nominal: gap/other annotations are not excluded. No assessment data used; no inputs removed."
+}

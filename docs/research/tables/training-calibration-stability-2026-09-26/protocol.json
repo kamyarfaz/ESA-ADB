@@ -1,0 +1,32 @@
+{
+  "status": "complete",
+  "inputs": {
+    "2003": {
+      "results_longrun/diagnostics/baseline_2003_epoch25_gpu_v1/training_window_errors.npz": "04842bbb7a7ff3ffc49f9450c73ab5939a6bc510687f180c982cd02095449af5",
+      "results_longrun/diagnostics/baseline_2003_epoch25_gpu_v1/calibration_window_errors.npz": "f72760e6851e4a1b6fc6f929ced9937abbef69114c6fc4ad414afb81b954c2f3",
+      "results_longrun/diagnostics/baseline_2003_epoch25_gpu_v1/results.json": "48e6458bcdd90b4b07892d43ea5aa03a5a561202eb443eba8b3a976287ceca68",
+      "results_longrun/development/ae_baseline_2003_seed42/2003/frozen_rule.json": "79de9b222adae6910966b1561ce9e7acda62b0b534d107e64f73b48ab9bb29f4",
+      "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/labels.csv": "1564d630f1ec1387d699ec81531ce57118051a220c8b7cba050a446a652b9082",
+      "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/anomaly_types.csv": "e0cadee4ee9697c5ca8d4f9e81067454d7d7a00d063ee0de33cbc77660eec8bc"
+    },
+    "2004": {
+      "results_longrun/diagnostics/baseline_2004_epoch35_v2/training_window_errors.npz": "e5e87bebbf6a8ab5b8467b523c6630253c2f1177c90dd9119a3fec1c6d121ffe",
+      "results_longrun/diagnostics/baseline_2004_epoch35_v2/calibration_window_errors.npz": "3063786aa060cb4afeb70ed21cf0afebebe02a58baeac9ccf59fe346ce9b2156",
+      "results_longrun/diagnostics/baseline_2004_epoch35_v2/results.json": "155355770355f148879edf2b8b2fefd6da3931fadbe16c734105011f17767592",
+      "results_longrun/development/ae_baseline_remaining_seed42/2004/frozen_rule.json": "b77c5359b6be1e6c43ea94df9b6928a1389eea0b60ffe71f402bb9e49b4d0fcd",
+      "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/labels.csv": "1564d630f1ec1387d699ec81531ce57118051a220c8b7cba050a446a652b9082",
+      "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/anomaly_types.csv": "e0cadee4ee9697c5ca8d4f9e81067454d7d7a00d063ee0de33cbc77660eec8bc"
+    },
+    "2005": {
+      "results_longrun/diagnostics/baseline_2005_epoch5_v1/training_window_errors.npz": "a0cb035197e04e35e7ea5be169330d98fedcfc20bcde291f73d1a02c2bd3766a",
+      "results_longrun/diagnostics/baseline_2005_epoch5_v1/calibration_window_errors.npz": "a364905450faf9979c37a5f289a252dd6174cd1f0e98b94ed882f2a8ab439ee7",
+      "results_longrun/diagnostics/baseline_2005_epoch5_v1/results.json": "aa11843f9c047b6e7c1fe046a39ae84d4947a7f30fc739d00ad7c7b9c63d02d8",
+      "results_longrun/development/ae_baseline_remaining_seed42/2005/frozen_rule.json": "cf490ec62aa03f868c2936da5a6f7e3712eb53802b4b2c51ba1b8c1a4510b1b2",
+      "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/labels.csv": "1564d630f1ec1387d699ec81531ce57118051a220c8b7cba050a446a652b9082",
+      "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/anomaly_types.csv": "e0cadee4ee9697c5ca8d4f9e81067454d7d7a00d063ee0de33cbc77660eec8bc"
+    }
+  },
+  "policy": "Only saved training/calibration windows; no assessment access; no model/rule changes",
+  "comparison": "Window reconstruction MSE on globally nominal whole windows, no aggregation mixing",
+  "limitations": "Training is evenly spaced2000window/year sample, calibration includes all eligible stride32 windows. Overlapping windows are dependent. Within-checkpoint descriptive comparison only; models/scalers differ across folds. In-sample training optimism; sparse sampled tails; not drift causality or significance proof."
+}

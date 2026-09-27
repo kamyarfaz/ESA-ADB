@@ -1,0 +1,25 @@
+{
+  "inputs": {
+    "results_longrun/diagnostics/ch40_47_epoch10_v2/calibration_channel_scores.npz": "f0384d8ee6b52b9fa675d1d627e58a240986b61c60011b4167aa6cec15a2af7c",
+    "results_longrun/diagnostics/ch40_47_epoch10_v2/protocol.json": "471f439469a6db1955a2a4657dcdf8825b1798972f5cde1ff6cb0084ee9578a6",
+    "results_longrun/long_baseline/ch40_47_train2000_2005_seed42/full_period/frozen_rule.json": "c3f9f3edfc99bb155ea072dd4777b220b1c8a7341746798c17cc41556fba0fdf",
+    "results_longrun/long_baseline/ch40_47_train2000_2005_seed42/full_period/history.csv": "bdc20eee218a1da029a4b3b0b3495691aeff47cdb6d399db106e838259a669c5"
+  },
+  "reproduction": {
+    "EW_F_0.50": 0.8821482657069778,
+    "EW_precision": 0.9996714139214719,
+    "EW_recall": 0.6,
+    "TPe": 6,
+    "FPe": 0,
+    "FNe": 4,
+    "num_true_events": 10,
+    "num_pred_events": 8,
+    "alarming_precision": 0.75,
+    "nominal_seconds": 30526841.079,
+    "false_positive_seconds": 10030.695,
+    "nominal_false_alarm_rate": 0.00032858607852814803,
+    "false_alarms_per_day": 0.0,
+    "metric_version": "esa-ew-id-duration-v1"
+  },
+  "policy": "2006 calibration only; threshold perturbations diagnostic, not adopted; no assessment files read"
+}

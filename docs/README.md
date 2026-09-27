@@ -41,3 +41,81 @@
 - [2004 baseline alarm audit](research/baseline-2004-findings.md): frozen false alarms, score overlap and missed-event coverage.
 - [Separate specialist detector](research/specialist-detector.md): channels 14/21/29 and frozen-baseline combined calibration.
 - [Data-first supervisor plan](research/data-first-plan.md): training-only channel audit, small-subset screening and presentation structure.
+- [All-input training review](research/all-input-review-2026-09-23.md): all 76 telemetry channels and 698 telecommand types in 2000–2002.
+- [Counter preprocessing trace](research/counter-preprocessing-trace-2026-09-23.md): why raw changes disappear from nominal prepared data.
+- [Seven-year descriptive review](research/seven-year-input-review-2026-09-23.md): 2000–2006 yearly inventory and telemetry atlas, separate from model selection.
+
+- [Full 14-year Mission 1 review](research/full-mission-input-review-2026-09-23.md): all 774 inputs across 2000–2013, with annual statistics and telemetry plots.
+
+- [Long-period baseline](research/long-baseline.md): channels 40–47; train 2000–2005, calibrate 2006, assess 2007–2013; uncapped nominal windows and recovery.
+
+- [Historical channel experiment inventory](research/historical-channel-review-2026-09-23.md): nine completed correlation/representative variants and the preprocessing/correlation work still needed.
+
+- [Preprocessing and corrected training-period correlation review](research/preprocessing-and-correlation-policy.md) — all 76 telemetry channels, 2000–2005, with yearly matrices and diagnostic groups.
+
+- [Completed longer baseline results](research/long-baseline-results-2026-09-24.md) — pooled and yearly assessment, selected checkpoint and limitations.
+
+- [Training scaling review](research/scaling-review-2026-09-24.md) — exact scaling/clipping audit for all 87 prepared inputs.
+
+- [Counter aggregation review](research/counter-aggregation-2026-09-24.md) — causal binning, change retention and missingness limitations.
+
+- [Channels 40–47: data and improvement review](research/ch40-47-improvement-review-2026-09-24.md) — current scope, measured findings, primary research sources and prioritized scoring diagnostic.
+
+- [Channels 40–47 diagnostic command](research/channel-diagnostics.md) — fixed-checkpoint inference, progress and stage recovery.
+
+- [Channel-normalization comparison](research/channel-normalization-results-2026-09-24.md) — completed calibration-only ablation; original scoring retained.
+
+- [Masked-reconstruction pilot](research/masked-pilot.md) — matched small comparison on channels 40–47, with epoch recovery.
+
+- [Input-channel versus system-level evaluation](research/dual-scope-evaluation.md) — supervisor request and same-prediction baseline comparison.
+
+- [Completed 2003 masked pilot](research/masked-pilot-results-2026-09-24.md) — matched baseline comparison and both evaluation scopes.
+
+- [Masked pilot follow-up](research/masked-pilot-followup-2026-09-24.md) — three-year comparison; masked improvement did not hold consistently.
+- [2004 calibration diagnosis](research/masked-calibration-diagnosis-2026-09-24.md) — single-event calibration and deteriorating detection despite falling training loss.
+- [Training objective audit](research/masked-objective-audit-2026-09-25.md) — fixed training probe and synthetic corruption versus hidden-target overlap.
+- [Hidden-target overlap pilot](research/masked-overlap-pilot.md) — controlled placement comparison, protocol and run command.
+- [Hidden-target overlap results](research/masked-overlap-results-2026-09-25.md) — marginal gain, poor calibration; variant paused.
+- [Baseline calibration event review](research/baseline-event-review-2026-09-25.md) — all six input-annotated events detected; missed system events and score margins.
+- [Baseline consistency across 2003–2005](research/baseline-years-review-2026-09-25.md) — sparse calibration, false-alarm episodes and local/system misses.
+- [Frozen 2004 calibration diagnostic](research/baseline-2004-diagnostic.md) — checkpoint-preserving per-channel plots for calibration alarms.
+- [Completed 2004 calibration diagnostic](research/baseline-2004-diagnostic-results-2026-09-25.md) — differing false-alarm patterns and repeated prepared values.
+- [Native timestamp review](research/native-alarm-review-2026-09-25.md) — longer observation intervals and held values around the January24 false alarm.
+- [Cadence frequency audit — provisional](research/cadence-frequency-review-2026-09-25.md) — repeated CRC/timestamp failures block acceptance of new findings.
+- [Direct integrity investigation](research/integrity-investigation-2026-09-25.md) — two guarded cadence audits reproduced exactly; underlying intermittent fault unresolved.
+- [Observation-age prototype](research/observation-age-prototype.md) — tested causal timing features; full data build stopped by integrity checks.
+- [Single-calculation isolation](research/single-age-calculation-2026-09-25.md) — NumPy and scalar Python agree; intermittent pipeline failure not reproduced.
+- [Baseline inference repeatability](research/inference-repeatability-2026-09-25.md) — two independent CPU runs matched exactly across228 windows.
+
+- [Full-period timing comparison: protocol, recovery, and run command](research/full-period-timing-comparison.md)
+
+- [Full-period timing comparison results](research/timing-comparison-results-2026-09-26.md)
+
+- [2006 calibration stability audit](research/calibration-stability-2006-2026-09-26.md)
+
+- [2005 calibration missed-event diagnostic](research/baseline-2005-diagnostic-2026-09-26.md)
+
+- [Alarm-cap and threshold-grid audit](research/alarm-cap-audit-2026-09-26.md)
+
+- [Partial calibration grid/cap comparison](research/grid-cap-comparison-2026-09-26.md)
+
+- [2003 calibration threshold-boundary investigation](research/calibration-boundary-2003-2026-09-26.md)
+
+- [Completed calibration grid/cap comparison](research/grid-cap-comparison-complete-2026-09-26.md)
+
+- [Grid/cap development assessment: candidate rejected](research/grid-cap-development-2026-09-26.md)
+
+- [Training/calibration score stability](research/training-calibration-stability-2026-09-26.md)
+
+- [Nominal-window reconstruction inspection](research/nominal-window-inspection-2026-09-26.md)
+
+- [Existing checkpoint comparison on nominal windows](research/nominal-reconstruction-comparison-2026-09-26.md)
+
+- [Both models on 2005 calibration events](research/calibration-model-comparison-2005-2026-09-26.md)
+
+- [id_98 local channel and augmentation review](research/id98-local-review-2026-09-26.md)
+
+- [Baseline repeat verification](research/baseline-repeat-2026-09-27.md)
+- [Local event-shape inventory and proposed experiment](research/local-event-shapes-2026-09-27.md)
+
+- [Optional short coordinated augmentation](research/short-coordinated-augmentation.md)

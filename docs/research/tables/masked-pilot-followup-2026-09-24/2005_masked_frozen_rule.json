@@ -1,0 +1,30 @@
+{
+  "epoch": 1,
+  "rule": {
+    "threshold": 11.578774843217573,
+    "merge_gap": 0,
+    "min_dur": 1,
+    "val_esa_f05": 0.8328063065294764,
+    "val_event_f05": 0.8328063065294764,
+    "val_event_precision": 0.9990516516360617,
+    "val_event_recall": 0.5,
+    "val_pred_anomaly_rate": 0.01,
+    "val_saturated": false,
+    "val_EW_F_0.50": 0.8328063065294764,
+    "val_EW_precision": 0.9990516516360617,
+    "val_EW_recall": 0.5,
+    "val_TPe": 2,
+    "val_FPe": 0,
+    "val_FNe": 2,
+    "val_num_true_events": 4,
+    "val_num_pred_events": 5,
+    "val_alarming_precision": 0.4,
+    "val_nominal_seconds": 7195191.408,
+    "val_false_positive_seconds": 6823.548,
+    "val_nominal_false_alarm_rate": 0.0009483483639383117,
+    "val_false_alarms_per_day": 0.0,
+    "val_metric_version": "esa-ew-id-duration-v1",
+    "selection_name": "best_val_esa_f05_val_pred_rate_lte_0.01",
+    "selection_type": "clean_validation_selected"
+  }
+}

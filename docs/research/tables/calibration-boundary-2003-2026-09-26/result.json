@@ -1,0 +1,89 @@
+{
+  "inputs": {
+    "results_longrun/diagnostics/baseline_2003_epoch25_v1/calibration_inputs.npz": "8c2fe4f7644a7c7763abbf403e78d06e3c0ebec103277b8c18dbeedab4d1dbdf",
+    "results_longrun/diagnostics/baseline_2003_epoch25_v1/calibration_window_errors.npz": "6cca694c59cf5622fff6f5c30137c6c565eed86bb3247c0b9165f619ee24c5c0",
+    "results_longrun/development/ae_baseline_2003_seed42/2003/model_checkpoint.pt": "0e305e842266847cb0ea1f4ae13cc8ae905ca81c11ec51f2a783a69d444af21b",
+    "results_longrun/development/ae_baseline_2003_seed42/2003/frozen_rule.json": "79de9b222adae6910966b1561ce9e7acda62b0b534d107e64f73b48ab9bb29f4"
+  },
+  "cuda_available": false,
+  "uncovered": 0,
+  "paired_equals_diagnostic": true,
+  "max_score_difference": 0.0,
+  "paired_metrics": {
+    "EW_F_0.50": 0.7141835329272609,
+    "EW_precision": 0.9997496825284574,
+    "EW_recall": 0.3333333333333333,
+    "TPe": 1,
+    "FPe": 0,
+    "FNe": 2,
+    "num_true_events": 3,
+    "num_pred_events": 1,
+    "alarming_precision": 1.0,
+    "nominal_seconds": 6812245.224,
+    "false_positive_seconds": 1705.224,
+    "nominal_false_alarm_rate": 0.00025031747154258266,
+    "false_alarms_per_day": 0.0,
+    "metric_version": "esa-ew-id-duration-v1"
+  },
+  "threshold": 6.974297523498535,
+  "adjacent_float32": 6.974298000335693,
+  "boundary_scores": [
+    6.974298000335693
+  ],
+  "boundary_samples": 32,
+  "boundary_first": "2003-02-27 02:24:00",
+  "boundary_last": "2003-02-27 02:39:30",
+  "diagnostic_perturbations": [
+    {
+      "diagnostic_threshold_delta": 0,
+      "metrics": {
+        "EW_F_0.50": 0.7141835329272609,
+        "EW_precision": 0.9997496825284574,
+        "EW_recall": 0.3333333333333333,
+        "TPe": 1,
+        "FPe": 0,
+        "FNe": 2,
+        "num_true_events": 3,
+        "num_pred_events": 1,
+        "alarming_precision": 1.0,
+        "nominal_seconds": 6812245.224,
+        "false_positive_seconds": 1705.224,
+        "nominal_false_alarm_rate": 0.00025031747154258266,
+        "false_alarms_per_day": 0.0,
+        "metric_version": "esa-ew-id-duration-v1"
+      },
+      "intervals": [
+        [
+          "2003-02-27 02:24:00",
+          "2003-02-27 03:44:00"
+        ]
+      ]
+    },
+    {
+      "diagnostic_threshold_delta": 1e-06,
+      "metrics": {
+        "EW_F_0.50": 0.7142410612656628,
+        "EW_precision": 0.9998906052299212,
+        "EW_recall": 0.3333333333333333,
+        "TPe": 1,
+        "FPe": 0,
+        "FNe": 2,
+        "num_true_events": 3,
+        "num_pred_events": 1,
+        "alarming_precision": 1.0,
+        "nominal_seconds": 6812245.224,
+        "false_positive_seconds": 745.224,
+        "nominal_false_alarm_rate": 0.00010939477007876341,
+        "false_alarms_per_day": 0.0,
+        "metric_version": "esa-ew-id-duration-v1"
+      },
+      "intervals": [
+        [
+          "2003-02-27 02:40:00",
+          "2003-02-27 03:44:00"
+        ]
+      ]
+    }
+  ],
+  "limitation": "No historical GPU score array available for direct numerical comparison. No threshold modification or failed diagnostic acceptance."
+}

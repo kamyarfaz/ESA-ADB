@@ -1,0 +1,7 @@
+{
+  "interval": "[2000-01-01,2006-01-01)",
+  "availability": "Difference assigned to later observation, then ceiling 30-second boundary; bin (t-30s,t]",
+  "features": "candidate count, signed sum and absolute sum; no arrays installed",
+  "boundary": "First observation has no delta; both endpoints inside training; bins at/after 2006 excluded",
+  "limitations": "Known numeric changes only, not event recall. Native timestamps assumed availability; no packet arrival times. Large gaps/reset semantics unresolved. No nominal mask, calibration or assessment used. Old missed counts describe forward-hold geometry, not full annotation-aware preprocessing."
+}

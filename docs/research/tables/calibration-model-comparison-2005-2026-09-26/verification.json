@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "inputs": {
+    "results_longrun/diagnostics/baseline_2005_epoch5_v1/calibration_inputs.npz": "6e55beef8153d9d34a3a89d178f18202adfdb34611351227fcbec41798677b9d",
+    "results_longrun/diagnostics/baseline_2005_epoch5_v1/calibration_channel_scores.npz": "d5bd52723415134aeafcb3bcb123456a41d84000a8f3d5f54f38be5ce51639b6",
+    "results_longrun/diagnostics/baseline_2005_epoch5_v1/results.json": "aa11843f9c047b6e7c1fe046a39ae84d4947a7f30fc739d00ad7c7b9c63d02d8",
+    "results_longrun/development/ae_baseline_remaining_seed42/2005/model_checkpoint.pt": "344870f1a03e8435d4667a038c146ec615552a1a22069bb779b1395855583d76",
+    "results_longrun/development/ae_baseline_remaining_seed42/2005/frozen_rule.json": "cf490ec62aa03f868c2936da5a6f7e3712eb53802b4b2c51ba1b8c1a4510b1b2",
+    "results_longrun/development/ae_reconstruction_seed42/2005/model_checkpoint.pt": "6a7ad2c7e0358f8d3ee5431872b7b7ba9777ba2ec304b87055facd846c9ce517",
+    "results_longrun/development/ae_reconstruction_seed42/2005/frozen_rule.json": "de929d4ce5b8257f5500ae2047c1bf524e816836cea75bd9401c705d3c08afed"
+  },
+  "scope": "Entire Jan\u2013Mar2005 calibration; both models own frozen rules; no training/assessment/tuning",
+  "limitations": "Historical checkpoint comparison, not strict causal ablation; inputs reused from verified diagnostic. No current fullCSV rehash."
+}

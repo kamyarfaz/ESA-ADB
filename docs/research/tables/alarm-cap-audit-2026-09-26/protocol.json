@@ -1,0 +1,9 @@
+{
+  "inputs": {
+    "results_longrun/development/ae_baseline_2003_seed42/2003/calibration_candidates.csv": "55668168fa8ef92cad9a8cbad407c68a7359cb55dc62accad875409940af0d61",
+    "results_longrun/development/ae_baseline_remaining_seed42/2004/calibration_candidates.csv": "1e5bfb0dded9a1d0f91e3022dc2efd4545bbfae8bce8f08e84dfcdebe9b0a383",
+    "results_longrun/development/ae_baseline_remaining_seed42/2005/calibration_candidates.csv": "336c899989d14b2d607406c5a71658e40b4a2b5dee78e1b46ce9c4de9f4b25ba"
+  },
+  "scope": "Jan-Mar calibration; saved selected checkpoints and original threshold grids only",
+  "limitation": "Exploratory policy; 1% nominal duration is not an established operational requirement; excludes checkpoint reselection. No assessment access or frozen decision changes."
+}

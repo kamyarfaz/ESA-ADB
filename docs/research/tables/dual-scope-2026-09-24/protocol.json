@@ -1,0 +1,23 @@
+{
+  "features": [
+    "channel_40",
+    "channel_41",
+    "channel_42",
+    "channel_43",
+    "channel_44",
+    "channel_45",
+    "channel_46",
+    "channel_47"
+  ],
+  "prediction_sha256": {
+    "results_longrun/diagnostics/ch40_47_epoch10_v2/calibration_channel_scores.npz": "f0384d8ee6b52b9fa675d1d627e58a240986b61c60011b4167aa6cec15a2af7c",
+    "results_longrun/long_baseline/ch40_47_train2000_2005_seed42/full_period/assessment_prediction.npy": "9561c5a92e017645d17fdd1bd0a2c4a524bbb93a3ce4c23906c776b257cc4826"
+  },
+  "annotations": {
+    "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/labels.csv": "1564d630f1ec1387d699ec81531ce57118051a220c8b7cba050a446a652b9082",
+    "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/anomaly_types.csv": "e0cadee4ee9697c5ca8d4f9e81067454d7d7a00d063ee0de33cbc77660eec8bc"
+  },
+  "scope": "Input scope detects raw event-ID unions restricted to input-channel intervals. System scope uses all channel intervals. Non-selected annotations remain neutral in both. Same predictions and threshold; no tuning.",
+  "limitations": "Descriptive reuse of exposed assessment, not independent validation. A single global prediction does not measure per-channel localization. Supervisor said41\u201347, existing model uses40\u201347; no silent retraining or input changes.",
+  "source_sha256": "493e26faca841382594dc204889d2326f0dcb15ead4ff4acefc6e98cfc777141"
+}

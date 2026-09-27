@@ -1,0 +1,12 @@
+{
+  "assessment": "April-December2003/2004/2005, all folds, both scopes",
+  "policy": "Dense calibration quantiles + nominal false-alarm duration <=1%; same checkpoints; no assessment selection",
+  "limitations": "Previously inspected development data, not untouched test. No2007\u20132013 access. Existing cached scores; no training.",
+  "calibration_inputs": {
+    "results_longrun/diagnostics/grid_cap_comparison_v2/comparison.csv": "816c03bfce8dd5d7df40a36c3a9051885d9fa2767d7b9c3f8770b5b11505178d",
+    "results_longrun/diagnostics/grid_cap_comparison_v2/verification.json": "ca9cddc4631ff5e568d893b0d6f39b84aa42ca5c84e15988648c124490f7b043",
+    "results_longrun/development/ae_baseline_2003_seed42/2003/frozen_rule.json": "79de9b222adae6910966b1561ce9e7acda62b0b534d107e64f73b48ab9bb29f4",
+    "results_longrun/development/ae_baseline_remaining_seed42/2004/frozen_rule.json": "b77c5359b6be1e6c43ea94df9b6928a1389eea0b60ffe71f402bb9e49b4d0fcd",
+    "results_longrun/development/ae_baseline_remaining_seed42/2005/frozen_rule.json": "cf490ec62aa03f868c2936da5a6f7e3712eb53802b4b2c51ba1b8c1a4510b1b2"
+  }
+}

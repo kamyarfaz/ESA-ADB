@@ -1,0 +1,16 @@
+[
+  {
+    "trial": 1,
+    "size": 83202471,
+    "mtime_ns": 1711462618000000000,
+    "sha256": "e664ea5b64ccea49796f32c9fd97cb6584c16d837442aebb2a6926c6f7413289",
+    "bad_member": null
+  },
+  {
+    "trial": 2,
+    "size": 83202471,
+    "mtime_ns": 1711462618000000000,
+    "sha256": "e664ea5b64ccea49796f32c9fd97cb6584c16d837442aebb2a6926c6f7413289",
+    "bad_member": null
+  }
+]

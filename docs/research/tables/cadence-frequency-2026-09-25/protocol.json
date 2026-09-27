@@ -1,0 +1,51 @@
+{
+  "interval": "[2000-01-01,2004-04-01)",
+  "training": "2000\u20132003",
+  "calibration": "Jan\u2013Mar2004",
+  "reference": "Per-channel median positive native interval in training",
+  "definitions": "Observation age at30s grid; descriptive thresholds strictly>2x and>5x training cadence. Missing initial history separately counted.",
+  "scope": "Full-period summaries include annotated data; sample window analysis uses saved8000 wholly nominal reference windows, not all optimization windows.",
+  "limitations": "Staleness is not a packet-loss label. Whole-mission pickles read then restricted; no later-period analysis. File stats checked, not upstream cryptographic provenance. No alarm suppression/model/threshold changes.",
+  "sources": [
+    {
+      "channel": "channel_40",
+      "bytes": 26533933,
+      "mtime_ns": 1711462578000000000
+    },
+    {
+      "channel": "channel_41",
+      "bytes": 83216184,
+      "mtime_ns": 1711462592000000000
+    },
+    {
+      "channel": "channel_42",
+      "bytes": 85752416,
+      "mtime_ns": 1711462606000000000
+    },
+    {
+      "channel": "channel_43",
+      "bytes": 83202471,
+      "mtime_ns": 1711462618000000000
+    },
+    {
+      "channel": "channel_44",
+      "bytes": 85209141,
+      "mtime_ns": 1711462630000000000
+    },
+    {
+      "channel": "channel_45",
+      "bytes": 83395435,
+      "mtime_ns": 1711462642000000000
+    },
+    {
+      "channel": "channel_46",
+      "bytes": 85564289,
+      "mtime_ns": 1711462654000000000
+    },
+    {
+      "channel": "channel_47",
+      "bytes": 73067793,
+      "mtime_ns": 1711462664000000000
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "experiment": "long-baseline-v1",
+  "spec": {
+    "run": "pa_center_ch08_40_47",
+    "features": [
+      "channel_40",
+      "channel_41",
+      "channel_42",
+      "channel_43",
+      "channel_44",
+      "channel_45",
+      "channel_46",
+      "channel_47"
+    ],
+    "pseudo": true,
+    "group": "pseudo_anomaly"
+  },
+  "train": [
+    "2000-01-01",
+    "2006-01-01"
+  ],
+  "calibration": [
+    "2006-01-01",
+    "2007-01-01"
+  ],
+  "assessment": [
+    "2007-01-01",
+    "2014-01-01"
+  ],
+  "intervals": "[start,end)",
+  "epochs": 40,
+  "batch_size": 64,
+  "seed": 42,
+  "device": "cuda",
+  "max_train_windows": 0,
+  "window_policy": "all globally nominal stride-16 windows, length 256; no random window cap",
+  "scoring": "window_mean",
+  "precision": "float32",
+  "quantiles": [
+    90,
+    95,
+    97.5,
+    98,
+    99,
+    99.5,
+    99.75,
+    99.9,
+    99.95,
+    99.99,
+    100
+  ],
+  "merge_gaps": [
+    0,
+    16,
+    64
+  ],
+  "min_durs": [
+    1,
+    8,
+    32
+  ],
+  "checkpoint_selection": "2006 corrected calibration F0.5 every 5 epochs and final epoch; earliest tie",
+  "assessment_policy": "one frozen rule; continuous 2007\u20132013 scoring; pooled primary metric plus calendar-year slices, no yearly retuning",
+  "limitations": "Retrospective AE; inherited prepared preprocessing; later-period covariates and historical test results previously inspected; not untouched test. More years and uncapped window budget both differ from historical development runs."
+}
+{
+  "/home/k_faz/projects/ESA-ADB/data/preprocessed/multivariate/ESA-Mission1-semi-supervised/84_months.train.csv": {
+    "sha256": "fe6812dd5d324fe2eb347a703894551f0a03f40253742a3cd35f42d02fdb80ad",
+    "size": 7323166601,
+    "mtime_ns": 1790080947520719903
+  },
+  "/home/k_faz/projects/ESA-ADB/data/preprocessed/multivariate/ESA-Mission1-semi-supervised/84_months.test.csv": {
+    "sha256": "9990c46dba0101074a19b7e58382bee787ea9a2051230a5b1716d207d8315f6c",
+    "size": 7314490340,
+    "mtime_ns": 1790154857674108203
+  }
+}

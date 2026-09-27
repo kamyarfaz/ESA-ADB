@@ -1,0 +1,25 @@
+{
+  "status": "complete",
+  "inputs": {
+    "docs/research/tables/nominal-windows-2005-2026-09-26/selection.json": "2fea22f0a37f6da02e3d7e759580940d1bc125b1e1dbf36af3163e2cce293766",
+    "results_longrun/diagnostics/baseline_2005_epoch5_v1/calibration_inputs.npz": "6e55beef8153d9d34a3a89d178f18202adfdb34611351227fcbec41798677b9d",
+    "results_longrun/development/ae_baseline_remaining_seed42/protocol.json": "2d108b7bfa4d64fff3cff58985008b41d984ed65d3cec5607c35cd9ea9e2ab8f",
+    "results_longrun/development/ae_baseline_remaining_seed42/2005/model_checkpoint.pt": "344870f1a03e8435d4667a038c146ec615552a1a22069bb779b1395855583d76",
+    "results_longrun/development/ae_baseline_remaining_seed42/2005/frozen_rule.json": "cf490ec62aa03f868c2936da5a6f7e3712eb53802b4b2c51ba1b8c1a4510b1b2",
+    "results_longrun/development/ae_reconstruction_seed42/protocol.json": "1b393bcaa3a221a514edfcdd1806068ff1cc4fb2bdae59739d7df2fdd0658ff8",
+    "results_longrun/development/ae_reconstruction_seed42/2005/model_checkpoint.pt": "6a7ad2c7e0358f8d3ee5431872b7b7ba9777ba2ec304b87055facd846c9ce517",
+    "results_longrun/development/ae_reconstruction_seed42/2005/frozen_rule.json": "de929d4ce5b8257f5500ae2047c1bf524e816836cea75bd9401c705d3c08afed"
+  },
+  "selected_epochs": {
+    "pseudo": 5,
+    "reconstruction": 5
+  },
+  "matching_scalers": true,
+  "matching_features": true,
+  "source_hash_equality": {
+    "models.py": true,
+    "data.py": true,
+    "development.py": false
+  },
+  "limitations": "Six windows selected using pseudo model errors; selection favors finding its failures. Different training objectives/random-number consumption and development source hashes; not strict causal ablation. Lower reconstruction error alone does not establish better anomaly detection. No assessment access or new training."
+}

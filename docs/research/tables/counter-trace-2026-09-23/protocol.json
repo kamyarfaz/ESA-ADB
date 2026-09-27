@@ -1,0 +1,10 @@
+{
+  "interval": "[2000-01-01,2003-01-01)",
+  "rows": 3156480,
+  "comparison": "Forward differences then forward hold; only samples with both raw difference endpoints inside training.",
+  "tolerance": "rtol=1e-6, atol=1e-12; raw float32 vs CSV decimal representation",
+  "nominal": "all 87 paired labels zero",
+  "caveat": "Exclusion-label counts overlap. Reconstructs numeric hold only, not annotation restoration. Source size/mtime checked for prepared CSV; not cryptographic integrity.",
+  "source_bytes": 7323166601,
+  "source_mtime_ns": 1790080947520719903
+}

@@ -1,0 +1,8 @@
+{
+  "offset": 2373553340,
+  "old_byte": 16,
+  "new_byte": 48,
+  "candidate_sha256": "f5614105783a2c4016797f14e833e52d9392bf1966aa75ec7d64abe87dabb4b9",
+  "expected_sha256": "9990c46dba0101074a19b7e58382bee787ea9a2051230a5b1716d207d8315f6c",
+  "installed": false
+}

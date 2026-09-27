@@ -2,13 +2,25 @@
 
 ## Goal and sequencing
 
-Understand what each input contains, justify a smaller channel set, and compare it
-fairly with broader input sets before tuning model parameters. Let the existing
-specialist training finish. Do not modify running source files, preprocessing,
-inputs or protocols. Further training is gated on the channel study below.
+Investigate every available input and compare justified input configurations
+fairly before tuning model parameters. Fewer inputs are not assumed better.
+Source inventory: 76 telemetry channels plus 698 telecommand types; the prepared
+CSV includes only 11 telecommands. Preserve all sources; input exclusion belongs
+in an explicit model configuration. Specialist training has completed without
+improving the combined baseline. Training is paused for this investigation. Further training is gated on the channel study below.
 This is anomaly detection with nominal training and annotated calibration/evaluation,
 not ordinary supervised classification. Classifier feature-importance rules do not
 automatically transfer to reconstruction-based anomaly detection.
+
+## Available time span and descriptive scope
+
+Mission 1 contains 14 full years, 2000–2013: seven years in the prepared training
+file and seven in the benchmark test file. The user requested a descriptive
+investigation of all years and all source inputs. See
+[full-mission overview](full-mission-input-review-2026-09-23.md).
+The earlier 2000–2002 and 2000–2006 reports cover subsets only. Descriptive
+exposure is recorded separately from model fitting/selection; no automatic input
+exclusion or full-data model training follows from the full-period audit.
 
 ## First completed pilot
 
@@ -72,7 +84,7 @@ necessary before claiming that a cleaning operation improved model performance.
    history, compare Pearson/Spearman and correlations of changes/lagged signals,
    and inspect stability by month/year and subsystem. Keep correlation-break
    pairs where needed. Use training annotations to describe covered event types,
-   not assessment outcomes to choose channels. Provide reasons to keep/review/drop.
+   not assessment outcomes to choose channels. Provide reasons to include/review/omit from a specific model configuration; never delete source channels.
 4. **Small matched pilot.** Freeze 3–4 candidate channel sets: original 8 as control,
    a quality-screened broad telemetry set, a representative-per-stable-group set,
    and a representative-plus-complement set. Exact members are not chosen yet.

@@ -1,0 +1,7 @@
+year,nominal_rows,adjacent_nominal_pairs,constant_channels
+2000,917643,917602,"channel_8,channel_9,channel_10,channel_11"
+2001,926301,926281,"channel_4,channel_5,channel_6,channel_7,channel_8,channel_9,channel_10,channel_11"
+2002,975864,975855,"channel_4,channel_5,channel_6,channel_7,channel_8,channel_9,channel_10,channel_11"
+2003,959766,959757,"channel_5,channel_10"
+2004,955666,955656,"channel_4,channel_5,channel_6,channel_7,channel_8,channel_9,channel_10,channel_11"
+2005,879801,879789,"channel_4,channel_5,channel_6,channel_7,channel_8,channel_9,channel_10,channel_11"

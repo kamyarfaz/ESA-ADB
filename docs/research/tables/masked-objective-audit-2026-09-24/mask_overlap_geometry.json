@@ -1,0 +1,32 @@
+{
+  "sequence_length": 256,
+  "patch_size": 16,
+  "segment_length_range": [
+    12,
+    84
+  ],
+  "phases": [
+    {
+      "phase": 0,
+      "probability_segment_misses_hidden_targets": 0.16556773241865863,
+      "expected_fraction_segment_hidden": 0.24115533211270077
+    },
+    {
+      "phase": 1,
+      "probability_segment_misses_hidden_targets": 0.13830228807591732,
+      "expected_fraction_segment_hidden": 0.25884466788729904
+    },
+    {
+      "phase": 2,
+      "probability_segment_misses_hidden_targets": 0.13830228807591732,
+      "expected_fraction_segment_hidden": 0.2588446678872991
+    },
+    {
+      "phase": 3,
+      "probability_segment_misses_hidden_targets": 0.16556773241865863,
+      "expected_fraction_segment_hidden": 0.24115533211270077
+    }
+  ],
+  "mean_miss_probability": 0.15193501024728798,
+  "interpretation": "Exact geometry under uniform segment length/start and equally weighted phases; not observed training frequencies or proof of failure. Visible corruptions can still alter hidden predictions."
+}

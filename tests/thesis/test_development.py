@@ -71,6 +71,20 @@ class DevelopmentTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'Invalid features'):
                 load_period(path, ['channel_1'], str(times[320]), str(times[640]))
 
+    def test_label_validation_rejects_invalid_before_narrowing(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path=Path(directory)/'labels.csv'
+            times=pd.date_range('2000-01-01',periods=321,freq='30s')
+            frame=pd.DataFrame({'timestamp':times,'channel_1':1.,'is_anomaly_channel_1':np.arange(321)%4})
+            frame.to_csv(path,index=False)
+            _,y,_=load_period(path,['channel_1'],str(times[0]),str(times[320]))
+            np.testing.assert_array_equal(y,(np.arange(320)%4>0).astype(np.int8))
+            for invalid in [549755813888,256,-1,0.5,np.nan,'bad']:
+                bad=frame.copy();bad['is_anomaly_channel_1']=bad['is_anomaly_channel_1'].astype(object)
+                bad.loc[10,'is_anomaly_channel_1']=invalid;bad.to_csv(path,index=False)
+                with self.assertRaisesRegex(ValueError,'Invalid label'):
+                    load_period(path,['channel_1'],str(times[0]),str(times[320]))
+
     def test_training_freezes_before_assessment_without_test_file(self):
         torch.set_num_threads(2)
         with tempfile.TemporaryDirectory() as directory:

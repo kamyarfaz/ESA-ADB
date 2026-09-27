@@ -1,0 +1,26 @@
+{
+  "pooled_results.csv": {
+    "original": "89d2cad075b23370be699ca138197d7219ffd78ac4ce735b52ddb83074a19dd0",
+    "repeat": "89d2cad075b23370be699ca138197d7219ffd78ac4ce735b52ddb83074a19dd0"
+  },
+  "yearly_results.csv": {
+    "original": "24c4d0ee1700c29bdd6f6712a2d7d0843588a0476f5d79c95c9376ad06ee6de9",
+    "repeat": "24c4d0ee1700c29bdd6f6712a2d7d0843588a0476f5d79c95c9376ad06ee6de9"
+  },
+  "full_period/history.csv": {
+    "original": "bdc20eee218a1da029a4b3b0b3495691aeff47cdb6d399db106e838259a669c5",
+    "repeat": "bdc20eee218a1da029a4b3b0b3495691aeff47cdb6d399db106e838259a669c5"
+  },
+  "full_period/frozen_rule.json": {
+    "original": "c3f9f3edfc99bb155ea072dd4777b220b1c8a7341746798c17cc41556fba0fdf",
+    "repeat": "c3f9f3edfc99bb155ea072dd4777b220b1c8a7341746798c17cc41556fba0fdf"
+  },
+  "full_period/assessment_prediction.npy": {
+    "original": "9561c5a92e017645d17fdd1bd0a2c4a524bbb93a3ce4c23906c776b257cc4826",
+    "repeat": "9561c5a92e017645d17fdd1bd0a2c4a524bbb93a3ce4c23906c776b257cc4826"
+  },
+  "full_period/assessment_score.npy": {
+    "original": "22b61a5ee3f1df9116de9f9c2d7e92d2ff9f4f87da55dea172036a6c8286dc69",
+    "repeat": "22b61a5ee3f1df9116de9f9c2d7e92d2ff9f4f87da55dea172036a6c8286dc69"
+  }
+}

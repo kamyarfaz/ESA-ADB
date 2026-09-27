@@ -71,7 +71,7 @@ class RobustChannelScaler:
 
 
 class NormalWindows(Dataset):
-    def __init__(self, x: np.ndarray, y: np.ndarray):
+    def __init__(self, x: np.ndarray, y: np.ndarray, *, max_windows=MAX_TRAIN_WINDOWS):
         starts = np.arange(0, len(y) - SEQ_LEN + 1, STRIDE, dtype=np.int64)
         # Vectorised normal-window check
         y8      = (y > 0).astype(np.int8)
@@ -82,9 +82,9 @@ class NormalWindows(Dataset):
         if len(normal) == 0:
             log("WARNING: no normal windows; using all windows")
             normal = starts
-        if MAX_TRAIN_WINDOWS and len(normal) > MAX_TRAIN_WINDOWS:
+        if max_windows and len(normal) > max_windows:
             rng    = np.random.default_rng(SEED)
-            normal = np.sort(rng.choice(normal, size=MAX_TRAIN_WINDOWS, replace=False))
+            normal = np.sort(rng.choice(normal, size=max_windows, replace=False))
         self.x = x.astype(np.float32); self.starts = normal
 
     def __len__(self): return len(self.starts)

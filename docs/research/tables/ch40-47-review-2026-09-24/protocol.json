@@ -1,0 +1,18 @@
+{
+  "features": [
+    "channel_40",
+    "channel_41",
+    "channel_42",
+    "channel_43",
+    "channel_44",
+    "channel_45",
+    "channel_46",
+    "channel_47"
+  ],
+  "interval": "[2000-01-01,2007-01-01)",
+  "training": "2000\u20132005",
+  "calibration": "2006",
+  "prepared_rows": 7364160,
+  "nominal_mask": "all 87 paired labels zero",
+  "limitations": "Raw gap summaries are per year; no boundary-gap attribution. Anonymous metadata does not establish physical meaning. Global event IDs without local annotations may still have correlated evidence; not a recall ceiling. No test data, weights changed or training."
+}

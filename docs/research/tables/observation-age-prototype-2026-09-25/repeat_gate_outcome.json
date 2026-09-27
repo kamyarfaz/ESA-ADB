@@ -1,0 +1,140 @@
+{
+  "attempts": [
+    {
+      "channel": 40,
+      "attempt": 1,
+      "exit_code": 1
+    },
+    {
+      "channel": 40,
+      "attempt": 2,
+      "exit_code": 0,
+      "matching_successes": 1
+    },
+    {
+      "channel": 40,
+      "attempt": 3,
+      "exit_code": 0,
+      "matching_successes": 2
+    },
+    {
+      "channel": 41,
+      "attempt": 1,
+      "exit_code": 0,
+      "matching_successes": 1
+    },
+    {
+      "channel": 41,
+      "attempt": 2,
+      "exit_code": 0,
+      "matching_successes": 2
+    },
+    {
+      "channel": 42,
+      "attempt": 1,
+      "exit_code": 0,
+      "matching_successes": 1
+    },
+    {
+      "channel": 42,
+      "attempt": 2,
+      "exit_code": 1
+    },
+    {
+      "channel": 42,
+      "attempt": 3,
+      "exit_code": 0,
+      "matching_successes": 2
+    },
+    {
+      "channel": 43,
+      "attempt": 1,
+      "exit_code": 0,
+      "matching_successes": 1
+    },
+    {
+      "channel": 43,
+      "attempt": 2,
+      "exit_code": 0,
+      "matching_successes": 2
+    },
+    {
+      "channel": 44,
+      "attempt": 1,
+      "exit_code": 0,
+      "matching_successes": 1
+    },
+    {
+      "channel": 44,
+      "attempt": 2,
+      "exit_code": 0,
+      "matching_successes": 1
+    },
+    {
+      "channel": 44,
+      "attempt": 3,
+      "exit_code": 0,
+      "matching_successes": 2
+    },
+    {
+      "channel": 45,
+      "attempt": 1,
+      "exit_code": 1
+    },
+    {
+      "channel": 45,
+      "attempt": 2,
+      "exit_code": 0,
+      "matching_successes": 1
+    },
+    {
+      "channel": 45,
+      "attempt": 3,
+      "exit_code": 0,
+      "matching_successes": 2
+    },
+    {
+      "channel": 46,
+      "attempt": 1,
+      "exit_code": 0,
+      "matching_successes": 1
+    },
+    {
+      "channel": 46,
+      "attempt": 2,
+      "exit_code": 1
+    },
+    {
+      "channel": 46,
+      "attempt": 3,
+      "exit_code": 0,
+      "matching_successes": 2
+    },
+    {
+      "channel": 47,
+      "attempt": 1,
+      "exit_code": 0,
+      "matching_successes": 1
+    },
+    {
+      "channel": 47,
+      "attempt": 2,
+      "exit_code": 1
+    },
+    {
+      "channel": 47,
+      "attempt": 3,
+      "exit_code": 0,
+      "matching_successes": 2
+    }
+  ],
+  "completion_protocol_present": false,
+  "reason": "Final recheck reported Independent copies changed; no accepted full dataset",
+  "channel44_disagreement": [
+    {
+      "index": 4420357,
+      "first": 0.14900924265384674,
+      "second": 0.14902326464653015
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "local_union_seconds": 540,
+  "local_intervals": [
+    {
+      "start": "2005-03-25 03:59:55.134000",
+      "end": "2005-03-25 04:04:55.134000",
+      "seconds": 300,
+      "grid_samples": 10
+    },
+    {
+      "start": "2005-03-25 04:36:55.134000",
+      "end": "2005-03-25 04:37:25.134000",
+      "seconds": 30,
+      "grid_samples": 1
+    },
+    {
+      "start": "2005-03-25 04:56:55.134000",
+      "end": "2005-03-25 05:00:25.134000",
+      "seconds": 210,
+      "grid_samples": 7
+    }
+  ],
+  "synthetic_duration_seconds": [
+    360,
+    2520
+  ],
+  "synthetic_channel_count": [
+    1,
+    4
+  ],
+  "inputs": {
+    "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/labels.csv": "1564d630f1ec1387d699ec81531ce57118051a220c8b7cba050a446a652b9082",
+    "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/anomaly_types.csv": "e0cadee4ee9697c5ca8d4f9e81067454d7d7a00d063ee0de33cbc77660eec8bc",
+    "results_longrun/diagnostics/baseline_2005_epoch5_v1/calibration_inputs.npz": "6e55beef8153d9d34a3a89d178f18202adfdb34611351227fcbec41798677b9d",
+    "results_longrun/diagnostics/baseline_2005_epoch5_v1/calibration_window_errors.npz": "a364905450faf9979c37a5f289a252dd6174cd1f0e98b94ed882f2a8ab439ee7",
+    "esa_thesis/augmentation.py": "40a5b44a6a277a570b12e764c0d38c5ae930af38952a32a0e6a201d1bd96dd68"
+  },
+  "limitations": "One previously inspected calibration event; point samples and adjacent references, not causal inference. No training/assessment access. Short local intervals do not support reliable event-only correlations."
+}

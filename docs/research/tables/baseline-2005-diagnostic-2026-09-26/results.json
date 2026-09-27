@@ -1,0 +1,21 @@
+{
+  "calibration": {
+    "EW_F_0.50": 0.8328804736937059,
+    "EW_precision": 0.9991850740769064,
+    "EW_recall": 0.5,
+    "TPe": 2,
+    "FPe": 0,
+    "FNe": 2,
+    "num_true_events": 4,
+    "num_pred_events": 5,
+    "alarming_precision": 0.4,
+    "nominal_seconds": 7195191.408,
+    "false_positive_seconds": 5863.548,
+    "nominal_false_alarm_rate": 0.0008149259230936234,
+    "false_alarms_per_day": 0.0,
+    "metric_version": "esa-ew-id-duration-v1"
+  },
+  "checkpoint_epoch": 5,
+  "reproduction": "passed within 1e-6",
+  "interpretation": "Frozen baseline diagnostics only; no new score selection"
+}

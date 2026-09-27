@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "input_sha256": {
+    "results_longrun/diagnostics/grid_cap_comparison_v2/comparison.csv": "816c03bfce8dd5d7df40a36c3a9051885d9fa2767d7b9c3f8770b5b11505178d",
+    "results_longrun/diagnostics/grid_cap_comparison_v2/verification.json": "ca9cddc4631ff5e568d893b0d6f39b84aa42ca5c84e15988648c124490f7b043",
+    "results_longrun/development/ae_baseline_2003_seed42/2003/frozen_rule.json": "79de9b222adae6910966b1561ce9e7acda62b0b534d107e64f73b48ab9bb29f4",
+    "results_longrun/development/ae_baseline_remaining_seed42/2004/frozen_rule.json": "b77c5359b6be1e6c43ea94df9b6928a1389eea0b60ffe71f402bb9e49b4d0fcd",
+    "results_longrun/development/ae_baseline_remaining_seed42/2005/frozen_rule.json": "cf490ec62aa03f868c2936da5a6f7e3712eb53802b4b2c51ba1b8c1a4510b1b2",
+    "results_longrun/development/ae_baseline_2003_seed42/2003/assessment_score.npy": "225c3e4a7be8c4b006c619c5327499b53adcb01a1a6853714a0e6cc6cc41456e",
+    "results_longrun/development/ae_baseline_2003_seed42/2003/assessment_prediction.npy": "ca9e2c02742fe048b440bd2929b8e4a47e4bcec3b9087e71549092ad00686f55",
+    "results_longrun/development/ae_baseline_2003_seed42/2003/results.json": "7dc1dfef232b8d926038fbd26994939f9d6ecc2066d6c48a54f384befee6d42b",
+    "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/labels.csv": "1564d630f1ec1387d699ec81531ce57118051a220c8b7cba050a446a652b9082",
+    "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/anomaly_types.csv": "e0cadee4ee9697c5ca8d4f9e81067454d7d7a00d063ee0de33cbc77660eec8bc",
+    "results_longrun/development/ae_baseline_remaining_seed42/2004/assessment_score.npy": "c9d6d2cc5cff6140fe259534ea31869f9d8126ed18eabf45e3163dacd7277797",
+    "results_longrun/development/ae_baseline_remaining_seed42/2004/assessment_prediction.npy": "bda906ad39cc3dd3891f48d6650905344cb977dc8029b47d202113ea5bf94f3c",
+    "results_longrun/development/ae_baseline_remaining_seed42/2004/results.json": "094c75e366a70ffaaf75951ad637975d57537c16ae5698f42079041792deebdb",
+    "results_longrun/development/ae_baseline_remaining_seed42/2005/assessment_score.npy": "50f278f47b324162843e5396bb06391c68f3cc62f8ec5c588117a5fd21d3b7c0",
+    "results_longrun/development/ae_baseline_remaining_seed42/2005/assessment_prediction.npy": "39a2887e9b76ccf910d2f07844db8df674cdec4899cb793103ace8be522bfc28",
+    "results_longrun/development/ae_baseline_remaining_seed42/2005/results.json": "0a14105f4f5c4fcd8bf933bbba355c2c864c124640a7780866614037d7d0c686"
+  },
+  "original_reproduction": "All original predictions and metrics reproduced"
+}

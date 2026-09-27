@@ -1,0 +1,42 @@
+{
+  "policy": "Within each calibration month: highest max-channel MSE and nearest median, earliest tie; wholly nominal256sample windows only",
+  "windows": [
+    {
+      "month": 1,
+      "kind": "highest",
+      "index": 244,
+      "start": 7808
+    },
+    {
+      "month": 1,
+      "kind": "typical",
+      "index": 1282,
+      "start": 41024
+    },
+    {
+      "month": 2,
+      "kind": "highest",
+      "index": 3986,
+      "start": 127552
+    },
+    {
+      "month": 2,
+      "kind": "typical",
+      "index": 2801,
+      "start": 89632
+    },
+    {
+      "month": 3,
+      "kind": "highest",
+      "index": 6312,
+      "start": 201984
+    },
+    {
+      "month": 3,
+      "kind": "typical",
+      "index": 7855,
+      "start": 251360
+    }
+  ],
+  "limitations": "Six selected examples, not prevalence estimates or physical explanations. No assessment access."
+}

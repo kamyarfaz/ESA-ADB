@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "inputs": {
+    "results_longrun/diagnostics/baseline_2005_epoch5_v1/calibration_inputs.npz": "6e55beef8153d9d34a3a89d178f18202adfdb34611351227fcbec41798677b9d",
+    "results_longrun/diagnostics/baseline_2005_epoch5_v1/calibration_window_errors.npz": "a364905450faf9979c37a5f289a252dd6174cd1f0e98b94ed882f2a8ab439ee7",
+    "results_longrun/diagnostics/baseline_2005_epoch5_v1/results.json": "aa11843f9c047b6e7c1fe046a39ae84d4947a7f30fc739d00ad7c7b9c63d02d8",
+    "results_longrun/development/ae_baseline_remaining_seed42/2005/model_checkpoint.pt": "344870f1a03e8435d4667a038c146ec615552a1a22069bb779b1395855583d76"
+  },
+  "reconstruction_check": "Cached per-channel window MSE reproduced rtol1e-5 atol1e-5; no threshold or event metric modified"
+}

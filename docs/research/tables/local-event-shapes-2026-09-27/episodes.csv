@@ -1,0 +1,80 @@
+event_id,episode,year,start,end,duration_seconds,channels,peak_simultaneous_channels,seconds_over_four_channels,category,shorter_than_synthetic_min,wider_than_synthetic_max
+id_1,0,2004,2004-12-01 20:43:45.429000,2004-12-16 16:52:30.429000,1282125.0,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,8,592117.5,Rare Event,False,True
+id_10,0,2005,2005-03-31 08:15:25.131000,2005-04-09 08:34:27.414000,778742.283,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,8,72882.0,Anomaly,False,True
+id_100,0,2005,2005-07-04 20:14:07.119000,2005-07-04 20:22:37.119000,510.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,6,510.0,Rare Event,False,True
+id_100,1,2005,2005-07-04 20:29:57.402000,2005-07-05 04:29:57.402000,28800.0,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,7,210.0,Rare Event,False,True
+id_101,0,2005,2005-09-01 14:43:22.113000,2005-09-12 23:59:42.393000,983780.28,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,8,96480.0,Anomaly,False,True
+id_102,0,2005,2005-09-27 21:40:31.110000,2005-10-07 00:00:00,785968.89,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,8,39060.0,Anomaly,False,True
+id_103,0,2005,2005-10-22 09:13:22.107000,2005-11-01 11:59:42.387000,873980.28,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,8,37080.0,Anomaly,False,True
+id_104,0,2005,2005-12-22 16:21:22.098000,2005-12-22 16:22:22.098000,60.0,channel_46,1,0.0,Rare Event,True,False
+id_104,1,2005,2005-12-22 16:41:52.098000,2005-12-22 16:45:52.098000,240.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,6,240.0,Rare Event,True,True
+id_104,2,2005,2005-12-22 17:03:22.098000,2005-12-22 17:03:22.098000,0.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,0,0.0,Rare Event,True,False
+id_104,3,2005,2005-12-22 17:04:22.098000,2005-12-22 17:04:22.098000,0.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,0,0.0,Rare Event,True,False
+id_104,4,2005,2005-12-22 23:41:52.098000,2005-12-22 23:52:52.098000,660.0,channel_46,1,0.0,Rare Event,False,False
+id_12,0,2003,2003-12-30 20:31:55.191000,2003-12-30 20:31:55.191000,0.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,0,0.0,Anomaly,True,False
+id_12,1,2003,2003-12-31 03:09:25.191000,2004-01-08 12:00:00,723034.809,channel_40;channel_47,2,0.0,Anomaly,False,False
+id_13,0,2003,2003-12-18 14:30:25.191000,2003-12-20 11:59:55.191000,163770.0,channel_40;channel_47,2,0.0,Anomaly,False,False
+id_151,0,2000,2000-02-10 01:31:16.347000,2000-02-10 01:35:16.347000,240.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,6,210.0,Rare Event,True,True
+id_151,1,2000,2000-02-10 01:52:46.347000,2000-02-10 01:52:46.347000,0.0,channel_43,0,0.0,Rare Event,True,False
+id_151,2,2000,2000-02-10 01:54:46.347000,2000-02-10 01:54:46.347000,0.0,channel_43,0,0.0,Rare Event,True,False
+id_151,3,2000,2000-02-10 08:48:46.347000,2000-02-15 17:58:36.630000,464990.283,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,8,17040.0,Rare Event,False,True
+id_16,0,2005,2005-07-07 22:54:37.119000,2005-07-07 23:49:07.119000,3270.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,7,2820.0,Rare Event,False,True
+id_167,0,2000,2000-03-19 06:01:28.344000,2000-04-01 12:00:00,1144711.656,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,8,148350.0,Anomaly,False,True
+id_17,0,2005,2005-01-16 21:45:00.423000,2005-01-16 23:59:57.423000,8097.0,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,8,330.0,Rare Event,False,True
+id_17,1,2005,2005-01-17 03:00:25.140000,2005-01-19 17:50:55.140000,226230.0,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,8,7380.0,Rare Event,False,True
+id_185,0,2000,2000-04-23 15:15:58.341000,2000-04-25 18:47:28.341000,185490.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,7,169350.0,Anomaly,False,True
+id_19,0,2003,2003-06-18 18:25:25.212000,2003-06-18 23:23:25.212000,17880.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,7,10890.0,Rare Event,False,True
+id_193,0,2000,2000-06-25 00:44:28.332000,2000-06-25 03:09:28.332000,8700.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,6,8100.0,Anomaly,False,True
+id_200,0,2000,2000-10-10 00:23:28.323000,2000-10-11 04:56:58.323000,102810.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,7,88020.0,Anomaly,False,True
+id_21,0,2001,2001-03-21 20:50:58.305000,2001-03-22 15:21:58.305000,66660.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,7,2520.0,Rare Event,False,True
+id_21,1,2001,2001-03-30 09:03:28.305000,2001-04-07 00:04:06.585000,658838.28,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,8,22350.003,Rare Event,False,True
+id_22,0,2000,2000-07-27 19:48:58.329000,2000-07-28 16:02:58.329000,72840.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,7,40020.0,Rare Event,False,True
+id_23,0,2000,2000-07-31 03:33:28.329000,2000-07-31 07:16:58.329000,13410.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,7,2610.0,Rare Event,False,True
+id_25,0,2002,2002-07-17 01:30:25.251000,2002-07-25 00:00:00,685774.749,channel_40;channel_47,2,0.0,Anomaly,False,False
+id_35,0,2000,2000-10-22 22:57:58.320000,2000-10-22 23:06:28.320000,510.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,6,510.0,Rare Event,False,True
+id_35,1,2000,2000-10-22 23:48:05.853000,2000-10-23 00:19:05.478000,1859.625,channel_40,1,0.0,Rare Event,False,False
+id_37,0,2001,2001-07-25 23:19:55.290000,2001-07-25 23:57:55.290000,2280.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,6,900.0,Rare Event,False,True
+id_38,0,2001,2001-10-05 11:39:55.281000,2001-10-06 01:13:25.281000,48810.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_47,6,4320.0,Rare Event,False,True
+id_39,0,2004,2004-08-23 00:12:25.161000,2004-08-23 03:00:55.161000,10110.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,7,4320.0,Rare Event,False,True
+id_41,0,2004,2004-09-15 17:41:55.158000,2004-09-15 17:48:55.158000,420.0,channel_41;channel_42;channel_45;channel_46,4,0.0,Rare Event,False,False
+id_59,0,2000,2000-10-13 22:41:28.323000,2000-10-13 23:55:48.603000,4460.28,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,7,840.0,Rare Event,False,True
+id_59,1,2000,2000-10-14 00:17:28.323000,2000-10-14 00:18:28.323000,60.0,channel_42;channel_46,2,0.0,Rare Event,True,False
+id_73,0,2000,2000-12-22 16:58:58.314000,2000-12-25 06:21:28.314000,220950.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,7,185130.0,Anomaly,False,True
+id_77,0,2001,2001-02-01 12:21:28.311000,2001-02-01 12:29:28.311000,480.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,6,180.0,Rare Event,False,True
+id_77,1,2001,2001-02-01 12:29:59.844000,2001-02-01 13:45:18.591000,4518.747,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,7,480.0,Rare Event,False,True
+id_78,0,2001,2001-04-04 00:00:28.302000,2001-04-04 00:03:28.302000,180.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,6,180.0,Rare Event,True,True
+id_78,1,2001,2001-04-04 03:00:28.302000,2001-04-04 03:03:28.302000,180.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,6,180.0,Rare Event,True,True
+id_78,2,2001,2001-04-04 09:00:28.302000,2001-04-04 09:04:58.302000,270.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,6,270.0,Rare Event,True,True
+id_78,3,2001,2001-04-04 12:00:28.302000,2001-04-04 12:01:58.302000,90.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,6,90.0,Rare Event,True,True
+id_78,4,2001,2001-04-04 21:00:28.302000,2001-04-04 21:01:58.302000,90.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,6,90.0,Rare Event,True,True
+id_78,5,2001,2001-04-05 00:00:28.302000,2001-04-05 00:04:58.302000,270.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,6,270.0,Rare Event,True,True
+id_78,6,2001,2001-04-05 02:59:28.302000,2001-04-05 03:03:28.302000,240.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,6,90.0,Rare Event,True,True
+id_78,7,2001,2001-04-05 06:00:28.302000,2001-04-05 06:07:28.302000,420.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,6,420.0,Rare Event,False,True
+id_78,8,2001,2001-04-05 15:10:58.302000,2001-04-12 15:56:58.302000,607560.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,7,547560.0,Rare Event,False,True
+id_79,0,2001,2001-04-23 12:35:58.302000,2001-04-25 16:11:58.302000,185760.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,7,35730.0,Rare Event,False,True
+id_80,0,2001,2001-08-10 04:09:25.290000,2001-08-10 04:13:25.290000,240.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,6,90.0,Rare Event,True,True
+id_80,1,2001,2001-08-10 04:30:55.290000,2001-08-10 04:31:55.290000,60.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,6,60.0,Rare Event,True,True
+id_80,2,2001,2001-08-10 04:39:55.290000,2001-08-10 04:39:55.290000,0.0,channel_41;channel_42;channel_43;channel_44;channel_45,0,0.0,Rare Event,True,False
+id_81,0,2002,2002-02-15 01:21:25.269000,2002-02-15 01:28:55.269000,450.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,6,330.0,Rare Event,False,True
+id_81,1,2002,2002-02-15 01:44:55.269000,2002-02-15 01:44:55.269000,0.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,0,0.0,Rare Event,True,False
+id_81,2,2002,2002-02-15 01:58:55.269000,2002-02-15 01:58:55.269000,0.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,0,0.0,Rare Event,True,False
+id_83,0,2002,2002-05-20 22:22:25.260000,2002-05-21 20:44:25.257000,80519.997,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,7,62490.0,Anomaly,False,True
+id_84,0,2002,2002-06-23 14:12:55.254000,2002-06-25 01:31:55.254000,127140.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,7,16950.0,Anomaly,False,True
+id_85,0,2002,2002-06-23 02:44:55.254000,2002-06-23 02:47:17.754000,142.5,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,5,30.0,Anomaly,True,True
+id_86,0,2002,2002-09-23 08:51:55.245000,2002-09-26 12:10:55.245000,271140.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,7,185400.0,Anomaly,False,True
+id_87,0,2003,2003-02-27 02:52:25.224000,2003-02-27 02:55:25.224000,180.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,5,60.0,Rare Event,True,True
+id_87,1,2003,2003-02-27 03:12:55.224000,2003-02-27 03:12:55.224000,0.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,0,0.0,Rare Event,True,False
+id_88,0,2003,2003-10-01 03:17:55.200000,2003-10-01 03:25:25.200000,450.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,6,360.0,Rare Event,False,True
+id_88,1,2003,2003-10-01 03:43:55.200000,2003-10-01 03:43:55.200000,0.0,channel_41;channel_42;channel_43;channel_44;channel_45,0,0.0,Rare Event,True,False
+id_88,2,2003,2003-10-01 04:00:55.200000,2003-10-01 04:01:25.200000,30.0,channel_46,1,0.0,Rare Event,True,False
+id_89,0,2003,2003-11-15 23:11:25.194000,2003-11-18 09:12:25.194000,208860.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,7,118410.0,Anomaly,False,True
+id_90,0,2003,2003-12-30 20:31:55.191000,2003-12-30 20:31:55.191000,0.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,0,0.0,Anomaly,True,False
+id_90,1,2003,2003-12-30 20:32:25.191000,2003-12-30 20:37:25.191000,300.0,channel_47,1,0.0,Anomaly,True,False
+id_91,0,2004,2004-04-07 19:17:55.176000,2004-04-07 19:29:25.176000,690.0,channel_47,1,0.0,Anomaly,False,False
+id_93,0,2004,2004-05-15 02:22:12.261000,2004-05-15 02:47:25.173000,1512.912,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,6,12.912,Anomaly,False,True
+id_95,0,2004,2004-09-15 19:10:25.158000,2004-09-15 19:14:55.158000,270.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,6,240.0,Rare Event,True,True
+id_95,1,2004,2004-09-15 20:53:25.158000,2004-09-18 00:00:00,183994.842,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,7,17130.0,Rare Event,False,True
+id_96,0,2004,2004-11-03 14:35:25.152000,2004-11-05 03:55:25.152000,134400.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,7,76620.0,Anomaly,False,True
+id_98,0,2005,2005-03-25 03:59:55.134000,2005-03-25 04:04:55.134000,300.0,channel_42;channel_45,2,0.0,Rare Event,True,False
+id_98,1,2005,2005-03-25 04:36:55.134000,2005-03-25 04:37:25.134000,30.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,6,30.0,Rare Event,True,True
+id_98,2,2005,2005-03-25 04:56:55.134000,2005-03-25 05:00:25.134000,210.0,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,6,180.0,Rare Event,True,True

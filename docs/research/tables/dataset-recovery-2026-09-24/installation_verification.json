@@ -1,0 +1,31 @@
+{
+  "candidate_disk_sha256": "fe6812dd5d324fe2eb347a703894551f0a03f40253742a3cd35f42d02fdb80ad",
+  "active_sha256": "741aee07c1db98c36ef822af3c888d6f4c5c99fa27447546142ff82e98e4f526",
+  "differences": [
+    {
+      "offset": 4320116924,
+      "verified": 48,
+      "current": 32
+    },
+    {
+      "offset": 4320117308,
+      "verified": 44,
+      "current": 172
+    },
+    {
+      "offset": 4320118972,
+      "verified": 44,
+      "current": 172
+    },
+    {
+      "offset": 4320127036,
+      "verified": 50,
+      "current": 178
+    },
+    {
+      "offset": 4320130236,
+      "verified": 48,
+      "current": 112
+    }
+  ]
+}

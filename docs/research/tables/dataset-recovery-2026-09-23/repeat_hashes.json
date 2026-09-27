@@ -1,0 +1,7 @@
+{
+  "active_initial_sha256": "1f783660d322fbafef0054315d62bcb3a21befa1284b8a1bcd0f3fdc2e75f42f",
+  "active_later_sha256": "4e6f4c43a3e97cdfa22cda05393e32b6c1bd80b631d40c7ae6c84335662cef21",
+  "candidate_later_sha256": "91f9bbaf2a6c1e43326fe44b610349b91fcb2df140000213c290f5ae11a1ff20",
+  "active_file_written_by_this_task": false,
+  "status": "blocked; repeated reads differ; cause unknown"
+}

@@ -1,0 +1,32 @@
+{
+  "candidate_sha256": "7480c8b9bf95a93ad644460c64db8f740d3f75f64512fc5ed54a52195278bc58",
+  "expected_sha256": "9990c46dba0101074a19b7e58382bee787ea9a2051230a5b1716d207d8315f6c",
+  "changes": {
+    "2373546556": [
+      172,
+      44
+    ],
+    "2373546684": [
+      14,
+      46
+    ],
+    "2373553340": [
+      48,
+      48
+    ],
+    "2373554748": [
+      37,
+      53
+    ],
+    "2373556284": [
+      144,
+      48
+    ],
+    "2373558972": [
+      114,
+      50
+    ]
+  },
+  "installed": false,
+  "evidence": "Timestamp grid; CSV comma/decimal syntax; raw channel47 and channel71 zero-order hold; whole-file known-good hash required before install. Timestamp had already been corrected in first candidate."
+}

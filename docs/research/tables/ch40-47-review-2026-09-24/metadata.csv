@@ -1,0 +1,9 @@
+Channel,Subsystem,Physical Unit,Group,Target
+channel_40,subsystem_6,physical_unit_3,6,YES
+channel_41,subsystem_5,physical_unit_4,8,YES
+channel_42,subsystem_5,physical_unit_4,8,YES
+channel_43,subsystem_5,physical_unit_4,8,YES
+channel_44,subsystem_5,physical_unit_4,8,YES
+channel_45,subsystem_5,physical_unit_4,8,YES
+channel_46,subsystem_5,physical_unit_4,8,YES
+channel_47,subsystem_6,physical_unit_3,9,YES

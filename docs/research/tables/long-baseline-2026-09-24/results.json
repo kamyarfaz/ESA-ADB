@@ -1,0 +1,19 @@
+{
+  "epoch": 10,
+  "calibration_f05": 0.8821482657069778,
+  "EW_F_0.50": 0.8057217336876309,
+  "EW_precision": 0.8848713352240037,
+  "EW_recall": 0.5934065934065934,
+  "TPe": 54,
+  "FPe": 7,
+  "FNe": 37,
+  "num_true_events": 91,
+  "num_pred_events": 78,
+  "alarming_precision": 0.7105263157894737,
+  "nominal_seconds": 196412709.237,
+  "false_positive_seconds": 83106.405,
+  "nominal_false_alarm_rate": 0.00042312132103283773,
+  "false_alarms_per_day": 0.0027375834769455686,
+  "metric_version": "esa-ew-id-duration-v1",
+  "uncovered_assessment_samples": 0
+}

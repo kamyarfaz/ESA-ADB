@@ -1,0 +1,11 @@
+event_id,detected,annotated_on_inputs,annotated_channels,duration_seconds,overlap_bin_peak,peak_to_threshold,peak_channel,threshold
+id_105,False,False,channel_14;channel_21;channel_29,18180.0,0.1378626674413681,0.018020395227844252,channel_44,7.650368690490723
+id_106,True,True,channel_14;channel_15;channel_17;channel_18;channel_19;channel_20;channel_21;channel_22;channel_23;channel_25;channel_26;channel_27;channel_28;channel_29;channel_30;channel_31;channel_34;channel_36;channel_37;channel_38;channel_39;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52,340250.28,8.557437896728516,1.1185654238292155,channel_45,7.650368690490723
+id_107,True,True,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_50;channel_51;channel_52,977.622,12.184566497802734,1.5926770317550762,channel_47,7.650368690490723
+id_108,False,False,channel_14;channel_21;channel_29,26370.0,0.07092170417308807,0.009270364219340506,channel_44,7.650368690490723
+id_109,True,True,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,6.912,9.006732940673828,1.1772939717100226,channel_46,7.650368690490723
+id_110,True,True,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,3.912,8.467401504516602,1.1067965279949759,channel_47,7.650368690490723
+id_111,False,False,channel_14;channel_21;channel_29,19080.0,0.13206368684768677,0.01726239508062398,channel_44,7.650368690490723
+id_112,True,True,channel_14;channel_15;channel_16;channel_21;channel_22;channel_23;channel_24;channel_29;channel_30;channel_31;channel_32;channel_33;channel_38;channel_39;channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_64;channel_65;channel_66,604250.283,11.263704299926758,1.4723086893743238,channel_47,7.650368690490723
+id_113,False,False,channel_14;channel_21;channel_29,14580.0,0.1184760332107544,0.015486316804315337,channel_46,7.650368690490723
+id_114,True,True,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,9.912,8.545782089233398,1.117041862290331,channel_42,7.650368690490723

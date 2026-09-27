@@ -1,0 +1,10 @@
+{
+  "input_sha256": {
+    "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/labels.csv": "1564d630f1ec1387d699ec81531ce57118051a220c8b7cba050a446a652b9082",
+    "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/anomaly_types.csv": "e0cadee4ee9697c5ca8d4f9e81067454d7d7a00d063ee0de33cbc77660eec8bc",
+    "results_longrun/development/ae_baseline_2003_seed42/2003/frozen_rule.json": "79de9b222adae6910966b1561ce9e7acda62b0b534d107e64f73b48ab9bb29f4",
+    "results_longrun/development/ae_baseline_remaining_seed42/2004/frozen_rule.json": "b77c5359b6be1e6c43ea94df9b6928a1389eea0b60ffe71f402bb9e49b4d0fcd",
+    "results_longrun/development/ae_baseline_remaining_seed42/2005/frozen_rule.json": "cf490ec62aa03f868c2936da5a6f7e3712eb53802b4b2c51ba1b8c1a4510b1b2"
+  },
+  "policy": "Annotations and saved calibration rules only; no assessment access; aggregate TP counts cannot identify detected IDs"
+}

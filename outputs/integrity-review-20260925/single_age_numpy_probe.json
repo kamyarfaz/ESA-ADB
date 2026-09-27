@@ -1,0 +1,81 @@
+{
+  "python": "3.9.0 (default, Nov 15 2020, 14:28:56) \n[GCC 7.3.0]",
+  "numpy": "1.26.4",
+  "grid_ns": 1079295510000000000,
+  "native_ns": 1079295505179000000,
+  "delta_ns": 4821000000,
+  "seconds": 4.821,
+  "reference_double": 0.1490232713924399,
+  "reference_float32": 0.14902326464653015,
+  "scalar_trials": 100000,
+  "scalar_mismatches": 0,
+  "arrays": [
+    {
+      "size": 1,
+      "rounds": 10000,
+      "counts": {
+        "delta": 0,
+        "age": 0,
+        "ratio": 0,
+        "log_float64": 0,
+        "log_float32": 0,
+        "input_mutation": 0
+      },
+      "examples": []
+    },
+    {
+      "size": 16,
+      "rounds": 1000,
+      "counts": {
+        "delta": 0,
+        "age": 0,
+        "ratio": 0,
+        "log_float64": 0,
+        "log_float32": 0,
+        "input_mutation": 0
+      },
+      "examples": []
+    },
+    {
+      "size": 1024,
+      "rounds": 100,
+      "counts": {
+        "delta": 0,
+        "age": 0,
+        "ratio": 0,
+        "log_float64": 0,
+        "log_float32": 0,
+        "input_mutation": 0
+      },
+      "examples": []
+    },
+    {
+      "size": 262144,
+      "rounds": 20,
+      "counts": {
+        "delta": 0,
+        "age": 0,
+        "ratio": 0,
+        "log_float64": 0,
+        "log_float32": 0,
+        "input_mutation": 0
+      },
+      "examples": []
+    },
+    {
+      "size": 4469760,
+      "rounds": 3,
+      "counts": {
+        "delta": 0,
+        "age": 0,
+        "ratio": 0,
+        "log_float64": 0,
+        "log_float32": 0,
+        "input_mutation": 0
+      },
+      "examples": []
+    }
+  ],
+  "seconds_elapsed": 0.6615461109904572,
+  "limitations": "Bounded synthetic arithmetic test; a clean run does not explain or repair prior intermittent failures. Float64 log tolerance2ULP, float32 exact."
+}

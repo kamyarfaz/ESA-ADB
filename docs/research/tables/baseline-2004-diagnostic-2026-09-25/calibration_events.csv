@@ -1,0 +1,2 @@
+event_id,detected,overlapping_alarm_intervals,interval_count,first_time,last_time,samples_inside_raw_intervals,max_score_on_inside_samples,annotated_on_inputs
+id_12,True,1,1,2004-01-01 00:00:00+00:00,2004-01-08 12:00:00+00:00,21601,3.5512499809265137,True

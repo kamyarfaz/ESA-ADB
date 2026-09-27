@@ -1,0 +1,39 @@
+{
+  "event_ids": 46,
+  "episodes": 79,
+  "short_episodes": 32,
+  "short_event_ids": 13,
+  "wide_episodes": 56,
+  "wide_event_ids": 40,
+  "short_and_wide_episodes": 16,
+  "short_and_wide_event_ids": [
+    "id_104",
+    "id_151",
+    "id_78",
+    "id_80",
+    "id_85",
+    "id_87",
+    "id_95",
+    "id_98"
+  ],
+  "short_ids_excluding_id98": [
+    "id_104",
+    "id_12",
+    "id_151",
+    "id_59",
+    "id_78",
+    "id_80",
+    "id_81",
+    "id_85",
+    "id_87",
+    "id_88",
+    "id_90",
+    "id_95"
+  ],
+  "input_sha256": {
+    "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/labels.csv": "1564d630f1ec1387d699ec81531ce57118051a220c8b7cba050a446a652b9082",
+    "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/anomaly_types.csv": "e0cadee4ee9697c5ca8d4f9e81067454d7d7a00d063ee0de33cbc77660eec8bc"
+  },
+  "scope": "2000\u20132005 raw annotations on40\u201347; Anomaly+RareEvent; descriptive only",
+  "limitations": "Union episodes and annotations are not independent physical events; multiple IDs may share a mechanism; broad all-channel annotation support may not mean equal signal change. Pre2006 includes previously inspected development periods. No physical cause or efficacy proven."
+}
