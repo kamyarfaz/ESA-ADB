@@ -1,0 +1,9 @@
+{
+  "verified_metric_rows": 24,
+  "verified_epochs": 30,
+  "advancement_gate_passed": false,
+  "source_protocol_sha256": "0642423be42f0f2fa9bccd3c525a649f64e0b9bc13668694c479403178a8ce51",
+  "source_hashes_still_match": true,
+  "annotation_hashes_still_match": true,
+  "tests_passed": 85
+}

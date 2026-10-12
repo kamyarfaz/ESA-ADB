@@ -18,7 +18,7 @@ def make_training_anomaly(xb, *, mode='legacy', return_metadata=False):
     still be a no-op on constant input; metadata records actual changed support.
     The legacy mode delegates directly without consuming extra random numbers.
     """
-    if mode not in ('legacy', 'short_coordinated'):
+    if mode not in ('legacy', 'short_coordinated', 'short_no_roll'):
         raise ValueError('Unknown augmentation mode')
     if mode == 'legacy':
         if return_metadata:
@@ -39,7 +39,9 @@ def make_training_anomaly(xb, *, mode='legacy', return_metadata=False):
             channels,time=xb.shape[1:3]
             length=random.randint(1,min(10,time));start=random.randint(0,time-length)
             count=random.randint(1,channels);chosen=torch.randperm(channels,device=xb.device)[:count]
-            kind=random.choice(['offset','noise'] if length==1 else ['offset','roll','noise'])
+            # The ablation changes only the short branch's type distribution.
+            # Existing modes retain their exact draws and behavior.
+            kind=random.choice(['offset','noise'] if length==1 or mode=='short_no_roll' else ['offset','roll','noise'])
             segment=xb[i,chosen,start:start+length,0].detach()
             scale=xb[i,chosen,:,0].detach().std(dim=1,unbiased=False,keepdim=True)+1e-6
             if kind=='offset':

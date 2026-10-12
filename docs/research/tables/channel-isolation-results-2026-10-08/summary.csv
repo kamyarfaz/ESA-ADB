@@ -1,0 +1,9 @@
+fold,arm,scope,f05_mean,f05_sd,fp_mean,recall_mean,nominal_false_alarm_rate_mean
+2001,isolated,input_channels_40_47,0.0,0.0,0.0,0.0,0.0
+2001,isolated,system_all_channels,0.0,0.0,0.0,0.0,0.0
+2001,joint,input_channels_40_47,0.0,0.0,0.0,0.0,0.0
+2001,joint,system_all_channels,0.0,0.0,0.0,0.0,0.0
+2002,isolated,input_channels_40_47,0.0,0.0,128.66666666666666,0.0,0.3201723127272115
+2002,isolated,system_all_channels,0.0,0.0,128.66666666666666,0.0,0.3201723127272115
+2002,joint,input_channels_40_47,0.0,0.0,53.0,0.0,0.4473175371671434
+2002,joint,system_all_channels,0.0,0.0,53.0,0.0,0.4473175371671434

@@ -268,3 +268,7 @@ dask-worker-space
 !/research_workspace/README.md
 /outputs/**/preview_*.png
 /outputs/**/*.inspect.ndjson
+
+# Local rendering scratch space and external artifact runtime links
+/tmp/
+node_modules/

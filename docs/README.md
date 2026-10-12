@@ -119,3 +119,48 @@
 - [Local event-shape inventory and proposed experiment](research/local-event-shapes-2026-09-27.md)
 
 - [Optional short coordinated augmentation](research/short-coordinated-augmentation.md)
+
+- [Short coordinated augmentation comparison command](research/short-coordinated-comparison.md)
+
+- [Short coordinated augmentation pilot results](research/short-coordinated-results-2026-09-27.md)
+
+- [Three-seed short coordinated augmentation review (29 September)](research/short-coordinated-multiseed-2026-09-29.md)
+
+- [2004 augmentation diagnosis and training-only objective probe](research/augmentation-2004-diagnosis-2026-09-29.md)
+
+- [Short corruption without temporal rolls pilot](research/short-no-roll-comparison.md)
+
+- [Three-seed no-roll results](research/short-no-roll-multiseed-2026-10-02.md)
+- [No-roll 2004 calibration diagnosis](research/short-no-roll-2004-diagnosis-2026-10-02.md)
+- [Chronological inner-selection comparison protocol](research/inner-validation-plan-2026-10-02.md)
+- [Completed inner-selection results and false-alarm comparison](research/inner-selection-results-2026-10-02.md)
+- [Channel reconstruction and calibration-score diagnosis](research/inner-score-diagnosis-2026-10-02.md)
+- [Matched artificial-anomaly loss-weight comparison](research/loss-weight-comparison-2026-10-02.md)
+
+- [Loss-weight comparison results](research/loss-weight-results-2026-10-03.md): verified matched real-data comparison, all seeds, and failed advancement gate.
+
+- [Loss-weight temporal diagnosis](research/loss-weight-diagnosis-2026-10-03.md): frozen monthly scores, event ratios and prolonged false alarms.
+
+- [Frozen channel replay](research/loss-weight-channel-replay-2026-10-03.md): channel 47 level changes, reconstruction errors, and exact six-model score reproduction.
+
+- [Channel-level intervention](research/channel-level-coupling-2026-10-03.md): frozen-model evidence of cross-channel sensitivity and limits of centering.
+
+- [Channel-isolation experiment](research/channel-isolation-plan-2026-10-08.md): parameter-matched diagonal channel attention with a frozen joint-model control.
+
+- [Verified channel-isolation results](research/channel-isolation-results-2026-10-08.md).
+
+- [Missed-event audit](research/inner-event-audit-2026-10-08.md): calibration transfer, score ranking, and 13 prepared-telemetry event plots.
+
+- [Score-change pilot](research/score-change-results-2026-10-08.md): fixed-checkpoint temporal scoring, failed advancement gate, verified paired results.
+
+- [Direct telemetry reference results](research/telemetry-reference-results-2026-10-08.md): deterministic comparison, missed events, and verified calibration-transfer failure.
+
+- [Calibration selection audit](research/calibration-selection-audit-2026-10-08.md): alarm-cap restrictions versus precision/recall trade-offs across 20 saved grids.
+
+## Move to a new PC or chat
+
+Read [current AI handoff](../AI_HANDOFF.md) and [migration guide](../MIGRATION.md).
+The [archived handoff](history/AI_HANDOFF-through-2026-10-08.md) preserves the full
+earlier chronology; its pending-run notes are historical.
+
+- [GitHub backup —12October](research/github-backup-2026-10-12.md): recent source and additive experiment archive restore instructions.

@@ -1,0 +1,12 @@
+{
+  "source_sha256": {
+    "data/ESA-Mission1/labels.csv": "1564d630f1ec1387d699ec81531ce57118051a220c8b7cba050a446a652b9082",
+    "data/ESA-Mission1/anomaly_types.csv": "e0cadee4ee9697c5ca8d4f9e81067454d7d7a00d063ee0de33cbc77660eec8bc"
+  },
+  "cutoff_exclusive": "2003-01-01 00:00:00+00:00",
+  "inner_calibration_validation_shared_ids": {
+    "2001": [],
+    "2002": []
+  },
+  "limitation": "Annotation overlap counts, not independent episodes or telemetry availability. Full metadata read; only pre-2003 rows analyzed. No assessment scores or telemetry read."
+}

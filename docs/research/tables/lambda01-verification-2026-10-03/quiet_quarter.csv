@@ -1,0 +1,7 @@
+seed,policy,period,EW_F_0.50,EW_precision,EW_recall,TPe,FPe,FNe,num_true_events,num_pred_events,alarming_precision,nominal_seconds,false_positive_seconds,nominal_false_alarm_rate,false_alarms_per_day,metric_version,interpretation
+42,calibration_selected,2002Q4,0.0,0.0,0.0,0,39,0,0,40,0.0,7927387.905,7763227.905,0.9792920439913808,0.4239146433976577,esa-ew-id-duration-v1,No selected true events: event F0.5 is not a detection-performance measure
+42,fixed_epoch5,2002Q4,0.0,0.0,0.0,0,0,0,0,1,0.0,7927387.905,292.38,3.6882262291704215e-05,0.0,esa-ew-id-duration-v1,No selected true events: event F0.5 is not a detection-performance measure
+43,calibration_selected,2002Q4,0.0,0.0,0.0,0,0,0,0,0,0.0,7927387.905,0.0,0.0,0.0,esa-ew-id-duration-v1,No selected true events: event F0.5 is not a detection-performance measure
+43,fixed_epoch5,2002Q4,0.0,0.0,0.0,0,0,0,0,0,0.0,7927387.905,0.0,0.0,0.0,esa-ew-id-duration-v1,No selected true events: event F0.5 is not a detection-performance measure
+44,calibration_selected,2002Q4,0.0,0.0,0.0,0,27,0,0,28,0.0,7927387.905,7801627.905,0.9841360103091864,0.29347936850607076,esa-ew-id-duration-v1,No selected true events: event F0.5 is not a detection-performance measure
+44,fixed_epoch5,2002Q4,0.0,0.0,0.0,0,0,0,0,1,0.0,7927387.905,7927387.905,1.0,0.0,esa-ew-id-duration-v1,No selected true events: event F0.5 is not a detection-performance measure

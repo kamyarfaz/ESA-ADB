@@ -1,0 +1,20 @@
+{
+  "status": "complete",
+  "epoch": 5,
+  "probe_windows": 512,
+  "years": "2000-2003 nominal only",
+  "corruption_seed": 29092026,
+  "model_device": "cpu",
+  "sources": {
+    "results_longrun/diagnostics/augmentation_2004_multiseed_v1/diagnostic_inputs.npz": "9419e9e70b8e85a0c5518fe89b36666c45016f4bce4b308351a23dc99e47979b",
+    "results_longrun/development/short_coordinated_seed42_v1/2004/legacy/model_checkpoint.pt": "dc39b17ca80a44908835a9b4830e3132d3c4a36d806a0b502a8c807a0b849a78",
+    "results_longrun/development/short_coordinated_seed42_v1/2004/legacy/last.pt": "a3d0a3c7ba42c1a515f095fd078b1f2c02930fa508f9c68ede9f90c7015539f8",
+    "results_longrun/development/short_coordinated_seed42_v1/2004/short_coordinated/last.pt": "dd725317b8fc232fe4b83a8e636999c24dd64ef454d34d7844c522618ad85dff",
+    "results_longrun/development/short_coordinated_seed43_v1/2004/legacy/last.pt": "f8fa373b1df5b27da5792a1ed6e6b2873830a61cb72f58fdf484c76e2d3d2a05",
+    "results_longrun/development/short_coordinated_seed43_v1/2004/short_coordinated/last.pt": "97164a80efaa55907220ba88774af5d93c67c0b4f204aabc51f206c0f4ec6f74",
+    "results_longrun/development/short_coordinated_seed44_v1/2004/legacy/last.pt": "82baefc91318dd53b85d29e819450e6da8f42028689ed76593b353f936731196",
+    "results_longrun/development/short_coordinated_seed44_v1/2004/short_coordinated/last.pt": "c1c689645b0cf55a187c43b07c4dbf80173e331ac3f62397ebe1f00a39651e93"
+  },
+  "script_sha256": "a579115f43124d3ea081495f6c81dfc5312759e9798b0ab3d8678337648e84c5",
+  "interpretation": "Identical synthetic mixture applied to all final-epoch checkpoints. Eval mode; batch64 denominator mean normal MSE; not exact training-loss replay or real-event performance. No threshold/model changes. Synthetic input energy and support differences do not prove the causal source of calibration failures."
+}

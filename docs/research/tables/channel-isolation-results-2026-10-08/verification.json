@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "decision": {
+    "advancement_gate_passed": false,
+    "promoted": false,
+    "primary_policy": "calibration_selected"
+  },
+  "candidate_review": {
+    "verified_metric_rows": 24,
+    "verified_epochs": 30,
+    "advancement_gate_passed": false,
+    "source_protocol_sha256": "58aa9aa2ffad5195db58e596736c4bdf68bb2a3de33f0c8c040eed1eba98fee6"
+  },
+  "control_protocol_sha256": "0642423be42f0f2fa9bccd3c525a649f64e0b9bc13668694c479403178a8ce51",
+  "verified_loss_decompositions": 60,
+  "matched_windows_scalers_timestamps": true,
+  "interpretation": "Primary calibration-selected checkpoints only; fixed-epoch5 not used for model choice"
+}

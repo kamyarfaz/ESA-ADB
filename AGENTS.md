@@ -4,10 +4,11 @@ Read `AI_HANDOFF.md` first. It records the research state and the user's current
 intent. Then read the documents and saved result files relevant to the task.
 This file supplements, and does not override, the user's current instructions.
 
-- Migration is postponed; research resumed on 22 September 2026. The user
-  approved the separate three-channel detector and combined calibration workflow.
-  See AI_HANDOFF.md and docs/research/specialist-detector.md for the current plan.
-  Do not delete artifacts or treat unrelated report suggestions as approved runs.
+- Migration is active again as of 12 October 2026. Read MIGRATION.md and verify
+  the destination copy before research. All recent internal experiments are
+  complete; none passed the advancement gate. Historical ACTIVE notes are stale.
+  Current priority: transfer integrity, then calibration/generalization protocol
+  consolidation. Do not start training or delete artifacts during migration.
 - The baseline `MultivariateAE` already uses Transformers. Do not propose adding
   a Transformer as though the baseline were a conventional dense autoencoder.
 - Preserve existing results. Use new output directories for new experiments.

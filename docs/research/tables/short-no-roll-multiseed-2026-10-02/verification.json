@@ -1,0 +1,8 @@
+{
+  "predictions_verified": 18,
+  "metric_rows_verified": 36,
+  "metric_tolerance": 1e-09,
+  "control_arrays_match_prior": true,
+  "protocols_equal_except_seed": true,
+  "checkpoint_selection_verified": true
+}

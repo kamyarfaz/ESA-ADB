@@ -1,5 +1,7 @@
 # Optional short coordinated augmentation
 
+Update: an explicit [development comparison command](short-coordinated-comparison.md) is now implemented and tested (77 tests). No full experiment has run yet. The original implementation notes follow.
+
 Implemented27September2026 in `esa_thesis/short_augmentation.py`. Experimental
 primitive only: NOT wired into a training CLI, NOT trained, NO new F0.5 result.
 

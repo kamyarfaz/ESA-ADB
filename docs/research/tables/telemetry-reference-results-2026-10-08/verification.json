@@ -1,0 +1,7 @@
+{
+  "status": "complete",
+  "advancement_gate_passed": false,
+  "promoted": false,
+  "independent_check": "Pandas EWM vs SciPy all train/cal/validation deviations within1e-9",
+  "deterministic_runs": 2
+}

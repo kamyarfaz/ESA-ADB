@@ -1,0 +1,10 @@
+{
+  "train_sha256": "fe6812dd5d324fe2eb347a703894551f0a03f40253742a3cd35f42d02fdb80ad",
+  "annotations": {
+    "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/labels.csv": "1564d630f1ec1387d699ec81531ce57118051a220c8b7cba050a446a652b9082",
+    "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/anomaly_types.csv": "e0cadee4ee9697c5ca8d4f9e81067454d7d7a00d063ee0de33cbc77660eec8bc"
+  },
+  "plan_sha256": "742fc3b41e52c730d1081eee5ece6856fe51cdbf8c23150e3d95fb51d9653104",
+  "implementation_sha256": "6c1adac8f7368c552d734abc59fdf1aac341c5c8fc11643d5d0e157b13e2fdbd",
+  "runner_sha256": "0688064c7167f92be585daf7c22ad2681a71759ce9021694a0a037c1db16689b"
+}

@@ -39,4 +39,32 @@ class ShortAugmentationTests(unittest.TestCase):
         with self.assertRaises(ValueError):make_training_anomaly(torch.zeros(1,8,256,1),mode='bad')
         with self.assertRaises(ValueError):make_training_anomaly(torch.full((1,8,256,1),float('nan')),mode='short_coordinated')
 
+    def test_no_roll_short_branch_support_and_repeatability(self):
+        x=torch.linspace(-2,2,256).reshape(1,1,256,1).repeat(128,8,1,1)
+        original=x.clone()
+        def run():
+            random.seed(91);torch.manual_seed(91)
+            return make_training_anomaly(x,mode='short_no_roll',return_metadata=True)
+        y,records=run();z,other=run()
+        self.assertTrue(torch.equal(x,original));self.assertTrue(torch.equal(y,z));self.assertEqual(records,other)
+        self.assertEqual({r['branch'] for r in records},{'short','legacy'})
+        self.assertEqual({r['kind'] for r in records if r['branch']=='short'},{'offset','noise'})
+        for i,r in enumerate(records):
+            if r['branch']=='short':
+                self.assertTrue(1<=r['length']<=10)
+                self.assertTrue(1<=len(r['selected_channels'])<=8)
+                mask=torch.zeros_like(x[i],dtype=torch.bool)
+                mask[r['selected_channels'],r['start']:r['start']+r['length']]=True
+                self.assertTrue(torch.equal(y[i][~mask],x[i][~mask]))
+
+    def test_no_roll_preserves_legacy_branch_and_rng(self):
+        x=torch.linspace(-1,1,8*256).reshape(1,8,256,1).repeat(3,1,1,1)
+        def run(mode):
+            random.seed(42);torch.manual_seed(42)
+            with patch('esa_thesis.short_augmentation.random.random',return_value=0.):
+                y=make_training_anomaly(x,mode=mode)
+            return y,random.getstate(),torch.get_rng_state()
+        a,p,r=run('short_coordinated');b,q,s=run('short_no_roll')
+        self.assertTrue(torch.equal(a,b));self.assertEqual(p,q);self.assertTrue(torch.equal(r,s))
+
 if __name__=='__main__':unittest.main()

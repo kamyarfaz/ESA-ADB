@@ -1,0 +1,16 @@
+fold,scope,event_id,detected
+2001,system_all_channels,id_2,False
+2001,system_all_channels,id_3,False
+2001,system_all_channels,id_37,False
+2001,system_all_channels,id_38,False
+2001,system_all_channels,id_5,False
+2001,system_all_channels,id_6,False
+2001,system_all_channels,id_80,False
+2001,input_channels_40_47,id_37,False
+2001,input_channels_40_47,id_38,False
+2001,input_channels_40_47,id_80,False
+2002,system_all_channels,id_25,False
+2002,system_all_channels,id_7,False
+2002,system_all_channels,id_86,False
+2002,input_channels_40_47,id_25,False
+2002,input_channels_40_47,id_86,False

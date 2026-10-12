@@ -1,0 +1,9 @@
+fold,policy,scope,f05_mean,f05_sd,fp_mean,recall_mean
+2001,calibration_selected,input_channels_40_47,0.0,0.0,0.0,0.0
+2001,calibration_selected,system_all_channels,0.0,0.0,0.0,0.0
+2001,fixed_epoch5,input_channels_40_47,0.0,0.0,0.0,0.0
+2001,fixed_epoch5,system_all_channels,0.0,0.0,0.0,0.0
+2002,calibration_selected,input_channels_40_47,0.0,0.0,128.66666666666666,0.0
+2002,calibration_selected,system_all_channels,0.0,0.0,128.66666666666666,0.0
+2002,fixed_epoch5,input_channels_40_47,0.0,0.0,52.333333333333336,0.0
+2002,fixed_epoch5,system_all_channels,0.0,0.0,52.333333333333336,0.0

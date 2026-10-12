@@ -1,0 +1,8 @@
+{
+  "prediction_arrays_reproduced": 18,
+  "metric_rows_reproduced": 36,
+  "absolute_tolerance": 1e-09,
+  "epochs_and_earliest_ties_checked": 18,
+  "fresh_inference": false,
+  "full_dataset_rehashed": false
+}

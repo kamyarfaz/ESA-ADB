@@ -1,0 +1,6 @@
+{
+  "verified_runs": 12,
+  "periods": 24,
+  "policy": "Frozen primary checkpoints and rules; no threshold search",
+  "limits": "Aggregate timestamp scores; nominal samples can include window spillover; peak exceedance fraction is diagnostic, not F0.5 or event FP rate"
+}

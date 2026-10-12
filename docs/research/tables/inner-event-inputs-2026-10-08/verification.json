@@ -1,0 +1,6 @@
+{
+  "status": "complete",
+  "train_sha256": "fe6812dd5d324fe2eb347a703894551f0a03f40253742a3cd35f42d02fdb80ad",
+  "seed": 42,
+  "limits": "Prepared telemetry, not native raw; min/max bin envelopes; scalar score cannot distinguish averaging from model error; event ID intervals may span multiple channels"
+}

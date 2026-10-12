@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "device": "cuda",
+  "source_sha256": {
+    "results_longrun/development/inner_selection_cuda_v2/protocol.json": "0642423be42f0f2fa9bccd3c525a649f64e0b9bc13668694c479403178a8ce51",
+    "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/labels.csv": "1564d630f1ec1387d699ec81531ce57118051a220c8b7cba050a446a652b9082",
+    "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/anomaly_types.csv": "e0cadee4ee9697c5ca8d4f9e81067454d7d7a00d063ee0de33cbc77660eec8bc",
+    "results_longrun/development/inner_selection_cuda_v2/2001/seed42/epoch_1/model.pt": "a4cc5949eeb5fc29a4310a65177138dcac6591ec5090652ecf6d3f0ad3bd3930",
+    "results_longrun/development/inner_selection_cuda_v2/2001/seed42/frozen_decisions.json": "e894c63bb459e41cc8d1ff973c4ee13f35d023ee7e9a3059a95cc8aa56c93b95",
+    "results_longrun/development/inner_selection_cuda_v2/2001/seed42/epoch_1/calibration_score.npy": "941f44468e6a1c2e43d33ed69f9bceb6a10e1de00340036d234f8b51463c3a5f",
+    "results_longrun/development/inner_selection_cuda_v2/2001/seed43/epoch_1/model.pt": "af04a13d2b401ad3a81d28e89238b6033d927c4ea314e7424345ea1d03e436cb",
+    "results_longrun/development/inner_selection_cuda_v2/2001/seed43/frozen_decisions.json": "3d83eaa1327ac1dd66bebdbc96a4b6e4bfe40245affd3dcc1632e95d66076bee",
+    "results_longrun/development/inner_selection_cuda_v2/2001/seed43/epoch_1/calibration_score.npy": "67dd570226aaa2858b7d1e134a61507c6f67a506bbb32b00308f9ad92c37cdc0",
+    "results_longrun/development/inner_selection_cuda_v2/2001/seed44/epoch_1/model.pt": "36073b5525099c1266e7679a991f558061cfadc40e52fd80059c5ba1044ebc27",
+    "results_longrun/development/inner_selection_cuda_v2/2001/seed44/frozen_decisions.json": "656d1b0764c1d1efa5cea10ce478b16f22a6f573fd3187d0ea348b4bb5acc516",
+    "results_longrun/development/inner_selection_cuda_v2/2001/seed44/epoch_1/calibration_score.npy": "0c70a5cc0bbee47e808563ed00e8f2e57d98dc2488866ea61c557031d4492478",
+    "results_longrun/development/inner_selection_cuda_v2/2002/seed42/epoch_2/model.pt": "0a716dc8387dee81e57b00706d1dd0d958b51cd7e0baf9b7798d32ba898f743c",
+    "results_longrun/development/inner_selection_cuda_v2/2002/seed42/frozen_decisions.json": "fcc9f688d13a7d2cf2590c9aea29584f4ea359b9ea2ebd30cb1b15c6c3717f16",
+    "results_longrun/development/inner_selection_cuda_v2/2002/seed42/epoch_2/calibration_score.npy": "b785bf52cfd28789592f13b4d02f54fe17353f18a10bdd389c5050e58b5ee441",
+    "results_longrun/development/inner_selection_cuda_v2/2002/seed43/epoch_1/model.pt": "4c8bdbcb61ef205c68f710bf20c65cd636f9c1786e09619c1f12db4d0235de3b",
+    "results_longrun/development/inner_selection_cuda_v2/2002/seed43/frozen_decisions.json": "5ca3051a504f58168d2ddbba7717f6a54b3a3674bf12b89cc2f8dcfa5f3b986e",
+    "results_longrun/development/inner_selection_cuda_v2/2002/seed43/epoch_1/calibration_score.npy": "a9e3269a48d030285d7b867b173241b2f3e1d6b71d8d8b232b6a70920f263585",
+    "results_longrun/development/inner_selection_cuda_v2/2002/seed44/epoch_1/model.pt": "3ded438acc8f79e9deb96f8474caf9af720c243bb482e72b7de5de2182fa374b",
+    "results_longrun/development/inner_selection_cuda_v2/2002/seed44/frozen_decisions.json": "0a429cbda753d4f8189dd7b70fbd7a871ad379d66440b02a484f4299179013df",
+    "results_longrun/development/inner_selection_cuda_v2/2002/seed44/epoch_1/calibration_score.npy": "c82baab9602136e0d7147f52d57fa49505e071ee360912c6515812e7e65f9b45"
+  },
+  "train_sha256": "fe6812dd5d324fe2eb347a703894551f0a03f40253742a3cd35f42d02fdb80ad",
+  "policy": "Saved calibration-selected checkpoints, seeds42/43/44; training/calibration only; no rule changes",
+  "interpretation": "Channel training window errors differ from aggregated calibration scores; example windows deliberately selected by high error, not representative samples; unscaled inputs are prepared CSV values, not native telemetry"
+}

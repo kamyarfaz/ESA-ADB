@@ -1,0 +1,9 @@
+fold,arm,scope,f05,false_events,recall,nominal_alarm_fraction
+2001,joint,input_channels_40_47,0.0,0.0,0.0,0.0
+2001,joint,system_all_channels,0.0,0.0,0.0,0.0
+2001,telemetry_reference,input_channels_40_47,0.0,0.0,0.0,0.0
+2001,telemetry_reference,system_all_channels,0.0,0.0,0.0,0.0
+2002,joint,input_channels_40_47,0.0,53.0,0.0,0.4473175371671434
+2002,joint,system_all_channels,0.0,53.0,0.0,0.4473175371671434
+2002,telemetry_reference,input_channels_40_47,0.0,0.0,0.0,0.0
+2002,telemetry_reference,system_all_channels,0.0,0.0,0.0,0.0

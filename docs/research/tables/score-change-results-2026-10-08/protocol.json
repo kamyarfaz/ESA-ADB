@@ -1,0 +1,21 @@
+{
+  "source": "results_longrun/development/inner_selection_cuda_v2",
+  "source_protocol_sha256": "0642423be42f0f2fa9bccd3c525a649f64e0b9bc13668694c479403178a8ce51",
+  "half_life": 2880,
+  "document_sha256": "27820564b2597180e85e334f588177675d82e905b4826d206ce79fbdb5c6cea3",
+  "transform_sha256": "103878ccb14bd9a298cc969d7630d86a98af77979fbb507f8a998ca16dc531d3",
+  "runner_sha256": "c9af1646f1331c685419558c2bc9a5ff2c4b1e9a7757f84777ee1cf7ff4269d9",
+  "quantiles": [
+    90,
+    95,
+    97.5,
+    98,
+    99,
+    99.5,
+    99.75,
+    99.9,
+    99.95,
+    99.99,
+    100
+  ]
+}

@@ -1,0 +1,17 @@
+fold,arm,seed,scope,calibration_f05,EW_F_0.50,EW_precision,EW_recall,TPe,FPe,FNe,num_true_events,num_pred_events,alarming_precision,nominal_seconds,false_positive_seconds,nominal_false_alarm_rate,false_alarms_per_day,metric_version,policy,epoch,uninformative_calibration
+2001,telemetry_reference,deterministic,system_all_channels,0.6666666666666666,0.0,0.0,0.0,0,0,7,7,0,0.0,14664445.29,0.0,0.0,0.0,esa-ew-id-duration-v1,,,
+2001,telemetry_reference,deterministic,input_channels_40_47,0.6666666666666666,0.0,0.0,0.0,0,0,3,3,0,0.0,14664445.29,0.0,0.0,0.0,esa-ew-id-duration-v1,,,
+2001,joint,42,system_all_channels,0.6666666666666666,0.0,0.0,0.0,0,0,7,7,0,0.0,14664445.29,0.0,0.0,0.0,esa-ew-id-duration-v1,calibration_selected,1.0,False
+2001,joint,42,input_channels_40_47,0.6666666666666666,0.0,0.0,0.0,0,0,3,3,0,0.0,14664445.29,0.0,0.0,0.0,esa-ew-id-duration-v1,calibration_selected,1.0,False
+2001,joint,43,system_all_channels,0.6666666666666666,0.0,0.0,0.0,0,0,7,7,0,0.0,14664445.29,0.0,0.0,0.0,esa-ew-id-duration-v1,calibration_selected,1.0,False
+2001,joint,43,input_channels_40_47,0.6666666666666666,0.0,0.0,0.0,0,0,3,3,0,0.0,14664445.29,0.0,0.0,0.0,esa-ew-id-duration-v1,calibration_selected,1.0,False
+2001,joint,44,system_all_channels,0.6666666666666666,0.0,0.0,0.0,0,0,7,7,0,0.0,14664445.29,0.0,0.0,0.0,esa-ew-id-duration-v1,calibration_selected,1.0,False
+2001,joint,44,input_channels_40_47,0.6666666666666666,0.0,0.0,0.0,0,0,3,3,0,0.0,14664445.29,0.0,0.0,0.0,esa-ew-id-duration-v1,calibration_selected,1.0,False
+2002,telemetry_reference,deterministic,system_all_channels,0.5555555555555556,0.0,0.0,0.0,0,0,3,3,0,0.0,14848395.945,0.0,0.0,0.0,esa-ew-id-duration-v1,,,
+2002,telemetry_reference,deterministic,input_channels_40_47,0.5555555555555556,0.0,0.0,0.0,0,0,2,2,0,0.0,14848395.945,0.0,0.0,0.0,esa-ew-id-duration-v1,,,
+2002,joint,42,system_all_channels,0.7691731680767528,0.0,0.0,0.0,0,23,3,3,24,0.0,14848395.945,7581787.905,0.5106132630813274,0.1250002358851069,esa-ew-id-duration-v1,calibration_selected,2.0,False
+2002,joint,42,input_channels_40_47,0.7691731680767528,0.0,0.0,0.0,0,23,2,2,24,0.0,14848395.945,7581787.905,0.5106132630813274,0.1250002358851069,esa-ew-id-duration-v1,calibration_selected,2.0,False
+2002,joint,43,system_all_channels,0.7691731680767528,0.0,0.0,0.0,0,87,3,3,89,0.0,14848395.945,5566747.905,0.3749056750385571,0.4728269792175785,esa-ew-id-duration-v1,calibration_selected,1.0,False
+2002,joint,43,input_channels_40_47,0.7691731680767528,0.0,0.0,0.0,0,87,2,2,89,0.0,14848395.945,5566747.905,0.3749056750385571,0.4728269792175785,esa-ew-id-duration-v1,calibration_selected,1.0,False
+2002,joint,44,system_all_channels,0.7691731680767528,0.0,0.0,0.0,0,49,3,3,50,0.0,14848395.945,6777307.905,0.4564336733815458,0.2663048503639235,esa-ew-id-duration-v1,calibration_selected,1.0,False
+2002,joint,44,input_channels_40_47,0.7691731680767528,0.0,0.0,0.0,0,49,2,2,50,0.0,14848395.945,6777307.905,0.4564336733815458,0.2663048503639235,esa-ew-id-duration-v1,calibration_selected,1.0,False

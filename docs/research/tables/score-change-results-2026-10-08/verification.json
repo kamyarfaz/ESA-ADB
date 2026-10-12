@@ -1,0 +1,49 @@
+{
+  "status": "complete",
+  "runs": [
+    {
+      "fold": "2001",
+      "seed": 42,
+      "source_manifest_sha256": "a9cd11a6dbb8d145afe61877a508ade346b9978004d1e6c6ad2b12231ef5e8a3",
+      "calibration_state": 1.1711066825406027,
+      "final_state": 0.6942850028349226
+    },
+    {
+      "fold": "2001",
+      "seed": 43,
+      "source_manifest_sha256": "27c4b9676e92739be43bca3925050eef0371b45fa4e72ececfa50e05de6e3e0f",
+      "calibration_state": 1.2089608921767199,
+      "final_state": 0.782699746985459
+    },
+    {
+      "fold": "2001",
+      "seed": 44,
+      "source_manifest_sha256": "22f45b7c56b7066d4a8d51e9d2365c376a657c284dd90fcf7a060d46eff4f34f",
+      "calibration_state": 1.019604277581673,
+      "final_state": 1.0576370773926607
+    },
+    {
+      "fold": "2002",
+      "seed": 42,
+      "source_manifest_sha256": "2d1013978a0937f2fb937e22279b6955ff9856db52fc701aecf0fc857181b3ce",
+      "calibration_state": 2.213075216458549,
+      "final_state": 4.3855415582134745
+    },
+    {
+      "fold": "2002",
+      "seed": 43,
+      "source_manifest_sha256": "30572a034129b36b2033891c90f6519e9ddfcb37ea8b8ceb2336787853c33632",
+      "calibration_state": 2.530164005443537,
+      "final_state": 4.228020436406895
+    },
+    {
+      "fold": "2002",
+      "seed": 44,
+      "source_manifest_sha256": "4e1ab04de0e9899ee5c19398756d6af0f9c40873ad92fea4beb86065fc513a14",
+      "calibration_state": 3.750533392713411,
+      "final_state": 4.346868639272351
+    }
+  ],
+  "advancement_gate_passed": false,
+  "promoted": false
+}

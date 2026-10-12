@@ -12,13 +12,15 @@ is retained for preprocessing, reference algorithms, and evaluation research.
 `main` contains the organized project. [`previous_experiments`](https://github.com/kamyarfaz/ESA-ADB/tree/previous_experiments)
 preserves the earlier layout.
 
-## Current research status — 27 September 2026
+## Current research status — 12 October 2026
 
-The full-period channels40–47 baseline reproduced system F0.5 **0.80572**.
-New experimental short coordinated augmentation is tested but not connected to a
-training command yet. See [AI handoff](AI_HANDOFF.md) for the latest state and
-[GitHub artifact backup](docs/research/github-backup-2026-09-27.md) for restoring
-recent selected checkpoints and results.
+The full-period channels40–47 reference remains system F0.5 **0.80572** and
+input-scope **0.86291** on2007–2013. Recent small internal comparisons did not
+establish a robust improvement. See [AI handoff](AI_HANDOFF.md) for the current
+state and completed-result links. Migration is active: follow
+[MIGRATION.md](MIGRATION.md) and copy the whole local folder. The [12 October additive backup](docs/research/github-backup-2026-10-12.md)
+contains recent research artifacts; datasets and older unlisted files still
+require the full folder or earlier releases.
 
 ## 1. Clone and check the software
 

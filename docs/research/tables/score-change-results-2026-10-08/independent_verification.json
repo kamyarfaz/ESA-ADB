@@ -1,0 +1,5 @@
+{
+  "metric_rows": 24,
+  "independent_transform": "pandas EWM, halflife2880 adjustFalse, lagged; tolerance1e-10",
+  "status": "complete"
+}

@@ -1,10 +1,17 @@
 # Move this complete project to another Linux server
 
+## Current handoff — 12 October 2026
+
+Read `AI_HANDOFF.md` for the current research state and new-chat prompt. The old
+chronological handoff is archived under `docs/history/`. All recent runs are
+complete; copying Git-tracked files alone will omit substantial recent work.
+Do not rely on a fresh clone or older GitHub Releases as a complete replacement.
+
 ## What is preserved
 
 Copy the **entire ESA-ADB directory**, including hidden files, `.git`, `data`,
 `results`, `results_longrun`, `archive`, and `migration`. The source occupied about
-119 GiB on 22 September 2026. Allow at least 150 GiB free on the external disk and
+168 GiB by `du -sh` on 12 October 2026. Allow at least 220 GiB free on the external disk and
 new server for the copy, plus working space for new experiments. Keep the original
 until the destination passes verification. No new training was started for migration.
 
@@ -15,6 +22,14 @@ reports/protocols contain old absolute paths as provenance; do not rewrite them.
 Strict interrupted-run resume checks include paths, metadata and source hashes,
 so resuming an unfinished run after relocation may require a reviewed migration
 of its protocol. Completed checkpoints/results can be inspected without resuming.
+
+Two `node_modules` symlinks in `outputs/short-no-roll-20261002/build/` and
+`outputs/federico-meeting-20260930/build/` point to the old Codex dependency cache.
+They are not portable installed dependencies. Finished XLSX/PPTX/PNG artifacts
+are regular project files; rebuilding them requires a destination Node/artifact
+runtime and updating these links. Do not copy the whole old cache blindly.
+The transfer verifier checks symlink text, not external-target availability.
+There are no external dataset/checkpoint links in the 12 October source audit.
 
 Three legacy W&B debug-log links point outside the project. Their shared target
 has been preserved in `migration/external-logs/`; these logs are not required by
@@ -118,9 +133,10 @@ python -m unittest discover -s tests/thesis -p 'test_*.py' -q
 
 The CUDA command matches the old PyTorch build; the new server needs a compatible
 NVIDIA GPU and driver. For CPU checks, use the `/whl/cpu` index instead. Confirm
-`doctor` reports CUDA available before requesting `--device cuda`. Old-server
-assistant checks report CUDA unavailable in its sandbox, not a certification of
-the user's GPU environment. Expected current test count: **36**.
+`doctor` reports CUDA available before requesting `--device cuda`. Check the destination itself; old-server CUDA results do not certify the new GPU.
+Source check on12 October: **98 tests passed** and doctor passed with CUDA
+available (NVML warning). Logs and package snapshot are under `migration/`.
+These are source checks only; rerun on the destination after transfer verification.
 The existing prepared CSVs need no regeneration. The separate older preprocessing
 and TimeEval environment is described in README if you need that workflow later.
 

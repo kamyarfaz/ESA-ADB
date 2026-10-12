@@ -1,0 +1,7 @@
+seed,model,examples,median_paired_error_ratio,positive_hinge_fraction
+42,legacy,80,0.9999771285973973,1.0
+42,short_coordinated,80,1.0002233915465117,1.0
+43,legacy,80,0.9999640211669184,1.0
+43,short_coordinated,80,0.9999075412238542,0.975
+44,legacy,80,1.0003358003952632,1.0
+44,short_coordinated,80,1.0000281699676519,0.9875

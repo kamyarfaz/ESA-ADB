@@ -1,0 +1,10 @@
+{
+  "verified_primary_runs": 12,
+  "input": "Saved aggregate scores, predictions, timestamps and raw annotations",
+  "limitations": [
+    "Nominal timestamp scores may include nearby annotated windows",
+    "Monthly event counts are slices, not additive pooled counts",
+    "No per-channel scores saved; channel attribution cannot be inferred",
+    "Validation inspected for development; no thresholds or checkpoints changed"
+  ]
+}

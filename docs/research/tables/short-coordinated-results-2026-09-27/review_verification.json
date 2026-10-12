@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "checks": [
+    "All6saved predictions exactly reproduced from scores and frozenrules",
+    "All12local/systemmetric rows reproduced within1e-9",
+    "Fiveepochs perarm, selectedepoch equals earliestcalibrationmaximum"
+  ],
+  "limitations": "Cached-output verification, not fresh inference or fresh fullCSVcheck"
+}

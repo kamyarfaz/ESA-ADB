@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "train_sha256": "fe6812dd5d324fe2eb347a703894551f0a03f40253742a3cd35f42d02fdb80ad",
+  "sources": {
+    "results_longrun/development/inner_selection_cuda_v2/protocol.json": "0642423be42f0f2fa9bccd3c525a649f64e0b9bc13668694c479403178a8ce51",
+    "results_longrun/development/inner_lambda01_cuda_v1/protocol.json": "ec230adfe14e07d53cbe44d73ae38c51d41896eb8e2a5b67418843ee5914aa1d",
+    "results_longrun/development/inner_selection_cuda_v2/2002/seed42/epoch_2/model.pt": "0a716dc8387dee81e57b00706d1dd0d958b51cd7e0baf9b7798d32ba898f743c",
+    "results_longrun/development/inner_selection_cuda_v2/2002/seed43/epoch_1/model.pt": "4c8bdbcb61ef205c68f710bf20c65cd636f9c1786e09619c1f12db4d0235de3b",
+    "results_longrun/development/inner_selection_cuda_v2/2002/seed44/epoch_1/model.pt": "3ded438acc8f79e9deb96f8474caf9af720c243bb482e72b7de5de2182fa374b",
+    "results_longrun/development/inner_lambda01_cuda_v1/2002/seed42/epoch_1/model.pt": "9c878f53267648d8986fa7129830a515531010e383d07f8fffa123b1ed3cda17",
+    "results_longrun/development/inner_lambda01_cuda_v1/2002/seed43/epoch_1/model.pt": "748a56f3e30a594c3e0917321b3d4142169b5638806de06fc6e08d540352f6d4",
+    "results_longrun/development/inner_lambda01_cuda_v1/2002/seed44/epoch_1/model.pt": "3906cf77e066d52a3678271835155c2bf5beff3aea4a41edfe41b93d25ba5c8f"
+  },
+  "windows_per_month": 128,
+  "selection": "Evenly spaced globally nominal score-stride windows wholly within each month",
+  "limitations": "Prepared inputs, not native raw telemetry; sampled window statistics, not pointwise or pooled event metrics; validation inspected for diagnosis only"
+}

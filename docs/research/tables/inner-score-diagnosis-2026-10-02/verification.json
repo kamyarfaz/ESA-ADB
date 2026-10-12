@@ -1,0 +1,8 @@
+{
+  "reproduced_selected_checkpoints": 6,
+  "exact_saved_score_reproduction": true,
+  "wholly_nominal_examples_verified_from_global_labels": true,
+  "diagnostic_script_sha256": "8ff0455a234280843218e717a33e25c81be27b6ecebfc67b55668a6d344585f5",
+  "no_validation_or_assessment_score_access": true,
+  "notes": "Normal-timestamp aggregated scores can contain anomaly-window spillover; clean_cal_window fields exclude it. Cap and ULP sensitivity are diagnostic only, no frozen rule changed."
+}
