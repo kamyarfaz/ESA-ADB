@@ -1,0 +1,32 @@
+{
+  "sheets": 25,
+  "charts": 14,
+  "text_changes": [
+    [
+      "Read me",
+      "A3",
+      "Federico\u2019s assessment requirement",
+      "Assessment protocol"
+    ],
+    [
+      "Method guide",
+      "B1",
+      "What we changed",
+      "Modification"
+    ],
+    [
+      "Method guide",
+      "C1",
+      "Why",
+      "Rationale"
+    ],
+    [
+      "Method guide",
+      "D1",
+      "What happened",
+      "Findings"
+    ]
+  ],
+  "numeric_and_formula_values": "unchanged",
+  "prohibited_name_matches": 0
+}

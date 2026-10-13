@@ -272,3 +272,9 @@ dask-worker-space
 # Local rendering scratch space and external artifact runtime links
 /tmp/
 node_modules/
+
+# Transient office locks and large generated labels (backed up via Releases)
+.~lock.*#
+/outputs/thesis-summary-20261013/deliverables/*.csv.gz
+# Superseded October reporting copy; retained in the project-file Release snapshot
+/outputs/federico-meeting-20261013/deliverables/

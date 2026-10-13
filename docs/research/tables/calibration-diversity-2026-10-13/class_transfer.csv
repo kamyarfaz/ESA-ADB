@@ -1,0 +1,11 @@
+fold,scope,calibration_ids,assessment_ids,assessment_ids_class_absent_from_calibration,unseen_classes,unseen_channels,shared_ids
+2001,system,7,7,2,class_10;class_12,,
+2001,inputs_40_47,4,3,2,class_10;class_12,,
+2002,system,5,3,2,class_15;class_19,channel_16;channel_24;channel_32;channel_33;channel_40;channel_57;channel_58;channel_59;channel_60,
+2002,inputs_40_47,4,2,2,class_15;class_19,channel_40,
+2003,system,3,6,5,class_11;class_16;class_2;class_3,channel_12;channel_13;channel_16;channel_17;channel_18;channel_19;channel_20;channel_24;channel_25;channel_26;channel_27;channel_28;channel_30;channel_32;channel_33;channel_34;channel_35;channel_36;channel_37;channel_40;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_57;channel_58;channel_59;channel_60,
+2003,inputs_40_47,1,6,5,class_11;class_16;class_2;class_3,channel_40;channel_47,
+2004,system,1,10,10,class_10;class_14;class_15;class_16;class_3;class_6;class_7,channel_14;channel_15;channel_21;channel_22;channel_23;channel_29;channel_30;channel_31;channel_38;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_59;channel_60;channel_66;channel_70;channel_71;channel_72;channel_73;channel_74;channel_75;channel_76,
+2004,inputs_40_47,1,7,7,class_10;class_14;class_15;class_16;class_3;class_6,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,
+2005,system,4,7,4,class_16;class_20,channel_57;channel_58;channel_59;channel_60;channel_66,id_10
+2005,inputs_40_47,3,7,4,class_16;class_20,,id_10

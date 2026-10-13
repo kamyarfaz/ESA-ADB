@@ -162,5 +162,3 @@
 Read [current AI handoff](../AI_HANDOFF.md) and [migration guide](../MIGRATION.md).
 The [archived handoff](history/AI_HANDOFF-through-2026-10-08.md) preserves the full
 earlier chronology; its pending-run notes are historical.
-
-- [GitHub backup —12October](research/github-backup-2026-10-12.md): recent source and additive experiment archive restore instructions.

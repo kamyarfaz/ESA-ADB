@@ -1,0 +1,56 @@
+{
+  "sources": [
+    {
+      "path": "data/preprocessed/multivariate/ESA-Mission1-semi-supervised/84_months.train.csv",
+      "sha256": "fe6812dd5d324fe2eb347a703894551f0a03f40253742a3cd35f42d02fdb80ad",
+      "rows": 7364161,
+      "first": "2000-01-01 00:00:00",
+      "last": "2007-01-01 00:00:00",
+      "excluded_boundary_rows": 1,
+      "channels": 76
+    },
+    {
+      "path": "data/preprocessed/multivariate/ESA-Mission1-semi-supervised/84_months.test.csv",
+      "sha256": "9990c46dba0101074a19b7e58382bee787ea9a2051230a5b1716d207d8315f6c",
+      "rows": 7364161,
+      "first": "2007-01-01 00:00:00",
+      "last": "2014-01-01 00:00:00",
+      "excluded_boundary_rows": 1,
+      "channels": 76
+    }
+  ],
+  "counts": {
+    "train": {
+      "rows": 6312960,
+      "positive": 693158,
+      "ignored": 4761,
+      "normal": 5615041,
+      "event_ids": 95,
+      "annotated_channels": 55
+    },
+    "calibration": {
+      "rows": 1051200,
+      "positive": 33656,
+      "ignored": 0,
+      "normal": 1017544,
+      "event_ids": 10,
+      "annotated_channels": 41
+    },
+    "testing": {
+      "rows": 7364160,
+      "positive": 817290,
+      "ignored": 0,
+      "normal": 6546870,
+      "event_ids": 91,
+      "annotated_channels": 58
+    }
+  },
+  "rows": 14728320,
+  "label_definition": "1 if any of 76 prepared channel labels equals 1 (Anomaly) or 2 (Rare Event); 0 otherwise",
+  "ignored_definition": "1 if any channel has code 3 and no channel has a positive target label; exclude from pointwise nominal interpretation",
+  "scope": "All 76 channels; telecommands excluded",
+  "alignment": "Existing prepared 30-second timestamps; source resampling labels retained, not reconstructed from intervals",
+  "intervals": "train [2000,2006), calibration [2006,2007), testing [2007,2014)",
+  "event_metric": "Raw annotation IDs and exact intervals remain authoritative for esa-ew-id-duration-v1; binary labels are not a substitute",
+  "sha256": "c436ec3a0f3d272dda7c910bd35c8a9a346cc5844b3b98d070d95e11bdd183bb"
+}

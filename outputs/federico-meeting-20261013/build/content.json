@@ -1,0 +1,306 @@
+[
+  {
+    "template": 9,
+    "text": [
+      "Satellite anomaly detection",
+      "Progress since 30 September  /  Federico Butchellato  /  13 October 2026",
+      "1",
+      "Where we left off",
+      "Removing short temporal rolls looked promising in one seed. We planned to repeat the comparison.",
+      "What we completed",
+      "Repeated experiments, controlled model comparisons and event diagnostics. No reliable baseline replacement emerged.",
+      "Completed research through 8 October 2026  /  Kamyar Faz"
+    ],
+    "notes": "Opening: This update continues the September 30 presentation. It reports completed research through October 8, with current decisions as of October 13. The previous deck had only seed 42 for the short-no-roll comparison. New work completed seeds 43/44, diagnosed 2004, tested internal checkpoint selection, loss weight, channel isolation, score changes and direct telemetry, then audited calibration. We retained channels 40–47 and the established full-period reference. No new training was needed to prepare this presentation.",
+    "sources": [
+      "AI_HANDOFF.md",
+      "docs/research/short-no-roll-multiseed-2026-10-02.md"
+    ]
+  },
+  {
+    "template": 3,
+    "text": [
+      "The full-period reference is unchanged",
+      "One Transformer autoencoder, eight input channels: 40–47",
+      "2",
+      "Assessment: all months of 2007–2013",
+      "Training: 2000–2005. Calibration: 2006. The same frozen predictions serve both event scopes.",
+      "The system target of F₀.₅ ≥ 0.85 has not been robustly achieved."
+    ],
+    "table": [
+      [
+        "Event scope",
+        "Event IDs",
+        "Detected",
+        "F₀.₅"
+      ],
+      [
+        "Channels 40–47",
+        "67",
+        "53",
+        "0.8629"
+      ],
+      [
+        "All-system events",
+        "91",
+        "54",
+        "0.8057"
+      ]
+    ],
+    "notes": "This is the retained reference, not a new improvement since September 30. System: TP54, FP7, FN37, F0.5 0.8057217336876309. Local: TP53, FP7, FN14, F0.5 0.862906630296026. System scope changes event annotations, not model inputs. Correct evaluator esa-ew-id-duration-v1 penalizes nominal false-alarm duration in precision. The AE and overlap aggregation are retrospective. Benchmark covariates/results have been inspected, so this is not untouched confirmation. Do not compare these scores directly with the later small internal folds.",
+    "sources": [
+      "docs/research/dual-scope-evaluation.md",
+      "docs/research/tables/dual-scope-2026-09-24/results.csv"
+    ]
+  },
+  {
+    "template": 8,
+    "text": [
+      "Removing short rolls: three seeds completed",
+      "System F₀.₅ means across seeds 42, 43 and 44  /  real April–December assessment",
+      "3",
+      "The mean improved in all three years, but 2004 remained unstable: F₀.₅ ranged from 0.1835 to 0.6665.",
+      "Matched five-epoch pilots. These are development results, not full-period scores."
+    ],
+    "table": [
+      [
+        "Assessment year",
+        "With short rolls",
+        "Without short rolls"
+      ],
+      [
+        "2003",
+        "0.8363",
+        "0.9185"
+      ],
+      [
+        "2004",
+        "0.2417",
+        "0.4587"
+      ],
+      [
+        "2005",
+        "0.9313",
+        "0.9533"
+      ]
+    ],
+    "notes": "We completed the promised seeds 43 and 44. Both arms: channels40–47, five epochs,25000 nominal windows,batch64; train on preceding years, calibrate Jan–Mar, assess identical real Apr–Dec data. Only the short-corruption branch changed: offsets/noise replace offsets/noise/rolls; legacy rolls remain. Exact means with/without:2003 .836292/.918525;2004 .241707/.458731;2005 .931322/.953285. Six paired increases,two decreases,one tie; one increase is only .000065. Means are not pooled event metrics. In2004 mean false events fell27→12 but mean detections fell5.67→4.67. Candidate seeds .526134/.666518/.183543. All18 saved masks and36 local/system metric rows were verified. No promotion or new full-period run.",
+    "sources": [
+      "docs/research/short-no-roll-multiseed-2026-10-02.md"
+    ]
+  },
+  {
+    "template": 9,
+    "text": [
+      "Why the 2004 result remained unstable",
+      "Diagnostics used the existing training and calibration observations",
+      "4",
+      "Calibration had only one selected event",
+      "Two seeds scored zero throughout all five epochs. The earliest-tie rule therefore selected epoch one.",
+      "Lower reconstruction error was insufficient",
+      "Average normal error improved, but some normal observations still had large errors. Real-event separation remained weak.",
+      "We kept the saved rules and investigated calibration transfer."
+    ],
+    "notes": "Calibration Jan–Mar2004 contains one selected event ID,id_12. Candidate seeds42/43 have zero F0.5 at all epochs. At the selected epochs, detecting grid rules need at least1.9902%/4.9939% total alarm samples, exceeding the1% cap. Seed44 selects epoch3, F0.5 .093391, TP1/FP12. Its false alarms span several channels. At matched epoch5, normal training MSE improves in all three seeds. CPU replays had tiny threshold-boundary differences in two of six models; original results were retained. Diagnostic work used no assessment arrays. The finding is insufficient event/normal separation and sparse calibration, not proof that a different checkpoint is the cure.",
+    "sources": [
+      "docs/research/short-no-roll-2004-diagnosis-2026-10-02.md"
+    ]
+  },
+  {
+    "template": 7,
+    "text": [
+      "A controlled internal comparison protocol",
+      "Each fold calibrates on January–June of its validation year",
+      "5",
+      "Matched budgets and real observations",
+      "Neural comparisons: five epochs, 25,000 nominal windows and three seeds. Synthetic anomalies appear only in training.",
+      "Checkpoint and alarm settings were frozen before validation."
+    ],
+    "table": [
+      [
+        "Fold",
+        "Training years",
+        "Real validation"
+      ],
+      [
+        "2001",
+        "2000",
+        "July–December 2001"
+      ],
+      [
+        "2002",
+        "2000–2001",
+        "July–December 2002"
+      ]
+    ],
+    "notes": "This is a separate internal developmental design, not the2003–2005 pilot or the2007–2013 full-period assessment. Channels40–47, training-only median/IQR scaler, ±10 clipping, window256/stride16, score stride32, batch64, short_no_roll augmentation. Candidate advancement required higher mean system F0.5 in BOTH folds and no increased mean false-event count in either. Primary policy is calibration-selected checkpoint; fixed epoch5 is secondary except in the explicit policy comparison. Each comparison uses identical real validation data and reports both scopes from the same predictions. These periods have informed development and are not pristine independent tests. The direct-telemetry reference is deterministic, one run per fold rather than three fictitious seeds.",
+    "sources": [
+      "docs/research/inner-selection-results-2026-10-02.md",
+      "docs/research/loss-weight-results-2026-10-03.md"
+    ]
+  },
+  {
+    "template": 4,
+    "text": [
+      "Checkpoint selection and training loss",
+      "6",
+      "Fixed fifth epoch",
+      "What we changed",
+      "Used epoch five instead of the calibration-selected checkpoint.",
+      "Why",
+      "Test whether weak calibration was choosing the wrong epoch.",
+      "What happened",
+      "Both policies missed every event. In 2002, mean false events rose from 53 to 100.",
+      "Smaller artificial-anomaly penalty",
+      "What we changed",
+      "Reduced its training-loss weight from 1 to 0.1.",
+      "Why",
+      "Reduce training pressure from generated anomalies.",
+      "What happened",
+      "Normal reconstruction improved, but 2002 mean false events rose from 53 to 159."
+    ],
+    "notes": "All results here refer to the internal folds on slide5. Fixed epoch5 and calibration-selected models have system and local F0.5=0 in both folds;2001 has no alarms.2002 mean nominal false-alarm duration falls44.73%→39.24% despite event count rising53→100. Loss-weight0.1 also stays zero in2001. In2002 its mean system F0.5 is .002600, despite mean recall44.44%, because false alarms are extensive; two seeds detect events with287/190 false events, one stays silent. Mean epoch5 normal MSE falls .744388→.087250 in2001 and .658175→.086263 in2002. Both candidates failed their predefined gate. Improved normal reconstruction is not equivalent to useful detection.",
+    "sources": [
+      "docs/research/inner-selection-results-2026-10-02.md",
+      "docs/research/loss-weight-results-2026-10-03.md"
+    ]
+  },
+  {
+    "template": 4,
+    "text": [
+      "Channel 47 sensitivity and channel isolation",
+      "7",
+      "Frozen-model intervention",
+      "What we changed",
+      "Shifted only channel 47’s level; other channel inputs stayed fixed.",
+      "Why",
+      "Test whether its changing level affects other reconstructions.",
+      "What happened",
+      "It did. Recentering reduced other-channel errors in five of six June 2002 probes.",
+      "Channel-isolated reconstruction",
+      "What we changed",
+      "Restricted channel attention to each channel itself.",
+      "Why",
+      "Test whether blocking cross-channel mixing improves detection.",
+      "What happened",
+      "F₀.₅ stayed zero in both folds. In 2002, mean false events rose from 53 to 128.7."
+    ],
+    "notes": "Intervention tested six frozen2002-fold models: weights1/.1 × seeds42/43/44, using training/calibration data only. Shifting ch47 changes other outputs while their input arrays remain identical. June2002 ch41–46 MSE improves for five models and worsens for weight1/seed42. Raising ch47 level by4 scaled units raises other-channel MSE for all six. This is model sensitivity, not spacecraft causality or an F0.5 improvement. Recentring can erase sustained anomalies and was not adopted. The subsequent ChannelIsolatedAE uses diagonal channel attention, same nominal1,333,392 parameters but different effective capacity; shared training updates remain coupled. It is not eight separately fitted models. All six isolated runs completed, failed the gate and were not promoted. Original primary mean2002 FP53 vs isolated128.667.",
+    "sources": [
+      "docs/research/channel-level-coupling-2026-10-03.md",
+      "docs/research/channel-isolation-results-2026-10-08.md"
+    ]
+  },
+  {
+    "template": 9,
+    "text": [
+      "Calibration did not represent later events",
+      "Event-by-event audit of the joint and channel-isolated models",
+      "8",
+      "The selected rules detected a narrow subset",
+      "Both models detected the same two of four local calibration events per fold. Later event scores could be much smaller.",
+      "Normal scores could exceed anomaly scores",
+      "In 2002, many normal observations scored above missed-event peaks. Simply lowering the threshold would add alarms.",
+      "Missed local validation events were not clipped on their annotated channels."
+    ],
+    "notes": "Across all seeds, detected calibration IDs are21/78 in2001 and83/84 in2002. Overlapping IDs are not necessarily independent patterns. Missed local validation IDs:37/38/80 in2001 and25/86 in2002. Joint peak/threshold ratios .0105–.1218 in2001 and .8326–.9632 in2002. In2002,49.1–67.5% of nominal timestamps have joint scores at least as high as a missed local event peak; isolated range11.7–68.4%. These are nominal sample fractions, not event counts or operational alarm rates. All five missed local IDs have zero clipping on annotated input channels using corrected v2 channel-specific intervals.13 prepared-input plots were saved. Score decreases during much of id86, motivating a two-sided score-change test. Neither score ranking nor the physical source of level changes is fully explained.",
+    "sources": [
+      "docs/research/inner-event-audit-2026-10-08.md"
+    ]
+  },
+  {
+    "template": 4,
+    "text": [
+      "Two alternative signals were tested",
+      "9",
+      "Changes in reconstruction scores",
+      "What we changed",
+      "Scored deviations from recent error levels using a one-day reference.",
+      "Why",
+      "Capture unusual rises or falls, rather than only high error.",
+      "What happened",
+      "False alarms disappeared, but only one seed detected one 2002 event; all missed 2001.",
+      "Direct telemetry reference",
+      "What we changed",
+      "Measured telemetry deviations from recent levels without a neural model.",
+      "Why",
+      "Check whether failure was specific to reconstruction scores.",
+      "What happened",
+      "No validation alarms in either fold. Every event was missed."
+    ],
+    "notes": "Score change: absolute difference between log(1+score) and its previous EWM, fixed one-day half-life. Six original frozen checkpoints, calibration rules frozen before validation; state carries over. Mean system F0.5 .238095 in2002 is entirely seed44 detecting id25 at .714286; seeds42/43 zero. Local mean .277778, seed44 .833333. Every seed misses id86 and all2001 events. Nominal false-alarm duration/count become zero. Fixed telemetry reference: per-channel absolute deviation from previous one-day EWM, normalized by nominal-training deviation q99, maximum over channels. One deterministic run per fold. Validation score maxima reach only39.59% and38.56% of thresholds. Both candidates failed. This does not prove every statistical detector fails. The score filter is history-only but the upstream AE is retrospective; no end-to-end operational causality claim.",
+    "sources": [
+      "docs/research/score-change-results-2026-10-08.md",
+      "docs/research/telemetry-reference-results-2026-10-08.md"
+    ]
+  },
+  {
+    "template": 7,
+    "text": [
+      "The alarm cap was not a general explanation",
+      "Audit of 20 saved calibration grids; no validation rules were changed",
+      "10",
+      "Removing the cap helped only some cases",
+      "The cap limits all predicted alarm samples to 1% during calibration. It does not guarantee future false-alarm rates.",
+      "Relaxing the cap alone does not resolve calibration transfer."
+    ],
+    "table": [
+      [
+        "Calibration year",
+        "Better without cap",
+        "Cases inspected"
+      ],
+      [
+        "2001",
+        "6 cases",
+        "10"
+      ],
+      [
+        "2002",
+        "0 cases",
+        "10"
+      ]
+    ],
+    "notes": "Saved selected-checkpoint grids:6 joint,6 isolated,6 score-change,2 direct-telemetry. All20 saved selections reproduced within1e-12. Removing the1% total-alarm cap improves best available calibration F0.5 in6/10 cases in2001 and0/10 in2002.19/20 grids have no higher-recall row within cap; the remaining case trades much lower precision for recall. These are finite-grid counterfactual diagnostics, not new rules or proof that every possible threshold fails. No checkpoint reselection, validation loading or outer reassessment was done. The cap covers true-event and nominal alarm samples, not only nominal false-alarm duration.",
+    "sources": [
+      "docs/research/calibration-selection-audit-2026-10-08.md"
+    ]
+  },
+  {
+    "template": 9,
+    "text": [
+      "What we achieved since 30 September",
+      "A stronger experimental record and a clearer account of the limitations",
+      "11",
+      "Completed comparisons and checked the evidence",
+      "Repeated the promising result across seeds, tested specific explanations and verified saved predictions and metrics.",
+      "Identified the unresolved problem",
+      "Calibration success did not reliably transfer to later events. Better reconstruction and fewer alarms were insufficient.",
+      "The full-period baseline remains the reference; no candidate justified promotion."
+    ],
+    "notes": "Achievements: full three-seed no-roll follow-up; diagnosis of sparse2004 calibration; completed internal selection,loss-weight and isolation campaigns; frozen-model sensitivity experiments;13 local-event input plots; score-change and direct-telemetry references;20-grid calibration audit. Saved masks, metric rows, manifests and source hashes were checked as documented in each report. The source machine passed98 thesis tests again onOctober12; this is not a claim that the new server passed tests. Preserve negative results and disclose development-data exposure. The migration check onOctober13 returned25 failures; environment recreation and migration repair are separate pending tasks, not research achievements or reasons to alter historical results.",
+    "sources": [
+      "AI_HANDOFF.md",
+      "docs/research/short-no-roll-multiseed-2026-10-02.md",
+      "docs/research/calibration-selection-audit-2026-10-08.md"
+    ]
+  },
+  {
+    "template": 9,
+    "text": [
+      "Next step: agree the evaluation protocol",
+      "A proposed direction for discussion before another model search",
+      "12",
+      "Make calibration coverage explicit",
+      "Specify the event types and operating periods represented in calibration, then assess transfer to different conditions.",
+      "Agree the operational trade-offs",
+      "Define acceptable missed events, false-alarm burden and detection delay. Freeze the comparison before new runs.",
+      "Previously inspected periods remain development data. No new protocol is yet approved."
+    ],
+    "notes": "Suggested closing: We now have evidence about why several plausible changes do not transfer reliably. I propose consolidating these results into a protocol that explicitly accounts for sparse anomaly examples and changing normal operating conditions, rather than starting another blind sweep. Ask Federico whether system-level F0.5 remains primary with local score secondary; which calibration event coverage is required; which false-alarm burden and latency are acceptable; and how final generalization should be evaluated given existing data exposure. This is a proposal, not an implemented or approved new experiment. Migration integrity and a fresh Python3.9 environment must be resolved before training. Preserve the existing reference and original experiment provenance.",
+    "sources": [
+      "docs/research/calibration-selection-audit-2026-10-08.md",
+      "AI_HANDOFF.md"
+    ]
+  }
+]

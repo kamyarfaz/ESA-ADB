@@ -1,0 +1,22 @@
+{
+  "legacy_reconstruction_matches": true,
+  "interval": "[2000-01-01,2003-01-01)",
+  "prepared_rows": 3156480,
+  "input_sha256": {
+    "data/preprocessed/multivariate/ESA-Mission1-semi-supervised/84_months.train.csv": "fe6812dd5d324fe2eb347a703894551f0a03f40253742a3cd35f42d02fdb80ad",
+    "data/ESA-Mission1/labels.csv": "1564d630f1ec1387d699ec81531ce57118051a220c8b7cba050a446a652b9082",
+    "data/ESA-Mission1/anomaly_types.csv": "e0cadee4ee9697c5ca8d4f9e81067454d7d7a00d063ee0de33cbc77660eec8bc",
+    "data/ESA-Mission1/channels/channel_40.zip": "0e0d0517b55916847492e24e3328713281b7e6720dc178e0e77f4900db12cc4d",
+    "data/ESA-Mission1/channels/channel_41.zip": "32cabd39524c5c5fe972255f158e0ba933cdb0609efe88782e6217f3782d20d0",
+    "data/ESA-Mission1/channels/channel_42.zip": "ef01d2afdfd6926f69fc7b427eaa63565a7b218d81317027420d22f2aa34854a",
+    "data/ESA-Mission1/channels/channel_43.zip": "e664ea5b64ccea49796f32c9fd97cb6584c16d837442aebb2a6926c6f7413289",
+    "data/ESA-Mission1/channels/channel_44.zip": "b5fa421b1e5828441a0e61fe489fb3fca3036db2de8c6fbb599be39acdd5de18",
+    "data/ESA-Mission1/channels/channel_45.zip": "d98bce78727df6125ad82de764af68c20027b85ef3fe64c8b3dc402d3c58d57e",
+    "data/ESA-Mission1/channels/channel_46.zip": "9cf536c62cf3db9e54c0da0c1b9b2988fb92b21e3652da472ff3f5725799ea08",
+    "data/ESA-Mission1/channels/channel_47.zip": "eca21d8c0eae85dc72febc30ce73621d67c29403cfd95bdb0d30df5281c6b9a0"
+  },
+  "script_sha256": "cbfcff5a28cb8a0abc1ce7d2ec818e5a3d38ee7a9d0d433c25f8d0ab29e78534",
+  "module_sha256": "414d2845cbeb6f19b412233124c8566c2635b5a7f304b2bf3aa8741fc3ad779d",
+  "plan_sha256": "b70798717bb39dbe4815b7de54066afa66d322e5abfacb7b22c7053eff25bbed",
+  "limits": "Raw archives decoded in full, then cropped. Eight existing inputs only. No training, benchmark test read, channel selection or causal-pipeline claim."
+}

@@ -1,9 +1,129 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
-Updated **12 October 2026**. This is the current entry point for a new assistant.
+Updated **13 October 2026**. This is the current entry point for a new assistant.
 Read this before proposing work. The chat is not required to continue the project.
 
 ## 1. Current task and decision
+
+**Current instruction: research is stopped at the user's explicit request on
+13 October. Do not execute the nominal-quantile plan or launch training.**
+The subsequent authorized task is repository synchronization and comprehensive
+GitHub backup only. GitHub is authenticated as `kamyarfaz`; credentials are outside
+this project. Before publication, local/remote main both pointed to `0fd67c8`.
+
+Completed before the stop: calibration diversity and label-influence diagnostics,
+a targeted literature review, and a training-only reconstruction of preprocessing
+on channels 40–47. The influence audit reproduced 2,898 candidate rows and six
+original decisions. Use `calibration-influence-2026-10-13-v2` (it adds the eligible
+candidate flag); v1 remains preserved. Removing the detected 2001 temporal
+component leaves all eligible candidates at zero; withholding id_84 in 2002
+raises the selected threshold 2.60–3.04 times. These are diagnostics, not new
+validation results or adopted rules. The preprocessing reconstruction matches
+3,156,480 timestamps per input; annotation restoration changes five channel-values
+at two timestamps. Neither analysis trains a model. The nominal-quantile plan is
+**written but unexecuted**. The repository check passed **114 tests** in 11.525s.
+
+The historical MLP checksum failure is still unresolved. A search of all 59
+same-size local files found no matching original. See
+`docs/research/migration-exception-2026-10-13.md` for the bounded diagnostic
+continuation used before the stop. It never certified a lossless transfer.
+
+GitHub synchronization records and restore instructions are in
+`docs/research/github-sync-2026-10-13.md`. Keep raw datasets/weights out of source
+Git; the full project-file snapshot belongs in split Release assets. Backing up
+the current mismatching array preserves evidence, not a verified original.
+
+The dated paragraphs below preserve earlier setup history; the stop instruction
+above takes precedence over every research plan or earlier continuation note.
+
+13 October continued setup: packaged and verified the existing reference as
+`data/frozen/mission1-reference-v1/{train.csv,calibration.csv,testing.csv}` plus
+`labels.csv.gz` and `manifest.json`. Files are read-only, source row bytes are
+preserved, and disjoint 30-second coverage and checksums passed. Manifest SHA256:
+`a49a8c42c23a5d72d91a48596f485d762a805cc6101ad037c01a36c8037bf099`.
+Use `python scripts/research/freeze_reference_data.py verify` before consuming.
+The historical runners still use the original sources; no silent redirect or new
+experiment occurred. See `docs/research/frozen-reference-2026-10-13.md`.
+Five new integrity tests and the existing suite pass: **103 tests**, 13.330 seconds.
+
+Transfer recovery: restored `.gitattributes` and the October 12 backup report from
+HEAD; restored eight missing symlinks and preserved external W&B log targets;
+recovered the damaged archived `fine_ch08_35_42/test_score_per_channel.npy` from an
+exact-hash local duplicate, retaining its damaged original. Corrected executable
+bits on 2,216 tracked files only where contents exactly match the Git index; left
+content-modified files untouched. Recovery evidence is under
+`migration/recovery-20261013/`. The historical
+`pa_center_ch08_40_47/mlp_test_score_per_channel.npy` still mismatches the transfer
+hash. The September 17 release archive was downloaded, checksum-verified and
+inspected; this array is listed under EXCLUDED files, not included. Preserve the
+current array; do not regenerate it and claim exact recovery. The user supplied
+the current checkout path and GitHub URL, not an independent original copy.
+No research training may start while transfer recovery remains unresolved.
+The post-recovery full destination scan completed: **12,517 entries; 16 failures**.
+Only one failure is a research array; fifteen are newer documentation/Git state
+and snapshot differences relative to the old manifest. All other recorded artifacts
+match. See `docs/research/transfer-recovery-2026-10-13.md`; do not describe the full
+transfer as zero-failure or erase the original manifest. The original Git-status
+snapshot also cannot be reconstructed exactly from the available copy.
+
+13 October destination environment verified after user installation:
+`/home/k_faz/miniforge3/envs/esa-thesis` has Python 3.9.23 and
+PyTorch 2.6.0+cu124. `pip check` and `python -m esa_thesis doctor` pass.
+CUDA detects NVIDIA GeForce RTX 2080 Ti; a finite 256x256 matrix multiplication
+and CUDA synchronization passed. All 98 thesis tests passed in 12.106 seconds
+on this destination. These are environment/regression checks, not a research
+training run. The subsequent recovery and updated test count are recorded above.
+The full transfer remains unresolved; do not launch experiments yet.
+
+13 October research brief: the user requires all-channel anomaly/event evaluation,
+three permanently fixed train/calibration/testing files for final comparisons,
+a separate binary ground-truth label file, and a concise thesis results workbook.
+They clarified: evaluate all-channel events; decide model inputs after research.
+Do not equate this with authorization to train a 76-channel model. Before proposing
+another experiment, review existing diagnostics and primary literature, explain
+the mechanism and hypothesis, and define one controlled comparison and stopping
+criteria. Avoid speculative model sweeps. The user wants concise explanations.
+
+Audit and deliverables: `outputs/thesis-summary-20261013/deliverables/` contains
+`ESA_thesis_results.xlsx` (one sheet, 65 method-period rows),
+`ESA_Mission1_binary_labels.csv.gz` (14,728,320 timestamps across the existing
+reference splits, all 76 channel labels, plus a communication-gap ignore flag),
+and `research_protocol_review.md`. Both original prepared CSV SHA256 checks pass.
+The reference dates are train 2000–2005, calibration 2006, testing 2007–2013;
+these originally came from two source files and are now packaged separately as
+recorded above. No new date split or pipeline replacement was implemented. The
+independent-test status remains to be settled; inspected
+test periods cannot become unseen by freezing files. Raw event IDs/intervals remain
+authoritative for corrected event scoring; do not substitute pointwise F0.5.
+
+13 October destination update: the user confirmed this is a fresh server and
+prioritized preparing research reporting before environment setup.
+Created `outputs/research-update-20261013/deliverables/ESA_research_update_2026-10-13.pptx`:
+12 slides in the September 30 deck's layout, covering completed work since that
+meeting, with source references and speaking notes. No research decisions changed.
+Also updated the comprehensive workbook as a new copy in the same deliverables
+folder: `ESA_all_methods_results_2026-10-13.xlsx` (25 sheets, 14 charts, 256
+assessment records, including 112 added October records). It preserves the
+September workbook, adds all three no-roll seeds and internal primary/secondary
+policies, and includes calibration/event/channel-intervention diagnostics.
+Formula checks, source metric arithmetic, original-cell preservation and rendered
+updated ranges were checked. No model inference or training was performed.
+The neutral `research-update-20261013` deliverables supersede the earlier October
+reporting copies, which remain preserved. User preference: use academic language
+and omit supervisor names and personal meeting references from Excel and reports.
+Both revised packages were checked for the prohibited name, including notes and
+metadata; workbook numeric values and formulas are unchanged.
+
+Destination transfer verification completed: **12,517 entries checked, 25 failures**.
+The log is `migration/destination-verification-2026-10-13.log`. Failures include
+Git metadata, handoff/readme files, links, and two older score arrays. Causes have
+not been resolved; do not describe the destination as verified or delete source
+copies. Tracked `.gitattributes` and the October 12 backup report are also missing
+relative to HEAD, and many executable bits differ. System Python remains
+3.12.3; the separate Python 3.9 research environment and destination thesis tests
+now pass as recorded above. Presentation tooling used the bundled artifact runtime.
+Retain the original transfer manifest as evidence; reconcile failures before
+creating a new manifest for any subsequent transfer, including today's new files.
 
 The user is moving the **whole project directory to another PC**. Migration is
 active again. Complete destination verification and environment checks before

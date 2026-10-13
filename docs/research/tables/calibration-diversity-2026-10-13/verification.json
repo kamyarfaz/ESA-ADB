@@ -1,0 +1,10 @@
+{
+  "source_sha256": {
+    "data/ESA-Mission1/labels.csv": "1564d630f1ec1387d699ec81531ce57118051a220c8b7cba050a446a652b9082",
+    "data/ESA-Mission1/anomaly_types.csv": "e0cadee4ee9697c5ca8d4f9e81067454d7d7a00d063ee0de33cbc77660eec8bc"
+  },
+  "cutoff_exclusive": "2007-01-01 00:00:00+00:00",
+  "script_sha256": "26df325a390ce53ea974af839a752beb4aa3a3de17091f8835d68307c917a92e",
+  "module_sha256": "fe068da87030b19e7b88ffc486e304ca54e274cecc21fd7f17a0eed96195015c",
+  "limits": "Annotation overlap diagnostics, not independent episodes or model metrics. Metadata files contain all years but analytical rows are strictly pre-2007. No telemetry, scores, or test-period summaries loaded."
+}

@@ -1,0 +1,77 @@
+{
+  "output": "/home/k_faz/projects/ESA-ADB/outputs/federico-meeting-20261013/deliverables/ESA_all_methods_results_2026-10-13.xlsx",
+  "metric_rows_checked": 256,
+  "new_assessment_rows": 112,
+  "historical_records_preserved": 144,
+  "new_training_rows": 150,
+  "sheets": 25,
+  "charts": 14,
+  "unrelatedSheetsPreserved": true,
+  "formulaResponseVerified": true,
+  "previews": [
+    [
+      "Read me",
+      "A18:B22"
+    ],
+    [
+      "Method guide",
+      "A19:E24"
+    ],
+    [
+      "Assessment results",
+      "A146:J150"
+    ],
+    [
+      "No short rolls",
+      "A1:G29"
+    ],
+    [
+      "No short rolls",
+      "A33:G42"
+    ],
+    [
+      "Internal comparisons",
+      "A1:J17"
+    ],
+    [
+      "Internal comparisons",
+      "A18:J33"
+    ],
+    [
+      "Internal comparisons",
+      "A40:F59"
+    ],
+    [
+      "Internal comparisons",
+      "A63:F82"
+    ],
+    [
+      "Calibration audit",
+      "A1:H8"
+    ],
+    [
+      "Event audit",
+      "A1:K8"
+    ],
+    [
+      "Channel interventions",
+      "A1:H8"
+    ],
+    [
+      "Assessment coverage",
+      "A14:F18"
+    ],
+    [
+      "Run protocols",
+      "A23:K28"
+    ],
+    [
+      "Training history",
+      "A803:I809"
+    ],
+    [
+      "Sources",
+      "A96:D102"
+    ]
+  ]
+}

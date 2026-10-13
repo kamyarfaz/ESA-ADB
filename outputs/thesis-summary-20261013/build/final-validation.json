@@ -1,0 +1,27 @@
+{
+  "workbook_rows": 65,
+  "workbook_sheets": 1,
+  "all_workbook_values_verified": true,
+  "source_metrics_verified": true,
+  "binary_rows_verified": 14728320,
+  "counts": {
+    "train": {
+      "rows": 6312960,
+      "positive": 693158,
+      "ignored": 4761,
+      "normal": 5615041
+    },
+    "calibration": {
+      "rows": 1051200,
+      "positive": 33656,
+      "ignored": 0,
+      "normal": 1017544
+    },
+    "testing": {
+      "rows": 7364160,
+      "positive": 817290,
+      "ignored": 0,
+      "normal": 6546870
+    }
+  }
+}

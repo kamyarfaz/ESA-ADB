@@ -1,0 +1,1900 @@
+{
+  "rows": [
+    [
+      "Baseline Transformer AE",
+      "Reference, 40 epochs",
+      "40\u201347",
+      "2000\u20132005",
+      "2006",
+      "2007\u20132013 pooled",
+      1,
+      0.8848713352240037,
+      0.5934065934065934,
+      0.8057217336876309,
+      null,
+      7
+    ],
+    [
+      "Original synthetic anomalies",
+      "Synthetic anomalies, 5 epochs",
+      "40\u201347",
+      "2000\u20132002",
+      "2003-01\u20132003-03",
+      "2003 Apr\u2013Dec",
+      3,
+      0.7957988926168632,
+      0.6111111111111112,
+      0.6424183609233516,
+      0.17162141279682674,
+      1.6666666666666667
+    ],
+    [
+      "Short synthetic anomalies",
+      "Synthetic anomalies, 5 epochs",
+      "40\u201347",
+      "2000\u20132002",
+      "2003-01\u20132003-03",
+      "2003 Apr\u2013Dec",
+      3,
+      0.9998671409239577,
+      0.5555555555555556,
+      0.8362918990973063,
+      0.12353196136313063,
+      0
+    ],
+    [
+      "Original synthetic anomalies",
+      "Synthetic anomalies, 5 epochs",
+      "40\u201347",
+      "2000\u20132003",
+      "2004-01\u20132004-03",
+      "2004 Apr\u2013Dec",
+      3,
+      0.45873794884480423,
+      0.4,
+      0.4159342433857151,
+      0.3642731430056104,
+      10.333333333333334
+    ],
+    [
+      "Short synthetic anomalies",
+      "Synthetic anomalies, 5 epochs",
+      "40\u201347",
+      "2000\u20132003",
+      "2004-01\u20132004-03",
+      "2004 Apr\u2013Dec",
+      3,
+      0.2172648317229691,
+      0.5666666666666667,
+      0.241707072134463,
+      0.1231660021903779,
+      27
+    ],
+    [
+      "Original synthetic anomalies",
+      "Synthetic anomalies, 5 epochs",
+      "40\u201347",
+      "2000\u20132004",
+      "2005-01\u20132005-03",
+      "2005 Apr\u2013Dec",
+      3,
+      0.9436566667888364,
+      0.6190476190476191,
+      0.848010890164687,
+      0.03652840078344276,
+      0.3333333333333333
+    ],
+    [
+      "Short synthetic anomalies",
+      "Synthetic anomalies, 5 epochs",
+      "40\u201347",
+      "2000\u20132004",
+      "2005-01\u20132005-03",
+      "2005 Apr\u2013Dec",
+      3,
+      0.9992737275327066,
+      0.7619047619047619,
+      0.9313220426014689,
+      0.06532082348206433,
+      0
+    ],
+    [
+      "Remove short rolls",
+      "Synthetic anomalies, 5 epochs",
+      "40\u201347",
+      "2000\u20132002",
+      "2003-01\u20132003-03",
+      "2003 Apr\u2013Dec",
+      3,
+      0.9440876401765553,
+      0.8333333333333334,
+      0.9185251381390495,
+      0.07427204426592435,
+      0.3333333333333333
+    ],
+    [
+      "Remove short rolls",
+      "Synthetic anomalies, 5 epochs",
+      "40\u201347",
+      "2000\u20132003",
+      "2004-01\u20132004-03",
+      "2004 Apr\u2013Dec",
+      3,
+      0.5090984476346189,
+      0.4666666666666667,
+      0.4587313944999231,
+      0.24844218150701325,
+      12
+    ],
+    [
+      "Remove short rolls",
+      "Synthetic anomalies, 5 epochs",
+      "40\u201347",
+      "2000\u20132004",
+      "2005-01\u20132005-03",
+      "2005 Apr\u2013Dec",
+      3,
+      0.9992903944950425,
+      0.8095238095238095,
+      0.9532851049158935,
+      0.024075700938693885,
+      0
+    ],
+    [
+      "Joint AE control",
+      "Internal, 5 epochs",
+      "40\u201347",
+      "2000",
+      "2001-01\u20132001-06",
+      "2001 Jul\u2013Dec",
+      3,
+      0,
+      0,
+      0.0,
+      0.0,
+      0
+    ],
+    [
+      "Fixed fifth epoch",
+      "Internal, 5 epochs",
+      "40\u201347",
+      "2000",
+      "2001-01\u20132001-06",
+      "2001 Jul\u2013Dec",
+      3,
+      0,
+      0,
+      0.0,
+      0.0,
+      0
+    ],
+    [
+      "Joint AE control",
+      "Internal, 5 epochs",
+      "40\u201347",
+      "2000\u20132001",
+      "2002-01\u20132002-06",
+      "2002 Jul\u2013Dec",
+      3,
+      0,
+      0,
+      0.0,
+      0.0,
+      53
+    ],
+    [
+      "Fixed fifth epoch",
+      "Internal, 5 epochs",
+      "40\u201347",
+      "2000\u20132001",
+      "2002-01\u20132002-06",
+      "2002 Jul\u2013Dec",
+      3,
+      0,
+      0,
+      0.0,
+      0.0,
+      100
+    ],
+    [
+      "Synthetic loss weight 0.1",
+      "Internal, 5 epochs",
+      "40\u201347",
+      "2000",
+      "2001-01\u20132001-06",
+      "2001 Jul\u2013Dec",
+      3,
+      0,
+      0,
+      0.0,
+      0.0,
+      0
+    ],
+    [
+      "Synthetic loss weight 0.1",
+      "Internal, 5 epochs",
+      "40\u201347",
+      "2000\u20132001",
+      "2002-01\u20132002-06",
+      "2002 Jul\u2013Dec",
+      3,
+      0.002082431399875203,
+      0.4444444444444444,
+      0.0025997459095213915,
+      0.0025112782695783323,
+      159
+    ],
+    [
+      "Channel-isolated AE",
+      "Internal, 5 epochs",
+      "40\u201347",
+      "2000",
+      "2001-01\u20132001-06",
+      "2001 Jul\u2013Dec",
+      3,
+      0,
+      0,
+      0.0,
+      0.0,
+      0
+    ],
+    [
+      "Channel-isolated AE",
+      "Internal, 5 epochs",
+      "40\u201347",
+      "2000\u20132001",
+      "2002-01\u20132002-06",
+      "2002 Jul\u2013Dec",
+      3,
+      0,
+      0,
+      0.0,
+      0.0,
+      128.66666666666666
+    ],
+    [
+      "Score change",
+      "Internal, frozen model",
+      "40\u201347",
+      "2000",
+      "2001-01\u20132001-06",
+      "2001 Jul\u2013Dec",
+      3,
+      0,
+      0,
+      0.0,
+      0.0,
+      0
+    ],
+    [
+      "Score change",
+      "Internal, frozen model",
+      "40\u201347",
+      "2000\u20132001",
+      "2002-01\u20132002-06",
+      "2002 Jul\u2013Dec",
+      3,
+      0.3333333333333333,
+      0.1111111111111111,
+      0.2380952380952381,
+      0.4123930494211613,
+      0
+    ],
+    [
+      "Direct telemetry",
+      "Internal, statistical",
+      "40\u201347",
+      "2000",
+      "2001-01\u20132001-06",
+      "2001 Jul\u2013Dec",
+      1,
+      0,
+      0,
+      0.0,
+      null,
+      0
+    ],
+    [
+      "Direct telemetry",
+      "Internal, statistical",
+      "40\u201347",
+      "2000\u20132001",
+      "2002-01\u20132002-06",
+      "2002 Jul\u2013Dec",
+      1,
+      0,
+      0,
+      0.0,
+      null,
+      0
+    ],
+    [
+      "mlp / baseline",
+      "Forecast confirmation",
+      "40\u201347",
+      "2000\u20132002",
+      "2003-01\u20132003-03",
+      "2003 Apr\u2013Dec",
+      1,
+      0.06756111243775544,
+      0.8333333333333334,
+      0.08277370546073753,
+      null,
+      69
+    ],
+    [
+      "mlp / confirmed",
+      "Forecast confirmation",
+      "40\u201347",
+      "2000\u20132002",
+      "2003-01\u20132003-03",
+      "2003 Apr\u2013Dec",
+      1,
+      0.19998962752855332,
+      0.6666666666666666,
+      0.23254691994702262,
+      null,
+      16
+    ],
+    [
+      "persistence / baseline",
+      "Forecast confirmation",
+      "40\u201347",
+      "2000\u20132002",
+      "2003-01\u20132003-03",
+      "2003 Apr\u2013Dec",
+      1,
+      0.034879578924345796,
+      0.5,
+      0.04285214133258862,
+      null,
+      83
+    ],
+    [
+      "persistence / confirmed",
+      "Forecast confirmation",
+      "40\u201347",
+      "2000\u20132002",
+      "2003-01\u20132003-03",
+      "2003 Apr\u2013Dec",
+      1,
+      0.24999863520112545,
+      0.16666666666666666,
+      0.2272718249250205,
+      null,
+      3
+    ],
+    [
+      "transformer / baseline",
+      "Forecast confirmation",
+      "40\u201347",
+      "2000\u20132002",
+      "2003-01\u20132003-03",
+      "2003 Apr\u2013Dec",
+      1,
+      0.0705805281945907,
+      1,
+      0.08669589964590999,
+      null,
+      79
+    ],
+    [
+      "transformer / confirmed",
+      "Forecast confirmation",
+      "40\u201347",
+      "2000\u20132002",
+      "2003-01\u20132003-03",
+      "2003 Apr\u2013Dec",
+      1,
+      0.09999153824697771,
+      0.5,
+      0.11903802518467316,
+      null,
+      27
+    ],
+    [
+      "MLP forecast",
+      "Forecasting",
+      "40\u201347",
+      "2000\u20132002",
+      "2003-01\u20132003-03",
+      "2003 Apr\u2013Dec",
+      1,
+      0.06756111243775544,
+      0.8333333333333334,
+      0.08277370546073753,
+      null,
+      69
+    ],
+    [
+      "Persistence forecast",
+      "Forecasting",
+      "40\u201347",
+      "2000\u20132002",
+      "2003-01\u20132003-03",
+      "2003 Apr\u2013Dec",
+      1,
+      0.034879578924345796,
+      0.5,
+      0.04285214133258862,
+      null,
+      83
+    ],
+    [
+      "Residual Transformer forecast",
+      "Forecasting",
+      "40\u201347",
+      "2000\u20132002",
+      "2003-01\u20132003-03",
+      "2003 Apr\u2013Dec",
+      1,
+      0.05746475412031098,
+      0.8333333333333334,
+      0.07061360462223898,
+      null,
+      82
+    ],
+    [
+      "Transformer forecast",
+      "Forecasting",
+      "40\u201347",
+      "2000\u20132002",
+      "2003-01\u20132003-03",
+      "2003 Apr\u2013Dec",
+      1,
+      0.0705805281945907,
+      1,
+      0.08669589964590999,
+      null,
+      79
+    ],
+    [
+      "Expanded inputs",
+      "Development, 40 epochs",
+      "40\u201347, 14, 21, 29",
+      "2000\u20132002",
+      "2003-01\u20132003-03",
+      "2003 Apr\u2013Dec",
+      1,
+      0.9999666605566122,
+      0.6666666666666666,
+      0.9090688662832848,
+      null,
+      0
+    ],
+    [
+      "Reconstruction only",
+      "Development, 40 epochs",
+      "40\u201347",
+      "2000\u20132002",
+      "2003-01\u20132003-03",
+      "2003 Apr\u2013Dec",
+      1,
+      0.4992958726916745,
+      0.6666666666666666,
+      0.5256914934869159,
+      null,
+      4
+    ],
+    [
+      "Specialist 14,21,29",
+      "Development, 40 epochs",
+      "14, 21, 29",
+      "2000\u20132002",
+      "2003-01\u20132003-03",
+      "2003 Apr\u2013Dec",
+      1,
+      0.166569347408251,
+      0.16666666666666666,
+      0.16658880216667565,
+      null,
+      5
+    ],
+    [
+      "Baseline Transformer AE",
+      "Development, 40 epochs",
+      "40\u201347",
+      "2000\u20132002",
+      "2003-01\u20132003-03",
+      "2003 Apr\u2013Dec",
+      1,
+      0.8331289769935822,
+      0.8333333333333334,
+      0.8331698402429286,
+      null,
+      1
+    ],
+    [
+      "Expanded inputs",
+      "Development, 40 epochs",
+      "40\u201347, 14, 21, 29",
+      "2000\u20132003",
+      "2004-01\u20132004-03",
+      "2004 Apr\u2013Dec",
+      1,
+      0.21298937401128087,
+      0.9,
+      0.25136502860024185,
+      null,
+      33
+    ],
+    [
+      "Reconstruction only",
+      "Development, 40 epochs",
+      "40\u201347",
+      "2000\u20132003",
+      "2004-01\u20132004-03",
+      "2004 Apr\u2013Dec",
+      1,
+      0.12647869228689726,
+      0.6,
+      0.1501837628866907,
+      null,
+      41
+    ],
+    [
+      "Specialist 14,21,29",
+      "Development, 40 epochs",
+      "14, 21, 29",
+      "2000\u20132003",
+      "2004-01\u20132004-03",
+      "2004 Apr\u2013Dec",
+      1,
+      0.9999797053139863,
+      0.4,
+      0.7692211622038211,
+      null,
+      0
+    ],
+    [
+      "Baseline Transformer AE",
+      "Development, 40 epochs",
+      "40\u201347",
+      "2000\u20132003",
+      "2004-01\u20132004-03",
+      "2004 Apr\u2013Dec",
+      1,
+      0.39952022908688667,
+      0.6,
+      0.42813074712147803,
+      null,
+      9
+    ],
+    [
+      "Expanded inputs",
+      "Development, 40 epochs",
+      "40\u201347, 14, 21, 29",
+      "2000\u20132004",
+      "2005-01\u20132005-03",
+      "2005 Apr\u2013Dec",
+      1,
+      0.12373211172661014,
+      0.7142857142857143,
+      0.1482451976814055,
+      null,
+      35
+    ],
+    [
+      "Reconstruction only",
+      "Development, 40 epochs",
+      "40\u201347",
+      "2000\u20132004",
+      "2005-01\u20132005-03",
+      "2005 Apr\u2013Dec",
+      1,
+      0.998957055248323,
+      0.5714285714285714,
+      0.8689341242155341,
+      null,
+      0
+    ],
+    [
+      "Specialist 14,21,29",
+      "Development, 40 epochs",
+      "14, 21, 29",
+      "2000\u20132004",
+      "2005-01\u20132005-03",
+      "2005 Apr\u2013Dec",
+      1,
+      0.7998551056795975,
+      0.5714285714285714,
+      0.7406413572534629,
+      null,
+      1
+    ],
+    [
+      "Baseline Transformer AE",
+      "Development, 40 epochs",
+      "40\u201347",
+      "2000\u20132004",
+      "2005-01\u20132005-03",
+      "2005 Apr\u2013Dec",
+      1,
+      0.9991570587963547,
+      0.5714285714285714,
+      0.8690551788198424,
+      null,
+      0
+    ],
+    [
+      "Per-timestep scoring",
+      "Historical scoring",
+      "40\u201347",
+      "Historical split",
+      "2006-10\u20132006-12",
+      "2007\u20132013 + boundary sample",
+      1,
+      0.7026422339015903,
+      0.5714285714285714,
+      0.6717904060446175,
+      null,
+      22
+    ],
+    [
+      "Window-mean scoring",
+      "Historical scoring",
+      "40\u201347",
+      "Historical split",
+      "2006-10\u20132006-12",
+      "2007\u20132013 + boundary sample",
+      1,
+      0.8567482837590537,
+      0.5274725274725275,
+      0.761655319383663,
+      null,
+      8
+    ],
+    [
+      "Masked hidden-overlap scoring",
+      "Masked scoring",
+      "40\u201347",
+      "2000\u20132003",
+      "2004-01\u20132004-03",
+      "2004 Apr\u2013Dec",
+      1,
+      0.07798219498901948,
+      0.4,
+      0.09294758337948845,
+      null,
+      47
+    ],
+    [
+      "Masked reconstruction",
+      "Masked scoring",
+      "40\u201347",
+      "2000\u20132003",
+      "2004-01\u20132004-03",
+      "2004 Apr\u2013Dec",
+      1,
+      0.07575141507438617,
+      0.4,
+      0.09040889286198046,
+      null,
+      48
+    ],
+    [
+      "Masked reconstruction",
+      "Masking, 5 epochs",
+      "40\u201347",
+      "2000\u20132002",
+      "2003-01\u20132003-03",
+      "2003 Apr\u2013Dec",
+      1,
+      0.9996399109190152,
+      0.6666666666666666,
+      0.9088528102827063,
+      null,
+      0
+    ],
+    [
+      "Unmasked control",
+      "Masking, 5 epochs",
+      "40\u201347",
+      "2000\u20132002",
+      "2003-01\u20132003-03",
+      "2003 Apr\u2013Dec",
+      1,
+      1,
+      0.3333333333333333,
+      0.7142857142857143,
+      null,
+      0
+    ],
+    [
+      "Masked reconstruction",
+      "Masking, 5 epochs",
+      "40\u201347",
+      "2000\u20132003",
+      "2004-01\u20132004-03",
+      "2004 Apr\u2013Dec",
+      1,
+      0.07575141507438617,
+      0.4,
+      0.09040889286198046,
+      null,
+      48
+    ],
+    [
+      "Unmasked control",
+      "Masking, 5 epochs",
+      "40\u201347",
+      "2000\u20132003",
+      "2004-01\u20132004-03",
+      "2004 Apr\u2013Dec",
+      1,
+      0.624132244141728,
+      0.5,
+      0.5946082229040464,
+      null,
+      3
+    ],
+    [
+      "Masked reconstruction",
+      "Masking, 5 epochs",
+      "40\u201347",
+      "2000\u20132004",
+      "2005-01\u20132005-03",
+      "2005 Apr\u2013Dec",
+      1,
+      0.9992070596833627,
+      0.5714285714285714,
+      0.8690854401676537,
+      null,
+      0
+    ],
+    [
+      "Unmasked control",
+      "Masking, 5 epochs",
+      "40\u201347",
+      "2000\u20132004",
+      "2005-01\u20132005-03",
+      "2005 Apr\u2013Dec",
+      1,
+      0.9992570605703706,
+      0.5714285714285714,
+      0.8691157005942426,
+      null,
+      0
+    ],
+    [
+      "Baseline OR specialist",
+      "Development, 40 epochs",
+      "40\u201347 plus separate 14, 21, 29",
+      "2000\u20132002",
+      "2003-01\u20132003-03",
+      "2003 Apr\u2013Dec",
+      1,
+      0.45421561963111434,
+      0.8333333333333334,
+      0.4996806919987219,
+      null,
+      6
+    ],
+    [
+      "Baseline OR specialist",
+      "Development, 40 epochs",
+      "40\u201347 plus separate 14, 21, 29",
+      "2000\u20132003",
+      "2004-01\u20132004-03",
+      "2004 Apr\u2013Dec",
+      1,
+      0.39952022908688667,
+      0.6,
+      0.42813074712147803,
+      null,
+      9
+    ],
+    [
+      "Baseline OR specialist",
+      "Development, 40 epochs",
+      "40\u201347 plus separate 14, 21, 29",
+      "2000\u20132004",
+      "2005-01\u20132005-03",
+      "2005 Apr\u2013Dec",
+      1,
+      0.9991570587963547,
+      0.5714285714285714,
+      0.8690551788198424,
+      null,
+      0
+    ],
+    [
+      "Dense grid + nominal alarm cap",
+      "Threshold selection",
+      "40\u201347",
+      "2000\u20132002",
+      "2003-01\u20132003-03",
+      "2003 Apr\u2013Dec",
+      1,
+      0.8331289769935822,
+      0.8333333333333334,
+      0.8331698402429286,
+      null,
+      1
+    ],
+    [
+      "Original threshold grid",
+      "Threshold selection",
+      "40\u201347",
+      "2000\u20132002",
+      "2003-01\u20132003-03",
+      "2003 Apr\u2013Dec",
+      1,
+      0.8331289769935822,
+      0.8333333333333334,
+      0.8331698402429286,
+      null,
+      1
+    ],
+    [
+      "Dense grid + nominal alarm cap",
+      "Threshold selection",
+      "40\u201347",
+      "2000\u20132003",
+      "2004-01\u20132004-03",
+      "2004 Apr\u2013Dec",
+      1,
+      0.3996481631387826,
+      0.6,
+      0.4282482724801282,
+      null,
+      9
+    ],
+    [
+      "Original threshold grid",
+      "Threshold selection",
+      "40\u201347",
+      "2000\u20132003",
+      "2004-01\u20132004-03",
+      "2004 Apr\u2013Dec",
+      1,
+      0.39952022908688667,
+      0.6,
+      0.42813074712147803,
+      null,
+      9
+    ],
+    [
+      "Dense grid + nominal alarm cap",
+      "Threshold selection",
+      "40\u201347",
+      "2000\u20132004",
+      "2005-01\u20132005-03",
+      "2005 Apr\u2013Dec",
+      1,
+      0.06702202560088698,
+      1,
+      0.08239692971786246,
+      null,
+      95
+    ],
+    [
+      "Original threshold grid",
+      "Threshold selection",
+      "40\u201347",
+      "2000\u20132004",
+      "2005-01\u20132005-03",
+      "2005 Apr\u2013Dec",
+      1,
+      0.9991570587963547,
+      0.5714285714285714,
+      0.8690551788198424,
+      null,
+      0
+    ],
+    [
+      "Add observation-age context",
+      "Timing, 5 epochs",
+      "40\u201347",
+      "2000\u20132005",
+      "2006",
+      "2007\u20132013 pooled",
+      1,
+      0.7775859385829194,
+      0.3076923076923077,
+      0.5956546320162247,
+      null,
+      8
+    ],
+    [
+      "Zero-context control",
+      "Timing, 5 epochs",
+      "40\u201347",
+      "2000\u20132005",
+      "2006",
+      "2007\u20132013 pooled",
+      1,
+      0.9998494684426743,
+      0.3076923076923077,
+      0.6895978913804215,
+      null,
+      0
+    ]
+  ],
+  "provenance": [
+    {
+      "excel_row": 6,
+      "sources": [
+        "results_longrun/long_baseline/ch40_47_train2000_2005_seed42/pooled_results.csv"
+      ],
+      "record_ids": [
+        "R102"
+      ],
+      "epochs": 40,
+      "window_cap": 0,
+      "source_hashes": {
+        "results_longrun/long_baseline/ch40_47_train2000_2005_seed42/pooled_results.csv": "89d2cad075b23370be699ca138197d7219ffd78ac4ce735b52ddb83074a19dd0"
+      }
+    },
+    {
+      "excel_row": 7,
+      "sources": [
+        "results_longrun/development/short_coordinated_seed42_v1/results.csv",
+        "results_longrun/development/short_coordinated_seed43_v1/results.csv",
+        "results_longrun/development/short_coordinated_seed44_v1/results.csv"
+      ],
+      "record_ids": [
+        "R016",
+        "R028",
+        "R040"
+      ],
+      "epochs": 5,
+      "window_cap": 25000,
+      "source_hashes": {
+        "results_longrun/development/short_coordinated_seed42_v1/results.csv": "2225df0549777af9885e030decaffeb8aac834c740182337f0c0960eaaad353c",
+        "results_longrun/development/short_coordinated_seed43_v1/results.csv": "b846b0ddf9e538c9d82a24800a10f736f737b6753f7b2f73449ff9aad1b1450b",
+        "results_longrun/development/short_coordinated_seed44_v1/results.csv": "a48f2dd54a22bc1a8c0e317494437353eb6f29d4a5ed0765577c2b30d0438b1b"
+      }
+    },
+    {
+      "excel_row": 8,
+      "sources": [
+        "results_longrun/development/short_coordinated_seed42_v1/results.csv",
+        "results_longrun/development/short_coordinated_seed43_v1/results.csv",
+        "results_longrun/development/short_coordinated_seed44_v1/results.csv"
+      ],
+      "record_ids": [
+        "R018",
+        "R030",
+        "R042"
+      ],
+      "epochs": 5,
+      "window_cap": 25000,
+      "source_hashes": {
+        "results_longrun/development/short_coordinated_seed42_v1/results.csv": "2225df0549777af9885e030decaffeb8aac834c740182337f0c0960eaaad353c",
+        "results_longrun/development/short_coordinated_seed43_v1/results.csv": "b846b0ddf9e538c9d82a24800a10f736f737b6753f7b2f73449ff9aad1b1450b",
+        "results_longrun/development/short_coordinated_seed44_v1/results.csv": "a48f2dd54a22bc1a8c0e317494437353eb6f29d4a5ed0765577c2b30d0438b1b"
+      }
+    },
+    {
+      "excel_row": 9,
+      "sources": [
+        "results_longrun/development/short_coordinated_seed42_v1/results.csv",
+        "results_longrun/development/short_coordinated_seed43_v1/results.csv",
+        "results_longrun/development/short_coordinated_seed44_v1/results.csv"
+      ],
+      "record_ids": [
+        "R020",
+        "R032",
+        "R044"
+      ],
+      "epochs": 5,
+      "window_cap": 25000,
+      "source_hashes": {
+        "results_longrun/development/short_coordinated_seed42_v1/results.csv": "2225df0549777af9885e030decaffeb8aac834c740182337f0c0960eaaad353c",
+        "results_longrun/development/short_coordinated_seed43_v1/results.csv": "b846b0ddf9e538c9d82a24800a10f736f737b6753f7b2f73449ff9aad1b1450b",
+        "results_longrun/development/short_coordinated_seed44_v1/results.csv": "a48f2dd54a22bc1a8c0e317494437353eb6f29d4a5ed0765577c2b30d0438b1b"
+      }
+    },
+    {
+      "excel_row": 10,
+      "sources": [
+        "results_longrun/development/short_coordinated_seed42_v1/results.csv",
+        "results_longrun/development/short_coordinated_seed43_v1/results.csv",
+        "results_longrun/development/short_coordinated_seed44_v1/results.csv"
+      ],
+      "record_ids": [
+        "R022",
+        "R034",
+        "R046"
+      ],
+      "epochs": 5,
+      "window_cap": 25000,
+      "source_hashes": {
+        "results_longrun/development/short_coordinated_seed42_v1/results.csv": "2225df0549777af9885e030decaffeb8aac834c740182337f0c0960eaaad353c",
+        "results_longrun/development/short_coordinated_seed43_v1/results.csv": "b846b0ddf9e538c9d82a24800a10f736f737b6753f7b2f73449ff9aad1b1450b",
+        "results_longrun/development/short_coordinated_seed44_v1/results.csv": "a48f2dd54a22bc1a8c0e317494437353eb6f29d4a5ed0765577c2b30d0438b1b"
+      }
+    },
+    {
+      "excel_row": 11,
+      "sources": [
+        "results_longrun/development/short_coordinated_seed42_v1/results.csv",
+        "results_longrun/development/short_coordinated_seed43_v1/results.csv",
+        "results_longrun/development/short_coordinated_seed44_v1/results.csv"
+      ],
+      "record_ids": [
+        "R024",
+        "R036",
+        "R048"
+      ],
+      "epochs": 5,
+      "window_cap": 25000,
+      "source_hashes": {
+        "results_longrun/development/short_coordinated_seed42_v1/results.csv": "2225df0549777af9885e030decaffeb8aac834c740182337f0c0960eaaad353c",
+        "results_longrun/development/short_coordinated_seed43_v1/results.csv": "b846b0ddf9e538c9d82a24800a10f736f737b6753f7b2f73449ff9aad1b1450b",
+        "results_longrun/development/short_coordinated_seed44_v1/results.csv": "a48f2dd54a22bc1a8c0e317494437353eb6f29d4a5ed0765577c2b30d0438b1b"
+      }
+    },
+    {
+      "excel_row": 12,
+      "sources": [
+        "results_longrun/development/short_coordinated_seed42_v1/results.csv",
+        "results_longrun/development/short_coordinated_seed43_v1/results.csv",
+        "results_longrun/development/short_coordinated_seed44_v1/results.csv"
+      ],
+      "record_ids": [
+        "R026",
+        "R038",
+        "R050"
+      ],
+      "epochs": 5,
+      "window_cap": 25000,
+      "source_hashes": {
+        "results_longrun/development/short_coordinated_seed42_v1/results.csv": "2225df0549777af9885e030decaffeb8aac834c740182337f0c0960eaaad353c",
+        "results_longrun/development/short_coordinated_seed43_v1/results.csv": "b846b0ddf9e538c9d82a24800a10f736f737b6753f7b2f73449ff9aad1b1450b",
+        "results_longrun/development/short_coordinated_seed44_v1/results.csv": "a48f2dd54a22bc1a8c0e317494437353eb6f29d4a5ed0765577c2b30d0438b1b"
+      }
+    },
+    {
+      "excel_row": 13,
+      "sources": [
+        "results_longrun/development/short_no_roll_seed42_v1/results.csv",
+        "results_longrun/development/short_no_roll_seed43_v1/results.csv",
+        "results_longrun/development/short_no_roll_seed44_v1/results.csv"
+      ],
+      "record_ids": [
+        "R054",
+        "R147",
+        "R159"
+      ],
+      "epochs": 5,
+      "window_cap": 25000,
+      "source_hashes": {
+        "results_longrun/development/short_no_roll_seed42_v1/results.csv": "3c947b5a482ea597ff1682ec94e91cbf9f53ec75d24d45de61a80f60e77b7c97",
+        "results_longrun/development/short_no_roll_seed43_v1/results.csv": "b7f517655e59f76f17e77867982a0a44c229c87ae3f0a491265034c22bba04a6",
+        "results_longrun/development/short_no_roll_seed44_v1/results.csv": "851baaa561c62a6ebb7199a04b071d1aab36d54523f1541087a7bf8f8f69a735"
+      }
+    },
+    {
+      "excel_row": 14,
+      "sources": [
+        "results_longrun/development/short_no_roll_seed42_v1/results.csv",
+        "results_longrun/development/short_no_roll_seed43_v1/results.csv",
+        "results_longrun/development/short_no_roll_seed44_v1/results.csv"
+      ],
+      "record_ids": [
+        "R058",
+        "R151",
+        "R163"
+      ],
+      "epochs": 5,
+      "window_cap": 25000,
+      "source_hashes": {
+        "results_longrun/development/short_no_roll_seed42_v1/results.csv": "3c947b5a482ea597ff1682ec94e91cbf9f53ec75d24d45de61a80f60e77b7c97",
+        "results_longrun/development/short_no_roll_seed43_v1/results.csv": "b7f517655e59f76f17e77867982a0a44c229c87ae3f0a491265034c22bba04a6",
+        "results_longrun/development/short_no_roll_seed44_v1/results.csv": "851baaa561c62a6ebb7199a04b071d1aab36d54523f1541087a7bf8f8f69a735"
+      }
+    },
+    {
+      "excel_row": 15,
+      "sources": [
+        "results_longrun/development/short_no_roll_seed42_v1/results.csv",
+        "results_longrun/development/short_no_roll_seed43_v1/results.csv",
+        "results_longrun/development/short_no_roll_seed44_v1/results.csv"
+      ],
+      "record_ids": [
+        "R062",
+        "R155",
+        "R167"
+      ],
+      "epochs": 5,
+      "window_cap": 25000,
+      "source_hashes": {
+        "results_longrun/development/short_no_roll_seed42_v1/results.csv": "3c947b5a482ea597ff1682ec94e91cbf9f53ec75d24d45de61a80f60e77b7c97",
+        "results_longrun/development/short_no_roll_seed43_v1/results.csv": "b7f517655e59f76f17e77867982a0a44c229c87ae3f0a491265034c22bba04a6",
+        "results_longrun/development/short_no_roll_seed44_v1/results.csv": "851baaa561c62a6ebb7199a04b071d1aab36d54523f1541087a7bf8f8f69a735"
+      }
+    },
+    {
+      "excel_row": 16,
+      "sources": [
+        "results_longrun/development/inner_selection_cuda_v2/results.csv"
+      ],
+      "record_ids": [
+        "R169",
+        "R173",
+        "R177"
+      ],
+      "epochs": 5,
+      "window_cap": 25000,
+      "source_hashes": {
+        "results_longrun/development/inner_selection_cuda_v2/results.csv": "f4946e90101c1c6a6db455c81ecfa76e02997ad1b2d8a87f82fef69a0cd0d075"
+      }
+    },
+    {
+      "excel_row": 17,
+      "sources": [
+        "results_longrun/development/inner_selection_cuda_v2/results.csv"
+      ],
+      "record_ids": [
+        "R171",
+        "R175",
+        "R179"
+      ],
+      "epochs": 5,
+      "window_cap": 25000,
+      "source_hashes": {
+        "results_longrun/development/inner_selection_cuda_v2/results.csv": "f4946e90101c1c6a6db455c81ecfa76e02997ad1b2d8a87f82fef69a0cd0d075"
+      }
+    },
+    {
+      "excel_row": 18,
+      "sources": [
+        "results_longrun/development/inner_selection_cuda_v2/results.csv"
+      ],
+      "record_ids": [
+        "R181",
+        "R185",
+        "R189"
+      ],
+      "epochs": 5,
+      "window_cap": 25000,
+      "source_hashes": {
+        "results_longrun/development/inner_selection_cuda_v2/results.csv": "f4946e90101c1c6a6db455c81ecfa76e02997ad1b2d8a87f82fef69a0cd0d075"
+      }
+    },
+    {
+      "excel_row": 19,
+      "sources": [
+        "results_longrun/development/inner_selection_cuda_v2/results.csv"
+      ],
+      "record_ids": [
+        "R183",
+        "R187",
+        "R191"
+      ],
+      "epochs": 5,
+      "window_cap": 25000,
+      "source_hashes": {
+        "results_longrun/development/inner_selection_cuda_v2/results.csv": "f4946e90101c1c6a6db455c81ecfa76e02997ad1b2d8a87f82fef69a0cd0d075"
+      }
+    },
+    {
+      "excel_row": 20,
+      "sources": [
+        "results_longrun/development/inner_lambda01_cuda_v1/results.csv"
+      ],
+      "record_ids": [
+        "R193",
+        "R197",
+        "R201"
+      ],
+      "epochs": 5,
+      "window_cap": 25000,
+      "source_hashes": {
+        "results_longrun/development/inner_lambda01_cuda_v1/results.csv": "846e194a7c50508f6891cb37fa0d6a85e0cf87d399cb72f0db2dd527666269f1"
+      }
+    },
+    {
+      "excel_row": 21,
+      "sources": [
+        "results_longrun/development/inner_lambda01_cuda_v1/results.csv"
+      ],
+      "record_ids": [
+        "R205",
+        "R209",
+        "R213"
+      ],
+      "epochs": 5,
+      "window_cap": 25000,
+      "source_hashes": {
+        "results_longrun/development/inner_lambda01_cuda_v1/results.csv": "846e194a7c50508f6891cb37fa0d6a85e0cf87d399cb72f0db2dd527666269f1"
+      }
+    },
+    {
+      "excel_row": 22,
+      "sources": [
+        "results_longrun/development/inner_isolation_cuda_v1/results.csv"
+      ],
+      "record_ids": [
+        "R217",
+        "R221",
+        "R225"
+      ],
+      "epochs": 5,
+      "window_cap": 25000,
+      "source_hashes": {
+        "results_longrun/development/inner_isolation_cuda_v1/results.csv": "ee2b1caad9193d4a19697df844688e3490b8353078661a90b47916609da7b9e7"
+      }
+    },
+    {
+      "excel_row": 23,
+      "sources": [
+        "results_longrun/development/inner_isolation_cuda_v1/results.csv"
+      ],
+      "record_ids": [
+        "R229",
+        "R233",
+        "R237"
+      ],
+      "epochs": 5,
+      "window_cap": 25000,
+      "source_hashes": {
+        "results_longrun/development/inner_isolation_cuda_v1/results.csv": "ee2b1caad9193d4a19697df844688e3490b8353078661a90b47916609da7b9e7"
+      }
+    },
+    {
+      "excel_row": 24,
+      "sources": [
+        "results_longrun/development/score_change_v1/results.csv"
+      ],
+      "record_ids": [
+        "R241",
+        "R243",
+        "R245"
+      ],
+      "epochs": 5,
+      "window_cap": 25000,
+      "source_hashes": {
+        "results_longrun/development/score_change_v1/results.csv": "47c7283f3fd4bbce5773a1d0a16611c91ab34c555ec76d3bfc9db762c22502fd"
+      }
+    },
+    {
+      "excel_row": 25,
+      "sources": [
+        "results_longrun/development/score_change_v1/results.csv"
+      ],
+      "record_ids": [
+        "R247",
+        "R249",
+        "R251"
+      ],
+      "epochs": 5,
+      "window_cap": 25000,
+      "source_hashes": {
+        "results_longrun/development/score_change_v1/results.csv": "47c7283f3fd4bbce5773a1d0a16611c91ab34c555ec76d3bfc9db762c22502fd"
+      }
+    },
+    {
+      "excel_row": 26,
+      "sources": [
+        "results_longrun/development/telemetry_reference_v1/results.csv"
+      ],
+      "record_ids": [
+        "R253"
+      ],
+      "epochs": 0,
+      "window_cap": 0,
+      "source_hashes": {
+        "results_longrun/development/telemetry_reference_v1/results.csv": "2c84a183cc3258485db6b75a19edf25c622707cba4bfc4357a64acf4a7c48d70"
+      }
+    },
+    {
+      "excel_row": 27,
+      "sources": [
+        "results_longrun/development/telemetry_reference_v1/results.csv"
+      ],
+      "record_ids": [
+        "R255"
+      ],
+      "epochs": 0,
+      "window_cap": 0,
+      "source_hashes": {
+        "results_longrun/development/telemetry_reference_v1/results.csv": "2c84a183cc3258485db6b75a19edf25c622707cba4bfc4357a64acf4a7c48d70"
+      }
+    },
+    {
+      "excel_row": 28,
+      "sources": [
+        "results_longrun/development/causal_alarm_2003_v1/results.csv"
+      ],
+      "record_ids": [
+        "R098"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/causal_alarm_2003_v1/results.csv": "138238c021b2e145c66978b62b6ab6b5766ceed3acd80f7338f8a54739a0c422"
+      }
+    },
+    {
+      "excel_row": 29,
+      "sources": [
+        "results_longrun/development/causal_alarm_2003_v1/results.csv"
+      ],
+      "record_ids": [
+        "R099"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/causal_alarm_2003_v1/results.csv": "138238c021b2e145c66978b62b6ab6b5766ceed3acd80f7338f8a54739a0c422"
+      }
+    },
+    {
+      "excel_row": 30,
+      "sources": [
+        "results_longrun/development/causal_alarm_2003_v1/results.csv"
+      ],
+      "record_ids": [
+        "R096"
+      ],
+      "epochs": 0,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/causal_alarm_2003_v1/results.csv": "138238c021b2e145c66978b62b6ab6b5766ceed3acd80f7338f8a54739a0c422"
+      }
+    },
+    {
+      "excel_row": 31,
+      "sources": [
+        "results_longrun/development/causal_alarm_2003_v1/results.csv"
+      ],
+      "record_ids": [
+        "R097"
+      ],
+      "epochs": 0,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/causal_alarm_2003_v1/results.csv": "138238c021b2e145c66978b62b6ab6b5766ceed3acd80f7338f8a54739a0c422"
+      }
+    },
+    {
+      "excel_row": 32,
+      "sources": [
+        "results_longrun/development/causal_alarm_2003_v1/results.csv"
+      ],
+      "record_ids": [
+        "R100"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/causal_alarm_2003_v1/results.csv": "138238c021b2e145c66978b62b6ab6b5766ceed3acd80f7338f8a54739a0c422"
+      }
+    },
+    {
+      "excel_row": 33,
+      "sources": [
+        "results_longrun/development/causal_alarm_2003_v1/results.csv"
+      ],
+      "record_ids": [
+        "R101"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/causal_alarm_2003_v1/results.csv": "138238c021b2e145c66978b62b6ab6b5766ceed3acd80f7338f8a54739a0c422"
+      }
+    },
+    {
+      "excel_row": 34,
+      "sources": [
+        "results_longrun/development/forecast_2003_seed42/results.csv"
+      ],
+      "record_ids": [
+        "R093"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/forecast_2003_seed42/results.csv": "27eec91e63753943d9dfa96221e918bef8146cf587150960d73ffcae2918fb1b"
+      }
+    },
+    {
+      "excel_row": 35,
+      "sources": [
+        "results_longrun/development/forecast_2003_seed42/results.csv"
+      ],
+      "record_ids": [
+        "R092"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/forecast_2003_seed42/results.csv": "27eec91e63753943d9dfa96221e918bef8146cf587150960d73ffcae2918fb1b"
+      }
+    },
+    {
+      "excel_row": 36,
+      "sources": [
+        "results_longrun/development/forecast_residual_2003_seed42/results.csv"
+      ],
+      "record_ids": [
+        "R095"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/forecast_residual_2003_seed42/results.csv": "dd0c085f4d69bfaf8ea83788584e2dc1dc84449932cbc43b71f8b6c9e4c2e2b8"
+      }
+    },
+    {
+      "excel_row": 37,
+      "sources": [
+        "results_longrun/development/forecast_2003_seed42/results.csv"
+      ],
+      "record_ids": [
+        "R094"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/forecast_2003_seed42/results.csv": "27eec91e63753943d9dfa96221e918bef8146cf587150960d73ffcae2918fb1b"
+      }
+    },
+    {
+      "excel_row": 38,
+      "sources": [
+        "results_longrun/development/ae_expanded_seed42/results.csv"
+      ],
+      "record_ids": [
+        "R004"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/ae_expanded_seed42/results.csv": "87677e77368326df25dfc67c53e394a50c2979f952d04ea16ac781632204bff0"
+      }
+    },
+    {
+      "excel_row": 39,
+      "sources": [
+        "results_longrun/development/ae_reconstruction_seed42/results.csv"
+      ],
+      "record_ids": [
+        "R007"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/ae_reconstruction_seed42/results.csv": "0f55a3ea2a40074008acc0c62fca94dbc1dcb918acd1b7ab7993d86994d3133b"
+      }
+    },
+    {
+      "excel_row": 40,
+      "sources": [
+        "results_longrun/development/ae_specialist_seed42_verified/results.csv"
+      ],
+      "record_ids": [
+        "R010"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/ae_specialist_seed42_verified/results.csv": "b7b8ed7420757ad3f00c24f1245af33d0dd5df0d1f196f1e561124ca1f4ed46a"
+      }
+    },
+    {
+      "excel_row": 41,
+      "sources": [
+        "results_longrun/development/ae_baseline_2003_seed42/results.csv"
+      ],
+      "record_ids": [
+        "R001"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/ae_baseline_2003_seed42/results.csv": "42f7eb2a7c860a9b1873215a7ede7b1c14ca4f1902ebe0eb32d1c962b64c53e5"
+      }
+    },
+    {
+      "excel_row": 42,
+      "sources": [
+        "results_longrun/development/ae_expanded_seed42/results.csv"
+      ],
+      "record_ids": [
+        "R005"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/ae_expanded_seed42/results.csv": "87677e77368326df25dfc67c53e394a50c2979f952d04ea16ac781632204bff0"
+      }
+    },
+    {
+      "excel_row": 43,
+      "sources": [
+        "results_longrun/development/ae_reconstruction_seed42/results.csv"
+      ],
+      "record_ids": [
+        "R008"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/ae_reconstruction_seed42/results.csv": "0f55a3ea2a40074008acc0c62fca94dbc1dcb918acd1b7ab7993d86994d3133b"
+      }
+    },
+    {
+      "excel_row": 44,
+      "sources": [
+        "results_longrun/development/ae_specialist_seed42_verified/results.csv"
+      ],
+      "record_ids": [
+        "R011"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/ae_specialist_seed42_verified/results.csv": "b7b8ed7420757ad3f00c24f1245af33d0dd5df0d1f196f1e561124ca1f4ed46a"
+      }
+    },
+    {
+      "excel_row": 45,
+      "sources": [
+        "results_longrun/development/ae_baseline_remaining_seed42/results.csv"
+      ],
+      "record_ids": [
+        "R002"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/ae_baseline_remaining_seed42/results.csv": "720691f8ea01fc270dafec75ea828533f349cbc0e329e3e8c9dccd89c8b89c0e"
+      }
+    },
+    {
+      "excel_row": 46,
+      "sources": [
+        "results_longrun/development/ae_expanded_seed42/results.csv"
+      ],
+      "record_ids": [
+        "R006"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/ae_expanded_seed42/results.csv": "87677e77368326df25dfc67c53e394a50c2979f952d04ea16ac781632204bff0"
+      }
+    },
+    {
+      "excel_row": 47,
+      "sources": [
+        "results_longrun/development/ae_reconstruction_seed42/results.csv"
+      ],
+      "record_ids": [
+        "R009"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/ae_reconstruction_seed42/results.csv": "0f55a3ea2a40074008acc0c62fca94dbc1dcb918acd1b7ab7993d86994d3133b"
+      }
+    },
+    {
+      "excel_row": 48,
+      "sources": [
+        "results_longrun/development/ae_specialist_seed42_verified/results.csv"
+      ],
+      "record_ids": [
+        "R012"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/ae_specialist_seed42_verified/results.csv": "b7b8ed7420757ad3f00c24f1245af33d0dd5df0d1f196f1e561124ca1f4ed46a"
+      }
+    },
+    {
+      "excel_row": 49,
+      "sources": [
+        "results_longrun/development/ae_baseline_remaining_seed42/results.csv"
+      ],
+      "record_ids": [
+        "R003"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/ae_baseline_remaining_seed42/results.csv": "720691f8ea01fc270dafec75ea828533f349cbc0e329e3e8c9dccd89c8b89c0e"
+      }
+    },
+    {
+      "excel_row": 50,
+      "sources": [
+        "results_longrun/scoring_comparison/paired_v1/results.csv"
+      ],
+      "record_ids": [
+        "R144"
+      ],
+      "epochs": null,
+      "window_cap": null,
+      "source_hashes": {
+        "results_longrun/scoring_comparison/paired_v1/results.csv": "300641bf6d3bca37ac9ecb9df3315dc57888939df78800dac94f368592280e3a"
+      }
+    },
+    {
+      "excel_row": 51,
+      "sources": [
+        "results_longrun/scoring_comparison/paired_v1/results.csv"
+      ],
+      "record_ids": [
+        "R143"
+      ],
+      "epochs": null,
+      "window_cap": null,
+      "source_hashes": {
+        "results_longrun/scoring_comparison/paired_v1/results.csv": "300641bf6d3bca37ac9ecb9df3315dc57888939df78800dac94f368592280e3a"
+      }
+    },
+    {
+      "excel_row": 52,
+      "sources": [
+        "results_longrun/development/masked_overlap_2004_seed42_v1/dual_scope_results.csv"
+      ],
+      "record_ids": [
+        "R078"
+      ],
+      "epochs": 5,
+      "window_cap": 25000,
+      "source_hashes": {
+        "results_longrun/development/masked_overlap_2004_seed42_v1/dual_scope_results.csv": "fdb34e1cdf42b94c4d57c8fad813686f789ca963e27b9fb1605664d7c31f06d9"
+      }
+    },
+    {
+      "excel_row": 53,
+      "sources": [
+        "results_longrun/development/masked_overlap_2004_seed42_v1/dual_scope_results.csv"
+      ],
+      "record_ids": [
+        "R076"
+      ],
+      "epochs": 5,
+      "window_cap": 25000,
+      "source_hashes": {
+        "results_longrun/development/masked_overlap_2004_seed42_v1/dual_scope_results.csv": "fdb34e1cdf42b94c4d57c8fad813686f789ca963e27b9fb1605664d7c31f06d9"
+      }
+    },
+    {
+      "excel_row": 54,
+      "sources": [
+        "docs/research/tables/masked-pilot-2003-2026-09-24/dual_scope_results.csv"
+      ],
+      "record_ids": [
+        "R067"
+      ],
+      "epochs": 5,
+      "window_cap": 25000,
+      "source_hashes": {
+        "docs/research/tables/masked-pilot-2003-2026-09-24/dual_scope_results.csv": "ec906282796fdb3c8fd08cf28ca3bdee0129dc4daa7a7ff8922c2c9a3531fc6f"
+      }
+    },
+    {
+      "excel_row": 55,
+      "sources": [
+        "docs/research/tables/masked-pilot-2003-2026-09-24/dual_scope_results.csv"
+      ],
+      "record_ids": [
+        "R065"
+      ],
+      "epochs": 5,
+      "window_cap": 25000,
+      "source_hashes": {
+        "docs/research/tables/masked-pilot-2003-2026-09-24/dual_scope_results.csv": "ec906282796fdb3c8fd08cf28ca3bdee0129dc4daa7a7ff8922c2c9a3531fc6f"
+      }
+    },
+    {
+      "excel_row": 56,
+      "sources": [
+        "results_longrun/development/masked_pilot_2004_2005_seed42_v2/dual_scope_results.csv"
+      ],
+      "record_ids": [
+        "R070"
+      ],
+      "epochs": 5,
+      "window_cap": 25000,
+      "source_hashes": {
+        "results_longrun/development/masked_pilot_2004_2005_seed42_v2/dual_scope_results.csv": "77f4cb4f062d1edc95d01ef22ae1d39301cd45d5a3f800fe8630bbf99393f629"
+      }
+    },
+    {
+      "excel_row": 57,
+      "sources": [
+        "results_longrun/development/masked_pilot_2004_2005_seed42_v2/dual_scope_results.csv"
+      ],
+      "record_ids": [
+        "R068"
+      ],
+      "epochs": 5,
+      "window_cap": 25000,
+      "source_hashes": {
+        "results_longrun/development/masked_pilot_2004_2005_seed42_v2/dual_scope_results.csv": "77f4cb4f062d1edc95d01ef22ae1d39301cd45d5a3f800fe8630bbf99393f629"
+      }
+    },
+    {
+      "excel_row": 58,
+      "sources": [
+        "results_longrun/development/masked_pilot_2004_2005_seed42_v2/dual_scope_results.csv"
+      ],
+      "record_ids": [
+        "R074"
+      ],
+      "epochs": 5,
+      "window_cap": 25000,
+      "source_hashes": {
+        "results_longrun/development/masked_pilot_2004_2005_seed42_v2/dual_scope_results.csv": "77f4cb4f062d1edc95d01ef22ae1d39301cd45d5a3f800fe8630bbf99393f629"
+      }
+    },
+    {
+      "excel_row": 59,
+      "sources": [
+        "results_longrun/development/masked_pilot_2004_2005_seed42_v2/dual_scope_results.csv"
+      ],
+      "record_ids": [
+        "R072"
+      ],
+      "epochs": 5,
+      "window_cap": 25000,
+      "source_hashes": {
+        "results_longrun/development/masked_pilot_2004_2005_seed42_v2/dual_scope_results.csv": "77f4cb4f062d1edc95d01ef22ae1d39301cd45d5a3f800fe8630bbf99393f629"
+      }
+    },
+    {
+      "excel_row": 60,
+      "sources": [
+        "results_longrun/development/combined_specialist_seed42/results.csv"
+      ],
+      "record_ids": [
+        "R013"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/combined_specialist_seed42/results.csv": "7cf1a7c5f3fe1bd0ba33dd1aca4952452537137a38da6dc6ca87be13b4c9d44f"
+      }
+    },
+    {
+      "excel_row": 61,
+      "sources": [
+        "results_longrun/development/combined_specialist_seed42/results.csv"
+      ],
+      "record_ids": [
+        "R014"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/combined_specialist_seed42/results.csv": "7cf1a7c5f3fe1bd0ba33dd1aca4952452537137a38da6dc6ca87be13b4c9d44f"
+      }
+    },
+    {
+      "excel_row": 62,
+      "sources": [
+        "results_longrun/development/combined_specialist_seed42/results.csv"
+      ],
+      "record_ids": [
+        "R015"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/combined_specialist_seed42/results.csv": "7cf1a7c5f3fe1bd0ba33dd1aca4952452537137a38da6dc6ca87be13b4c9d44f"
+      }
+    },
+    {
+      "excel_row": 63,
+      "sources": [
+        "results_longrun/development/grid_cap_policy_v1/results.csv"
+      ],
+      "record_ids": [
+        "R082"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/grid_cap_policy_v1/results.csv": "60d39906a735a253cf6caa02c795a0583cbb8fb24a4f95bd7d11c337f1f6c8d9"
+      }
+    },
+    {
+      "excel_row": 64,
+      "sources": [
+        "results_longrun/development/grid_cap_policy_v1/results.csv"
+      ],
+      "record_ids": [
+        "R080"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/grid_cap_policy_v1/results.csv": "60d39906a735a253cf6caa02c795a0583cbb8fb24a4f95bd7d11c337f1f6c8d9"
+      }
+    },
+    {
+      "excel_row": 65,
+      "sources": [
+        "results_longrun/development/grid_cap_policy_v1/results.csv"
+      ],
+      "record_ids": [
+        "R086"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/grid_cap_policy_v1/results.csv": "60d39906a735a253cf6caa02c795a0583cbb8fb24a4f95bd7d11c337f1f6c8d9"
+      }
+    },
+    {
+      "excel_row": 66,
+      "sources": [
+        "results_longrun/development/grid_cap_policy_v1/results.csv"
+      ],
+      "record_ids": [
+        "R084"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/grid_cap_policy_v1/results.csv": "60d39906a735a253cf6caa02c795a0583cbb8fb24a4f95bd7d11c337f1f6c8d9"
+      }
+    },
+    {
+      "excel_row": 67,
+      "sources": [
+        "results_longrun/development/grid_cap_policy_v1/results.csv"
+      ],
+      "record_ids": [
+        "R090"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/grid_cap_policy_v1/results.csv": "60d39906a735a253cf6caa02c795a0583cbb8fb24a4f95bd7d11c337f1f6c8d9"
+      }
+    },
+    {
+      "excel_row": 68,
+      "sources": [
+        "results_longrun/development/grid_cap_policy_v1/results.csv"
+      ],
+      "record_ids": [
+        "R088"
+      ],
+      "epochs": 40,
+      "window_cap": 250000,
+      "source_hashes": {
+        "results_longrun/development/grid_cap_policy_v1/results.csv": "60d39906a735a253cf6caa02c795a0583cbb8fb24a4f95bd7d11c337f1f6c8d9"
+      }
+    },
+    {
+      "excel_row": 69,
+      "sources": [
+        "results_longrun/timing_comparison/full_period_seed42_v1/pooled_results.csv"
+      ],
+      "record_ids": [
+        "R113"
+      ],
+      "epochs": 5,
+      "window_cap": 0,
+      "source_hashes": {
+        "results_longrun/timing_comparison/full_period_seed42_v1/pooled_results.csv": "74db3e29c0e90ce570a8f4837a01a39b1ae945f31ab08da29d09eb7efedd4301"
+      }
+    },
+    {
+      "excel_row": 70,
+      "sources": [
+        "results_longrun/timing_comparison/full_period_seed42_v1/pooled_results.csv"
+      ],
+      "record_ids": [
+        "R111"
+      ],
+      "epochs": 5,
+      "window_cap": 0,
+      "source_hashes": {
+        "results_longrun/timing_comparison/full_period_seed42_v1/pooled_results.csv": "74db3e29c0e90ce570a8f4837a01a39b1ae945f31ab08da29d09eb7efedd4301"
+      }
+    }
+  ]
+}

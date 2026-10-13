@@ -1,0 +1,251 @@
+period,scope,event_id,category,event_class,channels,component,union_seconds
+2000,system,id_144,Anomaly,class_22,channel_74,0,530.997
+2000,system,id_151,Rare Event,class_14,channel_14;channel_15;channel_16;channel_21;channel_22;channel_23;channel_24;channel_29;channel_30;channel_31;channel_32;channel_33;channel_38;channel_39;channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52,0,1207910.28
+2000,system,id_158,Anomaly,class_22,channel_75,1,300.0
+2000,system,id_163,Anomaly,class_22,channel_75,2,300.0
+2000,system,id_167,Anomaly,class_20,channel_12;channel_13;channel_16;channel_17;channel_18;channel_19;channel_20;channel_24;channel_25;channel_26;channel_27;channel_28;channel_32;channel_33;channel_34;channel_35;channel_36;channel_37;channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_57;channel_58;channel_59;channel_60;channel_66;channel_70;channel_71;channel_72;channel_73;channel_74;channel_75;channel_76,3,1144785.162
+2000,system,id_168,Rare Event,class_22,channel_73,3,300.0
+2000,system,id_170,Rare Event,class_22,channel_75,3,300.0
+2000,system,id_173,Rare Event,class_22,channel_76,3,300.0
+2000,system,id_185,Anomaly,class_3,channel_12;channel_13;channel_17;channel_18;channel_19;channel_20;channel_25;channel_26;channel_27;channel_28;channel_34;channel_35;channel_36;channel_37;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52,4,191172.378
+2000,system,id_190,Rare Event,class_22,channel_74,5,570.0
+2000,system,id_191,Anomaly,class_22,channel_74,6,563.997
+2000,system,id_192,Anomaly,class_22,channel_73,7,540.0
+2000,system,id_193,Anomaly,class_22,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_70;channel_71;channel_72;channel_73;channel_74;channel_75;channel_76,8,9286.125
+2000,system,id_194,Anomaly,class_22,channel_74,9,113.997
+2000,system,id_195,Anomaly,class_22,channel_73,10,540.0
+2000,system,id_196,Rare Event,class_22,channel_73,11,510.0
+2000,system,id_197,Rare Event,class_22,channel_75,12,480.0
+2000,system,id_198,Rare Event,class_22,channel_76,13,480.0
+2000,system,id_199,Anomaly,class_22,channel_74,14,569.997
+2000,system,id_200,Anomaly,class_15,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_57;channel_58;channel_59;channel_60,15,257917.494
+2000,system,id_22,Rare Event,class_16,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52,16,76152.378
+2000,system,id_23,Rare Event,class_16,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52,17,13410.0
+2000,system,id_30,Anomaly,class_7,channel_14;channel_21;channel_29,18,20340.0
+2000,system,id_35,Rare Event,class_14,channel_12;channel_13;channel_14;channel_15;channel_16;channel_17;channel_18;channel_19;channel_20;channel_21;channel_22;channel_23;channel_24;channel_25;channel_26;channel_27;channel_28;channel_29;channel_30;channel_31;channel_32;channel_33;channel_34;channel_35;channel_36;channel_37;channel_38;channel_39;channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,19,2369.625
+2000,system,id_36,Anomaly,class_7,channel_14;channel_21;channel_29,20,19710.0
+2000,system,id_4,Anomaly,class_7,channel_14;channel_21;channel_29,21,20340.0
+2000,system,id_59,Rare Event,class_14,channel_12;channel_13;channel_14;channel_15;channel_16;channel_17;channel_18;channel_19;channel_20;channel_21;channel_22;channel_23;channel_24;channel_25;channel_26;channel_27;channel_28;channel_29;channel_30;channel_31;channel_32;channel_33;channel_34;channel_35;channel_36;channel_37;channel_38;channel_39;channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,22,778320.0
+2000,system,id_60,Rare Event,class_22,channel_74,22,570.0
+2000,system,id_61,Anomaly,class_22,channel_73,23,480.0
+2000,system,id_62,Anomaly,class_22,channel_73,24,480.0
+2000,system,id_63,Anomaly,class_22,channel_76,25,510.0
+2000,system,id_64,Anomaly,class_22,channel_75,26,510.0
+2000,system,id_65,Anomaly,class_22,channel_73,27,510.0
+2000,system,id_66,Anomaly,class_22,channel_76,28,479.997
+2000,system,id_67,Anomaly,class_22,channel_75,29,480.0
+2000,system,id_68,Anomaly,class_22,channel_75,30,480.0
+2000,system,id_69,Rare Event,class_22,channel_74,31,522.0
+2000,system,id_70,Rare Event,class_22,channel_70,32,300.0
+2000,system,id_71,Rare Event,class_22,channel_71,33,300.0
+2000,system,id_72,Rare Event,class_22,channel_72,34,300.0
+2000,system,id_73,Anomaly,class_15,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_57;channel_58;channel_59;channel_60;channel_72;channel_73;channel_74;channel_75;channel_76,35,337867.494
+2000,system,id_74,Rare Event,class_22,channel_73,36,510.0
+2000,system,id_75,Rare Event,class_22,channel_75,37,480.0
+2000,system,id_76,Rare Event,class_22,channel_76,38,510.0
+2000,inputs_40_47,id_151,Rare Event,class_14,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,0,465230.283
+2000,inputs_40_47,id_167,Anomaly,class_20,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,1,1144711.656
+2000,inputs_40_47,id_185,Anomaly,class_3,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,2,185490.0
+2000,inputs_40_47,id_193,Anomaly,class_22,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,3,8700.0
+2000,inputs_40_47,id_200,Anomaly,class_15,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,4,102810.0
+2000,inputs_40_47,id_22,Rare Event,class_16,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,5,72840.0
+2000,inputs_40_47,id_23,Rare Event,class_16,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,6,13410.0
+2000,inputs_40_47,id_35,Rare Event,class_14,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,7,2369.625
+2000,inputs_40_47,id_59,Rare Event,class_14,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,8,4520.28
+2000,inputs_40_47,id_73,Anomaly,class_15,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,9,220950.0
+2001,system,id_2,Anomaly,class_7,channel_14;channel_21;channel_29,0,10530.0
+2001,system,id_21,Rare Event,class_4,channel_16;channel_24;channel_32;channel_33;channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52,1,725498.28
+2001,system,id_3,Anomaly,class_7,channel_14;channel_21;channel_29,2,24300.0
+2001,system,id_37,Rare Event,class_10,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,3,2280.0
+2001,system,id_38,Rare Event,class_12,channel_41;channel_42;channel_43;channel_44;channel_45;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52,4,48810.0
+2001,system,id_45,Anomaly,class_7,channel_14;channel_21;channel_22;channel_29;channel_31;channel_39,5,16650.0
+2001,system,id_5,Anomaly,class_7,channel_14;channel_21;channel_29,6,26370.0
+2001,system,id_56,Anomaly,class_7,channel_14;channel_21;channel_29,7,155880.0
+2001,system,id_58,Anomaly,class_7,channel_14;channel_21;channel_29,8,26460.0
+2001,system,id_6,Anomaly,class_7,channel_14;channel_21;channel_29,9,12600.0
+2001,system,id_77,Rare Event,class_14,channel_12;channel_13;channel_14;channel_15;channel_16;channel_17;channel_18;channel_19;channel_20;channel_21;channel_22;channel_23;channel_24;channel_25;channel_26;channel_27;channel_28;channel_29;channel_30;channel_31;channel_32;channel_33;channel_34;channel_35;channel_36;channel_37;channel_38;channel_39;channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,10,646680.156
+2001,system,id_78,Rare Event,class_6,channel_12;channel_13;channel_17;channel_18;channel_19;channel_20;channel_25;channel_26;channel_27;channel_28;channel_34;channel_35;channel_36;channel_37;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52,1,762400.095
+2001,system,id_79,Rare Event,class_2,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_66,11,190470.0
+2001,system,id_80,Rare Event,class_14,channel_14;channel_15;channel_21;channel_22;channel_23;channel_29;channel_31;channel_39;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,12,1108234.71
+2001,inputs_40_47,id_21,Rare Event,class_4,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,0,725498.28
+2001,inputs_40_47,id_37,Rare Event,class_10,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,1,2280.0
+2001,inputs_40_47,id_38,Rare Event,class_12,channel_41;channel_42;channel_43;channel_44;channel_45;channel_47,2,48810.0
+2001,inputs_40_47,id_77,Rare Event,class_14,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,3,4998.747
+2001,inputs_40_47,id_78,Rare Event,class_6,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,0,609300.0
+2001,inputs_40_47,id_79,Rare Event,class_2,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,4,185760.0
+2001,inputs_40_47,id_80,Rare Event,class_14,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,5,300.0
+2002,system,id_25,Anomaly,class_19,channel_12;channel_13;channel_16;channel_17;channel_18;channel_19;channel_20;channel_24;channel_25;channel_26;channel_27;channel_28;channel_32;channel_33;channel_34;channel_35;channel_36;channel_37;channel_40;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_57;channel_58;channel_59;channel_60;channel_66,0,685784.466
+2002,system,id_7,Anomaly,class_7,channel_14;channel_21;channel_29,0,11430.0
+2002,system,id_81,Rare Event,class_14,channel_14;channel_15;channel_21;channel_22;channel_23;channel_29;channel_30;channel_31;channel_38;channel_39;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,1,923924.451
+2002,system,id_82,Anomaly,class_7,channel_14;channel_21;channel_29,2,21240.0
+2002,system,id_83,Anomaly,class_3,channel_12;channel_13;channel_17;channel_18;channel_19;channel_20;channel_25;channel_26;channel_27;channel_28;channel_34;channel_35;channel_36;channel_37;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52,3,81009.717
+2002,system,id_84,Anomaly,class_17,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_64;channel_65;channel_66,4,184152.381
+2002,system,id_85,Anomaly,class_21,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,5,142.5
+2002,system,id_86,Anomaly,class_15,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_57;channel_58;channel_59;channel_60,6,342007.494
+2002,inputs_40_47,id_25,Anomaly,class_19,channel_40;channel_47,0,685774.749
+2002,inputs_40_47,id_81,Rare Event,class_14,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,1,450.0
+2002,inputs_40_47,id_83,Anomaly,class_3,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,2,80519.997
+2002,inputs_40_47,id_84,Anomaly,class_17,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,3,127140.0
+2002,inputs_40_47,id_85,Anomaly,class_21,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,4,142.5
+2002,inputs_40_47,id_86,Anomaly,class_15,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,5,271140.0
+2003,system,id_12,Anomaly,class_11,channel_12;channel_13;channel_16;channel_17;channel_18;channel_19;channel_20;channel_24;channel_25;channel_26;channel_27;channel_28;channel_32;channel_33;channel_34;channel_35;channel_36;channel_37;channel_39;channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_57;channel_58,0,79004.528999999
+2003,system,id_13,Anomaly,class_11,channel_12;channel_13;channel_16;channel_17;channel_18;channel_19;channel_20;channel_24;channel_25;channel_26;channel_27;channel_28;channel_32;channel_33;channel_34;channel_35;channel_36;channel_37;channel_40;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_57;channel_58;channel_59;channel_60,1,186797.211
+2003,system,id_19,Rare Event,class_16,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52,2,18972.378
+2003,system,id_8,Anomaly,class_7,channel_14;channel_21;channel_29,3,19710.0
+2003,system,id_87,Rare Event,class_14,channel_15;channel_22;channel_23;channel_31;channel_38;channel_39;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,4,940054.776
+2003,system,id_88,Rare Event,class_14,channel_14;channel_15;channel_21;channel_22;channel_23;channel_29;channel_30;channel_31;channel_38;channel_39;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,5,808924.8
+2003,system,id_89,Anomaly,class_2,channel_15;channel_22;channel_23;channel_30;channel_31;channel_38;channel_39;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52,6,684230.283
+2003,system,id_9,Anomaly,class_7,channel_14;channel_21;channel_29,7,3960.0
+2003,system,id_90,Anomaly,class_3,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52,0,810.0
+2003,inputs_40_47,id_12,Anomaly,class_11,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,0,75034.808999999
+2003,inputs_40_47,id_13,Anomaly,class_11,channel_40;channel_47,1,163770.0
+2003,inputs_40_47,id_19,Rare Event,class_16,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,2,17880.0
+2003,inputs_40_47,id_87,Rare Event,class_14,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,3,180.0
+2003,inputs_40_47,id_88,Rare Event,class_14,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,4,480.0
+2003,inputs_40_47,id_89,Anomaly,class_2,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,5,208860.0
+2003,inputs_40_47,id_90,Anomaly,class_3,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,0,300.0
+2004,system,id_1,Rare Event,class_6,channel_12;channel_13;channel_14;channel_15;channel_16;channel_17;channel_18;channel_19;channel_20;channel_21;channel_22;channel_23;channel_24;channel_25;channel_26;channel_27;channel_28;channel_29;channel_30;channel_31;channel_32;channel_33;channel_34;channel_35;channel_36;channel_37;channel_38;channel_39;channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_57;channel_58;channel_59;channel_60;channel_70;channel_71;channel_72;channel_73;channel_74;channel_75;channel_76,0,1282215.0
+2004,system,id_12,Anomaly,class_11,channel_12;channel_13;channel_16;channel_17;channel_18;channel_19;channel_20;channel_24;channel_25;channel_26;channel_27;channel_28;channel_32;channel_33;channel_34;channel_35;channel_36;channel_37;channel_39;channel_40;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_57;channel_58,1,648000.0
+2004,system,id_39,Rare Event,class_16,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52,2,12282.378
+2004,system,id_41,Rare Event,class_10,channel_41;channel_42;channel_45;channel_46;channel_70;channel_72;channel_73;channel_74;channel_75;channel_76,3,420.0
+2004,system,id_91,Anomaly,class_3,channel_47;channel_48;channel_49;channel_50;channel_51;channel_52,4,1650.0
+2004,system,id_92,Anomaly,class_7,channel_14;channel_21;channel_29,5,31950.0
+2004,system,id_93,Anomaly,class_3,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_50;channel_51,6,1890.0
+2004,system,id_94,Anomaly,class_7,channel_14;channel_21;channel_29,7,9900.0
+2004,system,id_95,Rare Event,class_14,channel_14;channel_15;channel_21;channel_22;channel_23;channel_29;channel_30;channel_31;channel_38;channel_39;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_59;channel_66,3,728037.348
+2004,system,id_96,Anomaly,class_15,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_57;channel_58;channel_59;channel_60,8,209827.491
+2004,system,id_97,Anomaly,class_7,channel_14;channel_21;channel_29,9,26010.0
+2004,inputs_40_47,id_1,Rare Event,class_6,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,0,1282125.0
+2004,inputs_40_47,id_12,Anomaly,class_11,channel_40;channel_47,1,648000.0
+2004,inputs_40_47,id_39,Rare Event,class_16,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,2,10110.0
+2004,inputs_40_47,id_41,Rare Event,class_10,channel_41;channel_42;channel_45;channel_46,3,420.0
+2004,inputs_40_47,id_91,Anomaly,class_3,channel_47,4,690.0
+2004,inputs_40_47,id_93,Anomaly,class_3,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,5,1512.912
+2004,inputs_40_47,id_95,Rare Event,class_14,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,6,184264.842
+2004,inputs_40_47,id_96,Anomaly,class_15,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,7,134400.0
+2005,system,id_10,Anomaly,class_9,channel_12;channel_13;channel_16;channel_17;channel_18;channel_19;channel_20;channel_24;channel_25;channel_26;channel_27;channel_28;channel_32;channel_33;channel_34;channel_35;channel_36;channel_37;channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_70;channel_71;channel_72;channel_73;channel_74;channel_75;channel_76,0,802259.289
+2005,system,id_100,Rare Event,class_14,channel_14;channel_15;channel_21;channel_22;channel_23;channel_24;channel_29;channel_30;channel_31;channel_32;channel_33;channel_38;channel_39;channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,1,619562.598
+2005,system,id_101,Anomaly,class_20,channel_12;channel_13;channel_14;channel_16;channel_17;channel_18;channel_19;channel_20;channel_21;channel_22;channel_24;channel_25;channel_26;channel_27;channel_28;channel_29;channel_30;channel_31;channel_32;channel_33;channel_34;channel_35;channel_36;channel_37;channel_38;channel_39;channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_57;channel_58;channel_59;channel_60;channel_66;channel_70;channel_71;channel_72;channel_73;channel_74;channel_75;channel_76,2,983852.286
+2005,system,id_102,Anomaly,class_20,channel_12;channel_13;channel_14;channel_16;channel_17;channel_18;channel_19;channel_20;channel_22;channel_24;channel_25;channel_26;channel_27;channel_28;channel_32;channel_33;channel_34;channel_35;channel_36;channel_37;channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_57;channel_58;channel_59;channel_60;channel_70;channel_71;channel_72;channel_73;channel_74;channel_75;channel_76,3,786039.396
+2005,system,id_103,Anomaly,class_20,channel_12;channel_13;channel_16;channel_17;channel_18;channel_19;channel_20;channel_24;channel_25;channel_26;channel_27;channel_28;channel_31;channel_32;channel_33;channel_34;channel_35;channel_36;channel_37;channel_39;channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_57;channel_58;channel_59;channel_60;channel_66;channel_70;channel_71;channel_72;channel_73;channel_74;channel_75;channel_76,4,874048.914
+2005,system,id_104,Rare Event,class_14,channel_14;channel_15;channel_21;channel_22;channel_23;channel_24;channel_29;channel_30;channel_31;channel_32;channel_33;channel_38;channel_39;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,5,551249.997
+2005,system,id_16,Rare Event,class_16,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52,1,4242.381
+2005,system,id_17,Rare Event,class_4,channel_12;channel_13;channel_14;channel_15;channel_16;channel_17;channel_18;channel_19;channel_20;channel_21;channel_22;channel_23;channel_24;channel_25;channel_26;channel_27;channel_28;channel_29;channel_30;channel_31;channel_32;channel_33;channel_34;channel_35;channel_36;channel_37;channel_38;channel_39;channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52,6,234426.717
+2005,system,id_98,Rare Event,class_14,channel_14;channel_15;channel_21;channel_22;channel_23;channel_29;channel_30;channel_31;channel_38;channel_39;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,7,276720.0
+2005,system,id_99,Anomaly,class_7,channel_14;channel_21;channel_29,8,12960.0
+2005,inputs_40_47,id_10,Anomaly,class_9,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,0,778742.283
+2005,inputs_40_47,id_100,Rare Event,class_14,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,1,29310.0
+2005,inputs_40_47,id_101,Anomaly,class_20,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,2,983780.28
+2005,inputs_40_47,id_102,Anomaly,class_20,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,3,785968.89
+2005,inputs_40_47,id_103,Anomaly,class_20,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,4,873980.28
+2005,inputs_40_47,id_104,Rare Event,class_14,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,5,960.0
+2005,inputs_40_47,id_16,Rare Event,class_16,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,6,3270.0
+2005,inputs_40_47,id_17,Rare Event,class_4,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,7,234327.0
+2005,inputs_40_47,id_98,Rare Event,class_14,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,8,540.0
+2006,system,id_105,Anomaly,class_7,channel_14;channel_21;channel_29,0,18180.0
+2006,system,id_106,Rare Event,class_14,channel_14;channel_15;channel_17;channel_18;channel_19;channel_20;channel_21;channel_22;channel_23;channel_25;channel_26;channel_27;channel_28;channel_29;channel_30;channel_31;channel_34;channel_36;channel_37;channel_38;channel_39;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52,1,340250.28
+2006,system,id_107,Anomaly,class_3,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_50;channel_51;channel_52,2,977.622
+2006,system,id_108,Anomaly,class_7,channel_14;channel_21;channel_29,3,26370.0
+2006,system,id_109,Anomaly,class_3,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,4,6.912
+2006,system,id_110,Anomaly,class_3,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,5,3.912
+2006,system,id_111,Anomaly,class_7,channel_14;channel_21;channel_29,6,19080.0
+2006,system,id_112,Rare Event,class_14,channel_14;channel_15;channel_16;channel_21;channel_22;channel_23;channel_24;channel_29;channel_30;channel_31;channel_32;channel_33;channel_38;channel_39;channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_64;channel_65;channel_66,7,604250.283
+2006,system,id_113,Anomaly,class_7,channel_14;channel_21;channel_29,7,14580.0
+2006,system,id_114,Anomaly,class_3,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,8,9.912
+2006,inputs_40_47,id_106,Rare Event,class_14,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,0,75570.0
+2006,inputs_40_47,id_107,Anomaly,class_3,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,1,909.912
+2006,inputs_40_47,id_109,Anomaly,class_3,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,2,6.912
+2006,inputs_40_47,id_110,Anomaly,class_3,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,3,3.912
+2006,inputs_40_47,id_112,Rare Event,class_14,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,4,419510.283
+2006,inputs_40_47,id_114,Anomaly,class_3,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,5,9.912
+2001_calibration,system,id_21,Rare Event,class_4,channel_16;channel_24;channel_32;channel_33;channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52,0,725498.28
+2001_calibration,system,id_45,Anomaly,class_7,channel_14;channel_21;channel_22;channel_29;channel_31;channel_39,1,16650.0
+2001_calibration,system,id_56,Anomaly,class_7,channel_14;channel_21;channel_29,2,155880.0
+2001_calibration,system,id_58,Anomaly,class_7,channel_14;channel_21;channel_29,3,26460.0
+2001_calibration,system,id_77,Rare Event,class_14,channel_12;channel_13;channel_14;channel_15;channel_16;channel_17;channel_18;channel_19;channel_20;channel_21;channel_22;channel_23;channel_24;channel_25;channel_26;channel_27;channel_28;channel_29;channel_30;channel_31;channel_32;channel_33;channel_34;channel_35;channel_36;channel_37;channel_38;channel_39;channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,4,646680.156
+2001_calibration,system,id_78,Rare Event,class_6,channel_12;channel_13;channel_17;channel_18;channel_19;channel_20;channel_25;channel_26;channel_27;channel_28;channel_34;channel_35;channel_36;channel_37;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52,0,762400.095
+2001_calibration,system,id_79,Rare Event,class_2,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_66,5,190470.0
+2001_calibration,inputs_40_47,id_21,Rare Event,class_4,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,0,725498.28
+2001_calibration,inputs_40_47,id_77,Rare Event,class_14,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,1,4998.747
+2001_calibration,inputs_40_47,id_78,Rare Event,class_6,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,0,609300.0
+2001_calibration,inputs_40_47,id_79,Rare Event,class_2,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,2,185760.0
+2001_assessment,system,id_2,Anomaly,class_7,channel_14;channel_21;channel_29,0,10530.0
+2001_assessment,system,id_3,Anomaly,class_7,channel_14;channel_21;channel_29,1,24300.0
+2001_assessment,system,id_37,Rare Event,class_10,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,2,2280.0
+2001_assessment,system,id_38,Rare Event,class_12,channel_41;channel_42;channel_43;channel_44;channel_45;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52,3,48810.0
+2001_assessment,system,id_5,Anomaly,class_7,channel_14;channel_21;channel_29,4,26370.0
+2001_assessment,system,id_6,Anomaly,class_7,channel_14;channel_21;channel_29,5,12600.0
+2001_assessment,system,id_80,Rare Event,class_14,channel_14;channel_15;channel_21;channel_22;channel_23;channel_29;channel_31;channel_39;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,6,1108234.71
+2001_assessment,inputs_40_47,id_37,Rare Event,class_10,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,0,2280.0
+2001_assessment,inputs_40_47,id_38,Rare Event,class_12,channel_41;channel_42;channel_43;channel_44;channel_45;channel_47,1,48810.0
+2001_assessment,inputs_40_47,id_80,Rare Event,class_14,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,2,300.0
+2002_calibration,system,id_81,Rare Event,class_14,channel_14;channel_15;channel_21;channel_22;channel_23;channel_29;channel_30;channel_31;channel_38;channel_39;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,0,923924.451
+2002_calibration,system,id_82,Anomaly,class_7,channel_14;channel_21;channel_29,1,21240.0
+2002_calibration,system,id_83,Anomaly,class_3,channel_12;channel_13;channel_17;channel_18;channel_19;channel_20;channel_25;channel_26;channel_27;channel_28;channel_34;channel_35;channel_36;channel_37;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52,2,81009.717
+2002_calibration,system,id_84,Anomaly,class_17,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_64;channel_65;channel_66,3,184152.381
+2002_calibration,system,id_85,Anomaly,class_21,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,4,142.5
+2002_calibration,inputs_40_47,id_81,Rare Event,class_14,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,0,450.0
+2002_calibration,inputs_40_47,id_83,Anomaly,class_3,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,1,80519.997
+2002_calibration,inputs_40_47,id_84,Anomaly,class_17,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,2,127140.0
+2002_calibration,inputs_40_47,id_85,Anomaly,class_21,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,3,142.5
+2002_assessment,system,id_25,Anomaly,class_19,channel_12;channel_13;channel_16;channel_17;channel_18;channel_19;channel_20;channel_24;channel_25;channel_26;channel_27;channel_28;channel_32;channel_33;channel_34;channel_35;channel_36;channel_37;channel_40;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_57;channel_58;channel_59;channel_60;channel_66,0,685784.466
+2002_assessment,system,id_7,Anomaly,class_7,channel_14;channel_21;channel_29,0,11430.0
+2002_assessment,system,id_86,Anomaly,class_15,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_57;channel_58;channel_59;channel_60,1,342007.494
+2002_assessment,inputs_40_47,id_25,Anomaly,class_19,channel_40;channel_47,0,685774.749
+2002_assessment,inputs_40_47,id_86,Anomaly,class_15,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,1,271140.0
+2003_calibration,system,id_8,Anomaly,class_7,channel_14;channel_21;channel_29,0,19710.0
+2003_calibration,system,id_87,Rare Event,class_14,channel_15;channel_22;channel_23;channel_31;channel_38;channel_39;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,1,940054.776
+2003_calibration,system,id_9,Anomaly,class_7,channel_14;channel_21;channel_29,2,3960.0
+2003_calibration,inputs_40_47,id_87,Rare Event,class_14,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,0,180.0
+2003_assessment,system,id_12,Anomaly,class_11,channel_12;channel_13;channel_16;channel_17;channel_18;channel_19;channel_20;channel_24;channel_25;channel_26;channel_27;channel_28;channel_32;channel_33;channel_34;channel_35;channel_36;channel_37;channel_39;channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_57;channel_58,0,79004.528999999
+2003_assessment,system,id_13,Anomaly,class_11,channel_12;channel_13;channel_16;channel_17;channel_18;channel_19;channel_20;channel_24;channel_25;channel_26;channel_27;channel_28;channel_32;channel_33;channel_34;channel_35;channel_36;channel_37;channel_40;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_57;channel_58;channel_59;channel_60,1,186797.211
+2003_assessment,system,id_19,Rare Event,class_16,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52,2,18972.378
+2003_assessment,system,id_88,Rare Event,class_14,channel_14;channel_15;channel_21;channel_22;channel_23;channel_29;channel_30;channel_31;channel_38;channel_39;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,3,808924.8
+2003_assessment,system,id_89,Anomaly,class_2,channel_15;channel_22;channel_23;channel_30;channel_31;channel_38;channel_39;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52,4,684230.283
+2003_assessment,system,id_90,Anomaly,class_3,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52,0,810.0
+2003_assessment,inputs_40_47,id_12,Anomaly,class_11,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,0,75034.808999999
+2003_assessment,inputs_40_47,id_13,Anomaly,class_11,channel_40;channel_47,1,163770.0
+2003_assessment,inputs_40_47,id_19,Rare Event,class_16,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,2,17880.0
+2003_assessment,inputs_40_47,id_88,Rare Event,class_14,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,3,480.0
+2003_assessment,inputs_40_47,id_89,Anomaly,class_2,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,4,208860.0
+2003_assessment,inputs_40_47,id_90,Anomaly,class_3,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,0,300.0
+2004_calibration,system,id_12,Anomaly,class_11,channel_12;channel_13;channel_16;channel_17;channel_18;channel_19;channel_20;channel_24;channel_25;channel_26;channel_27;channel_28;channel_32;channel_33;channel_34;channel_35;channel_36;channel_37;channel_39;channel_40;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_57;channel_58,0,648000.0
+2004_calibration,inputs_40_47,id_12,Anomaly,class_11,channel_40;channel_47,0,648000.0
+2004_assessment,system,id_1,Rare Event,class_6,channel_12;channel_13;channel_14;channel_15;channel_16;channel_17;channel_18;channel_19;channel_20;channel_21;channel_22;channel_23;channel_24;channel_25;channel_26;channel_27;channel_28;channel_29;channel_30;channel_31;channel_32;channel_33;channel_34;channel_35;channel_36;channel_37;channel_38;channel_39;channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_57;channel_58;channel_59;channel_60;channel_70;channel_71;channel_72;channel_73;channel_74;channel_75;channel_76,0,1282215.0
+2004_assessment,system,id_39,Rare Event,class_16,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52,1,12282.378
+2004_assessment,system,id_41,Rare Event,class_10,channel_41;channel_42;channel_45;channel_46;channel_70;channel_72;channel_73;channel_74;channel_75;channel_76,2,420.0
+2004_assessment,system,id_91,Anomaly,class_3,channel_47;channel_48;channel_49;channel_50;channel_51;channel_52,3,1650.0
+2004_assessment,system,id_92,Anomaly,class_7,channel_14;channel_21;channel_29,4,31950.0
+2004_assessment,system,id_93,Anomaly,class_3,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_50;channel_51,5,1890.0
+2004_assessment,system,id_94,Anomaly,class_7,channel_14;channel_21;channel_29,6,9900.0
+2004_assessment,system,id_95,Rare Event,class_14,channel_14;channel_15;channel_21;channel_22;channel_23;channel_29;channel_30;channel_31;channel_38;channel_39;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_59;channel_66,2,728037.348
+2004_assessment,system,id_96,Anomaly,class_15,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_57;channel_58;channel_59;channel_60,7,209827.491
+2004_assessment,system,id_97,Anomaly,class_7,channel_14;channel_21;channel_29,8,26010.0
+2004_assessment,inputs_40_47,id_1,Rare Event,class_6,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,0,1282125.0
+2004_assessment,inputs_40_47,id_39,Rare Event,class_16,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,1,10110.0
+2004_assessment,inputs_40_47,id_41,Rare Event,class_10,channel_41;channel_42;channel_45;channel_46,2,420.0
+2004_assessment,inputs_40_47,id_91,Anomaly,class_3,channel_47,3,690.0
+2004_assessment,inputs_40_47,id_93,Anomaly,class_3,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,4,1512.912
+2004_assessment,inputs_40_47,id_95,Rare Event,class_14,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,5,184264.842
+2004_assessment,inputs_40_47,id_96,Anomaly,class_15,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,6,134400.0
+2005_calibration,system,id_10,Anomaly,class_9,channel_12;channel_13;channel_16;channel_17;channel_18;channel_19;channel_20;channel_24;channel_25;channel_26;channel_27;channel_28;channel_32;channel_33;channel_34;channel_35;channel_36;channel_37;channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_70;channel_71;channel_72;channel_73;channel_74;channel_75;channel_76,0,56701.874999999
+2005_calibration,system,id_17,Rare Event,class_4,channel_12;channel_13;channel_14;channel_15;channel_16;channel_17;channel_18;channel_19;channel_20;channel_21;channel_22;channel_23;channel_24;channel_25;channel_26;channel_27;channel_28;channel_29;channel_30;channel_31;channel_32;channel_33;channel_34;channel_35;channel_36;channel_37;channel_38;channel_39;channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52,1,234426.717
+2005_calibration,system,id_98,Rare Event,class_14,channel_14;channel_15;channel_21;channel_22;channel_23;channel_29;channel_30;channel_31;channel_38;channel_39;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,2,276720.0
+2005_calibration,system,id_99,Anomaly,class_7,channel_14;channel_21;channel_29,3,12960.0
+2005_calibration,inputs_40_47,id_10,Anomaly,class_9,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,0,56674.868999999
+2005_calibration,inputs_40_47,id_17,Rare Event,class_4,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,1,234327.0
+2005_calibration,inputs_40_47,id_98,Rare Event,class_14,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,2,540.0
+2005_assessment,system,id_10,Anomaly,class_9,channel_12;channel_13;channel_16;channel_17;channel_18;channel_19;channel_20;channel_24;channel_25;channel_26;channel_27;channel_28;channel_32;channel_33;channel_34;channel_35;channel_36;channel_37;channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_70;channel_71;channel_72;channel_73;channel_74;channel_75;channel_76,0,745557.414
+2005_assessment,system,id_100,Rare Event,class_14,channel_14;channel_15;channel_21;channel_22;channel_23;channel_24;channel_29;channel_30;channel_31;channel_32;channel_33;channel_38;channel_39;channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,1,619562.598
+2005_assessment,system,id_101,Anomaly,class_20,channel_12;channel_13;channel_14;channel_16;channel_17;channel_18;channel_19;channel_20;channel_21;channel_22;channel_24;channel_25;channel_26;channel_27;channel_28;channel_29;channel_30;channel_31;channel_32;channel_33;channel_34;channel_35;channel_36;channel_37;channel_38;channel_39;channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_57;channel_58;channel_59;channel_60;channel_66;channel_70;channel_71;channel_72;channel_73;channel_74;channel_75;channel_76,2,983852.286
+2005_assessment,system,id_102,Anomaly,class_20,channel_12;channel_13;channel_14;channel_16;channel_17;channel_18;channel_19;channel_20;channel_22;channel_24;channel_25;channel_26;channel_27;channel_28;channel_32;channel_33;channel_34;channel_35;channel_36;channel_37;channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_57;channel_58;channel_59;channel_60;channel_70;channel_71;channel_72;channel_73;channel_74;channel_75;channel_76,3,786039.396
+2005_assessment,system,id_103,Anomaly,class_20,channel_12;channel_13;channel_16;channel_17;channel_18;channel_19;channel_20;channel_24;channel_25;channel_26;channel_27;channel_28;channel_31;channel_32;channel_33;channel_34;channel_35;channel_36;channel_37;channel_39;channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52;channel_57;channel_58;channel_59;channel_60;channel_66;channel_70;channel_71;channel_72;channel_73;channel_74;channel_75;channel_76,4,874048.914
+2005_assessment,system,id_104,Rare Event,class_14,channel_14;channel_15;channel_21;channel_22;channel_23;channel_24;channel_29;channel_30;channel_31;channel_32;channel_33;channel_38;channel_39;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,5,551249.997
+2005_assessment,system,id_16,Rare Event,class_16,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47;channel_48;channel_49;channel_50;channel_51;channel_52,1,4242.381
+2005_assessment,inputs_40_47,id_10,Anomaly,class_9,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,0,722067.414
+2005_assessment,inputs_40_47,id_100,Rare Event,class_14,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,1,29310.0
+2005_assessment,inputs_40_47,id_101,Anomaly,class_20,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,2,983780.28
+2005_assessment,inputs_40_47,id_102,Anomaly,class_20,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,3,785968.89
+2005_assessment,inputs_40_47,id_103,Anomaly,class_20,channel_40;channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,4,873980.28
+2005_assessment,inputs_40_47,id_104,Rare Event,class_14,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46,5,960.0
+2005_assessment,inputs_40_47,id_16,Rare Event,class_16,channel_41;channel_42;channel_43;channel_44;channel_45;channel_46;channel_47,6,3270.0
