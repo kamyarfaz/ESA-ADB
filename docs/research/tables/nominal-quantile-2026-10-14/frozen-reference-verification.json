@@ -1,0 +1,9 @@
+{
+  "verified": "/home/k_faz/projects/ESA-ADB/data/frozen/mission1-reference-v1",
+  "rows": {
+    "train.csv": 6312960,
+    "calibration.csv": 1051200,
+    "testing.csv": 7364160
+  },
+  "manifest_sha256": "a49a8c42c23a5d72d91a48596f485d762a805cc6101ad037c01a36c8037bf099"
+}

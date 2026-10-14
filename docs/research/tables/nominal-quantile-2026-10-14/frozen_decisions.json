@@ -1,0 +1,122 @@
+[
+  {
+    "fold": 2001,
+    "seed": 42,
+    "arm": "control",
+    "epoch": 5,
+    "threshold": 193.80686950683594,
+    "merge_gap": 0,
+    "min_dur": 1,
+    "nominal_samples": 437527
+  },
+  {
+    "fold": 2001,
+    "seed": 42,
+    "arm": "nominal_q999",
+    "epoch": 5,
+    "threshold": 22.32612419128418,
+    "merge_gap": 0,
+    "min_dur": 1,
+    "nominal_samples": 437527
+  },
+  {
+    "fold": 2001,
+    "seed": 43,
+    "arm": "control",
+    "epoch": 5,
+    "threshold": 193.8759765625,
+    "merge_gap": 0,
+    "min_dur": 1,
+    "nominal_samples": 437527
+  },
+  {
+    "fold": 2001,
+    "seed": 43,
+    "arm": "nominal_q999",
+    "epoch": 5,
+    "threshold": 11.96854305267334,
+    "merge_gap": 0,
+    "min_dur": 1,
+    "nominal_samples": 437527
+  },
+  {
+    "fold": 2001,
+    "seed": 44,
+    "arm": "control",
+    "epoch": 5,
+    "threshold": 195.84637451171875,
+    "merge_gap": 0,
+    "min_dur": 1,
+    "nominal_samples": 437527
+  },
+  {
+    "fold": 2001,
+    "seed": 44,
+    "arm": "nominal_q999",
+    "epoch": 5,
+    "threshold": 17.23777961730957,
+    "merge_gap": 0,
+    "min_dur": 1,
+    "nominal_samples": 437527
+  },
+  {
+    "fold": 2002,
+    "seed": 42,
+    "arm": "control",
+    "epoch": 5,
+    "threshold": 77.0337905883789,
+    "merge_gap": 0,
+    "min_dur": 1,
+    "nominal_samples": 480930
+  },
+  {
+    "fold": 2002,
+    "seed": 42,
+    "arm": "nominal_q999",
+    "epoch": 5,
+    "threshold": 48.45831298828125,
+    "merge_gap": 0,
+    "min_dur": 1,
+    "nominal_samples": 480930
+  },
+  {
+    "fold": 2002,
+    "seed": 43,
+    "arm": "control",
+    "epoch": 5,
+    "threshold": 61.483116149902344,
+    "merge_gap": 0,
+    "min_dur": 1,
+    "nominal_samples": 480930
+  },
+  {
+    "fold": 2002,
+    "seed": 43,
+    "arm": "nominal_q999",
+    "epoch": 5,
+    "threshold": 12.797930717468262,
+    "merge_gap": 0,
+    "min_dur": 1,
+    "nominal_samples": 480930
+  },
+  {
+    "fold": 2002,
+    "seed": 44,
+    "arm": "control",
+    "epoch": 5,
+    "threshold": 70.39070892333984,
+    "merge_gap": 0,
+    "min_dur": 1,
+    "nominal_samples": 480930
+  },
+  {
+    "fold": 2002,
+    "seed": 44,
+    "arm": "nominal_q999",
+    "epoch": 5,
+    "threshold": 50.077693939208984,
+    "merge_gap": 0,
+    "min_dur": 1,
+    "nominal_samples": 480930
+  }
+]

@@ -5,6 +5,25 @@ Read this before proposing work. The chat is not required to continue the projec
 
 ## 1. Current task and decision
 
+**Current instruction, 14 October: autonomous research is authorized again,
+including justified training and commands. This supersedes the older stop below.**
+Follow `docs/research/research-resumption-2026-10-14.md`. The first authorized
+comparison executes the predeclared nominal-quantile diagnostic using verified
+saved scores only. The damaged historical MLP array is excluded. No final-test
+selection or indiscriminate training sweep is authorized by the research protocol.
+The dated stopped-state paragraphs below record history, not current instructions.
+
+Completed the fixed q=0.999, epoch-five threshold comparison on all six original
+joint runs. All original dependencies matched migration hashes; control masks and
+metrics reproduced. All candidate rules were sealed before validation arrays were
+loaded. Mean system F0.5: 2001 control 0 → candidate 0.384075; 2002 control 0 →
+candidate 0.006370. Candidate 2002 occupancy is 87.20%; false-alarm duration rises.
+**Advancement failed in both folds.** Do not tune neighboring quantiles or promote
+this candidate. See `docs/research/nominal-quantile-results-2026-10-14.md` and
+`docs/research/representation-decision-2026-10-14.md`. Frozen reference reverified;
+120 tests passed in 11.846s. No new neural training or 2007–2013 scoring occurred.
+
+
 GitHub synchronization completed **14 October 2026**. Source update `751fc1a`
 is pushed; the full current project-file snapshot is published at
 `project-snapshot-2026-10-13` (50 Release assets, 174.06 GiB before compression).
@@ -42,8 +61,8 @@ GitHub synchronization records and restore instructions are in
 Git; the full project-file snapshot belongs in split Release assets. Backing up
 the current mismatching array preserves evidence, not a verified original.
 
-The dated paragraphs below preserve earlier setup history; the stop instruction
-above takes precedence over every research plan or earlier continuation note.
+The dated paragraphs below preserve earlier setup history; the latest resumption
+instruction and protocol take precedence over earlier stop/continuation notes.
 
 13 October continued setup: packaged and verified the existing reference as
 `data/frozen/mission1-reference-v1/{train.csv,calibration.csv,testing.csv}` plus
