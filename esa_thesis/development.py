@@ -83,12 +83,15 @@ def load_period(path, features, start, end):
 
 
 def run_fold(spec, boundaries, output, *, epochs, device, batch_size, seed,
-             assessment_path=None, max_windows=config.MAX_TRAIN_WINDOWS):
+             assessment_path=None, max_windows=config.MAX_TRAIN_WINDOWS,
+             training_path=None, calibration_path=None, augmentation_mode='legacy'):
+    if augmentation_mode not in ('legacy', 'short_coordinated', 'short_no_roll'):
+        raise ValueError('Unknown augmentation mode')
     train_end, calibration_end, assessment_end = boundaries
     set_seed(seed)
     features = spec['features']
     print(f'{output.name}: loading training data before {train_end}', flush=True)
-    x, y, _ = load_period(config.TRAIN_FILE, features, None, train_end)
+    x, y, _ = load_period(config.TRAIN_FILE if training_path is None else training_path, features, None, train_end)
     scaler = RobustChannelScaler().fit(x, y)
     x = scaler.transform(x)
     # Fail closed rather than invoking NormalWindows' historical all-window fallback.
@@ -101,7 +104,7 @@ def run_fold(spec, boundaries, output, *, epochs, device, batch_size, seed,
     dataset = NormalWindows(x, y, max_windows=max_windows)
     loader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
     print(f'{output.name}: {len(dataset)} nominal windows; loading calibration', flush=True)
-    val, _, times = load_period(config.TRAIN_FILE, features, train_end, calibration_end)
+    val, _, times = load_period(config.TRAIN_FILE if calibration_path is None else calibration_path, features, train_end, calibration_end)
     val = scaler.transform(val)
     evaluator = evaluator_for(times)
     model = MultivariateAE(len(features)).to(device)
@@ -131,13 +134,17 @@ def run_fold(spec, boundaries, output, *, epochs, device, batch_size, seed,
     for epoch in range(start_epoch, epochs+1):
         model.train()
         losses = []
-        for inputs in loader:
+        for batch_index, inputs in enumerate(loader, 1):
             inputs = inputs.to(device)
             optimizer.zero_grad(set_to_none=True)
             residual = (model(inputs)-inputs).square().mean(dim=(1, 2, 3))
             loss = residual.mean()
             if spec.get('pseudo', False):
-                corrupted = make_pseudo_anomaly(inputs)
+                if augmentation_mode == 'legacy':
+                    corrupted = make_pseudo_anomaly(inputs)
+                else:
+                    from .short_augmentation import make_training_anomaly
+                    corrupted = make_training_anomaly(inputs, mode=augmentation_mode)
                 abnormal = (model(corrupted)-corrupted).square().mean(dim=(1, 2, 3))
                 loss = loss + config.PA_LAMBDA * torch.relu(config.PA_MARGIN-abnormal/(residual.mean().detach()+1e-8)).mean()
             if not torch.isfinite(loss):
@@ -146,6 +153,8 @@ def run_fold(spec, boundaries, output, *, epochs, device, batch_size, seed,
             torch.nn.utils.clip_grad_norm_(model.parameters(), config.GRAD_CLIP)
             optimizer.step()
             losses.append(loss.item())
+            if batch_index == 1 or batch_index % 100 == 0:
+                print(f'{output.name}: epoch {epoch}/{epochs} batch {batch_index}/{len(loader)} loss {loss.item():.6g}', flush=True)
         scheduler.step()
         row = {'epoch': epoch, 'loss': float(np.mean(losses))}
         if epoch % 5 == 0 or epoch == epochs:

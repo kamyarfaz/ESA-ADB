@@ -5,6 +5,20 @@ Read this before proposing work. The chat is not required to continue the projec
 
 ## 1. Current task and decision
 
+**Latest request: run short-no-roll on the full 2007–2013 period and report every
+year plus pooled F0.5.** This explicit request supersedes the earlier no-extension
+stopping decision for this candidate. Plan: `docs/research/full-short-no-roll-plan-2026-10-14.md`.
+Use frozen training2000–2005/calibration2006/testing2007–2013; channels40–47,
+40 epochs, all nominal windows, seed42. Runner `esa_thesis.full_short_no_roll`.
+Output `results_longrun/short_no_roll_full_20261014_seed42_v1/`. The run is active in tool session8451 (initial Python PID1529365); log:
+`/home/k_faz/project-backups/run-logs/full-short-no-roll-20261014.log`.
+Heartbeat `complete-full-period-short-roll-assessment` checks every30minutes and
+must deliver verified results then pause itself. Verify live process state rather
+than trusting this PID. Do not claim results until complete.json and replay checks pass.
+122 tests passed in12.840s before launch. Source/data/settings must stay unchanged
+for strict resume; documentation updates are safe.
+No yearly tuning or independent-test claim. The original baseline is unchanged.
+
 **Current instruction, 14 October: autonomous research is authorized again,
 including justified training and commands. This supersedes the older stop below.**
 Follow `docs/research/research-resumption-2026-10-14.md`. The first authorized
