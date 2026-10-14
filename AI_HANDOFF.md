@@ -1,9 +1,18 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
-Updated **13 October 2026**. This is the current entry point for a new assistant.
+Updated **14 October 2026**. This is the current entry point for a new assistant.
 Read this before proposing work. The chat is not required to continue the project.
 
 ## 1. Current task and decision
+
+GitHub synchronization completed **14 October 2026**. Source update `751fc1a`
+is pushed; the full current project-file snapshot is published at
+`project-snapshot-2026-10-13` (50 Release assets, 174.06 GiB before compression).
+All 10,526 archived entries passed verification and all uploaded asset SHA256
+digests matched local files. See `docs/research/github-sync-2026-10-13.md` and
+`docs/research/github-snapshot-verification-2026-10-14.json` for evidence and
+exclusions. The full thesis suite passed 117 tests before publication.
+The original historical array mismatch remains unresolved. Research stays stopped.
 
 **Current instruction: research is stopped at the user's explicit request on
 13 October. Do not execute the nominal-quantile plan or launch training.**

@@ -19,9 +19,29 @@ instruction to run it. The complete thesis suite, including three new snapshot s
 Target release:
 [project-snapshot-2026-10-13](https://github.com/kamyarfaz/ESA-ADB/releases/tag/project-snapshot-2026-10-13).
 
-The snapshot is being prepared as split `.tar.zst` assets with a per-file
-SHA256 manifest, part checksums, restore instructions and a verification tool.
-Publication is complete only when the final verification record is present.
+Completed **14 October 2026**. The published Release contains 50 assets: 44
+archive parts plus the manifest, checksums, restore instructions, verifier and
+verification records. All uploaded asset sizes and GitHub SHA256 digests match
+the local files, including the remote verification record itself.
+
+The archive independently passed verification of all 10,526 entries: 9,477
+regular files totaling 186,891,293,981 bytes (174.06 GiB), plus directories and
+symlinks. The compressed archive is 46,685,754,202 bytes (43.48 GiB).
+Archive SHA256: `b076811626786e4af490249d9755dc7561a78bdccba5e50eff60103e8cc1950c`.
+The verification record is [saved here](github-snapshot-verification-2026-10-14.json).
+Remote verification uses GitHub's asset digests; a complete remote archive was
+not downloaded again. Every local archived file was independently rehashed.
+
+The snapshot records source commit `751fc1a`; completion documentation and this
+verification record were committed subsequently and are available in source Git.
+The dated snapshot manifest describes its immutable archive, not those later
+source documentation changes. Regenerate a transfer manifest before any new
+whole-directory server copy, per MIGRATION.md.
+
+All 3,667 entries in older Release manifests exist locally. Three older versions
+were preserved separately under `archive/snapshots/github-release-versions/`
+without replacing the newer local files. The 19 files in supplemental September
+archives also match their local copies.
 It includes datasets, frozen splits, labels, saved arrays/weights, historical
 archives, output/build files and migration evidence, including ignored files.
 

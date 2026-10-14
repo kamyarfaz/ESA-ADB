@@ -1,0 +1,318 @@
+{
+  "release": "project-snapshot-2026-10-13",
+  "method": "GitHub asset API SHA256 digests and sizes compared with local files; complete local archive contents independently verified",
+  "verified": true,
+  "assets": [
+    {
+      "name": "ARCHIVE_VERIFICATION.json",
+      "bytes": 245,
+      "sha256": "04dc69d71c4806b93bc485f8a67915a0784fec3d2986956cf15c940a4fa3cd0c",
+      "github_digest": "sha256:04dc69d71c4806b93bc485f8a67915a0784fec3d2986956cf15c940a4fa3cd0c"
+    },
+    {
+      "name": "PROJECT_SNAPSHOT_MANIFEST.json",
+      "bytes": 2981194,
+      "sha256": "93ab18a128780de1d5e2389e34e91f03af44780a2e291080df990a5697459f4c",
+      "github_digest": "sha256:93ab18a128780de1d5e2389e34e91f03af44780a2e291080df990a5697459f4c"
+    },
+    {
+      "name": "RESTORE.md",
+      "bytes": 1671,
+      "sha256": "bd62341de9082b063c22a3e1bc84006afe4c892c2f1a67567b6c28a7242362d6",
+      "github_digest": "sha256:bd62341de9082b063c22a3e1bc84006afe4c892c2f1a67567b6c28a7242362d6"
+    },
+    {
+      "name": "SHA256SUMS",
+      "bytes": 4928,
+      "sha256": "5e4872c6ebc1b388158db33145355deb0a3d3b5ced08833cd5fb5d211eeab162",
+      "github_digest": "sha256:5e4872c6ebc1b388158db33145355deb0a3d3b5ced08833cd5fb5d211eeab162"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-000",
+      "bytes": 1073741824,
+      "sha256": "7e95796b831bcb70ffe4c62c50041ef08fe418f73392ec932720035667e32cfb",
+      "github_digest": "sha256:7e95796b831bcb70ffe4c62c50041ef08fe418f73392ec932720035667e32cfb"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-001",
+      "bytes": 1073741824,
+      "sha256": "6bdd8a32513168e0edbca884de55102873c886fe731db0c6f97aab686c8dd3fa",
+      "github_digest": "sha256:6bdd8a32513168e0edbca884de55102873c886fe731db0c6f97aab686c8dd3fa"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-002",
+      "bytes": 1073741824,
+      "sha256": "bed0e6398170859f05a0fc53682a1dd5395c6b99f70735c590a7f0221620f5bd",
+      "github_digest": "sha256:bed0e6398170859f05a0fc53682a1dd5395c6b99f70735c590a7f0221620f5bd"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-003",
+      "bytes": 1073741824,
+      "sha256": "5c891fab81cd40e2a4f517c861f394c1abd7ba12a9a236b523f62885c1b3a85b",
+      "github_digest": "sha256:5c891fab81cd40e2a4f517c861f394c1abd7ba12a9a236b523f62885c1b3a85b"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-004",
+      "bytes": 1073741824,
+      "sha256": "1c5098ac1f6020339e65dffe699fa636343a9c287b3e40e2af5c985ebe2d20a5",
+      "github_digest": "sha256:1c5098ac1f6020339e65dffe699fa636343a9c287b3e40e2af5c985ebe2d20a5"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-005",
+      "bytes": 1073741824,
+      "sha256": "1ce7cbbd3934c980ffea9f0a21cb706138c7feca85148a7f89cacc1af0bddb0a",
+      "github_digest": "sha256:1ce7cbbd3934c980ffea9f0a21cb706138c7feca85148a7f89cacc1af0bddb0a"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-006",
+      "bytes": 1073741824,
+      "sha256": "966ef20383a9e9fe3c468bdaba1c4a9504a2e9e63a575a95592fe5be144595dc",
+      "github_digest": "sha256:966ef20383a9e9fe3c468bdaba1c4a9504a2e9e63a575a95592fe5be144595dc"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-007",
+      "bytes": 1073741824,
+      "sha256": "e6c4564e3d4252844e49f12a1ffc611169f9d2de6925c6fd0500b66a3239e4ae",
+      "github_digest": "sha256:e6c4564e3d4252844e49f12a1ffc611169f9d2de6925c6fd0500b66a3239e4ae"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-008",
+      "bytes": 1073741824,
+      "sha256": "d8b2e783483b1f0395ac3b1866da51a2873e072f63b939085b0d3f00263cddbe",
+      "github_digest": "sha256:d8b2e783483b1f0395ac3b1866da51a2873e072f63b939085b0d3f00263cddbe"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-009",
+      "bytes": 1073741824,
+      "sha256": "4e06d0b7652dcb78de5c4afa9b999c43c7d7349e826d2f745b5c2f704fb45049",
+      "github_digest": "sha256:4e06d0b7652dcb78de5c4afa9b999c43c7d7349e826d2f745b5c2f704fb45049"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-010",
+      "bytes": 1073741824,
+      "sha256": "558c424a4500eff50f406ac698853aceca5267bf854113152fa88af612b3255d",
+      "github_digest": "sha256:558c424a4500eff50f406ac698853aceca5267bf854113152fa88af612b3255d"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-011",
+      "bytes": 1073741824,
+      "sha256": "227918c65e4ed551b32e745115938accecfb4827d305699b57850c00f6d4c03f",
+      "github_digest": "sha256:227918c65e4ed551b32e745115938accecfb4827d305699b57850c00f6d4c03f"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-012",
+      "bytes": 1073741824,
+      "sha256": "2de8813a7c2d1e153132292a91b9b468945c1789372f8baef9621ad90717c573",
+      "github_digest": "sha256:2de8813a7c2d1e153132292a91b9b468945c1789372f8baef9621ad90717c573"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-013",
+      "bytes": 1073741824,
+      "sha256": "e58d3bc70f48e400917afacb53087db41cdebc2ffb9b2f249a4b97a3e4b077b7",
+      "github_digest": "sha256:e58d3bc70f48e400917afacb53087db41cdebc2ffb9b2f249a4b97a3e4b077b7"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-014",
+      "bytes": 1073741824,
+      "sha256": "8af188f99810bbb057e279b0fb9661a10e75cc5ca8d08e0b18472cb9d70d4589",
+      "github_digest": "sha256:8af188f99810bbb057e279b0fb9661a10e75cc5ca8d08e0b18472cb9d70d4589"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-015",
+      "bytes": 1073741824,
+      "sha256": "829bdeb3d013db1f795a988414d0175ef41c0cdc8d65ab5b70b8910dea73b2c1",
+      "github_digest": "sha256:829bdeb3d013db1f795a988414d0175ef41c0cdc8d65ab5b70b8910dea73b2c1"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-016",
+      "bytes": 1073741824,
+      "sha256": "d9fe52860d7029f7b20a8069cf4cc8a4c7a240c9f35ea96f37881a1f58b44e8d",
+      "github_digest": "sha256:d9fe52860d7029f7b20a8069cf4cc8a4c7a240c9f35ea96f37881a1f58b44e8d"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-017",
+      "bytes": 1073741824,
+      "sha256": "c78fe34680679d2592713e716a80d712b16160d9c74d200886720f6aeb564f4f",
+      "github_digest": "sha256:c78fe34680679d2592713e716a80d712b16160d9c74d200886720f6aeb564f4f"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-018",
+      "bytes": 1073741824,
+      "sha256": "d74c9e3d03f049aabfde834b706b1080c9044ba7c2f2a83b8a7c3255a9f04178",
+      "github_digest": "sha256:d74c9e3d03f049aabfde834b706b1080c9044ba7c2f2a83b8a7c3255a9f04178"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-019",
+      "bytes": 1073741824,
+      "sha256": "59316c58913a482f0192eddd73c74de39c987358e5af778d583a3f8b2d58103a",
+      "github_digest": "sha256:59316c58913a482f0192eddd73c74de39c987358e5af778d583a3f8b2d58103a"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-020",
+      "bytes": 1073741824,
+      "sha256": "814f808aa84fe61544c8c1b04163635f3510e2e729db3008e494275b759258f6",
+      "github_digest": "sha256:814f808aa84fe61544c8c1b04163635f3510e2e729db3008e494275b759258f6"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-021",
+      "bytes": 1073741824,
+      "sha256": "88e805d890be9650c9b1570061f42fc49c7e49e867c9ee7975a5ebc5b95375cc",
+      "github_digest": "sha256:88e805d890be9650c9b1570061f42fc49c7e49e867c9ee7975a5ebc5b95375cc"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-022",
+      "bytes": 1073741824,
+      "sha256": "5a30809acf4fb06e23b4b92de880fe1f8876007cf75a3bcb6a920d75325f1b5c",
+      "github_digest": "sha256:5a30809acf4fb06e23b4b92de880fe1f8876007cf75a3bcb6a920d75325f1b5c"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-023",
+      "bytes": 1073741824,
+      "sha256": "cd327439849495539ba8d6f3c942fd8263fe266794808f714f2b9c4a8b32ef2b",
+      "github_digest": "sha256:cd327439849495539ba8d6f3c942fd8263fe266794808f714f2b9c4a8b32ef2b"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-024",
+      "bytes": 1073741824,
+      "sha256": "4f514a1296af170d95709671cecbb19ee238c1b1bffb0e1574c489fc5b4b388e",
+      "github_digest": "sha256:4f514a1296af170d95709671cecbb19ee238c1b1bffb0e1574c489fc5b4b388e"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-025",
+      "bytes": 1073741824,
+      "sha256": "9fa8e82e25da38ebf9683998c801a84ad2f8e503c96fd524195727264726a0c5",
+      "github_digest": "sha256:9fa8e82e25da38ebf9683998c801a84ad2f8e503c96fd524195727264726a0c5"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-026",
+      "bytes": 1073741824,
+      "sha256": "0796dab161a98afbd56ba565c8e664d1f7527abb918dc306d834b835f1275e61",
+      "github_digest": "sha256:0796dab161a98afbd56ba565c8e664d1f7527abb918dc306d834b835f1275e61"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-027",
+      "bytes": 1073741824,
+      "sha256": "4fb64806f0c38032acb39cb9e42df1d37433bc2fbab905ae81020a7d2e2b3b52",
+      "github_digest": "sha256:4fb64806f0c38032acb39cb9e42df1d37433bc2fbab905ae81020a7d2e2b3b52"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-028",
+      "bytes": 1073741824,
+      "sha256": "81a532ca67d8b607462aef7a628ed105412135f258270a4ea9bae6f77b994105",
+      "github_digest": "sha256:81a532ca67d8b607462aef7a628ed105412135f258270a4ea9bae6f77b994105"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-029",
+      "bytes": 1073741824,
+      "sha256": "2555431fa273d9fa20f3a54da8818b315fd0a80ac30f9658d409ff98d9853ab6",
+      "github_digest": "sha256:2555431fa273d9fa20f3a54da8818b315fd0a80ac30f9658d409ff98d9853ab6"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-030",
+      "bytes": 1073741824,
+      "sha256": "b0e30c2e0a3e19fe09e471f40e1ba8a94e278b8ad1f3acbb3ed5d6d72c0abad8",
+      "github_digest": "sha256:b0e30c2e0a3e19fe09e471f40e1ba8a94e278b8ad1f3acbb3ed5d6d72c0abad8"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-031",
+      "bytes": 1073741824,
+      "sha256": "ed488d4a39dcbf22e96e4151c7f6cda715ef39d04e0fddf0650b6e4621bd5ae5",
+      "github_digest": "sha256:ed488d4a39dcbf22e96e4151c7f6cda715ef39d04e0fddf0650b6e4621bd5ae5"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-032",
+      "bytes": 1073741824,
+      "sha256": "f55bd2cf40f0b0bf64dec23aee1b06e54265e62f3e28c3cc627abc02adaa0440",
+      "github_digest": "sha256:f55bd2cf40f0b0bf64dec23aee1b06e54265e62f3e28c3cc627abc02adaa0440"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-033",
+      "bytes": 1073741824,
+      "sha256": "d975319a36bd9b282e34c91175ce3e3d84ad624bf69c1dd6643f93661f22f8aa",
+      "github_digest": "sha256:d975319a36bd9b282e34c91175ce3e3d84ad624bf69c1dd6643f93661f22f8aa"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-034",
+      "bytes": 1073741824,
+      "sha256": "271653fb8f1d62e7afd77da2922a52e7b4ac96a951028f31d49f3bd1db3ab1e0",
+      "github_digest": "sha256:271653fb8f1d62e7afd77da2922a52e7b4ac96a951028f31d49f3bd1db3ab1e0"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-035",
+      "bytes": 1073741824,
+      "sha256": "0f94465b769911b807072425ca144d34590c335f6962cc91560832541e93d439",
+      "github_digest": "sha256:0f94465b769911b807072425ca144d34590c335f6962cc91560832541e93d439"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-036",
+      "bytes": 1073741824,
+      "sha256": "81afbafaaadba2976c84d864d575892c0be023a59059ef3c8747b896110a6eb0",
+      "github_digest": "sha256:81afbafaaadba2976c84d864d575892c0be023a59059ef3c8747b896110a6eb0"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-037",
+      "bytes": 1073741824,
+      "sha256": "f36e59ffe19a2d92d6f2032dfa7e3ee9081f4945ae5731dbdce9b5c7fb4fa85a",
+      "github_digest": "sha256:f36e59ffe19a2d92d6f2032dfa7e3ee9081f4945ae5731dbdce9b5c7fb4fa85a"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-038",
+      "bytes": 1073741824,
+      "sha256": "08a3dd176404cfb6ff7d079cd4d0a3ca24b93b19c947a1d84f828471251f11f8",
+      "github_digest": "sha256:08a3dd176404cfb6ff7d079cd4d0a3ca24b93b19c947a1d84f828471251f11f8"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-039",
+      "bytes": 1073741824,
+      "sha256": "adeafb5f794a8c83d4d5c5f4bd9d3ad071963f4692098761ecce2205b2279fd2",
+      "github_digest": "sha256:adeafb5f794a8c83d4d5c5f4bd9d3ad071963f4692098761ecce2205b2279fd2"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-040",
+      "bytes": 1073741824,
+      "sha256": "9d395abf39d32d7369ef3924035e9df051566d3c5285142894c0048f91b5aa20",
+      "github_digest": "sha256:9d395abf39d32d7369ef3924035e9df051566d3c5285142894c0048f91b5aa20"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-041",
+      "bytes": 1073741824,
+      "sha256": "7cf47e10329c3666b73c12b1ce9f9b1d6e914dc6a60e8a0856fecdc3a057d944",
+      "github_digest": "sha256:7cf47e10329c3666b73c12b1ce9f9b1d6e914dc6a60e8a0856fecdc3a057d944"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-042",
+      "bytes": 1073741824,
+      "sha256": "9480222bf912e107a5eb37e45fa6c2e82ab3ffb78cd25eb51a80252793d205ba",
+      "github_digest": "sha256:9480222bf912e107a5eb37e45fa6c2e82ab3ffb78cd25eb51a80252793d205ba"
+    },
+    {
+      "name": "esa-project-20261013.tar.zst.part-043",
+      "bytes": 514855770,
+      "sha256": "0e01693f85b5048c70e150994f869de0c3ea477a6ec9ecea159192b008c83b79",
+      "github_digest": "sha256:0e01693f85b5048c70e150994f869de0c3ea477a6ec9ecea159192b008c83b79"
+    },
+    {
+      "name": "project_snapshot.py",
+      "bytes": 10952,
+      "sha256": "d48c7d49c86d29d9c72063bbc0ef7b6bcc713a63e765e9f7e123a55b8f16f6f8",
+      "github_digest": "sha256:d48c7d49c86d29d9c72063bbc0ef7b6bcc713a63e765e9f7e123a55b8f16f6f8"
+    }
+  ],
+  "asset_bytes": 46688753192,
+  "archive_verification": {
+    "entries": 10526,
+    "bytes": 186891293981,
+    "archive_sha256": "b076811626786e4af490249d9755dc7561a78bdccba5e50eff60103e8cc1950c",
+    "manifest_sha256": "93ab18a128780de1d5e2389e34e91f03af44780a2e291080df990a5697459f4c",
+    "verified": true
+  },
+  "published_asset_count": 50,
+  "completed_date": "2026-10-14",
+  "snapshot_source_commit": "751fc1a1a49784c7f42b373c1288f83b15f00c39",
+  "historical_release_check": {
+    "manifest_entries": 3667,
+    "additional_archive_files": 19,
+    "missing": 0,
+    "older_versions_preserved": 3
+  }
+}
