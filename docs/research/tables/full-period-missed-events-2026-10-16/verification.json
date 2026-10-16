@@ -1,0 +1,23 @@
+{
+  "verified": true,
+  "dependency_sha256": {
+    "data/ESA-Mission1/labels.csv": "1564d630f1ec1387d699ec81531ce57118051a220c8b7cba050a446a652b9082",
+    "data/ESA-Mission1/anomaly_types.csv": "e0cadee4ee9697c5ca8d4f9e81067454d7d7a00d063ee0de33cbc77660eec8bc",
+    "results_longrun/long_baseline/ch40_47_train2000_2005_seed42/full_period/assessment_prediction.npy": "9561c5a92e017645d17fdd1bd0a2c4a524bbb93a3ce4c23906c776b257cc4826",
+    "results_longrun/long_baseline/ch40_47_train2000_2005_seed42/full_period/results.json": "e4c12a337b6d7a9b3bfdd595fea8250af7e0c50ba6528de5fcc1574f5a2ac3cd",
+    "results_longrun/long_baseline/ch40_47_train2000_2005_seed42/yearly_results.csv": "24c4d0ee1700c29bdd6f6712a2d7d0843588a0476f5d79c95c9376ad06ee6de9",
+    "results_longrun/short_no_roll_full_20261014_seed42_v1/full_period/assessment_prediction.npy": "e49f47e453a88946f941c5e9d1b6fdf04159e9f104b3df0a6dcccf77f946df75",
+    "results_longrun/short_no_roll_full_20261014_seed42_v1/all_results.csv": "7dc2d6470d521feb979b9442ed53853409f0581b73fe9fe5308a19c00915dae2"
+  },
+  "checks": [
+    "Pooled and all annual detections reconcile with saved corrected metrics",
+    "Per-ID detection counts reconcile with evaluator TPe",
+    "Annotation coverage calculated within each reporting period"
+  ],
+  "limits": [
+    "Descriptive reused-test audit only; no input selection or threshold tuning",
+    "Annotations are not proof of model observability or causal detection",
+    "Channel counts overlap and must not be summed",
+    "Annual event IDs can recur across years"
+  ]
+}

@@ -5,6 +5,19 @@ Read this before proposing work. The chat is not required to continue the projec
 
 ## 1. Current task and decision
 
+**16 October missed-event audit completed after user approval.** See
+`docs/research/full-period-missed-events-2026-10-16.md` and associated tables.
+Pooled outcomes: both detect46, baseline-only8, candidate-only2, both miss35.
+Candidate misses43: 20 input-annotated, 23 outside-input-only. All eight lost
+detections have input annotations; the loss of recall cannot be explained solely
+by restricted channel coverage. 2010 misses split5inside/4outside; 2012 split5/1.
+20 of23 outside-input misses involve14/21/29, but prior expansion already increased
+false alarms: this test-derived description must not select new inputs. Dependency
+hashes and all annual/pooled event-count/metric reconciliations passed; seven
+evaluator tests passed. No training/tuning occurred. Next is consolidation of
+training/development coverage and score evidence with prior failed experiments,
+then a literature-supported single controlled hypothesis, not another blind run.
+
 **16 October completion:** full-period short-no-roll training and assessment are
 finished. Independent artifact/source/frozen-data hash checks, prediction replay
 and all 16 annual/pooled corrected metric rows passed. System pooled F0.5 is
