@@ -1,0 +1,29 @@
+{
+  "verified": true,
+  "samples": 7364160,
+  "epochs": 40,
+  "selected_epoch": 10,
+  "artifact_hashes": {
+    "protocol.json": "66508e48e49afa9ba28d4b3f3a2d97d71ac5147d6a9d8c7682852d5e8c895603",
+    "pooled_results.csv": "30e77db57351957548cb83b7fad3d020878c1659af69dc4edfc211b6eab9aff8",
+    "REPORT.md": "65fd6d0a4d7228a852c2c65c477b3efed5c8bf416f0b8e6966260259b4623c82",
+    "all_results.csv": "7dc2d6470d521feb979b9442ed53853409f0581b73fe9fe5308a19c00915dae2",
+    "yearly_results.csv": "e07d9d14278373be929d5ec53c39b0387b0c8d3ba6831454c511e305a73e36eb",
+    "resume_protocol.json": "66508e48e49afa9ba28d4b3f3a2d97d71ac5147d6a9d8c7682852d5e8c895603",
+    "full_period/frozen_rule.json": "8be1b7c89a1311295bbb511ae390fa2bde1f98c8f81af9d8c672676db484828d",
+    "full_period/history.csv": "b9271ac98d803ab286804c5497b8c6f6f0a467b86c2000a91f93c9fc0189fd71",
+    "full_period/calibration_candidates.csv": "f1f1929248bf71e6bf8cfe3c7ef7d699c0dd9ef1e322f283933830076903954d",
+    "full_period/assessment_score.npy": "d2fc612c2e06f8d0f62e9e5e3634ccddd63488fc2241cc3d99eb70129dd42eda",
+    "full_period/checkpoint_last.pt": "15857e40dd090e90b352f7abf6e950e53a1650816e2c5e2c475215028d967e6b",
+    "full_period/results.json": "43122d2ed35f28feaaf51b58e68ae7ce8c00dabff466bbdc0336bb1e6f318f86",
+    "full_period/model_checkpoint.pt": "ad232a23dc957bf7ca21fd5d6de3c26196f5c9d59f77effec1647abb65cdeb72",
+    "full_period/assessment_prediction.npy": "e49f47e453a88946f941c5e9d1b6fdf04159e9f104b3df0a6dcccf77f946df75"
+  },
+  "checks": [
+    "All recorded run artifacts and package source hashes",
+    "All frozen data hashes",
+    "Earliest maximum calibration checkpoint",
+    "Independent direct-threshold prediction replay",
+    "All 16 annual/pooled metric rows replayed from raw annotations"
+  ]
+}

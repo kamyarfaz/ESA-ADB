@@ -5,6 +5,21 @@ Read this before proposing work. The chat is not required to continue the projec
 
 ## 1. Current task and decision
 
+**16 October completion:** full-period short-no-roll training and assessment are
+finished. Independent artifact/source/frozen-data hash checks, prediction replay
+and all 16 annual/pooled corrected metric rows passed. System pooled F0.5 is
+**0.8360701968**, input-scope **0.9071395304**. System baseline was 0.8057217337;
+precision improved but event recall fell (54/91 to 48/91). This is below the
+system target and is a single-seed reused-benchmark comparison, not a pure roll-only
+ablation or independent validation. No new experiment is authorized by completion.
+See `docs/research/full-short-no-roll-results-2026-10-16.md` and its verified tables.
+The latest system-only workbook includes all completed candidate annual and
+pooled results with event TPR and duration-based FPR. All 16 workbook formulas
+match replay; formula-error scan and visual checks passed. Seven evaluator tests
+passed. Service completed successfully without restarts and has been disabled.
+Older active/pending paragraphs below are historical. Completion backup and
+heartbeat shutdown are being finalized; check the completion report for evidence.
+
 16 October workbook update: the user requires identical train/calibration/test
 periods and run counts, system-only evaluation, and FPR/TPR instead of false-event
 count. Revised compact workbook:

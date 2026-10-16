@@ -9,9 +9,9 @@ It supersedes the October13 compact workbook for the final comparison, while
 the older workbook remains an intact historical record of different protocols.
 
 Shared reference: train2000–2005, calibration2006, continuous test2007–2013,
-40epochs, all nominal windows, batch64, one planned run/seed42, inputs40–47.
-Only the baseline is completed. The short-no-roll row and its annual slices
-remain pending until the currently running experiment completes verification.
+40epochs, all nominal windows, batch64, one completed run/seed42, inputs40–47.
+Both baseline and short-no-roll are complete. Candidate pooled and annual rows
+were populated after independent prediction, metric and artifact verification.
 Do not turn missing results into zero, choose a favorable seed from historical
 three-seed runs, or relabel old development periods as the common full-period test.
 Other historical studies have different splits or budgets and cannot be put into
@@ -28,9 +28,9 @@ Precision and event F0.5 retain their corrected duration-penalized definitions.
 
 The full pooled and seven annual baseline rows were independently recomputed from
 the original prediction mask and raw annotations. Inputs matched the preserved
-migration SHA256 entries. All eight Excel F0.5 formulas match replayed values.
+migration SHA256 entries. All sixteen Excel F0.5 formulas match replayed values.
 Formula-error inspection found no errors and both populated sections were rendered
-and visually reviewed. Formula values are numeric; pending candidate cells are text.
+and visually reviewed. All completed metric values are numeric.
 
 The historical baseline is context for the short-no-roll augmentation method,
 not a matched short-coordinated control that isolates only short-roll removal.
@@ -38,6 +38,6 @@ The workbook states this limitation. Identical splits/runs do not erase model or
 augmentation differences. Benchmark years were previously inspected and remain
 reused assessment, not independent confirmation.
 
-At run completion update this workbook's pending system-level rows using verified
-yearly/pooled outputs. Keep the common protocol and definitions. Training source,
-frozen data and the running protocol were not modified by this reporting change.
+The completed candidate rows use independently verified yearly/pooled outputs.
+The common protocol and definitions were preserved. Training source, frozen data
+and the run protocol were not modified by this reporting change.

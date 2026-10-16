@@ -66,7 +66,66 @@
     "data/ESA-Mission1/anomaly_types.csv": "e0cadee4ee9697c5ca8d4f9e81067454d7d7a00d063ee0de33cbc77660eec8bc"
   },
   "baseline_verified": true,
-  "candidate_status": "In progress",
+  "candidate_status": "Complete",
   "fpr": "Nominal false-alarm duration / nominal duration; not pointwise FP/(FP+TN)",
-  "tpr": "Detected target event IDs / all target event IDs (event recall)"
+  "tpr": "Detected target event IDs / all target event IDs (event recall)",
+  "candidate_rows": [
+    {
+      "period": "2007-2013",
+      "precision": 0.9793058582615488,
+      "tpr": 0.5274725274725275,
+      "fpr": 0.0002919363580021761,
+      "f05": 0.8360701968268796
+    },
+    {
+      "period": "2007",
+      "precision": 0.9995390140067242,
+      "tpr": 0.6875,
+      "fpr": 0.0004609859932758198,
+      "f05": 0.916356743539128
+    },
+    {
+      "period": "2008",
+      "precision": 0.999508119418822,
+      "tpr": 0.5384615384615384,
+      "fpr": 0.0004918805811779947,
+      "f05": 0.8533717322059889
+    },
+    {
+      "period": "2009",
+      "precision": 0.9995740169758751,
+      "tpr": 0.5833333333333334,
+      "fpr": 0.0004259830241248874,
+      "f05": 0.8747390520499043
+    },
+    {
+      "period": "2010",
+      "precision": 0.9998081763526087,
+      "tpr": 0.25,
+      "fpr": 0.0001918236473913426,
+      "f05": 0.624940049360215
+    },
+    {
+      "period": "2011",
+      "precision": 0.9998584247339305,
+      "tpr": 0.5333333333333333,
+      "fpr": 0.00014157526606950466,
+      "f05": 0.850981790616141
+    },
+    {
+      "period": "2012",
+      "precision": 0.7999153173230444,
+      "tpr": 0.4,
+      "fpr": 0.00010585334619450659,
+      "f05": 0.6666196190749765
+    },
+    {
+      "period": "2013",
+      "precision": 0.9997639198660909,
+      "tpr": 0.5714285714285714,
+      "fpr": 0.0002360801339090779,
+      "f05": 0.8694223987311318
+    }
+  ],
+  "candidate_verified": true
 }
