@@ -1,0 +1,17 @@
+{
+  "verified": true,
+  "release_url": "https://github.com/kamyarfaz/ESA-ADB/releases/tag/short-no-roll-full-2026-10-16",
+  "assets": [
+    {
+      "name": "manifest.json",
+      "bytes": 4421,
+      "sha256": "e2a1540b7b7070e75fd7368b59a63f93e3de210d54ae474c2567d26afe8a24f6"
+    },
+    {
+      "name": "short-no-roll-results.tar.gz",
+      "bytes": 25658159,
+      "sha256": "0abe912895ea86adef83d810556b206201d32ac3595a2223107fa2b0df10f2be"
+    }
+  ],
+  "archive_files_verified": 22
+}

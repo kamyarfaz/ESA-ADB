@@ -17,8 +17,12 @@ The latest system-only workbook includes all completed candidate annual and
 pooled results with event TPR and duration-based FPR. All 16 workbook formulas
 match replay; formula-error scan and visual checks passed. Seven evaluator tests
 passed. Service completed successfully without restarts and has been disabled.
-Older active/pending paragraphs below are historical. Completion backup and
-heartbeat shutdown are being finalized; check the completion report for evidence.
+Older active/pending paragraphs below are historical. Compact results/workbook
+were pushed in commit 0825e90. Release `short-no-roll-full-2026-10-16` backs up
+22 verified files including predictions, scores and both checkpoints; both GitHub
+asset sizes/SHA256 digests match local files. Evidence is in the report's tables
+directory (`github-backup.json`). The completed heartbeat was deleted to stop
+further checks. No training job or follow-up remains active for this run.
 
 16 October workbook update: the user requires identical train/calibration/test
 periods and run counts, system-only evaluation, and FPR/TPR instead of false-event

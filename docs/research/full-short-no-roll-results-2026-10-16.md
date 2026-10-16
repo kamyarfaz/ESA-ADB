@@ -64,3 +64,14 @@ The thesis workbook is
 `outputs/thesis-system-20261016/deliverables/ESA_thesis_results.xlsx`.
 It contains verified system-only precision, event TPR, duration-based FPR and F0.5
 for both methods and all years. FPR is not a pointwise or event-count FPR.
+
+## Preservation
+
+Compact results and workbook were pushed in commit `0825e90`. Essential run
+artifacts (including predictions, scores, selected model and final optimizer/RNG
+checkpoint) are in the [verified GitHub Release](https://github.com/kamyarfaz/ESA-ADB/releases/tag/short-no-roll-full-2026-10-16).
+All 22 archive files were checked against local bytes; both uploaded assets match
+local SHA256 and size. See `tables/full-short-no-roll-2026-10-16/github-backup.json`.
+This additive backup does not replace the full project snapshot or resolve the
+unrelated historical migration checksum exception. The completed service is
+disabled and the completed heartbeat was deleted to stop further polling.
