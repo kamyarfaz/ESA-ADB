@@ -1,0 +1,14 @@
+{
+  "dependency_sha256": {
+    "data/ESA-Mission1/labels.csv": "1564d630f1ec1387d699ec81531ce57118051a220c8b7cba050a446a652b9082",
+    "data/ESA-Mission1/anomaly_types.csv": "e0cadee4ee9697c5ca8d4f9e81067454d7d7a00d063ee0de33cbc77660eec8bc",
+    "docs/research/tables/inner-event-audit-2026-10-08/events.csv": "13b897f2dd14af93b3c6f253423732af09c8c43790e699445fbc4e81cb61dfd2"
+  },
+  "checks": [
+    "Annual coverage reproduced prior diversity audit",
+    "Pooled IDs deduplicated across 2000\u20132005",
+    "All six internal joint-model event-score groups included"
+  ],
+  "scope": "No 2006 calibration or 2007\u20132013 predictions, scores or telemetry read; raw annotations filtered to periods before 2006 for coverage",
+  "limits": "Event-score summary reuses original-hash verified prior audit, not new model inference; these development periods were already inspected"
+}

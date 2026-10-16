@@ -5,6 +5,19 @@ Read this before proposing work. The chat is not required to continue the projec
 
 ## 1. Current task and decision
 
+**16 October development consolidation completed.** User approved investigating
+training/development evidence. See `docs/research/development-evidence-review-2026-10-16.md`.
+Recomputed 2000–2005 coverage: 95 unique IDs,46 input-annotated,49 outside inputs.
+Verified prior joint internal score audit: 2002 nominal scores exceed event peaks
+for49.07–67.50% of nominal timestamps across event/seed pairs. Reviewed failed
+expansion, masking, residual normalization/forecasting, isolation and adaptive
+scoring; checked primary literature with explicit metric/forecasting limitations.
+No new model is justified yet. One next diagnostic is predeclared: replay six
+frozen internal joint models with per-channel errors, first reproduce scalar
+scores/masks, then assess per-channel error separation and max-score attribution.
+It is **not executed yet** and changes no predictions or thresholds. No new
+training, benchmark scoring, input choice or claims of independent validation.
+
 **16 October missed-event audit completed after user approval.** See
 `docs/research/full-period-missed-events-2026-10-16.md` and associated tables.
 Pooled outcomes: both detect46, baseline-only8, candidate-only2, both miss35.
