@@ -1,0 +1,72 @@
+{
+  "rows": [
+    {
+      "period": "2007-2013",
+      "precision": 0.8848713352240037,
+      "tpr": 0.5934065934065934,
+      "fpr": 0.00042312132103283773,
+      "f05": 0.8057217336876309
+    },
+    {
+      "period": "2007",
+      "precision": 0.812122808532445,
+      "tpr": 0.8125,
+      "fpr": 0.000464235652375411,
+      "f05": 0.8121982188064382
+    },
+    {
+      "period": "2008",
+      "precision": 0.7771721069469436,
+      "tpr": 0.5384615384615384,
+      "fpr": 0.0007787196396439322,
+      "f05": 0.7138769723031541
+    },
+    {
+      "period": "2009",
+      "precision": 0.999439848238542,
+      "tpr": 0.6666666666666666,
+      "fpr": 0.000560151761457961,
+      "f05": 0.9087205042326162
+    },
+    {
+      "period": "2010",
+      "precision": 0.9997350139445674,
+      "tpr": 0.4166666666666667,
+      "fpr": 0.00026498605543257003,
+      "f05": 0.7811205994191147
+    },
+    {
+      "period": "2011",
+      "precision": 0.9996233578709021,
+      "tpr": 0.4666666666666667,
+      "fpr": 0.00037664212909793715,
+      "f05": 0.8137538357009343
+    },
+    {
+      "period": "2012",
+      "precision": 0.7140406749775321,
+      "tpr": 0.5,
+      "fpr": 0.0003430550314550418,
+      "f05": 0.6577284209119703
+    },
+    {
+      "period": "2013",
+      "precision": 0.9998392011629614,
+      "tpr": 0.6428571428571429,
+      "fpr": 0.00016079883703856712,
+      "f05": 0.8998957976620268
+    }
+  ],
+  "sha256": {
+    "results_longrun/long_baseline/ch40_47_train2000_2005_seed42/full_period/assessment_prediction.npy": "9561c5a92e017645d17fdd1bd0a2c4a524bbb93a3ce4c23906c776b257cc4826",
+    "results_longrun/long_baseline/ch40_47_train2000_2005_seed42/full_period/results.json": "e4c12a337b6d7a9b3bfdd595fea8250af7e0c50ba6528de5fcc1574f5a2ac3cd",
+    "results_longrun/long_baseline/ch40_47_train2000_2005_seed42/yearly_results.csv": "24c4d0ee1700c29bdd6f6712a2d7d0843588a0476f5d79c95c9376ad06ee6de9",
+    "results_longrun/long_baseline/ch40_47_train2000_2005_seed42/protocol.json": "cc423044d810db5b796de7752053684de09bb3f1bca922854880cca2b3971a42",
+    "data/ESA-Mission1/labels.csv": "1564d630f1ec1387d699ec81531ce57118051a220c8b7cba050a446a652b9082",
+    "data/ESA-Mission1/anomaly_types.csv": "e0cadee4ee9697c5ca8d4f9e81067454d7d7a00d063ee0de33cbc77660eec8bc"
+  },
+  "baseline_verified": true,
+  "candidate_status": "In progress",
+  "fpr": "Nominal false-alarm duration / nominal duration; not pointwise FP/(FP+TN)",
+  "tpr": "Detected target event IDs / all target event IDs (event recall)"
+}

@@ -1,9 +1,31 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
-Updated **14 October 2026**. This is the current entry point for a new assistant.
+Updated **16 October 2026**. This is the current entry point for a new assistant.
 Read this before proposing work. The chat is not required to continue the project.
 
 ## 1. Current task and decision
+
+16 October workbook update: the user requires identical train/calibration/test
+periods and run counts, system-only evaluation, and FPR/TPR instead of false-event
+count. Revised compact workbook:
+`outputs/thesis-system-20261016/deliverables/ESA_thesis_results.xlsx`.
+See `docs/research/thesis-workbook-policy-2026-10-16.md`. Baseline full-period
+metrics were replayed and verified; short-no-roll cells remain pending. When the
+active run finishes, update this workbook with verified system-only annual and
+pooled results. TPR is event recall; FPR is explicitly nominal false-alarm time
+fraction. Do not mix old development protocols or select one favorable seed.
+
+16 October recovery: the original process was absent; its log ended in epoch3,
+batch3300 on14October15:31 Europe/Rome. Host boot time was14October15:55;
+no traceback identifies the original stop cause. Epoch2 checkpoint is readable
+and finite; every protocol-recorded source hash matches. No final scores exist.
+Resuming under persistent user service `esa-short-no-roll.service`, enabled with
+linger already active. Use `systemctl --user status esa-short-no-roll.service`.
+Current log: `/home/k_faz/project-backups/run-logs/full-short-no-roll-resume-20261016.log`.
+The service retries failures up to three starts/hour and resumes saved epochs;
+do not start a second runner. Source/settings/data are unchanged. After verified
+completion disable the service and pause the existing heartbeat. The original
+PID/session notes below are historical and must not be treated as live state.
 
 **Latest request: run short-no-roll on the full 2007–2013 period and report every
 year plus pooled F0.5.** This explicit request supersedes the earlier no-extension
