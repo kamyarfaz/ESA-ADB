@@ -13,6 +13,9 @@ calibration gate remains failed:2002/seed44 calibration cannot meet both score a
 mask checks on tested CUDA/CPU paths, including original two-thread setting.
 V3 retains stopped.json and has supplementary_status.json, NOT complete.json.
 No replay is running. No training, thresholds or historical predictions changed.
+Compact results pushed; release `channel-validation-2026-10-17` preserves85
+verified files. Both uploaded asset sizes/SHA256 digests match local files; see
+the validation tables directory github-backup.json.
 All five input-annotated validation IDs and three seeds are included: id86 shows
 channel-specific upper-error evidence obscured by channel47 maximum; id25 has
 ordinary/lower errors on both annotated inputs across all seeds. Aggregation alone

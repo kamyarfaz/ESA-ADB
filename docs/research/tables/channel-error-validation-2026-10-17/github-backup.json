@@ -1,0 +1,16 @@
+{
+  "release_url": "https://github.com/kamyarfaz/ESA-ADB/releases/tag/channel-validation-2026-10-17",
+  "verified": true,
+  "assets": [
+    {
+      "name": "channel-validation.tar.gz",
+      "sha256": "5c19b4fa8e1d2b4d486f9c11b026032b1408ad3f4c29c57f0013f2ca00373a4c",
+      "bytes": 16602924
+    },
+    {
+      "name": "manifest.json",
+      "sha256": "56e02c261c3058c851e9fd70111595dbfcf7f4a7c0d44d9a2af28214c69cf378",
+      "bytes": 13905
+    }
+  ]
+}
