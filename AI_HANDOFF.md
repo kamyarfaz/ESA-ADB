@@ -5,18 +5,22 @@ Read this before proposing work. The chat is not required to continue the projec
 
 ## 1. Current task and decision
 
-**17 October channel replay attempted; incomplete at the strict verification gate.**
-See `docs/research/channel-error-replay-results-2026-10-17.md` and protocol.
-Five of six frozen models passed,15/18stages,10 exact calibration/validation masks.
-2002/seed44 calibration: GPU scores fail fixed tolerance at128 timestamps; CPU
-scores pass tolerance but32 binary predictions differ. No tolerance/threshold
-was changed. Earlier2001/seed42 GPU one-ULP threshold ties were resolved on CPU.
-V1/V2 failed evidence is preserved; V3 reuses15 hashed successful stages and
-contains `stopped.json`, NOT `complete.json`. No replay remains running.
-124 tests passed; partial summaries are explicitly labeled. Do not promote a
-new score/model using the incomplete cohort. Resolve numerical reproducibility
-for the last checkpoint before interpreting a complete six-model comparison.
-Do not rerun blindly or treat the older 'not executed' note as current.
+**17 October supplementary validation diagnostic completed.**
+See `docs/research/channel-error-validation-results-2026-10-17.md`.
+All six internal models reproduce validation scores within the unchanged tolerance
+and saved masks exactly. All17 completed stage file hashes passed;124 thesis tests passed. Full original
+calibration gate remains failed:2002/seed44 calibration cannot meet both score and
+mask checks on tested CUDA/CPU paths, including original two-thread setting.
+V3 retains stopped.json and has supplementary_status.json, NOT complete.json.
+No replay is running. No training, thresholds or historical predictions changed.
+All five input-annotated validation IDs and three seeds are included: id86 shows
+channel-specific upper-error evidence obscured by channel47 maximum; id25 has
+ordinary/lower errors on both annotated inputs across all seeds. Aggregation alone
+is not an established solution.2001 peaks can rank highly but frozen rules miss.
+Retrospective tail ranks are not detection metrics. Do not repeat normalization
+or launch a training sweep. Next design must address both channel comparability
+and calibration transfer, distinguishing prior failed approaches. Numerical
+calibration reproduction remains unresolved; do not relabel original gate passed.
 
 **16 October development consolidation completed.** User approved investigating
 training/development evidence. See `docs/research/development-evidence-review-2026-10-16.md`.

@@ -58,3 +58,14 @@ Outputs: `results_longrun/diagnostics/channel_error_replay_20261017_v3/`.
 Investigation: `results_longrun/diagnostics/channel_error_precision_20261017_v1/`.
 Source: `scripts/research/channel_error_replay.py` and
 `scripts/research/investigate_channel_replay_precision.py`.
+
+## Supplementary continuation after failed calibration gate
+
+On 17 October the user instructed continuation. A separately labeled diagnostic
+completed only 2002/seed44 validation and training, with original two CPU threads
+and the same CUDA inference settings. Validation independently requires the same
+scalar tolerance and exact saved mask. This permits a complete six-model
+validation description, not a claim that the original calibration gate passed.
+No acceptance criterion was relaxed. `supplementary_status.json` records six
+validation stages, five calibration stages, six training summaries and the
+unresolved calibration failure. See `channel-error-validation-results-2026-10-17.md`.

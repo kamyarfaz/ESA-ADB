@@ -1,0 +1,16 @@
+{
+  "release_url": "https://github.com/kamyarfaz/ESA-ADB/releases/tag/channel-replay-partial-2026-10-17",
+  "verified": true,
+  "assets": [
+    {
+      "name": "manifest.json",
+      "sha256": "adc1a51262e8fd777584278e7faa6b3e117f191cbc42980ac6077bc23134698c",
+      "bytes": 13146
+    },
+    {
+      "name": "partial-channel-replay.tar.gz",
+      "sha256": "194ff3448fab6a6bbd5253c9ef738b6a81a18cb37c96eed6ca573c752a9ce5ad",
+      "bytes": 13038811
+    }
+  ]
+}
