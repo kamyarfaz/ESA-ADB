@@ -5,6 +5,18 @@ Read this before proposing work. The chat is not required to continue the projec
 
 ## 1. Current task and decision
 
+**17 October numerical audit completed; historical gate still failed.**
+See `docs/research/calibration-numerics-2026-10-17.md`. Two fresh CUDA calls to the
+original scoring function are bitwise identical to each other and prior CUDA
+replay.128 tolerance failures have scores0.913–0.926, far below threshold72.1623;
+CUDA mask exact. CPU32 mask changes are one-ULP threshold ties. All three original/
+CUDA/CPU corrected calibration metric dictionaries match. Seven evaluator tests
+passed. Inference dependencies and run artifacts/raw data hashes verified;
+development.py differs but load_period AST matches checksum-verified historical
+source exactly. No tolerances/thresholds changed, no training. Stop blind numerical
+setting searches. Continue protocol design using documented stable local execution;
+retain cross-platform reproduction limitation and original historical arrays.
+
 **17 October supplementary validation diagnostic completed.**
 See `docs/research/channel-error-validation-results-2026-10-17.md`.
 All six internal models reproduce validation scores within the unchanged tolerance

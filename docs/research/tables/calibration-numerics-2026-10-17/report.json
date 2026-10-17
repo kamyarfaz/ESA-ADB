@@ -1,0 +1,312 @@
+{
+  "status": "audit_only_original_gate_unchanged",
+  "rule": {
+    "threshold": 72.16232299804688,
+    "merge_gap": 0,
+    "min_dur": 1,
+    "val_esa_f05": 0.7691731680767528,
+    "val_event_f05": 0.7691731680767528,
+    "val_event_precision": 0.9998783232567259,
+    "val_event_recall": 0.4,
+    "val_pred_anomaly_rate": 0.004972375690607734,
+    "val_saturated": false,
+    "val_EW_F_0.50": 0.7691731680767528,
+    "val_EW_precision": 0.9998783232567259,
+    "val_EW_recall": 0.4,
+    "val_TPe": 2,
+    "val_FPe": 0,
+    "val_FNe": 3,
+    "val_num_true_events": 5,
+    "val_num_pred_events": 2,
+    "val_alarming_precision": 1.0,
+    "val_nominal_seconds": 14427900.951,
+    "val_false_positive_seconds": 1755.54,
+    "val_nominal_false_alarm_rate": 0.00012167674327412392,
+    "val_false_alarms_per_day": 0.0,
+    "val_metric_version": "esa-ew-id-duration-v1",
+    "selection_name": "best_val_esa_f05_val_pred_rate_lte_0.01",
+    "selection_type": "clean_validation_selected"
+  },
+  "rows": [
+    {
+      "name": "historical",
+      "score_tolerance_pass": true,
+      "score_fail_samples": 0,
+      "mask_diff_samples": 0,
+      "max_abs_error": 0.0,
+      "score_fail_reference_range": null,
+      "score_fail_max_abs_error": 0,
+      "mask_changes_at_historical_threshold": true,
+      "changed_values": []
+    },
+    {
+      "name": "previous_cuda",
+      "score_tolerance_pass": false,
+      "score_fail_samples": 128,
+      "mask_diff_samples": 0,
+      "max_abs_error": 4.76837158203125e-05,
+      "score_fail_reference_range": [
+        0.9129774570465088,
+        0.9262720942497253
+      ],
+      "score_fail_max_abs_error": 1.1622905731201172e-05,
+      "mask_changes_at_historical_threshold": true,
+      "changed_values": []
+    },
+    {
+      "name": "previous_cpu",
+      "score_tolerance_pass": true,
+      "score_fail_samples": 0,
+      "mask_diff_samples": 32,
+      "max_abs_error": 6.29425048828125e-05,
+      "score_fail_reference_range": null,
+      "score_fail_max_abs_error": 0,
+      "mask_changes_at_historical_threshold": true,
+      "changed_values": [
+        {
+          "timestamp": "2002-06-23T21:04:00.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:04:30.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:05:00.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:05:30.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:06:00.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:06:30.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:07:00.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:07:30.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:08:00.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:08:30.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:09:00.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:09:30.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:10:00.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:10:30.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:11:00.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:11:30.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:12:00.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:12:30.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:13:00.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:13:30.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:14:00.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:14:30.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:15:00.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:15:30.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:16:00.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:16:30.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:17:00.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:17:30.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:18:00.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:18:30.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:19:00.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        },
+        {
+          "timestamp": "2002-06-23T21:19:30.000000000",
+          "reference": 72.16232299804688,
+          "replay": 72.1623306274414,
+          "float32_ulps": 1.0
+        }
+      ]
+    },
+    {
+      "name": "repeat_cuda_1",
+      "score_tolerance_pass": false,
+      "score_fail_samples": 128,
+      "mask_diff_samples": 0,
+      "max_abs_error": 4.76837158203125e-05,
+      "score_fail_reference_range": [
+        0.9129774570465088,
+        0.9262720942497253
+      ],
+      "score_fail_max_abs_error": 1.1622905731201172e-05,
+      "mask_changes_at_historical_threshold": true,
+      "changed_values": []
+    },
+    {
+      "name": "repeat_cuda_2",
+      "score_tolerance_pass": false,
+      "score_fail_samples": 128,
+      "mask_diff_samples": 0,
+      "max_abs_error": 4.76837158203125e-05,
+      "score_fail_reference_range": [
+        0.9129774570465088,
+        0.9262720942497253
+      ],
+      "score_fail_max_abs_error": 1.1622905731201172e-05,
+      "mask_changes_at_historical_threshold": true,
+      "changed_values": []
+    }
+  ],
+  "repeat_cuda_bitwise_equal": true,
+  "prior_cuda_bitwise_equal": true,
+  "source_hashes_verified_except_development_module": true,
+  "load_period_ast_identical_to_historical": true,
+  "checkpoint_sha256": "3ded438acc8f79e9deb96f8474caf9af720c243bb482e72b7de5de2182fa374b",
+  "data_sha256": "fe6812dd5d324fe2eb347a703894551f0a03f40253742a3cd35f42d02fdb80ad",
+  "torch": "2.6.0+cu124",
+  "gpu": "NVIDIA GeForce RTX 2080 Ti",
+  "threads": 2,
+  "inference_source_sha256": {
+    "augmentation_comparison.py": "108be7f43743416db147f9c6cc01923ccea252b300165b08a52c0252b24ac103",
+    "diagnose_channels.py": "7b306a7b71440e34dbc48aa730d579682637830ad986cc5e1130c997920c3d81",
+    "models.py": "3f8137d6640a15d2d51594c8a2f337a57f3c17882944b14a0c00bd4ce5fa38c6",
+    "config.py": "f6d0957cabf5a0005483710f1386093a8758ba20e8c61fcb9e5fcded61a7f18d",
+    "data.py": "c2fa6c8e3757d2fa95c865283bccd143ddb1229b451b82c308805e9b61385972",
+    "development.py": "3b21061c0c6e98b86c9275a13cd759595fa494215c530621add238c8b560cce0",
+    "thresholds.py": "85e5743196eec94d3580e381126080c9757f89ec3d467b5df6d8943b3e6e864c",
+    "runtime.py": "dded85c44cb7d74c7964fc72046122b7999849d88ac9ec423557c2f2772162ba"
+  },
+  "artifacts": {
+    "repeat_cuda_1.npy": "020643eda571eddc97d184b4a22dd24ee76369e71c400ad046b9916419c522f3",
+    "repeat_cuda_2.npy": "020643eda571eddc97d184b4a22dd24ee76369e71c400ad046b9916419c522f3"
+  }
+}

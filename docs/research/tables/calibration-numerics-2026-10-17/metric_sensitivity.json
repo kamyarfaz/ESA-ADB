@@ -1,0 +1,50 @@
+{
+  "historical": {
+    "EW_F_0.50": 0.7691731680767528,
+    "EW_precision": 0.9998783232567259,
+    "EW_recall": 0.4,
+    "TPe": 2,
+    "FPe": 0,
+    "FNe": 3,
+    "num_true_events": 5,
+    "num_pred_events": 2,
+    "alarming_precision": 1.0,
+    "nominal_seconds": 14427900.951,
+    "false_positive_seconds": 1755.54,
+    "nominal_false_alarm_rate": 0.00012167674327412392,
+    "false_alarms_per_day": 0.0,
+    "metric_version": "esa-ew-id-duration-v1"
+  },
+  "cuda": {
+    "EW_F_0.50": 0.7691731680767528,
+    "EW_precision": 0.9998783232567259,
+    "EW_recall": 0.4,
+    "TPe": 2,
+    "FPe": 0,
+    "FNe": 3,
+    "num_true_events": 5,
+    "num_pred_events": 2,
+    "alarming_precision": 1.0,
+    "nominal_seconds": 14427900.951,
+    "false_positive_seconds": 1755.54,
+    "nominal_false_alarm_rate": 0.00012167674327412392,
+    "false_alarms_per_day": 0.0,
+    "metric_version": "esa-ew-id-duration-v1"
+  },
+  "cpu": {
+    "EW_F_0.50": 0.7691731680767528,
+    "EW_precision": 0.9998783232567259,
+    "EW_recall": 0.4,
+    "TPe": 2,
+    "FPe": 0,
+    "FNe": 3,
+    "num_true_events": 5,
+    "num_pred_events": 2,
+    "alarming_precision": 1.0,
+    "nominal_seconds": 14427900.951,
+    "false_positive_seconds": 1755.54,
+    "nominal_false_alarm_rate": 0.00012167674327412392,
+    "false_alarms_per_day": 0.0,
+    "metric_version": "esa-ew-id-duration-v1"
+  }
+}
