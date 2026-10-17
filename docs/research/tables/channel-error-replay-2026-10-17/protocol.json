@@ -1,0 +1,35 @@
+{
+  "source": "/home/k_faz/projects/ESA-ADB/results_longrun/development/inner_selection_cuda_v2",
+  "source_protocol_sha256": "0642423be42f0f2fa9bccd3c525a649f64e0b9bc13668694c479403178a8ce51",
+  "script_sha256": "9767c4a22f946cabebd0dd8ccf896b11e2191455dc52774c63486b9221d80ce7",
+  "annotation_hashes": {
+    "data/ESA-Mission1/labels.csv": "1564d630f1ec1387d699ec81531ce57118051a220c8b7cba050a446a652b9082",
+    "data/ESA-Mission1/anomaly_types.csv": "e0cadee4ee9697c5ca8d4f9e81067454d7d7a00d063ee0de33cbc77660eec8bc"
+  },
+  "train_sha256": "fe6812dd5d324fe2eb347a703894551f0a03f40253742a3cd35f42d02fdb80ad",
+  "features": [
+    "channel_40",
+    "channel_41",
+    "channel_42",
+    "channel_43",
+    "channel_44",
+    "channel_45",
+    "channel_46",
+    "channel_47"
+  ],
+  "folds": [
+    2001,
+    2002
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "policy": "calibration_selected",
+  "score_rtol": 1e-05,
+  "score_atol": 1e-06,
+  "batch_size": 64,
+  "notes": "Nominal distributions exclude all annotation intervals. Error minima/median changes are descriptive, not new anomaly rules. No outer test use.",
+  "numerical_replay": "GPU first; if score tolerance or exact frozen mask differs, repeat that stage on CPU and require original score tolerance and exact mask. No threshold edits. Failed v1/v2 preserved; verified v2 stages reused by hash."
+}

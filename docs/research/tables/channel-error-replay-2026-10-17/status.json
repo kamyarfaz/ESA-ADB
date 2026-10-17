@@ -1,0 +1,140 @@
+{
+  "status": "stopped_at_predeclared_replay_gate",
+  "complete_models": 5,
+  "planned_models": 6,
+  "completed_stages": 15,
+  "planned_stages": 18,
+  "verified_calibration_validation_masks": 10,
+  "failure": {
+    "fold": 2002,
+    "seed": 44,
+    "period": "calibration",
+    "gpu_score_tolerance_passed": false,
+    "cpu_score_tolerance_passed": true,
+    "cpu_prediction_mismatches": 32,
+    "samples": 521280
+  },
+  "stages": [
+    {
+      "fold": 2001,
+      "seed": 42,
+      "period": "calibration",
+      "checkpoint_sha256": "a4cc5949eeb5fc29a4310a65177138dcac6591ec5090652ecf6d3f0ad3bd3930",
+      "device": "cpu",
+      "max_abs_error": 3.4332275390625e-05,
+      "mask_exact": true
+    },
+    {
+      "fold": 2001,
+      "seed": 42,
+      "period": "training",
+      "checkpoint_sha256": "a4cc5949eeb5fc29a4310a65177138dcac6591ec5090652ecf6d3f0ad3bd3930"
+    },
+    {
+      "fold": 2001,
+      "seed": 42,
+      "period": "validation",
+      "checkpoint_sha256": "a4cc5949eeb5fc29a4310a65177138dcac6591ec5090652ecf6d3f0ad3bd3930",
+      "device": "cuda",
+      "max_abs_error": 8.58306884765625e-06,
+      "mask_exact": true
+    },
+    {
+      "fold": 2001,
+      "seed": 43,
+      "period": "calibration",
+      "checkpoint_sha256": "af04a13d2b401ad3a81d28e89238b6033d927c4ea314e7424345ea1d03e436cb",
+      "device": "cuda",
+      "max_abs_error": 3.0517578125e-05,
+      "mask_exact": true
+    },
+    {
+      "fold": 2001,
+      "seed": 43,
+      "period": "training",
+      "checkpoint_sha256": "af04a13d2b401ad3a81d28e89238b6033d927c4ea314e7424345ea1d03e436cb"
+    },
+    {
+      "fold": 2001,
+      "seed": 43,
+      "period": "validation",
+      "checkpoint_sha256": "af04a13d2b401ad3a81d28e89238b6033d927c4ea314e7424345ea1d03e436cb",
+      "device": "cuda",
+      "max_abs_error": 1.33514404296875e-05,
+      "mask_exact": true
+    },
+    {
+      "fold": 2001,
+      "seed": 44,
+      "period": "calibration",
+      "checkpoint_sha256": "36073b5525099c1266e7679a991f558061cfadc40e52fd80059c5ba1044ebc27",
+      "device": "cuda",
+      "max_abs_error": 3.0517578125e-05,
+      "mask_exact": true
+    },
+    {
+      "fold": 2001,
+      "seed": 44,
+      "period": "training",
+      "checkpoint_sha256": "36073b5525099c1266e7679a991f558061cfadc40e52fd80059c5ba1044ebc27"
+    },
+    {
+      "fold": 2001,
+      "seed": 44,
+      "period": "validation",
+      "checkpoint_sha256": "36073b5525099c1266e7679a991f558061cfadc40e52fd80059c5ba1044ebc27",
+      "device": "cuda",
+      "max_abs_error": 6.67572021484375e-06,
+      "mask_exact": true
+    },
+    {
+      "fold": 2002,
+      "seed": 42,
+      "period": "calibration",
+      "checkpoint_sha256": "0a716dc8387dee81e57b00706d1dd0d958b51cd7e0baf9b7798d32ba898f743c",
+      "device": "cuda",
+      "max_abs_error": 3.0517578125e-05,
+      "mask_exact": true
+    },
+    {
+      "fold": 2002,
+      "seed": 42,
+      "period": "training",
+      "checkpoint_sha256": "0a716dc8387dee81e57b00706d1dd0d958b51cd7e0baf9b7798d32ba898f743c"
+    },
+    {
+      "fold": 2002,
+      "seed": 42,
+      "period": "validation",
+      "checkpoint_sha256": "0a716dc8387dee81e57b00706d1dd0d958b51cd7e0baf9b7798d32ba898f743c",
+      "device": "cuda",
+      "max_abs_error": 3.0517578125e-05,
+      "mask_exact": true
+    },
+    {
+      "fold": 2002,
+      "seed": 43,
+      "period": "calibration",
+      "checkpoint_sha256": "4c8bdbcb61ef205c68f710bf20c65cd636f9c1786e09619c1f12db4d0235de3b",
+      "device": "cuda",
+      "max_abs_error": 4.57763671875e-05,
+      "mask_exact": true
+    },
+    {
+      "fold": 2002,
+      "seed": 43,
+      "period": "training",
+      "checkpoint_sha256": "4c8bdbcb61ef205c68f710bf20c65cd636f9c1786e09619c1f12db4d0235de3b"
+    },
+    {
+      "fold": 2002,
+      "seed": 43,
+      "period": "validation",
+      "checkpoint_sha256": "4c8bdbcb61ef205c68f710bf20c65cd636f9c1786e09619c1f12db4d0235de3b",
+      "device": "cuda",
+      "max_abs_error": 4.1961669921875e-05,
+      "mask_exact": true
+    }
+  ],
+  "no_threshold_or_prediction_changes": true
+}

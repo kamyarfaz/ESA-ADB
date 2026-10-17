@@ -1,9 +1,22 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
-Updated **16 October 2026**. This is the current entry point for a new assistant.
+Updated **17 October 2026**. This is the current entry point for a new assistant.
 Read this before proposing work. The chat is not required to continue the project.
 
 ## 1. Current task and decision
+
+**17 October channel replay attempted; incomplete at the strict verification gate.**
+See `docs/research/channel-error-replay-results-2026-10-17.md` and protocol.
+Five of six frozen models passed,15/18stages,10 exact calibration/validation masks.
+2002/seed44 calibration: GPU scores fail fixed tolerance at128 timestamps; CPU
+scores pass tolerance but32 binary predictions differ. No tolerance/threshold
+was changed. Earlier2001/seed42 GPU one-ULP threshold ties were resolved on CPU.
+V1/V2 failed evidence is preserved; V3 reuses15 hashed successful stages and
+contains `stopped.json`, NOT `complete.json`. No replay remains running.
+124 tests passed; partial summaries are explicitly labeled. Do not promote a
+new score/model using the incomplete cohort. Resolve numerical reproducibility
+for the last checkpoint before interpreting a complete six-model comparison.
+Do not rerun blindly or treat the older 'not executed' note as current.
 
 **16 October development consolidation completed.** User approved investigating
 training/development evidence. See `docs/research/development-evidence-review-2026-10-16.md`.
