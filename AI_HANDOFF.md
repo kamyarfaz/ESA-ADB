@@ -16,6 +16,8 @@ development.py differs but load_period AST matches checksum-verified historical
 source exactly. No tolerances/thresholds changed, no training. Stop blind numerical
 setting searches. Continue protocol design using documented stable local execution;
 retain cross-platform reproduction limitation and original historical arrays.
+Audit code/results pushed; release `calibration-numerics-2026-10-17` contains9
+verified archived files. Both GitHub asset SHA256 digests and sizes verified.
 
 **17 October supplementary validation diagnostic completed.**
 See `docs/research/channel-error-validation-results-2026-10-17.md`.

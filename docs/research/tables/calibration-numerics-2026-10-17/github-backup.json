@@ -1,0 +1,16 @@
+{
+  "release_url": "https://github.com/kamyarfaz/ESA-ADB/releases/tag/calibration-numerics-2026-10-17",
+  "verified": true,
+  "assets": [
+    {
+      "name": "manifest.json",
+      "sha256": "fa7953878120e73631a094d1537895ac8d3070944eb0fb68ac79735fc0d02b02",
+      "bytes": 1333
+    },
+    {
+      "name": "numerical-audit.tar.gz",
+      "sha256": "bdd4c0daf74ae9c8e475427e6079e400d450a654193a5836c0ac0e5c765bc84f",
+      "bytes": 148047
+    }
+  ]
+}
