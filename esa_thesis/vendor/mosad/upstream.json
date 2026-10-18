@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/Armanfard-Lab/MOSAD",
+  "commit": "cf935f817a89bb773a0a999d9117e33322970920",
+  "original_sha256": {
+    "model/network.py": "73593bb601a876645f62a2c8edd48bfebf5d5cd51f6702554904b8712fdefad2",
+    "model/mosad.py": "8ab7c53c01cf68dd8f14b84ad90961da7363114336bbfe7c028591f6e92248d8",
+    "model/model.py": "667f4edf4118e04de1b4887de2c0072d1673f42d448ec8f94bd78d371f5841c1",
+    "model/loss.py": "44490e75f8a691f97dc36d3b93efa49c36f57a7dda6d5bbdb5956a2264cedd07",
+    "utils/utils.py": "42a5ae24e785bd2d7ffab572837b5bb9afc678f840c4ecaa86313af8bd6a14e1",
+    "base/base_model.py": "c047b6cbb6a5e764b714edeaaa9950e4d7646fde17e70ab791ca444b878336b1",
+    "LICENSE": "c6648565ca4a7b22b2cd06e739dfec031313d2f5ce5f31c5c994f6aec9f3fe5e",
+    "config.json": "2a24558d80a9a8e33e667a13204de60937d9a8eec143892fc7c8ac74daa9d751"
+  }
+}

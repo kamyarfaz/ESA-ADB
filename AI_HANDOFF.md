@@ -1,9 +1,41 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
-Updated **17 October 2026**. This is the current entry point for a new assistant.
+Updated **18 October 2026**. This is the current entry point for a new assistant.
 Read this before proposing work. The chat is not required to continue the project.
 
 ## 1. Current task and decision
+
+
+**18 October similarity → MOSAD full-period run launched.** User explicitly
+requested both methods and authorized training with all inputs40–47, training
+2000–2005, calibration2006 and assessment2007–2013. This supersedes prior
+no-training/pilot-only instructions for this specific frozen comparison.
+Read `docs/research/similarity-mosad-full-protocol-2026-10-18.md` before touching it.
+132 thesis tests and real-config deterministic CUDA smoke passed; frozen train,
+calibration, testing, binary labels and annotation hashes verified on this host.
+46 training-only input-annotated event shots validated. Historical damaged MLP
+array is not a dependency; entire old migration is not claimed verified.
+
+Service `esa-similarity-mosad.service` is enabled, with user lingering enabled.
+It runs sequentially, uses an advisory lock, and checkpoints MOSAD every100 batches.
+No blind restart: inspect any failure and process list before restarting the same
+service. The wrapper adds --resume only when the protocol exists. Strict source,
+data and runtime checks apply; do not edit Python source/settings while running.
+Output: `results_longrun/similarity_mosad_full_20261018_seed42_v1`.
+Log: `/home/k_faz/project-backups/run-logs/similarity-mosad-full-20261018.log`.
+Heartbeat: `complete-similarity-and-mosad-comparison`,30min, quiet on unchanged
+status. Similarity has a fixed normal reference; MOSAD uses real training positives
+plus synthetic augmentation. Disclose this supervision difference. One seed42;
+no test tuning, no claim of independent confirmation on this reused benchmark.
+MOSAD smoke was about8s/batch; full training may take many days. No time-saving
+change to the frozen training budget is authorized by mere elapsed time.
+
+On completion independently verify saved predictions/rules and all corrected
+annual/pooled metrics, publish seven years plus pooled system comparison with the
+short-no-roll baseline, update system-only thesis workbook and concise report,
+commit compact results and back up essential arrays/weights to a checksum-verified
+GitHub Release. Then disable the service and pause the heartbeat. Existing
+complete.json files are stage receipts, not independent result verification.
 
 **17 October numerical audit completed; historical gate still failed.**
 See `docs/research/calibration-numerics-2026-10-17.md`. Two fresh CUDA calls to the
