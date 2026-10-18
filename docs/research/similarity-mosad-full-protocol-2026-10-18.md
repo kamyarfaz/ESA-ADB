@@ -142,3 +142,9 @@ Prelaunch verification:132 thesis tests passed, real-config CUDA training/scorin
 smoke passed,46 usable training event windows verified. GPU smoke took about8s
 per training batch; full training may take multiple days. No reduced data budget
 or early assessment-driven stopping is introduced to shorten the run.
+
+Launch verified18October2026:6,312,960 training observations,349,461 globally
+nominal windows,24,576 similarity reference windows. MOSAD has5,461 batches/epoch;
+at the synthetic smoke speed of8s/batch,40 epochs would take about20days, plus
+calibration/assessment. This is a provisional estimate, not a runtime guarantee.
+Persistent service configuration is preserved in scripts/research/esa-similarity-mosad.service.

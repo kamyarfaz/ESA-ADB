@@ -1,0 +1,18 @@
+[Unit]
+Description=Frozen ESA similarity then MOSAD full-period comparison
+
+[Service]
+Type=simple
+WorkingDirectory=/home/k_faz/projects/ESA-ADB
+Environment=PYTHONPATH=/home/k_faz/projects/ESA-ADB
+Environment=WANDB_MODE=disabled
+Environment=CUBLAS_WORKSPACE_CONFIG=:4096:8
+ExecStart=/bin/bash /home/k_faz/projects/ESA-ADB/scripts/research/run_similarity_mosad.sh
+Restart=no
+TimeoutStopSec=120
+KillMode=control-group
+StandardOutput=append:/home/k_faz/project-backups/run-logs/similarity-mosad-full-20261018.log
+StandardError=append:/home/k_faz/project-backups/run-logs/similarity-mosad-full-20261018.log
+
+[Install]
+WantedBy=default.target
