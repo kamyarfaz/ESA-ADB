@@ -1,0 +1,30 @@
+{
+  "status": "similarity independently replayed; MOSAD training pending",
+  "sample_count": 7364160,
+  "protocol_sha256": "3d9c9dcc7d2270219e830bf9d589ac5dec5fe947766479b52d256fc1210d78c1",
+  "files": {
+    "frozen_rule.json": "83ea8d0522b6403a43abb0ac2374f52041955abd45fb7105af9e77d611e7b59a",
+    "assessment_nearest_reference.npy": "fcfa03315c1c47039d9bf67e1aa59dee8cb6d4e70589b6cb18144a7f2c62436a",
+    "calibration_nearest_reference.npy": "a35947c69f26e336062e7a71b4e61bcb7a787e93ca46fe4e1177945d596c23c6",
+    "pooled_results.csv": "6f85bafd37cabe07c666b762f4af20372d80dbaa42d5c337294cc5df8d01c4a7",
+    "calibration_receipt.json": "a641d9537596fe1191b8f2e5c16567c5698aec855af7631bb7d13ee5d0f9fd9a",
+    "fit_complete.json": "7e26b9a98bd5d1ad2d493e88c8a4ad5d74f31bb7943e316769955c63295f19e7",
+    "calibration_candidates.csv": "72c8ad2a69874f102fbe6854b055035343d55b023648ca6ffe258278cc575180",
+    "assessment_score.npy": "ee670c55e32f7d9016c1e52e4a7138d362f8f5d283d9dfa5066000d042c35084",
+    "reference.pt": "5dbe728effa2e4d6f2130c2cf80ee14790dca1e3281bc0b9b62699b53266951a",
+    "assessment_timestamps.npy": "c71b96dfe422a903ccc2ac6e0d86e14c36d583e8a9954aa8953520193b3064c9",
+    "calibration_score.npy": "01a31b945c2d53673e99fa66ac7e3f5ad1e95858346b78dfadcdf66d95d12128",
+    "assessment_receipt.json": "b0e1775e0e9a25cc9adc089813a379b9445fd1cb3de5fd5e67529d97c3485ce6",
+    "all_results.csv": "08400274e16972e3b4c14e5e8c9b367aedf2b20d890cbe2f09c85aa48e7e0064",
+    "yearly_results.csv": "98f6bfd988fcbf62ef1316bc20cd9935980ce72cc760b279a014740af16feff6",
+    "complete.json": "aece93f244fba256bf1f448ff6c380cc499a2f3541760e5384108ee533eec438",
+    "assessment_prediction.npy": "d926c322456b1b9f00cd88b6176ca47eeb6e4505f6d447facad3ee905eacdc2d"
+  },
+  "checks": [
+    "stage hashes",
+    "complete 2007-2013 timestamps",
+    "finite scores and binary predictions",
+    "exact frozen-rule prediction replay",
+    "all annual and pooled metrics recomputed for both scopes"
+  ]
+}

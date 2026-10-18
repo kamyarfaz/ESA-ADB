@@ -6,6 +6,16 @@ Read this before proposing work. The chat is not required to continue the projec
 ## 1. Current task and decision
 
 
+**18 October similarity complete; MOSAD actively training.** Independent saved
+prediction replay passed for all7,364,160 samples and both scopes, including all
+annual/pooled metrics. System similarity F0.5=0.710676 versus baseline0.836070;
+TPR30/91 versus48/91. Precision improves but nominal time FPR worsens
+(0.000556 versus0.000292). Do not describe this as fewer total false alarms.
+See `docs/research/similarity-mosad-full-interim-2026-10-18.md` and verified CSVs.
+MOSAD first real-data batch completed; checkpoint_last.pt exists. Do not modify
+its precommitted protocol in response to similarity's assessment result. Final
+comparison/workbook and artifact Release backup remain pending.
+
 **18 October similarity → MOSAD full-period run launched.** User explicitly
 requested both methods and authorized training with all inputs40–47, training
 2000–2005, calibration2006 and assessment2007–2013. This supersedes prior
