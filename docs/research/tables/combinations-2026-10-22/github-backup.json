@@ -1,0 +1,21 @@
+{
+  "release": "https://github.com/kamyarfaz/ESA-ADB/releases/tag/combinations-full-2026-10-22",
+  "archive_files_verified": 176,
+  "assets": {
+    "combinations-full-2026-10-22.tar.gz": {
+      "sha256": "68d28ef1dc0a22bed0a60d02eacf12f7f906fde4ff687ba67e3568d52ebca4b5",
+      "bytes": 84274998,
+      "download_verified": true
+    },
+    "artifact-manifest.json": {
+      "sha256": "613f877b563616f45c0307977897a6ee73694538c620db878746e5e7a8b69287",
+      "bytes": 28386,
+      "download_verified": true
+    },
+    "SHA256SUMS": {
+      "sha256": "5aa51fdb0727b01530dffbf20f779e4cfc5907e09929f933a07da69e285d21cc",
+      "bytes": 191,
+      "download_verified": true
+    }
+  }
+}

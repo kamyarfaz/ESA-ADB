@@ -1,9 +1,218 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
-Updated **18 October 2026**. This is the current entry point for a new assistant.
+Updated **22 October 2026**. This is the current entry point for a new assistant.
 Read this before proposing work. The chat is not required to continue the project.
 
 ## 1. Current task and decision
+
+**22 October COMPLETED — all three combinations:** all training and continuous
+2007–2013 assessment finished successfully. Independent verification passed all
+frozen data/source/reference/artifact hashes, complete 40-epoch histories,
+calibration checkpoint/rule/fusion selection, exact prediction replay from saved
+scores, and all 80 corrected annual/pooled metric rows from raw annotations.
+Runtime fingerprint matched; 136 thesis tests passed. No second neural inference
+run was performed. No test-based tuning or additional experiments were run.
+Pooled system / channels40–47 F0.5: short-no-roll reference 0.836070 / 0.907140;
+masked control 0.806278 / 0.882146; fusion 0.811670 / 0.884610;
+pretrain/fine-tune 0.795675 / 0.844315; expanded-input short-no-roll
+0.824405 / 0.817353. None improves pooled system F0.5. Extra inputs detect76/91
+events but time FPR is5.930307%, compared with48/91 and0.029194% for reference.
+Single seed, reused benchmark, extra inputs and ensemble compute are disclosed.
+Do not claim independent validation or robust target achievement. MOSAD stays stopped.
+Full academic report: `docs/research/combinations-full-results-2026-10-22.md`;
+all annual/pooled metrics and verification in `docs/research/tables/combinations-2026-10-22/`.
+Updated workbook: `outputs/combinations-20261022/deliverables/ESA_thesis_results_combinations.xlsx`.
+All32 original technique rows retained (MOSAD status corrected to stopped), three
+combination rows added, all2007–2013 labels first. Original historical masked rows
+are preserved; full-period masked control is in the report/CSV. Original workbook
+backed up under `/home/k_faz/project-backups/combinations-20261022/`.
+Release `combinations-full-2026-10-22` preserves176 artifacts. All three uploaded
+assets were downloaded and matched local SHA256/size; evidence is in
+`docs/research/tables/combinations-2026-10-22/github-backup.json`.
+The completed combinations service is inactive and disabled (MainPID0), as is
+MOSAD. The completed `complete-three-esa-combination-comparisons` follow-up was
+deleted. No active run or scheduled research remains for this comparison.
+The updated workbook also replaces the project-root working copy, with its
+original preserved in the Release and `outputs/combinations-20261022/build/template.xlsx`.
+Older active milestones below are historical and must not trigger a restart.
+
+**22 October06:24 CEST milestone:** pretrain_finetune completed all40epochs
+(20 masked pretraining plus20 short-no-roll fine-tuning); all four trained-receipt
+artifact hashes and history epochs1–40 verified. Same service/PID1466507 has
+automatically started expanded_short_no_roll, now epoch2/40 batch700/5461,
+finite losses and current checkpoint. Masked standalone also complete. Fusion
+calibration and all assessment remain pending until training finishes; no test
+scores or protocol changes. MOSAD remains stopped.
+
+**21 October23:54 CEST milestone:** masked standalone completed all40epochs;
+its trained receipt and all four artifact hashes verified, history epochs1–40
+complete. The same service/PID1466507 automatically advanced to
+pretrain_finetune, now epoch3/40 batch4100/5461 with finite loss and current
+checkpoint. Expanded inputs remain queued. No assessment scores yet; fusion
+and assessment follow all training under the unchanged frozen protocol.
+
+**21 October NEW USER AUTHORIZATION — three combination runs:**
+The user authorized testing all three proposed combinations and scheduled
+monitoring. This supersedes the earlier stop for these combinations only;
+MOSAD remains stopped and disabled. After explicit clarification, approach3 may
+add channels14,21,29; approaches1/2 retain40–47. Every arm uses frozen train
+2000–2005, calibration2006, continuous assessment2007–2013. Read
+`docs/research/combinations-full-protocol-2026-10-21.md` for the exact protocol.
+New runner `esa_thesis/full_combinations.py`: masked40-epoch standalone feeding
+score fusion with the verified existing short-no-roll reference; masked nominal
+pretraining20 then unmasked short-no-roll fine-tuning20; expanded short-no-roll40.
+Single seed42, batch64, all nominal windows. Ensemble compute and extra inputs
+must be disclosed; no test tuning and no independent-validation claim.
+Service `esa-combinations.service` enabled and started, startupPID1466507.
+Output `results_longrun/combinations_full_20261021_seed42_v1`;
+log `/home/k_faz/project-backups/run-logs/combinations-full-20261021.log`.
+MemoryHigh6GiB/Max7GiB/swap512MiB; limits do not reserve shared-server RAM.
+Atomic checkpoints every100batches and epoch boundaries; strict frozen protocol
+and process lock. Resume same service after inspecting interruption, resources
+and duplicate processes. Do not edit source/data/settings while running.
+Tests:136 passed; exact CPU mid-epoch restart parity and CUDA masked/backward,
+parameter transfer and short-no-roll/backward checks passed. Frozen file/reference checks passed and training launch confirmed: masked
+epoch1/40 batch1/5461, finite loss9.49148, PID1466507 using1716MiB GPU.
+The initial resumable checkpoint was saved; the other arms follow sequentially.
+Active30-minute thread monitor `complete-three-esa-combination-comparisons`.
+On completion independently verify results, preserve workbook historical rows,
+report all annual/pooled metrics for both scopes, back up essential artifacts,
+disable service and delete monitor. Earlier MOSAD follow-up stays deleted.
+
+**21 October USER STOP instruction supersedes all prior run authorizations:**
+Stop exploring new techniques and stop MOSAD now. Stopped and disabled
+esa-similarity-mosad.service; verified inactive, MainPID0 and no runner.
+Deleted complete-similarity-and-mosad-comparison automation. Preserve checkpoints
+and artifacts; do not restart training or launch new experiments without new
+user authorization. Current task is descriptive ranking of existing workbook
+rows, irrespective of assessment period, using project-root
+`ESA_thesis_results_full_and_historical.xlsx`. No workbook edits requested.
+
+**21 October user status check and recovery:** Journal shows a server reboot
+between09:49 and09:59 CEST, automatic service startup09:59, then explicit
+OOM kill11:25:25 CEST. Saved checkpoint11:19:47, epoch5 batch3500/5461.
+No runner remained; available RAM7.0GiB and swap9.3GiB. Restarted the same
+service, unchanged source/protocol/memory limits, PID1237721 active.
+Startup verification and new batch progress still need confirmation.
+Preserved checkpoint at
+`/home/k_faz/project-backups/run-logs/mosad-before-recovery-20261021.pt`.
+No final MOSAD scores yet; first calibration remains due after epoch5.
+
+**21 October03:30 CEST milestone:** MOSAD completed epoch4 and started
+epoch5/40 under the unchanged frozen protocol. PID1296344 remains active,
+RAM3.57GiB, swap0. Epoch-boundary checkpoint saved03:23:04 CEST.
+First calibration evaluation is due after epoch5; no MOSAD assessment scores yet.
+
+**20 October evening recovery:** systemd reports an explicit OOM kill at
+21:00:28 CEST for PID3880307. Latest saved progress is epoch4 batch2700,
+checkpoint timestamp18:25:36 CEST. At recovery inspection about20GiB RAM was
+available (swap nearly full), no comparison worker remained. Started the same
+service with unchanged limits, source and protocol; new PID1296344 is active,
+Recovery confirmed at22:00 CEST: frozen input checks and loading passed,
+training advanced through epoch4 batch2900/5461 with finite loss. A new
+checkpoint was saved21:51:10 CEST. Service active, RAM3.56GiB, swap0.
+Preserved checkpoint before restart:
+`/home/k_faz/project-backups/run-logs/mosad-before-recovery-20261020-evening.pt`,
+SHA256 `fc54978b01e04189121de494bc67db6e8cd9f0d6969baf8584720fde1ad840e4`,
+verified equal to the live checkpoint before resume. Service peak on failed run
+was4.0GiB and swap256MiB. OOM is confirmed; host versus cgroup cause is not.
+
+**Latest workbook corrections:** all eight assessment labels containing
+2007–2013 (including boundary-sample and planned MOSAD) are now sorted first.
+Added a separate channels40–47 event F0.5 column with18 matching saved scores;
+13 unavailable and MOSAD pending. Original system metrics/order otherwise kept.
+Short-roll pooled local score0.9071395303690583. The Downloads workbook named
+below is the latest user-facing version.
+
+**20 October latest workbook instruction:** User supplied
+`/home/k_faz/Downloads/ESA_thesis_results.xlsx` and requested a NEW workbook,
+one row per technique, no false-event column, with FPR and event TPR.
+Follow-up explicitly requests completed 2007–2013 rows first, then historical
+assessments using their actual periods and filled metrics. Delivered
+`/home/k_faz/Downloads/ESA_thesis_results_full_and_historical.xlsx`: 32 unique
+techniques, five complete exact-full-period results first, historical results
+next, MOSAD pending last. Historical representative rows use highest reported
+period F0.5 (means across seeds), explicitly labelled descriptive historical
+bests, not independent validation or new model selection. FPR recovered by
+matching underlying grouped records in the 13 October all-methods workbook.
+Unrecorded metadata and pending results are explicit text, never invented zeros.
+All 32 exported rows checked against source-derived values; original files kept.
+This supersedes the earlier missing-history and one-period-only presentation.
+
+**20 October workbook simplification rejected and rolled back.** The user
+rejected the simplified workbook and asked for the previous Excel results.
+Restored the canonical workbook byte-for-byte from the pre-edit backup; matching
+SHA256 is `79e6d115bfc0e713a37befb64de157c6abff0f1dfa082716710f2dc811f0ea64`.
+The previous pooled and annual tables are restored. Do not repeat the
+one-pooled-row-only interpretation without clarifying the intended workbook
+and how to retain its results. All older workbooks remain intact.
+
+**Superseded edit (rolled back):** The canonical
+`outputs/thesis-system-20261016/deliverables/ESA_thesis_results.xlsx` now has one
+pooled 2007–2013 system-evaluation row per technique: historical Transformer AE,
+short-roll removal, verified normal-reference similarity, and MOSAD (pending,
+blank metrics). Removed repeated annual rows from the presentation workbook;
+underlying annual result files are preserved. Retain one calibration-selected
+configuration per technique, never select variants using test scores. Training
+2000–2005, calibration 2006, inputs 40–47 and all-channel event scope are explicit.
+Prior workbook preserved outside the repository at
+`/home/k_faz/project-backups/workbooks/ESA_thesis_results_before_dedup_20261020.xlsx`.
+The one-row-per-technique redesign below was rejected; it is not the current format.
+No training source, data, settings or service changes were made for this edit.
+
+**20 October03:14 CEST recovery restarted.** Available RAM5.3GiB,
+swap4.7GiB; no comparison worker remained. Same bounded service restarted as
+PID3880307 with original --resume and unchanged source/data/settings. Frozen
+checks and full training input loading passed; GPU activity confirmed for this
+PID (2062MiB VRAM). Initial memory3.57GiB, swap0, peak4.00GiB during
+startup. At20October03:44 CEST, progress confirmed through epoch3 batch1300,
+checkpoint saved03:41:43; service active, memory3.57GiB, swap0. Original unexplained SIGKILL
+cause remains unresolved. Keep existing4.5GiB cap and no blind restart policy.
+
+**20 October00:00 CEST check: bounded recovery interrupted again.**
+At19October22:52:45 CEST PID3497287 exited by SIGKILL, Result=signal,
+not the earlier explicit oom-kill result. Cause is unconfirmed: this account
+cannot read system/kernel/other-user journals. Service peak3.58GiB and swap8MiB
+were below configured caps; no Python error appears. No runner or CUDA compute
+process remained. Latest checkpoint saved19October22:37:16 at epoch3 batch1100.
+At inspection only3.8GiB RAM was available (swap2.6GiB free), leaving almost no
+startup headroom above the measured peak. Restart deferred; next heartbeat
+reassess headroom (prefer at least5GiB available for the4.5GiB-capped service),
+check no worker, and resume the same bounded service if safe. Do not assume the
+SIGKILL was caused by the cap; do not raise limits or change frozen source.
+If it recurs despite sufficient memory, administrator logs are needed to identify
+the killer. Existing checkpoints and pre-recovery backup remain preserved.
+
+**19 October memory-bounded recovery active (supersedes waiting note below).**
+User explicitly requested resuming with less RAM and safeguards. Same service
+restarted as PID3497287 with unchanged Python source, data, scientific settings,
+and original --resume validation. Operational drop-in:
+`~/.config/systemd/user/esa-similarity-mosad.service.d/memory.conf` sets
+MALLOC_ARENA_MAX=2, MALLOC_TRIM_THRESHOLD_=0, MemoryHigh=4G,
+MemoryMax=4608M, MemorySwapMax=256M; Restart=no remains in force.
+Frozen checks and full training-data loading passed. GPU activity confirmed for
+this PID (2070MiB VRAM); service memory current3.15GiB, peak3.58GiB, swap0
+at the initial check. Recovery progress confirmed19October20:34 CEST: epoch3
+batch200/5461, new checkpoint saved20:28:31 CEST; memory2.46GiB,
+peak3.58GiB, negligible swap. Resume from epoch3 batch1 succeeded. These limits
+reduce shared-server pressure but cannot guarantee survival under host OOM or
+later calibration peaks. On failure inspect cause; do not blindly restart or
+raise the cap. Monitor this bounded recovery instead of waiting for8GiB free.
+A separate preserved checkpoint copy is in
+`/home/k_faz/project-backups/run-logs/mosad-before-memory-recovery-20261019.pt`,
+SHA256 e61952b0e728ac601bcfed61764643d6a42f21bc7ca465a175e2e6e64eb26192
+(equal to the original before recovery). No unrelated processes were stopped.
+
+**19 October interruption — awaiting memory headroom.** At15:40 CEST the
+service was killed by the host OOM killer (systemd Result=oom-kill), shortly after
+starting epoch3. At16:12 CEST no comparison runner remained; only2.1GiB RAM was
+available and15GiB swap was almost full. Multiple Vivado workloads occupy most
+RAM; do not terminate unrelated work. Do not blindly restart under this pressure.
+checkpoint_last.pt saved15:26:36 CEST remains present (2,262,062 bytes); epochs1–2
+completed. Next heartbeat reassess memory headroom (prior service peak5.5GiB plus
+1.4GiB swap), then resume the same service only with sufficient headroom and no
+runner. Wrapper uses --resume and strict source/data/runtime checks. No protocol,
+source, data or settings changed. Final assessment remains pending.
 
 
 **18 October similarity complete; MOSAD actively training.** Independent saved

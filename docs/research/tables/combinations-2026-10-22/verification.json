@@ -1,0 +1,25 @@
+{
+  "verified": true,
+  "selected_epochs": {
+    "masked": 10,
+    "pretrain_finetune": 25,
+    "expanded_short_no_roll": 15
+  },
+  "samples_per_method": 7364160,
+  "metric_rows": 80,
+  "run_receipt_sha256": "7ec224a08e2ece1520760d8336937c1ed13115bf4219c134d41fff4b7c42de32",
+  "verified_results_sha256": "36461e343c6712c1defd28f4088e820436d3ed6947c79ed9096c3ef4ef063b22",
+  "checks": [
+    "Frozen data/source/reference and all run artifact hashes",
+    "Complete finite 40-epoch histories and earliest calibration-best checkpoint",
+    "Saved calibration-grid rule and fusion-weight selection",
+    "Nominal calibration fusion normalization",
+    "Exact threshold prediction replay for all methods",
+    "Exact control-reference prediction and fusion-score replay",
+    "80 corrected annual/pooled metric rows independently recomputed from raw annotations"
+  ],
+  "limitations": [
+    "Prediction replay uses saved model scores; no second neural inference run",
+    "Single seed and previously inspected benchmark; no independent validation"
+  ]
+}

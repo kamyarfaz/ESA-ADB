@@ -2,6 +2,8 @@
 
 ## Thesis research
 
+- [Completed three-combination comparison](research/combinations-full-results-2026-10-22.md): verified 2007–2013 annual and pooled metrics, controls, and limitations.
+
 - [Project guide](../README.md): layout and commands.
 - [Research assessment](thesis-research-context.md): scientific findings and limitations.
 - [Source migration](source-migration.json): old and new research filenames.

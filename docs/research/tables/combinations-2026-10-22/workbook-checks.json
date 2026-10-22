@@ -1,0 +1,15 @@
+{
+  "unique_techniques": 35,
+  "original_rows": 32,
+  "unchanged_rows_exact": 31,
+  "changed_original_row": "MOSAD: status stopped; metrics not assessed",
+  "new_combination_rows": 3,
+  "assessment_2007_2013_first": true,
+  "table_range": "A5:M40",
+  "freeze_panes": "A6",
+  "export_reopened": true,
+  "formula_errors": 0,
+  "visual_check": true,
+  "sha256": "fbca3b3e599f759ceedfcf18ff29d72fbb1378f31ff8545186339679648f17a5",
+  "authoring_runtime_note": "Node exited 139 during cleanup after successful export; independent saved-file reopening, exact cell comparisons and preview inspection passed."
+}
