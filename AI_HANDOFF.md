@@ -5,6 +5,30 @@ Read this before proposing work. The chat is not required to continue the projec
 
 ## 1. Current task and decision
 
+**23 October ACTIVE — original short-no-roll fine-tuning:** user explicitly
+requested continued fine-tuning of removing short rolls. This authorizes the
+original eight-input baseline, not restarting previous combinations or MOSAD.
+Read docs/research/short-no-roll-finetune-protocol-2026-10-23.md.
+Runner esa_thesis/short_no_roll_finetune.py continues original selected epoch10
+checkpoint for10 additional epochs, LR1e-5, batch64, seed42. Original weights/rule
+are fallback; select at continuation epochs0,5,10 using2006 system event F0.5 only.
+Train2000–2005, inputs40–47, assess2007–2013 only after selection is frozen.
+Preserve original outputs. No year-specific tuning or independent-validation claim.
+141 tests passed, including exact CPU interruption recovery and original fallback.
+Service esa-short-no-roll-finetune.service is enabled and active, startupPID125377.
+Output results_longrun/short_no_roll_finetune_20261023_seed42_v1; log
+/home/k_faz/project-backups/run-logs/short-no-roll-finetune-20261023.log.
+Frozen destination data/reference hash verification passed (protocol created).
+MemoryHigh6GiB/Max7GiB/swap512MiB; these do not reserve shared RAM.
+Active30-minute follow-up complete-short-no-roll-fine-tuning.
+Inspect failures/resources/duplicate workers before resuming same service;
+source/data/runtime/protocol hashes must remain unchanged while running.
+On completion independently verify all32 annual/pooled rows, selection, history,
+prediction replay and receipts; update report/workbook, Git and checksum-verified
+Release (explicit repo kamyarfaz/ESA-ADB), then disable service/delete follow-up.
+No changes to old completed experiments below are authorized.
+
+
 **23 October COMPLETED — false-alarm reduction for both models:** calibration-only
 research and frozen reassessment finished, with no neural retraining. All 64 annual
 and pooled rows independently verified, including frozen fingerprints, original
