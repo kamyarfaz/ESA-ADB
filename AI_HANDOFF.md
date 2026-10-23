@@ -1,9 +1,44 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
-Updated **22 October 2026**. This is the current entry point for a new assistant.
+Updated **23 October 2026**. This is the current entry point for a new assistant.
 Read this before proposing work. The chat is not required to continue the project.
 
 ## 1. Current task and decision
+
+**23 October NEW AUTHORIZATION — false-alarm reduction for both models:**
+The user authorized calibration research followed by rerunning experiments for
+masked pretraining + short-no-roll fine-tuning, then short-no-roll + extra inputs,
+with scheduled monitoring/recovery. Read
+`docs/research/false-alarm-reduction-protocol-2026-10-23.md` first. Reuse original
+selected weights (train2000–2005); diagnose/select on2006 only, freeze both rules,
+then reassess2007–2013. No neural retraining or test-based tuning. Existing results
+stay intact. Inputs40–47, extra14,21,29 only for expanded method. Report both
+system and40–47 scopes, all years and pooled, event IDs gained/lost, precision,
+event TPR, time FPR and corrected F0.5. MOSAD remains stopped.
+New output `results_longrun/false_alarm_reduction_20261023_seed42_v1`;
+runner `esa_thesis/false_alarm_reduction.py`; service
+`esa-false-alarm-reduction.service`; log
+`/home/k_faz/project-backups/run-logs/false-alarm-reduction-20261023.log`.
+Launcher `scripts/research/run_false_alarm_reduction.sh` runs diagnosis first.
+Once diagnosis_complete.json exists, inspect BOTH calibration diagnoses and
+record the research review in research_review.json, then restart the same service
+to select/freeze both rules and assess. This review is an assistant research step,
+not a new user-approval requirement. Do not change the prespecified grid after
+new assessment results. Do not start a duplicate worker. Inference checkpoints
+resume completed batches; strict source/data/runtime checks precede each phase.
+Active30-minute follow-up `complete-esa-false-alarm-reduction-comparison`.
+All140 tests passed, including exact inference-resume/original-scoring parity and
+calibration event-ID retention constraints. Diagnosis phase finished successfully:
+pretrain/fine-tune2006 detects6 system IDs with1 wholly false alarm interval;
+expanded detects9 with0 wholly false intervals. Most nominal alarm duration is
+in intervals that also touch annotations. Channel21 dominates349/524 nominal
+alarm samples for expanded inputs. Both diagnoses were reviewed and recorded in
+research_review.json; no new assessment inspected and no grid changes.
+The same service was started for finish phase (selection then assessment), with
+MemoryHigh4GiB/Max5GiB and256MiB swap cap. These limits do not reserve shared RAM.
+Complete independent verification, report/workbook and verified Git/Release backup,
+then disable service and delete follow-up. Prior completed comparisons below are
+controls and provenance, not requests to restart training.
 
 **22 October COMPLETED — all three combinations:** all training and continuous
 2007–2013 assessment finished successfully. Independent verification passed all
