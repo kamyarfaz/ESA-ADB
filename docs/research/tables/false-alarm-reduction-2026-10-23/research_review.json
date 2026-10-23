@@ -1,0 +1,15 @@
+{
+  "calibration_only": true,
+  "assessment_not_opened": true,
+  "review_date": "2026-10-23",
+  "decision": "Proceed with unchanged prespecified raw and channel-q99 families, exact calibration detected-ID retention, no extra search.",
+  "observations": {
+    "pretrain_finetune": "Six of ten system IDs detected (six local); one wholly false alarm interval; 10379.778 nominal alarm seconds, of which 960 belong to the wholly false interval. Most nominal alarm time lies in intervals also touching annotations. Nominal score q99 spans 0.3161\u20131.8389.",
+    "expanded_short_no_roll": "Nine of ten system IDs and six local IDs detected; zero wholly false intervals but15790.695 nominal alarm seconds. Channel21 dominates349 of524 nominal alarm samples; all nominal alarm duration is in intervals also touching annotations. Channel normalization is a hypothesis, not proof of stability."
+  },
+  "limitations": [
+    "Few calibration events; preservation on2006 does not guarantee preservation later",
+    "Window-mean/overlap scoring can extend alarms outside short annotations; duration filtering alone may miss this",
+    "No assumption that one method detects a superset of the other"
+  ]
+}

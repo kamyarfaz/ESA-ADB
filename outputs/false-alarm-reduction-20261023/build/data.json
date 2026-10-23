@@ -1,0 +1,26 @@
+{
+  "updates": [
+    {
+      "label": "Masked pretrain + short-no-roll",
+      "values": [
+        0.8346957124634393,
+        0.6703296703296703,
+        0.0011018522978513,
+        0.7956754994386392,
+        0.8443148594326733,
+        "Original rule retained; no feasible improvement"
+      ]
+    },
+    {
+      "label": "Short-no-roll + extra inputs",
+      "values": [
+        0.8217582406266473,
+        0.8351648351648352,
+        0.0593030666510748,
+        0.8244050148450794,
+        0.8173525522097386,
+        "Original rule best; refinement reported separately"
+      ]
+    }
+  ]
+}

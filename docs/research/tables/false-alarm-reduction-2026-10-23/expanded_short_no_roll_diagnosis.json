@@ -1,0 +1,111 @@
+{
+  "method": "expanded_short_no_roll",
+  "metrics": {
+    "system_all_channels": {
+      "EW_F_0.50": 0.9778648035582577,
+      "EW_precision": 0.9994827275131699,
+      "EW_recall": 0.9,
+      "TPe": 9,
+      "FPe": 0,
+      "FNe": 1,
+      "num_true_events": 10,
+      "num_pred_events": 12,
+      "alarming_precision": 0.6923076923076923,
+      "nominal_seconds": 30526841.079,
+      "false_positive_seconds": 15790.695,
+      "nominal_false_alarm_rate": 0.0005172724868300893,
+      "false_alarms_per_day": 0.0,
+      "metric_version": "esa-ew-id-duration-v1"
+    },
+    "input_channels_40_47": {
+      "EW_F_0.50": 0.9995861391947743,
+      "EW_precision": 0.9994827275131699,
+      "EW_recall": 1.0,
+      "TPe": 6,
+      "FPe": 0,
+      "FNe": 0,
+      "num_true_events": 6,
+      "num_pred_events": 12,
+      "alarming_precision": 0.6,
+      "nominal_seconds": 30526841.079,
+      "false_positive_seconds": 15790.695,
+      "nominal_false_alarm_rate": 0.0005172724868300893,
+      "false_alarms_per_day": 0.0,
+      "metric_version": "esa-ew-id-duration-v1"
+    }
+  },
+  "detected_ids": {
+    "system_all_channels": [
+      "id_105",
+      "id_106",
+      "id_107",
+      "id_109",
+      "id_110",
+      "id_111",
+      "id_112",
+      "id_113",
+      "id_114"
+    ],
+    "input_channels_40_47": [
+      "id_106",
+      "id_107",
+      "id_109",
+      "id_110",
+      "id_112",
+      "id_114"
+    ]
+  },
+  "features": [
+    "channel_40",
+    "channel_41",
+    "channel_42",
+    "channel_43",
+    "channel_44",
+    "channel_45",
+    "channel_46",
+    "channel_47",
+    "channel_14",
+    "channel_21",
+    "channel_29"
+  ],
+  "normalization_q99": [
+    0.7946900129318237,
+    1.2949174642562866,
+    1.6835824251174927,
+    1.2611445188522339,
+    1.1635456085205078,
+    1.4949647188186646,
+    1.3897268772125244,
+    0.8709938526153564,
+    0.8278722763061523,
+    0.8525326251983643,
+    0.8009164333343506
+  ],
+  "rule": {
+    "threshold": 6.273123741149902,
+    "merge_gap": 0,
+    "min_dur": 1,
+    "val_esa_f05": 0.9778648035582577,
+    "val_event_f05": 0.9778648035582577,
+    "val_event_precision": 0.9994827275131699,
+    "val_event_recall": 0.9,
+    "val_pred_anomaly_rate": 0.0024961948249619483,
+    "val_saturated": false,
+    "val_EW_F_0.50": 0.9778648035582577,
+    "val_EW_precision": 0.9994827275131699,
+    "val_EW_recall": 0.9,
+    "val_TPe": 9,
+    "val_FPe": 0,
+    "val_FNe": 1,
+    "val_num_true_events": 10,
+    "val_num_pred_events": 12,
+    "val_alarming_precision": 0.6923076923076923,
+    "val_nominal_seconds": 30526841.079,
+    "val_false_positive_seconds": 15790.695,
+    "val_nominal_false_alarm_rate": 0.0005172724868300893,
+    "val_false_alarms_per_day": 0.0,
+    "val_metric_version": "esa-ew-id-duration-v1",
+    "selection_name": "best_val_esa_f05_val_pred_rate_lte_0.01",
+    "selection_type": "clean_validation_selected"
+  }
+}

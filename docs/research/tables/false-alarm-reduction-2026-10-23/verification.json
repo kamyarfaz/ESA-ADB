@@ -1,0 +1,20 @@
+{
+  "verified": true,
+  "metric_rows": 64,
+  "samples_per_prediction": 7364160,
+  "complete_receipt_sha256": "05a7c7411d927a165580ddeb19f74170d6e4504b3a97d2f4e63454cbb4e028cf",
+  "checks": [
+    "All artifact/source/frozen-data/reference fingerprints",
+    "Frozen rule hashes and candidate selection",
+    "Exact calibration baseline detected-ID retention and alarm constraints",
+    "New per-channel inference exactly reproduces original aggregate scores",
+    "Original and refined prediction replay",
+    "All 64 annual/pooled metric rows independently recomputed",
+    "Original metrics equal prior completed run",
+    "Event IDs gained/lost and short-no-roll comparison"
+  ],
+  "limitations": [
+    "One seed; reused assessment benchmark",
+    "Calibration retention does not guarantee assessment retention"
+  ]
+}

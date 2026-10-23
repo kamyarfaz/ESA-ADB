@@ -164,3 +164,5 @@
 Read [current AI handoff](../AI_HANDOFF.md) and [migration guide](../MIGRATION.md).
 The [archived handoff](history/AI_HANDOFF-through-2026-10-08.md) preserves the full
 earlier chronology; its pending-run notes are historical.
+
+- [False-alarm reduction: both models, verified negative results](research/false-alarm-reduction-results-2026-10-23.md)

@@ -1,0 +1,10 @@
+{
+  "post_assessment_explanation_only": true,
+  "original_alarm_intervals": 115,
+  "refined_alarm_intervals": 211,
+  "original_intervals_split": 22,
+  "original_false_alarm_events": 11,
+  "refined_false_alarm_events": 70,
+  "refined_false_events_from_previously_nominal_parents": 23,
+  "refined_false_events_from_annotation_touching_parents": 47
+}
