@@ -5,29 +5,27 @@ Read this before proposing work. The chat is not required to continue the projec
 
 ## 1. Current task and decision
 
-**23 October ACTIVE — original short-no-roll fine-tuning:** user explicitly
-requested continued fine-tuning of removing short rolls. This authorizes the
-original eight-input baseline, not restarting previous combinations or MOSAD.
-Read docs/research/short-no-roll-finetune-protocol-2026-10-23.md.
-Runner esa_thesis/short_no_roll_finetune.py continues original selected epoch10
-checkpoint for10 additional epochs, LR1e-5, batch64, seed42. Original weights/rule
-are fallback; select at continuation epochs0,5,10 using2006 system event F0.5 only.
-Train2000–2005, inputs40–47, assess2007–2013 only after selection is frozen.
-Preserve original outputs. No year-specific tuning or independent-validation claim.
-141 tests passed, including exact CPU interruption recovery and original fallback.
-Service esa-short-no-roll-finetune.service is enabled and active, startupPID125377.
-Output results_longrun/short_no_roll_finetune_20261023_seed42_v1; log
-/home/k_faz/project-backups/run-logs/short-no-roll-finetune-20261023.log.
-Frozen destination data/reference hash verification passed (protocol created).
-MemoryHigh6GiB/Max7GiB/swap512MiB; these do not reserve shared RAM.
-Active30-minute follow-up complete-short-no-roll-fine-tuning.
-Inspect failures/resources/duplicate workers before resuming same service;
-source/data/runtime/protocol hashes must remain unchanged while running.
-On completion independently verify all32 annual/pooled rows, selection, history,
-prediction replay and receipts; update report/workbook, Git and checksum-verified
-Release (explicit repo kamyarfaz/ESA-ADB), then disable service/delete follow-up.
-No changes to old completed experiments below are authorized.
-
+**23 October COMPLETED — original short-no-roll fine-tuning:** ten additional
+epochs at LR1e-5 completed successfully. Neither epoch5 (calibration F0.5
+0.882118655982629) nor epoch10 (0.882099064642808) beat the original epoch10
+checkpoint (0.8821382469600005), which remains selected as continuation epoch0.
+Original weights, scaler, rule and assessment predictions match exactly.
+No improvement: system F0.5 0.836070,48/91 events; local40–47 F0.5 0.907140,
+47/67 events. All32 annual/pooled metric rows independently verified, frozen
+hashes and receipts checked, no gained/lost event IDs.141 tests passed.
+No further experiments or test-based tuning are authorized by this completed run.
+Report docs/research/short-no-roll-finetune-results-2026-10-23.md; verified tables
+docs/research/tables/short-no-roll-finetune-2026-10-23/.
+Workbook outputs/short-no-roll-finetune-20261023/deliverables/ESA_thesis_results_short_no_roll_finetuning.xlsx
+preserves all35 technique rows and original scores; status notes original retained.
+Source/run artifacts: results_longrun/short_no_roll_finetune_20261023_seed42_v1.
+Service esa-short-no-roll-finetune.service is inactive/successful and disabled.
+Follow-up complete-short-no-roll-fine-tuning is removed after delivery.
+Release https://github.com/kamyarfaz/ESA-ADB/releases/tag/short-no-roll-finetune-2026-10-23
+with downloaded checksum evidence in tables/github-backup.json.
+Single seed, reused benchmark and extra training compute are disclosed.
+MOSAD remains stopped. Frozen destination dataset verification passed, not a
+whole-project migration certification or replacement for external-drive backup.
 
 **23 October COMPLETED — false-alarm reduction for both models:** calibration-only
 research and frozen reassessment finished, with no neural retraining. All 64 annual

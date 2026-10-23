@@ -166,3 +166,5 @@ The [archived handoff](history/AI_HANDOFF-through-2026-10-08.md) preserves the f
 earlier chronology; its pending-run notes are historical.
 
 - [False-alarm reduction: both models, verified negative results](research/false-alarm-reduction-results-2026-10-23.md)
+
+- [Original short-no-roll fine-tuning: verified unchanged results](research/short-no-roll-finetune-results-2026-10-23.md)

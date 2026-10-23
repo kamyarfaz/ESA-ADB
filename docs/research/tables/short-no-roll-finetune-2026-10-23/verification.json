@@ -1,0 +1,19 @@
+{
+  "verified": true,
+  "metric_rows": 32,
+  "selected_continuation_epoch": 0,
+  "complete_receipt_sha256": "a692532164f5b14365353e875c1ac689de6af810aae58281a51ed9910cb1b965",
+  "checks": [
+    "Frozen data/source/protocol/reference and artifact hashes",
+    "Ten-epoch history and exact final checkpoint state",
+    "Calibration-only grid selection at epochs0,5,10",
+    "Selected weights and scaler exactly equal original",
+    "Prediction replay and exact original prediction equality",
+    "32 corrected annual/pooled metric rows recomputed",
+    "All event IDs; no gained or lost IDs"
+  ],
+  "limitations": [
+    "Single seed; reused benchmark",
+    "Unselected checkpoints not assessed"
+  ]
+}
