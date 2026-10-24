@@ -5,6 +5,13 @@ Read this before proposing work. The chat is not required to continue the projec
 
 ## 1. Current task and decision
 
+**24 October18:16 CEST milestone:** W&B run1/9 (short_no_roll_lr1,
+LR3e-6) completed all10epochs; trained receipt hashes and complete epoch history
+verified. Calibration retained original epoch0 (system F0.5 0.8821382469600005).
+No assessment performed yet. Same worker PID706712 automatically started run2/9
+(short_no_roll_lr2, LR1e-5), epoch1 batch5200/5461. W&B API confirms first run
+finished and second running with current metrics. Frozen protocol unchanged.
+
 **24 October ACTIVE — authorized W&B nine-run fine-tuning:** user approved three
 learning rates (3e-6,1e-5,3e-5), ten additional epochs each, sequentially for
 original short-no-roll, masked pretraining plus fine-tuning, then expanded-input
