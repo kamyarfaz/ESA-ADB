@@ -5,6 +5,32 @@ Read this before proposing work. The chat is not required to continue the projec
 
 ## 1. Current task and decision
 
+**24 October ACTIVE — authorized W&B nine-run fine-tuning:** user approved three
+learning rates (3e-6,1e-5,3e-5), ten additional epochs each, sequentially for
+original short-no-roll, masked pretraining plus fine-tuning, then expanded-input
+short-no-roll. This authorization supersedes prior completed-run stop notes only
+for this study. See docs/research/wandb-finetuning-protocol-2026-10-24.md.
+All144 thesis tests passed. Service esa-wandb-finetuning.service is enabled and
+started (initial PID706712); checks frozen destination data before training.
+Output results_longrun/wandb_finetuning_20261024_seed42_v1; log
+/home/k_faz/project-backups/run-logs/wandb-finetuning-20261024.log.
+Heartbeat complete-w-b-nine-run-fine-tuning checks every30minutes, quiet unless
+material progress/failure/completion. Never duplicate workers or change frozen
+package source/data/protocol during the run. MOSAD remains stopped.
+W&B project https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning
+already contains three historical-baselines; receipt outputs/wandb-20261024/baseline-import.json.
+New runs group learning-rate-comparison-20261024-seed42-v1, stable IDs and online
+logging. No raw telemetry or weights uploaded to W&B. Training2000–2005,
+calibration2006, assessment2007–2013. Inputs40–47; extra14,21,29 only expanded.
+Original fallback eligible; select by system calibration F0.5, freeze all three
+selections after nine runs before assessment. Preserve all attempts. Original
+short-no-roll1e-5 repeats prior setting; disclose this and single-seed/reused
+benchmark limitations. On completion independently verify all96 metric rows,
+calibration selection/replay and assessment replay, publish separate W&B evaluation
+runs, update report/workbook, Git and checksum-verified Release, then disable
+service and delete follow-up. No improvement claimed before verified results.
+
+
 **23 October COMPLETED — original short-no-roll fine-tuning:** ten additional
 epochs at LR1e-5 completed successfully. Neither epoch5 (calibration F0.5
 0.882118655982629) nor epoch10 (0.882099064642808) beat the original epoch10
