@@ -5,6 +5,13 @@ Read this before proposing work. The chat is not required to continue the projec
 
 ## 1. Current task and decision
 
+**24 October22:46 CEST milestone:** all three original short-no-roll learning
+rate runs finished. Run3 trained receipt hashes and ten history epochs verified;
+all three retain original epoch0 (system calibration F0.5 0.8821382469600005).
+Same worker PID706712 automatically started method2, run4/9
+(pretrain_finetune_lr1, LR3e-6), epoch1 batch4700/5461. W&B confirms run3
+finished and run4 recording. No assessment yet; frozen protocol unchanged.
+
 **24 October20:46 CEST milestone:** run2/9 (short_no_roll_lr2, LR1e-5)
 finished; all trained receipt hashes and ten history epochs verified. Calibration
 again retained original epoch0 (system F0.5 0.8821382469600005). This setting
