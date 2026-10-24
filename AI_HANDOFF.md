@@ -5,6 +5,14 @@ Read this before proposing work. The chat is not required to continue the projec
 
 ## 1. Current task and decision
 
+**24 October20:46 CEST milestone:** run2/9 (short_no_roll_lr2, LR1e-5)
+finished; all trained receipt hashes and ten history epochs verified. Calibration
+again retained original epoch0 (system F0.5 0.8821382469600005). This setting
+repeats the prior continuation; no independent confirmation claimed. Same worker
+PID706712 advanced automatically to run3/9 (LR3e-5), epoch3 batch300/5461.
+W&B API confirms run2 finished and run3 recording. Assessment remains unopened;
+frozen settings unchanged.
+
 **24 October18:16 CEST milestone:** W&B run1/9 (short_no_roll_lr1,
 LR3e-6) completed all10epochs; trained receipt hashes and complete epoch history
 verified. Calibration retained original epoch0 (system F0.5 0.8821382469600005).
