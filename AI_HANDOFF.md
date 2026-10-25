@@ -24,7 +24,10 @@ Report: docs/research/wandb-finetuning-results-2026-10-25.md; evidence under
  docs/research/tables/wandb-finetuning-2026-10-25/.
 Single seed, reused benchmark, extra inputs, unequal prior compute and repeated
 short-no-roll LR1e-5 setting are disclosed. No robust target claim.
-Release backup and final delivery are being finalized in this turn.
+Release https://github.com/kamyarfaz/ESA-ADB/releases/tag/wandb-finetuning-2026-10-25
+contains all run artifacts and reporting assets; all four assets downloaded and
+SHA256/size verified (github-backup.json). Completion delivered in this chat;
+monitoring follow-up removed. No further training scheduled.
 
 **25 October09:46 CET milestone:** run8/9 (expanded_short_no_roll_lr2, LR1e-5)
 finished; trained receipt hashes and ten history epochs verified. Unlike prior

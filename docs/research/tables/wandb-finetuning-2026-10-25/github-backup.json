@@ -1,0 +1,30 @@
+{
+  "url": "https://github.com/kamyarfaz/ESA-ADB/releases/tag/wandb-finetuning-2026-10-25",
+  "assets": [
+    {
+      "name": "ESA_thesis_results_full_and_historical.xlsx",
+      "bytes": 14161,
+      "sha256": "2bc6932c80a828e544a092caecef975f695702f595f56806df72563a600be75b",
+      "download_verified": true
+    },
+    {
+      "name": "SHA256SUMS",
+      "bytes": 310,
+      "sha256": "1721bfa1478a3b4068d5f5034e9dc4bcb5283abd49374c14ff561af88984e342",
+      "download_verified": true
+    },
+    {
+      "name": "wandb-finetuning-artifacts.tar.gz",
+      "bytes": 316457198,
+      "sha256": "4252440576dc09853921945647e9160a3586b59d38831f58c3f0e113e6470316",
+      "download_verified": true
+    },
+    {
+      "name": "wandb-finetuning-reporting.tar.gz",
+      "bytes": 104153,
+      "sha256": "48ca8a89e0b009e0b88ce50639d10f2c197e6dbd3c72408eddda98ff3ede3881",
+      "download_verified": true
+    }
+  ],
+  "verified": true
+}
