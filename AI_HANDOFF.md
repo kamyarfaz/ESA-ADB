@@ -5,6 +5,12 @@ Read this before proposing work. The chat is not required to continue the projec
 
 ## 1. Current task and decision
 
+**25 October02:16 CET milestone:** run5/9 (pretrain_finetune_lr2, LR1e-5)
+finished; trained receipt hashes and all ten history epochs verified. Calibration
+retained original epoch0 (system F0.5 0.7892758701516437). Same worker PID706712
+started run6/9 (pretrain_finetune_lr3, LR3e-5), epoch1 batch4300/5461. W&B
+confirms run5 finished and run6 recording. No assessment yet or settings changes.
+
 **25 October01:16 CEST milestone:** run4/9 (pretrain_finetune_lr1, LR3e-6)
 finished; trained receipt hashes and all ten history epochs verified. Calibration
 retained original epoch0 (system F0.5 0.7892758701516437). Same worker PID706712
