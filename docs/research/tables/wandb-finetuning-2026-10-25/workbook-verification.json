@@ -1,0 +1,22 @@
+{
+  "preserved_historical_rows": 24,
+  "technique_rows": 35,
+  "changed_cells": [
+    "A4",
+    "G7",
+    "M7",
+    "G15",
+    "M15",
+    "G16",
+    "H16",
+    "I16",
+    "J16",
+    "K16",
+    "L16",
+    "M16",
+    "A43",
+    "A48",
+    "A49"
+  ],
+  "visual_review": "passed"
+}

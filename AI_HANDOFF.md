@@ -5,6 +5,27 @@ Read this before proposing work. The chat is not required to continue the projec
 
 ## 1. Current task and decision
 
+**25 October 2026 — W&B nine-run study completed and independently verified.**
+All nine ten-epoch runs finished. Calibration kept original short-no-roll and
+masked-pretraining models; expanded-input short-no-roll selects LR3e-5 epoch10.
+Assessment 2007–2013: local40–47 F0.5 0.8173525522 -> 0.8308996735,
+detections61/67 -> 62/67; system F0.5 0.8244050148 -> 0.8445732669,
+detections76/91 -> 80/91. No lost IDs. Local gained id_49; system additionally
+id_152,id_162,id_171. Original short-no-roll still has best local F0.5
+0.9071395304 (47/67). No new experiments authorized by this completion.
+Independent audit passed frozen data/source/runtime/settings/reference hashes,
+18 full calibration grid replays, selected weights/scalers, exact prediction
+replay, all96 annual/pooled metric rows and event IDs. All144 tests passed.
+All nine W&B training runs finished; three separate evaluation runs published,
+cloud summary files and all96 table rows downloaded and verified. Service is
+inactive and disabled. Canonical workbook updated with35 technique rows and all
+24 historical rows preserved; prior workbook retained in outputs backup.
+Report: docs/research/wandb-finetuning-results-2026-10-25.md; evidence under
+ docs/research/tables/wandb-finetuning-2026-10-25/.
+Single seed, reused benchmark, extra inputs, unequal prior compute and repeated
+short-no-roll LR1e-5 setting are disclosed. No robust target claim.
+Release backup and final delivery are being finalized in this turn.
+
 **25 October09:46 CET milestone:** run8/9 (expanded_short_no_roll_lr2, LR1e-5)
 finished; trained receipt hashes and ten history epochs verified. Unlike prior
 runs, calibration selected continuation epoch10: system F0.5 0.97798520773566

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "ft20261024-short_no_roll_lr1",
+    "state": "finished",
+    "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ft20261024-short_no_roll_lr1",
+    "epoch": 10,
+    "selected_epoch": 0
+  },
+  {
+    "id": "ft20261024-short_no_roll_lr2",
+    "state": "finished",
+    "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ft20261024-short_no_roll_lr2",
+    "epoch": 10,
+    "selected_epoch": 0
+  },
+  {
+    "id": "ft20261024-short_no_roll_lr3",
+    "state": "finished",
+    "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ft20261024-short_no_roll_lr3",
+    "epoch": 10,
+    "selected_epoch": 0
+  },
+  {
+    "id": "ft20261024-pretrain_finetune_lr1",
+    "state": "finished",
+    "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ft20261024-pretrain_finetune_lr1",
+    "epoch": 10,
+    "selected_epoch": 0
+  },
+  {
+    "id": "ft20261024-pretrain_finetune_lr2",
+    "state": "finished",
+    "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ft20261024-pretrain_finetune_lr2",
+    "epoch": 10,
+    "selected_epoch": 0
+  },
+  {
+    "id": "ft20261024-pretrain_finetune_lr3",
+    "state": "finished",
+    "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ft20261024-pretrain_finetune_lr3",
+    "epoch": 10,
+    "selected_epoch": 0
+  },
+  {
+    "id": "ft20261024-expanded_short_no_roll_lr1",
+    "state": "finished",
+    "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ft20261024-expanded_short_no_roll_lr1",
+    "epoch": 10,
+    "selected_epoch": 0
+  },
+  {
+    "id": "ft20261024-expanded_short_no_roll_lr2",
+    "state": "finished",
+    "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ft20261024-expanded_short_no_roll_lr2",
+    "epoch": 10,
+    "selected_epoch": 10
+  },
+  {
+    "id": "ft20261024-expanded_short_no_roll_lr3",
+    "state": "finished",
+    "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ft20261024-expanded_short_no_roll_lr3",
+    "epoch": 10,
+    "selected_epoch": 10
+  }
+]

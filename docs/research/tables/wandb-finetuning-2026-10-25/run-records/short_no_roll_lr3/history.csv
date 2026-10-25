@@ -1,0 +1,11 @@
+epoch,loss,calibration_f05,calibration/system_all_channels/EW_F_0.50,calibration/system_all_channels/EW_precision,calibration/system_all_channels/EW_recall,calibration/system_all_channels/nominal_false_alarm_rate,calibration/system_all_channels/TPe,calibration/input_channels_40_47/EW_F_0.50,calibration/input_channels_40_47/EW_precision,calibration/input_channels_40_47/EW_recall,calibration/input_channels_40_47/nominal_false_alarm_rate,calibration/input_channels_40_47/TPe
+1,0.8430358753143115,,,,,,,,,,,
+2,0.8214990155451781,,,,,,,,,,,
+3,0.8161815347719915,,,,,,,,,,,
+4,0.8027903012947719,,,,,,,,,,,
+5,0.7918813260682466,0.8332291991191838,0.8332291991191838,0.9998125701252484,0.5,0.0001874298747516212,5.0,0.961399823977799,0.9998125701252484,0.8333333333333334,0.0001874298747516212,5.0
+6,0.7773674852768158,,,,,,,,,,,
+7,0.771670042737197,,,,,,,,,,,
+8,0.7556697521798723,,,,,,,,,,,
+9,0.751539798586813,,,,,,,,,,,
+10,0.7494233412406499,0.8820894922435811,0.8820894922435811,0.9995770707173209,0.6,0.00042292928267906316,6.0,0.9996616279523672,0.9995770707173209,1.0,0.00042292928267906316,6.0

@@ -251,3 +251,8 @@ discarded; current experiment outputs and datasets were untouched.
 ## September 15 source organization
 
 Active sources now live in `esa_thesis/`; consult `source-migration.json` for old-to-new filenames and the root README for commands. Earlier filename references above describe the reviewed pre-organization sources. Numerical definitions were preserved and regression-checked; the scientific limitations above still apply. The former `main/` snapshot is now `archive/snapshots/main_v1/`.
+
+
+## 25 October 2026: bounded W&B fine-tuning
+
+Nine calibration-only learning-rate continuations completed. Original short-no-roll and masked pretraining plus fine-tuning retain their originals. Extra-input short-no-roll selects LR3e-5, epoch10: channels-40–47 F0.5 increases from 0.817353 to 0.830900 with 62/67 events detected (previously61), and system F0.5 from 0.824405 to 0.844573 with 80/91 (previously76). No previously detected IDs were lost. Original short-no-roll remains strongest on target-event F0.5 (0.907140), with lower coverage and substantially lower time FPR. This is one seed on a reused benchmark, not independent confirmation or robust target achievement. [Full report and verification](research/wandb-finetuning-results-2026-10-25.md).

@@ -1,0 +1,8 @@
+{
+  "files": {
+    "model.pt": "0265af117e2d0b66ae9d91625a0f10f39a643a40590fe97a4e495381e57183cb",
+    "frozen_rule.json": "5ccadd11e560a2a8c522fa2f51431e809ae307984a7c6c8d4533ba474833fc6f",
+    "history.csv": "67725a2a9fb96295f766e9a2a25ee72a8a3c81a71ac7eae921c4faa9af212b90",
+    "calibration_candidates.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  }
+}

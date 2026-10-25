@@ -1,0 +1,14 @@
+{
+  "short_no_roll": {
+    "id": "eval20261025-short_no_roll",
+    "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/eval20261025-short_no_roll"
+  },
+  "pretrain_finetune": {
+    "id": "eval20261025-pretrain_finetune",
+    "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/eval20261025-pretrain_finetune"
+  },
+  "expanded_short_no_roll": {
+    "id": "eval20261025-expanded_short_no_roll",
+    "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/eval20261025-expanded_short_no_roll"
+  }
+}
