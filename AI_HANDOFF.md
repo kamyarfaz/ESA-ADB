@@ -5,6 +5,13 @@ Read this before proposing work. The chat is not required to continue the projec
 
 ## 1. Current task and decision
 
+**25 October04:46 CET milestone:** all three masked-pretraining/fine-tuning
+runs finished (6/9 total). Run6 trained receipt hashes and ten history epochs
+verified; all three method2 rates retain original epoch0 (system calibration
+F0.5 0.7892758701516437). Same worker PID706712 started method3, run7/9
+(expanded_short_no_roll_lr1, LR3e-6), epoch2 batch3000/5461. W&B confirms
+run6 finished and run7 recording. No assessment yet; frozen protocol unchanged.
+
 **25 October02:16 CET milestone:** run5/9 (pretrain_finetune_lr2, LR1e-5)
 finished; trained receipt hashes and all ten history epochs verified. Calibration
 retained original epoch0 (system F0.5 0.7892758701516437). Same worker PID706712
