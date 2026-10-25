@@ -5,6 +5,12 @@ Read this before proposing work. The chat is not required to continue the projec
 
 ## 1. Current task and decision
 
+**25 October GitHub preservation check:** completed study and workbook are on
+origin/main; Release asset sizes and server SHA256 digests match the verified
+backup receipt. Added the W&B analysis guide from the conversation and preserved
+the historical MOSAD recovery note with an explicit stopped/superseded notice.
+New investigation ideas are proposals only; no new training is running.
+
 **25 October 2026 — W&B nine-run study completed and independently verified.**
 All nine ten-epoch runs finished. Calibration kept original short-no-roll and
 masked-pretraining models; expanded-input short-no-roll selects LR3e-5 epoch10.
