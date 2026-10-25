@@ -5,6 +5,14 @@ Read this before proposing work. The chat is not required to continue the projec
 
 ## 1. Current task and decision
 
+**25 October09:46 CET milestone:** run8/9 (expanded_short_no_roll_lr2, LR1e-5)
+finished; trained receipt hashes and ten history epochs verified. Unlike prior
+runs, calibration selected continuation epoch10: system F0.5 0.97798520773566
+versus original0.9778648035582577 (small calibration-only increase, not evidence
+of assessment improvement). Same PID706712 started final run9/9
+(expanded_short_no_roll_lr3, LR3e-5), epoch1 batch700/5461. W&B confirms run8
+finished and run9 recording. Final cross-rate selection and assessment pending.
+
 **25 October07:16 CET milestone:** run7/9 (expanded_short_no_roll_lr1, LR3e-6)
 finished; trained receipt hashes and ten history epochs verified. Calibration
 retained original epoch0 (system F0.5 0.9778648035582577). Same worker PID706712
