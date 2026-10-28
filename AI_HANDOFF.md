@@ -5,6 +5,24 @@ Read this before proposing work. The chat is not required to continue the projec
 
 ## 1. Current task and decision
 
+**28 October ACTIVE — authorized temporal post-processing on all three latest
+selected models.** No retraining. Fixed thresholds; gap fill then duration filter,
+48 calibration candidates/method. Optimize local40–47 calibration F0.5 with exact
+baseline calibration detected-ID retention and1% total alarm cap. Freeze all
+three choices before assessment. Report both scopes and unchanged controls.
+Protocol: docs/research/temporal-postprocessing-protocol-2026-10-28.md.
+Runner: scripts/research/run_temporal_postprocessing_20261028.py.
+Output: results_longrun/temporal_postprocessing_20261028_v1.
+Service: esa-temporal-postprocessing.service. Log:
+/home/k_faz/project-backups/run-logs/temporal-postprocessing-20261028.log.
+Follow-up: complete-three-method-temporal-post-processing, every30minutes.
+Next: complete worker, independently verify hashes/calibration/selection,
+prediction replay/all96 metrics/event IDs/segment and duration diagnostics;
+publish W&B/report/workbook/Git/checksum-verified Release, disable service and
+delete follow-up after delivery. Preserve unsuccessful outcomes. Reused benchmark,
+single seed, offline lookahead and extra inputs must be disclosed. No test tuning.
+
+
 **25 October GitHub preservation check:** completed study and workbook are on
 origin/main; Release asset sizes and server SHA256 digests match the verified
 backup receipt. Added the W&B analysis guide from the conversation and preserved
