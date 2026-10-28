@@ -4,6 +4,7 @@
 
 - [W&B analysis guide](research/wandb-analysis-guide-2026-10-25.md): how to interpret the nine runs and distinguish proposed next work from completed evidence.
 
+- [Verified temporal post-processing](research/temporal-postprocessing-results-2026-10-28.md): all three methods retained unchanged processing; bounded calibration grid and limitations.
 - [Verified W&B nine-run fine-tuning](research/wandb-finetuning-results-2026-10-25.md): three methods, all annual/pooled metrics, calibration selection and event-ID changes.
 
 - [Completed three-combination comparison](research/combinations-full-results-2026-10-22.md): verified 2007–2013 annual and pooled metrics, controls, and limitations.

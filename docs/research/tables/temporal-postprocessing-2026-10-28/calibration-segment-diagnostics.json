@@ -1,0 +1,20 @@
+[
+  {
+    "method": "short_no_roll",
+    "minimum_segment_minutes": 16.0,
+    "minimum_gap_minutes": 288.0,
+    "segments": 8
+  },
+  {
+    "method": "pretrain_finetune",
+    "minimum_segment_minutes": 16.0,
+    "minimum_gap_minutes": 304.0,
+    "segments": 9
+  },
+  {
+    "method": "expanded_short_no_roll",
+    "minimum_segment_minutes": 16.0,
+    "minimum_gap_minutes": 16.0,
+    "segments": 14
+  }
+]

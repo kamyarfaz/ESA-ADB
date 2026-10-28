@@ -1,0 +1,23 @@
+{
+  "needs_independent_verification": true,
+  "files": {
+    "segment_diagnostics.csv": "1394aa228e550731d425a9cd9bbc108dc54f0bda26299a044d79a6917323c0ad",
+    "protocol.json": "0650722cb40c94ddd531ef4bb9168da0339254d0eeaceaa3537b0c4695f8e2b8",
+    "selection_complete.json": "41406407ad5ec8a88d8328c9358fbc851cae067e74ab5eb917f5191aae1ca7ba",
+    "event_ids.csv": "0a0c6d83425d876bcb2cdaa0e7eaaf0a3a7dde542509a3c41df3ba84e371809f",
+    "all_results.csv": "8a5245f03bd83be3859d8c5254f25b0ed5a5ce3e4216b31fbdd2607897dd3f8e",
+    "resume_protocol.json": "0650722cb40c94ddd531ef4bb9168da0339254d0eeaceaa3537b0c4695f8e2b8",
+    "expanded_short_no_roll/calibration_receipt.json": "43ee5561b35cbbbbdbf9af8d4ee07d3b386bcd1a17e33db44c6b66540a4d6abb",
+    "expanded_short_no_roll/calibration_candidates.csv": "943be01269116400d9f5bf419330671e0126c9d55af39a8b6e536efb2f434690",
+    "expanded_short_no_roll/calibration_score.npy": "54a50daba39e97a6184c9ed48536bd4c0cdfb649cb160f95b45afd107c41a03e",
+    "expanded_short_no_roll/selected_prediction.npy": "a080d5e86aabc6d678befcfe4940dd268b1bd39eece224159a6f7667cf33145c",
+    "short_no_roll/calibration_receipt.json": "5fdd47d568a30b497a8e4ca048adb8f6370833595a65ee274381ea2b7f281a22",
+    "short_no_roll/calibration_candidates.csv": "34de475cb47e7e3cc3a215417ecee9ca525256ca1a2b268e7e2facedba865580",
+    "short_no_roll/calibration_score.npy": "874cd38dacd3364969242c509eb2f600eb162a2fe998019b5ea5642dadf542ef",
+    "short_no_roll/selected_prediction.npy": "e49f47e453a88946f941c5e9d1b6fdf04159e9f104b3df0a6dcccf77f946df75",
+    "pretrain_finetune/calibration_receipt.json": "566ba287cf364b12a1717ae1e96c925d9e5b5fd3de5c21e2c02ddf67809d62ff",
+    "pretrain_finetune/calibration_candidates.csv": "2a5bef8c8aaeb1485bcec7661892402390e32766118a20316ab209041e6cb864",
+    "pretrain_finetune/calibration_score.npy": "fe68008a711773803bd57e23e8ecf59de50bb97f96a0b5108c40aaa61e5efcec",
+    "pretrain_finetune/selected_prediction.npy": "0241aadc1986b5a7b74a2b9e1aaeb10665897ccba696f3b48ad6c11d37764a41"
+  }
+}

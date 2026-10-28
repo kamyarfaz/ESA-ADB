@@ -1,0 +1,18 @@
+{
+  "verified": true,
+  "metric_rows": 96,
+  "calibration_candidates": 144,
+  "complete_receipt_sha256": "9f5b058f16d1eafc0e6515fa60fca28622880bf59e3611c6b1c44fdc379fc7c0",
+  "checks": [
+    "Frozen datasets/source/protocol/reference receipts",
+    "All 144 calibration candidates and selection replay",
+    "Exact original/selected prediction replay",
+    "96 annual/pooled corrected metrics and prior control parity",
+    "Event IDs and segment/duration diagnostics",
+    "Assessment prediction artifacts created after freeze"
+  ],
+  "limitations": [
+    "Single seed; reused benchmark; offline lookahead",
+    "Saved-score replay; not a new independent inference replication"
+  ]
+}

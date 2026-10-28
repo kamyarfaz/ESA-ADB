@@ -1,0 +1,7 @@
+method,variant,segments,alarm_samples,sample_grid_alarm_seconds
+short_no_roll,original,62,114944,3448320
+short_no_roll,selected,62,114944,3448320
+pretrain_finetune,original,84,131456,3943680
+pretrain_finetune,selected,84,131456,3943680
+expanded_short_no_roll,original,95,648480,19454400
+expanded_short_no_roll,selected,95,648480,19454400

@@ -5,22 +5,21 @@ Read this before proposing work. The chat is not required to continue the projec
 
 ## 1. Current task and decision
 
-**28 October ACTIVE — authorized temporal post-processing on all three latest
-selected models.** No retraining. Fixed thresholds; gap fill then duration filter,
-48 calibration candidates/method. Optimize local40–47 calibration F0.5 with exact
-baseline calibration detected-ID retention and1% total alarm cap. Freeze all
-three choices before assessment. Report both scopes and unchanged controls.
-Protocol: docs/research/temporal-postprocessing-protocol-2026-10-28.md.
-Runner: scripts/research/run_temporal_postprocessing_20261028.py.
-Output: results_longrun/temporal_postprocessing_20261028_v1.
-Service: esa-temporal-postprocessing.service. Log:
-/home/k_faz/project-backups/run-logs/temporal-postprocessing-20261028.log.
-Follow-up: complete-three-method-temporal-post-processing, every30minutes.
-Next: complete worker, independently verify hashes/calibration/selection,
-prediction replay/all96 metrics/event IDs/segment and duration diagnostics;
-publish W&B/report/workbook/Git/checksum-verified Release, disable service and
-delete follow-up after delivery. Preserve unsuccessful outcomes. Reused benchmark,
-single seed, offline lookahead and extra inputs must be disclosed. No test tuning.
+**28 October 2026 — temporal post-processing completed and independently verified.**
+All three latest W&B models retained unchanged processing (gap 0, minimum 1 sample).
+The 144 calibration candidates produced no selected improvement; all 96 annual/pooled
+assessment rows and prediction replays match unchanged controls. Calibration segments
+were at least 16 minutes: the tested duration cutoffs (up to 16 minutes) removed none.
+The first two methods had no gaps within the tested 32-minute merging range; expanded
+inputs had some merges but no objective gain. Larger cutoffs remain untested.
+All 147 thesis tests passed. W&B cloud verification downloaded three finished evaluation
+runs and all 96 metric rows. Workbook numeric/history cells preserved; only A48 note updated.
+Report: docs/research/temporal-postprocessing-results-2026-10-28.md.
+Evidence: docs/research/tables/temporal-postprocessing-2026-10-28/.
+Service esa-temporal-postprocessing.service is inactive and disabled. Release publication
+and monitoring cleanup are being finalized; consult github-backup.json for verified backup.
+No further experiment authorized. Single seed, reused benchmark, offline lookahead,
+small calibration event set and extra inputs limit conclusions. No robust target claim.
 
 
 **25 October GitHub preservation check:** completed study and workbook are on
