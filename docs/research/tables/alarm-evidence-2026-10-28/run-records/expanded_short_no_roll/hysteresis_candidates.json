@@ -1,0 +1,256 @@
+[
+  {
+    "rule": {
+      "index": 0,
+      "family": "hysteresis",
+      "original": true
+    },
+    "local_f05": 0.999727432637978,
+    "system_f05": 0.9780000225998965,
+    "false_seconds": 10400.067,
+    "local_detected": 6,
+    "alarm_fraction": 0.0024961948249619483,
+    "segments": 14,
+    "feasible": true
+  },
+  {
+    "rule": {
+      "index": 1,
+      "family": "hysteresis",
+      "original": false,
+      "low": 0.5,
+      "high": 1
+    },
+    "local_f05": 0.9987760284295397,
+    "system_f05": 0.9770895045457532,
+    "false_seconds": 46690.695,
+    "local_detected": 6,
+    "alarm_fraction": 0.004931506849315068,
+    "segments": 9,
+    "feasible": true
+  },
+  {
+    "rule": {
+      "index": 2,
+      "family": "hysteresis",
+      "original": false,
+      "low": 0.5,
+      "high": 1.1
+    },
+    "local_f05": 0.9987760284295397,
+    "system_f05": 0.9770895045457532,
+    "false_seconds": 46690.695,
+    "local_detected": 6,
+    "alarm_fraction": 0.004931506849315068,
+    "segments": 9,
+    "feasible": true
+  },
+  {
+    "rule": {
+      "index": 3,
+      "family": "hysteresis",
+      "original": false,
+      "low": 0.5,
+      "high": 1.25
+    },
+    "local_f05": 0.8329981676195893,
+    "system_f05": 0.8819771933490582,
+    "false_seconds": 18413.088,
+    "local_detected": 3,
+    "alarm_fraction": 0.0029223744292237444,
+    "segments": 5,
+    "feasible": false
+  },
+  {
+    "rule": {
+      "index": 4,
+      "family": "hysteresis",
+      "original": false,
+      "low": 0.5,
+      "high": 1.5
+    },
+    "local_f05": 0.0,
+    "system_f05": 0.0,
+    "false_seconds": 0.0,
+    "local_detected": 0,
+    "alarm_fraction": 0.0,
+    "segments": 0,
+    "feasible": false
+  },
+  {
+    "rule": {
+      "index": 5,
+      "family": "hysteresis",
+      "original": false,
+      "low": 0.5,
+      "high": 2
+    },
+    "local_f05": 0.0,
+    "system_f05": 0.0,
+    "false_seconds": 0.0,
+    "local_detected": 0,
+    "alarm_fraction": 0.0,
+    "segments": 0,
+    "feasible": false
+  },
+  {
+    "rule": {
+      "index": 6,
+      "family": "hysteresis",
+      "original": false,
+      "low": 0.75,
+      "high": 1
+    },
+    "local_f05": 0.9993292802550193,
+    "system_f05": 0.9776189852137461,
+    "false_seconds": 25589.403,
+    "local_detected": 6,
+    "alarm_fraction": 0.00380517503805175,
+    "segments": 10,
+    "feasible": true
+  },
+  {
+    "rule": {
+      "index": 7,
+      "family": "hysteresis",
+      "original": false,
+      "low": 0.75,
+      "high": 1.1
+    },
+    "local_f05": 0.9993292802550193,
+    "system_f05": 0.9776189852137461,
+    "false_seconds": 25589.403,
+    "local_detected": 6,
+    "alarm_fraction": 0.0036225266362252665,
+    "segments": 9,
+    "feasible": true
+  },
+  {
+    "rule": {
+      "index": 8,
+      "family": "hysteresis",
+      "original": false,
+      "low": 0.75,
+      "high": 1.25
+    },
+    "local_f05": 0.8331725886777703,
+    "system_f05": 0.8821727312198634,
+    "false_seconds": 8831.796,
+    "local_detected": 3,
+    "alarm_fraction": 0.002374429223744292,
+    "segments": 5,
+    "feasible": false
+  },
+  {
+    "rule": {
+      "index": 9,
+      "family": "hysteresis",
+      "original": false,
+      "low": 0.75,
+      "high": 1.5
+    },
+    "local_f05": 0.0,
+    "system_f05": 0.0,
+    "false_seconds": 0.0,
+    "local_detected": 0,
+    "alarm_fraction": 0.0,
+    "segments": 0,
+    "feasible": false
+  },
+  {
+    "rule": {
+      "index": 10,
+      "family": "hysteresis",
+      "original": false,
+      "low": 0.75,
+      "high": 2
+    },
+    "local_f05": 0.0,
+    "system_f05": 0.0,
+    "false_seconds": 0.0,
+    "local_detected": 0,
+    "alarm_fraction": 0.0,
+    "segments": 0,
+    "feasible": false
+  },
+  {
+    "rule": {
+      "index": 11,
+      "family": "hysteresis",
+      "original": false,
+      "low": 1,
+      "high": 1
+    },
+    "local_f05": 0.999727432637978,
+    "system_f05": 0.9780000225998965,
+    "false_seconds": 10400.067,
+    "local_detected": 6,
+    "alarm_fraction": 0.0024961948249619483,
+    "segments": 14,
+    "feasible": true
+  },
+  {
+    "rule": {
+      "index": 12,
+      "family": "hysteresis",
+      "original": false,
+      "low": 1,
+      "high": 1.1
+    },
+    "local_f05": 0.999727432637978,
+    "system_f05": 0.9780000225998965,
+    "false_seconds": 10400.067,
+    "local_detected": 6,
+    "alarm_fraction": 0.0024048706240487063,
+    "segments": 11,
+    "feasible": true
+  },
+  {
+    "rule": {
+      "index": 13,
+      "family": "hysteresis",
+      "original": false,
+      "low": 1,
+      "high": 1.25
+    },
+    "local_f05": 0.8332568495879658,
+    "system_f05": 0.8822671951567052,
+    "false_seconds": 4202.46,
+    "local_detected": 3,
+    "alarm_fraction": 0.0015525114155251142,
+    "segments": 5,
+    "feasible": false
+  },
+  {
+    "rule": {
+      "index": 14,
+      "family": "hysteresis",
+      "original": false,
+      "low": 1,
+      "high": 1.5
+    },
+    "local_f05": 0.0,
+    "system_f05": 0.0,
+    "false_seconds": 0.0,
+    "local_detected": 0,
+    "alarm_fraction": 0.0,
+    "segments": 0,
+    "feasible": false
+  },
+  {
+    "rule": {
+      "index": 15,
+      "family": "hysteresis",
+      "original": false,
+      "low": 1,
+      "high": 2
+    },
+    "local_f05": 0.0,
+    "system_f05": 0.0,
+    "false_seconds": 0.0,
+    "local_detected": 0,
+    "alarm_fraction": 0.0,
+    "segments": 0,
+    "feasible": false
+  }
+]

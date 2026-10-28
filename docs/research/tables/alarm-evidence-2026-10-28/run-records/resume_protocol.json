@@ -1,0 +1,646 @@
+{
+  "source_receipt": "bf9c0f712275aa339c04312cf3b2379c71dffc27043d02e40aa4dc45f0de01ff",
+  "calibration_receipt": "9f5b058f16d1eafc0e6515fa60fca28622880bf59e3611c6b1c44fdc379fc7c0",
+  "selection": "6b6d0a84c763fa0488a1a2907d15f38ed4b4b236efd60934ea8c13de47754d33",
+  "runner": "370ef6bc12f7dc8d902ce7feccba1c4b10b36e84928a3c7e9057fada591e04ac",
+  "protocol": "b5b74b0e79cd4a7735ce09b81816f46a18d4fbb993e3e3fc87fadb094aa8454c",
+  "source": {
+    "full_similarity_mosad.py": "1e1ee3741162b3c630715c9eaffc57fed6a8cda6c696cad1cd1201415409a38a",
+    "metrics.py": "35aa1359bc694d05b8d5317e3bbfc5d4125d975720f98eb7ca931fcadb15f857",
+    "channel_isolation.py": "469e4995eff26c60146f85431dd353c5b63042b4b5f42b1a797b41552982c675",
+    "augmentation.py": "40a5b44a6a277a570b12e764c0d38c5ae930af38952a32a0e6a201d1bd96dd68",
+    "observation_age.py": "fa2d31e3cc23139cf866ff1eff78be6b64e385dc287ca02b8c0f8df775b7a9f5",
+    "forecast_development.py": "361cc221bdb18fc0355ff2d7df8ca82e9e94a664a340a8a8ada83476f0a545e4",
+    "long_baseline.py": "75c436e430abafe89522774bda92aed7a18bd24e14e15db06f5f7abd71ac0fd2",
+    "tracking.py": "4d44a019ac7270e09c1e51e8fe5d60e4f02162b718c42e31e782f55c51f8f363",
+    "paths.py": "dbe622eba7b734711b021f1d3f682fc689ca93beb924d81c35b4f8804cf11d1e",
+    "checkpoints.py": "c5693341097578b4c299862def7c5e8ba22e89cf302e715e47ebcb88d4a712d7",
+    "loss_weight_comparison.py": "d448451808c4a6aefd7727004fa9cef44245528defe81b45f4b3ad218e53749f",
+    "similarity_mosad_methods.py": "c96ae5bc07163b446865b94820efb696ecc5e43efcd391bb2c0b826ea71cf9b7",
+    "training.py": "fd67f2d890a98da309edf88ba01d5208d987c300baaf46ad69daaf43b00bb8a0",
+    "short_no_roll_finetune.py": "578486f92cf2d382724667a55bd712c413786dccd726cb50e96160fd15c4f95a",
+    "timing_model.py": "dc83c8c10c2df05e15d4324524abd4ae4cda42b9046c410f0a8095474b9b5144",
+    "isolation_comparison.py": "1179babb11ed9c172c6e2c5580499a899a203176c9e8542dbb8335b90f53bf30",
+    "false_alarm_reduction.py": "a4d33bd17a93527e9a367b70af729257377a6434df5cf131c56b72122a95031f",
+    "runtime.py": "dded85c44cb7d74c7964fc72046122b7999849d88ac9ec423557c2f2772162ba",
+    "calibration_audit.py": "fe068da87030b19e7b88ffc486e304ca54e274cecc21fd7f17a0eed96195015c",
+    "scoring.py": "e86da8c7a63862edb4995b521d65a6b79ccf6a1ec21a0ae3ae79c2537c857d4b",
+    "thresholds.py": "85e5743196eec94d3580e381126080c9757f89ec3d467b5df6d8943b3e6e864c",
+    "config.py": "f6d0957cabf5a0005483710f1386093a8758ba20e8c61fcb9e5fcded61a7f18d",
+    "combine_specialist.py": "ffd19a13565fe1dfe1289ba98f92309e16a07e528ff3ecf4c62e50fbbd62b152",
+    "nominal_quantile.py": "c23915124b5162cbafdfde51643239b14ba49f0f2b0cc062c27ef72339aba756",
+    "plots.py": "a8915fafcbbfacb500f08c24cc63cedac970f79af9cdf293aa2c2908354a9e1c",
+    "masked_pilot.py": "d81f394bfd8cf7b1c223f2a63641e68c60803fb9d41ef1f1705da87ee1991175",
+    "full_short_no_roll.py": "f2e968aa2083f281ec85891f717656cdd5ca12a6a81d67a04f440c41d8a32b92",
+    "wandb_finetuning.py": "f668fdc1c92ffd0786b4b66f73e33947a525dd6d061eca486eb3385215d596b5",
+    "diagnose_channels.py": "7b306a7b71440e34dbc48aa730d579682637830ad986cc5e1130c997920c3d81",
+    "development_recovery.py": "dc6cd0786b69af6d11db0bc0b89cc8f7729f875ff9cbc897180a60a160d27be0",
+    "short_augmentation.py": "26a5fd1bf6528df4df8acd5555211dfbde7413e46cc99b16c9a5ba5b4fee4072",
+    "doctor.py": "919f34c1ccc80428b55cc5b0a3c985ef89ff5e4c64f2712f43b30527ac4c2a11",
+    "full_combinations.py": "9322a9e96e0af2f73a8608f6b2ebebf0e9c0fca00ead5c1e268b702335513b89",
+    "protocol.py": "fa2b4fab33d2dd5ab651d47f714a12cc124b2eccb309a7ba2305cb460d501039",
+    "telemetry_reference.py": "6c1adac8f7368c552d734abc59fdf1aac341c5c8fc11643d5d0e157b13e2fdbd",
+    "preprocessing_audit.py": "414d2845cbeb6f19b412233124c8566c2635b5a7f304b2bf3aa8741fc3ad779d",
+    "forecasting.py": "8f328f8ce6b09efd014d82cf744880ee1c56b7e5b3adbe685287bca5880da494",
+    "__main__.py": "b0a6367ae8ba922d7da9ac8cde9d0d670f3b8122b8262a691dcd3f9f5e3eb2e0",
+    "models.py": "3f8137d6640a15d2d51594c8a2f337a57f3c17882944b14a0c00bd4ce5fa38c6",
+    "augmentation_comparison.py": "108be7f43743416db147f9c6cc01923ccea252b300165b08a52c0252b24ac103",
+    "development.py": "3b21061c0c6e98b86c9275a13cd759595fa494215c530621add238c8b560cce0",
+    "inner_validation.py": "25d2ea134769e16d7d4e2171cafd3655e318ec99f85ca4d58da028b203fb1261",
+    "score_change.py": "103878ccb14bd9a298cc969d7630d86a98af77979fbb507f8a998ca16dc531d3",
+    "__init__.py": "c1a203ab62c1da4e9e29a56d18d05227c5546b02e612b11e5b00b508eb39c38e",
+    "timing_comparison.py": "8448fb814d622daeed13f9e0f70076b67a8660d72033daf9cb0c8f5229b07a7b",
+    "data.py": "c2fa6c8e3757d2fa95c865283bccd143ddb1229b451b82c308805e9b61385972",
+    "analysis/correlation.py": "d1a121a0cfef43939edadffd58cdf7d180bb1c654202c5e65f76efe38a11de15",
+    "analysis/representatives.py": "4636ee4ac6d0f92ca4c1381d480d488be206183a9c14f961abefc169b0b796d8",
+    "analysis/importance.py": "bc6c0fdfdf32e711b89eb96495976543182921aa5dcb3fdc2b9a0d8fd94df283",
+    "analysis/__init__.py": "29734b61efe34fab06735701fc7f80a115217f3c16e76c0fdb736317f5c5e825",
+    "vendor/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "vendor/mosad/mosad.py": "8ab7c53c01cf68dd8f14b84ad90961da7363114336bbfe7c028591f6e92248d8",
+    "vendor/mosad/network.py": "14b531605d5b21a9137fdb32437f484dfee16aede9a837c3c2b28d3070c50eac",
+    "vendor/mosad/utils.py": "35df047633ccc206d595701d8846e6cd332afa1aca583f8a3f581e24deac6b38",
+    "vendor/mosad/base_model.py": "c047b6cbb6a5e764b714edeaaa9950e4d7646fde17e70ab791ca444b878336b1",
+    "vendor/mosad/model.py": "ad0c08fe7fc77e13c6a6f9213ce8c5104638dcd55cd4f631d1a8827805c72471",
+    "vendor/mosad/loss.py": "44684444a75d986bed0ebf0b0c83f4b9d4f5afe238db4b44a5ab9b5d2acdfe7d",
+    "vendor/mosad/__init__.py": "4cc566257957c49769af206fb5d18db50cb3162eb7dfb3494832dbb566c81829",
+    "evaluation/subset.py": "f1f9d2231afd5e9fee7d88a64a8052a5187d95c2c9ef88b6b3821d03a9409024",
+    "evaluation/esa.py": "8a93619dc08c1127249e92956cd5d03a420dcddb8d7e8e5c0683477255d19cdf",
+    "evaluation/causal_alarms.py": "d3dc621b63c1ae01de85b696187110cc3350538a2d08645f0c188dbc83f25460",
+    "evaluation/mlp_ensemble.py": "29849ea14f9caf8a4d0e84e559b28aac6a6bdbf3e9add9fd396792590b543c5b",
+    "evaluation/coverage.py": "a3ae40e95092e93d43803ac91f075e343cff86aeb19e93a5dfad5c6dcc3261e0",
+    "evaluation/legacy_evaluation.py": "17870d38fdbd1a4a1bf610da802350765f4770e0dd557a412fca1d680758b74f",
+    "evaluation/subset_v1.py": "6e55977f26774784fa196c1b2148140ab0bbce033170c7ca6ceec5c8b7570c7f",
+    "evaluation/recalibrate.py": "a5c9744245deae32f414b5b7c111fbf86b4c4ac90186106653c63689b229c2fc",
+    "evaluation/compare_channel_normalization.py": "58786c288c3fab2746667d8701d2fb95fa00b366c8c2d50c97b59cb94dece98d",
+    "evaluation/reselect.py": "e44c0629d9cf0db1246c2cb530b157d884f588947e28dbfe5f9d9ebb9fb24c03",
+    "evaluation/legacy_scores.py": "e972f0c8ec4e86dd7058e4dba7b4f504ce5549406106311e56b26d54a0e75f6b",
+    "evaluation/compare_scoring.py": "88f3bb119271d95c7c1b744ac4bb732deb7b3064cc5f4864ed08786a79d9e1de",
+    "evaluation/__init__.py": "82bb137ec6f58f9641a1a0b2f2023922c5a4f536663cf8a3900c146c0bc627cf",
+    "calibration/evt.py": "0763733ce48104de85db541b6ed81b2c7ef0c01dda38b54c3eb53e7b33d9fa49",
+    "calibration/dspot.py": "38393323bc2f97b40438a986c02aa4a455d4ead0f32e8a557b5e408148ae5aa8",
+    "calibration/__init__.py": "a90e2369fc7de4729a9add632255a90dc8eb9bff64c09ddf5722b7c5a1da6aec"
+  },
+  "runtime": {
+    "torch": "2.6.0+cu124",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3"
+  },
+  "settings": {
+    "WANDB_PROJECT": "esa-adb-mission1",
+    "TRAIN_FILE": "/home/k_faz/projects/ESA-ADB/data/preprocessed/multivariate/ESA-Mission1-semi-supervised/84_months.train.csv",
+    "TEST_FILE": "/home/k_faz/projects/ESA-ADB/data/preprocessed/multivariate/ESA-Mission1-semi-supervised/84_months.test.csv",
+    "OUT_ROOT": "/home/k_faz/projects/ESA-ADB/results_longrun/mission1_esa_ew_v1",
+    "SEED": "42",
+    "DEVICE": "cuda",
+    "SEQ_LEN": "256",
+    "PATCH_SIZE": "16",
+    "STRIDE": "16",
+    "SCORE_STRIDE": "32",
+    "D_MODEL": "128",
+    "N_HEADS": "8",
+    "N_LAYERS": "4",
+    "D_FF_MULT": "2",
+    "DROPOUT": "0.1",
+    "EPOCHS": "40",
+    "BATCH_SIZE": "128",
+    "EVAL_BATCH_SIZE": "256",
+    "LR": "0.0001",
+    "WEIGHT_DECAY": "0.0001",
+    "GRAD_CLIP": "1.0",
+    "VAL_MONTHS": "3",
+    "ANNOTATIONS_FILE": "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/labels.csv",
+    "ANOMALY_TYPES_FILE": "/home/k_faz/projects/ESA-ADB/data/ESA-Mission1/anomaly_types.csv",
+    "MAX_TRAIN_WINDOWS": "250000",
+    "CLIP_Z": "10.0",
+    "AMP": "False",
+    "TRAIN_MLP": "True",
+    "MLP_PRED_LEN": "32",
+    "MLP_HIDDEN": "256",
+    "MLP_LAYERS": "4",
+    "MLP_EPOCHS": "30",
+    "MLP_LR": "0.0003",
+    "MLP_BATCH": "512",
+    "THRESH_PERCENTILES": "[50.0, 55.0, 60.0, 65.0, 70.0, 75.0, 80.0, 85.0, 90.0, 95.0, 96.0, 97.0, 98.0, 99.0, 99.3, 99.5, 99.7, 99.8, 99.9, 99.95, 99.97, 99.99]",
+    "MERGE_GAPS": "[0, 16, 32, 64, 128, 256, 512, 1024]",
+    "MIN_DURS": "[1, 8, 16, 32, 64, 128]",
+    "SATURATION_RATE": "0.8",
+    "MAX_ZOOM_EVENTS": "24",
+    "ZOOM_PAD": "4096",
+    "PA_LAMBDA": "1.0",
+    "PA_MARGIN": "10.0",
+    "PA_SUBWIN": "(0.05, 0.33)",
+    "RUN_SPECS": "[{'run': 'fed_ch06_41_46', 'features': ['channel_41', 'channel_42', 'channel_43', 'channel_44', 'channel_45', 'channel_46'], 'group': 'reference_like'}, {'run': 'center_ch08_40_47', 'features': ['channel_40', 'channel_41', 'channel_42', 'channel_43', 'channel_44', 'channel_45', 'channel_46', 'channel_47'], 'group': 'previous_best_region'}, {'run': 'center_ch12_38_49', 'features': ['channel_38', 'channel_39', 'channel_40', 'channel_41', 'channel_42', 'channel_43', 'channel_44', 'channel_45', 'channel_46', 'channel_47', 'channel_48', 'channel_49'], 'group': 'previous_best_region'}, {'run': 'block_ch08_01_08', 'features': ['channel_1', 'channel_2', 'channel_3', 'channel_4', 'channel_5', 'channel_6', 'channel_7', 'channel_8'], 'group': 'block_best_event'}, {'run': 'block_ch08_17_24', 'features': ['channel_17', 'channel_18', 'channel_19', 'channel_20', 'channel_21', 'channel_22', 'channel_23', 'channel_24'], 'group': 'block_good_point'}, {'run': 'block_ch08_33_40', 'features': ['channel_33', 'channel_34', 'channel_35', 'channel_36', 'channel_37', 'channel_38', 'channel_39', 'channel_40'], 'group': 'block_best_point'}, {'run': 'fine_ch08_03_10', 'features': ['channel_3', 'channel_4', 'channel_5', 'channel_6', 'channel_7', 'channel_8', 'channel_9', 'channel_10'], 'group': 'fine_early'}, {'run': 'fine_ch08_05_12', 'features': ['channel_5', 'channel_6', 'channel_7', 'channel_8', 'channel_9', 'channel_10', 'channel_11', 'channel_12'], 'group': 'fine_early'}, {'run': 'fine_ch08_13_20', 'features': ['channel_13', 'channel_14', 'channel_15', 'channel_16', 'channel_17', 'channel_18', 'channel_19', 'channel_20'], 'group': 'fine_middle_low'}, {'run': 'fine_ch08_15_22', 'features': ['channel_15', 'channel_16', 'channel_17', 'channel_18', 'channel_19', 'channel_20', 'channel_21', 'channel_22'], 'group': 'fine_middle_low'}, {'run': 'fine_ch08_19_26', 'features': ['channel_19', 'channel_20', 'channel_21', 'channel_22', 'channel_23', 'channel_24', 'channel_25', 'channel_26'], 'group': 'fine_middle_low'}, {'run': 'fine_ch08_21_28', 'features': ['channel_21', 'channel_22', 'channel_23', 'channel_24', 'channel_25', 'channel_26', 'channel_27', 'channel_28'], 'group': 'fine_middle_low'}, {'run': 'fine_ch08_29_36', 'features': ['channel_29', 'channel_30', 'channel_31', 'channel_32', 'channel_33', 'channel_34', 'channel_35', 'channel_36'], 'group': 'fine_middle_high'}, {'run': 'fine_ch08_31_38', 'features': ['channel_31', 'channel_32', 'channel_33', 'channel_34', 'channel_35', 'channel_36', 'channel_37', 'channel_38'], 'group': 'fine_middle_high'}, {'run': 'fine_ch08_35_42', 'features': ['channel_35', 'channel_36', 'channel_37', 'channel_38', 'channel_39', 'channel_40', 'channel_41', 'channel_42'], 'group': 'fine_middle_high'}, {'run': 'fine_ch08_37_44', 'features': ['channel_37', 'channel_38', 'channel_39', 'channel_40', 'channel_41', 'channel_42', 'channel_43', 'channel_44'], 'group': 'fine_middle_high'}, {'run': 'combo_ch16_01_16', 'features': ['channel_1', 'channel_2', 'channel_3', 'channel_4', 'channel_5', 'channel_6', 'channel_7', 'channel_8', 'channel_9', 'channel_10', 'channel_11', 'channel_12', 'channel_13', 'channel_14', 'channel_15', 'channel_16'], 'group': 'combo'}, {'run': 'combo_ch16_17_32', 'features': ['channel_17', 'channel_18', 'channel_19', 'channel_20', 'channel_21', 'channel_22', 'channel_23', 'channel_24', 'channel_25', 'channel_26', 'channel_27', 'channel_28', 'channel_29', 'channel_30', 'channel_31', 'channel_32'], 'group': 'combo'}, {'run': 'combo_ch16_29_44', 'features': ['channel_29', 'channel_30', 'channel_31', 'channel_32', 'channel_33', 'channel_34', 'channel_35', 'channel_36', 'channel_37', 'channel_38', 'channel_39', 'channel_40', 'channel_41', 'channel_42', 'channel_43', 'channel_44'], 'group': 'combo'}, {'run': 'combo_ch24_17_40', 'features': ['channel_17', 'channel_18', 'channel_19', 'channel_20', 'channel_21', 'channel_22', 'channel_23', 'channel_24', 'channel_25', 'channel_26', 'channel_27', 'channel_28', 'channel_29', 'channel_30', 'channel_31', 'channel_32', 'channel_33', 'channel_34', 'channel_35', 'channel_36', 'channel_37', 'channel_38', 'channel_39', 'channel_40'], 'group': 'combo'}, {'run': 'corr_ch24_12_35', 'features': ['channel_12', 'channel_13', 'channel_14', 'channel_15', 'channel_16', 'channel_17', 'channel_18', 'channel_19', 'channel_20', 'channel_21', 'channel_22', 'channel_23', 'channel_24', 'channel_25', 'channel_26', 'channel_27', 'channel_28', 'channel_29', 'channel_30', 'channel_31', 'channel_32', 'channel_33', 'channel_34', 'channel_35'], 'group': 'corr_cluster_a_core'}, {'run': 'corr_ch19_17_35', 'features': ['channel_17', 'channel_18', 'channel_19', 'channel_20', 'channel_21', 'channel_22', 'channel_23', 'channel_24', 'channel_25', 'channel_26', 'channel_27', 'channel_28', 'channel_29', 'channel_30', 'channel_31', 'channel_32', 'channel_33', 'channel_34', 'channel_35'], 'group': 'corr_cluster_a_tight'}, {'run': 'corr_ch12_41_52', 'features': ['channel_41', 'channel_42', 'channel_43', 'channel_44', 'channel_45', 'channel_46', 'channel_47', 'channel_48', 'channel_49', 'channel_50', 'channel_51', 'channel_52'], 'group': 'corr_cluster_b'}, {'run': 'corr_ch26_20_45', 'features': ['channel_20', 'channel_21', 'channel_22', 'channel_23', 'channel_24', 'channel_25', 'channel_26', 'channel_27', 'channel_28', 'channel_29', 'channel_30', 'channel_31', 'channel_32', 'channel_33', 'channel_34', 'channel_35', 'channel_36', 'channel_37', 'channel_38', 'channel_39', 'channel_40', 'channel_41', 'channel_42', 'channel_43', 'channel_44', 'channel_45'], 'group': 'corr_cross_cluster'}, {'run': 'corr_ch29_12_40', 'features': ['channel_12', 'channel_13', 'channel_14', 'channel_15', 'channel_16', 'channel_17', 'channel_18', 'channel_19', 'channel_20', 'channel_21', 'channel_22', 'channel_23', 'channel_24', 'channel_25', 'channel_26', 'channel_27', 'channel_28', 'channel_29', 'channel_30', 'channel_31', 'channel_32', 'channel_33', 'channel_34', 'channel_35', 'channel_36', 'channel_37', 'channel_38', 'channel_39', 'channel_40'], 'group': 'corr_cluster_a_full'}, {'run': 'corr_neg_ch30_12_40_p61', 'features': ['channel_12', 'channel_13', 'channel_14', 'channel_15', 'channel_16', 'channel_17', 'channel_18', 'channel_19', 'channel_20', 'channel_21', 'channel_22', 'channel_23', 'channel_24', 'channel_25', 'channel_26', 'channel_27', 'channel_28', 'channel_29', 'channel_30', 'channel_31', 'channel_32', 'channel_33', 'channel_34', 'channel_35', 'channel_36', 'channel_37', 'channel_38', 'channel_39', 'channel_40', 'channel_61'], 'group': 'corr_neg_exploit'}, {'run': 'clust_med_t03_6ch', 'features': ['channel_3', 'channel_5', 'channel_13', 'channel_29', 'channel_48', 'channel_57'], 'selection': 'clust_med_t03', 'group': 'cluster_rep_leakfree'}, {'run': 'clust_pair_t03_12ch', 'features': ['channel_1', 'channel_3', 'channel_5', 'channel_6', 'channel_13', 'channel_29', 'channel_38', 'channel_39', 'channel_42', 'channel_48', 'channel_57', 'channel_60'], 'selection': 'clust_pair_t03', 'group': 'cluster_rep_leakfree'}, {'run': 'pa_center_ch12_38_49', 'features': ['channel_38', 'channel_39', 'channel_40', 'channel_41', 'channel_42', 'channel_43', 'channel_44', 'channel_45', 'channel_46', 'channel_47', 'channel_48', 'channel_49'], 'pseudo': True, 'group': 'pseudo_anomaly'}, {'run': 'pa_center_ch08_40_47', 'features': ['channel_40', 'channel_41', 'channel_42', 'channel_43', 'channel_44', 'channel_45', 'channel_46', 'channel_47'], 'pseudo': True, 'group': 'pseudo_anomaly'}, {'run': 'pa_clust_med_t03_6ch', 'features': ['channel_3', 'channel_5', 'channel_13', 'channel_29', 'channel_48', 'channel_57'], 'pseudo': True, 'selection': 'clust_med_t03', 'group': 'pseudo_anomaly'}]"
+  },
+  "candidates": {
+    "strength_duration": [
+      {
+        "index": 0,
+        "family": "strength_duration",
+        "original": true
+      },
+      {
+        "index": 1,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 1,
+        "peak": 1.1
+      },
+      {
+        "index": 2,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 1,
+        "peak": 1.25
+      },
+      {
+        "index": 3,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 1,
+        "peak": 1.5
+      },
+      {
+        "index": 4,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 1,
+        "peak": 2
+      },
+      {
+        "index": 5,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 1,
+        "peak": 3
+      },
+      {
+        "index": 6,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 1,
+        "peak": 5
+      },
+      {
+        "index": 7,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 32,
+        "peak": 1.1
+      },
+      {
+        "index": 8,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 32,
+        "peak": 1.25
+      },
+      {
+        "index": 9,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 32,
+        "peak": 1.5
+      },
+      {
+        "index": 10,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 32,
+        "peak": 2
+      },
+      {
+        "index": 11,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 32,
+        "peak": 3
+      },
+      {
+        "index": 12,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 32,
+        "peak": 5
+      },
+      {
+        "index": 13,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 48,
+        "peak": 1.1
+      },
+      {
+        "index": 14,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 48,
+        "peak": 1.25
+      },
+      {
+        "index": 15,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 48,
+        "peak": 1.5
+      },
+      {
+        "index": 16,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 48,
+        "peak": 2
+      },
+      {
+        "index": 17,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 48,
+        "peak": 3
+      },
+      {
+        "index": 18,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 48,
+        "peak": 5
+      },
+      {
+        "index": 19,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 64,
+        "peak": 1.1
+      },
+      {
+        "index": 20,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 64,
+        "peak": 1.25
+      },
+      {
+        "index": 21,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 64,
+        "peak": 1.5
+      },
+      {
+        "index": 22,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 64,
+        "peak": 2
+      },
+      {
+        "index": 23,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 64,
+        "peak": 3
+      },
+      {
+        "index": 24,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 64,
+        "peak": 5
+      },
+      {
+        "index": 25,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 96,
+        "peak": 1.1
+      },
+      {
+        "index": 26,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 96,
+        "peak": 1.25
+      },
+      {
+        "index": 27,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 96,
+        "peak": 1.5
+      },
+      {
+        "index": 28,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 96,
+        "peak": 2
+      },
+      {
+        "index": 29,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 96,
+        "peak": 3
+      },
+      {
+        "index": 30,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 96,
+        "peak": 5
+      },
+      {
+        "index": 31,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 128,
+        "peak": 1.1
+      },
+      {
+        "index": 32,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 128,
+        "peak": 1.25
+      },
+      {
+        "index": 33,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 128,
+        "peak": 1.5
+      },
+      {
+        "index": 34,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 128,
+        "peak": 2
+      },
+      {
+        "index": 35,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 128,
+        "peak": 3
+      },
+      {
+        "index": 36,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 128,
+        "peak": 5
+      },
+      {
+        "index": 37,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 256,
+        "peak": 1.1
+      },
+      {
+        "index": 38,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 256,
+        "peak": 1.25
+      },
+      {
+        "index": 39,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 256,
+        "peak": 1.5
+      },
+      {
+        "index": 40,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 256,
+        "peak": 2
+      },
+      {
+        "index": 41,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 256,
+        "peak": 3
+      },
+      {
+        "index": 42,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 256,
+        "peak": 5
+      },
+      {
+        "index": 43,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 512,
+        "peak": 1.1
+      },
+      {
+        "index": 44,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 512,
+        "peak": 1.25
+      },
+      {
+        "index": 45,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 512,
+        "peak": 1.5
+      },
+      {
+        "index": 46,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 512,
+        "peak": 2
+      },
+      {
+        "index": 47,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 512,
+        "peak": 3
+      },
+      {
+        "index": 48,
+        "family": "strength_duration",
+        "original": false,
+        "duration": 512,
+        "peak": 5
+      }
+    ],
+    "hysteresis": [
+      {
+        "index": 0,
+        "family": "hysteresis",
+        "original": true
+      },
+      {
+        "index": 1,
+        "family": "hysteresis",
+        "original": false,
+        "low": 0.5,
+        "high": 1
+      },
+      {
+        "index": 2,
+        "family": "hysteresis",
+        "original": false,
+        "low": 0.5,
+        "high": 1.1
+      },
+      {
+        "index": 3,
+        "family": "hysteresis",
+        "original": false,
+        "low": 0.5,
+        "high": 1.25
+      },
+      {
+        "index": 4,
+        "family": "hysteresis",
+        "original": false,
+        "low": 0.5,
+        "high": 1.5
+      },
+      {
+        "index": 5,
+        "family": "hysteresis",
+        "original": false,
+        "low": 0.5,
+        "high": 2
+      },
+      {
+        "index": 6,
+        "family": "hysteresis",
+        "original": false,
+        "low": 0.75,
+        "high": 1
+      },
+      {
+        "index": 7,
+        "family": "hysteresis",
+        "original": false,
+        "low": 0.75,
+        "high": 1.1
+      },
+      {
+        "index": 8,
+        "family": "hysteresis",
+        "original": false,
+        "low": 0.75,
+        "high": 1.25
+      },
+      {
+        "index": 9,
+        "family": "hysteresis",
+        "original": false,
+        "low": 0.75,
+        "high": 1.5
+      },
+      {
+        "index": 10,
+        "family": "hysteresis",
+        "original": false,
+        "low": 0.75,
+        "high": 2
+      },
+      {
+        "index": 11,
+        "family": "hysteresis",
+        "original": false,
+        "low": 1,
+        "high": 1
+      },
+      {
+        "index": 12,
+        "family": "hysteresis",
+        "original": false,
+        "low": 1,
+        "high": 1.1
+      },
+      {
+        "index": 13,
+        "family": "hysteresis",
+        "original": false,
+        "low": 1,
+        "high": 1.25
+      },
+      {
+        "index": 14,
+        "family": "hysteresis",
+        "original": false,
+        "low": 1,
+        "high": 1.5
+      },
+      {
+        "index": 15,
+        "family": "hysteresis",
+        "original": false,
+        "low": 1,
+        "high": 2
+      }
+    ],
+    "duration": [
+      {
+        "index": 0,
+        "family": "duration",
+        "original": true
+      },
+      {
+        "index": 1,
+        "family": "duration",
+        "original": false,
+        "duration": 1
+      },
+      {
+        "index": 2,
+        "family": "duration",
+        "original": false,
+        "duration": 32
+      },
+      {
+        "index": 3,
+        "family": "duration",
+        "original": false,
+        "duration": 48
+      },
+      {
+        "index": 4,
+        "family": "duration",
+        "original": false,
+        "duration": 64
+      },
+      {
+        "index": 5,
+        "family": "duration",
+        "original": false,
+        "duration": 96
+      },
+      {
+        "index": 6,
+        "family": "duration",
+        "original": false,
+        "duration": 128
+      },
+      {
+        "index": 7,
+        "family": "duration",
+        "original": false,
+        "duration": 256
+      },
+      {
+        "index": 8,
+        "family": "duration",
+        "original": false,
+        "duration": 512
+      }
+    ]
+  }
+}

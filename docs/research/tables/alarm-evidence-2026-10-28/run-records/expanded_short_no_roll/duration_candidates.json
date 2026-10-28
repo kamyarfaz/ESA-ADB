@@ -1,0 +1,136 @@
+[
+  {
+    "rule": {
+      "index": 0,
+      "family": "duration",
+      "original": true
+    },
+    "local_f05": 0.999727432637978,
+    "system_f05": 0.9780000225998965,
+    "false_seconds": 10400.067,
+    "local_detected": 6,
+    "alarm_fraction": 0.0024961948249619483,
+    "segments": 14,
+    "feasible": true
+  },
+  {
+    "rule": {
+      "index": 1,
+      "family": "duration",
+      "original": false,
+      "duration": 1
+    },
+    "local_f05": 0.999727432637978,
+    "system_f05": 0.9780000225998965,
+    "false_seconds": 10400.067,
+    "local_detected": 6,
+    "alarm_fraction": 0.0024961948249619483,
+    "segments": 14,
+    "feasible": true
+  },
+  {
+    "rule": {
+      "index": 2,
+      "family": "duration",
+      "original": false,
+      "duration": 32
+    },
+    "local_f05": 0.999727432637978,
+    "system_f05": 0.9780000225998965,
+    "false_seconds": 10400.067,
+    "local_detected": 6,
+    "alarm_fraction": 0.0024961948249619483,
+    "segments": 14,
+    "feasible": true
+  },
+  {
+    "rule": {
+      "index": 3,
+      "family": "duration",
+      "original": false,
+      "duration": 48
+    },
+    "local_f05": 0.9613094785009494,
+    "system_f05": 0.9521563096461756,
+    "false_seconds": 9449.979,
+    "local_detected": 5,
+    "alarm_fraction": 0.002374429223744292,
+    "segments": 10,
+    "feasible": false
+  },
+  {
+    "rule": {
+      "index": 4,
+      "family": "duration",
+      "original": false,
+      "duration": 64
+    },
+    "local_f05": 0.9613094785009494,
+    "system_f05": 0.9521563096461756,
+    "false_seconds": 9449.979,
+    "local_detected": 5,
+    "alarm_fraction": 0.002374429223744292,
+    "segments": 10,
+    "feasible": false
+  },
+  {
+    "rule": {
+      "index": 5,
+      "family": "duration",
+      "original": false,
+      "duration": 96
+    },
+    "local_f05": 0.9613094785009494,
+    "system_f05": 0.9521563096461756,
+    "false_seconds": 9449.979,
+    "local_detected": 5,
+    "alarm_fraction": 0.002374429223744292,
+    "segments": 10,
+    "feasible": false
+  },
+  {
+    "rule": {
+      "index": 6,
+      "family": "duration",
+      "original": false,
+      "duration": 128
+    },
+    "local_f05": 0.8332483125024764,
+    "system_f05": 0.8822576242772401,
+    "false_seconds": 4671.513,
+    "local_detected": 3,
+    "alarm_fraction": 0.002191780821917808,
+    "segments": 8,
+    "feasible": false
+  },
+  {
+    "rule": {
+      "index": 7,
+      "family": "duration",
+      "original": false,
+      "duration": 256
+    },
+    "local_f05": 0.4999975800006251,
+    "system_f05": 0.6818136818272642,
+    "false_seconds": 369.372,
+    "local_detected": 1,
+    "alarm_fraction": 0.0013698630136986301,
+    "segments": 3,
+    "feasible": false
+  },
+  {
+    "rule": {
+      "index": 8,
+      "family": "duration",
+      "original": false,
+      "duration": 512
+    },
+    "local_f05": 0.0,
+    "system_f05": 0.5555525679036131,
+    "false_seconds": 369.372,
+    "local_detected": 0,
+    "alarm_fraction": 0.001095890410958904,
+    "segments": 2,
+    "feasible": false
+  }
+]

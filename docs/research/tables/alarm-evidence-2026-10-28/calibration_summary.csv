@@ -1,0 +1,10 @@
+method,family,candidates,feasible,rejected,selected_original,selected_calibration_f05
+short_no_roll,strength_duration,49,19,30,True,0.999724246152595
+short_no_roll,hysteresis,16,7,9,True,0.999724246152595
+short_no_roll,duration,9,3,6,True,0.999724246152595
+pretrain_finetune,strength_duration,49,13,36,True,0.8821058520060329
+pretrain_finetune,hysteresis,16,4,12,True,0.8821058520060329
+pretrain_finetune,duration,9,3,6,True,0.8821058520060329
+expanded_short_no_roll,strength_duration,49,19,30,True,0.999727432637978
+expanded_short_no_roll,hysteresis,16,7,9,True,0.999727432637978
+expanded_short_no_roll,duration,9,3,6,True,0.999727432637978

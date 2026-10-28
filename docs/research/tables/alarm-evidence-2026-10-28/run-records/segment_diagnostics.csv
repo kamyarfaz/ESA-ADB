@@ -1,0 +1,13 @@
+method,variant,segments,alarm_samples,sample_grid_alarm_seconds
+short_no_roll,original,62,114944,3448320
+short_no_roll,strength_duration,62,114944,3448320
+short_no_roll,hysteresis,62,114944,3448320
+short_no_roll,duration,62,114944,3448320
+pretrain_finetune,original,84,131456,3943680
+pretrain_finetune,strength_duration,84,131456,3943680
+pretrain_finetune,hysteresis,84,131456,3943680
+pretrain_finetune,duration,84,131456,3943680
+expanded_short_no_roll,original,95,648480,19454400
+expanded_short_no_roll,strength_duration,95,648480,19454400
+expanded_short_no_roll,hysteresis,95,648480,19454400
+expanded_short_no_roll,duration,95,648480,19454400

@@ -1,0 +1,30 @@
+{
+  "needs_independent_verification": true,
+  "files": {
+    "segment_diagnostics.csv": "93b21ecc9283710216b401d3eb4ccbd6a407383cd87dfcd0dfdf85840a7a440a",
+    "protocol.json": "5302fc08cfe3954adaaaf5cd7e148bb81c5e2ce6716eb4bb0527cc9b88196eb7",
+    "selection_complete.json": "f0e952633babba6c55dfd52902a664a7676ea98bca39cb072a225150b6634878",
+    "calibration_segments.csv": "909d13f356187ea4fd4d0dbc06746d7bc1ba509eeca6d91a754b8e5748cd4e30",
+    "event_ids.csv": "8eee04b15b0c9317673a57c360c080170c4cd7783ebc538a6cc3650e4557e332",
+    "all_results.csv": "cc804a01f4696a22ee821b8fd16404be4afd33eb14ac710b79bacab67e21b387",
+    "resume_protocol.json": "5302fc08cfe3954adaaaf5cd7e148bb81c5e2ce6716eb4bb0527cc9b88196eb7",
+    "expanded_short_no_roll/hysteresis_prediction.npy": "59feb05711b588801744b6cebc341b3749232247d413ba37288308d72bcb39e6",
+    "expanded_short_no_roll/strength_duration_candidates.json": "a9426c25d749b3beb781e08ab19899a30565ac2a9d560bf9fc2d9d43399e63a9",
+    "expanded_short_no_roll/duration_candidates.json": "469c92fe258519733dc222e43d6ebdb1892ef609ebdfd21879d444dbd1c2c20d",
+    "expanded_short_no_roll/strength_duration_prediction.npy": "59feb05711b588801744b6cebc341b3749232247d413ba37288308d72bcb39e6",
+    "expanded_short_no_roll/duration_prediction.npy": "59feb05711b588801744b6cebc341b3749232247d413ba37288308d72bcb39e6",
+    "expanded_short_no_roll/hysteresis_candidates.json": "edb1d301f85906381c7fb64c6958b16d27d4531807cb9701f8350d900716eac7",
+    "short_no_roll/hysteresis_prediction.npy": "cc11b62ca992f84bd9a24c99826192ebee31f5d4c1940d500e3eece4bbd43ee2",
+    "short_no_roll/strength_duration_candidates.json": "a7c883109a5eb3efcdad5dee89b106ac8076739c5be0a78cccb50c7d51454941",
+    "short_no_roll/duration_candidates.json": "ee79caddd083581d8ed4b68a07172a5869c05f18adec6c4935af7cc1bdcea7df",
+    "short_no_roll/strength_duration_prediction.npy": "cc11b62ca992f84bd9a24c99826192ebee31f5d4c1940d500e3eece4bbd43ee2",
+    "short_no_roll/duration_prediction.npy": "cc11b62ca992f84bd9a24c99826192ebee31f5d4c1940d500e3eece4bbd43ee2",
+    "short_no_roll/hysteresis_candidates.json": "3dbfd8880d16b83ddfcb7de1df5a42660963bcda75a66a3f6801890bac1ec40d",
+    "pretrain_finetune/hysteresis_prediction.npy": "afdfe5975890ec545cd034b3df3ffa69af18fd6907032897aebb3058694d8b28",
+    "pretrain_finetune/strength_duration_candidates.json": "f74d6590b74c8b2ce0a9e02c93520c41bc5fd672a3651b4799802b903c007078",
+    "pretrain_finetune/duration_candidates.json": "08c4ef64b3e9b84f046d4e172d521e65228f9512a5ea2bc49ba5423c35d2d61e",
+    "pretrain_finetune/strength_duration_prediction.npy": "afdfe5975890ec545cd034b3df3ffa69af18fd6907032897aebb3058694d8b28",
+    "pretrain_finetune/duration_prediction.npy": "afdfe5975890ec545cd034b3df3ffa69af18fd6907032897aebb3058694d8b28",
+    "pretrain_finetune/hysteresis_candidates.json": "1dce396195fde6b595193c39834872c360082cb8b34dcd3ea5a130a52f5ea1db"
+  }
+}

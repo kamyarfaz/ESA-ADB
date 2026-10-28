@@ -266,3 +266,13 @@ All selections retained unchanged processing. Minimum calibration segment length
 16 minutes, so duration cutoffs through 16 minutes removed none; this is a bounded
 negative result, not evidence against temporal processing generally. See the
 [full report](research/temporal-postprocessing-results-2026-10-28.md).
+
+## 28 October 2026 score-evidence follow-up
+
+The user authorized three further families on all three fixed models: strength
+combined with duration, two-threshold hysteresis, and duration cutoffs up to
+256 minutes. All 222 calibration candidates are preserved, with nine selections
+frozen before assessment. All nine chose unchanged controls. A 16-minute
+masked-model false alarm and a genuine id_107 detection had nearly identical
+peak ratios, illustrating overlapping evidence. See the [report](research/alarm-evidence-results-2026-10-28.md)
+for independent verification, yearly metrics and limitations.

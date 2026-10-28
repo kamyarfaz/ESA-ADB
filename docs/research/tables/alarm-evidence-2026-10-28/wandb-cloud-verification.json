@@ -1,0 +1,10 @@
+{
+  "verified": true,
+  "runs": 3,
+  "downloaded_metric_rows": 192,
+  "checks": [
+    "Finished states",
+    "Downloaded cloud summary F0.5",
+    "All downloaded annual/pooled table values"
+  ]
+}

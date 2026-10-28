@@ -1,16 +1,18 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
-Updated **28 October ACTIVE — user authorized all three post-processing families on all
-three models.** Protocol docs/research/alarm-evidence-protocol-2026-10-28.md;
-runner scripts/research/run_alarm_evidence_20261028.py. Strength-duration,
-hysteresis, and longer duration filters: 222 candidates; nine calibration-only
-selections frozen before assessment, unchanged controls, 192 metric rows.
-No training. Reuse verified calibration and assessment scores, fixed models.
-Service esa-alarm-evidence.service; output results_longrun/alarm_evidence_20261028_v1;
-log /home/k_faz/project-backups/run-logs/alarm-evidence-20261028.log.
-Next verify independently, report every outcome and event-ID changes, publish
-compact results and checksum-verified Release, disable service and remove monitor.
-No grid expansion from assessment; preserve all failed outcomes.
+Updated **28 October 2026 — nine score-evidence comparisons completed and verified.**
+Strength-duration, hysteresis and longer duration filters were tested on all
+three fixed models. All nine calibration selections retained unchanged controls.
+222 candidate replays, 192 annual/pooled metrics, predictions and event IDs verified
+with a separately implemented transform; all 153 thesis tests passed. Longer
+cutoffs did remove segments, but no feasible candidate improved the objective.
+The masked-model 16-minute false segment and genuine id_107 segment had nearly
+identical peaks (1.051630 vs 1.051257 threshold ratios). Conservative retention
+and limited calibration examples constrain conclusions; no universal failure claim.
+Report: docs/research/alarm-evidence-results-2026-10-28.md. Evidence:
+docs/research/tables/alarm-evidence-2026-10-28/. Service esa-alarm-evidence.service
+inactive and disabled. W&B/Release publication and monitor cleanup are finishing.
+No further experiments authorized; no training or MOSAD. Scores/history unchanged.
 
 **28 October 2026**. This is the current entry point for a new assistant.
 Read this before proposing work. The chat is not required to continue the project.
