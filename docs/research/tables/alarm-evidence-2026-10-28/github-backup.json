@@ -1,0 +1,25 @@
+{
+  "verified": true,
+  "url": "https://github.com/kamyarfaz/ESA-ADB/releases/tag/alarm-evidence-2026-10-28",
+  "checks": [
+    "Fresh downloaded bytes, SHA256 and sizes match local assets",
+    "Downloaded SHA256SUMS verified"
+  ],
+  "assets": [
+    {
+      "name": "SHA256SUMS",
+      "sha256": "4de127bb3920dac4aefe01dfd35d5ca492e3ab1c051baf756a8a4617342ab4b2",
+      "bytes": 196
+    },
+    {
+      "name": "alarm-evidence-artifacts.tar.gz",
+      "sha256": "a3e82296a39ecfd74aafbf7a389144bd1cbaefa2aff58fa017a143a60e3071e8",
+      "bytes": 102598
+    },
+    {
+      "name": "alarm-evidence-reporting.tar.gz",
+      "sha256": "3ed0afce258196120105adef9d4ace3becd09bd728d350ee99d27e48b1a0c702",
+      "bytes": 85307
+    }
+  ]
+}

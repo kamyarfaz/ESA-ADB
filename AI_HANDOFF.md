@@ -11,7 +11,10 @@ identical peaks (1.051630 vs 1.051257 threshold ratios). Conservative retention
 and limited calibration examples constrain conclusions; no universal failure claim.
 Report: docs/research/alarm-evidence-results-2026-10-28.md. Evidence:
 docs/research/tables/alarm-evidence-2026-10-28/. Service esa-alarm-evidence.service
-inactive and disabled. W&B/Release publication and monitor cleanup are finishing.
+inactive and disabled. Three W&B evaluation runs and all192 cloud rows verified.
+Release https://github.com/kamyarfaz/ESA-ADB/releases/tag/alarm-evidence-2026-10-28
+has three assets verified by fresh-download SHA256 and size checks. Monitoring
+follow-up complete-nine-alarm-post-processing-comparisons deleted after verification.
 No further experiments authorized; no training or MOSAD. Scores/history unchanged.
 
 **28 October 2026**. This is the current entry point for a new assistant.
