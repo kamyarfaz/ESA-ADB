@@ -1,6 +1,6 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
-Updated **23 October 2026**. This is the current entry point for a new assistant.
+Updated **28 October 2026**. This is the current entry point for a new assistant.
 Read this before proposing work. The chat is not required to continue the project.
 
 ## 1. Current task and decision
@@ -16,8 +16,10 @@ All 147 thesis tests passed. W&B cloud verification downloaded three finished ev
 runs and all 96 metric rows. Workbook numeric/history cells preserved; only A48 note updated.
 Report: docs/research/temporal-postprocessing-results-2026-10-28.md.
 Evidence: docs/research/tables/temporal-postprocessing-2026-10-28/.
-Service esa-temporal-postprocessing.service is inactive and disabled. Release publication
-and monitoring cleanup are being finalized; consult github-backup.json for verified backup.
+Service esa-temporal-postprocessing.service is inactive and disabled. Monitoring follow-up
+complete-three-method-temporal-post-processing was deleted after verified completion.
+Release https://github.com/kamyarfaz/ESA-ADB/releases/tag/temporal-postprocessing-2026-10-28
+has four assets verified by fresh-download SHA256 and size checks; see github-backup.json.
 No further experiment authorized. Single seed, reused benchmark, offline lookahead,
 small calibration event set and extra inputs limit conclusions. No robust target claim.
 

@@ -1,0 +1,27 @@
+{
+  "verified": true,
+  "url": "https://github.com/kamyarfaz/ESA-ADB/releases/tag/temporal-postprocessing-2026-10-28",
+  "verification": "Fresh downloads compared with local SHA256, size and SHA256SUMS",
+  "assets": [
+    {
+      "name": "ESA_thesis_results_full_and_historical.xlsx",
+      "sha256": "0c78724170d19f2fa915a4e9bd024daa7817dd1b257977f5b04623582de96c64",
+      "bytes": 14164
+    },
+    {
+      "name": "SHA256SUMS",
+      "sha256": "c245ab38cf9454d1ed8b167b917abf8e3dcda4eaf4108865729ce42dd71302d4",
+      "bytes": 324
+    },
+    {
+      "name": "temporal-postprocessing-artifacts.tar.gz",
+      "sha256": "2c2f834b35a3e3d19cc0e5b98873dfc8bacfd6f7709668bb0b3349fee06f5d8e",
+      "bytes": 442382
+    },
+    {
+      "name": "temporal-postprocessing-reporting.tar.gz",
+      "sha256": "25fbb05b0addfdd6408b1ee0f0ff07e15e718d4e5123263186409d17ba4c8f64",
+      "bytes": 65091
+    }
+  ]
+}
