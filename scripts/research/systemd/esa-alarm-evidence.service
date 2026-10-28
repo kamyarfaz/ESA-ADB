@@ -1,0 +1,19 @@
+[Unit]
+Description=ESA three-family score-evidence post-processing
+[Service]
+Type=simple
+WorkingDirectory=/home/k_faz/projects/ESA-ADB
+Environment=PYTHONPATH=/home/k_faz/projects/ESA-ADB
+Environment=CUBLAS_WORKSPACE_CONFIG=:4096:8
+Environment=MALLOC_ARENA_MAX=2
+ExecStart=/home/k_faz/miniforge3/envs/esa-thesis/bin/python -u /home/k_faz/projects/ESA-ADB/scripts/research/run_alarm_evidence_20261028.py
+Restart=no
+TimeoutStopSec=120
+KillMode=control-group
+MemoryHigh=4G
+MemoryMax=5G
+MemorySwapMax=256M
+StandardOutput=append:/home/k_faz/project-backups/run-logs/alarm-evidence-20261028.log
+StandardError=append:/home/k_faz/project-backups/run-logs/alarm-evidence-20261028.log
+[Install]
+WantedBy=default.target

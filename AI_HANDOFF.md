@@ -1,6 +1,18 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
-Updated **28 October 2026**. This is the current entry point for a new assistant.
+Updated **28 October ACTIVE — user authorized all three post-processing families on all
+three models.** Protocol docs/research/alarm-evidence-protocol-2026-10-28.md;
+runner scripts/research/run_alarm_evidence_20261028.py. Strength-duration,
+hysteresis, and longer duration filters: 222 candidates; nine calibration-only
+selections frozen before assessment, unchanged controls, 192 metric rows.
+No training. Reuse verified calibration and assessment scores, fixed models.
+Service esa-alarm-evidence.service; output results_longrun/alarm_evidence_20261028_v1;
+log /home/k_faz/project-backups/run-logs/alarm-evidence-20261028.log.
+Next verify independently, report every outcome and event-ID changes, publish
+compact results and checksum-verified Release, disable service and remove monitor.
+No grid expansion from assessment; preserve all failed outcomes.
+
+**28 October 2026**. This is the current entry point for a new assistant.
 Read this before proposing work. The chat is not required to continue the project.
 
 ## 1. Current task and decision
