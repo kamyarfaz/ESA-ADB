@@ -1,0 +1,19 @@
+[Unit]
+Description=ESA target-output scoring and boundary refinement, frozen comparison
+[Service]
+Type=simple
+WorkingDirectory=/home/k_faz/projects/ESA-ADB
+Environment=PYTHONPATH=/home/k_faz/projects/ESA-ADB
+Environment=CUBLAS_WORKSPACE_CONFIG=:4096:8
+Environment=MALLOC_ARENA_MAX=2
+ExecStart=/bin/bash /home/k_faz/projects/ESA-ADB/scripts/research/run_target_boundary.sh
+Restart=no
+TimeoutStopSec=120
+KillMode=control-group
+MemoryHigh=6G
+MemoryMax=8G
+MemorySwapMax=128M
+StandardOutput=append:/home/k_faz/project-backups/run-logs/target-boundary-20261101.log
+StandardError=append:/home/k_faz/project-backups/run-logs/target-boundary-20261101.log
+[Install]
+WantedBy=default.target

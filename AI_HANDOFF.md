@@ -1,6 +1,40 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
-Updated **1 November 2026**. User requested a correctness and research-design audit.
+Updated **1 November 2026**. User authorized target-output scoring, boundary
+refinement and checks of the previous post-processing families following the audit.
+
+**1 November NEW AUTHORIZATION — bounded inference/post-processing comparison.**
+Protocol: docs/research/target-boundary-protocol-2026-11-01.md. This supersedes the
+audit's proposal-only/stop notes for this study only. No training, MOSAD or changes
+to existing models, source package or data. Original short-no-roll is an unchanged
+reference; the two high-recall checkpoints supply three candidate arms: expanded
+target40–47 outputs, masked-pretrained model, expanded all11 outputs. Extra inputs
+14/21/29 remain only in the expanded model. Train2000–2005/cal2006/test2007–2013.
+Selection uses2006 only; all arms freeze together before new assessment inference.
+Seven boundary candidates and122 existing postprocessing entries per arm, plus the
+bounded target threshold grid. Retain original local calibration IDs and <=1%
+alarm fraction. Report21 variants/336 annual-pooled metric rows, both scopes and
+every gained/lost ID. No candidate-family selection from assessment results.
+
+Destination frozen dataset verification passed (manifest a49a8c42...); this does
+not certify the entire old migration/external-drive copy. All161 thesis tests
+passed, including8 new localization/independent-transform tests, in14.885s.
+Service: esa-target-boundary.service; output
+results_longrun/target_boundary_20261101_seed42_v1; log
+/home/k_faz/project-backups/run-logs/target-boundary-20261101.log.
+Runner scripts/research/run_target_boundary.sh runs extraction/calibration/assessment
+then independent verification. Check live service/log before taking action; never
+duplicate workers. Inference resumes receipt-verified chunks only with exact
+protocol/source/data/runtime/checkpoint fingerprints. Monitor quiet healthy status.
+On completion independently verify, publish W&B evaluation, update report/workbook,
+commit compact results and checksum-verify a GitHub Release; disable service and
+remove follow-up after delivery. No new scores are claimed yet.
+
+Calibration halves/quarters are descriptive checks, not independent validation:
+these checkpoints already used2006. A stronger chronological validation design is
+being documented, without starting another training campaign. Keep all failed
+outcomes, disclose reused benchmark, single seed, offline context and inherited
+label-informed prepared inputs. No robust thesis-target claim.
 
 **Audit complete; no new experiments started.** Fresh 153 tests passed; W&B
 18 calibration grids/96 metric rows, temporal144/96 and alarm-evidence222/192

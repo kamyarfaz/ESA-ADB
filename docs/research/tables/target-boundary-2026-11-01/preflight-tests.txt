@@ -1,0 +1,7 @@
+2026-11-01 UTC — before inference launch
+Command: /home/k_faz/miniforge3/envs/esa-thesis/bin/python -m unittest discover -s tests/thesis -p 'test_*.py' -q
+Ran 161 tests in 14.885s
+OK
+Includes eight new target-boundary tests and existing corrected ESA metric parity tests.
+This is a compact result transcript, not the complete test stdout.
+Frozen destination dataset verification passed: a49a8c42c23a5d72d91a48596f485d762a805cc6101ad037c01a36c8037bf099.
