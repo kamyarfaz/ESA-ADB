@@ -174,6 +174,18 @@ Training labels also exclude nonnominal windows, as declared; "no real anomaly
 supervision" should mean no positive-anomaly classification objective, not no use
 of real annotations anywhere in the pipeline.
 
+## Finding 8 — a precision-only ceiling for original short-no-roll
+
+With fixed detected IDs and precision bounded by1, corrected F0.5 is at most
+`1.25 * TP / (0.25 * total_events + TP)`. At48/91 system detections, original
+short-no-roll is therefore bounded by **0.848056537**, even with perfect precision.
+It cannot exceed0.85 system F0.5 through alarm removal alone while detecting no
+new IDs. At47/67 local detections, its corresponding upper bound is **0.921568627**
+versus current0.907139530. These are ideal mathematical bounds, not achievable
+results or predictions. Other models have more recall and hence more potential
+precision-only headroom; this does not prove that false and true alarms can be
+separated. See [analytical bounds](tables/research-audit-2026-11-01/precision-ceilings.json).
+
 ## Most defensible next work — proposals only
 
 1. **Latest-model calibration diagnostics for auxiliary context versus alarm source.**

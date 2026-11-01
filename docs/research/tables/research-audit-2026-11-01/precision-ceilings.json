@@ -1,0 +1,55 @@
+{
+  "kind": "Analytical upper bound, not a new experiment",
+  "formula": "F0.5 at precision=1 and fixed recall = 1.25*TP/(0.25*total+TP)",
+  "assumptions": "Detected IDs remain fixed; attainable precision may be below1; this is not an achievable-performance claim",
+  "rows": [
+    {
+      "method": "short_no_roll",
+      "scope": "system",
+      "detected": 48,
+      "total": 91,
+      "current_f05": 0.83607019682688,
+      "perfect_precision_upper_bound": 0.8480565371024735
+    },
+    {
+      "method": "short_no_roll",
+      "scope": "40-47",
+      "detected": 47,
+      "total": 67,
+      "current_f05": 0.907139530369058,
+      "perfect_precision_upper_bound": 0.9215686274509803
+    },
+    {
+      "method": "pretrain_finetune",
+      "scope": "system",
+      "detected": 61,
+      "total": 91,
+      "current_f05": 0.7956754994386392,
+      "perfect_precision_upper_bound": 0.9104477611940298
+    },
+    {
+      "method": "pretrain_finetune",
+      "scope": "40-47",
+      "detected": 60,
+      "total": 67,
+      "current_f05": 0.8443148594326733,
+      "perfect_precision_upper_bound": 0.9771986970684039
+    },
+    {
+      "method": "expanded_short_no_roll",
+      "scope": "system",
+      "detected": 80,
+      "total": 91,
+      "current_f05": 0.8445732669303685,
+      "perfect_precision_upper_bound": 0.9732360097323601
+    },
+    {
+      "method": "expanded_short_no_roll",
+      "scope": "40-47",
+      "detected": 62,
+      "total": 67,
+      "current_f05": 0.8308996735269819,
+      "perfect_precision_upper_bound": 0.9841269841269841
+    }
+  ]
+}

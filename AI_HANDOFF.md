@@ -20,6 +20,9 @@ Auxiliary14/21/29 channels are both inputs and alarm sources. Benchmark preparat
 restores annotated values, per official convention; no label-independent operational
 claim is justified. Full test-cell restoration impact is not quantified.
 
+At fixed48/91 system detections, short-no-roll has perfect-precision F0.5 upper
+bound0.848056537: >0.85 needs more detected IDs, not only fewer false alarms.
+
 Proposals only: target-output pooling while retaining auxiliary context; finer
 boundary localization around existing detections; stronger chronological validation.
 Do not repeat wholesale per-timestep scoring/normalization/adaptation as novel:
