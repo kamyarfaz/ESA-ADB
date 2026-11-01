@@ -8,6 +8,8 @@ replayed successfully into separate audit outputs. Frozen dataset/source/artifac
 checks passed. Existing scores unchanged. Report:
 [research-audit-2026-11-01.md](docs/research/research-audit-2026-11-01.md).
 Evidence: docs/research/tables/research-audit-2026-11-01/.
+Audit code/report/evidence pushed to Git. Three Release assets freshly downloaded
+and SHA256/size verified: https://github.com/kamyarfaz/ESA-ADB/releases/tag/research-audit-2026-11-01 .
 
 Main findings: scoring averages128-minute windows, yielding exact16-minute
 plateaus; the original <=16-minute removal grid was structurally inert. The222

@@ -1,0 +1,25 @@
+{
+  "verified": true,
+  "url": "https://github.com/kamyarfaz/ESA-ADB/releases/tag/research-audit-2026-11-01",
+  "checks": [
+    "Fresh downloads match SHA256 and byte sizes",
+    "Downloaded SHA256SUMS matches both payloads"
+  ],
+  "assets": [
+    {
+      "name": "SHA256SUMS",
+      "sha256": "19ca4fff54d1c7bbab76a2cd521a37c7cb35460437cfdfc5904cc82b23a2d38e",
+      "bytes": 187
+    },
+    {
+      "name": "precision-ceilings.json",
+      "sha256": "3a249ac669e6de107389653de909e0db1440d300c36abf88600b8a2892d7298a",
+      "bytes": 1569
+    },
+    {
+      "name": "research-audit-20261101.tar.gz",
+      "sha256": "8b3cbba19def906ca4aed13d9eb23b70a23c09bb3784f84214a9be694938a1b4",
+      "bytes": 39568
+    }
+  ]
+}
