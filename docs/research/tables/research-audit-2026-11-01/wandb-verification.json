@@ -1,0 +1,19 @@
+{
+  "verified": true,
+  "metric_rows": 96,
+  "calibration_grids_replayed": 18,
+  "complete_receipt_sha256": "bf9c0f712275aa339c04312cf3b2379c71dffc27043d02e40aa4dc45f0de01ff",
+  "checks": [
+    "All completion/training hashes; frozen dataset/reference/source/runtime/settings",
+    "Nine ten-epoch histories and final resumable states",
+    "18 full calibration grids replayed from saved scores and raw annotations",
+    "Within-run and cross-rate calibration-only selection; weight/scaler equality",
+    "Assessment after selection freeze; exact binary prediction replay",
+    "96 corrected annual/pooled rows; originals match prior results",
+    "Annual and pooled detected/missed/gained/lost event IDs"
+  ],
+  "limitations": [
+    "Single seed; reused benchmark; short-no-roll LR1e-5 repeated",
+    "Replay uses stored scores; no independent neural inference rerun"
+  ]
+}

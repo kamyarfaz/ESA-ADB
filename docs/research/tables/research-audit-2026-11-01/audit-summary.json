@@ -1,0 +1,24 @@
+{
+  "audit_date": "2026-11-01",
+  "checked_scope": "Recent three-model studies: W&B fine-tuning and two postprocessing studies; code/data/receipts/calibration/prediction/metric replay",
+  "fresh_tests": 153,
+  "fresh_replay_metric_rows": 384,
+  "fresh_postprocessing_candidates": 366,
+  "fresh_wandb_calibration_grids": 18,
+  "neural_inference": "31 October CPU spot check,35 windows/model at seven calibration locations; not repeated Nov1 and not full inference replication",
+  "new_training": false,
+  "new_rule_selection": false,
+  "artifact_mutation": "Audit documentation and evidence only; frozen runs unchanged",
+  "dataset_integrity": "Frozen reference files rehashed; no new whole-project migration certification",
+  "checksums": {
+    "design-diagnostics.json": "e1f7fbb24c97e1c5eb41ae6138747351cf19ea452da802576deaf405278d14d2",
+    "replay-verification.json": "c96c0b44544f3d9aaeac7941b42b05a6f4da8d596f3baa166ddd2016bc9f879c",
+    "replay-verification.log": "b1c9104b22fd3609ca83021a445acbce3e276f0c93434bd16ea9eb5b41361f35",
+    "score-mechanics-20261031.json": "edc2cdb8b4383e39ebb45ac065e4c64745594103004f314eb58e23c218cfdab9",
+    "temporal-verification.json": "33438a0cfbd477734f40d4259455573b51ee86036767e630e4d9e94e47f944fc",
+    "temporal-verification.log": "b1c9104b22fd3609ca83021a445acbce3e276f0c93434bd16ea9eb5b41361f35",
+    "tests.log": "7740fe25d75a01f4976490099a05eeb8acceec93ee245314a8f3f5241ab85196",
+    "wandb-verification.json": "3e0ede637f360cd2b4d5a4be3e59ced22772e8b2dc8571d55cbf8cf687395cb0",
+    "wandb-verification.log": "85f02e5e4151382c1b714b134540db536cb851c4b6aacfd644657e58e0b5cd87"
+  }
+}

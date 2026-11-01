@@ -1,0 +1,347 @@
+{
+  "audit_date": "2026-10-31",
+  "scope": "Read-only audit of calibration mechanics and independent CPU spot inference; not new method selection or full neural replication",
+  "sources": {
+    "score_model": "esa_thesis/full_combinations.py:183",
+    "score_windows": "esa_thesis/masked_pilot.py:58",
+    "aggregate": "esa_thesis/diagnose_channels.py:66",
+    "stride": "esa_thesis/config.py:41",
+    "dataset": "data/frozen/mission1-reference-v1/calibration.csv"
+  },
+  "mechanics": {
+    "sample_seconds": 30,
+    "window_samples": 256,
+    "score_stride": 32,
+    "score_plateau_seconds": 960,
+    "interior_windows_per_score": 8,
+    "interior_input_union_samples": 480,
+    "maximum_future_seconds": 7650
+  },
+  "cpu_replay": {
+    "device": "cpu",
+    "threads": 2,
+    "targets": [
+      0,
+      32,
+      320480,
+      670240,
+      771328,
+      989632,
+      1051168
+    ],
+    "window_starts": [
+      0,
+      32,
+      320256,
+      320288,
+      320320,
+      320352,
+      320384,
+      320416,
+      320448,
+      320480,
+      670016,
+      670048,
+      670080,
+      670112,
+      670144,
+      670176,
+      670208,
+      670240,
+      771104,
+      771136,
+      771168,
+      771200,
+      771232,
+      771264,
+      771296,
+      771328,
+      989408,
+      989440,
+      989472,
+      989504,
+      989536,
+      989568,
+      989600,
+      989632,
+      1050944
+    ],
+    "distinct_windows": 35,
+    "distinct_input_rows": 2464,
+    "rtol": 2e-05,
+    "atol": 1e-05,
+    "observation_source": "Actual independent CPU inference output from current audit tool call; compact observations transcribed without raw telemetry"
+  },
+  "models": {
+    "short_no_roll": {
+      "model_path": "/home/k_faz/projects/ESA-ADB/results_longrun/wandb_finetuning_20261024_seed42_v1/short_no_roll_lr1/model.pt",
+      "model_sha256": "6c16ccaafe9370f08a685d886c65551eb6f7fd37113775dc408fff4d1bf66b32",
+      "calibration_score_sha256": "874cd38dacd3364969242c509eb2f600eb162a2fe998019b5ea5642dadf542ef",
+      "threshold": 4.275609493255615,
+      "quantization": {
+        "length": 1051200,
+        "all32_sample_blocks_exactly_constant": true,
+        "number_changes": 32849,
+        "change_residues_mod32": [
+          0
+        ],
+        "alarm_edges_residues_mod32": [
+          0
+        ],
+        "alarm_durations_minutes": [
+          112.0,
+          64.0,
+          16.0,
+          16.0,
+          144.0,
+          64.0,
+          48.0,
+          48.0
+        ]
+      },
+      "nominal_false_time": {
+        "total_seconds": 10521.642,
+        "isolated_false_segment_seconds": 0.0,
+        "partially_annotated_segments_seconds": 10521.642,
+        "fraction_outside_isolated_false_segments": 1.0
+      },
+      "cpu_replay": {
+        "samples": [
+          {
+            "index": 0,
+            "saved": 0.06357038021087646,
+            "cpu": 0.06357038021087646,
+            "absolute_error": 0.0
+          },
+          {
+            "index": 32,
+            "saved": 0.06334629654884338,
+            "cpu": 0.06334629654884338,
+            "absolute_error": 0.0
+          },
+          {
+            "index": 320480,
+            "saved": 7.07011079788208,
+            "cpu": 7.07011079788208,
+            "absolute_error": 0.0
+          },
+          {
+            "index": 670240,
+            "saved": 0.497523695230484,
+            "cpu": 0.49752336740493774,
+            "absolute_error": 3.2782554626464844e-07
+          },
+          {
+            "index": 771328,
+            "saved": 4.860357284545898,
+            "cpu": 4.860357761383057,
+            "absolute_error": 4.76837158203125e-07
+          },
+          {
+            "index": 989632,
+            "saved": 5.104427814483643,
+            "cpu": 5.104428291320801,
+            "absolute_error": 4.76837158203125e-07
+          },
+          {
+            "index": 1051168,
+            "saved": 0.07082138955593109,
+            "cpu": 0.07082138955593109,
+            "absolute_error": 0.0
+          }
+        ],
+        "allclose": true,
+        "max_absolute_error": 4.76837158203125e-07
+      }
+    },
+    "pretrain_finetune": {
+      "model_path": "/home/k_faz/projects/ESA-ADB/results_longrun/wandb_finetuning_20261024_seed42_v1/pretrain_finetune_lr1/model.pt",
+      "model_sha256": "0265af117e2d0b66ae9d91625a0f10f39a643a40590fe97a4e495381e57183cb",
+      "calibration_score_sha256": "fe68008a711773803bd57e23e8ecf59de50bb97f96a0b5108c40aaa61e5efcec",
+      "threshold": 6.202751159667969,
+      "quantization": {
+        "length": 1051200,
+        "all32_sample_blocks_exactly_constant": true,
+        "number_changes": 32849,
+        "change_residues_mod32": [
+          0
+        ],
+        "alarm_edges_residues_mod32": [
+          0
+        ],
+        "alarm_durations_minutes": [
+          16.0,
+          96.0,
+          16.0,
+          16.0,
+          48.0,
+          160.0,
+          16.0,
+          80.0,
+          64.0
+        ]
+      },
+      "nominal_false_time": {
+        "total_seconds": 10379.778,
+        "isolated_false_segment_seconds": 960.0,
+        "partially_annotated_segments_seconds": 9419.778,
+        "fraction_outside_isolated_false_segments": 0.9075124728101122
+      },
+      "cpu_replay": {
+        "samples": [
+          {
+            "index": 0,
+            "saved": 0.08435234427452087,
+            "cpu": 0.08435235917568207,
+            "absolute_error": 1.4901161193847656e-08
+          },
+          {
+            "index": 32,
+            "saved": 0.07936930656433105,
+            "cpu": 0.07936930656433105,
+            "absolute_error": 0.0
+          },
+          {
+            "index": 320480,
+            "saved": 6.52068567276001,
+            "cpu": 6.520686149597168,
+            "absolute_error": 4.76837158203125e-07
+          },
+          {
+            "index": 670240,
+            "saved": 6.522998332977295,
+            "cpu": 6.522998332977295,
+            "absolute_error": 0.0
+          },
+          {
+            "index": 771328,
+            "saved": 6.723239421844482,
+            "cpu": 6.723239898681641,
+            "absolute_error": 4.76837158203125e-07
+          },
+          {
+            "index": 989632,
+            "saved": 7.977861404418945,
+            "cpu": 7.977862358093262,
+            "absolute_error": 9.5367431640625e-07
+          },
+          {
+            "index": 1051168,
+            "saved": 0.27705204486846924,
+            "cpu": 0.2770538330078125,
+            "absolute_error": 1.7881393432617188e-06
+          }
+        ],
+        "allclose": true,
+        "max_absolute_error": 1.7881393432617188e-06
+      }
+    },
+    "expanded_short_no_roll": {
+      "model_path": "/home/k_faz/projects/ESA-ADB/results_longrun/wandb_finetuning_20261024_seed42_v1/expanded_short_no_roll_lr3/model.pt",
+      "model_sha256": "9389ec7e6fcac516df20b40f1170a385cf1ada8c0929d028b89c63c7bf88b481",
+      "calibration_score_sha256": "54a50daba39e97a6184c9ed48536bd4c0cdfb649cb160f95b45afd107c41a03e",
+      "threshold": 3.379899024963379,
+      "quantization": {
+        "length": 1051200,
+        "all32_sample_blocks_exactly_constant": true,
+        "number_changes": 32849,
+        "change_residues_mod32": [
+          0
+        ],
+        "alarm_edges_residues_mod32": [
+          0
+        ],
+        "alarm_durations_minutes": [
+          288.0,
+          48.0,
+          80.0,
+          16.0,
+          16.0,
+          96.0,
+          64.0,
+          48.0,
+          288.0,
+          96.0,
+          144.0,
+          16.0,
+          96.0,
+          16.0
+        ]
+      },
+      "nominal_false_time": {
+        "total_seconds": 10400.067,
+        "isolated_false_segment_seconds": 0.0,
+        "partially_annotated_segments_seconds": 10400.067,
+        "fraction_outside_isolated_false_segments": 1.0
+      },
+      "cpu_replay": {
+        "samples": [
+          {
+            "index": 0,
+            "saved": 0.060030944645404816,
+            "cpu": 0.060030948370695114,
+            "absolute_error": 3.725290298461914e-09
+          },
+          {
+            "index": 32,
+            "saved": 0.05942414700984955,
+            "cpu": 0.05942414328455925,
+            "absolute_error": 3.725290298461914e-09
+          },
+          {
+            "index": 320480,
+            "saved": 4.054695129394531,
+            "cpu": 4.0546956062316895,
+            "absolute_error": 4.76837158203125e-07
+          },
+          {
+            "index": 670240,
+            "saved": 1.1821367740631104,
+            "cpu": 1.1821370124816895,
+            "absolute_error": 2.384185791015625e-07
+          },
+          {
+            "index": 771328,
+            "saved": 4.511270523071289,
+            "cpu": 4.511270523071289,
+            "absolute_error": 0.0
+          },
+          {
+            "index": 989632,
+            "saved": 3.7959227561950684,
+            "cpu": 3.7959232330322266,
+            "absolute_error": 4.76837158203125e-07
+          },
+          {
+            "index": 1051168,
+            "saved": 0.06949540972709656,
+            "cpu": 0.06949539482593536,
+            "absolute_error": 1.4901161193847656e-08
+          }
+        ],
+        "allclose": true,
+        "max_absolute_error": 4.76837158203125e-07
+      }
+    }
+  },
+  "short_raw_target_durations_seconds": {
+    "id_107": [
+      549.912,
+      360.0
+    ],
+    "id_109": [
+      6.912
+    ],
+    "id_110": [
+      3.912
+    ],
+    "id_114": [
+      9.912
+    ]
+  },
+  "hypotheses_and_history": {
+    "target_only_scoring": "Current expanded model takes max across all11 reconstructed channels. Target40\u201347-only residual pooling with all11inputs retained was not located in existing sources/reports. Prior normalization varied all-channel scales; it did not isolate target-channel outputs. This is untested, not an improvement claim.",
+    "per_timestep_history": "Historical paired_v1 favored window_mean: calibration .8821092202 vs .5881882411; assessment .7616553194 vs .6717904060. Different historical checkpoint/period. Direct full per-timestep replacement is not novel or guaranteed.",
+    "localization": "Future calibration-only boundary localization with preserved detection cores addresses nominal-time tails which whole-segment removal cannot. Must not shrink using labels/assessment and call it prediction."
+  }
+}

@@ -1,6 +1,33 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
-Updated **28 October 2026 — nine score-evidence comparisons completed and verified.**
+Updated **1 November 2026**. User requested a correctness and research-design audit.
+
+**Audit complete; no new experiments started.** Fresh 153 tests passed; W&B
+18 calibration grids/96 metric rows, temporal144/96 and alarm-evidence222/192
+replayed successfully into separate audit outputs. Frozen dataset/source/artifact
+checks passed. Existing scores unchanged. Report:
+[research-audit-2026-11-01.md](docs/research/research-audit-2026-11-01.md).
+Evidence: docs/research/tables/research-audit-2026-11-01/.
+
+Main findings: scoring averages128-minute windows, yielding exact16-minute
+plateaus; the original <=16-minute removal grid was structurally inert. The222
+later nominal candidates yielded39 distinct masks across the three models. Most
+calibration nominal alarm time is inside components also touching annotations.
+Masked unconstrained calibration F0.5 can rise .882106→.908915 only by dropping
+6→4 detected IDs; this is not a detection-preserving improvement. Expanded model
+has98.89% of annual false-positive seconds in2013 (retrospective diagnosis only).
+Auxiliary14/21/29 channels are both inputs and alarm sources. Benchmark preparation
+restores annotated values, per official convention; no label-independent operational
+claim is justified. Full test-cell restoration impact is not quantified.
+
+Proposals only: target-output pooling while retaining auxiliary context; finer
+boundary localization around existing detections; stronger chronological validation.
+Do not repeat wholesale per-timestep scoring/normalization/adaptation as novel:
+prior negative evidence exists. Do not tune to2013 or launch training from this audit.
+Historical ACTIVE notes below are superseded by completion records. No service
+or recurring monitor was restarted for the audit. Preserve all frozen artifacts.
+
+**28 October 2026 — nine score-evidence comparisons completed and verified.**
 Strength-duration, hysteresis and longer duration filters were tested on all
 three fixed models. All nine calibration selections retained unchanged controls.
 222 candidate replays, 192 annual/pooled metrics, predictions and event IDs verified
@@ -17,7 +44,7 @@ has three assets verified by fresh-download SHA256 and size checks. Monitoring
 follow-up complete-nine-alarm-post-processing-comparisons deleted after verification.
 No further experiments authorized; no training or MOSAD. Scores/history unchanged.
 
-**28 October 2026**. This is the current entry point for a new assistant.
+This is the current entry point for a new assistant.
 Read this before proposing work. The chat is not required to continue the project.
 
 ## 1. Current task and decision

@@ -1,0 +1,14 @@
+Frozen data, runtime, source and all receipt hashes passed
+short_no_roll_lr1 calibration grid replay and weights verified
+short_no_roll_lr2 calibration grid replay and weights verified
+short_no_roll_lr3 calibration grid replay and weights verified
+pretrain_finetune_lr1 calibration grid replay and weights verified
+pretrain_finetune_lr2 calibration grid replay and weights verified
+pretrain_finetune_lr3 calibration grid replay and weights verified
+expanded_short_no_roll_lr1 calibration grid replay and weights verified
+expanded_short_no_roll_lr2 calibration grid replay and weights verified
+expanded_short_no_roll_lr3 calibration grid replay and weights verified
+short_no_roll all assessment metrics verified
+pretrain_finetune all assessment metrics verified
+expanded_short_no_roll all assessment metrics verified
+VERIFIED

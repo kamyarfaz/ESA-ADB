@@ -1,0 +1,264 @@
+{
+  "audit_date": "2026-11-01",
+  "purpose": "Inspect completed frozen studies; no new model/rule selection or training",
+  "models": {
+    "short_no_roll": {
+      "score_sha256": "874cd38dacd3364969242c509eb2f600eb162a2fe998019b5ea5642dadf542ef",
+      "samples": 1051200,
+      "all_32_sample_blocks_constant": true,
+      "change_count": 32849,
+      "change_index_mod32": [
+        0
+      ],
+      "nominal_candidates": 74,
+      "unique_masks_across_families": 14,
+      "temporal_nominal_candidates": 48,
+      "temporal_unique_masks": 1,
+      "families": [
+        {
+          "family": "strength_duration",
+          "candidates": 49,
+          "feasible": 19,
+          "baseline_local_f05": 0.999724246152595,
+          "unconstrained_best": {
+            "rule": {
+              "index": 0,
+              "family": "strength_duration",
+              "original": true
+            },
+            "local_f05": 0.999724246152595,
+            "system_f05": 0.8821382469600005,
+            "false_seconds": 10521.642,
+            "local_detected": 6,
+            "alarm_fraction": 0.000974124809741248,
+            "segments": 8,
+            "feasible": true
+          }
+        },
+        {
+          "family": "hysteresis",
+          "candidates": 16,
+          "feasible": 7,
+          "baseline_local_f05": 0.999724246152595,
+          "unconstrained_best": {
+            "rule": {
+              "index": 0,
+              "family": "hysteresis",
+              "original": true
+            },
+            "local_f05": 0.999724246152595,
+            "system_f05": 0.8821382469600005,
+            "false_seconds": 10521.642,
+            "local_detected": 6,
+            "alarm_fraction": 0.000974124809741248,
+            "segments": 8,
+            "feasible": true
+          }
+        },
+        {
+          "family": "duration",
+          "candidates": 9,
+          "feasible": 3,
+          "baseline_local_f05": 0.999724246152595,
+          "unconstrained_best": {
+            "rule": {
+              "index": 0,
+              "family": "duration",
+              "original": true
+            },
+            "local_f05": 0.999724246152595,
+            "system_f05": 0.8821382469600005,
+            "false_seconds": 10521.642,
+            "local_detected": 6,
+            "alarm_fraction": 0.000974124809741248,
+            "segments": 8,
+            "feasible": true
+          }
+        }
+      ],
+      "calibration_nominal_time": {
+        "total_seconds": 10521.642,
+        "isolated_false_segment_seconds": 0.0,
+        "partially_annotated_segments_seconds": 10521.642,
+        "fraction_outside_isolated_false_segments": 1.0
+      }
+    },
+    "pretrain_finetune": {
+      "score_sha256": "fe68008a711773803bd57e23e8ecf59de50bb97f96a0b5108c40aaa61e5efcec",
+      "samples": 1051200,
+      "all_32_sample_blocks_constant": true,
+      "change_count": 32849,
+      "change_index_mod32": [
+        0
+      ],
+      "nominal_candidates": 74,
+      "unique_masks_across_families": 11,
+      "temporal_nominal_candidates": 48,
+      "temporal_unique_masks": 1,
+      "families": [
+        {
+          "family": "strength_duration",
+          "candidates": 49,
+          "feasible": 13,
+          "baseline_local_f05": 0.8821058520060329,
+          "unconstrained_best": {
+            "rule": {
+              "index": 13,
+              "family": "strength_duration",
+              "original": false,
+              "duration": 48,
+              "peak": 1.1
+            },
+            "local_f05": 0.9089147017087289,
+            "system_f05": 0.7691046051535408,
+            "false_seconds": 8135.229,
+            "local_detected": 4,
+            "alarm_fraction": 0.0008523592085235921,
+            "segments": 5,
+            "feasible": false
+          }
+        },
+        {
+          "family": "hysteresis",
+          "candidates": 16,
+          "feasible": 4,
+          "baseline_local_f05": 0.8821058520060329,
+          "unconstrained_best": {
+            "rule": {
+              "index": 12,
+              "family": "hysteresis",
+              "original": false,
+              "low": 1,
+              "high": 1.1
+            },
+            "local_f05": 0.9089147017087289,
+            "system_f05": 0.7691046051535408,
+            "false_seconds": 8135.229,
+            "local_detected": 4,
+            "alarm_fraction": 0.0008523592085235921,
+            "segments": 5,
+            "feasible": false
+          }
+        },
+        {
+          "family": "duration",
+          "candidates": 9,
+          "feasible": 3,
+          "baseline_local_f05": 0.8821058520060329,
+          "unconstrained_best": {
+            "rule": {
+              "index": 3,
+              "family": "duration",
+              "original": false,
+              "duration": 48
+            },
+            "local_f05": 0.9089147017087289,
+            "system_f05": 0.7691046051535408,
+            "false_seconds": 8135.229,
+            "local_detected": 4,
+            "alarm_fraction": 0.0008523592085235921,
+            "segments": 5,
+            "feasible": false
+          }
+        }
+      ],
+      "calibration_nominal_time": {
+        "total_seconds": 10379.778,
+        "isolated_false_segment_seconds": 960.0,
+        "partially_annotated_segments_seconds": 9419.778,
+        "fraction_outside_isolated_false_segments": 0.9075124728101122
+      }
+    },
+    "expanded_short_no_roll": {
+      "score_sha256": "54a50daba39e97a6184c9ed48536bd4c0cdfb649cb160f95b45afd107c41a03e",
+      "samples": 1051200,
+      "all_32_sample_blocks_constant": true,
+      "change_count": 32849,
+      "change_index_mod32": [
+        0
+      ],
+      "nominal_candidates": 74,
+      "unique_masks_across_families": 14,
+      "temporal_nominal_candidates": 48,
+      "temporal_unique_masks": 2,
+      "families": [
+        {
+          "family": "strength_duration",
+          "candidates": 49,
+          "feasible": 19,
+          "baseline_local_f05": 0.999727432637978,
+          "unconstrained_best": {
+            "rule": {
+              "index": 0,
+              "family": "strength_duration",
+              "original": true
+            },
+            "local_f05": 0.999727432637978,
+            "system_f05": 0.9780000225998965,
+            "false_seconds": 10400.067,
+            "local_detected": 6,
+            "alarm_fraction": 0.0024961948249619483,
+            "segments": 14,
+            "feasible": true
+          }
+        },
+        {
+          "family": "hysteresis",
+          "candidates": 16,
+          "feasible": 7,
+          "baseline_local_f05": 0.999727432637978,
+          "unconstrained_best": {
+            "rule": {
+              "index": 0,
+              "family": "hysteresis",
+              "original": true
+            },
+            "local_f05": 0.999727432637978,
+            "system_f05": 0.9780000225998965,
+            "false_seconds": 10400.067,
+            "local_detected": 6,
+            "alarm_fraction": 0.0024961948249619483,
+            "segments": 14,
+            "feasible": true
+          }
+        },
+        {
+          "family": "duration",
+          "candidates": 9,
+          "feasible": 3,
+          "baseline_local_f05": 0.999727432637978,
+          "unconstrained_best": {
+            "rule": {
+              "index": 0,
+              "family": "duration",
+              "original": true
+            },
+            "local_f05": 0.999727432637978,
+            "system_f05": 0.9780000225998965,
+            "false_seconds": 10400.067,
+            "local_detected": 6,
+            "alarm_fraction": 0.0024961948249619483,
+            "segments": 14,
+            "feasible": true
+          }
+        }
+      ],
+      "calibration_nominal_time": {
+        "total_seconds": 10400.067,
+        "isolated_false_segment_seconds": 0.0,
+        "partially_annotated_segments_seconds": 10400.067,
+        "fraction_outside_isolated_false_segments": 1.0
+      }
+    }
+  },
+  "retrospective_assessment_diagnosis": {
+    "method": "expanded_short_no_roll",
+    "year": 2013,
+    "year_false_seconds": 11479494.015,
+    "annual_false_seconds_sum": 11607782.088000001,
+    "year_fraction_of_annual_false_seconds": 0.9889480977479217,
+    "year_time_fpr": 0.4239891381073004,
+    "pooled_time_fpr": 0.0590989357719899,
+    "restriction": "Descriptive existing assessment only; must not select new thresholds, channels or adaptive rules from this year"
+  }
+}

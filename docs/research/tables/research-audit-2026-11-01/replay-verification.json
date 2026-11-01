@@ -1,0 +1,17 @@
+{
+  "verified": true,
+  "calibration_candidates": 222,
+  "metric_rows": 192,
+  "complete_receipt_sha256": "4bc942334da04cd020c902ff75da2c82fb060d43ad5e6038143018a0e28aad47",
+  "checks": [
+    "Frozen data/source/prior receipts",
+    "Separately implemented transforms",
+    "All 222 calibration metrics and nine selections",
+    "192 assessment metrics and unchanged control parity",
+    "Exact prediction and event-ID replay",
+    "Assessment artifacts after joint freeze"
+  ],
+  "limitations": [
+    "Single seed; reused benchmark; saved-score replay; offline processing"
+  ]
+}

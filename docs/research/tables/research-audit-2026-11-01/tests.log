@@ -1,0 +1,473 @@
+{
+  "experiment": "short-coordinated-development-v1",
+  "features": [
+    "channel_40",
+    "channel_41",
+    "channel_42",
+    "channel_43",
+    "channel_44",
+    "channel_45",
+    "channel_46",
+    "channel_47"
+  ],
+  "folds": {
+    "2003": [
+      "2003-01-01",
+      "2003-04-01",
+      "2004-01-01"
+    ]
+  },
+  "arms": [
+    "legacy",
+    "short_coordinated"
+  ],
+  "epochs": 5,
+  "max_train_windows": 25000,
+  "batch_size": 64,
+  "seed": 42,
+  "device": "cpu",
+  "candidate": "Per-window50/50legacy/short; short1\u201310samples,1\u20138channels, shared offset/noise/roll; full-window population std; length1 no roll",
+  "selection": "Original quantiles/postprocessing and total-alarm1%cap; calibration each epoch, earliest tie; BOTH arms frozen before each fold assessment",
+  "rng": "Same initial weights; epoch-addressed independent shuffle/dropout; corruption isolated with deterministic per-batch seeds; source and settings locked",
+  "limitations": "Exploratory previously inspected development periods; one seed; budget differs from40epoch baseline; not exact GPU determinism guarantee; no2007\u20132013 access",
+  "settings": {
+    "SEQ_LEN": 256,
+    "STRIDE": 16,
+    "SCORE_STRIDE": 32,
+    "D_MODEL": 128,
+    "N_HEADS": 8,
+    "N_LAYERS": 4,
+    "DROPOUT": 0.1,
+    "LR": 0.0001,
+    "WEIGHT_DECAY": 0.0001,
+    "GRAD_CLIP": 1.0,
+    "PA_LAMBDA": 1.0,
+    "PA_MARGIN": 10.0,
+    "CLIP_Z": 10.0
+  }
+}
+Verifying training CSV...
+2003 both rules frozen; scoring development assessment
+fold             model  scope  epoch  calibration_f05  EW_F_0.50
+2003            legacy system      1              0.0        0.0
+2003            legacy  local      1              0.0        0.0
+2003 short_coordinated system      1              0.0        0.0
+2003 short_coordinated  local      1              0.0        0.0
+legacy 1 1 1
+legacy {'epoch': 1, 'loss': 10.195504188537598, 'normal_mse': 1.3663413524627686, 'pseudo_penalty': 8.82916259765625, 'calibration_f05': 0.0, 'seconds': 0.22045017103664577}
+legacy 2 1 1
+legacy {'epoch': 2, 'loss': 10.23309326171875, 'normal_mse': 1.305911660194397, 'pseudo_penalty': 8.927181243896484, 'calibration_f05': 0.0, 'seconds': 0.14412944798823446}
+legacy 1 1 1
+legacy {'epoch': 1, 'loss': 10.195504188537598, 'normal_mse': 1.3663413524627686, 'pseudo_penalty': 8.82916259765625, 'calibration_f05': 0.0, 'seconds': 0.12865328695625067}
+legacy 2 1 1
+legacy 2 1 1
+legacy {'epoch': 2, 'loss': 10.23309326171875, 'normal_mse': 1.305911660194397, 'pseudo_penalty': 8.927181243896484, 'calibration_f05': 0.0, 'seconds': 0.11915226094424725}
+short_coordinated 1 1 1
+short_coordinated {'epoch': 1, 'loss': 10.299717903137207, 'normal_mse': 1.3663413524627686, 'pseudo_penalty': 8.93337631225586, 'calibration_f05': 0.0, 'seconds': 0.1396054819924757}
+short_coordinated 2 1 1
+short_coordinated {'epoch': 2, 'loss': 10.301139831542969, 'normal_mse': 1.3056447505950928, 'pseudo_penalty': 8.995494842529297, 'calibration_f05': 0.0, 'seconds': 0.13752073294017464}
+short_coordinated 1 1 1
+short_coordinated {'epoch': 1, 'loss': 10.299717903137207, 'normal_mse': 1.3663413524627686, 'pseudo_penalty': 8.93337631225586, 'calibration_f05': 0.0, 'seconds': 0.11843458202201873}
+short_coordinated 2 1 1
+short_coordinated 2 1 1
+short_coordinated {'epoch': 2, 'loss': 10.301139831542969, 'normal_mse': 1.3056447505950928, 'pseudo_penalty': 8.995494842529297, 'calibration_f05': 0.0, 'seconds': 0.13192832097411156}
+short_no_roll 1 1 1
+short_no_roll {'epoch': 1, 'loss': 10.299717903137207, 'normal_mse': 1.3663413524627686, 'pseudo_penalty': 8.93337631225586, 'calibration_f05': 0.0, 'seconds': 0.12405318103265017}
+short_no_roll 2 1 1
+short_no_roll {'epoch': 2, 'loss': 10.271059036254883, 'normal_mse': 1.3056447505950928, 'pseudo_penalty': 8.965414047241211, 'calibration_f05': 0.0, 'seconds': 0.12495677801780403}
+short_no_roll 1 1 1
+short_no_roll {'epoch': 1, 'loss': 10.299717903137207, 'normal_mse': 1.3663413524627686, 'pseudo_penalty': 8.93337631225586, 'calibration_f05': 0.0, 'seconds': 0.13196630193851888}
+short_no_roll 2 1 1
+short_no_roll 2 1 1
+short_no_roll {'epoch': 2, 'loss': 10.271059036254883, 'normal_mse': 1.3056447505950928, 'pseudo_penalty': 8.965414047241211, 'calibration_f05': 0.0, 'seconds': 0.11509212595410645}
+{
+  "experiment": "short-no-roll-development-v1",
+  "features": [
+    "channel_40",
+    "channel_41",
+    "channel_42",
+    "channel_43",
+    "channel_44",
+    "channel_45",
+    "channel_46",
+    "channel_47"
+  ],
+  "folds": {
+    "2003": [
+      "2003-01-01",
+      "2003-04-01",
+      "2004-01-01"
+    ]
+  },
+  "arms": [
+    "short_coordinated",
+    "short_no_roll"
+  ],
+  "epochs": 5,
+  "max_train_windows": 25000,
+  "batch_size": 64,
+  "seed": 42,
+  "device": "cpu",
+  "candidate": "Per-window50/50unchanged legacy/short; short branch uses equally likely offset/noise only; same1\u201310sample and1\u20138channel laws and full-window scale",
+  "selection": "Original quantiles/postprocessing and total-alarm1%cap; calibration each epoch, earliest tie; BOTH arms frozen before each fold assessment",
+  "rng": "Same initial weights; epoch-addressed independent shuffle/dropout; corruption isolated with deterministic per-batch seeds; source and settings locked",
+  "limitations": "Exploratory previously inspected development periods; one seed; budget differs from40epoch baseline; not exact GPU determinism guarantee; no2007\u20132013 access",
+  "settings": {
+    "SEQ_LEN": 256,
+    "STRIDE": 16,
+    "SCORE_STRIDE": 32,
+    "D_MODEL": 128,
+    "N_HEADS": 8,
+    "N_LAYERS": 4,
+    "DROPOUT": 0.1,
+    "LR": 0.0001,
+    "WEIGHT_DECAY": 0.0001,
+    "GRAD_CLIP": 1.0,
+    "PA_LAMBDA": 1.0,
+    "PA_MARGIN": 10.0,
+    "CLIP_Z": 10.0
+  },
+  "comparison_note": "Current short-coordinated control rerun at equal budget; legacy-generator baseline remains a separately reported historical reference. Corruption draws need not align after a type choice changes."
+}
+Verifying training CSV...
+2003 both rules frozen; scoring development assessment
+fold             model  scope  epoch  calibration_f05  EW_F_0.50
+2003 short_coordinated system      1              0.0        0.0
+2003 short_coordinated  local      1              0.0        0.0
+2003     short_no_roll system      1              0.0        0.0
+2003     short_no_roll  local      1              0.0        0.0
+test: 2/4 windows; 0s
+test: 4/4 windows; 0s
+out: loading training data before 2000-01-01 02:40:00
+out: 5 nominal windows; loading calibration
+out: epoch 1/1 batch 1/1 loss 8.18417
+out {'epoch': 1, 'loss': 8.18416976928711, 'calibration_f05': 0.0}
+out: decision frozen; scoring assessment
+reconstruction: loading training data before 2000-01-01 02:40:00
+reconstruction: 5 nominal windows; loading calibration
+reconstruction: epoch 1/1 batch 1/1 loss 0.498356
+reconstruction {'epoch': 1, 'loss': 0.49835601449012756, 'calibration_f05': 0.0}
+reconstruction: decision frozen; scoring assessment
+Preserved incomplete fold at /tmp/tmpzr4tjgli/interrupted/2005_20261101T160441383793Z; restarting from epoch 1
+  scoring 1/9 windows
+  scoring 9/9 windows
+pretrain_finetune calibration inference 2/9 windows
+pretrain_finetune calibration inference 9/9 windows
+tmp1e7ht1vb frozen rule {"candidate": 16, "family": "raw", "threshold": 2.0, "merge_gap": 0, "min_dur": 1, "original": false, "preserves_ids": true, "feasible": true, "alarm_fraction": 0.001, "system_f05": 1.0, "local_f05": 1.0, "false_alarm_seconds": 0.0, "false_alarm_events": 0, "system_detected": 1, "local_detected": 1}
+expanded_short_no_roll epoch 1/5 batch 1/3 loss 9.02384
+expanded_short_no_roll epoch 1/5 batch 3/3 loss 7.92898
+expanded_short_no_roll epoch 2/5 batch 1/3 loss 9.01438
+expanded_short_no_roll epoch 2/5 batch 3/3 loss 9.09008
+expanded_short_no_roll epoch 3/5 batch 1/3 loss 9.12823
+expanded_short_no_roll epoch 3/5 batch 3/3 loss 8.62473
+expanded_short_no_roll epoch 4/5 batch 1/3 loss 9.02584
+expanded_short_no_roll epoch 4/5 batch 3/3 loss 9.02895
+expanded_short_no_roll epoch 5/5 batch 1/3 loss 9.20208
+expanded_short_no_roll epoch 5/5 batch 3/3 loss 8.76316
+expanded_short_no_roll calibrating epoch 5
+expanded_short_no_roll resumed 1 1
+expanded_short_no_roll epoch 1/5 batch 3/3 loss 7.92898
+expanded_short_no_roll epoch 2/5 batch 1/3 loss 9.01438
+expanded_short_no_roll epoch 2/5 batch 3/3 loss 9.09008
+expanded_short_no_roll epoch 3/5 batch 1/3 loss 9.12823
+expanded_short_no_roll epoch 3/5 batch 3/3 loss 8.62473
+expanded_short_no_roll epoch 4/5 batch 1/3 loss 9.02584
+expanded_short_no_roll epoch 4/5 batch 3/3 loss 9.02895
+expanded_short_no_roll epoch 5/5 batch 1/3 loss 9.20208
+expanded_short_no_roll epoch 5/5 batch 3/3 loss 8.76316
+expanded_short_no_roll calibrating epoch 5
+whole 1 1 / 1
+whole {'epoch': 1, 'loss': 10.25446605682373, 'normal_mse': 1.3128691911697388, 'pseudo_penalty': 8.941596984863281, 'calibration_f05': 0.0, 'seconds': 0.1459684419678524}
+whole 2 1 / 1
+whole {'epoch': 2, 'loss': 10.221719741821289, 'normal_mse': 1.2528328895568848, 'pseudo_penalty': 8.968887329101562, 'calibration_f05': 0.0, 'seconds': 0.14641452801879495}
+part 1 1 / 1
+part {'epoch': 1, 'loss': 10.25446605682373, 'normal_mse': 1.3128691911697388, 'pseudo_penalty': 8.941596984863281, 'calibration_f05': 0.0, 'seconds': 0.14067822298966348}
+part 2 1 / 1
+part 2 1 / 1
+part {'epoch': 2, 'loss': 10.221719741821289, 'normal_mse': 1.2528328895568848, 'pseudo_penalty': 8.968887329101562, 'calibration_f05': 0.0, 'seconds': 0.13405000499915332}
+{
+  "experiment": "inner-selection-v1",
+  "folds": {
+    "2001": [
+      "2001-01-01",
+      "2001-07-01",
+      "2002-01-01"
+    ],
+    "2002": [
+      "2002-01-01",
+      "2002-07-01",
+      "2003-01-01"
+    ]
+  },
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "features": [
+    "channel_40",
+    "channel_41",
+    "channel_42",
+    "channel_43",
+    "channel_44",
+    "channel_45",
+    "channel_46",
+    "channel_47"
+  ],
+  "epochs": 5,
+  "max_train_windows": 25000,
+  "batch_size": 64,
+  "augmentation": "short_no_roll",
+  "device": "cpu",
+  "threads": 2,
+  "policies": [
+    "calibration_selected",
+    "fixed_epoch5"
+  ],
+  "quantiles": [
+    90,
+    95,
+    97.5,
+    98,
+    99,
+    99.5,
+    99.75,
+    99.9,
+    99.95,
+    99.99,
+    100
+  ],
+  "merge_gaps": [
+    0,
+    16,
+    64
+  ],
+  "min_durs": [
+    1,
+    8,
+    32
+  ],
+  "alarm_cap": 0.01,
+  "settings": {
+    "SEQ_LEN": 256,
+    "STRIDE": 16,
+    "SCORE_STRIDE": 32,
+    "D_MODEL": 128,
+    "N_HEADS": 8,
+    "N_LAYERS": 4,
+    "DROPOUT": 0.1,
+    "LR": 0.0001,
+    "WEIGHT_DECAY": 0.0001,
+    "GRAD_CLIP": 1.0,
+    "PA_LAMBDA": 1.0,
+    "PA_MARGIN": 10.0,
+    "CLIP_Z": 10.0
+  },
+  "advancement": "Fixed policy must improve mean system F0.5 in both folds, with no mean FPe increase in either; ties retain existing policy",
+  "limits": "Historical internal validation; no outer assessment evaluation; six-month calibration differs from outer Q1 protocol; CPU/GPU exact equivalence not guaranteed"
+}
+Verifying training CSV integrity
+2001 loading training and calibration only
+2001 42 both policies frozen; validating
+2001 43 both policies frozen; validating
+2001 44 both policies frozen; validating
+2002 loading training and calibration only
+2002 42 both policies frozen; validating
+2002 43 both policies frozen; validating
+2002 44 both policies frozen; validating
+fold               policy                scope  f05_mean  f05_sd  fp_mean  recall_mean
+2001 calibration_selected input_channels_40_47       0.0     0.0      0.0          0.0
+2001 calibration_selected  system_all_channels       0.0     0.0      0.0          0.0
+2001         fixed_epoch5 input_channels_40_47       0.0     0.0      0.0          0.0
+2001         fixed_epoch5  system_all_channels       0.0     0.0      0.0          0.0
+2002 calibration_selected input_channels_40_47       0.0     0.0      0.0          0.0
+2002 calibration_selected  system_all_channels       0.0     0.0      0.0          0.0
+2002         fixed_epoch5 input_channels_40_47       0.0     0.0      0.0          0.0
+2002         fixed_epoch5  system_all_channels       0.0     0.0      0.0          0.0
+{
+  "experiment": "inner-selection-v1",
+  "folds": {
+    "2001": [
+      "2001-01-01",
+      "2001-07-01",
+      "2002-01-01"
+    ],
+    "2002": [
+      "2002-01-01",
+      "2002-07-01",
+      "2003-01-01"
+    ]
+  },
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "features": [
+    "channel_40",
+    "channel_41",
+    "channel_42",
+    "channel_43",
+    "channel_44",
+    "channel_45",
+    "channel_46",
+    "channel_47"
+  ],
+  "epochs": 5,
+  "max_train_windows": 25000,
+  "batch_size": 64,
+  "augmentation": "short_no_roll",
+  "device": "cpu",
+  "threads": 2,
+  "policies": [
+    "calibration_selected",
+    "fixed_epoch5"
+  ],
+  "quantiles": [
+    90,
+    95,
+    97.5,
+    98,
+    99,
+    99.5,
+    99.75,
+    99.9,
+    99.95,
+    99.99,
+    100
+  ],
+  "merge_gaps": [
+    0,
+    16,
+    64
+  ],
+  "min_durs": [
+    1,
+    8,
+    32
+  ],
+  "alarm_cap": 0.01,
+  "settings": {
+    "SEQ_LEN": 256,
+    "STRIDE": 16,
+    "SCORE_STRIDE": 32,
+    "D_MODEL": 128,
+    "N_HEADS": 8,
+    "N_LAYERS": 4,
+    "DROPOUT": 0.1,
+    "LR": 0.0001,
+    "WEIGHT_DECAY": 0.0001,
+    "GRAD_CLIP": 1.0,
+    "PA_LAMBDA": 1.0,
+    "PA_MARGIN": 10.0,
+    "CLIP_Z": 10.0
+  },
+  "advancement": "Fixed policy must improve mean system F0.5 in both folds, with no mean FPe increase in either; ties retain existing policy",
+  "limits": "Historical internal validation; no outer assessment evaluation; six-month calibration differs from outer Q1 protocol; CPU/GPU exact equivalence not guaranteed"
+}
+Verifying training CSV integrity
+2001 loading training and calibration only
+2002 loading training and calibration only
+fold               policy                scope  f05_mean  f05_sd  fp_mean  recall_mean
+2001 calibration_selected input_channels_40_47       0.0     0.0      0.0          0.0
+2001 calibration_selected  system_all_channels       0.0     0.0      0.0          0.0
+2001         fixed_epoch5 input_channels_40_47       0.0     0.0      0.0          0.0
+2001         fixed_epoch5  system_all_channels       0.0     0.0      0.0          0.0
+2002 calibration_selected input_channels_40_47       0.0     0.0      0.0          0.0
+2002 calibration_selected  system_all_channels       0.0     0.0      0.0          0.0
+2002         fixed_epoch5 input_channels_40_47       0.0     0.0      0.0          0.0
+2002         fixed_epoch5  system_all_channels       0.0     0.0      0.0          0.0
+out: loading training data before 2000-01-01 02:40:00
+out: 5 nominal windows; loading calibration
+out: epoch 1/1 batch 1/1 loss 0.498356
+out {'epoch': 1, 'loss': 0.49835601449012756, 'calibration_f05': 0.0}
+out: decision frozen; scoring assessment
+1.0 1 1 / 1
+1.0 {'epoch': 1, 'loss': 10.211350440979004, 'normal_mse': 1.275444746017456, 'pseudo_penalty': 8.935905456542969, 'calibration_f05': 0.0, 'seconds': 0.1394540820037946}
+0.1 1 1 / 1
+0.1 {'epoch': 1, 'loss': 2.1690354347229004, 'normal_mse': 1.275444746017456, 'pseudo_penalty': 8.935905456542969, 'calibration_f05': 0.0, 'seconds': 0.13587088196072727}
+Fold 2004: training before 2004-01-01; calibration through 2004-04-01
+Fold 2004: both rules frozen; loading 2004-04-01 to 2005-01-01
+Final data-integrity check...
+fold    model                scope  epoch  calibration_f05  EW_F_0.50  TPe  FPe  FNe
+2004 baseline  system_all_channels      1              0.0        0.0    0    0    1
+2004 baseline input_channels_40_47      1              0.0        0.0    0    0    1
+2004   masked  system_all_channels      1              0.0        0.0    0    0    1
+2004   masked input_channels_40_47      1              0.0        0.0    0    0    1
+SKIP completed fold 2004
+  scoring 1/1 windows
+masked_overlap: epoch 1/1, batch 1/1
+masked_overlap: calibrating epoch 1
+masked_overlap {'epoch': 1, 'loss': 9.586661338806152, 'normal_mse': 1.3040857315063477, 'pseudo_mse': 2.239668369293213, 'pseudo_penalty': 8.282575607299805, 'calibration_f05': 0.0, 'seconds': 0.16395087202545255}
+masked_overlap: resume epoch 2
+Verified 5 destination entries
+/home/k_faz/projects/ESA-ADB/esa_thesis/protocol.py:40: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  dates = pd.DatetimeIndex(pd.to_datetime(pending, utc=True))
+short_no_roll_finetune epoch 1/1 batch 1/3 loss 9.05097
+short_no_roll_finetune epoch 1/1 batch 3/3 loss 8.88661
+short_no_roll_finetune calibrating epoch 1
+short_no_roll_finetune resumed 1 1
+short_no_roll_finetune epoch 1/1 batch 3/3 loss 8.88661
+short_no_roll_finetune calibrating epoch 1
+2003: combined rule frozen; specialist enabled=False; reading assessment
+{
+  "experiment": "full-period-timing-comparison-v1",
+  "features": [
+    "channel_40",
+    "channel_41",
+    "channel_42",
+    "channel_43",
+    "channel_44",
+    "channel_45",
+    "channel_46",
+    "channel_47"
+  ],
+  "train": [
+    "2000-01-01",
+    "2006-01-01"
+  ],
+  "calibration": [
+    "2006-01-01",
+    "2007-01-01"
+  ],
+  "assessment": [
+    "2007-01-01",
+    "2014-01-01"
+  ],
+  "arms": [
+    "control",
+    "observation_age"
+  ],
+  "epochs": 1,
+  "batch_size": 64,
+  "seed": 42,
+  "device": "cpu",
+  "windows": "All globally nominal stride16 windows of256samples; no cap",
+  "selection": "Each arm: calibration every epoch, earliest F0.5 tie; freeze BOTH before assessment",
+  "context": "log1p(observation age/training median native cadence), availability. Control receives zero context; same model parameter count and initial outputs.",
+  "assessment_policy": "One frozen rule per arm; continuous2007\u20132013 predictions, pooled primary and yearly local/system metrics; no yearly retuning",
+  "limitations": "Retrospective reconstruction; inherited telemetry preparation; benchmark previously inspected, not untouched test. Five-epoch matched comparison is not the historical40epoch baseline. Intermittent integrity fault remains unresolved; gates do not certify hardware."
+}
+Verifying telemetry and independently reproduced timing sidecars...
+2 nominal training windows
+Both rules frozen. Loading2007–2013 assessment.
+          model                scope  epoch  calibration_f05  EW_F_0.50  TPe  FPe  FNe
+        control  system_all_channels      1              0.0        0.0    0    0    1
+        control input_channels_40_47      1              0.0        0.0    0    0    1
+observation_age  system_all_channels      1              0.0        0.0    0    0    1
+observation_age input_channels_40_47      1              0.0        0.0    0    0    1
+control 1 1 1
+control {'epoch': 1, 'loss': 10.048666000366211, 'normal_mse': 1.3046128749847412, 'pseudo_penalty': 8.74405288696289, 'calibration_f05': 0.0, 'seconds': 0.14170933503191918}
+observation_age 1 1 1
+observation_age {'epoch': 1, 'loss': 10.048666000366211, 'normal_mse': 1.3046128749847412, 'pseudo_penalty': 8.74405288696289, 'calibration_f05': 0.0, 'seconds': 0.12149530102033168}
+W&B logging unavailable: RuntimeError
+short_no_roll_finetune epoch 1/1 batch 1/3 loss 9.05097
+short_no_roll_finetune epoch 1/1 batch 3/3 loss 8.88661
+short_no_roll_finetune calibrating epoch 1
+short_no_roll_finetune resumed 1 1
+short_no_roll_finetune epoch 1/1 batch 3/3 loss 8.88661
+short_no_roll_finetune calibrating epoch 1
+----------------------------------------------------------------------
+Ran 153 tests in 14.507s
+
+OK
