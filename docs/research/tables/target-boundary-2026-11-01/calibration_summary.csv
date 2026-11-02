@@ -1,0 +1,13 @@
+arm,family,candidates,unique_masks,feasible,selected_original_boundary,selected_local_f05,rule
+expanded_target,temporal,48,2,48,True,0.9997463037613595,"{""index"": 0, ""family"": ""temporal"", ""original"": true, ""gap"": 0, ""duration"": 1}"
+expanded_target,strength_duration,49,8,19,True,0.9997463037613595,"{""index"": 0, ""family"": ""strength_duration"", ""original"": true}"
+expanded_target,hysteresis,16,9,7,True,0.9997463037613595,"{""index"": 0, ""family"": ""hysteresis"", ""original"": true}"
+expanded_target,duration,9,5,3,True,0.9997463037613595,"{""index"": 0, ""family"": ""duration"", ""original"": true}"
+masked_all,temporal,48,1,48,True,0.8821379902457192,"{""index"": 0, ""family"": ""temporal"", ""original"": true, ""gap"": 0, ""duration"": 1}"
+masked_all,strength_duration,49,5,13,True,0.8821379902457192,"{""index"": 0, ""family"": ""strength_duration"", ""original"": true}"
+masked_all,hysteresis,16,8,4,True,0.8821379902457192,"{""index"": 0, ""family"": ""hysteresis"", ""original"": true}"
+masked_all,duration,9,5,3,True,0.8821379902457192,"{""index"": 0, ""family"": ""duration"", ""original"": true}"
+expanded_all,temporal,48,2,48,True,0.9997463037613595,"{""index"": 0, ""family"": ""temporal"", ""original"": true, ""gap"": 0, ""duration"": 1}"
+expanded_all,strength_duration,49,8,19,True,0.9997463037613595,"{""index"": 0, ""family"": ""strength_duration"", ""original"": true}"
+expanded_all,hysteresis,16,9,7,True,0.9997463037613595,"{""index"": 0, ""family"": ""hysteresis"", ""original"": true}"
+expanded_all,duration,9,5,3,True,0.9997463037613595,"{""index"": 0, ""family"": ""duration"", ""original"": true}"

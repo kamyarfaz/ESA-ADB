@@ -1,0 +1,17 @@
+{
+  "verified": true,
+  "saved_xlsx_reopened": true,
+  "original_rows_preserved": 35,
+  "historical_rows_preserved": 24,
+  "new_pipeline_rows": 4,
+  "table_ref": "A5:M44",
+  "all_2007_2013_first": true,
+  "new_metric_cells_match_verified_csv_inputs": true,
+  "formula_error_cells": 0,
+  "visual_review": [
+    "after.png",
+    "notes.png"
+  ],
+  "sha256_before": "0c78724170d19f2fa915a4e9bd024daa7817dd1b257977f5b04623582de96c64",
+  "sha256_after": "a80ee74c035450fcfd9d07f9ef59f4fcd98a9122b7dc8b9a4c4c9184c3f14773"
+}

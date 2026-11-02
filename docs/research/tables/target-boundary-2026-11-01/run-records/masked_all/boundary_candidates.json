@@ -1,0 +1,363 @@
+[
+  {
+    "rule": {
+      "index": 0,
+      "original": true
+    },
+    "local": {
+      "EW_F_0.50": 0.8821058520060329,
+      "EW_precision": 0.8568514102634239,
+      "EW_recall": 1.0,
+      "TPe": 6,
+      "FPe": 1,
+      "FNe": 0,
+      "num_true_events": 6,
+      "num_pred_events": 9,
+      "alarming_precision": 0.75,
+      "nominal_seconds": 30526841.079,
+      "false_positive_seconds": 10379.778,
+      "nominal_false_alarm_rate": 0.0003400213593387491,
+      "false_alarms_per_day": 0.0027397286336840122,
+      "metric_version": "esa-ew-id-duration-v1"
+    },
+    "system": {
+      "EW_F_0.50": 0.7892758701516437,
+      "EW_precision": 0.8568514102634239,
+      "EW_recall": 0.6,
+      "TPe": 6,
+      "FPe": 1,
+      "FNe": 4,
+      "num_true_events": 10,
+      "num_pred_events": 9,
+      "alarming_precision": 0.75,
+      "nominal_seconds": 30526841.079,
+      "false_positive_seconds": 10379.778,
+      "nominal_false_alarm_rate": 0.0003400213593387491,
+      "false_alarms_per_day": 0.0027397286336840122,
+      "metric_version": "esa-ew-id-duration-v1"
+    },
+    "detected_ids": [
+      "id_106",
+      "id_107",
+      "id_109",
+      "id_110",
+      "id_112",
+      "id_114"
+    ],
+    "alarm_fraction": 0.000974124809741248,
+    "feasible": true,
+    "prediction_sha256": "1866dee11f02b345413bf1b5939944942a42688e9b64d228b6fdbfe4bf2fce6b"
+  },
+  {
+    "rule": {
+      "index": 1,
+      "original": false,
+      "quantile": 95,
+      "cutoff": 1.26142208576202,
+      "padding": 0
+    },
+    "local": {
+      "EW_F_0.50": 0.8821058520060329,
+      "EW_precision": 0.8568514102634239,
+      "EW_recall": 1.0,
+      "TPe": 6,
+      "FPe": 1,
+      "FNe": 0,
+      "num_true_events": 6,
+      "num_pred_events": 9,
+      "alarming_precision": 0.75,
+      "nominal_seconds": 30526841.079,
+      "false_positive_seconds": 10379.778,
+      "nominal_false_alarm_rate": 0.0003400213593387491,
+      "false_alarms_per_day": 0.0027397286336840122,
+      "metric_version": "esa-ew-id-duration-v1"
+    },
+    "system": {
+      "EW_F_0.50": 0.7892758701516437,
+      "EW_precision": 0.8568514102634239,
+      "EW_recall": 0.6,
+      "TPe": 6,
+      "FPe": 1,
+      "FNe": 4,
+      "num_true_events": 10,
+      "num_pred_events": 9,
+      "alarming_precision": 0.75,
+      "nominal_seconds": 30526841.079,
+      "false_positive_seconds": 10379.778,
+      "nominal_false_alarm_rate": 0.0003400213593387491,
+      "false_alarms_per_day": 0.0027397286336840122,
+      "metric_version": "esa-ew-id-duration-v1"
+    },
+    "detected_ids": [
+      "id_106",
+      "id_107",
+      "id_109",
+      "id_110",
+      "id_112",
+      "id_114"
+    ],
+    "alarm_fraction": 0.000974124809741248,
+    "feasible": true,
+    "prediction_sha256": "1866dee11f02b345413bf1b5939944942a42688e9b64d228b6fdbfe4bf2fce6b"
+  },
+  {
+    "rule": {
+      "index": 2,
+      "original": false,
+      "quantile": 95,
+      "cutoff": 1.26142208576202,
+      "padding": 16
+    },
+    "local": {
+      "EW_F_0.50": 0.8821058520060329,
+      "EW_precision": 0.8568514102634239,
+      "EW_recall": 1.0,
+      "TPe": 6,
+      "FPe": 1,
+      "FNe": 0,
+      "num_true_events": 6,
+      "num_pred_events": 9,
+      "alarming_precision": 0.75,
+      "nominal_seconds": 30526841.079,
+      "false_positive_seconds": 10379.778,
+      "nominal_false_alarm_rate": 0.0003400213593387491,
+      "false_alarms_per_day": 0.0027397286336840122,
+      "metric_version": "esa-ew-id-duration-v1"
+    },
+    "system": {
+      "EW_F_0.50": 0.7892758701516437,
+      "EW_precision": 0.8568514102634239,
+      "EW_recall": 0.6,
+      "TPe": 6,
+      "FPe": 1,
+      "FNe": 4,
+      "num_true_events": 10,
+      "num_pred_events": 9,
+      "alarming_precision": 0.75,
+      "nominal_seconds": 30526841.079,
+      "false_positive_seconds": 10379.778,
+      "nominal_false_alarm_rate": 0.0003400213593387491,
+      "false_alarms_per_day": 0.0027397286336840122,
+      "metric_version": "esa-ew-id-duration-v1"
+    },
+    "detected_ids": [
+      "id_106",
+      "id_107",
+      "id_109",
+      "id_110",
+      "id_112",
+      "id_114"
+    ],
+    "alarm_fraction": 0.000974124809741248,
+    "feasible": true,
+    "prediction_sha256": "1866dee11f02b345413bf1b5939944942a42688e9b64d228b6fdbfe4bf2fce6b"
+  },
+  {
+    "rule": {
+      "index": 3,
+      "original": false,
+      "quantile": 99,
+      "cutoff": 3.6583901500701907,
+      "padding": 0
+    },
+    "local": {
+      "EW_F_0.50": 0.8821058520060329,
+      "EW_precision": 0.8568514102634239,
+      "EW_recall": 1.0,
+      "TPe": 6,
+      "FPe": 1,
+      "FNe": 0,
+      "num_true_events": 6,
+      "num_pred_events": 9,
+      "alarming_precision": 0.75,
+      "nominal_seconds": 30526841.079,
+      "false_positive_seconds": 10379.778,
+      "nominal_false_alarm_rate": 0.0003400213593387491,
+      "false_alarms_per_day": 0.0027397286336840122,
+      "metric_version": "esa-ew-id-duration-v1"
+    },
+    "system": {
+      "EW_F_0.50": 0.7892758701516437,
+      "EW_precision": 0.8568514102634239,
+      "EW_recall": 0.6,
+      "TPe": 6,
+      "FPe": 1,
+      "FNe": 4,
+      "num_true_events": 10,
+      "num_pred_events": 9,
+      "alarming_precision": 0.75,
+      "nominal_seconds": 30526841.079,
+      "false_positive_seconds": 10379.778,
+      "nominal_false_alarm_rate": 0.0003400213593387491,
+      "false_alarms_per_day": 0.0027397286336840122,
+      "metric_version": "esa-ew-id-duration-v1"
+    },
+    "detected_ids": [
+      "id_106",
+      "id_107",
+      "id_109",
+      "id_110",
+      "id_112",
+      "id_114"
+    ],
+    "alarm_fraction": 0.0009570015220700152,
+    "feasible": true,
+    "prediction_sha256": "e11db1dbccfb7c413661cc4bc1db55fd9c9b1c347b289016e73cea5fe7cb3dc2"
+  },
+  {
+    "rule": {
+      "index": 4,
+      "original": false,
+      "quantile": 99,
+      "cutoff": 3.6583901500701907,
+      "padding": 16
+    },
+    "local": {
+      "EW_F_0.50": 0.8821058520060329,
+      "EW_precision": 0.8568514102634239,
+      "EW_recall": 1.0,
+      "TPe": 6,
+      "FPe": 1,
+      "FNe": 0,
+      "num_true_events": 6,
+      "num_pred_events": 9,
+      "alarming_precision": 0.75,
+      "nominal_seconds": 30526841.079,
+      "false_positive_seconds": 10379.778,
+      "nominal_false_alarm_rate": 0.0003400213593387491,
+      "false_alarms_per_day": 0.0027397286336840122,
+      "metric_version": "esa-ew-id-duration-v1"
+    },
+    "system": {
+      "EW_F_0.50": 0.7892758701516437,
+      "EW_precision": 0.8568514102634239,
+      "EW_recall": 0.6,
+      "TPe": 6,
+      "FPe": 1,
+      "FNe": 4,
+      "num_true_events": 10,
+      "num_pred_events": 9,
+      "alarming_precision": 0.75,
+      "nominal_seconds": 30526841.079,
+      "false_positive_seconds": 10379.778,
+      "nominal_false_alarm_rate": 0.0003400213593387491,
+      "false_alarms_per_day": 0.0027397286336840122,
+      "metric_version": "esa-ew-id-duration-v1"
+    },
+    "detected_ids": [
+      "id_106",
+      "id_107",
+      "id_109",
+      "id_110",
+      "id_112",
+      "id_114"
+    ],
+    "alarm_fraction": 0.000974124809741248,
+    "feasible": true,
+    "prediction_sha256": "1866dee11f02b345413bf1b5939944942a42688e9b64d228b6fdbfe4bf2fce6b"
+  },
+  {
+    "rule": {
+      "index": 5,
+      "original": false,
+      "quantile": 99.9,
+      "cutoff": 10.59309514808659,
+      "padding": 0
+    },
+    "local": {
+      "EW_F_0.50": 0.8821379902457192,
+      "EW_precision": 0.8568893160150917,
+      "EW_recall": 1.0,
+      "TPe": 6,
+      "FPe": 1,
+      "FNe": 0,
+      "num_true_events": 6,
+      "num_pred_events": 9,
+      "alarming_precision": 0.75,
+      "nominal_seconds": 30526841.079,
+      "false_positive_seconds": 9029.778,
+      "nominal_false_alarm_rate": 0.0002957979823929868,
+      "false_alarms_per_day": 0.0027397286336840122,
+      "metric_version": "esa-ew-id-duration-v1"
+    },
+    "system": {
+      "EW_F_0.50": 0.7893015999667344,
+      "EW_precision": 0.8568893160150917,
+      "EW_recall": 0.6,
+      "TPe": 6,
+      "FPe": 1,
+      "FNe": 4,
+      "num_true_events": 10,
+      "num_pred_events": 9,
+      "alarming_precision": 0.75,
+      "nominal_seconds": 30526841.079,
+      "false_positive_seconds": 9029.778,
+      "nominal_false_alarm_rate": 0.0002957979823929868,
+      "false_alarms_per_day": 0.0027397286336840122,
+      "metric_version": "esa-ew-id-duration-v1"
+    },
+    "detected_ids": [
+      "id_106",
+      "id_107",
+      "id_109",
+      "id_110",
+      "id_112",
+      "id_114"
+    ],
+    "alarm_fraction": 0.0007524733637747337,
+    "feasible": true,
+    "prediction_sha256": "1d7888c991388bb2c74468cf9590b5d2ac50ea8ccbad9b324e01a3dc0778cad7"
+  },
+  {
+    "rule": {
+      "index": 6,
+      "original": false,
+      "quantile": 99.9,
+      "cutoff": 10.59309514808659,
+      "padding": 16
+    },
+    "local": {
+      "EW_F_0.50": 0.8821072803828934,
+      "EW_precision": 0.856853094963498,
+      "EW_recall": 1.0,
+      "TPe": 6,
+      "FPe": 1,
+      "FNe": 0,
+      "num_true_events": 6,
+      "num_pred_events": 9,
+      "alarming_precision": 0.75,
+      "nominal_seconds": 30526841.079,
+      "false_positive_seconds": 10319.778,
+      "nominal_false_alarm_rate": 0.00033805587591895225,
+      "false_alarms_per_day": 0.0027397286336840122,
+      "metric_version": "esa-ew-id-duration-v1"
+    },
+    "system": {
+      "EW_F_0.50": 0.7892770137116989,
+      "EW_precision": 0.856853094963498,
+      "EW_recall": 0.6,
+      "TPe": 6,
+      "FPe": 1,
+      "FNe": 4,
+      "num_true_events": 10,
+      "num_pred_events": 9,
+      "alarming_precision": 0.75,
+      "nominal_seconds": 30526841.079,
+      "false_positive_seconds": 10319.778,
+      "nominal_false_alarm_rate": 0.00033805587591895225,
+      "false_alarms_per_day": 0.0027397286336840122,
+      "metric_version": "esa-ew-id-duration-v1"
+    },
+    "detected_ids": [
+      "id_106",
+      "id_107",
+      "id_109",
+      "id_110",
+      "id_112",
+      "id_114"
+    ],
+    "alarm_fraction": 0.0008561643835616438,
+    "feasible": true,
+    "prediction_sha256": "981cf30433dc0d6ba045c3389d3132fdadd575e41f6dea81ad3e0927ea71437a"
+  }
+]

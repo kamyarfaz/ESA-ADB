@@ -2,6 +2,10 @@
 
 ## Thesis research
 
+- [Target-output scoring and boundary results](research/target-boundary-results-2026-11-01.md): verified336 annual/pooled rows; tiny expanded boundary gain, masked/target-only regressions, all post-processing fallbacks.
+- [Target-output scoring and boundary protocol](research/target-boundary-protocol-2026-11-01.md): authorized bounded inference/postprocessing study, calibration-only selection.
+- [Chronological validation design](research/chronological-validation-design-2026-11-01.md): descriptive calibration checks now; fold-specific validation before broader tuning.
+
 - [W&B analysis guide](research/wandb-analysis-guide-2026-10-25.md): how to interpret the nine runs and distinguish proposed next work from completed evidence.
 
 - [Correctness and research-design audit, 1 November](research/research-audit-2026-11-01.md): fresh replays pass; score resolution, calibration limits, preprocessing and untested opportunities.

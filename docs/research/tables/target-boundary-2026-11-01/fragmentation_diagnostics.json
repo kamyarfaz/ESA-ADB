@@ -1,0 +1,11 @@
+{
+  "expanded_target_threshold": 3.379899024963379,
+  "original_expanded_threshold": 3.379899024963379,
+  "target_mask_subset_of_original": true,
+  "original_segments": 95,
+  "target_segments": 407,
+  "original_segments_split_into_multiple_target_segments": 1,
+  "original_segments_removed": 0,
+  "maximum_fragments_in_one_original_segment": 313,
+  "interpretation": "Retrospective explanation of a frozen result; no rule changes or selection."
+}

@@ -1,0 +1,21 @@
+{
+  "verified": true,
+  "candidate_rows": 398,
+  "metric_rows": 336,
+  "complete_receipt_sha256": "5f37a3ac1a1f86c6d9f1d84a28dbe3628303754da2d8f8ba85822441e4ac23bb",
+  "checks": [
+    "Frozen input/source/artifact hashes",
+    "Independent candidate transforms and calibration selection",
+    "Exact prediction replay, 336 metric rows and event IDs",
+    "Unchanged original control parity",
+    "Full all-output score/prediction parity",
+    "CPU inference spots in calibration and assessment",
+    "Assessment chunks after joint selection freeze"
+  ],
+  "limitations": [
+    "Single seed",
+    "Reused benchmark",
+    "CPU neural replay sampled, not full",
+    "Same corrected metric implementation, supported by pinned-reference parity tests"
+  ]
+}

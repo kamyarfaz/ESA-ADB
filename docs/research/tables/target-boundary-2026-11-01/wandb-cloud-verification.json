@@ -1,0 +1,10 @@
+{
+  "verified": true,
+  "runs": 3,
+  "downloaded_metric_rows": 336,
+  "checks": [
+    "Finished run states",
+    "All downloaded table values",
+    "Pooled summary F0.5, eventTPR and timeFPR"
+  ]
+}

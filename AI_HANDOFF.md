@@ -1,42 +1,64 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
-Updated **1 November 2026**. User authorized target-output scoring, boundary
-refinement and checks of the previous post-processing families following the audit.
+Updated **2 November 2026**. The authorized target-output scoring, boundary
+refinement and post-processing comparison completed successfully. No training or
+MOSAD was started. No experiment worker is running; do not restart the completed job.
 
-**1 November NEW AUTHORIZATION — bounded inference/post-processing comparison.**
-Protocol: docs/research/target-boundary-protocol-2026-11-01.md. This supersedes the
-audit's proposal-only/stop notes for this study only. No training, MOSAD or changes
-to existing models, source package or data. Original short-no-roll is an unchanged
-reference; the two high-recall checkpoints supply three candidate arms: expanded
-target40–47 outputs, masked-pretrained model, expanded all11 outputs. Extra inputs
-14/21/29 remain only in the expanded model. Train2000–2005/cal2006/test2007–2013.
-Selection uses2006 only; all arms freeze together before new assessment inference.
-Seven boundary candidates and122 existing postprocessing entries per arm, plus the
-bounded target threshold grid. Retain original local calibration IDs and <=1%
-alarm fraction. Report21 variants/336 annual-pooled metric rows, both scopes and
-every gained/lost ID. No candidate-family selection from assessment results.
+**1 November study — independently verified; publication finishing.**
+Report: docs/research/target-boundary-results-2026-11-01.md. Protocol:
+docs/research/target-boundary-protocol-2026-11-01.md. Evidence:
+docs/research/tables/target-boundary-2026-11-01/. Frozen code/protocol commit b067e9a.
+Train2000–2005/cal2006/assessment2007–2013, seed42, existing checkpoints only.
+Original short-no-roll remained an unchanged reference. Expanded inputs still include
+14/21/29; target-only scoring changes outputs contributing to alarms, not inputs.
+All choices jointly froze on2006 before new assessment inference.
 
-Destination frozen dataset verification passed (manifest a49a8c42...); this does
-not certify the entire old migration/external-drive copy. All161 thesis tests
-passed, including8 new localization/independent-transform tests, in14.885s.
-Service: esa-target-boundary.service; output
-results_longrun/target_boundary_20261101_seed42_v1; log
+Pooled corrected system / target40–47 F0.5 and event detections:
+- Original short-no-roll:0.836070197 /0.907139530;48/91 and47/67, unchanged.
+- Masked original:0.795675499 /0.844314859;61/91 and60/67.
+- Masked boundary refinement:0.774619394 /0.821079545;60/91 and59/67;
+  lost id_40 in both scopes. This is an unsuccessful outcome.
+- Expanded original:0.844573267 /0.830899674;80/91 and62/67.
+- Expanded all-output boundaries:0.844609096 /0.830935471;80/91 and62/67.
+  Tiny gain (+0.0000358),9704.730 fewer nominal alarm seconds across seven years;
+  no gained/lost IDs. Do not describe this as substantial or robust improvement.
+- Expanded target-only base:0.281940949 /0.239483505;78/91 and62/67.
+- Expanded target-only boundaries:0.282011250 /0.239544116;78/91 and62/67.
+  Target IDs retained but system id_188,id_189 lost. Components95→407; one
+  original component split into313; false events10→241. Lower timeFPR did not
+  yield better event precision. This retrospective explanation changed no rules.
+All four post-processing families retained each arm's boundary fallback. Identical
+family predictions are reported as such; no added gain or independent replication.
+
+Verification passed398 calibration entries, all336 annual/pooled metric rows,
+predictions and IDs, unchanged controls, exact original-threshold prediction parity,
+frozen data/source/checkpoints/runtime and sampled CPU neural replay. All161 thesis
+preflight tests passed (14.885s). Three finished W&B evaluation runs and all336
+cloud table rows verified. All252 descriptive calibration stability rows/IDs also
+independently replayed. Canonical project-root workbook now has39 technique/
+scoring-pipeline rows; all35 old rows including24 historical rows preserved,
+2007–2013 entries first, separate scope F0.5 and FPR/TPR. Saved XLSX re-opened and
+visually checked. Original workbook preserved in outputs/target-boundary-20261101/.
+
+Service esa-target-boundary.service exited successfully (inactive, exit0), still
+enabled pending final publication cleanup. Output:
+results_longrun/target_boundary_20261101_seed42_v1. Log:
 /home/k_faz/project-backups/run-logs/target-boundary-20261101.log.
-Runner scripts/research/run_target_boundary.sh runs extraction/calibration/assessment
-then independent verification. Check live service/log before taking action; never
-duplicate workers. Inference resumes receipt-verified chunks only with exact
-protocol/source/data/runtime/checkpoint fingerprints. Monitor quiet healthy status.
-On completion independently verify, publish W&B evaluation, update report/workbook,
-commit compact results and checksum-verify a GitHub Release; disable service and
-remove follow-up after delivery. No new scores are claimed yet.
+Heartbeat complete-target-output-scoring-and-alarm-boundary-comparison remains
+active until Release download/checksum verification and final delivery.
+Remaining completion work: push final reporting, checksum-verified Release,
+disable completed service and delete heartbeat. Never rerun the experiment.
 
-Calibration halves/quarters are descriptive checks, not independent validation:
-these checkpoints already used2006. A stronger chronological validation design is
-being documented, without starting another training campaign. Keep all failed
-outcomes, disclose reused benchmark, single seed, offline context and inherited
-label-informed prepared inputs. No robust thesis-target claim.
+Descriptive calibration halves/quarters are not independent validation; checkpoints
+and rules already used2006. Stronger validation is documented in
+ docs/research/chronological-validation-design-2026-11-01.md. No new training campaign
+was launched or scheduled. Keep all failures and disclose single seed, reused
+benchmark, offline context and inherited label-informed benchmark preparation.
+Do not claim robust thesis-target achievement. Frozen destination dataset checks
+passed (manifest a49a8c42...); this does not certify the full old migration copy.
+Regenerate transfer manifests before a future full-project transfer.
 
-**Audit complete; no new experiments started.** Fresh 153 tests passed; W&B
+**Prior audit complete; it started no experiments.** Fresh 153 tests passed; W&B
 18 calibration grids/96 metric rows, temporal144/96 and alarm-evidence222/192
 replayed successfully into separate audit outputs. Frozen dataset/source/artifact
 checks passed. Existing scores unchanged. Report:

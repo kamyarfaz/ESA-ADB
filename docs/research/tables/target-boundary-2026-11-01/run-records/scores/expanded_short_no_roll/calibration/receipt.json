@@ -1,0 +1,37 @@
+{
+  "method": "expanded_short_no_roll",
+  "split": "calibration",
+  "features": [
+    "channel_40",
+    "channel_41",
+    "channel_42",
+    "channel_43",
+    "channel_44",
+    "channel_45",
+    "channel_46",
+    "channel_47",
+    "channel_14",
+    "channel_21",
+    "channel_29"
+  ],
+  "model_sha256": "9389ec7e6fcac516df20b40f1170a385cf1ada8c0929d028b89c63c7bf88b481",
+  "original_score_sha256": "54a50daba39e97a6184c9ed48536bd4c0cdfb649cb160f95b45afd107c41a03e",
+  "original_max_abs_difference": 0.0,
+  "exact_original_prediction_parity": true,
+  "files": {
+    "window_means.npy": "3db2c5977a84e62e25a11eb3f149ea11125414ba4f2b87b2e7792f2c34371ca1",
+    "coarse_by_channel.npy": "1fe2d1bedda2fc8ad7fcf97e06ec234274bc36b031f4547f45d5365e9265a1b9",
+    "fine_by_channel.npy": "93e2a08959e223912121ef77ad6e6e24d48db2a8b79914feb9e232b542f3a621"
+  },
+  "chunk_receipts": {
+    "00000000.json": "a2d101af77e53ecf2dfc0ce9e7de6f33575a82a045e79cc23397d23226dde452",
+    "00004096.json": "82af0fdd161dabe15d54543910528c1394ff381ed053108ae02524cff772524a",
+    "00008192.json": "f30a1474e25b2a8f5399a20ed054ed510b87b475c51f2118b6522269ac5bb368",
+    "00012288.json": "24acdfb273a636eff11e54925d31a5ecf41165792d0731e7b56507db64b170e8",
+    "00016384.json": "2c965b1988c831cbed0ebe4a6a1dd5c96b61a43b7caba28305d244b91b41a7eb",
+    "00020480.json": "08c64f6991fe936f745885e0e4ae0b82347fdf8506c46cc18be2db851e99b089",
+    "00024576.json": "49c0ad50827449fe23cc9eca8c23dce697ddc75c209e4ba0febeea7a1a99c834",
+    "00028672.json": "903d41bd35f09c903a5b00e21b25e5dda9db1b72a7b654e6de025cd6e3a23024",
+    "00032768.json": "3ca17f134586535e4342ef61bec86376463ffffcbfb05cdd377d95a06d33d5b1"
+  }
+}

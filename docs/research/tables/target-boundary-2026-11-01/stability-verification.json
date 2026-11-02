@@ -1,0 +1,10 @@
+{
+  "verified": true,
+  "rows": 252,
+  "table_sha256": "b5f526a70611d9d61f08f985826bb18aa9dad68557c2e445f4c3b62c17409737",
+  "checks": [
+    "Independent transforms and block generation",
+    "All block metric cells and detected IDs"
+  ],
+  "limitation": "Descriptive replay only; blocks are not independent validation folds."
+}
