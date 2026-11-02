@@ -1,0 +1,121 @@
+{
+  "complete": true,
+  "frozen": {
+    "protocol_sha256": "412fdbf06cfae0f1dbe06eef9c841050c08a37d75afdec5c8ac0b86d2f47959d",
+    "script_sha256": "3ad4e1cf991011b8587a860bb1d1d8289ed4d77359ea302bc48541db27a8042e",
+    "integrity_sha256": "9c7ddf8bdcc0aa6b1c5978d35948564dffad53d02f504fbf13528ec0f0f7bf14",
+    "training_end_exclusive": {
+      "1": "2006-01-01",
+      "2": "2001-01-01"
+    },
+    "grid_seconds": 300,
+    "max_hold_seconds": 600,
+    "assessment_used_for_selection": false
+  },
+  "raw_integrity_verified": true,
+  "profiled_channels": 30,
+  "quarter_profiles": 280,
+  "cross_mission_candidate_pairs": 100,
+  "files": [
+    {
+      "path": "coverage.csv",
+      "bytes": 3528,
+      "sha256": "cf56dc1eaaa15c71275fa78d281aced4d6b0c2f18f46ab3962947c0d14fffa05"
+    },
+    {
+      "path": "cross_mission_similarity.csv",
+      "bytes": 13347,
+      "sha256": "0c51f699be746afd4a25131b509fd80873444dd6004ec5a87d6c5722b79d5060"
+    },
+    {
+      "path": "frozen.json",
+      "bytes": 441,
+      "sha256": "84296fcf1fd4e92bc96ca0c209bd468fe5426a9b2cb6a34f7025ca37906d2886"
+    },
+    {
+      "path": "median_quarter_profiles.csv",
+      "bytes": 8367,
+      "sha256": "084963fdf86c61496398108109dea90de5c75669a792dde26d3ccf4cd700a37b"
+    },
+    {
+      "path": "metadata_inventory.csv",
+      "bytes": 7857,
+      "sha256": "f3a7b0d190315473dc554291b75b1d1a9d17ce8728a7d9f9d0d877384c895dcb"
+    },
+    {
+      "path": "mission1_delta.csv",
+      "bytes": 1391,
+      "sha256": "726bcb029a6c1db4be2dba81d3e34f977821f17e025ee3e130c4af7e5f1081f5"
+    },
+    {
+      "path": "mission1_pair_blocks.csv",
+      "bytes": 73516,
+      "sha256": "92c2c21b70c4bdf48c4a3236e226fd5dae637ec0f525fbd8cae739d2068d02ca"
+    },
+    {
+      "path": "mission1_pair_summary.csv",
+      "bytes": 4315,
+      "sha256": "30907378de6b9b94cb1fcf55bbae66e4b924b9a8ca74a2f88feb42eb817dfd97"
+    },
+    {
+      "path": "mission1_pearson.csv",
+      "bytes": 1355,
+      "sha256": "dfa55fbdf8c6ff0f5a0f6611554f58eecb26c13fabfce90e12f220c0b35258d6"
+    },
+    {
+      "path": "mission1_spearman.csv",
+      "bytes": 1361,
+      "sha256": "bc17125041ed192c80f294555e5adb6b0ac20027129780c124da657c2e753174"
+    },
+    {
+      "path": "mission1_training_diagnostic_grid.npz",
+      "bytes": 6907876,
+      "sha256": "c7715240e76053a019693bb85a4e57ac69f05edd28517131520a9c87adc5a0bf"
+    },
+    {
+      "path": "mission2_delta.csv",
+      "bytes": 10005,
+      "sha256": "03197c2ded4770a02b24e9411dc65aaeac457ebfbdd6bbc162c7a1fe71c48164"
+    },
+    {
+      "path": "mission2_metadata_candidates.csv",
+      "bytes": 1109,
+      "sha256": "ad6c02de54c0df3411d6753b44177d256bf1dce2d9b3a4172c321953ad4f2785"
+    },
+    {
+      "path": "mission2_pair_blocks.csv",
+      "bytes": 118922,
+      "sha256": "e6b32f6356af5b39f8b6bccd981241cafb6db20d4394dd9a3daad0307fe6d439"
+    },
+    {
+      "path": "mission2_pair_summary.csv",
+      "bytes": 33086,
+      "sha256": "4e752a1c44ac0788d359c0f4d386384ef8fa3f06606949afc19cd3ca4f670ac0"
+    },
+    {
+      "path": "mission2_pearson.csv",
+      "bytes": 9561,
+      "sha256": "efb733de84ea96507ac4064af7c6acd21013c90b3c34dbe012a7251634a7f139"
+    },
+    {
+      "path": "mission2_spearman.csv",
+      "bytes": 9597,
+      "sha256": "affee73fa04dd0a32baee1b75ad5d03d4380e097429a4e9d29b0cf64f26f1580"
+    },
+    {
+      "path": "mission2_training_diagnostic_grid.npz",
+      "bytes": 2274110,
+      "sha256": "8c3b37a960444bc7c099314f1566a6d4829b2123db0d6a28c13f4a2f0d3c7e85"
+    },
+    {
+      "path": "quarter_profiles.csv",
+      "bytes": 95172,
+      "sha256": "66fc08e44c7c783a1daa2a4b75beff457496a28af531fe15cf8641d86f8770cb"
+    },
+    {
+      "path": "training_correlations.png",
+      "bytes": 121127,
+      "sha256": "5676c0f01bb4aaa0176256b9266270791e00bd9ae50b4b76025bb59ac0604ef1"
+    }
+  ]
+}

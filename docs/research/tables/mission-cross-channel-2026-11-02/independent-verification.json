@@ -1,0 +1,9 @@
+{
+  "verified": true,
+  "saved_file_hashes": 20,
+  "source_samples_replayed": 5969,
+  "correlation_rows_replayed": 1855,
+  "similarity_distances_replayed": 100,
+  "assessment_values_used": false,
+  "limitations": "Source checks are sampled; correlations fully replayed from saved descriptive grids. Not neural or assessment verification."
+}

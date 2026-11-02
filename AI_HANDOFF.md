@@ -3,8 +3,10 @@
 Updated **2 November 2026**. New user direction: investigate Mission1/Mission2
 channel correspondence and behaviour related to Mission1 channels40–47, after
 GitHub preservation. This supersedes older completion notes saying no further
-research is authorized. Current stage is training-only descriptive analysis,
-not neural training or a new assessment. Protocol:
+research is authorized. The training-only descriptive investigation is now
+complete and independently verified; it performed no neural training or new
+assessment. Report: docs/research/mission-cross-channel-results-2026-11-02.md.
+Protocol:
 docs/research/mission-cross-channel-protocol-2026-11-02.md.
 Evidence: docs/research/tables/mission-cross-channel-2026-11-02/.
 Both complete raw v1 archives match official MD5s; all183 extracted telemetry
@@ -15,9 +17,30 @@ An additive Release preserves48 remaining supporting outputs, verified by fresh
 download: https://github.com/kamyarfaz/ESA-ADB/releases/tag/research-preservation-2026-11-02 .
 Channel numbers are mission-specific; subsystem/unit identifiers are consistent.
 Independent unknown time scaling forbids treating matching date labels as aligned
-measurements. Inspect metadata-selected22 Mission2 targets using2000 only; reserve
-2001Jan–Sep for possible calibration and2001Oct onward for later assessment.
-No new training, MOSAD, or postprocessing job is running.
+measurements. Profiled metadata-selected22 Mission2 targets using2000 only and
+Mission1's eight anchors using2000–2005;2001Jan–Sep remains reserved for possible
+Mission2 calibration and2001Oct onward for later assessment.
+Results: M2 group31 (75,76,77,83,84,85) pooled level r0.997573–0.998379 and
+change r0.996292–0.997564; group14 (70,71,72,78,79,80) level r0.992293–0.995892
+and change r0.992396–0.993721. M2 pair73/81 has level r0.946012, change0.991840.
+M2 pair58/59 has level r0.997282 but change r0.060571. Do not describe these as
+cross-mission correlation coefficients or proof of identical dynamics.
+Exploratory cross-mission summaries rank58/59 for40/47 and73/81 for41–46, but
+component rankings disagree and the correspondence is many-to-one. No validated
+eight-to-eight physical mapping or direct weight transfer has been established.
+Strong M1 context candidates16/24/32/33 correlate with40 in old training evidence;
+their short-term change correlation is weak. Preserve the prepared/raw distinction.
+Recommended first eight-target M2 candidate:58,59,75,76,77,83,84,85, preserving
+the two-plus-six subsystem/unit composition. This is a proposed analogous task.
+The user was asked whether the next experiment should prioritize separate M2
+training (recommended), direct M1 weight transfer, or both. That choice is still
+unanswered at this record. Do not start a large campaign merely from this proposal;
+first define its execution protocol, budget, channel roles and fresh preprocessing.
+No new training, MOSAD, postprocessing job or recurring monitor is running.
+Run: results_longrun/mission_cross_channel_20261102_v1. Protocol/code freeze d66ad58.
+All166 tests passed. Independent checks verified20 saved files,5969 raw-source
+sample spots,1855 correlation rows and100 similarity distances/ranks. All candidates
+and poor matches are retained. Existing model results and workbook are unchanged.
 
 The authorized target-output scoring, boundary
 refinement and post-processing comparison completed successfully. No training or

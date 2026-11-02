@@ -1,0 +1,80 @@
+{
+  "kind": "Reused previous full-resolution prepared-data training-only results; no new values/assessment",
+  "source_directory": "docs/research/tables/training-correlation-2000-2005-2026-09-23",
+  "files": [
+    {
+      "path": "docs/research/tables/training-correlation-2000-2005-2026-09-23/all_pairs.csv",
+      "sha256": "0d26484c9b8fc3b803b11f23abc1e3325f7487194e25466c5f54b584d5afba79"
+    },
+    {
+      "path": "docs/research/tables/training-correlation-2000-2005-2026-09-23/coverage.csv",
+      "sha256": "e9257c18d8f4c81133c89bc98271e5109fd2c702c2b36e780c1e27a6ce51acf4"
+    },
+    {
+      "path": "docs/research/tables/training-correlation-2000-2005-2026-09-23/delta_pearson_2000.csv",
+      "sha256": "7d53c21c323884abd2624f24fc5198d2d6f3046b235542a036c5ffc1ccb9009c"
+    },
+    {
+      "path": "docs/research/tables/training-correlation-2000-2005-2026-09-23/delta_pearson_2001.csv",
+      "sha256": "ed52f66f7a9ba97cfd1126bcc8e67cf26318378a24a9805119e8de448d5e7e45"
+    },
+    {
+      "path": "docs/research/tables/training-correlation-2000-2005-2026-09-23/delta_pearson_2002.csv",
+      "sha256": "15c7ca51c4c5aa3b2c5505e7d8695e60dd639d283958ded407e77fe85a66968e"
+    },
+    {
+      "path": "docs/research/tables/training-correlation-2000-2005-2026-09-23/delta_pearson_2003.csv",
+      "sha256": "d8a93aaa7bf96daaabf5eda36da830c5319c6045416fc9663c5b471d1390e2ca"
+    },
+    {
+      "path": "docs/research/tables/training-correlation-2000-2005-2026-09-23/delta_pearson_2004.csv",
+      "sha256": "8811af8e492b55735832db59c21b0dadd6a28466fb3bb7990c336f7f296c657a"
+    },
+    {
+      "path": "docs/research/tables/training-correlation-2000-2005-2026-09-23/delta_pearson_2005.csv",
+      "sha256": "79fa17b4e08ca98968e89a3b4f54c9603fb41944556228f420d8a27b0ffe56ad"
+    },
+    {
+      "path": "docs/research/tables/training-correlation-2000-2005-2026-09-23/pearson_2000.csv",
+      "sha256": "45836d0cebaa1aba04fc8406d171d7af56aaa25d510b2fa542a195842508ba27"
+    },
+    {
+      "path": "docs/research/tables/training-correlation-2000-2005-2026-09-23/pearson_2001.csv",
+      "sha256": "0bfa1fcffa2328927ab2abf4044964d7134a7e2abb382fcebe11392832efd59e"
+    },
+    {
+      "path": "docs/research/tables/training-correlation-2000-2005-2026-09-23/pearson_2002.csv",
+      "sha256": "57172f133c0238fc7217bcfbff4db1940faf3f697e47432686915247d58c463c"
+    },
+    {
+      "path": "docs/research/tables/training-correlation-2000-2005-2026-09-23/pearson_2003.csv",
+      "sha256": "b8e27315e4b35a50b76952f2580ac5b3de0b0a5ee1a7a37e52693fbfa99685a9"
+    },
+    {
+      "path": "docs/research/tables/training-correlation-2000-2005-2026-09-23/pearson_2004.csv",
+      "sha256": "4a1502cb707afd9332791fc350d462f64a3ac0cfb4bb703e63cd38c6add65d0e"
+    },
+    {
+      "path": "docs/research/tables/training-correlation-2000-2005-2026-09-23/pearson_2005.csv",
+      "sha256": "4cb3d76aefd3c810471285b5b32a7afd461c590e8106f44a5f646259678f1021"
+    },
+    {
+      "path": "docs/research/tables/training-correlation-2000-2005-2026-09-23/pearson_full.csv",
+      "sha256": "9348b4b69f8fbef39c24d2069feb29c2beb8e7e399b39a9cf3141402ed8da20e"
+    },
+    {
+      "path": "docs/research/tables/training-correlation-2000-2005-2026-09-23/spearman_hourly.csv",
+      "sha256": "e27f48e15df5d403706cc03e3c817efe4acc71c3883bfefcdd779b77a9cf32f8"
+    },
+    {
+      "path": "docs/research/tables/training-correlation-2000-2005-2026-09-23/stable_groups.csv",
+      "sha256": "6fa79c58555ba217a3e2638ca0dc0d96b9a839926c825d098806137fc5d1777b"
+    }
+  ],
+  "derived_table": "mission1_existing_target_related_pairs.csv",
+  "tests": {
+    "command": "python -m unittest discover -s tests/thesis -p test_*.py -q",
+    "passed": 166,
+    "seconds": 16.923
+  }
+}
