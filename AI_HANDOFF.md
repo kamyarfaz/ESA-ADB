@@ -1,5 +1,18 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
+**2 November2026 follow-up in progress:** user requested correlation matrices for
+both missions and high-correlation channel lists. Extend to all76/100 channels,
+training-only raw five-minute sampling. Protocol:
+docs/research/all-channel-correlation-protocol-2026-11-02.md. Runner:
+scripts/research/all_channel_correlation_review.py. Output:
+results_longrun/all_channel_correlations_20261102_v1; log:
+/home/k_faz/project-backups/run-logs/all-channel-correlations-20261102.log.
+This is descriptive computation, not neural training. Preserve the prior study.
+Deliver matrices/heatmaps and a separate workbook under
+outputs/all-channel-correlations-20261102; do not alter the thesis results workbook.
+The training-vs-transfer question remains unanswered and is not required for this
+matrix request. No training is authorized merely by a high correlation finding.
+
 Updated **2 November 2026**. New user direction: investigate Mission1/Mission2
 channel correspondence and behaviour related to Mission1 channels40–47, after
 GitHub preservation. This supersedes older completion notes saying no further
