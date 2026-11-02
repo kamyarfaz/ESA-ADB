@@ -1,0 +1,15 @@
+{
+  "completed_utc": "2026-11-02T02:25:42.322831+00:00",
+  "service": {
+    "MainPID": "0",
+    "Result": "success",
+    "ActiveState": "inactive",
+    "SubState": "dead",
+    "UnitFileState": "disabled"
+  },
+  "automation_id": "complete-target-output-scoring-and-alarm-boundary-comparison",
+  "automation_delete_status": "deleted",
+  "no_runner": true,
+  "release_verified": true,
+  "new_training_started": false
+}

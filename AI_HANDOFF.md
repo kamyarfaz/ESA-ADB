@@ -4,7 +4,7 @@ Updated **2 November 2026**. The authorized target-output scoring, boundary
 refinement and post-processing comparison completed successfully. No training or
 MOSAD was started. No experiment worker is running; do not restart the completed job.
 
-**1 November study — independently verified; publication finishing.**
+**1 November study — completed, independently verified and published.**
 Report: docs/research/target-boundary-results-2026-11-01.md. Protocol:
 docs/research/target-boundary-protocol-2026-11-01.md. Evidence:
 docs/research/tables/target-boundary-2026-11-01/. Frozen code/protocol commit b067e9a.
@@ -40,14 +40,22 @@ scoring-pipeline rows; all35 old rows including24 historical rows preserved,
 2007–2013 entries first, separate scope F0.5 and FPR/TPR. Saved XLSX re-opened and
 visually checked. Original workbook preserved in outputs/target-boundary-20261101/.
 
-Service esa-target-boundary.service exited successfully (inactive, exit0), still
-enabled pending final publication cleanup. Output:
-results_longrun/target_boundary_20261101_seed42_v1. Log:
+Service esa-target-boundary.service exited successfully and is now inactive/disabled
+(MainPID0). The monitoring follow-up
+complete-target-output-scoring-and-alarm-boundary-comparison was deleted after
+verified publication. MOSAD remains inactive/disabled. No worker or follow-up is
+scheduled for this completed study; do not restart it.
+Output: results_longrun/target_boundary_20261101_seed42_v1. Log:
 /home/k_faz/project-backups/run-logs/target-boundary-20261101.log.
-Heartbeat complete-target-output-scoring-and-alarm-boundary-comparison remains
-active until Release download/checksum verification and final delivery.
-Remaining completion work: push final reporting, checksum-verified Release,
-disable completed service and delete heartbeat. Never rerun the experiment.
+Compact results/report/workbook/code committed and pushed (results f0877c2).
+Release: https://github.com/kamyarfaz/ESA-ADB/releases/tag/target-boundary-2026-11-01 .
+All five assets freshly downloaded and SHA256/size verified; all204 downloaded
+reporting files match the manifest. All324 run archive members were checked against
+the frozen completion receipt before upload, and the downloaded archive matches.
+Receipt: docs/research/tables/target-boundary-2026-11-01/github-backup.json.
+Backup directory: /home/k_faz/project-backups/target-boundary-20261101.
+The Release preserves all new artifacts and original/new workbook copies; existing
+weights/datasets are not duplicated. This is not a full historical migration copy.
 
 Descriptive calibration halves/quarters are not independent validation; checkpoints
 and rules already used2006. Stronger validation is documented in

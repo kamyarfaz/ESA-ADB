@@ -1,0 +1,39 @@
+{
+  "verified": true,
+  "verified_utc": "2026-11-02T02:25:04.826658+00:00",
+  "url": "https://github.com/kamyarfaz/ESA-ADB/releases/tag/target-boundary-2026-11-01",
+  "results_commit": "f0877c2a2f1295a916b376a68d90d1ea1cb8a307",
+  "checks": [
+    "Five freshly downloaded assets match local SHA256 and byte sizes",
+    "Downloaded SHA256SUMS and manifest match all payloads",
+    "All204 downloaded reporting archive files match content manifest",
+    "All324 run archive members verified against frozen complete receipt before upload; downloaded archive hash matches"
+  ],
+  "assets": [
+    {
+      "name": "target-boundary-run-20261101.tar.gz",
+      "sha256": "5f7eee2e5c82bbd47b2ec320a8761d8f1573dafee573c817c16c419612a9c10f",
+      "bytes": 1221807295
+    },
+    {
+      "name": "target-boundary-reporting-20261101.tar.gz",
+      "sha256": "a4c2c6767d39374837643aac859b6f7fc7d396377e98c51dcbe98246c7075a48",
+      "bytes": 508255
+    },
+    {
+      "name": "ESA_thesis_results_full_and_historical.xlsx",
+      "sha256": "a80ee74c035450fcfd9d07f9ef59f4fcd98a9122b7dc8b9a4c4c9184c3f14773",
+      "bytes": 14629
+    },
+    {
+      "name": "manifest.json",
+      "sha256": "74ccd2d04ab3519d7500d48dc0f1af4833b8212c8eca09d66e6e6acff727d981",
+      "bytes": 107285
+    },
+    {
+      "name": "SHA256SUMS",
+      "sha256": "44a1a66e46734520fd642f535225aabe312c74976a707521ce8dd615d0e1808c",
+      "bytes": 400
+    }
+  ]
+}
