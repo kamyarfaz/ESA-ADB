@@ -1,17 +1,33 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
-**2 November2026 follow-up in progress:** user requested correlation matrices for
-both missions and high-correlation channel lists. Extend to all76/100 channels,
-training-only raw five-minute sampling. Protocol:
-docs/research/all-channel-correlation-protocol-2026-11-02.md. Runner:
-scripts/research/all_channel_correlation_review.py. Output:
-results_longrun/all_channel_correlations_20261102_v1; log:
+**2 November 2026 all-channel matrices completed and independently verified.**
+All 76 Mission 1 and 100 Mission 2 channels are included, using training-only raw
+five-minute sampling (M1 2000–2005; M2 2000). Six full matrices, all 7,800 unique
+pairs, 578 pooled-high pairs, channel roles and stable groups are saved. M1 has
+440 pooled-high pairs but only 62/63 meets the strict every-quarter |r|>=0.90 rule
+(24 quarters); M2 has 138 pooled-high and 84 stable-high pairs (4 quarters),
+including 82 target–target pairs and 16 inverse relationships. Unequal durations
+prevent treating these counts as a matched mission comparison. M1 16/24/32/33/40
+has pooled r>=0.998259 but weak changes and quarter dependence. M2 75/76/77/83/84/85
+and 70/71/72/78/79/80 have both level and change r>0.99. Categorical/constant or
+insufficient pairs are N/A, not zero. These are within-mission correlations.
+Protocol: docs/research/all-channel-correlation-protocol-2026-11-02.md.
+Report: docs/research/all-channel-correlation-results-2026-11-02.md.
+Run: results_longrun/all_channel_correlations_20261102_v1; log:
 /home/k_faz/project-backups/run-logs/all-channel-correlations-20261102.log.
-This is descriptive computation, not neural training. Preserve the prior study.
-Deliver matrices/heatmaps and a separate workbook under
-outputs/all-channel-correlations-20261102; do not alter the thesis results workbook.
-The training-vs-transfer question remains unanswered and is not required for this
-matrix request. No training is authorized merely by a high correlation finding.
+All 169 thesis tests passed. Independent replay verified 19 file hashes, all 7,800
+pooled level/change pairs, 360 stable-pair quarterly replays, 40 sampled Spearman
+pairs and exact prior raw subset parity (1,644 matrix cells). New workbook:
+outputs/all-channel-correlations-20261102/ESA_Mission1_Mission2_correlation_matrices.xlsx.
+All 47,328 matrix cells and 578 pair rows verified; nine sheets visually inspected.
+PDF/PNG matrices and CSV collection are in the same folder. The original thesis
+workbook is unchanged. Compact evidence is under
+docs/research/tables/all-channel-correlations-2026-11-02/.
+Essential artifact backup is being finalized at the all-channel-correlations-2026-11-02
+GitHub Release; do not claim cloud verification until its receipt is recorded.
+No training, assessment, MOSAD, new service or recurring monitor was started.
+The separate-Mission2-training versus weight-transfer choice remains unanswered
+and was not needed for this descriptive request. Preserve all prior work.
 
 Updated **2 November 2026**. New user direction: investigate Mission1/Mission2
 channel correspondence and behaviour related to Mission1 channels40–47, after

@@ -5,6 +5,7 @@ import numpy as np
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[2]/'scripts/research'))
 from all_channel_correlation_review import stable_matrix, matrices
+from verify_all_channel_correlations import independent_pearson
 
 
 class AllChannelCorrelationTests(unittest.TestCase):
@@ -29,6 +30,17 @@ class AllChannelCorrelationTests(unittest.TestCase):
         self.assertEqual(n[0,1],300)
         self.assertEqual(dn[0,1],298)
         self.assertTrue(np.isnan(delta[0,1]))  # Both retained change series are constant.
+
+    def test_independent_replay_handles_pairwise_constant_subset(self):
+        rng=np.random.default_rng(73)
+        x=rng.normal(size=(1000,3))
+        x[:900,1]=0
+        x[900:,0]=np.nan
+        x[:,2]=2*x[:,0]
+        r,n=independent_pearson(x)
+        self.assertEqual(n[0,1],900)
+        self.assertTrue(np.isnan(r[0,1]))
+        self.assertAlmostEqual(r[0,2],1)
 
 
 if __name__=='__main__':unittest.main()

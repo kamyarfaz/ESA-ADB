@@ -1,0 +1,19 @@
+{
+  "protocol_sha256": "0f4cc2797524ab954239327cda7ca0fd041eead6649f72a79924735ce54662e4",
+  "script_sha256": "1614ecf4dbe19a0f1bf996cf11115d2c402bca299e89af3e94d949790e54fca3",
+  "sampling_source_sha256": "3ad4e1cf991011b8587a860bb1d1d8289ed4d77359ea302bc48541db27a8042e",
+  "integrity_sha256": "9c7ddf8bdcc0aa6b1c5978d35948564dffad53d02f504fbf13528ec0f0f7bf14",
+  "periods": {
+    "1": [
+      "2000-01-01",
+      "2006-01-01"
+    ],
+    "2": [
+      "2000-01-01",
+      "2001-01-01"
+    ]
+  },
+  "minimum_correlation_pairs": 100,
+  "minimum_stability_pairs_per_quarter": 500,
+  "assessment_used": false
+}

@@ -1,0 +1,18 @@
+{
+  "1": {
+    "all_pairs": 2850,
+    "high_pooled": 440,
+    "stable": 1,
+    "stable_targets": 1,
+    "stable_positive": 1,
+    "stable_negative": 0
+  },
+  "2": {
+    "all_pairs": 4950,
+    "high_pooled": 138,
+    "stable": 84,
+    "stable_targets": 82,
+    "stable_positive": 68,
+    "stable_negative": 16
+  }
+}

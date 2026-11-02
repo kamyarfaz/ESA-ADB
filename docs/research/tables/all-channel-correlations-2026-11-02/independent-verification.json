@@ -1,0 +1,10 @@
+{
+  "verified": true,
+  "pooled_unique_pairs_pearson_and_changes": 7800,
+  "stable_pair_quarter_replays": 360,
+  "sampled_pooled_spearman_pairs": 40,
+  "prior_subset_matrix_cells": 1644,
+  "prior_training_grids_exactly_preserved": true,
+  "hashes_verified": 19,
+  "assessment_used": false
+}

@@ -10,7 +10,7 @@ from matplotlib.backends.backend_pdf import PdfPages
 
 
 def records(frame):
-    return json.loads(frame.to_json(orient='records'))
+    return json.loads(frame.to_json(orient='records',double_precision=15))
 
 
 def main():
@@ -36,7 +36,7 @@ def main():
                 r=pd.read_csv(args.run/f'mission{m}_{key}.csv',index_col=0)
                 labels=[str(i) for i in range(1,len(r)+1)]
                 payload['matrices'].append({'mission':m,'kind':key,'title':title,'channels':labels,
-                                            'values':json.loads(r.to_json(orient='values'))})
+                                            'values':json.loads(r.to_json(orient='values',double_precision=15))})
                 fig,ax=plt.subplots(figsize=(15,14),constrained_layout=True)
                 im=ax.imshow(r.to_numpy(),vmin=-1,vmax=1,cmap=cm,interpolation='nearest')
                 ax.set_xticks(range(len(r)),labels,rotation=90,fontsize=7)

@@ -1,0 +1,177 @@
+mission,channel,Subsystem,Physical Unit,Group,Target,dtype,numeric,known_counter,constant,eligible_samples,coverage,status
+1,channel_1,subsystem_1,physical_unit_1,1,NO,float32,True,False,False,630278,0.9983874442416869,numeric
+1,channel_2,subsystem_1,physical_unit_1,1,NO,float32,True,False,False,630278,0.9983874442416869,numeric
+1,channel_3,subsystem_1,physical_unit_1,1,NO,float32,True,False,False,630278,0.9983874442416869,numeric
+1,channel_4,subsystem_1,physical_unit_2,2,NO,float32,True,True,False,631222,0.9998827808191403,numeric
+1,channel_5,subsystem_1,physical_unit_2,2,NO,float32,True,True,False,631222,0.9998827808191403,numeric
+1,channel_6,subsystem_1,physical_unit_2,2,NO,float32,True,True,False,631222,0.9998827808191403,numeric
+1,channel_7,subsystem_1,physical_unit_2,2,NO,float32,True,True,False,631222,0.9998827808191403,numeric
+1,channel_8,subsystem_1,physical_unit_2,2,NO,float32,True,True,False,631222,0.9998827808191403,numeric
+1,channel_9,subsystem_1,physical_unit_2,2,NO,float32,True,True,False,631222,0.9998827808191403,numeric
+1,channel_10,subsystem_1,physical_unit_2,2,NO,float32,True,True,False,631222,0.9998827808191403,numeric
+1,channel_11,subsystem_1,physical_unit_2,2,NO,float32,True,True,False,631222,0.9998827808191403,numeric
+1,channel_12,subsystem_6,physical_unit_3,3,YES,float32,True,False,False,624745,0.9896229344079481,numeric
+1,channel_13,subsystem_6,physical_unit_3,3,YES,float32,True,False,False,624965,0.9899714238645579,numeric
+1,channel_14,subsystem_6,physical_unit_3,4,YES,float32,True,False,False,624732,0.9896023418491484,numeric
+1,channel_15,subsystem_6,physical_unit_3,7,YES,float32,True,False,False,607026,0.9615552767639902,numeric
+1,channel_16,subsystem_6,physical_unit_3,6,YES,float32,True,False,False,603429,0.9558574741484185,numeric
+1,channel_17,subsystem_6,physical_unit_3,5,YES,float32,True,False,False,623538,0.9877109945255474,numeric
+1,channel_18,subsystem_6,physical_unit_3,5,YES,float32,True,False,False,623871,0.988238480839416,numeric
+1,channel_19,subsystem_6,physical_unit_3,3,YES,float32,True,False,False,623753,0.9880515637672344,numeric
+1,channel_20,subsystem_6,physical_unit_3,3,YES,float32,True,False,False,623807,0.9881371020884022,numeric
+1,channel_21,subsystem_6,physical_unit_3,4,YES,float32,True,False,False,625175,0.9903040728913219,numeric
+1,channel_22,subsystem_6,physical_unit_3,7,YES,float32,True,False,False,598334,0.9477867751419302,numeric
+1,channel_23,subsystem_6,physical_unit_3,7,YES,float32,True,False,False,606954,0.9614412256690997,numeric
+1,channel_24,subsystem_6,physical_unit_3,6,YES,float32,True,False,False,603511,0.9559873656731549,numeric
+1,channel_25,subsystem_6,physical_unit_3,5,YES,float32,True,False,False,624890,0.9898526206407137,numeric
+1,channel_26,subsystem_6,physical_unit_3,5,YES,float32,True,False,False,624961,0.9899650876926196,numeric
+1,channel_27,subsystem_6,physical_unit_3,3,YES,float32,True,False,False,623816,0.9881513584752636,numeric
+1,channel_28,subsystem_6,physical_unit_3,3,YES,float32,True,False,False,623642,0.9878757349959448,numeric
+1,channel_29,subsystem_6,physical_unit_3,4,YES,float32,True,False,False,625376,0.9906224655312247,numeric
+1,channel_30,subsystem_6,physical_unit_3,4,YES,float32,True,False,False,618700,0.9800473945660989,numeric
+1,channel_31,subsystem_6,physical_unit_3,7,YES,float32,True,False,False,596163,0.9443478178223844,numeric
+1,channel_32,subsystem_6,physical_unit_3,6,YES,float32,True,False,False,603472,0.9559255879967559,numeric
+1,channel_33,subsystem_6,physical_unit_3,6,YES,float32,True,False,False,603421,0.9558448018045418,numeric
+1,channel_34,subsystem_6,physical_unit_3,5,YES,float32,True,False,False,623633,0.9878614786090836,numeric
+1,channel_35,subsystem_6,physical_unit_3,5,YES,float32,True,False,False,623666,0.987913752027575,numeric
+1,channel_36,subsystem_6,physical_unit_3,3,YES,float32,True,False,False,623677,0.9879311765004055,numeric
+1,channel_37,subsystem_6,physical_unit_3,3,YES,float32,True,False,False,623714,0.9879897860908353,numeric
+1,channel_38,subsystem_6,physical_unit_3,4,YES,float32,True,False,False,618476,0.9796925689375506,numeric
+1,channel_39,subsystem_6,physical_unit_3,7,YES,float32,True,False,False,594623,0.9419083916261152,numeric
+1,channel_40,subsystem_6,physical_unit_3,6,YES,numeric; verified previous grid,True,False,False,603527,0.9560127103609084,numeric
+1,channel_41,subsystem_5,physical_unit_4,8,YES,numeric; verified previous grid,True,False,False,622082,0.9854046279399837,numeric
+1,channel_42,subsystem_5,physical_unit_4,8,YES,numeric; verified previous grid,True,False,False,622085,0.9854093800689375,numeric
+1,channel_43,subsystem_5,physical_unit_4,8,YES,numeric; verified previous grid,True,False,False,622020,0.9853064172749392,numeric
+1,channel_44,subsystem_5,physical_unit_4,8,YES,numeric; verified previous grid,True,False,False,622019,0.9853048332319546,numeric
+1,channel_45,subsystem_5,physical_unit_4,8,YES,numeric; verified previous grid,True,False,False,622083,0.9854062119829684,numeric
+1,channel_46,subsystem_5,physical_unit_4,8,YES,numeric; verified previous grid,True,False,False,622083,0.9854062119829684,numeric
+1,channel_47,subsystem_6,physical_unit_3,9,YES,numeric; verified previous grid,True,False,False,610195,0.9665751089821574,numeric
+1,channel_48,subsystem_6,physical_unit_3,9,YES,float32,True,False,False,609521,0.9655074640105434,numeric
+1,channel_49,subsystem_6,physical_unit_3,9,YES,float32,True,False,False,609774,0.9659082268856448,numeric
+1,channel_50,subsystem_6,physical_unit_3,10,YES,float32,True,False,False,609598,0.9656294353203568,numeric
+1,channel_51,subsystem_6,physical_unit_3,10,YES,float32,True,False,False,609636,0.9656896289537713,numeric
+1,channel_52,subsystem_6,physical_unit_3,10,YES,float32,True,False,False,609613,0.9656531959651257,numeric
+1,channel_53,subsystem_3,physical_unit_5,11,NO,float32,True,False,False,631212,0.9998669403892944,numeric
+1,channel_54,subsystem_3,physical_unit_5,12,NO,float32,True,False,False,631212,0.9998669403892944,numeric
+1,channel_55,subsystem_3,physical_unit_5,11,NO,float32,True,False,False,631212,0.9998669403892944,numeric
+1,channel_56,subsystem_3,physical_unit_5,12,NO,float32,True,False,False,631212,0.9998669403892944,numeric
+1,channel_57,subsystem_6,physical_unit_3,13,YES,float32,True,False,False,618284,0.9793884326845094,numeric
+1,channel_58,subsystem_6,physical_unit_3,13,YES,float32,True,False,False,618121,0.9791302336780211,numeric
+1,channel_59,subsystem_6,physical_unit_3,13,YES,float32,True,False,False,619061,0.9806192340835361,numeric
+1,channel_60,subsystem_6,physical_unit_3,13,YES,float32,True,False,False,619061,0.9806192340835361,numeric
+1,channel_61,subsystem_1,physical_unit_6,14,YES,float32,True,False,False,419729,0.6648687778791565,numeric
+1,channel_62,subsystem_1,physical_unit_6,14,YES,float32,True,False,False,419729,0.6648687778791565,numeric
+1,channel_63,subsystem_1,physical_unit_6,14,YES,float32,True,False,False,419729,0.6648687778791565,numeric
+1,channel_64,subsystem_6,physical_unit_3,15,YES,float32,True,False,False,630549,0.9988167198905109,numeric
+1,channel_65,subsystem_6,physical_unit_3,15,YES,float32,True,False,False,630548,0.9988151358475263,numeric
+1,channel_66,subsystem_6,physical_unit_3,16,YES,float32,True,False,False,625864,0.9913954785077048,numeric
+1,channel_67,subsystem_1,physical_unit_5,17,NO,float32,True,False,False,630557,0.9988293922343877,numeric
+1,channel_68,subsystem_1,physical_unit_5,17,NO,float32,True,False,False,630557,0.9988293922343877,numeric
+1,channel_69,subsystem_1,physical_unit_5,17,NO,float32,True,False,False,630557,0.9988293922343877,numeric
+1,channel_70,subsystem_3,physical_unit_4,18,YES,float32,True,False,False,627337,0.9937287738240065,numeric
+1,channel_71,subsystem_3,physical_unit_4,18,YES,float32,True,False,False,627347,0.9937446142538524,numeric
+1,channel_72,subsystem_3,physical_unit_4,18,YES,float32,True,False,False,626670,0.9926722171532847,numeric
+1,channel_73,subsystem_3,physical_unit_4,18,YES,float32,True,False,False,626814,0.9929003193430657,numeric
+1,channel_74,subsystem_3,physical_unit_4,18,YES,float32,True,False,False,626566,0.9925074766828873,numeric
+1,channel_75,subsystem_3,physical_unit_4,18,YES,float32,True,False,False,626850,0.9929573448905109,numeric
+1,channel_76,subsystem_3,physical_unit_4,18,YES,float32,True,False,False,626537,0.9924615394363342,numeric
+2,channel_1,subsystem_1,physical_unit_7,7,NO,float32,True,False,False,105407,0.9999905130540376,numeric
+2,channel_2,subsystem_1,physical_unit_7,7,NO,float32,True,False,False,105407,0.9999905130540376,numeric
+2,channel_3,subsystem_1,physical_unit_7,7,NO,float32,True,False,False,105407,0.9999905130540376,numeric
+2,channel_4,subsystem_4,physical_unit_8,21,NO,object,False,False,False,0,0.0,categorical: Pearson N/A
+2,channel_5,subsystem_1,physical_unit_8,19,NO,object,False,False,False,0,0.0,categorical: Pearson N/A
+2,channel_6,subsystem_1,,6,NO,float32,True,False,False,105407,0.9999905130540376,numeric
+2,channel_7,subsystem_1,,6,NO,float32,True,False,False,105407,0.9999905130540376,numeric
+2,channel_8,subsystem_1,,6,NO,float32,True,False,False,105407,0.9999905130540376,numeric
+2,channel_9,subsystem_1,,10,YES,float32,True,False,False,102934,0.9765292956891317,numeric
+2,channel_10,subsystem_1,,10,YES,float32,True,False,False,104032,0.9869459623557985,numeric
+2,channel_11,subsystem_1,,10,YES,float32,True,False,False,103022,0.977364146933819,numeric
+2,channel_12,subsystem_1,,9,YES,float32,True,False,False,103159,0.9786638585306618,numeric
+2,channel_13,subsystem_1,,9,YES,float32,True,False,False,102390,0.9713683970856102,numeric
+2,channel_14,subsystem_1,,9,YES,float32,True,False,False,102238,0.9699263812993322,numeric
+2,channel_15,subsystem_1,,8,YES,float32,True,False,False,102811,0.975362401335762,numeric
+2,channel_16,subsystem_1,,8,YES,float32,True,False,False,103683,0.9836350182149363,numeric
+2,channel_17,subsystem_1,,8,YES,float32,True,False,False,103741,0.9841852610807529,numeric
+2,channel_18,subsystem_1,,5,YES,float32,True,False,False,101668,0.9645188221007893,numeric
+2,channel_19,subsystem_1,,5,YES,float32,True,False,False,103498,0.9818799332119005,numeric
+2,channel_20,subsystem_1,,5,YES,float32,True,False,False,102092,0.9685412871888281,numeric
+2,channel_21,subsystem_1,physical_unit_9,2,YES,float32,True,False,False,100645,0.9548136763812993,numeric
+2,channel_22,subsystem_1,physical_unit_9,2,YES,float32,True,False,False,100642,0.9547852155434122,numeric
+2,channel_23,subsystem_1,physical_unit_9,2,YES,float32,True,False,False,100577,0.9541685640558591,numeric
+2,channel_24,subsystem_1,physical_unit_9,2,YES,float32,True,False,False,100593,0.9543203551912568,numeric
+2,channel_25,subsystem_1,,1,YES,float32,True,False,False,101036,0.9585230722525805,numeric
+2,channel_26,subsystem_1,,1,YES,float32,True,False,False,101069,0.9588361414693382,numeric
+2,channel_27,subsystem_1,,1,YES,float32,True,False,False,101050,0.9586558894960534,numeric
+2,channel_28,subsystem_1,,1,YES,float32,True,False,False,101063,0.9587792197935641,numeric
+2,channel_29,subsystem_1,physical_unit_2,20,NO,float32,True,True,True,105407,0.9999905130540376,constant: Pearson N/A
+2,channel_30,subsystem_1,physical_unit_2,20,NO,float32,True,True,True,105407,0.9999905130540376,constant: Pearson N/A
+2,channel_31,subsystem_1,physical_unit_2,20,NO,float32,True,True,True,105407,0.9999905130540376,constant: Pearson N/A
+2,channel_32,subsystem_1,physical_unit_2,20,NO,float32,True,True,True,105407,0.9999905130540376,constant: Pearson N/A
+2,channel_33,subsystem_1,physical_unit_2,20,NO,float32,True,True,True,105407,0.9999905130540376,constant: Pearson N/A
+2,channel_34,subsystem_1,physical_unit_2,20,NO,float32,True,True,True,105407,0.9999905130540376,constant: Pearson N/A
+2,channel_35,subsystem_1,physical_unit_2,20,NO,float32,True,True,True,105407,0.9999905130540376,constant: Pearson N/A
+2,channel_36,subsystem_1,physical_unit_2,20,NO,float32,True,True,True,105407,0.9999905130540376,constant: Pearson N/A
+2,channel_37,subsystem_1,physical_unit_2,20,NO,float32,True,True,True,105407,0.9999905130540376,constant: Pearson N/A
+2,channel_38,subsystem_1,physical_unit_2,20,NO,float32,True,True,False,105407,0.9999905130540376,numeric
+2,channel_39,subsystem_1,physical_unit_2,20,NO,float32,True,True,False,105407,0.9999905130540376,numeric
+2,channel_40,subsystem_1,physical_unit_2,20,NO,float32,True,True,False,105407,0.9999905130540376,numeric
+2,channel_41,subsystem_1,physical_unit_2,20,NO,float32,True,True,False,105407,0.9999905130540376,numeric
+2,channel_42,subsystem_1,physical_unit_2,20,NO,float32,True,True,False,105407,0.9999905130540376,numeric
+2,channel_43,subsystem_1,physical_unit_2,20,NO,float32,True,True,False,105407,0.9999905130540376,numeric
+2,channel_44,subsystem_1,physical_unit_2,20,NO,float32,True,True,False,105407,0.9999905130540376,numeric
+2,channel_45,subsystem_1,physical_unit_2,20,NO,float32,True,True,False,105407,0.9999905130540376,numeric
+2,channel_46,subsystem_1,physical_unit_2,20,NO,float32,True,True,False,105407,0.9999905130540376,numeric
+2,channel_47,subsystem_1,physical_unit_8,4,NO,object,False,False,False,0,0.0,categorical: Pearson N/A
+2,channel_48,subsystem_1,,16,NO,float32,True,False,False,105407,0.9999905130540376,numeric
+2,channel_49,subsystem_1,,16,NO,float32,True,False,False,105407,0.9999905130540376,numeric
+2,channel_50,subsystem_4,physical_unit_8,26,NO,object,False,False,False,0,0.0,categorical: Pearson N/A
+2,channel_51,subsystem_4,physical_unit_8,26,NO,object,False,False,False,0,0.0,categorical: Pearson N/A
+2,channel_52,subsystem_4,physical_unit_8,26,NO,object,False,False,False,0,0.0,categorical: Pearson N/A
+2,channel_53,subsystem_4,physical_unit_8,26,NO,object,False,False,False,0,0.0,categorical: Pearson N/A
+2,channel_54,subsystem_4,physical_unit_8,26,NO,object,False,False,False,0,0.0,categorical: Pearson N/A
+2,channel_55,subsystem_4,physical_unit_8,26,NO,object,False,False,False,0,0.0,categorical: Pearson N/A
+2,channel_56,subsystem_4,physical_unit_7,23,NO,float32,True,False,False,88627,0.8407995598057073,numeric
+2,channel_57,subsystem_4,physical_unit_7,23,NO,float32,True,False,False,88627,0.8407995598057073,numeric
+2,channel_58,subsystem_6,physical_unit_3,18,YES,numeric; verified previous grid,True,False,False,105005,0.9961767607771707,numeric
+2,channel_59,subsystem_6,physical_unit_3,18,YES,numeric; verified previous grid,True,False,False,104986,0.9959965088038859,numeric
+2,channel_60,subsystem_5,physical_unit_8,15,NO,object,False,False,False,0,0.0,categorical: Pearson N/A
+2,channel_61,subsystem_5,physical_unit_7,17,NO,float32,True,False,False,105407,0.9999905130540376,numeric
+2,channel_62,subsystem_5,physical_unit_7,17,NO,float32,True,False,False,105407,0.9999905130540376,numeric
+2,channel_63,subsystem_1,,35,NO,float32,True,False,False,102614,0.9734934729811779,numeric
+2,channel_64,subsystem_1,,35,NO,float32,True,False,False,102614,0.9734934729811779,numeric
+2,channel_65,subsystem_1,,35,NO,float32,True,False,False,102614,0.9734934729811779,numeric
+2,channel_66,subsystem_1,,36,NO,float32,True,False,False,70268,0.6666287188828173,numeric
+2,channel_67,subsystem_1,,36,NO,float32,True,False,False,70268,0.6666287188828173,numeric
+2,channel_68,subsystem_1,,36,NO,float32,True,False,False,70268,0.6666287188828173,numeric
+2,channel_69,subsystem_1,,36,NO,float32,True,False,False,70268,0.6666287188828173,numeric
+2,channel_70,subsystem_5,physical_unit_4,14,YES,numeric; verified previous grid,True,False,False,105305,0.9990228445658773,numeric
+2,channel_71,subsystem_5,physical_unit_4,14,YES,numeric; verified previous grid,True,False,False,105305,0.9990228445658773,numeric
+2,channel_72,subsystem_5,physical_unit_4,14,YES,numeric; verified previous grid,True,False,False,105305,0.9990228445658773,numeric
+2,channel_73,subsystem_5,physical_unit_4,11,YES,numeric; verified previous grid,True,False,False,105296,0.9989374620522161,numeric
+2,channel_74,subsystem_5,physical_unit_5,12,YES,float32,True,False,False,104991,0.9960439435336976,numeric
+2,channel_75,subsystem_5,physical_unit_4,31,YES,numeric; verified previous grid,True,False,False,105302,0.9989943837279903,numeric
+2,channel_76,subsystem_5,physical_unit_4,31,YES,numeric; verified previous grid,True,False,False,105302,0.9989943837279903,numeric
+2,channel_77,subsystem_5,physical_unit_4,31,YES,numeric; verified previous grid,True,False,False,105302,0.9989943837279903,numeric
+2,channel_78,subsystem_5,physical_unit_4,14,YES,numeric; verified previous grid,True,False,False,105302,0.9989943837279903,numeric
+2,channel_79,subsystem_5,physical_unit_4,14,YES,numeric; verified previous grid,True,False,False,105305,0.9990228445658773,numeric
+2,channel_80,subsystem_5,physical_unit_4,14,YES,numeric; verified previous grid,True,False,False,105305,0.9990228445658773,numeric
+2,channel_81,subsystem_5,physical_unit_4,11,YES,numeric; verified previous grid,True,False,False,105278,0.9987666970248937,numeric
+2,channel_82,subsystem_5,physical_unit_5,12,YES,float32,True,False,False,105058,0.9966795689131754,numeric
+2,channel_83,subsystem_5,physical_unit_4,31,YES,numeric; verified previous grid,True,False,False,105302,0.9989943837279903,numeric
+2,channel_84,subsystem_5,physical_unit_4,31,YES,numeric; verified previous grid,True,False,False,105302,0.9989943837279903,numeric
+2,channel_85,subsystem_5,physical_unit_4,31,YES,numeric; verified previous grid,True,False,False,105302,0.9989943837279903,numeric
+2,channel_86,subsystem_6,physical_unit_3,13,YES,numeric; verified previous grid,True,False,False,105011,0.9962336824529447,numeric
+2,channel_87,subsystem_6,physical_unit_3,13,YES,numeric; verified previous grid,True,False,False,105028,0.9963949605343048,numeric
+2,channel_88,subsystem_6,physical_unit_3,13,YES,numeric; verified previous grid,True,False,False,105013,0.9962526563448695,numeric
+2,channel_89,subsystem_6,physical_unit_3,13,YES,numeric; verified previous grid,True,False,False,105030,0.9964139344262295,numeric
+2,channel_90,subsystem_6,physical_unit_3,13,YES,numeric; verified previous grid,True,False,False,105014,0.9962621432908318,numeric
+2,channel_91,subsystem_6,physical_unit_3,13,YES,numeric; verified previous grid,True,False,False,105031,0.9964234213721919,numeric
+2,channel_92,subsystem_6,physical_unit_3,3,NO,float32,True,False,False,105407,0.9999905130540376,numeric
+2,channel_93,subsystem_6,physical_unit_3,3,NO,float32,True,False,False,105407,0.9999905130540376,numeric
+2,channel_94,subsystem_6,physical_unit_3,3,NO,float32,True,False,False,105407,0.9999905130540376,numeric
+2,channel_95,subsystem_6,physical_unit_3,3,NO,float32,True,False,False,105407,0.9999905130540376,numeric
+2,channel_96,subsystem_2,,27,YES,float32,True,False,False,105407,0.9999905130540376,numeric
+2,channel_97,subsystem_2,,27,YES,float32,True,False,False,105407,0.9999905130540376,numeric
+2,channel_98,subsystem_2,,27,YES,float32,True,False,False,105407,0.9999905130540376,numeric
+2,channel_99,subsystem_1,,24,NO,float32,True,False,False,105407,0.9999905130540376,numeric
+2,channel_100,subsystem_1,physical_unit_10,32,NO,float32,True,False,False,1464,0.013888888888888888,numeric

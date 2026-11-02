@@ -25,6 +25,15 @@ def independent_pearson(x):
         var=np.maximum(0,ss-sums*sums/count)
         r=cov/np.sqrt(var*var.T)
     r[count<100]=np.nan
+    # Pairwise deletion can leave a channel constant even when it varies over
+    # its full column. The matrix subtraction then suffers cancellation. Replay
+    # those pairs directly, independently of the stored/pandas coefficients.
+    delicate=(var<=1e-12*np.abs(ss)) | (var.T<=1e-12*np.abs(ss.T)) | ~np.isfinite(r)
+    for i,j in np.argwhere(np.triu(delicate & (count>=100))):
+        ok=np.isfinite(x[:,i]) & np.isfinite(x[:,j])
+        a,b=x[ok,i],x[ok,j]
+        value=np.corrcoef(a,b)[0,1] if np.ptp(a)>0 and np.ptp(b)>0 else np.nan
+        r[i,j]=r[j,i]=value
     return r,count
 
 
