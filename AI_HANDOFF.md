@@ -41,6 +41,11 @@ Run: results_longrun/mission_cross_channel_20261102_v1. Protocol/code freeze d66
 All166 tests passed. Independent checks verified20 saved files,5969 raw-source
 sample spots,1855 correlation rows and100 similarity distances/ranks. All candidates
 and poor matches are retained. Existing model results and workbook are unchanged.
+Report/compact evidence pushed atc11390f. All three new Release assets were freshly
+downloaded and SHA256/size verified; all55 archive members match the manifest:
+https://github.com/kamyarfaz/ESA-ADB/releases/tag/mission-cross-channel-2026-11-02 .
+Receipt: docs/research/tables/mission-cross-channel-2026-11-02/github-backup.json.
+Backup: /home/k_faz/project-backups/mission-cross-channel-20261102.
 
 The authorized target-output scoring, boundary
 refinement and post-processing comparison completed successfully. No training or

@@ -167,3 +167,8 @@ Compact evidence: [tables/mission-cross-channel-2026-11-02](tables/mission-cross
 Both successful and weak correlations, all candidates, the frozen protocol and
 verification results are retained. Arrays and the figure belong in the Release,
 not source Git. No existing checkpoint, prediction, dataset or workbook was changed.
+
+Published [artifact backup](https://github.com/kamyarfaz/ESA-ADB/releases/tag/mission-cross-channel-2026-11-02):
+all three assets freshly downloaded and SHA256/size verified; all55 archive files
+match the content manifest. The final backup receipt is saved alongside the
+compact evidence in Git. Results commit:c11390f; frozen protocol/code:d66ad58.

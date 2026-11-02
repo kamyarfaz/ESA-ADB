@@ -1,0 +1,25 @@
+{
+  "verified": true,
+  "verified_utc": "2026-11-02T14:08:20.354518+00:00",
+  "url": "https://github.com/kamyarfaz/ESA-ADB/releases/tag/mission-cross-channel-2026-11-02",
+  "source_commit": "c11390f65c5daf1888d17fab5e0ae9d665271b96",
+  "fresh_download_files_verified": 55,
+  "all_server_digests_match": true,
+  "assets": [
+    {
+      "name": "manifest.json",
+      "bytes": 11623,
+      "sha256": "466c8e4725bd87ff016f9c52030d612ae54228a7d97b847138a5a8735248fff8"
+    },
+    {
+      "name": "mission-cross-channel-20261102.tar.gz",
+      "bytes": 9442551,
+      "sha256": "2cbb5a917262dd009dd3cb995ac16e20407f4be9d6e0499a6f9de1d564bd6471"
+    },
+    {
+      "name": "SHA256SUMS",
+      "bytes": 184,
+      "sha256": "86ee44746e512581567f3debfb3d6f7a72caa0b563956654fd4bab16951e6cb1"
+    }
+  ]
+}
