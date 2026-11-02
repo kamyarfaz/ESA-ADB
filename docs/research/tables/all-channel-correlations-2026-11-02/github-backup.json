@@ -1,0 +1,40 @@
+{
+  "verified": true,
+  "verified_utc": "2026-11-02T18:17:32.734457+00:00",
+  "url": "https://github.com/kamyarfaz/ESA-ADB/releases/tag/all-channel-correlations-2026-11-02",
+  "source_commit": "729bc11193ff5c73d0b6c4b63a395264d34a46b2",
+  "fresh_download_files_verified": 84,
+  "all_server_digests_match": true,
+  "assets": [
+    {
+      "name": "ESA_Mission1_Mission2_correlation_matrices.xlsx",
+      "bytes": 542860,
+      "sha256": "e392037b29676ec5dad28d9cc4f75ca35be08bc8001b9dcc29943f392d28d2bb"
+    },
+    {
+      "name": "ESA_all_channel_correlation_csv.zip",
+      "bytes": 685002,
+      "sha256": "4002ede4c1a2ba2da9e53cf76a71bcd7dfce2a40b0587f67704515b632d1fab6"
+    },
+    {
+      "name": "ESA_all_channel_correlation_matrices.pdf",
+      "bytes": 228399,
+      "sha256": "0c790ed2ab7640fde5d0832e0082ea40150636f46c2ef7e21f58053ddbafd62b"
+    },
+    {
+      "name": "SHA256SUMS",
+      "bytes": 510,
+      "sha256": "23ee171c8d6f8e941e0b42834472741c73c59463a9c382711b5e7c4ddfac1834"
+    },
+    {
+      "name": "all-channel-correlations-20261102.tar.gz",
+      "bytes": 68835171,
+      "sha256": "7b34e0c8e82c9e34365371849244912dabaf3667c3d76de2b75cb431660be9df"
+    },
+    {
+      "name": "manifest.json",
+      "bytes": 17629,
+      "sha256": "751e806d402407909de11bc72613a5b3feed6633c18ee3f9797e6e156a89906e"
+    }
+  ]
+}

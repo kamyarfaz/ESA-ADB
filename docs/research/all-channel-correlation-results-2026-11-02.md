@@ -150,3 +150,8 @@ conditional formats, and inspects all nine rendered sheets. The source Git holds
 compact matrices, tables, protocols and receipts. The Release holds the grids,
 quarter arrays, workbook, figures, source snapshots, logs and a content manifest.
 No existing model, historical result or thesis-results workbook was changed.
+
+Source/results commit: 729bc11. All six Release assets were freshly downloaded
+and verified against local SHA256, byte sizes and server digests. All 84 archive
+members match the downloaded manifest. The final receipt is
+[github-backup.json](tables/all-channel-correlations-2026-11-02/github-backup.json).

@@ -23,8 +23,11 @@ All 47,328 matrix cells and 578 pair rows verified; nine sheets visually inspect
 PDF/PNG matrices and CSV collection are in the same folder. The original thesis
 workbook is unchanged. Compact evidence is under
 docs/research/tables/all-channel-correlations-2026-11-02/.
-Essential artifact backup is being finalized at the all-channel-correlations-2026-11-02
-GitHub Release; do not claim cloud verification until its receipt is recorded.
+Source/results were pushed at 729bc11. All six Release assets were freshly downloaded;
+SHA256/size and server digests match, and all 84 archive members match the manifest:
+https://github.com/kamyarfaz/ESA-ADB/releases/tag/all-channel-correlations-2026-11-02 .
+Receipt: docs/research/tables/all-channel-correlations-2026-11-02/github-backup.json.
+Backup: /home/k_faz/project-backups/all-channel-correlations-20261102.
 No training, assessment, MOSAD, new service or recurring monitor was started.
 The separate-Mission2-training versus weight-transfer choice remains unanswered
 and was not needed for this descriptive request. Preserve all prior work.
