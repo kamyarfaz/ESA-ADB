@@ -1,6 +1,25 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
-Updated **2 November 2026**. The authorized target-output scoring, boundary
+Updated **2 November 2026**. New user direction: investigate Mission1/Mission2
+channel correspondence and behaviour related to Mission1 channels40–47, after
+GitHub preservation. This supersedes older completion notes saying no further
+research is authorized. Current stage is training-only descriptive analysis,
+not neural training or a new assessment. Protocol:
+docs/research/mission-cross-channel-protocol-2026-11-02.md.
+Evidence: docs/research/tables/mission-cross-channel-2026-11-02/.
+Both complete raw v1 archives match official MD5s; all183 extracted telemetry
+and available metadata files match their archive members. This scoped destination
+verification does not certify unrelated historical migration files.
+Source was pushed at4d7069a; the latest study's five Release digests reverified.
+An additive Release preserves48 remaining supporting outputs, verified by fresh
+download: https://github.com/kamyarfaz/ESA-ADB/releases/tag/research-preservation-2026-11-02 .
+Channel numbers are mission-specific; subsystem/unit identifiers are consistent.
+Independent unknown time scaling forbids treating matching date labels as aligned
+measurements. Inspect metadata-selected22 Mission2 targets using2000 only; reserve
+2001Jan–Sep for possible calibration and2001Oct onward for later assessment.
+No new training, MOSAD, or postprocessing job is running.
+
+The authorized target-output scoring, boundary
 refinement and post-processing comparison completed successfully. No training or
 MOSAD was started. No experiment worker is running; do not restart the completed job.
 

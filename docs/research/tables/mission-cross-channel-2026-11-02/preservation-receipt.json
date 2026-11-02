@@ -1,0 +1,25 @@
+{
+  "verified_utc": "2026-11-02T13:50:07.594016+00:00",
+  "verified": true,
+  "url": "https://github.com/kamyarfaz/ESA-ADB/releases/tag/research-preservation-2026-11-02",
+  "source_head": "4d7069a8727ca3e2daf2fcb3cf1031642357bab8",
+  "prior_release_live_digests_verified": "https://github.com/kamyarfaz/ESA-ADB/releases/tag/target-boundary-2026-11-01",
+  "fresh_download_files_verified": 48,
+  "assets": [
+    {
+      "name": "SHA256SUMS",
+      "bytes": 181,
+      "sha256": "c6c1bc4fd4e2f83cb80147dba4434b49854b7709a84c4baf37d3da5925659e83"
+    },
+    {
+      "name": "manifest.json",
+      "bytes": 10954,
+      "sha256": "0d67926187195ac63edf94fefa0a3a9c152fc0725f4168e96ce9bdb4e90fb402"
+    },
+    {
+      "name": "supporting-outputs-20261102.tar.gz",
+      "bytes": 1051108,
+      "sha256": "1466cde50781db1317609532d148aedd38fd22f6622cd3d8242349bc1701ba75"
+    }
+  ]
+}
