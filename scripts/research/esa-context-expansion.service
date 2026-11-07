@@ -1,0 +1,24 @@
+[Unit]
+Description=ESA matched context expansion across three techniques and three seeds
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/k_faz/projects/ESA-ADB
+ExecStart=/bin/bash /home/k_faz/projects/ESA-ADB/scripts/research/run_context_expansion.sh
+Environment=PYTHONUNBUFFERED=1
+Environment=OMP_NUM_THREADS=2
+Environment=MKL_NUM_THREADS=2
+MemoryAccounting=true
+MemoryHigh=3G
+MemoryMax=4G
+MemorySwapMax=0
+OOMPolicy=stop
+Nice=5
+Restart=no
+TimeoutStopSec=30
+StandardOutput=append:/home/k_faz/project-backups/run-logs/context-expansion-20261104.log
+StandardError=append:/home/k_faz/project-backups/run-logs/context-expansion-20261104.log
+
+[Install]
+WantedBy=default.target

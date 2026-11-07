@@ -1,0 +1,77 @@
+{
+  "verified_at_utc": "2026-11-07T13:06:07.761579+00:00",
+  "training_started": false,
+  "thesis_tests": {
+    "passed": 178,
+    "seconds": 14.316,
+    "command": "python -m unittest discover -s tests/thesis -p 'test_*.py' -q"
+  },
+  "gpu_inference_parity": [
+    {
+      "channels": 8,
+      "exact": true,
+      "max_absolute_error": 0.0
+    },
+    {
+      "channels": 10,
+      "exact": true,
+      "max_absolute_error": 0.0
+    },
+    {
+      "channels": 11,
+      "exact": true,
+      "max_absolute_error": 0.0
+    },
+    {
+      "channels": 13,
+      "exact": true,
+      "max_absolute_error": 0.0
+    }
+  ],
+  "runtime": {
+    "python": "3.9.23",
+    "torch": "2.6.0+cu124",
+    "cuda": "12.4",
+    "gpu": "NVIDIA GeForce RTX 2080 Ti",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "wandb": "0.26.1",
+    "threads": 2,
+    "deterministic": false,
+    "matmul_tf32": false
+  },
+  "annotations": {
+    "data/ESA-Mission1/labels.csv": "1564d630f1ec1387d699ec81531ce57118051a220c8b7cba050a446a652b9082",
+    "data/ESA-Mission1/anomaly_types.csv": "e0cadee4ee9697c5ca8d4f9e81067454d7d7a00d063ee0de33cbc77660eec8bc"
+  },
+  "source_hashes": 78,
+  "selected_jobs": 18,
+  "gpu_parity_input": {
+    "samples": 512,
+    "batch_size": 4,
+    "numpy_seed": 4,
+    "model_seed": 42,
+    "model": "MultivariateAE",
+    "data": "synthetic preflight only"
+  },
+  "dataset_verification": {
+    "all_four_files_passed": true,
+    "manifest_sha256": "a49a8c42c23a5d72d91a48596f485d762a805cc6101ad037c01a36c8037bf099",
+    "full_historical_migration_verified": false
+  },
+  "resolved_prelaunch_issues": [
+    "Matched original DataLoader contiguous scoring tensor layout; exact comparison tolerance unchanged.",
+    "Use /proc/meminfo MemAvailable for unchanged 2.5GiB RAM gate; no packages installed.",
+    "Use DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1015/bus for systemctl --user."
+  ],
+  "logs": {
+    "/home/k_faz/project-backups/run-logs/context-expansion-preflight-20261107.log": {
+      "sha256": "cee15a7d4f8d330a7cf4ddcbd99de403fe3c6f357ffaf9a9f4949b0f46f08385",
+      "bytes": 24476
+    },
+    "/home/k_faz/project-backups/run-logs/context-expansion-gpu-parity-20261107.log": {
+      "sha256": "1f90a8be101c8129cf7957f1fe5710fd544e9dc676463f41e165cfd9cb16aa21",
+      "bytes": 1279
+    }
+  }
+}

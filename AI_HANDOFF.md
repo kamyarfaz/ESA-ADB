@@ -1,5 +1,76 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
+**7 November 2026 — launch preflight recovered; no prior training had started.**
+The repeated heartbeats did not represent computation: at13:02UTC there was no
+campaign output, checkpoint, log or W&B run, and the service was inactive/disabled.
+Prelaunch blockers are now resolved. Scoring batches use the original DataLoader's
+contiguous layout (previous maximum float32 mismatch2.98e-8); exact parity passes
+on CPU and actual GPU Transformer inference with8/10/11/13 inputs. The resource
+guard reads Linux MemAvailable because psutil is absent; the2.5GiB gate and all
+experimental settings are unchanged, and no environment package was installed.
+All178 thesis tests pass (14.316s). All4 frozen prepared files and original
+annotation hashes passed again; this is not full historical migration verification.
+Receipt: `docs/research/tables/context-expansion-2026-11-04/preflight-2026-11-07.json`.
+The shell's D-Bus address points at a separate desktop session. For service work
+use `env DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1015/bus systemctl --user ...`.
+The installed service matches the repository unit and validates; launch is next.
+Do not infer progress from scheduled heartbeat timestamps. Verify live artifacts.
+
+**4 November 2026 — authorized matched input expansion across all three techniques.**
+The user accepted a controlled supporting-channel comparison and explicitly asked
+to apply it to all three techniques with a scheduled progress/recovery follow-up.
+This supersedes older no-training/proposal-only notes for this new study; it does
+not authorize Mission2 training or MOSAD. Preserve all previous results.
+
+Protocol: `docs/research/context-expansion-protocol-2026-11-04.md`.
+Runner: `esa_thesis/context_expansion.py`; launcher/unit in `scripts/research/`.
+Output: `results_longrun/context_expansion_20261104_v1`.
+User service (use **systemctl --user**): `esa-context-expansion.service`.
+Log: `/home/k_faz/project-backups/run-logs/context-expansion-20261104.log`.
+Follow-up `complete-three-technique-input-expansion` is ACTIVE every30 minutes;
+quiet when healthy/unchanged, meaningful milestones/failures/completion only.
+
+Eighteen fresh, sequential training runs: three families × control/expanded inputs
+× seeds42,43,44. Families: original short-no-roll; masked pretraining20 epochs
+plus short-no-roll20; and short-no-roll retaining14,21,29. Other families train40
+epochs. Base inputs40–47 for first two;40–47+14/21/29 for third. Every expanded arm
+adds **33 and49**, selected before training by maximum worst-quarter absolute
+Spearman from the declared training-only pools. All225 selection coefficients
+independently replayed (max absolute discrepancy9.97e-12). Evidence:
+`docs/research/tables/context-expansion-2026-11-04/input-selection.json`.
+Selected33↔40 worst-quarter Spearman.667324;49↔47 .551485. Their first-difference
+correlations are weak, so this is a hypothesis test, not proof of useful context.
+
+Train2000–2005; calibrate2006 with **40–47 corrected event F0.5** as primary;
+all18 models/rules must jointly freeze before assessment2007–2013. Fresh controls
+are essential: old historical training selected by system scope. Keep the
+historical all-input reconstruction score and existing alarm-rule grid; added
+channels also contribute to alarm scores. Do not call this context-only scoring.
+Report all288 annual/pooled metric rows, both scopes, per-seed paired changes,
+detected/missed IDs and all negative outcomes. Do not select the best test seed.
+W&B project `kamyarfaz-politecnico-di-torino/esa-thesis-finetuning`, group
+`context-expansion-20261104-v1`, stable IDs `ctx1104-01-s42` through the18 jobs.
+
+Preflight: destination prepared manifest/all4 data hashes and original annotation
+hashes passed; this does not certify unrelated historical migration exceptions.
+Python3.9.23/PyTorch2.6.0+cu124, RTX2080Ti11GiB. GPU smoke passed for the largest
+13-input model. Memory-bounded scaling/overlap scoring preserves original values.
+The service caps RAM at4GiB (MemoryHigh3GiB, no swap), one worker, no automatic
+restart loop. The initial177-test pass preceded a failing additional inference
+parity check; the7November entry above records its resolution and all178 passing.
+Check the live user-service/log before acting. No old worker was present.
+
+On interruption inspect cause/resources, confirm no runner, verify frozen source,
+data/runtime and resume this same user service. Never change settings or duplicate
+jobs. Recover every100 batches and at epoch transitions; tests cover exact resume
+and the masked-to-unmasked optimizer transition. Full campaign may take many days.
+After computation, independently verify calibration selection/replay, inference
+spots, predictions/all metrics/IDs; publish separate verified W&B evaluation runs;
+update academic report and approved workbook preserving historical rows; commit
+compact results and fresh-download/checksum-verify a GitHub Release of essential
+artifacts. Then deliver actual scores/links, disable service and delete follow-up.
+Three seeds and the reused benchmark do not establish independent generalization.
+
 **2 November 2026 all-channel matrices completed and independently verified.**
 All 76 Mission 1 and 100 Mission 2 channels are included, using training-only raw
 five-minute sampling (M1 2000–2005; M2 2000). Six full matrices, all 7,800 unique
