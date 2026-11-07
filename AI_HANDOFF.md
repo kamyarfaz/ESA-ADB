@@ -1,6 +1,6 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
-**7 November 2026 — launch preflight recovered; no prior training had started.**
+**7 November 2026 — campaign launched after preflight recovery.**
 The repeated heartbeats did not represent computation: at13:02UTC there was no
 campaign output, checkpoint, log or W&B run, and the service was inactive/disabled.
 Prelaunch blockers are now resolved. Scoring batches use the original DataLoader's
@@ -13,8 +13,21 @@ annotation hashes passed again; this is not full historical migration verificati
 Receipt: `docs/research/tables/context-expansion-2026-11-04/preflight-2026-11-07.json`.
 The shell's D-Bus address points at a separate desktop session. For service work
 use `env DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1015/bus systemctl --user ...`.
-The installed service matches the repository unit and validates; launch is next.
-Do not infer progress from scheduled heartbeat timestamps. Verify live artifacts.
+The installed service matches the repository unit and validates. It started at
+13:06:31UTC and is active/enabled with exactly one runner (PID2983980 at launch).
+At13:09:45UTC run1/18 `short_no_roll_s42_control` had a valid, finite epoch1
+batch400/5461 checkpoint with optimizer/scheduler/RNG recovery state. W&B cloud
+history was independently fetched through batch300 and its state is running:
+https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-01-s42 .
+No training run has yet completed and no assessment has started. All78 source,
+3 selection-dependency and2 annotation hashes match the new frozen protocol.
+Source/protocol/preflight commit `d6cc451985c4695ce77224a14816feec2a414571` is
+verified on origin/main. The saved runtime/source are now frozen: do not modify
+the package, protocol, selection, launcher or unit while this campaign executes.
+Launch receipt: `docs/research/tables/context-expansion-2026-11-04/launch-2026-11-07.json`.
+The existing30-minute follow-up is still ACTIVE. Do not infer progress from
+scheduled heartbeat timestamps; verify live artifacts. Checkpoints advance, so
+the launch receipt's checkpoint hash identifies its observed snapshot only.
 
 **4 November 2026 — authorized matched input expansion across all three techniques.**
 The user accepted a controlled supporting-channel comparison and explicitly asked

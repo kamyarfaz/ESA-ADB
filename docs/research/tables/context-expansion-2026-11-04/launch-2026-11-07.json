@@ -1,0 +1,59 @@
+{
+  "verified_at_utc": "2026-11-07T13:09:45.520361+00:00",
+  "source_commit": "d6cc451985c4695ce77224a14816feec2a414571",
+  "protocol_sha256": "66bb092e89f221b5bcf53a75934828aa01c9770a3544a06d7356205c515ac949",
+  "fingerprints_passed": true,
+  "service": {
+    "MainPID": "2983980",
+    "MemoryHigh": "3221225472",
+    "MemoryMax": "4294967296",
+    "MemorySwapMax": "0",
+    "ActiveState": "active",
+    "SubState": "running",
+    "UnitFileState": "enabled",
+    "ActiveEnterTimestamp": "Sat 2026-11-07 14:06:31 CET"
+  },
+  "single_runner_pid": 2983980,
+  "checkpoint_observation": {
+    "epoch": 1,
+    "batch": 400,
+    "sha256": "734d291e6b378e3548d0b568631056a32283b06195010281c65723e0ef4f53e3",
+    "bytes": 16177278,
+    "finite_model": true,
+    "recovery_state_present": true,
+    "note": "Live last.pt advances atomically; this hash identifies the observed snapshot."
+  },
+  "wandb": {
+    "id": "ctx1104-01-s42",
+    "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-01-s42",
+    "state": "running",
+    "verified_training_history": [
+      {
+        "_step": 0,
+        "epoch": 1,
+        "batch": 1,
+        "train_loss": 9.54442024230957
+      },
+      {
+        "_step": 1,
+        "epoch": 1,
+        "batch": 100,
+        "train_loss": 9.84650993347168
+      },
+      {
+        "_step": 2,
+        "epoch": 1,
+        "batch": 200,
+        "train_loss": 8.413408279418945
+      },
+      {
+        "_step": 3,
+        "epoch": 1,
+        "batch": 300,
+        "train_loss": 4.961719512939453
+      }
+    ]
+  },
+  "completed_training_runs": 0,
+  "assessment_started": false
+}
