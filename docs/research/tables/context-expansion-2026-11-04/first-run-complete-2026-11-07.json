@@ -1,0 +1,40 @@
+{
+  "observed_at_utc": "2026-11-07 21:01:16 UTC",
+  "milestone": "First of 18 training runs completed; matched expanded-input run started",
+  "completed_job": "short_no_roll_s42_control",
+  "active_job": "short_no_roll_s42_context",
+  "completed_training_runs": 1,
+  "planned_training_runs": 18,
+  "assessment_started": false,
+  "joint_selection_freeze_present": false,
+  "single_runner_pid": 2983980,
+  "frozen_fingerprints_match": true,
+  "trained_receipt": "results_longrun/context_expansion_20261104_v1/short_no_roll_s42_control/trained.json",
+  "checks": {
+    "trained_files_verified": 30,
+    "history_epochs": 40,
+    "calibration_grids": 8,
+    "terminal_epoch": 41,
+    "cloud": [
+      {
+        "id": "ctx1104-01-s42",
+        "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-01-s42",
+        "state": "finished",
+        "epoch": 40,
+        "batch": 5461,
+        "completed": true,
+        "selected_epoch": 5
+      },
+      {
+        "id": "ctx1104-02-s42",
+        "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-02-s42",
+        "state": "running",
+        "epoch": 2,
+        "batch": 3300,
+        "completed": null,
+        "selected_epoch": null
+      }
+    ]
+  },
+  "independent_calibration_and_inference_replay": "Pending full campaign verification; this check verified artifact integrity, epoch inventory and cloud status only."
+}

@@ -1,5 +1,19 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
+**7 November 2026,21:01UTC — first of18 training runs completed.**
+`short_no_roll_s42_control` completed all40 epochs; all30 files in its trained
+receipt match their hashes, all8 calibration checkpoint/grid sets are retained,
+and W&B run `ctx1104-01-s42` is finished. Its calibration-selected epoch is5;
+this is a2006 selection, not an assessment result or a generalization claim.
+The same service/runner proceeded to `short_no_roll_s42_context` (inputs40–47
+plus33/49), now epoch2 with saved checkpoints and W&B `ctx1104-02-s42` running.
+https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-02-s42 .
+No restart/OOM, frozen source/dependency/annotation hashes match, and no assessment
+has started. Joint freeze and full independent calibration/inference/metric replay
+remain pending. Integrity/cloud-status evidence:
+`docs/research/tables/context-expansion-2026-11-04/first-run-complete-2026-11-07.json`.
+Continue the unchanged single service and active follow-up; do not alter settings.
+
 **7 November 2026 — campaign launched after preflight recovery.**
 The repeated heartbeats did not represent computation: at13:02UTC there was no
 campaign output, checkpoint, log or W&B run, and the service was inactive/disabled.
@@ -19,7 +33,7 @@ At13:09:45UTC run1/18 `short_no_roll_s42_control` had a valid, finite epoch1
 batch400/5461 checkpoint with optimizer/scheduler/RNG recovery state. W&B cloud
 history was independently fetched through batch300 and its state is running:
 https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-01-s42 .
-No training run has yet completed and no assessment has started. All78 source,
+At launch no training run had completed and no assessment had started. All78 source,
 3 selection-dependency and2 annotation hashes match the new frozen protocol.
 Source/protocol/preflight commit `d6cc451985c4695ce77224a14816feec2a414571` is
 verified on origin/main. The saved runtime/source are now frozen: do not modify
