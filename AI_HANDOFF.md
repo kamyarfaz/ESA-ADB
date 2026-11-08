@@ -1,5 +1,19 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
+**8 November 2026,05:30UTC — first matched pair complete;2 of18 runs finished.**
+Both seed42 short-no-roll arms completed40 epochs. Rechecked all60 artifact hashes,
+both40-epoch histories, all16 retained calibration grids and terminal checkpoints;
+W&B runs `ctx1104-01-s42` and `ctx1104-02-s42` are finished with matching configs.
+Both selected epoch5 on2006 calibration; assessment has not started and these are
+not generalization results. The unchanged service continues with seed43 control,
+`short_no_roll_s43_control`, epoch2, W&B `ctx1104-03-s43` running:
+https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-03-s43 .
+Exactly one runner (PID2983980), no restart/OOM, frozen fingerprints match.
+Evidence: `docs/research/tables/context-expansion-2026-11-04/first-pair-complete-2026-11-08.json`.
+This milestone verifies artifact integrity/history/cloud status only; joint freeze,
+independent calibration/inference/metric replay and final delivery remain pending.
+Keep the same service and follow-up active; preserve all frozen settings.
+
 **7 November 2026,21:01UTC — first of18 training runs completed.**
 `short_no_roll_s42_control` completed all40 epochs; all30 files in its trained
 receipt match their hashes, all8 calibration checkpoint/grid sets are retained,

@@ -1,0 +1,63 @@
+{
+  "observed_at_utc": "2026-11-08T05:30:51.603069+00:00",
+  "milestone": "First matched seed42 short-no-roll pair completed; seed43 control started",
+  "completed_training_runs": 2,
+  "planned_training_runs": 18,
+  "active_job": "short_no_roll_s43_control",
+  "assessment_started": false,
+  "joint_selection_freeze_present": false,
+  "single_runner_pid": 2983980,
+  "frozen_fingerprints_match": true,
+  "completed_jobs": [
+    {
+      "job": "short_no_roll_s42_control",
+      "trained_receipt_sha256": "3bbbc600cd3d3b304c1863fb7610974a8b759b5a1cf108158e5b75a07ae7fdc1",
+      "trained_files_verified": 30,
+      "history_epochs": 40,
+      "calibration_grids": 8,
+      "terminal_epoch": 41,
+      "terminal_batch": 0,
+      "selected_epoch": 5
+    },
+    {
+      "job": "short_no_roll_s42_context",
+      "trained_receipt_sha256": "ea037753f5b235aa1182f6cafce4cde7fd013b4778d752929f185902d31859e7",
+      "trained_files_verified": 30,
+      "history_epochs": 40,
+      "calibration_grids": 8,
+      "terminal_epoch": 41,
+      "terminal_batch": 0,
+      "selected_epoch": 5
+    }
+  ],
+  "cloud": [
+    {
+      "id": "ctx1104-01-s42",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-01-s42",
+      "state": "finished",
+      "epoch": 40,
+      "batch": 5461,
+      "completed": true,
+      "selected_epoch": 5
+    },
+    {
+      "id": "ctx1104-02-s42",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-02-s42",
+      "state": "finished",
+      "epoch": 40,
+      "batch": 5461,
+      "completed": true,
+      "selected_epoch": 5
+    },
+    {
+      "id": "ctx1104-03-s43",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-03-s43",
+      "state": "running",
+      "epoch": 2,
+      "batch": 100,
+      "completed": null,
+      "selected_epoch": null
+    }
+  ],
+  "independent_calibration_and_inference_replay": "Pending full campaign verification; this check verified artifact integrity, epoch inventory and cloud status only."
+}
