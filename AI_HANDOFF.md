@@ -1,5 +1,21 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
+**9 November 2026, 19:38 UTC —7 of18 training runs complete.**
+The first masked-pretraining plus short-no-roll run, seed42 control, completed
+all40 epochs at19:18UTC. Rechecked all198 artifact hashes across seven completed
+runs, their40-epoch histories,52 retained calibration grids, terminal checkpoints
+and selected-copy consistency. The masked run retains only epochs25/30/35/40
+as calibration candidates, as specified, and selected epoch25 on2006 calibration.
+W&B runs01–07 are finished with matching configs. Run8/18,
+`pretrain_finetune_s42_context`, is training at epoch4 with W&B running:
+https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-08-s42 .
+The unchanged service remains healthy with exactly one runner (PID4636), matching
+frozen fingerprints and no OOM events or further restarts since this morning's reboot.
+Evidence: `docs/research/tables/context-expansion-2026-11-04/seventh-run-complete-2026-11-09.json`.
+These are integrity/history/cloud checks. Joint freeze, assessment, full independent
+calibration/inference/metric replay and final delivery remain pending.
+Keep the same service and follow-up active; preserve all frozen settings.
+
 **9 November 2026, 19:09 UTC — all six short-no-roll runs complete.**
 All three matched seed pairs finished; seed44 expanded inputs completed at13:49UTC.
 Rechecked all180 artifact hashes, six40-epoch histories,48 calibration grids,
