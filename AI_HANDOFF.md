@@ -1,5 +1,25 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
+**9 November 2026, 19:09 UTC — all six short-no-roll runs complete.**
+All three matched seed pairs finished; seed44 expanded inputs completed at13:49UTC.
+Rechecked all180 artifact hashes, six40-epoch histories,48 calibration grids,
+terminal checkpoints and selected-copy consistency. W&B runs01–06 are finished
+with matching configs; seed44 expanded inputs selected epoch10 on2006 calibration.
+Run7/18 `pretrain_finetune_s42_control` is now at epoch40 with W&B running:
+https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-07-s42 .
+The host rebooted at08:31:55UTC after a journaled service stop at08:30:11UTC.
+The enabled, unchanged service started at08:32:03UTC and resumed seed44 expanded
+inputs from epoch17 batch1000, retaining W&B run06. The reboot reason is unknown.
+Exactly one runner is now present (PID4636); no OOM events in its current cgroup.
+Independently rechecked the full frozen plan/settings/runtime, installed unit,
+all source/dependency/annotation hashes and all four prepared data hashes: match.
+No agent restart or experimental setting change was needed. This scoped check
+does not certify unrelated historical migration exceptions.
+Evidence: `docs/research/tables/context-expansion-2026-11-04/short-no-roll-complete-2026-11-09.json`.
+Assessment and joint freeze have not started. Full independent numerical
+calibration/inference/metric replay and final delivery remain pending.
+Keep the same service and follow-up active; preserve all frozen settings.
+
 **9 November 2026,05:01UTC —5 of18 training runs complete.**
 Seed44 short-no-roll control completed40 epochs at04:58UTC. Rechecked all150
 artifact hashes across the five completed runs, their40-epoch histories,
