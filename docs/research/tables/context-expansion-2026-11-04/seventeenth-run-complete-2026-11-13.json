@@ -1,0 +1,366 @@
+{
+  "observed_at_utc": "2026-11-13T03:51:43+00:00",
+  "milestone": "Seventeen training runs complete; final seed44 expanded-input arm is training",
+  "completed_training_runs": 17,
+  "planned_training_runs": 18,
+  "active_job": "expanded_short_no_roll_s44_context",
+  "active_epoch": 9,
+  "assessment_started": false,
+  "joint_selection_freeze_present": false,
+  "single_runner_pid": 4636,
+  "frozen_fingerprints_match": true,
+  "completed_jobs": [
+    {
+      "job": "short_no_roll_s42_control",
+      "trained_receipt_sha256": "3bbbc600cd3d3b304c1863fb7610974a8b759b5a1cf108158e5b75a07ae7fdc1",
+      "trained_files_verified": 30,
+      "history_epochs": 40,
+      "calibration_grids": 8,
+      "terminal_epoch": 41,
+      "terminal_batch": 0,
+      "selected_epoch": 5,
+      "completed_at_utc": "2026-11-07T20:37:57.488306+00:00"
+    },
+    {
+      "job": "short_no_roll_s42_context",
+      "trained_receipt_sha256": "ea037753f5b235aa1182f6cafce4cde7fd013b4778d752929f185902d31859e7",
+      "trained_files_verified": 30,
+      "history_epochs": 40,
+      "calibration_grids": 8,
+      "terminal_epoch": 41,
+      "terminal_batch": 0,
+      "selected_epoch": 5,
+      "completed_at_utc": "2026-11-08T05:17:30.181555+00:00"
+    },
+    {
+      "job": "short_no_roll_s43_control",
+      "trained_receipt_sha256": "fdc12c9d52fad92ad8aeab7b02a57250c921015481973af03091073630d27b06",
+      "trained_files_verified": 30,
+      "history_epochs": 40,
+      "calibration_grids": 8,
+      "terminal_epoch": 41,
+      "terminal_batch": 0,
+      "selected_epoch": 20,
+      "completed_at_utc": "2026-11-08T12:48:40.717310+00:00"
+    },
+    {
+      "job": "short_no_roll_s43_context",
+      "trained_receipt_sha256": "7e895a639b08bb703627135df69348b56d4aa0b7297c97fedc0042bb9ee4721d",
+      "trained_files_verified": 30,
+      "history_epochs": 40,
+      "calibration_grids": 8,
+      "terminal_epoch": 41,
+      "terminal_batch": 0,
+      "selected_epoch": 10,
+      "completed_at_utc": "2026-11-08T21:27:49.550006+00:00"
+    },
+    {
+      "job": "short_no_roll_s44_control",
+      "trained_receipt_sha256": "c32f3173f259927324717c2b90742ffd99b62caf946d4c0b9bf583cbad908e51",
+      "trained_files_verified": 30,
+      "history_epochs": 40,
+      "calibration_grids": 8,
+      "terminal_epoch": 41,
+      "terminal_batch": 0,
+      "selected_epoch": 10,
+      "completed_at_utc": "2026-11-09T04:58:12.191630+00:00"
+    },
+    {
+      "job": "short_no_roll_s44_context",
+      "trained_receipt_sha256": "743294cd32a8e13201df89771a7dc8482edc265a85b270fdd7dd1e9da2a4b17d",
+      "trained_files_verified": 30,
+      "history_epochs": 40,
+      "calibration_grids": 8,
+      "terminal_epoch": 41,
+      "terminal_batch": 0,
+      "selected_epoch": 10,
+      "completed_at_utc": "2026-11-09T13:49:16.426684+00:00"
+    },
+    {
+      "job": "pretrain_finetune_s42_control",
+      "trained_receipt_sha256": "096d19fe1fccda8a145ab0314b3c24b4ff1c85ef88481940a3e1e915ea7f2348",
+      "trained_files_verified": 18,
+      "history_epochs": 40,
+      "calibration_grids": 4,
+      "terminal_epoch": 41,
+      "terminal_batch": 0,
+      "selected_epoch": 25,
+      "completed_at_utc": "2026-11-09T19:18:46.210209+00:00"
+    },
+    {
+      "job": "pretrain_finetune_s42_context",
+      "trained_receipt_sha256": "45a3380a22d4380dc374b4a0a733dbb54d4569725769b421f62120552a174d0a",
+      "trained_files_verified": 18,
+      "history_epochs": 40,
+      "calibration_grids": 4,
+      "terminal_epoch": 41,
+      "terminal_batch": 0,
+      "selected_epoch": 30,
+      "completed_at_utc": "2026-11-10T01:38:18.941755+00:00"
+    },
+    {
+      "job": "pretrain_finetune_s43_control",
+      "trained_receipt_sha256": "27676ac229475af7b201fdc314b62207c759c555b8ade04627c5890ea6ddbcdd",
+      "trained_files_verified": 18,
+      "history_epochs": 40,
+      "calibration_grids": 4,
+      "terminal_epoch": 41,
+      "terminal_batch": 0,
+      "selected_epoch": 25,
+      "completed_at_utc": "2026-11-10T07:05:26.742371+00:00"
+    },
+    {
+      "job": "pretrain_finetune_s43_context",
+      "trained_receipt_sha256": "823e5b3ba211f2db14a9c3648b5cd2351024e88b3db167540688d2b593e23c21",
+      "trained_files_verified": 18,
+      "history_epochs": 40,
+      "calibration_grids": 4,
+      "terminal_epoch": 41,
+      "terminal_batch": 0,
+      "selected_epoch": 35,
+      "completed_at_utc": "2026-11-10T13:25:35.797185+00:00"
+    },
+    {
+      "job": "pretrain_finetune_s44_control",
+      "trained_receipt_sha256": "c4376a38a354ffaf38e2978e5d99b40a791158b3012b4ad2f628468e3ff697cd",
+      "trained_files_verified": 18,
+      "history_epochs": 40,
+      "calibration_grids": 4,
+      "terminal_epoch": 41,
+      "terminal_batch": 0,
+      "selected_epoch": 25,
+      "completed_at_utc": "2026-11-10T18:54:54.017719+00:00"
+    },
+    {
+      "job": "pretrain_finetune_s44_context",
+      "trained_receipt_sha256": "e3e4e28dbdb576e346720956129a82d7391baf81824fe3403b7924e5b7242486",
+      "trained_files_verified": 18,
+      "history_epochs": 40,
+      "calibration_grids": 4,
+      "terminal_epoch": 41,
+      "terminal_batch": 0,
+      "selected_epoch": 30,
+      "completed_at_utc": "2026-11-11T01:16:19.837556+00:00"
+    },
+    {
+      "job": "expanded_short_no_roll_s42_control",
+      "trained_receipt_sha256": "c0ea00625bf2e7f1d6309c388e4e2e832eb3e14e38de23098f0a265f2ba046c4",
+      "trained_files_verified": 30,
+      "history_epochs": 40,
+      "calibration_grids": 8,
+      "terminal_epoch": 41,
+      "terminal_batch": 0,
+      "selected_epoch": 15,
+      "completed_at_utc": "2026-11-11T10:35:01.875710+00:00"
+    },
+    {
+      "job": "expanded_short_no_roll_s42_context",
+      "trained_receipt_sha256": "654ce677ab4eb06d7afaad4c7fcac8fdee8f71a0a0c846f8b15c07787aa39901",
+      "trained_files_verified": 30,
+      "history_epochs": 40,
+      "calibration_grids": 8,
+      "terminal_epoch": 41,
+      "terminal_batch": 0,
+      "selected_epoch": 15,
+      "completed_at_utc": "2026-11-11T20:47:08.322024+00:00"
+    },
+    {
+      "job": "expanded_short_no_roll_s43_control",
+      "trained_receipt_sha256": "a855a41e9e85df75f9570ef57495fea99cf3f42eb026062225da4a725828a27e",
+      "trained_files_verified": 30,
+      "history_epochs": 40,
+      "calibration_grids": 8,
+      "terminal_epoch": 41,
+      "terminal_batch": 0,
+      "selected_epoch": 5,
+      "completed_at_utc": "2026-11-12T05:58:57.654991+00:00"
+    },
+    {
+      "job": "expanded_short_no_roll_s43_context",
+      "trained_receipt_sha256": "be706fe8b7ded94738f2e096eb4f06b28f7723b3af8021294033fe7c3c739bf8",
+      "trained_files_verified": 30,
+      "history_epochs": 40,
+      "calibration_grids": 8,
+      "terminal_epoch": 41,
+      "terminal_batch": 0,
+      "selected_epoch": 5,
+      "completed_at_utc": "2026-11-12T16:22:42.282890+00:00"
+    },
+    {
+      "job": "expanded_short_no_roll_s44_control",
+      "trained_receipt_sha256": "997a8cceec763ccaea9b18d07a4ed2b74c08abf469fc33bbf0b4917c1780c338",
+      "trained_files_verified": 30,
+      "history_epochs": 40,
+      "calibration_grids": 8,
+      "terminal_epoch": 41,
+      "terminal_batch": 0,
+      "selected_epoch": 5,
+      "completed_at_utc": "2026-11-13T01:34:13.533257+00:00"
+    }
+  ],
+  "cloud": [
+    {
+      "id": "ctx1104-01-s42",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-01-s42",
+      "state": "finished",
+      "epoch": 40,
+      "batch": 5461,
+      "completed": true,
+      "selected_epoch": 5
+    },
+    {
+      "id": "ctx1104-02-s42",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-02-s42",
+      "state": "finished",
+      "epoch": 40,
+      "batch": 5461,
+      "completed": true,
+      "selected_epoch": 5
+    },
+    {
+      "id": "ctx1104-03-s43",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-03-s43",
+      "state": "finished",
+      "epoch": 40,
+      "batch": 5461,
+      "completed": true,
+      "selected_epoch": 20
+    },
+    {
+      "id": "ctx1104-04-s43",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-04-s43",
+      "state": "finished",
+      "epoch": 40,
+      "batch": 5461,
+      "completed": true,
+      "selected_epoch": 10
+    },
+    {
+      "id": "ctx1104-05-s44",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-05-s44",
+      "state": "finished",
+      "epoch": 40,
+      "batch": 5461,
+      "completed": true,
+      "selected_epoch": 10
+    },
+    {
+      "id": "ctx1104-06-s44",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-06-s44",
+      "state": "finished",
+      "epoch": 40,
+      "batch": 5461,
+      "completed": true,
+      "selected_epoch": 10
+    },
+    {
+      "id": "ctx1104-07-s42",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-07-s42",
+      "state": "finished",
+      "epoch": 40,
+      "batch": 5461,
+      "completed": true,
+      "selected_epoch": 25
+    },
+    {
+      "id": "ctx1104-08-s42",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-08-s42",
+      "state": "finished",
+      "epoch": 40,
+      "batch": 5461,
+      "completed": true,
+      "selected_epoch": 30
+    },
+    {
+      "id": "ctx1104-09-s43",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-09-s43",
+      "state": "finished",
+      "epoch": 40,
+      "batch": 5461,
+      "completed": true,
+      "selected_epoch": 25
+    },
+    {
+      "id": "ctx1104-10-s43",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-10-s43",
+      "state": "finished",
+      "epoch": 40,
+      "batch": 5461,
+      "completed": true,
+      "selected_epoch": 35
+    },
+    {
+      "id": "ctx1104-11-s44",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-11-s44",
+      "state": "finished",
+      "epoch": 40,
+      "batch": 5461,
+      "completed": true,
+      "selected_epoch": 25
+    },
+    {
+      "id": "ctx1104-12-s44",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-12-s44",
+      "state": "finished",
+      "epoch": 40,
+      "batch": 5461,
+      "completed": true,
+      "selected_epoch": 30
+    },
+    {
+      "id": "ctx1104-13-s42",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-13-s42",
+      "state": "finished",
+      "epoch": 40,
+      "batch": 5461,
+      "completed": true,
+      "selected_epoch": 15
+    },
+    {
+      "id": "ctx1104-14-s42",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-14-s42",
+      "state": "finished",
+      "epoch": 40,
+      "batch": 5461,
+      "completed": true,
+      "selected_epoch": 15
+    },
+    {
+      "id": "ctx1104-15-s43",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-15-s43",
+      "state": "finished",
+      "epoch": 40,
+      "batch": 5461,
+      "completed": true,
+      "selected_epoch": 5
+    },
+    {
+      "id": "ctx1104-16-s43",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-16-s43",
+      "state": "finished",
+      "epoch": 40,
+      "batch": 5461,
+      "completed": true,
+      "selected_epoch": 5
+    },
+    {
+      "id": "ctx1104-17-s44",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-17-s44",
+      "state": "finished",
+      "epoch": 40,
+      "batch": 5461,
+      "completed": true,
+      "selected_epoch": 5
+    },
+    {
+      "id": "ctx1104-18-s44",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-18-s44",
+      "state": "running",
+      "epoch": 9,
+      "batch": 4800,
+      "completed": null,
+      "selected_epoch": null
+    }
+  ],
+  "independent_calibration_and_inference_replay": "Pending full campaign verification; this check verified artifact hashes, epoch inventory, calibration checkpoint schedule, selected-copy consistency and cloud status only."
+}
