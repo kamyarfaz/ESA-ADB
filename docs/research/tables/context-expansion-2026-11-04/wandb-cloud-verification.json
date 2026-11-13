@@ -1,0 +1,115 @@
+{
+  "verified": true,
+  "runs": 18,
+  "downloaded_metric_rows": 288,
+  "checked": [
+    {
+      "name": "short_no_roll_s42_control",
+      "id": "ctx1104-eval-01-s42",
+      "rows": 16,
+      "state": "finished"
+    },
+    {
+      "name": "short_no_roll_s42_context",
+      "id": "ctx1104-eval-02-s42",
+      "rows": 16,
+      "state": "finished"
+    },
+    {
+      "name": "short_no_roll_s43_control",
+      "id": "ctx1104-eval-03-s43",
+      "rows": 16,
+      "state": "finished"
+    },
+    {
+      "name": "short_no_roll_s43_context",
+      "id": "ctx1104-eval-04-s43",
+      "rows": 16,
+      "state": "finished"
+    },
+    {
+      "name": "short_no_roll_s44_control",
+      "id": "ctx1104-eval-05-s44",
+      "rows": 16,
+      "state": "finished"
+    },
+    {
+      "name": "short_no_roll_s44_context",
+      "id": "ctx1104-eval-06-s44",
+      "rows": 16,
+      "state": "finished"
+    },
+    {
+      "name": "pretrain_finetune_s42_control",
+      "id": "ctx1104-eval-07-s42",
+      "rows": 16,
+      "state": "finished"
+    },
+    {
+      "name": "pretrain_finetune_s42_context",
+      "id": "ctx1104-eval-08-s42",
+      "rows": 16,
+      "state": "finished"
+    },
+    {
+      "name": "pretrain_finetune_s43_control",
+      "id": "ctx1104-eval-09-s43",
+      "rows": 16,
+      "state": "finished"
+    },
+    {
+      "name": "pretrain_finetune_s43_context",
+      "id": "ctx1104-eval-10-s43",
+      "rows": 16,
+      "state": "finished"
+    },
+    {
+      "name": "pretrain_finetune_s44_control",
+      "id": "ctx1104-eval-11-s44",
+      "rows": 16,
+      "state": "finished"
+    },
+    {
+      "name": "pretrain_finetune_s44_context",
+      "id": "ctx1104-eval-12-s44",
+      "rows": 16,
+      "state": "finished"
+    },
+    {
+      "name": "expanded_short_no_roll_s42_control",
+      "id": "ctx1104-eval-13-s42",
+      "rows": 16,
+      "state": "finished"
+    },
+    {
+      "name": "expanded_short_no_roll_s42_context",
+      "id": "ctx1104-eval-14-s42",
+      "rows": 16,
+      "state": "finished"
+    },
+    {
+      "name": "expanded_short_no_roll_s43_control",
+      "id": "ctx1104-eval-15-s43",
+      "rows": 16,
+      "state": "finished"
+    },
+    {
+      "name": "expanded_short_no_roll_s43_context",
+      "id": "ctx1104-eval-16-s43",
+      "rows": 16,
+      "state": "finished"
+    },
+    {
+      "name": "expanded_short_no_roll_s44_control",
+      "id": "ctx1104-eval-17-s44",
+      "rows": 16,
+      "state": "finished"
+    },
+    {
+      "name": "expanded_short_no_roll_s44_context",
+      "id": "ctx1104-eval-18-s44",
+      "rows": 16,
+      "state": "finished"
+    }
+  ]
+}

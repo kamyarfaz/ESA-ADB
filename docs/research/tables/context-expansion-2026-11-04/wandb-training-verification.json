@@ -1,0 +1,131 @@
+{
+  "verified": true,
+  "runs": [
+    {
+      "id": "ctx1104-01-s42",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-01-s42",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 5
+    },
+    {
+      "id": "ctx1104-02-s42",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-02-s42",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 5
+    },
+    {
+      "id": "ctx1104-03-s43",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-03-s43",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 20
+    },
+    {
+      "id": "ctx1104-04-s43",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-04-s43",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 10
+    },
+    {
+      "id": "ctx1104-05-s44",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-05-s44",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 10
+    },
+    {
+      "id": "ctx1104-06-s44",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-06-s44",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 10
+    },
+    {
+      "id": "ctx1104-07-s42",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-07-s42",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 25
+    },
+    {
+      "id": "ctx1104-08-s42",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-08-s42",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 30
+    },
+    {
+      "id": "ctx1104-09-s43",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-09-s43",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 25
+    },
+    {
+      "id": "ctx1104-10-s43",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-10-s43",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 35
+    },
+    {
+      "id": "ctx1104-11-s44",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-11-s44",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 25
+    },
+    {
+      "id": "ctx1104-12-s44",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-12-s44",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 30
+    },
+    {
+      "id": "ctx1104-13-s42",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-13-s42",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 15
+    },
+    {
+      "id": "ctx1104-14-s42",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-14-s42",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 15
+    },
+    {
+      "id": "ctx1104-15-s43",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-15-s43",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 5
+    },
+    {
+      "id": "ctx1104-16-s43",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-16-s43",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 5
+    },
+    {
+      "id": "ctx1104-17-s44",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-17-s44",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 5
+    },
+    {
+      "id": "ctx1104-18-s44",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/ctx1104-18-s44",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 10
+    }
+  ]
+}

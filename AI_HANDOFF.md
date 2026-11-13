@@ -1,5 +1,42 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
+**13 November 2026 — computation and independent verification complete; final backup/delivery in progress.**
+All 18 runs completed 40 epochs. The joint freeze was written at 11:43:46 UTC,
+before assessment; all 18 assessments completed at 12:19:39 UTC. The user service
+exited successfully and is inactive, still enabled pending final verified delivery.
+Do not restart training or change the frozen package, settings or data.
+Independent audit passed all 599 completion-file hashes, four prepared data hashes,
+frozen source/runtime/plan, 18 training and assessment receipts, 120 calibration
+grids (11,880 candidates), refitted training scalers, 1,416 exact inference spots
+across 138 checkpoint/split checks, continuous predictions, all 288 metric rows
+and 5,724 detected/missed ID records. The original 178-test suite and three new
+verifier boundary tests passed. All 18 training W&B runs are finished; 18 separate
+evaluation runs were published and all 288 cloud table rows downloaded and checked.
+
+Pooled target 40–47 F0.5 means, fresh control → added33/49 (seeds42/43/44):
+- Short-no-roll: 0.848385 → 0.910879; paired deltas +0.014611/+0.043140/+0.129730.
+- Masked pretraining + short-no-roll: 0.827188 → 0.909984; deltas −0.020527/+0.165002/+0.103913.
+- Retaining14/21/29: 0.244716 → 0.819257; deltas +0.452198/+0.739203/+0.532222.
+The third family's fresh controls perform poorly, and added-input seeds43/44 have
+nominal-time FPR 5.9101%/5.8776%; F0.5 alone must not hide this failure.
+All seeds and both scopes are retained. Historical system-selected references
+are descriptive comparisons, not matched controls. No robust target or independent
+generalization claim: three seeds, reused benchmark, additional compute and
+input-and-score expansion remain material limitations.
+
+Academic report: `docs/research/context-expansion-results-2026-11-13.md`.
+Evidence: `docs/research/tables/context-expansion-2026-11-04/verification.json`,
+`verified_results.csv`, `paired_changes.csv`, `verified_event_ids.csv`,
+`wandb-evaluation.json`, `wandb-cloud-verification.json`.
+Canonical workbook updated with a separate Input expansion sheet: 144 model/period
+rows containing both scopes (288 metric rows), pooled results first. All 39 prior
+rows and original values/styles/views/tables/dimensions remain unchanged, checked
+against `outputs/context-expansion-20261113/workbook-before.xlsx`.
+Remaining: commit/push compact results; upload essential artifacts to the GitHub
+Release and verify fresh downloads; deliver actual results and links; only then
+disable the completed service and delete the follow-up. The existing external-drive
+copy remains preserved; scoped checks do not close historical migration exceptions.
+
 **13 November 2026, 03:51 UTC — 17 of 18 training runs complete.**
 The third technique's seed44 control completed all 40 epochs at 01:34 UTC.
 It selected epoch5 using 2006 calibration only; this is not an assessment result.

@@ -1,0 +1,34 @@
+{
+  "verified": true,
+  "verified_at_utc": "2026-11-13T13:05:56.528246+00:00",
+  "complete_receipt_sha256": "7c8905aeef48cae1494f9c543b1f00deaa6f2fa29eb8d3e7128d0053789595e6",
+  "verifier_sha256": "27fb69d968984885504f980f61e69990c344541eca7c63541fd85505e6e099b4",
+  "completion_files": 599,
+  "jobs": 18,
+  "epochs_per_job": 40,
+  "nominal_training_windows": 349461,
+  "batches_per_epoch": 5461,
+  "calibration_grids": 120,
+  "calibration_candidate_rows": 11880,
+  "metric_rows": 288,
+  "event_id_rows": 5724,
+  "inference_checkpoints": 138,
+  "inference_spots": 1416,
+  "inference_exact_matches": 1416,
+  "joint_freeze_utc": "2026-11-13T11:43:46.443206+00:00",
+  "checks": [
+    "Frozen plan/runtime/source/dependencies/annotations, installed unit and four prepared data hashes",
+    "All completion, training and assessment receipts; 18 histories and final states",
+    "Independent nominal-training scaler refit, all candidate and selected scalers",
+    "Independent postprocessing and complete calibration-grid replay; within-run selection and earliest checkpoint ties",
+    "All 18 selections jointly frozen before any assessment score; selected artifact equality",
+    "Original-batch GPU inference at fixed calibration/annual assessment timestamp spots; exact float32 scores",
+    "Full continuous prediction replay and all annual/pooled corrected metrics and detected/missed IDs"
+  ],
+  "limitations": [
+    "Inference spot checks, not a second full neural inference pass",
+    "Corrected event evaluator reused after bundled-reference parity tests; postprocessing, window enumeration and ID enumeration independently implemented",
+    "Three seeds and reused benchmark; input expansion also expands alarm score sources",
+    "Scoped destination verification does not certify unrelated historical migration exceptions"
+  ]
+}

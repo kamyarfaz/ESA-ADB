@@ -1,0 +1,16 @@
+{
+  "verified": true,
+  "historical_rows_preserved": 39,
+  "historical_cells_values_and_styles_preserved": true,
+  "historical_dimensions_views_tables_merges_preserved": true,
+  "new_model_period_rows": 144,
+  "new_scope_metric_rows": 288,
+  "pooled_rows_first": 18,
+  "visual_checks": [
+    "pooled A2:M23",
+    "annual A24:M30",
+    "notes A152:M161"
+  ],
+  "before_sha256": "a80ee74c035450fcfd9d07f9ef59f4fcd98a9122b7dc8b9a4c4c9184c3f14773",
+  "after_sha256": "76d4087c5c9e3aa8b05241f47fdec8e582fe6c4835b8942eff951850d83030f3"
+}
