@@ -1,9 +1,9 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
-**13 November 2026 — computation and independent verification complete; final backup/delivery in progress.**
+**13 November 2026 — verified results delivered; only follow-up deletion remains blocked.**
 All 18 runs completed 40 epochs. The joint freeze was written at 11:43:46 UTC,
 before assessment; all 18 assessments completed at 12:19:39 UTC. The user service
-exited successfully and is inactive, still enabled pending final verified delivery.
+exited successfully and is now inactive and disabled after verified delivery.
 Do not restart training or change the frozen package, settings or data.
 Independent audit passed all 599 completion-file hashes, four prepared data hashes,
 frozen source/runtime/plan, 18 training and assessment receipts, 120 calibration
@@ -32,10 +32,22 @@ Canonical workbook updated with a separate Input expansion sheet: 144 model/peri
 rows containing both scopes (288 metric rows), pooled results first. All 39 prior
 rows and original values/styles/views/tables/dimensions remain unchanged, checked
 against `outputs/context-expansion-20261113/workbook-before.xlsx`.
-Remaining: commit/push compact results; upload essential artifacts to the GitHub
-Release and verify fresh downloads; deliver actual results and links; only then
-disable the completed service and delete the follow-up. The existing external-drive
-copy remains preserved; scoped checks do not close historical migration exceptions.
+Results/report/workbook/code pushed at `0c31a8e655be269f7d7f903640d4950c547cd72b`.
+Remote report and workbook blobs match local Git objects. Essential artifacts:
+https://github.com/kamyarfaz/ESA-ADB/releases/tag/context-expansion-2026-11-13 .
+All six Release assets were freshly downloaded; all four archives and every one
+of their 732 members passed SHA256 checks. Evidence: `release-verification.json`
+and `delivery.json` in the table directory. The full external-drive copy remains
+preserved; this scoped backup does not close historical migration exceptions.
+
+Only administrative cleanup remains. `automation_update` view/delete calls fail
+with `MCP -32000: Codex app tool request failed`. The follow-up file still says
+ACTIVE; deletion has NOT been verified. No raw scheduler/database changes were
+made. On the next heartbeat, retry deletion of
+`complete-three-technique-input-expansion` through the supported tool only.
+Do not restart the disabled service, rerun the completed audit, retrain, or republish
+unchanged results. If the same app-tool error persists, remain quiet unless user
+action becomes necessary. Scientific verification and delivery are complete.
 
 **13 November 2026, 03:51 UTC — 17 of 18 training runs complete.**
 The third technique's seed44 control completed all 40 epochs at 01:34 UTC.

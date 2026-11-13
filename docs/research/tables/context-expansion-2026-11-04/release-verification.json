@@ -1,0 +1,43 @@
+{
+  "verified": true,
+  "verified_at_utc": "2026-11-13T16:01:39.665030+00:00",
+  "release_url": "https://github.com/kamyarfaz/ESA-ADB/releases/tag/context-expansion-2026-11-13",
+  "fresh_download_directory": "/home/k_faz/project-backups/context-expansion-20261104/fresh-download-20261113",
+  "assets": [
+    {
+      "name": "context-expansion-short_no_roll-20261113.tar.gz",
+      "bytes": 371554153,
+      "sha256": "b6309c4b597dd6813587d6266487c7529471264d29866667330af7bd0e64b996",
+      "members": 222,
+      "download_sha256_verified": true,
+      "all_member_hashes_verified": true
+    },
+    {
+      "name": "context-expansion-pretrain_finetune-20261113.tar.gz",
+      "bytes": 249368631,
+      "sha256": "ab9441abb7628341e0beec837b83c66c226872aafd5b6562bf6342a7c88e2c17",
+      "members": 150,
+      "download_sha256_verified": true,
+      "all_member_hashes_verified": true
+    },
+    {
+      "name": "context-expansion-expanded_short_no_roll-20261113.tar.gz",
+      "bytes": 371632190,
+      "sha256": "114ff2660ac72c9053635d118fb38c0c2a2b29e80cae526a6f8822cde7a32d96",
+      "members": 222,
+      "download_sha256_verified": true,
+      "all_member_hashes_verified": true
+    },
+    {
+      "name": "context-expansion-provenance-20261113.tar.gz",
+      "bytes": 45451242,
+      "sha256": "695a24b23ee5ecac5c4a9a0d9121aa16d37607e1f73aca2d98b1fb6065a4c8b4",
+      "members": 138,
+      "download_sha256_verified": true,
+      "all_member_hashes_verified": true
+    }
+  ],
+  "manifest_sha256": "76ff9c6e93e07a7bf7efb89c9e509f0701f61e61079975c07569fdda7963e191",
+  "checksums_sha256": "bbe1475c09218811026830ba0e820f60439d333ffc001ae887224d86c0ec5a82",
+  "member_count": 732
+}

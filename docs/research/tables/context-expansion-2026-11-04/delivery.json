@@ -1,0 +1,26 @@
+{
+  "delivered_at_utc": "2026-11-13T16:03:00.909385+00:00",
+  "scientific_delivery_verified": true,
+  "results_commit": "0c31a8e655be269f7d7f903640d4950c547cd72b",
+  "report_url": "https://github.com/kamyarfaz/ESA-ADB/blob/main/docs/research/context-expansion-results-2026-11-13.md",
+  "release_url": "https://github.com/kamyarfaz/ESA-ADB/releases/tag/context-expansion-2026-11-13",
+  "release_asset_count": 6,
+  "archive_member_count": 732,
+  "wandb_evaluation_runs": 18,
+  "downloaded_wandb_metric_rows": 288,
+  "workbook_sha256": "76d4087c5c9e3aa8b05241f47fdec8e582fe6c4835b8942eff951850d83030f3",
+  "service": {
+    "name": "esa-context-expansion.service",
+    "active_state": "inactive",
+    "sub_state": "dead",
+    "result": "success",
+    "main_pid": 0,
+    "unit_file_state": "disabled"
+  },
+  "automation": {
+    "id": "complete-three-technique-input-expansion",
+    "deletion_verified": false,
+    "tool_error": "MCP -32000: Codex app tool request failed",
+    "remaining_action": "Delete the completed follow-up through automation_update when the app tool becomes available; do not restart computation."
+  }
+}
