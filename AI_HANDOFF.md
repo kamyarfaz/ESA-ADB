@@ -1,5 +1,68 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
+**15 November 2026 — Mission 2 all-three-technique study authorized; preflight passed.**
+The user now explicitly authorizes all three techniques and status messages every
+three hours. This supersedes the earlier hold below. Nine fresh sequential runs:
+short-no-roll, masked pretraining+short-no-roll, expanded-input short-no-roll,
+each seeds42/43/44. Base inputs58,59,75,76,77,83,84,85; the frozen training-only
+ranking selected extra inputs90,86,89 for the third method. No Mission1 channel-ID
+or weight transfer. No new Mission1 ablation or MOSAD is launched by this task.
+Execution protocol: `docs/research/mission2-three-technique-protocol-2026-11-14.md`.
+Runner: `esa_thesis/mission2_study.py`, a process-local adapter to the unchanged
+context-expansion training/checkpoint engine. All old artifacts remain preserved.
+Output: `results_longrun/mission2_three_technique_20261114_v1`.
+Prepared train2000 and calibration2001Jan–Sep at18seconds, label-independent
+causal values and training-median imputation. All methods share98,228 eligible
+nominal windows (1,535 batches/epoch). Every extracted M2 raw input matches the
+prior official-archive-verified receipt. Independent preflight passed152,515
+source-value/availability/age checks and sampled exclusion-mask checks; all
+prepared file hashes match. Complete suite186 tests passed; five new boundary/
+scope/tail tests included. Assessment starts2001-10-01 and ends at common base
+record end2003-06-30; its values are not prepared until all nine selections freeze.
+Report selected-eight and system scopes, Anomaly+Rare Event primary and anomaly-only
+secondary (rare intervals neutral), annual and pooled, all seeds and failures.
+Service definition: `scripts/research/esa-mission2-study.service`; installed user
+service must be checked live before claiming training is running. Log:
+`/home/k_faz/project-backups/run-logs/mission2-study-20261114.log`.
+Automation `mission-2-three-technique-study` created ACTIVE every3hours; user
+explicitly requests periodic status even if healthy. No duplicate runner; preserve
+frozen source/settings/data/runtime, inspect resources/cause before same-checkpoint
+recovery. Independently verify calibration/inference/predictions/metrics/IDs before
+publishing results, update report/workbook/W&B, commit compact evidence and verify
+fresh-download Release artifacts. Disable service/delete follow-up after delivery.
+
+**14 November 2026, 22:01 UTC — completed-study follow-up deleted.**
+The supported `automation_update` delete call succeeded for
+`complete-three-technique-input-expansion`, returning `deleteStatus: deleted`.
+This resolves the administrative cleanup failure recorded below. Research results
+were already verified and delivered; the completed service remains disabled.
+No new training or assessment was started. The Mission 2/targeted-ablation work
+still awaits the user's follow-up confirmation, as stated in the next entry.
+
+**14 November 2026 — supervisor's Mission 1/Mission 2 comparison takes priority; outcome only.**
+The user supports a targeted 33-only/49-only/both and target-only scoring study,
+but explicitly prioritizes the quicker mission-channel investigation and wants
+its outcome before confirming further engagement. Do not launch either training
+campaign until that follow-up confirmation. The requested descriptive research
+already exists in the two 2 November reports below; reviewed it rather than
+duplicating analysis. Rechecked all 20 correspondence-study and 19 all-channel
+study output hashes against their completion manifests: no mismatches. Read the
+independent replay receipts and confirmed anonymization details against the ESA
+author paper, Supplementary 2.3. This is an evidence review and integrity recheck,
+not a new correlation computation or Mission 2 assessment.
+Findings: channel IDs do not transfer; M2 40–47 are not M1's target measurements.
+Shared anonymized subsystem/unit metadata supports analogous families, not known
+physical sensor identities or an eight-to-eight map. M2 75/76/77/83/84/85 and
+70/71/72/78/79/80 have strongly correlated levels and changes; 58/59 share levels
+but weak changes. Candidate M2 inputs remain 58/59/75/76/77/83/84/85, pending an
+approved protocol. Separately trained M2 models could be evaluated against M2
+system events, but detection performance and direct weight transfer are untested.
+Reports: `docs/research/mission-cross-channel-results-2026-11-02.md` and
+`docs/research/all-channel-correlation-results-2026-11-02.md`. Training-only
+diagnostic periods remain M1 2000–2005 and M2 2000; no later data used anew.
+The completed context-expansion service must remain disabled. Its obsolete
+follow-up has now been deleted, as recorded above.
+
 **13 November 2026 — verified results delivered; only follow-up deletion remains blocked.**
 All 18 runs completed 40 epochs. The joint freeze was written at 11:43:46 UTC,
 before assessment; all 18 assessments completed at 12:19:39 UTC. The user service

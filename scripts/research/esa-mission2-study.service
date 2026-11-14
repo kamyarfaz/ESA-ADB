@@ -1,0 +1,24 @@
+[Unit]
+Description=ESA Mission 2 three techniques and three seeds
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/k_faz/projects/ESA-ADB
+ExecStart=/bin/bash /home/k_faz/projects/ESA-ADB/scripts/research/run_mission2_study.sh
+Environment=PYTHONUNBUFFERED=1
+Environment=OMP_NUM_THREADS=2
+Environment=MKL_NUM_THREADS=2
+MemoryAccounting=true
+MemoryHigh=5G
+MemoryMax=7G
+MemorySwapMax=0
+OOMPolicy=stop
+Nice=5
+Restart=no
+TimeoutStopSec=30
+StandardOutput=append:/home/k_faz/project-backups/run-logs/mission2-study-20261114.log
+StandardError=append:/home/k_faz/project-backups/run-logs/mission2-study-20261114.log
+
+[Install]
+WantedBy=default.target

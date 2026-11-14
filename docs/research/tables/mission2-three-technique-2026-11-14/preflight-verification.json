@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "raw_source_sample_checks": 152515,
+  "splits": [
+    {
+      "split": "train",
+      "rows": 1756800,
+      "source_spots": 104368,
+      "nominal_windows": 98228,
+      "batches_per_epoch": 1535
+    },
+    {
+      "split": "calibration",
+      "rows": 1310400,
+      "source_spots": 48147
+    }
+  ],
+  "assessment_values_used": false,
+  "limitations": "Prepared file hashes all verified; raw source/mask lookup sampled with pandas independent lookup, not full replay.",
+  "verifier_sha256": "f87755b658c5b41e73df3cd773479dee08897e0e682c785c681e43e1b1023479",
+  "preparation_sha256": "f3e71c440ea69be0167f97b71952acb2430a2f4b9f883c3e910f803befee301d"
+}
