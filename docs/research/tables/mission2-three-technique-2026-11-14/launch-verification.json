@@ -1,0 +1,16 @@
+{
+  "checked_utc": "2026-11-14T23:05:26.085595+00:00",
+  "source_commit": "6ba75e7555467244e5c6c5867db7551da24af444",
+  "all_frozen_source_hashes_match": true,
+  "installed_service_hash_matches": true,
+  "service_state": "MainPID=4143424\nNRestarts=0\nActiveState=active\nSubState=running\nUnitFileState=enabled\n",
+  "checkpoint_present": true,
+  "first_run": "short_no_roll_s42",
+  "runs": 9,
+  "epochs_per_run": 40,
+  "tests_passed": 186,
+  "automation": "mission-2-three-technique-study",
+  "cadence_hours": 3,
+  "wandb_url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/m2-1114-01-s42",
+  "protocol_sha256": "9683934f0dc80cd5e0646e9f8f817a2a16a708aea71da36afb537a7ea157b9ba"
+}

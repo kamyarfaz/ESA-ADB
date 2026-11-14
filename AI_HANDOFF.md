@@ -1,6 +1,6 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
-**15 November 2026 — Mission 2 all-three-technique study authorized; preflight passed.**
+**15 November 2026 — Mission 2 all-three-technique study launched; preflight passed.**
 The user now explicitly authorizes all three techniques and status messages every
 three hours. This supersedes the earlier hold below. Nine fresh sequential runs:
 short-no-roll, masked pretraining+short-no-roll, expanded-input short-no-roll,
@@ -21,8 +21,14 @@ scope/tail tests included. Assessment starts2001-10-01 and ends at common base
 record end2003-06-30; its values are not prepared until all nine selections freeze.
 Report selected-eight and system scopes, Anomaly+Rare Event primary and anomaly-only
 secondary (rare intervals neutral), annual and pooled, all seeds and failures.
-Service definition: `scripts/research/esa-mission2-study.service`; installed user
-service must be checked live before claiming training is running. Log:
+Service definition: `scripts/research/esa-mission2-study.service`. Live launch
+verified: active/enabled, one runner PID4143424, no restarts, first run
+`short_no_roll_s42` epoch1/40 with checkpoint saved and W&B online:
+https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/m2-1114-01-s42 .
+All frozen source hashes and installed service bytes match; implementation/protocol
+commit6ba75e7 pushed. Evidence: tables/mission2-three-technique-2026-11-14/
+launch-verification.json under docs/research. Check live status on every follow-up;
+this PID/epoch is only a launch snapshot. Log:
 `/home/k_faz/project-backups/run-logs/mission2-study-20261114.log`.
 Automation `mission-2-three-technique-study` created ACTIVE every3hours; user
 explicitly requests periodic status even if healthy. No duplicate runner; preserve
