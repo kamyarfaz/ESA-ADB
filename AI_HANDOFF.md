@@ -19,9 +19,14 @@ Report: docs/research/mission2-three-technique-results-2026-11-15.md.
 All9 separate W&B evaluations published and144 downloaded metric rows verified.
 Workbook adds72 rows with separate scope columns/both definitions; both historical
 sheets' cell values/formulas/styles unchanged. Root approved workbook updated.
-Essential Release backup/fresh-download checks, Git commit and final delivery
-remain pending. Then disable esa-mission2-study.service and delete automation
-mission-2-three-technique-study. No further experiments are authorized here.
+Essential artifacts published to GitHub Release mission2-three-technique-2026-11-15.
+Fresh downloads passed SHA256 and every member check:444 campaign/provenance files
+plus55 raw-metadata/test/log support files, five archives total. Compact results,
+report and workbook pushed in commit2c85590. Release verification receipts saved
+in the table directory. Existing full external-drive copy remains preserved;
+this essential-artifact backup does not certify unrelated migration exceptions.
+Verified delivery ready; service disable and automation deletion are next.
+No further experiments are authorized here.
 
 **15 November 2026 — Mission 2 all-three-technique study launched; preflight passed.**
 The user now explicitly authorizes all three techniques and status messages every

@@ -1,0 +1,8 @@
+{
+  "verified": true,
+  "asset": "mission2-audit-support-20261115.tar.gz",
+  "sha256": "f4008f137a47de65875db4f7a9dcff675d4848667b63052578ff0ff1f606b9e3",
+  "members": 55,
+  "manifest_sha256": "fd773ce7fb7203b48bd36ed84c524061c178b9120b38f13a0e0c124120d27883",
+  "fresh_download_directory": "/home/k_faz/project-backups/mission2-study-20261114/fresh-download-20261115"
+}

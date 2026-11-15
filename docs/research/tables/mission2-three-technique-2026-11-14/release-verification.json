@@ -1,0 +1,43 @@
+{
+  "verified": true,
+  "verified_at_utc": "2026-11-15T20:07:23.147401+00:00",
+  "release_url": "https://github.com/kamyarfaz/ESA-ADB/releases/tag/mission2-three-technique-2026-11-15",
+  "fresh_download_directory": "/home/k_faz/project-backups/mission2-study-20261114/fresh-download-20261115",
+  "assets": [
+    {
+      "name": "mission2-short_no_roll-20261115.tar.gz",
+      "bytes": 184595537,
+      "sha256": "474a079a76c665a57f2cd691b468a5c733a3838058cd435056107daabc351975",
+      "members": 111,
+      "download_sha256_verified": true,
+      "all_member_hashes_verified": true
+    },
+    {
+      "name": "mission2-pretrain_finetune-20261115.tar.gz",
+      "bytes": 123106448,
+      "sha256": "a7815283cfd10386d6cf7474a96be9d16b55f98314a61798707c00f3c7e0a7fb",
+      "members": 75,
+      "download_sha256_verified": true,
+      "all_member_hashes_verified": true
+    },
+    {
+      "name": "mission2-expanded_short_no_roll-20261115.tar.gz",
+      "bytes": 184687929,
+      "sha256": "8367178a5da510bfc41828a0134305d931505e0c292f6a74d83e957be1bec8d5",
+      "members": 111,
+      "download_sha256_verified": true,
+      "all_member_hashes_verified": true
+    },
+    {
+      "name": "mission2-provenance-20261115.tar.gz",
+      "bytes": 65818447,
+      "sha256": "27ebddcfb41bcd06e130c5f738260faf0b167228da0a4e71e9c9e39cee85a9f7",
+      "members": 147,
+      "download_sha256_verified": true,
+      "all_member_hashes_verified": true
+    }
+  ],
+  "manifest_sha256": "0733de39959cffc01e5a540f5d34e6c2871553605c5b4e63221209a5788a6a1e",
+  "checksums_sha256": "27ed367883fbff3086216a10b1dcf9a1f51a3ae12b67c65e4c46ad293589905b",
+  "member_count": 444
+}
