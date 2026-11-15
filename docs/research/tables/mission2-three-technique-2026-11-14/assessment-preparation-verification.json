@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "raw_source_sample_checks": 204655,
+  "splits": [
+    {
+      "split": "assessment",
+      "rows": 3062400,
+      "source_spots": 204655
+    }
+  ],
+  "assessment_values_used": true,
+  "limitations": "Prepared file hashes all verified; raw source/mask lookup sampled with pandas independent lookup, not full replay.",
+  "verifier_sha256": "fdf124c21f0534d3ded8fdc6defaf8a7bf5525ea2ef8c80341a6365df5d6e5a2",
+  "preparation_sha256": "f3e71c440ea69be0167f97b71952acb2430a2f4b9f883c3e910f803befee301d"
+}

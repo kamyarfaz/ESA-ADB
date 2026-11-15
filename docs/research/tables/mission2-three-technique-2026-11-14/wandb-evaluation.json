@@ -1,0 +1,47 @@
+{
+  "short_no_roll_s42": {
+    "id": "m2-1114-eval-01-s42",
+    "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/m2-1114-eval-01-s42",
+    "training_id": "m2-1114-01-s42"
+  },
+  "short_no_roll_s43": {
+    "id": "m2-1114-eval-02-s43",
+    "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/m2-1114-eval-02-s43",
+    "training_id": "m2-1114-02-s43"
+  },
+  "short_no_roll_s44": {
+    "id": "m2-1114-eval-03-s44",
+    "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/m2-1114-eval-03-s44",
+    "training_id": "m2-1114-03-s44"
+  },
+  "pretrain_finetune_s42": {
+    "id": "m2-1114-eval-04-s42",
+    "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/m2-1114-eval-04-s42",
+    "training_id": "m2-1114-04-s42"
+  },
+  "pretrain_finetune_s43": {
+    "id": "m2-1114-eval-05-s43",
+    "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/m2-1114-eval-05-s43",
+    "training_id": "m2-1114-05-s43"
+  },
+  "pretrain_finetune_s44": {
+    "id": "m2-1114-eval-06-s44",
+    "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/m2-1114-eval-06-s44",
+    "training_id": "m2-1114-06-s44"
+  },
+  "expanded_short_no_roll_s42": {
+    "id": "m2-1114-eval-07-s42",
+    "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/m2-1114-eval-07-s42",
+    "training_id": "m2-1114-07-s42"
+  },
+  "expanded_short_no_roll_s43": {
+    "id": "m2-1114-eval-08-s43",
+    "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/m2-1114-eval-08-s43",
+    "training_id": "m2-1114-08-s43"
+  },
+  "expanded_short_no_roll_s44": {
+    "id": "m2-1114-eval-09-s44",
+    "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/m2-1114-eval-09-s44",
+    "training_id": "m2-1114-09-s44"
+  }
+}

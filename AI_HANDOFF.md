@@ -1,5 +1,28 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
+**15 November 2026 — Mission 2 computation and independent verification complete.**
+All9 runs completed40 epochs and assessment, zero service restarts or failed runs.
+Joint selections froze2026-11-15T17:39:20.283971Z before assessment preparation.
+Service is inactive/success, still enabled pending verified delivery. Do not train
+again or alter selections. Independent audit passed322 completion hashes, raw/
+source/runtime checks,60 grids/5,940 candidates,564 exact inference spots across
+69 checkpoints/passes,144 metric rows and7,119 event-ID records. Independent raw
+assessment lookup passed204,655 sampled value/availability/age checks. Full suite
+189 tests passed. Verification remains sampled neural/source replay, not full
+second inference. Audit files: docs/research/tables/mission2-three-technique-2026-11-14/.
+Primary pooled mean F0.5 (selected eight / whole system): short-no-roll
+0.413341/0.137489; masked0.367278/0.218775; expanded0.481984/0.189472.
+Recall is low; expanded inputs improve selected F0.5 seeds42/43 but worsen44.
+No robust target achievement or consistent cross-seed improvement. Assess period
+2001-10-01 through2003-06-30, not Mission1's2007–2013; all outcomes retained.
+Report: docs/research/mission2-three-technique-results-2026-11-15.md.
+All9 separate W&B evaluations published and144 downloaded metric rows verified.
+Workbook adds72 rows with separate scope columns/both definitions; both historical
+sheets' cell values/formulas/styles unchanged. Root approved workbook updated.
+Essential Release backup/fresh-download checks, Git commit and final delivery
+remain pending. Then disable esa-mission2-study.service and delete automation
+mission-2-three-technique-study. No further experiments are authorized here.
+
 **15 November 2026 — Mission 2 all-three-technique study launched; preflight passed.**
 The user now explicitly authorizes all three techniques and status messages every
 three hours. This supersedes the earlier hold below. Nine fresh sequential runs:
