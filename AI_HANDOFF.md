@@ -3,7 +3,7 @@
 **15 November 2026 — Mission 2 computation and independent verification complete.**
 All9 runs completed40 epochs and assessment, zero service restarts or failed runs.
 Joint selections froze2026-11-15T17:39:20.283971Z before assessment preparation.
-Service is inactive/success, still enabled pending verified delivery. Do not train
+Service is inactive/success and disabled after verified delivery. Do not train
 again or alter selections. Independent audit passed322 completion hashes, raw/
 source/runtime checks,60 grids/5,940 candidates,564 exact inference spots across
 69 checkpoints/passes,144 metric rows and7,119 event-ID records. Independent raw
@@ -25,7 +25,9 @@ plus55 raw-metadata/test/log support files, five archives total. Compact results
 report and workbook pushed in commit2c85590. Release verification receipts saved
 in the table directory. Existing full external-drive copy remains preserved;
 this essential-artifact backup does not certify unrelated migration exceptions.
-Verified delivery ready; service disable and automation deletion are next.
+Verified report/results/workbook/backup delivered in the chat. Service confirmed
+inactive/disabled; automation mission-2-three-technique-study deletion confirmed
+by the supported app tool (deleteStatus: deleted). Completion cleanup finished.
 No further experiments are authorized here.
 
 **15 November 2026 — Mission 2 all-three-technique study launched; preflight passed.**
