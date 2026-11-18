@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "synthetic_only": true,
+  "checks": [
+    {
+      "channels": 26,
+      "masked": false,
+      "batch": 32,
+      "peak_bytes": 2194147840,
+      "loss": 10.033646583557129
+    },
+    {
+      "channels": 13,
+      "masked": true,
+      "batch": 32,
+      "peak_bytes": 604032512,
+      "loss": 1.3055851459503174
+    }
+  ],
+  "script_sha256": "cee431b1da34a51e2144211fdddd7f865582800c4aca6dd65a98c4c6733dc067",
+  "gpu": "NVIDIA GeForce RTX 2080 Ti"
+}

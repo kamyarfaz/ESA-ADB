@@ -1,0 +1,17 @@
+{
+  "completed": "2026-11-18T07:40:09.751796+00:00",
+  "research_complete": true,
+  "files": {
+    "compatible_pair_costs.csv": "2432340a966a0755771d7f6c57ec62e49902055e70f3b68114e34993c1c50f4c",
+    "mapping.json": "7b00390c9cd29c9f56ad01c60f9f5563141f3a78f86b3e2d2a86af4b4228eae0",
+    "training_event_coverage.json": "9729e284f9123768a0b7e02678067ee25a7ba591ccb70ed4a6022585fa3b4397",
+    "mapping_stability.csv": "3700bd80e4993e0251644259bc30771a9549c846c8c63e80de60be0d85d811b6",
+    "training_event_coverage.csv": "6cac86c8af92541a6d9fdf8deb812b332fa3930a3db9fe5e66e9f8b475eae382",
+    "integrity.json": "7036f1e677d23f0cfbedeeb43675ceaa40dcb52e9695088bf076d976d772568d",
+    "mapped_changes_relationships.csv": "eac559a0b41bb72972ebcc674596b98745a83da5e2f3fdea68efee7eaa886d89",
+    "channel_metadata.csv": "4133370962a1d84374546908b7fba068dfdaab33e614b840b1611a70381151ba",
+    "quarter_profiles.csv": "5208105fb4e054b6fe7151e4405c5738dd718be1804936159a1db13aa21ab173",
+    "mapped_level_relationships.csv": "16603a3071f73f00b53a3e3fcde61b55f15d97255bc08d29502900f3449c4c80",
+    "frozen.json": "e33ae9f06559ede7dd0a15851891452489af7b92ef31b525e612034cbebd0fe9"
+  }
+}

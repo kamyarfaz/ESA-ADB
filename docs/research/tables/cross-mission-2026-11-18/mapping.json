@@ -1,0 +1,191 @@
+{
+  "primary": {
+    "channel_40": "channel_59",
+    "channel_41": "channel_76",
+    "channel_42": "channel_81",
+    "channel_43": "channel_77",
+    "channel_44": "channel_85",
+    "channel_45": "channel_73",
+    "channel_46": "channel_84",
+    "channel_47": "channel_86",
+    "channel_33": "channel_87",
+    "channel_49": "channel_90",
+    "channel_14": "channel_58",
+    "channel_21": "channel_89",
+    "channel_29": "channel_91"
+  },
+  "sensitivity": [
+    {
+      "omitted_season": 0,
+      "mapping": {
+        "channel_40": "channel_59",
+        "channel_41": "channel_76",
+        "channel_42": "channel_81",
+        "channel_43": "channel_77",
+        "channel_44": "channel_85",
+        "channel_45": "channel_73",
+        "channel_46": "channel_84",
+        "channel_47": "channel_86",
+        "channel_33": "channel_87",
+        "channel_49": "channel_90",
+        "channel_14": "channel_58",
+        "channel_21": "channel_89",
+        "channel_29": "channel_91"
+      },
+      "objective": 0.16289154206248685,
+      "cost_components": [
+        0.20731603001690382,
+        0.20197175785903942,
+        0.07938683831151733
+      ],
+      "start_objectives": [
+        0.16289154206248685,
+        0.16289154206248685,
+        0.16289154206248688,
+        0.16289154206248688,
+        0.16289154206248688,
+        0.16294178782084748,
+        0.1635278473878546,
+        0.16357809314621521
+      ]
+    },
+    {
+      "omitted_season": 1,
+      "mapping": {
+        "channel_40": "channel_59",
+        "channel_41": "channel_76",
+        "channel_42": "channel_73",
+        "channel_43": "channel_83",
+        "channel_44": "channel_85",
+        "channel_45": "channel_81",
+        "channel_46": "channel_84",
+        "channel_47": "channel_87",
+        "channel_33": "channel_89",
+        "channel_49": "channel_58",
+        "channel_14": "channel_86",
+        "channel_21": "channel_91",
+        "channel_29": "channel_90"
+      },
+      "objective": 0.16812814437799287,
+      "cost_components": [
+        0.2331835277906624,
+        0.19536953475266725,
+        0.07583137059064897
+      ],
+      "start_objectives": [
+        0.16812814437799287,
+        0.16813128601823754,
+        0.16814043916394505,
+        0.16814115630779294,
+        0.16816291743509593,
+        0.16817056758044546,
+        0.16877770726029337,
+        0.16879000204624553
+      ]
+    },
+    {
+      "omitted_season": 2,
+      "mapping": {
+        "channel_40": "channel_90",
+        "channel_41": "channel_77",
+        "channel_42": "channel_73",
+        "channel_43": "channel_70",
+        "channel_44": "channel_84",
+        "channel_45": "channel_81",
+        "channel_46": "channel_85",
+        "channel_47": "channel_86",
+        "channel_33": "channel_59",
+        "channel_49": "channel_91",
+        "channel_14": "channel_87",
+        "channel_21": "channel_89",
+        "channel_29": "channel_58"
+      },
+      "objective": 0.15839371309556752,
+      "cost_components": [
+        0.19085202622386507,
+        0.20781662425355973,
+        0.0765124888092777
+      ],
+      "start_objectives": [
+        0.15839371309556752,
+        0.15839371309556752,
+        0.15839371309556752,
+        0.15839371309556752,
+        0.15839371309556752,
+        0.15843843188258752,
+        0.15881665261916308,
+        0.15888431845923146
+      ]
+    },
+    {
+      "omitted_season": 3,
+      "mapping": {
+        "channel_40": "channel_59",
+        "channel_41": "channel_76",
+        "channel_42": "channel_81",
+        "channel_43": "channel_83",
+        "channel_44": "channel_85",
+        "channel_45": "channel_73",
+        "channel_46": "channel_70",
+        "channel_47": "channel_89",
+        "channel_33": "channel_86",
+        "channel_49": "channel_90",
+        "channel_14": "channel_58",
+        "channel_21": "channel_87",
+        "channel_29": "channel_91"
+      },
+      "objective": 0.16789353008396604,
+      "cost_components": [
+        0.21344718411179922,
+        0.20767720737869944,
+        0.08255619876139952
+      ],
+      "start_objectives": [
+        0.16789353008396604,
+        0.16789389662207763,
+        0.16792775957596337,
+        0.16792812632749843,
+        0.1679319131044609,
+        0.1679477568013954,
+        0.16829002392282896,
+        0.16833269748382293
+      ]
+    },
+    {
+      "omitted_season": 4,
+      "mapping": {
+        "channel_40": "channel_86",
+        "channel_41": "channel_77",
+        "channel_42": "channel_73",
+        "channel_43": "channel_83",
+        "channel_44": "channel_85",
+        "channel_45": "channel_81",
+        "channel_46": "channel_84",
+        "channel_47": "channel_59",
+        "channel_33": "channel_90",
+        "channel_49": "channel_91",
+        "channel_14": "channel_58",
+        "channel_21": "channel_89",
+        "channel_29": "channel_87"
+      },
+      "objective": 0.16158496901134714,
+      "cost_components": [
+        0.20449330042900812,
+        0.1974718682541815,
+        0.08278973835085178
+      ],
+      "start_objectives": [
+        0.16158496901134714,
+        0.16158496901134714,
+        0.16158496901134714,
+        0.16158496901134714,
+        0.16158496901134714,
+        0.16158496901134714,
+        0.16233667446373032,
+        0.16233667446373032
+      ]
+    }
+  ],
+  "physical_equivalence_established": false,
+  "selection_used_assessment": false
+}

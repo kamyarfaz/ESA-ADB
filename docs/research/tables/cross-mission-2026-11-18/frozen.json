@@ -1,0 +1,23 @@
+{
+  "started": "2026-11-18T07:39:34.950311+00:00",
+  "script_sha256": "d7755271172e7b118c8766394ee89f4118a8a268c5b3f6dc4ba8f8fa2ae72748",
+  "protocol_sha256": "50badb3da17120c4343e03bf213abf3d19662211b88e09874bfdb189dbef075b",
+  "integrity_sha256": "9c7ddf8bdcc0aa6b1c5978d35948564dffad53d02f504fbf13528ec0f0f7bf14",
+  "source_channels": [
+    "channel_40",
+    "channel_41",
+    "channel_42",
+    "channel_43",
+    "channel_44",
+    "channel_45",
+    "channel_46",
+    "channel_47",
+    "channel_33",
+    "channel_49",
+    "channel_14",
+    "channel_21",
+    "channel_29"
+  ],
+  "assessment_used": false,
+  "calibration_used": false
+}

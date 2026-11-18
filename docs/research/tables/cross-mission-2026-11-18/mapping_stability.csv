@@ -1,0 +1,14 @@
+source,target,same_in_leave_season_out,sensitivity_runs
+channel_40,channel_59,2,4
+channel_41,channel_76,2,4
+channel_42,channel_81,1,4
+channel_43,channel_77,0,4
+channel_44,channel_85,3,4
+channel_45,channel_73,1,4
+channel_46,channel_84,2,4
+channel_47,channel_86,1,4
+channel_33,channel_87,0,4
+channel_49,channel_90,1,4
+channel_14,channel_58,2,4
+channel_21,channel_89,2,4
+channel_29,channel_91,1,4

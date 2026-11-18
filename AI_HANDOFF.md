@@ -1,5 +1,67 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
+**18 November 2026 — research verified; new sequential service preparing data.**
+New report: docs/research/cross-mission-channel-research-2026-11-18.md.
+Execution protocol: docs/research/cross-mission-whole-system-protocol-2026-11-18.md.
+All183 raw fingerprints and saved training caches verified; independent replay
+passed5,600 profile values, five mapping costs/constraints and24 coverage records.
+The old Mission2 base8/expanded11 cover training annotations for14/198 events and
+1/21 anomalies. Matching only Mission1 families covers19/198. A13-input behavioral
+map was fixed for existing-weight transfer, but none of its associations survives
+all4 leave-season-out checks; no physical sensor equivalence is established.
+Fresh panels use nominal medoids from all13 target groups in each mission, and
+one companion per nonsingleton group for expanded inputs (25M1/26M2). These cover
+M2 training annotations192/198 and198/198 respectively; these are coverage, NOT
+detection scores. M1 new coverage65/95 and73/95; retain all whole-system IDs.
+Source module esa_thesis/cross_mission_study.py leaves old modules unchanged.
+Plan:18 sequential40-epoch fresh runs, batch32, M2 first then M1, three methods
+and seeds42–44, whole-system2006(M1)/Jan–Sep2001(M2) calibration. Same assessment
+periods as prior mission studies. Jointly freeze all18 before any new assessment.
+Then evaluate9 prior M1 context-arm models on M2 in2 predefined scaling conditions,
+same source weights/rules, no target threshold tuning. Expected720 metric rows.
+197 tests passed15.394s; synthetic batch32 GPU preflight passed (peak2.19GB).
+Service esa-cross-mission-study.service installed/enabled and observed active,
+one runner PID285163, zero restarts. This is a launch snapshot; inspect live state.
+It is preparing raw causal data, then automatically runs an independent pandas
+source/mask/scaler preflight before neural training. No new assessment scores yet.
+Source/runtime/settings are frozen in preparation_frozen/protocol.json; do not
+edit frozen modules, protocols, tests or listed scripts. New verification/report
+scripts can be added outside that frozen dependency inventory. Output and log:
+results_longrun/cross_mission_transfer_20261118_v1;
+/home/k_faz/project-backups/run-logs/cross-mission-study-20261118.log.
+Initial research coverage failed on UTC-naive comparison; repaired before service
+freeze, with identical mapping outputs, preserving failed attempt/source. No
+training failure. Automation cross-mission-channel-and-transfer-study updated
+with concrete service/protocol and explicit3h healthy progress. Future work:
+monitor through computation, independently audit all selections/inference/predictions/
+metrics/IDs, publish W&B/report/additive workbook and verified Release backup,
+deliver actual results, then disable service/delete follow-up. No best-seed or
+assessment-driven tuning, new experiments, MOSAD or historical artifact changes.
+
+**18 November 2026 — new cross-mission research/training authorized.**
+The user is dissatisfied with the Mission2 outcome and explicitly requests deeper
+research into channel semantics/behavior, fresh training and whole-system
+assessment in both missions, and evaluation of the existing Mission1 40–47 plus
+extra-input models on Mission2. They confirmed whole-system events with separate
+training/calibration/assessment periods (not training on all years). This
+supersedes the completed-study hold below. Preserve every historical artifact.
+Research protocol: docs/research/cross-mission-transfer-protocol-2026-11-18.md.
+New output: results_longrun/cross_mission_transfer_20261118_v1.
+Research has begun; no new neural training or transfer inference launched yet.
+First recheck official-v1 raw fingerprints and training-only caches, then quantify
+metadata-compatible one-to-one behavior/relationship mapping and training event
+coverage. Exact physical temperature/power identities are anonymized; do not
+invent them. The public author paper confirms shared anonymous subsystem/unit
+names, independently scaled mission clocks and group-normalized values.
+The source transfer test must distinguish unchanged weights/scalers/rules from
+target-training normalization; no assessment-based mapping or seed selection.
+Concrete training settings/panels will be frozen after research and preflight.
+Automation cross-mission-channel-and-transfer-study created ACTIVE via supported
+app tool, every3hours. User explicitly requests healthy progress too. Do not
+restart either completed service. Disable the new completed service/delete its
+follow-up only after independently verified delivery. Current research log:
+/home/k_faz/project-backups/run-logs/cross-mission-channel-audit-20261118.log.
+
 **15 November 2026 — Mission 2 computation and independent verification complete.**
 All9 runs completed40 epochs and assessment, zero service restarts or failed runs.
 Joint selections froze2026-11-15T17:39:20.283971Z before assessment preparation.

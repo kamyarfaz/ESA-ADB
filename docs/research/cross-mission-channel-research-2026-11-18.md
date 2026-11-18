@@ -1,0 +1,153 @@
+# Mission1/Mission2 channel research and new whole-system study
+
+The old Mission2 experiment had a major input-coverage limitation. Its8-channel
+base and11-channel expansion contained annotations for only14 of198 training
+events, including1 of21 anomalies. Even all22 target channels in the two families
+shared with the historical Mission1 inputs cover only19 of198 training events.
+These findings support broader mission-specific inputs for whole-system monitoring.
+They do not prove that channel coverage is the only cause of poor detection.
+
+## What we can establish about physical meaning
+
+The [dataset authors](https://arxiv.org/pdf/2406.17826), Supplementary2.3–2.4,
+explicitly anonymize channel names, subsystems and physical units. Anonymous
+subsystem/unit names are consistent across missions, but channel numbers are not
+sensor identities. Each mission's time axis is independently shifted and scaled;
+values are normalized within channel groups. Therefore, the public release does
+not establish which of our channels measure temperature, electrical power or
+another physical quantity. We cannot responsibly recover those names from signal
+correlation alone. Anonymous groups remain useful for statistical modeling.
+
+We retain the official [version1 dataset](https://zenodo.org/records/12528696)
+used by the historical experiments. This investigation reverified all183 extracted
+raw-channel/metadata hashes against the prior official-archive-verified receipt,
+and both missions' saved training grids/matrices. This is scoped data integrity,
+not a new certification of the full historical migration copy.
+
+## Training-only investigation
+
+We reviewed all176 channels' metadata/type/correlation inventory. Mission1 has58
+target channels and Mission2 has47; each has13 target-channel groups. All targets
+are numeric and nonconstant in the training inventory. Non-target counters,
+categorical values and telecommands were not blindly interpreted as continuous
+measurements. Nineteen Mission2 targets have no physical-unit entry.
+
+All new channel choices use Mission1 2000–2005 and Mission2 2000 only. The existing
+five-minute diagnostic grids use causal observations, at most600s old, with
+per-channel nominal masks. Channel comparisons use quarterly standardized
+quantiles, autocorrelations, change statistics, and within-mission signed level/
+change relationships. A high correlation of levels alone is insufficient evidence
+that channels share dynamics or anomaly relevance.
+
+For the historical Mission1 inputs, metadata limits plausible Mission2 matches:
+
+| Mission1 inputs | Anonymous family | Eligible Mission2 targets |
+|---|---|---|
+|40,47,33,49,14,21,29|subsystem6 / unit3|58,59,86,87,88,89,90,91|
+|41–46|subsystem5 / unit4|70,71,72,73,75,76,77,78,79,80,81,83,84,85|
+
+A deterministic one-to-one assignment accounts for both individual behavior and
+channel relationships. It never duplicates a target channel or aligns anonymous
+dates across missions. Its primary mapping is:
+
+| Mission1 input | Experimental Mission2 input | Same match in four leave-season-out checks |
+|---:|---:|---:|
+|40|59|2/4|
+|41|76|2/4|
+|42|81|1/4|
+|43|77|0/4|
+|44|85|3/4|
+|45|73|1/4|
+|46|84|2/4|
+|47|86|1/4|
+|33|87|0/4|
+|49|90|1/4|
+|14|58|2/4|
+|21|89|2/4|
+|29|91|1/4|
+
+**No channel match survives all four sensitivity checks.** Across the78 mapped
+pairs, the mean absolute difference in quarterly-median level correlation is
+0.403944; for change correlation it is0.158774. These are discrepancies, not
+percentage similarity or probabilities. Matching group metadata and marginal
+behavior has not recovered a stable physical or statistical equivalence.
+The mapping is retained as a deliberately limited test of existing weights, not
+as the input design for newly trained whole-system models.
+
+![Training relationship comparison](figures/cross-mission-training-relationships-2026-11-18.png)
+
+## Broader panels for fresh training
+
+Each mission's base panel selects one nominal-training medoid from every target
+group. The expanded technique adds the most closely related change-behavior
+companion from each nonsingleton group. No event-count ranking or assessment
+score selected these channels. The expanded panels have25 and26 inputs.
+
+| Mission | Base13 inputs | Additional expanded inputs |
+|---|---|---|
+|1|13,29,34,32,22,41,47,50,59,62,64,66,72|12,30,35,33,23,44,49,51,58,63,65,75|
+|2|27,22,19,15,12,10,73,82,88,72,58,97,83|26,21,20,16,14,9,81,74,91,70,59,96,85|
+
+The following counts are **training annotations represented on input channels,
+not model detections or assessment results**:
+
+| Mission / panel | Input count | Events represented (Anomaly+Rare) | Anomalies represented |
+|---|---:|---:|---:|
+|M1 historical40–47|8|46/95|21/55|
+|M1 historical expanded+33/49|13|64/95|39/55|
+|M1 new group representatives|13|65/95|39/55|
+|M1 new representatives+companions|25|73/95|44/55|
+|M2 historical base|8|14/198|1/21|
+|M2 historical expanded|11|14/198|1/21|
+|M2 new group representatives|13|192/198|16/21|
+|M2 new representatives+companions|26|198/198|21/21|
+
+This particularly improves Mission2's observed training coverage. It cannot
+guarantee higher F0.5 or recall on future years. Mission1's panels still omit
+direct annotations for some training events. All whole-system assessment events
+remain in the denominator, including events outside the model's input channels.
+These membership counts are not upper bounds on indirect detection.
+
+## Authorized experiments and verification
+
+The [execution protocol](cross-mission-whole-system-protocol-2026-11-18.md) fixes18
+fresh runs: three techniques and three seeds per mission, trained separately.
+Mission2 runs first. Forty epochs, batch32, same Transformer architecture and
+learning settings, with raw causal preparation and training-only scaling. Whole-
+system calibration replaces the old selected-eight calibration objective.
+All18 choices freeze jointly before any new assessment preparation.
+
+| Mission | Training | Calibration | Assessment |
+|---|---|---|---|
+|1|2000–2005|2006|2007–2013|
+|2|2000|Jan–Sep2001|Oct2001–Jun2003|
+
+Separately, all nine existing Mission1 context-arm models will be evaluated on
+Mission2 under the fixed mapping, preserving weights and source decision rules.
+Both unchanged source scaling and target-training normalization are predefined;
+the latter is explicit target-data adaptation. Neither condition tunes on target
+calibration/assessment or selects the best source seed. The source model's30s
+cadence is retained; unknown physical time scaling remains a limitation.
+
+Before launch,197 tests passed. Independent research replay checked5,600 profile
+values, all five mapping objectives/constraints and24 coverage records. Synthetic
+GPU preflight passed at batch32, peaking at2,194,147,840 allocated bytes for the
+26-input short-no-roll model. The initial research script failed in annotation
+coverage because of UTC-aware/naive timestamp comparison. That attempt and its
+source are preserved; the fix changed the time comparison only, and all mapping
+outputs matched exactly on rerun. No training or assessment occurred in that
+failed attempt. Raw preparation is independently checked before neural training.
+
+No new detection scores are reported here. Final reporting requires calibration
+grid/selection replay, checkpoint inference spots, prediction/metric/ID verification,
+all seeds and failures, and annual/pooled system and base scopes for both event
+definitions. Historical comparisons are descriptive: input sets, causal preparation,
+batch size, selection objective and score sources have changed. The assessment
+benchmarks were already viewed, only three neural seeds are used, and additional
+compute is required. No robust thesis-target or independent-generalization claim
+is justified by this investigation.
+
+Reproducible compact evidence is in
+[tables/cross-mission-2026-11-18](tables/cross-mission-2026-11-18).
+The sequential service handles computation; the three-hour follow-up continues
+through verification and delivery. Completion cleanup has not occurred.

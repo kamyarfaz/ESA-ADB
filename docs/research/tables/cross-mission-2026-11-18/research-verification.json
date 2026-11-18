@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "profile_values_replayed": 5600,
+  "mapping_costs": [
+    {
+      "omitted_season": 0,
+      "objective": 0.16289154206248688
+    },
+    {
+      "omitted_season": 1,
+      "objective": 0.16812814437799287
+    },
+    {
+      "omitted_season": 2,
+      "objective": 0.15839371309556752
+    },
+    {
+      "omitted_season": 3,
+      "objective": 0.16789353008396604
+    },
+    {
+      "omitted_season": 4,
+      "objective": 0.16158496901134714
+    }
+  ],
+  "coverage_rows_checked": 24,
+  "first_attempt_failure": "UTC-aware/naive annotation comparison; retained. Repaired bounds only; all mapping outputs identical.",
+  "research_sha256": "f5559baa6b0022f318db5f3b573f956381c33f81c8928c5e4c14492079f3a26a",
+  "verifier_sha256": "6113a8b54815a0b3945cfabe6ac1190d751c858f40f42fb1b982c01fc8248561",
+  "limitations": "Profiles replay verified training caches; no claim of recovered physical sensor identities or globally optimal assignment."
+}
