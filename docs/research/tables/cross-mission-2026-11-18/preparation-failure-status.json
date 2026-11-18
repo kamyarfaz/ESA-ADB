@@ -1,0 +1,19 @@
+{
+  "checked_utc": "2026-11-18T13:37:15.670762+00:00",
+  "service": {
+    "MainPID": "0",
+    "Result": "exit-code",
+    "NRestarts": "0",
+    "ExecMainExitTimestamp": "Wed 2026-11-18 08:55:43 CET",
+    "ExecMainStatus": "1",
+    "ActiveState": "failed",
+    "SubState": "failed"
+  },
+  "completed_runs": 0,
+  "total_runs": 18,
+  "stage": "preparation_failed",
+  "failure": "Mission1 has zero complete nominal windows under frozen600-second age limit",
+  "amendment_approval": "pending",
+  "restart_attempted": false,
+  "assessment_results_exist": false
+}

@@ -1,0 +1,46 @@
+{
+  "created_utc": "2026-11-18T13:34:23.187954+00:00",
+  "diagnostic_only": true,
+  "protocol_change_approved": false,
+  "training_period": [
+    "2000-01-01",
+    "2006-01-01"
+  ],
+  "assessment_used": false,
+  "training_or_inference_started": false,
+  "method": "Full pandas causal lookup with finite-value checks for both slow channels; all other availability unchanged; independently reconstruct all training exclusions and window counts.",
+  "original_nominal_rows": 3743123,
+  "original_nominal_windows": 0,
+  "proposed_nominal_rows": 5614694,
+  "proposed_nominal_windows": 349383,
+  "channels": [
+    {
+      "channel": "channel_62",
+      "raw_sha256": "bb54ea881eb9c041efb00e7089e0563061b5fcc01964e260b2c4236a86367ac0",
+      "median_gap_seconds": 900.0,
+      "p99_gap_seconds": 900.0,
+      "original_hold_seconds": 600,
+      "proposed_hold_seconds": 900,
+      "original_availability": 0.6648690946877535,
+      "proposed_availability": 0.9972911280920519,
+      "original_complete_windows": 0,
+      "proposed_complete_windows": 393134
+    },
+    {
+      "channel": "channel_63",
+      "raw_sha256": "043a55f885a75e4a983be55d86ba1fc46a09a1a8722850c7f71f2e9b0337a456",
+      "median_gap_seconds": 900.0,
+      "p99_gap_seconds": 900.0,
+      "original_hold_seconds": 600,
+      "proposed_hold_seconds": 900,
+      "original_availability": 0.6648690946877535,
+      "proposed_availability": 0.9972911280920519,
+      "original_complete_windows": 0,
+      "proposed_complete_windows": 393134
+    }
+  ],
+  "script_sha256": "24ac59d270c1b9cd6c4fd158977db7f12c77aa20bbaff5f4f6925401f51c7934",
+  "frozen_protocol_sha256": "c932a0b1fd8b662ad2bc4949927fc4d302c1dfb39379c10c2c4deee2ec37fa49",
+  "prepared_train_receipt_sha256": "63cbefc3e9cacacc34e13f537a19ed17a84a52d16e9369fe2ad580719f631819",
+  "limitations": "Availability feasibility only: no learning, score comparison, or evidence of physically valid interpolation. Longer hold is a protocol change requiring authorization."
+}

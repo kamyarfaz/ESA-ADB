@@ -1,5 +1,10 @@
 # Mission1/Mission2 channel research and new whole-system study
 
+**Status,18 November2026:** preparation failed before training;0/18 fresh runs
+started and no new assessment results exist. The failure and proposed remedy are
+documented below. The completed channel research remains valid as descriptive
+training-only evidence.
+
 The old Mission2 experiment had a major input-coverage limitation. Its8-channel
 base and11-channel expansion contained annotations for only14 of198 training
 events, including1 of21 anomalies. Even all22 target channels in the two families
@@ -147,7 +152,35 @@ benchmarks were already viewed, only three neural seeds are used, and additional
 compute is required. No robust thesis-target or independent-generalization claim
 is justified by this investigation.
 
+## Preparation failure and pending decision
+
+The service stopped at07:55:43 UTC on18 November with `No nominal training
+windows` during independent Mission1 preflight. Mission2's training/calibration
+source checks passed. The gate prevented all neural training; zero seeds failed
+during learning because none started. The failure is in the preparation design:
+Mission1 channels62/63 normally update every900s, while the frozen age limit is
+600s. Each has zero complete256-sample windows. Enough isolated nominal rows do
+not imply that the contiguous windows required by the model exist.
+
+A training-only diagnostic independently reproduced the saved training mask and
+used full pandas source lookup, including finite-value checks, for both slow
+channels. Accepting readings for900s on these two inputs only produces349,383
+nominal windows. This establishes feasibility, not detection quality or physical
+validity of held measurements. All other input availability stays unchanged.
+
+The [concrete amendment proposal](cross-mission-cadence-amendment-proposal-2026-11-18.md)
+preserves v1 and requires explicit authorization for a separate version before
+implementation. The active instruction prohibits changing frozen settings to
+bypass failure. The service remains stopped while that decision is pending;
+neither a restart nor a new experiment has been launched.
+
+The13:36 UTC integrity recheck passed131 frozen source files, all183 raw files,
+all five prepared split receipts and arrays, source/runtime/settings/selection,
+and the installed service definition. The service has zero restarts and no live
+runner. Available RAM, GPU memory and disk meet the frozen launch requirements;
+the cause is the availability/window policy, not resource exhaustion.
+
 Reproducible compact evidence is in
 [tables/cross-mission-2026-11-18](tables/cross-mission-2026-11-18).
-The sequential service handles computation; the three-hour follow-up continues
-through verification and delivery. Completion cleanup has not occurred.
+The three-hour follow-up continues with the stopped state and pending decision.
+Completion cleanup has not occurred.

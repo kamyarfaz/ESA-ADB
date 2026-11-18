@@ -1,5 +1,43 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
+**18 November 2026, 13:30 UTC follow-up — preparation failed; 0/18 runs started.**
+The new service is failed/inactive (MainPID0, exit1, zero restarts), having stopped
+at07:55:43 UTC in independent Mission1 preparation verification with
+`No nominal training windows`. Mission2 training and calibration source preflight
+passed, but the all-mission gate prevented neural training. No new checkpoints,
+calibration selections or assessment predictions exist. This supersedes the
+launch snapshot below. The service has NOT been restarted or completed.
+
+Cause confirmed from Mission1 training2000–2005: channels62/63 both update at a
+median and99th-percentile interval900s. The frozen600s age limit leaves each with
+zero complete256-row windows. There are3,743,123 complete nominal individual
+rows, but no usable contiguous windows. This is a preparation-design failure,
+not a failed neural seed or GPU/RAM exhaustion. Current resources were sufficient:
+10GiB available RAM,698GiB disk free,10,127MiB GPU free, no GPU compute process.
+
+Read docs/research/cross-mission-cadence-amendment-proposal-2026-11-18.md.
+A full finite-value pandas training-only diagnostic confirms that900s hold for
+these two inputs only would give349,383 nominal windows. This is an unlaunched
+feasibility check, not detection performance. An earlier2700s age-only diagnostic
+is preserved but is not the recommended rule. Existing v1 files remain frozen.
+
+An explicit approval question is pending: allow a separately versioned protocol
+with900s forM1channels62/63 and600s for every other input, preserving the18-run
+design and transfer map, or keep the study stopped under the frozen rule. The
+current heartbeat explicitly forbids changing frozen settings to bypass failure;
+do not implement or launch a revised protocol without the user's answer. Elapsed
+time is not approval. Do not rerun the unchanged v1, whose failure is deterministic.
+Keep the three-hour status follow-up active and report the honest stopped state.
+After approval, preserve v1, implement/test/refreeze the revision with one worker,
+and complete the original verification/publication/delivery scope. No result or
+completion cleanup has occurred. Compact diagnostic evidence is in the current
+cross-mission table directory. The13:36 UTC integrity recheck passed131 frozen
+source files, all183 raw files and all5 prepared split receipts/arrays, along
+with settings/runtime/selection and installed service bytes. Receipt:
+tables/cross-mission-2026-11-18/failure-integrity-verification.json under
+docs/research. Automation was updated through the supported app tool to preserve
+the pending-approval constraint and explicit3h status requirement.
+
 **18 November 2026 — research verified; new sequential service preparing data.**
 New report: docs/research/cross-mission-channel-research-2026-11-18.md.
 Execution protocol: docs/research/cross-mission-whole-system-protocol-2026-11-18.md.

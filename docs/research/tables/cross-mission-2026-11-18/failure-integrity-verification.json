@@ -1,0 +1,17 @@
+{
+  "checked_utc": "2026-11-18T13:36:20.750061+00:00",
+  "passed": true,
+  "source_files": 131,
+  "raw_files": 183,
+  "prepared_splits": 5,
+  "runtime_and_settings_unchanged": true,
+  "installed_service_matches": true,
+  "completed_runs": 0,
+  "expected_runs": 18,
+  "selected_checkpoints": 0,
+  "assessment_arrays": 0,
+  "protocol_sha256": "c932a0b1fd8b662ad2bc4949927fc4d302c1dfb39379c10c2c4deee2ec37fa49",
+  "preparation_sha256": "f84fa44d74947d0e2ab496119075c25d6210c1163999a7a35398fea6d2d25647",
+  "failure": "Independent preflight: No nominal training windows for Mission1",
+  "recovery_attempted": false
+}
