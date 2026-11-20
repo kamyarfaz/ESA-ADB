@@ -1,5 +1,19 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
+**20 November 2026,17:44 CET — second masked-method run complete;5/18.**
+Completed: all three Mission2 short-no-roll repeats and masked-pretraining plus
+fine-tuning seeds42/43. All five trained-artifact receipts pass SHA256 verification.
+Masked-method seed44 is fine-tuning at epoch35/40 batch2600/3070, after20 masked
+epochs. Same single GPU worker PID3387197, zero restarts and no observed v2 errors.
+All133 frozen sources, settings/package versions, input selection and preparation
+receipt hashes match. Host18GiB available, GPU9,339MiB free, disk684GiB free.
+No joint selection freeze or assessment arrays/results. Next are the three
+Mission2 expanded-input runs, then nine Mission1 runs. Continue the same service;
+independent calibration/inference/metric replay remains pending. Routine check
+did not repeat raw/prepared array hashes. Snapshot:
+docs/research/tables/cross-mission-2026-11-20-v2/monitoring-20261120T1641Z.json.
+No service intervention or completion cleanup.
+
 **20 November 2026,14:44 CET — first masked-method run complete;4/18.**
 Completed: all three Mission2 short-no-roll repeats and masked-pretraining plus
 fine-tuning seed42. All four trained-artifact receipts pass SHA256 verification.
