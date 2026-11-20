@@ -1,9 +1,12 @@
 # Mission1/Mission2 channel research and new whole-system study
 
-**Status,18 November2026:** preparation failed before training;0/18 fresh runs
-started and no new assessment results exist. The failure and proposed remedy are
-documented below. The completed channel research remains valid as descriptive
-training-only evidence.
+**Status,20 November2026,01:44 UTC:** approved v2 preparation passed independent
+verification and the first Mission2 short-no-roll run is training (seed42,
+epoch1/40;0/18 completed). The203-test suite and GPU preflight passed. V1 is
+preserved after failing preparation with0/18 runs started; its service is disabled.
+No new assessment results exist. See the
+[approved v2 protocol](cross-mission-whole-system-protocol-v2-2026-11-20.md).
+The completed channel research remains descriptive training-only evidence.
 
 The old Mission2 experiment had a major input-coverage limitation. Its8-channel
 base and11-channel expansion contained annotations for only14 of198 training
@@ -152,7 +155,7 @@ benchmarks were already viewed, only three neural seeds are used, and additional
 compute is required. No robust thesis-target or independent-generalization claim
 is justified by this investigation.
 
-## Preparation failure and pending decision
+## Preparation failure and decision pending on18 November
 
 The service stopped at07:55:43 UTC on18 November with `No nominal training
 windows` during independent Mission1 preflight. Mission2's training/calibration
@@ -182,5 +185,43 @@ the cause is the availability/window policy, not resource exhaustion.
 
 Reproducible compact evidence is in
 [tables/cross-mission-2026-11-18](tables/cross-mission-2026-11-18).
-The three-hour follow-up continues with the stopped state and pending decision.
-Completion cleanup has not occurred.
+At that date the three-hour follow-up reported the stopped state and pending
+decision. Completion cleanup had not occurred.
+
+## Approved revision on20 November
+
+The user subsequently explicitly approved the15-minute revision. The separate
+[v2 execution protocol](cross-mission-whole-system-protocol-v2-2026-11-20.md)
+changes maximum observation age to900s only for Mission1 channels62/63 in every
+split. All other inputs retain600s, and all panels, mapping, seeds, learning
+settings, splits and the joint18-selection gate are unchanged. This preserves
+v1 as a failed preparation attempt rather than rewriting its specification.
+
+Six new preparation tests cover finite-value and age boundaries, no cross-split
+lookup, held anomaly exclusion only during training, unchanged sampling for all
+other inputs and the unchanged job design. The full203-test suite passed17.000s;
+synthetic GPU preflight again passed at batch32. All131 original frozen source
+files, all five old prepared split receipts/arrays and the failure log verified.
+The new133-file source inventory was frozen and backed up separately. These are
+integrity/preparation checks, not detection scores.
+
+Only esa-cross-mission-study-v2.service is enabled. It rebuilds training and
+calibration arrays in results_longrun/cross_mission_transfer_20261120_v2, then
+requires independent pandas source/mask/window/scaler checks before training.
+The old failed service is disabled. Three-hour status reporting continues for
+v2; the complete720-row independent assessment audit and publication remain
+pending. Compact v2 provenance is under
+[tables/cross-mission-2026-11-20-v2](tables/cross-mission-2026-11-20-v2).
+
+V2 preparation passed583,991 sampled pandas raw-source/age/availability/mask
+checks, all file hashes and full nominal-window/scaler checks. M1 has349,383
+eligible windows, exactly matching the approved training-only diagnostic; M2
+has98,224. The unchanged small-IQR fallback1 applies to M1channels64/65 and
+M2channels27/26. This is recorded rather than changing scaling to improve results.
+A separate full-array comparison confirmed byte-identical M2/transfer arrays,
+unchanged M1 timestamps/ages and all other input values/availability, and gains
+only for channels62/63 at ages>600s and<=900s. Panels/map and transfer scaling
+are unchanged. Neural training started only after independent preparation passed.
+At01:44 UTC one GPU worker was active with no v2 failure or restart, and the
+first checkpoint recorded epoch1, batch700/3070. This is a dated progress snapshot,
+not a completed experiment or a detection result.

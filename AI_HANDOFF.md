@@ -1,5 +1,52 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
+**20 November 2026,01:44 UTC — approved v2 verified and training live.**
+V2 independent preparation passed583,991 pandas raw value/age/availability/mask
+checks plus all split hashes and nominal-window/scaler checks. Nominal windows:
+M2=98,224, M1=349,383 (exact approved diagnostic count), transfer=57,768.
+Existing tiny-IQR fallback1 applies toM2channels27/26 andM1channels64/65; no scaler
+rule was changed. Full-array amendment audit passed: all M2/transfer arrays are
+byte-identical to v1; M1 times/ages and every unamended value/availability are
+unchanged. Only62/63 gained finite observations aged>600s and<=900s. Panels/map
+and transfer normalization are unchanged. All183 raw and133 new source hashes
+verified; v1 preservation receipt covers131 original sources/five old splits/log.
+One GPU worker PID3387197 belongs to esa-cross-mission-study-v2.service, observed
+active/enabled with zero restarts. First run m2_short_no_roll_s42 was at epoch1/40,
+batch700/3070 at01:44 UTC;0/18 completed. Inspect live state rather than reusing
+this snapshot. No v2 failure, selections or assessment outputs exist at this time.
+Failed v1 remains intact and its service is now disabled; do not restart it.
+New source/settings/runtime/preparation freeze is in v2 preparation_frozen and
+frozen/protocol.json. Do not edit listed dependencies after launch. Frozen source
+backup: /home/k_faz/project-backups/cross-mission-v2-source-20261120.
+Compact verification: docs/research/tables/cross-mission-2026-11-20-v2/.
+Continue the existing three-hour status automation, all18 sequential training
+runs, joint selection freeze,720-row independent assessment audit, W&B/report/
+additive workbook/GitHub Release publication and verified delivery. No completion
+cleanup yet. Preserve all seeds and failures; no assessment-driven tuning.
+
+**20 November 2026 — cadence amendment explicitly approved; v2 preflight.**
+The user answered "Approve the 15-minute revision (Recommended)". This supersedes
+the pending-decision notes below. Implemented the separate v2 protocol at
+docs/research/cross-mission-whole-system-protocol-v2-2026-11-20.md and module
+esa_thesis/cross_mission_study_v2.py. Only Mission1 channels62/63 now accept
+observations up to900s old; every other input, including Mission2 transfer,
+retains600s. All18 jobs, panels, map, splits, epochs, batch and selection gates
+remain unchanged. No assessment data was used to choose this revision.
+The full203-test suite passed17.000s, including6 new cadence/preparation tests;
+synthetic GPU batch32 preflight passed. Original131 frozen source files and
+protocols/logs were copied and hash-verified under
+/home/k_faz/project-backups/cross-mission-v1-20261120. Original v1 stays intact.
+New output: results_longrun/cross_mission_transfer_20261120_v2.
+New service: esa-cross-mission-study-v2.service; log:
+/home/k_faz/project-backups/run-logs/cross-mission-study-v2-20261120.log.
+At this entry v2 has not launched: complete preservation/raw checks, install the
+new service and disable old v1, then let the new pipeline rebuild all five
+train/calibration splits and pass independent pandas preparation verification
+before any neural training. Source/runtime/settings freeze at preparation start.
+Keep one sequential worker, verify actual live state, and retain all failures.
+The three-hour follow-up was updated through the app to reference approval/v2.
+The original720-row verification/publication/delivery scope remains outstanding.
+
 **18 November 2026, 13:30 UTC follow-up — preparation failed; 0/18 runs started.**
 The new service is failed/inactive (MainPID0, exit1, zero restarts), having stopped
 at07:55:43 UTC in independent Mission1 preparation verification with

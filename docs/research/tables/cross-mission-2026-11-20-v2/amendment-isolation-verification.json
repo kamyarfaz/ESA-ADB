@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "verified_utc": "2026-11-20T01:42:15.672138+00:00",
+  "method": "All five split hashes verified. Mission2 and transfer arrays byte-identical; all Mission1 values/availability compared in chunks; only62/63 gained finite readings aged>600s and<=900s. Times/ages, panels/map and transfer normalization unchanged.",
+  "assessment_used": false,
+  "splits": [
+    {
+      "split": "m2/train",
+      "rows": 1756800,
+      "additional_valid_rows": []
+    },
+    {
+      "split": "m2/calibration",
+      "rows": 1310400,
+      "additional_valid_rows": []
+    },
+    {
+      "split": "m1/train",
+      "rows": 6312960,
+      "additional_valid_rows": {
+        "channel_62": 2098567,
+        "channel_63": 2098567
+      }
+    },
+    {
+      "split": "m1/calibration",
+      "rows": 1051200,
+      "additional_valid_rows": {
+        "channel_62": 350383,
+        "channel_63": 350383
+      }
+    },
+    {
+      "split": "transfer_m2/train",
+      "rows": 1054080,
+      "additional_valid_rows": []
+    }
+  ],
+  "verifier_sha256": "28fe6392ec9b3cfbb59a1cbb17e71beea3795c66a4f1c9e56738f731b0e3fe8c",
+  "v1_preparation_sha256": "f84fa44d74947d0e2ab496119075c25d6210c1163999a7a35398fea6d2d25647",
+  "v2_preparation_sha256": "fd5a81986c3f046c4aea9bc8c66fdf3010807603008ba2d16a6c5bb869b5095f"
+}

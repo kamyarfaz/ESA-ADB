@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "verified_utc": "2026-11-19T23:19:48.566142+00:00",
+  "source_files": 131,
+  "prepared_splits": 5,
+  "v1_protocol_sha256": "c932a0b1fd8b662ad2bc4949927fc4d302c1dfb39379c10c2c4deee2ec37fa49",
+  "v1_preparation_sha256": "f84fa44d74947d0e2ab496119075c25d6210c1163999a7a35398fea6d2d25647",
+  "v1_log_sha256": "450a6a56a4cd3f1d1d4ee9582bf22b8caca6e9731d8e10e9a618c8038e7fc8fa",
+  "v1_started_runs": 0,
+  "backup": "/home/k_faz/project-backups/cross-mission-v1-20261120",
+  "scope": "Preserved v1 listed frozen source, all prepared split receipts/arrays and failure log; not full historical migration."
+}

@@ -1,0 +1,33 @@
+{
+  "verified_utc": "2026-11-20T01:44:27.615061+00:00",
+  "service": {
+    "MainPID": "3387197",
+    "Result": "success",
+    "NRestarts": "0",
+    "ActiveState": "active",
+    "UnitFileState": "enabled"
+  },
+  "preserved_v1_service": {
+    "MainPID": "0",
+    "Result": "exit-code",
+    "NRestarts": "0",
+    "ActiveState": "failed",
+    "UnitFileState": "disabled"
+  },
+  "sole_gpu_process": 3387197,
+  "completed_runs": 0,
+  "total_runs": 18,
+  "current_run": "m2_short_no_roll_s42",
+  "epoch": 1,
+  "batch": 700,
+  "checkpoint_observation_only": true,
+  "source_files_verified": 133,
+  "raw_files_verified": 183,
+  "source_protocol_sha256": "02c315da243828513f01ca5a9819bb7aee5def5404faee67f8be9e5bf9f39b91",
+  "preparation_protocol_sha256": "fca0ada07df054d488d4ce627d761856bc96594e67c822404e5e27e00afeee78",
+  "service_sha256": "7874de1930a56be9022e2ccd6303534ffaf987802041c517a331cad0f87c3b33",
+  "preflight_sha256": "19854dd3ca72500878e8d4681685e127c9f8ba5b8d1c67c984f586ed48c095af",
+  "amendment_isolation_sha256": "ded80d82bf225cd6f6b132348a26c3c33c51e2225e2259304eec7d32d644f598",
+  "assessment_prepared": false,
+  "assessment_results": false
+}
