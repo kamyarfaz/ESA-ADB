@@ -1,0 +1,23 @@
+{
+  "checked_utc": "2026-11-20T10:47:06.763082+00:00",
+  "completed": [
+    "m2_short_no_roll_s42",
+    "m2_short_no_roll_s43",
+    "m2_short_no_roll_s44"
+  ],
+  "total_runs": 18,
+  "current": [
+    {
+      "name": "m2_pretrain_finetune_s42",
+      "epoch": 5,
+      "batch": 2400
+    }
+  ],
+  "verified_source_files": 133,
+  "settings_and_package_versions_unchanged": true,
+  "preparation_receipts_unchanged": true,
+  "completed_artifact_hashes_passed": true,
+  "assessment_prepared": false,
+  "observed_error_lines": [],
+  "limitations": "Routine integrity monitoring, not independent calibration/grid/inference replay. Raw/prepared array hashes not repeated during healthy training."
+}

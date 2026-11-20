@@ -1,8 +1,9 @@
 # Mission1/Mission2 channel research and new whole-system study
 
-**Status,20 November2026,01:44 UTC:** approved v2 preparation passed independent
-verification and the first Mission2 short-no-roll run is training (seed42,
-epoch1/40;0/18 completed). The203-test suite and GPU preflight passed. V1 is
+**Status,20 November2026,11:47 CET:** all three Mission2 short-no-roll runs have
+completed training/calibration (3/18 overall); masked pretraining seed42 is at
+epoch5/40. Completed-artifact hashes and frozen-source checks pass, with no v2
+failures or restarts observed. The203-test suite and GPU preflight passed. V1 is
 preserved after failing preparation with0/18 runs started; its service is disabled.
 No new assessment results exist. See the
 [approved v2 protocol](cross-mission-whole-system-protocol-v2-2026-11-20.md).

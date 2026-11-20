@@ -1,5 +1,26 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
+**20 November 2026,11:47 CET — Mission2 short-no-roll complete;3/18.**
+All three Mission2 short-no-roll seeds42/43/44 completed training/calibration;
+their complete trained-artifact receipts passed hash verification. The service
+advanced to m2_pretrain_finetune_s42, observed epoch5/40 batch2400/3070, still in
+the20-epoch masked-pretraining phase. Same single GPU worker PID3387197, zero
+restarts and no observed v2 failures. All133 frozen sources, settings/package
+versions, selection and preparation receipts remain unchanged. Host RAM21GiB,
+GPU9,869MiB and disk684GiB available. No intervention or protocol changes.
+Joint selection freeze and assessment remain pending; no detection scores are
+ready to report. Independent calibration/inference/metric replay remains required
+after computation. Snapshot: tables/cross-mission-2026-11-20-v2/
+monitoring-20261120T1046Z.json under docs/research. Continue the same service.
+
+**20 November 2026,10:52 CET —2/18 v2 runs complete.**
+Mission2 short-no-roll seeds42 and43 completed training/calibration; all saved
+completion artifact hashes pass. Seed44 is at epoch30/40 batch2900/3070. One
+active GPU worker PID3387197, zero restarts and no observed training errors.
+All133 frozen source hashes still match. No joint selection freeze or assessment
+arrays/results yet. Next is the masked-pretraining technique after this third
+short-no-roll run. Continue the same service and scheduled three-hour updates.
+
 **20 November 2026,04:43 UTC — first v2 run complete;1/18.**
 Mission2 short-no-roll seed42 completed40 epochs/calibration; every artifact in
 its trained.json receipt passed SHA256 verification. Seed43 is now training,
