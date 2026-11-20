@@ -1,5 +1,17 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
+**20 November 2026,04:43 UTC — first v2 run complete;1/18.**
+Mission2 short-no-roll seed42 completed40 epochs/calibration; every artifact in
+its trained.json receipt passed SHA256 verification. Seed43 is now training,
+observed epoch1/40 batch900/3070. The same service/GPU worker PID3387197 remains
+active with zero restarts and no observed v2 failure. All133 frozen source hashes,
+settings/package versions, input selection and preparation receipt hashes match.
+This healthy check does not replace final independent calibration/inference replay.
+No joint18-selection freeze or assessment arrays/results exist. Available host
+RAM21GiB, GPU9,363MiB free, disk684GiB free; no intervention needed. Continue the
+same service and three-hour updates. Snapshot receipt:
+docs/research/tables/cross-mission-2026-11-20-v2/monitoring-20261120T0442Z.json.
+
 **20 November 2026,01:44 UTC — approved v2 verified and training live.**
 V2 independent preparation passed583,991 pandas raw value/age/availability/mask
 checks plus all split hashes and nominal-window/scaler checks. Nominal windows:

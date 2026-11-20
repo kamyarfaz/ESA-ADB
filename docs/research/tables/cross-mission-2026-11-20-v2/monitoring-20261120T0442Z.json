@@ -1,0 +1,21 @@
+{
+  "checked_utc": "2026-11-20T04:43:19.003403+00:00",
+  "completed": [
+    "m2_short_no_roll_s42"
+  ],
+  "total_runs": 18,
+  "current": [
+    {
+      "name": "m2_short_no_roll_s43",
+      "epoch": 1,
+      "batch": 900
+    }
+  ],
+  "verified_source_files": 133,
+  "settings_and_package_versions_unchanged": true,
+  "preparation_receipts_unchanged": true,
+  "completed_artifact_hashes_passed": true,
+  "assessment_prepared": false,
+  "observed_error_lines": [],
+  "limitations": "Healthy monitoring: verifies frozen sources/settings/package versions, preparation receipt hashes and all completed-run artifact hashes; does not redo raw/prepared array hashes or independent calibration/inference replay."
+}
