@@ -1,9 +1,8 @@
 # Mission1/Mission2 channel research and new whole-system study
 
-**Status,21 November2026,05:56 CET:** all three Mission2 short-no-roll runs,
-all three masked-pretraining-plus-fine-tuning runs and expanded-input seeds42/43
-completed training/calibration (8/18 overall). The last Mission2 run,
-expanded-input seed44, is at epoch18/40; the nine Mission1 runs follow.
+**Status,21 November2026,08:59 CET:** all nine Mission2 runs completed
+training/calibration across the three techniques and all three seeds (9/18 overall).
+Mission1 training has started: short-no-roll seed42 is at epoch2/40.
 Completed-artifact hashes and frozen-source checks pass, with no v2
 failures or restarts observed. The203-test suite and GPU preflight passed. V1 is
 preserved after failing preparation with0/18 runs started; its service is disabled.
