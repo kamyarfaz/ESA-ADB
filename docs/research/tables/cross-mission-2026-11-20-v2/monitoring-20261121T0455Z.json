@@ -1,0 +1,39 @@
+{
+  "checked_utc": "2026-11-21T04:56:44.531900+00:00",
+  "completed": [
+    "m2_short_no_roll_s42",
+    "m2_short_no_roll_s43",
+    "m2_short_no_roll_s44",
+    "m2_pretrain_finetune_s42",
+    "m2_pretrain_finetune_s43",
+    "m2_pretrain_finetune_s44",
+    "m2_expanded_short_no_roll_s42",
+    "m2_expanded_short_no_roll_s43"
+  ],
+  "total_runs": 18,
+  "current": [
+    {
+      "name": "m2_expanded_short_no_roll_s44",
+      "epoch": 18,
+      "batch": 1700
+    }
+  ],
+  "service": {
+    "MainPID": "3387197",
+    "Result": "success",
+    "NRestarts": "0",
+    "ActiveState": "active",
+    "SubState": "running"
+  },
+  "gpu_compute_processes": [
+    "3387197, /home/k_faz/miniforge3/envs/esa-thesis/bin/python, 2538 MiB"
+  ],
+  "installed_service_matches_source": true,
+  "verified_source_files": 133,
+  "settings_and_package_versions_unchanged": true,
+  "preparation_receipts_unchanged": true,
+  "completed_artifact_hashes_passed": true,
+  "assessment_prepared": false,
+  "observed_error_lines": [],
+  "limitations": "Routine integrity monitoring, not independent calibration/grid/inference replay. Raw/prepared array hashes not repeated during healthy training."
+}
