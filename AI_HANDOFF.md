@@ -1,5 +1,20 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
+**22 November 2026,06:13 CET — second Mission1 run complete;11/18.**
+Completed: all nine Mission2 runs and Mission1 short-no-roll seeds42/43.
+All eleven trained-artifact receipts pass SHA256 verification. Mission1
+short-no-roll seed44 is at epoch3/40 batch4500/10919. The same single GPU worker
+PID3387197 is active with zero restarts and no observed v2 errors. All133 frozen
+sources, settings/package versions, input selection/preparation receipts and
+installed service definition match. Host18GiB available, GPU9,265MiB free while
+training, disk683GiB free. Failed v1 remains disabled with no runner. No joint
+selection freeze or assessment arrays/results. Continue this run, then three
+Mission1 masked-method and three expanded-input runs in the same service.
+Independent calibration/inference/metric replay remains pending; raw/prepared
+array hashes were not repeated during this routine check. Snapshot:
+docs/research/tables/cross-mission-2026-11-20-v2/monitoring-20261122T0513Z.json.
+No intervention, protocol change or completion cleanup.
+
 **21 November 2026,21:12 CET — first Mission1 run complete;10/18.**
 All nine Mission2 runs and Mission1 short-no-roll seed42 completed training and
 calibration. All ten trained-artifact receipts pass SHA256 verification.
