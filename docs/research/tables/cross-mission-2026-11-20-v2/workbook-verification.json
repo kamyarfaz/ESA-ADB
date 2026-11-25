@@ -1,0 +1,9 @@
+{
+  "verified": true,
+  "historical_sheets": 3,
+  "new_rows": 360,
+  "scope_metric_rows": 720,
+  "all_historical_cell_values_formulas_and_styles_unchanged": true,
+  "new_rows_match_verified_metrics": true,
+  "sha256": "53d87684eb9099fa256a5596d144229624e247d5d695d29ac2d96da2dc700486"
+}

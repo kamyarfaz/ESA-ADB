@@ -1,15 +1,16 @@
 # Mission1/Mission2 channel research and new whole-system study
 
-**Status, 25 November 2026, 09:42 CET:** all nine Mission2 runs, all three Mission1
-short-no-roll runs, all three Mission1 masked-method runs, and Mission1 expanded-input
-seeds42/43 completed training/calibration (17/18 overall). The final planned run,
-Mission1 expanded-input seed44, is at epoch25/40.
-Completed-artifact hashes and frozen-source checks pass, with no v2
-failures or restarts observed. The203-test suite and GPU preflight passed. V1 is
-preserved after failing preparation with0/18 runs started; its service is disabled.
-No new assessment results exist. See the
-[approved v2 protocol](cross-mission-whole-system-protocol-v2-2026-11-20.md).
-The completed channel research remains descriptive training-only evidence.
+**Status, 25 November 2026:** all 18 fresh models and all 18 predefined transfer
+conditions completed. Independent replay passed all 120 calibration grids,
+1,560 exact inference spots, 720 metric rows and 32,814 event-ID records.
+The full 203-test suite passed. V2 had no failed runs or restarts; the v1
+preparation failure remains preserved with zero training runs started.
+Mission2's improved primary scores mainly reflect rare-event detection: eight
+of nine fresh models miss all six assessment anomalies; masked seed43 detects
+one. Existing Mission1 models do not transfer usefully under either predefined
+scaling condition. See the [complete results](cross-mission-results-2026-11-25.md)
+and [approved protocol](cross-mission-whole-system-protocol-v2-2026-11-20.md).
+The channel investigation below remains descriptive training-only evidence.
 
 The old Mission2 experiment had a major input-coverage limitation. Its8-channel
 base and11-channel expansion contained annotations for only14 of198 training

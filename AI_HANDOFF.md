@@ -1,5 +1,28 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
+**25 November 2026 — all cross-mission v2 computation and independent audits complete.**
+All 18 fresh runs and 18 transfer conditions finished normally. Service exit:
+25 November 16:30:09 CET, zero restarts. Joint selection freeze: 15:58:36 CET,
+before assessment arrays. All 778 completion-file hashes, 183 raw fingerprints,
+133 frozen sources/settings/runtime, all 120 calibration grids (11,880 candidates),
+1,560 exact inference spots, 720 metric rows and 32,814 detected/missed ID records
+passed. Independent pandas checks passed 1,361,191 source/age/mask samples across
+all eight splits. All 203 tests passed. Approved workbook now has two additive
+sheets, 360 rows containing both scopes, with all three historical sheets' cells,
+formulas and styles verified unchanged.
+Primary whole-system mean F0.5, short/masked/expanded: Mission1
+0.526498/0.589682/0.690503; Mission2 0.719673/0.635863/0.789561.
+Mission2 gains mainly concern rare events: eight of nine fresh models detect
+zero of six anomalies; masked seed43 detects one. Frozen-source transfer alarms
+continuously: F0.5=0 and nominal-time FPR=100% in all nine models. Target-training
+normalization also leaves excessive false alarms. No robust-target or useful
+transfer claim. All seeds/failures retained; v1 remains unchanged and disabled.
+Report: docs/research/cross-mission-results-2026-11-25.md. Evidence under
+ docs/research/tables/cross-mission-2026-11-20-v2/.
+W&B publishing/download verification, essential Release backup, Git push and
+final delivery are being finalized. Do not restart the completed service.
+Keep the follow-up until verified delivery and subsequent service/automation cleanup.
+
 **25 November 2026, 09:42 CET — two Mission1 expanded-input runs complete; 17/18.**
 Completed: all nine Mission2 runs, all three Mission1 short-no-roll runs, all
 three Mission1 masked-method runs, and Mission1 expanded-input seeds42/43.

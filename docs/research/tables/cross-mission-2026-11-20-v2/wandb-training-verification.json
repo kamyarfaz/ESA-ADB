@@ -1,0 +1,131 @@
+{
+  "verified": true,
+  "runs": [
+    {
+      "id": "xm1120v2-01-m2-s42",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/xm1120v2-01-m2-s42",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 5
+    },
+    {
+      "id": "xm1120v2-02-m2-s43",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/xm1120v2-02-m2-s43",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 10
+    },
+    {
+      "id": "xm1120v2-03-m2-s44",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/xm1120v2-03-m2-s44",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 5
+    },
+    {
+      "id": "xm1120v2-04-m2-s42",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/xm1120v2-04-m2-s42",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 25
+    },
+    {
+      "id": "xm1120v2-05-m2-s43",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/xm1120v2-05-m2-s43",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 25
+    },
+    {
+      "id": "xm1120v2-06-m2-s44",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/xm1120v2-06-m2-s44",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 30
+    },
+    {
+      "id": "xm1120v2-07-m2-s42",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/xm1120v2-07-m2-s42",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 5
+    },
+    {
+      "id": "xm1120v2-08-m2-s43",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/xm1120v2-08-m2-s43",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 5
+    },
+    {
+      "id": "xm1120v2-09-m2-s44",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/xm1120v2-09-m2-s44",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 5
+    },
+    {
+      "id": "xm1120v2-10-m1-s42",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/xm1120v2-10-m1-s42",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 10
+    },
+    {
+      "id": "xm1120v2-11-m1-s43",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/xm1120v2-11-m1-s43",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 20
+    },
+    {
+      "id": "xm1120v2-12-m1-s44",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/xm1120v2-12-m1-s44",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 10
+    },
+    {
+      "id": "xm1120v2-13-m1-s42",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/xm1120v2-13-m1-s42",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 40
+    },
+    {
+      "id": "xm1120v2-14-m1-s43",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/xm1120v2-14-m1-s43",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 35
+    },
+    {
+      "id": "xm1120v2-15-m1-s44",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/xm1120v2-15-m1-s44",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 40
+    },
+    {
+      "id": "xm1120v2-16-m1-s42",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/xm1120v2-16-m1-s42",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 40
+    },
+    {
+      "id": "xm1120v2-17-m1-s43",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/xm1120v2-17-m1-s43",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 10
+    },
+    {
+      "id": "xm1120v2-18-m1-s44",
+      "url": "https://wandb.ai/kamyarfaz-politecnico-di-torino/esa-thesis-finetuning/runs/xm1120v2-18-m1-s44",
+      "state": "finished",
+      "epoch": 40,
+      "selected_epoch": 25
+    }
+  ]
+}

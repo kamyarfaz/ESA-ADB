@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "raw_source_sample_checks": 1361191,
+  "splits": [
+    {
+      "key": "transfer_m2/assessment",
+      "source_spots": 208910,
+      "rows": 1837440
+    },
+    {
+      "key": "transfer_m2/train",
+      "source_spots": 108251,
+      "rows": 1054080,
+      "nominal_windows": 57768,
+      "batches_per_epoch": 1806,
+      "fallback_scale_channels": []
+    },
+    {
+      "key": "m2/assessment",
+      "source_spots": 483990,
+      "rows": 3062400
+    },
+    {
+      "key": "m2/train",
+      "source_spots": 247026,
+      "rows": 1756800,
+      "nominal_windows": 98224,
+      "batches_per_epoch": 3070,
+      "fallback_scale_channels": [
+        "channel_27",
+        "channel_26"
+      ]
+    },
+    {
+      "key": "m2/calibration",
+      "source_spots": 114114,
+      "rows": 1310400
+    },
+    {
+      "key": "m1/assessment",
+      "source_spots": 84300,
+      "rows": 7364160
+    },
+    {
+      "key": "m1/train",
+      "source_spots": 99875,
+      "rows": 6312960,
+      "nominal_windows": 349383,
+      "batches_per_epoch": 10919,
+      "fallback_scale_channels": [
+        "channel_64",
+        "channel_65"
+      ]
+    },
+    {
+      "key": "m1/calibration",
+      "source_spots": 14725,
+      "rows": 1051200
+    }
+  ],
+  "assessment_values_used": true,
+  "limitations": "All prepared file hashes verified; pandas raw value/age/availability/mask lookup is sampled, not a full second resampling.",
+  "preparation_sha256": "fd5a81986c3f046c4aea9bc8c66fdf3010807603008ba2d16a6c5bb869b5095f",
+  "verifier_sha256": "e891fd64be9a6d77dbd94e0e0cbd3f49b0c1dcc63d4dc4e505b99cc10645e577"
+}

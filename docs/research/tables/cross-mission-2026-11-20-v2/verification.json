@@ -1,0 +1,38 @@
+{
+  "verified": true,
+  "verified_at_utc": "2026-11-25T17:50:36.599347+00:00",
+  "complete_receipt_sha256": "5fbe3549a2532a9fcbea48a0c7bb0b0be15874c9b97acf28fa36aac8d00eac2e",
+  "verifier_sha256": "c156e8b6d79193ca68bf9cb574f96e18b790be7e7afc5f8a74b8416d0fe64d1a",
+  "helper_sha256": "e123d3a8b04c10dea6f4cce43c5aa252cbe5c52ee7e6f208ea7d8f095bb61999",
+  "completion_files": 778,
+  "raw_files": 183,
+  "jobs": 18,
+  "transfer_conditions": 18,
+  "calibration_grids": 120,
+  "calibration_candidate_rows": 11880,
+  "metric_rows": 720,
+  "event_id_rows": 32814,
+  "inference_spots": 1560,
+  "inference_exact_matches": 1560,
+  "inference_passes": 156,
+  "joint_freeze_utc": "2026-11-25T14:58:36.872206+00:00",
+  "nominal_training_windows": {
+    "m1": 349383,
+    "m2": 98224,
+    "transfer_m2": 57768
+  },
+  "checks": [
+    "Full frozen source/runtime, raw, preparation and completed-artifact hashes",
+    "Independent scaler refits, all 120 calibration grids and within/between epoch selections",
+    "Joint freeze precedes every assessment array",
+    "Original batch32 GPU checkpoint inference spots, exact float32 equality",
+    "Full prediction replay; all720 annual/pooled corrected metrics and detected/missed IDs",
+    "All nine historical source models and source rules, mapping and both normalization conditions unchanged"
+  ],
+  "limitations": [
+    "Inference spots, not a second full neural pass",
+    "Corrected evaluator reused with bundled-reference parity tests; independent postprocessing/window/ID enumeration",
+    "Raw source resampling independently checked in separate preparation audit",
+    "Three seeds and reused benchmarks; no independent generalization claim"
+  ]
+}
