@@ -1,0 +1,37 @@
+{
+  "completed_utc": "2026-11-25T20:47:19.304606+00:00",
+  "scientific_verification_passed": true,
+  "wandb_evaluation_runs": 36,
+  "wandb_downloaded_metric_rows": 720,
+  "public_release": "https://github.com/kamyarfaz/ESA-ADB/releases/tag/cross-mission-whole-system-2026-11-25",
+  "release_published_utc": "2026-11-25T20:46:25Z",
+  "release_target_commit": "021098a6894396fbda692909d9301b30c6295e1d",
+  "fresh_download_verified": true,
+  "archive_count": 7,
+  "verified_archive_members": 1089,
+  "service_states": {
+    "esa-cross-mission-study-v2.service": {
+      "MainPID": "0",
+      "Result": "success",
+      "NRestarts": "0",
+      "Id": "esa-cross-mission-study-v2.service",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "UnitFileState": "disabled"
+    },
+    "esa-cross-mission-study.service": {
+      "MainPID": "0",
+      "Result": "exit-code",
+      "NRestarts": "0",
+      "Id": "esa-cross-mission-study.service",
+      "ActiveState": "failed",
+      "SubState": "failed",
+      "UnitFileState": "disabled"
+    }
+  },
+  "automation_id": "cross-mission-channel-and-transfer-study",
+  "automation_delete_status": "deleted",
+  "automation_delete_evidence": "Codex automation_update mode=delete returned deleteStatus=deleted after published report and artifact links were delivered in this chat.",
+  "historical_artifacts_preserved": true,
+  "external_drive_copy_modified": false
+}

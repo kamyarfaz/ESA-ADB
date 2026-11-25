@@ -1,6 +1,6 @@
 # AI handoff — ESA satellite anomaly-detection thesis
 
-**25 November 2026 — all cross-mission v2 computation and independent audits complete.**
+**25 November 2026 — cross-mission v2 verified, published and closed.**
 All 18 fresh runs and 18 transfer conditions finished normally. Service exit:
 25 November 16:30:09 CET, zero restarts. Joint selection freeze: 15:58:36 CET,
 before assessment arrays. All 778 completion-file hashes, 183 raw fingerprints,
@@ -19,9 +19,21 @@ normalization also leaves excessive false alarms. No robust-target or useful
 transfer claim. All seeds/failures retained; v1 remains unchanged and disabled.
 Report: docs/research/cross-mission-results-2026-11-25.md. Evidence under
  docs/research/tables/cross-mission-2026-11-20-v2/.
-W&B publishing/download verification, essential Release backup, Git push and
-final delivery are being finalized. Do not restart the completed service.
-Keep the follow-up until verified delivery and subsequent service/automation cleanup.
+All 36 W&B evaluation runs were published and their 720 cloud metric rows
+downloaded and verified. The results/report/workbook commit
+021098a6894396fbda692909d9301b30c6295e1d was pushed and confirmed on origin/main.
+The public [essential-artifact Release](https://github.com/kamyarfaz/ESA-ADB/releases/tag/cross-mission-whole-system-2026-11-25)
+contains the verified backup.
+Fresh downloads of all seven archives passed SHA256 verification, including all
+1,089 member files, the manifest and checksum list. See release-verification.json
+in the evidence directory. Raw channel archives are not duplicated; their
+fingerprints and historical backups remain preserved. The existing external-drive
+copy is untouched; this is not a new full-project migration verification.
+Verified report and artifact links were delivered in this chat. The completed
+v2 service is now disabled/inactive, PID0, Result=success; v1 stays disabled/failed
+with PID0. The three-hour automation cross-mission-channel-and-transfer-study
+was deleted after delivery. See completion-cleanup.json. Do not restart either
+service or launch new experiments without a new user request.
 
 **25 November 2026, 09:42 CET — two Mission1 expanded-input runs complete; 17/18.**
 Completed: all nine Mission2 runs, all three Mission1 short-no-roll runs, all

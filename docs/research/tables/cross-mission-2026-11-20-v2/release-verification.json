@@ -1,0 +1,67 @@
+{
+  "verified": true,
+  "verified_at_utc": "2026-11-25T20:46:20.676972+00:00",
+  "release_url": "https://github.com/kamyarfaz/ESA-ADB/releases/tag/cross-mission-whole-system-2026-11-25",
+  "fresh_download_directory": "/home/k_faz/project-backups/cross-mission-v2-20261120/fresh-download-20261125",
+  "assets": [
+    {
+      "name": "cross-mission-v2-part-01-20261125.tar.gz",
+      "bytes": 814660027,
+      "sha256": "5fd79aea2f5cd4d0f0b75bf4a39b93b298da0a177b64f14d6df236a12c96fbf7",
+      "members": 677,
+      "download_sha256_verified": true,
+      "all_member_hashes_verified": true
+    },
+    {
+      "name": "cross-mission-v2-part-02-20261125.tar.gz",
+      "bytes": 225283055,
+      "sha256": "36583ce768957bcbf293d44fd13ab083f774f548bd5878929a84f92edd28d878",
+      "members": 166,
+      "download_sha256_verified": true,
+      "all_member_hashes_verified": true
+    },
+    {
+      "name": "cross-mission-v2-part-03-20261125.tar.gz",
+      "bytes": 83772791,
+      "sha256": "7c2299bc836d2e383aa68b6a260389e867e7ecee5530e7a2099c769bdd20df2f",
+      "members": 6,
+      "download_sha256_verified": true,
+      "all_member_hashes_verified": true
+    },
+    {
+      "name": "cross-mission-v2-part-04-20261125.tar.gz",
+      "bytes": 144391188,
+      "sha256": "cf5c7daf2a4eda1fc2515de2d4711e34411aea5d5fd1dbdb71736f4840c457e4",
+      "members": 8,
+      "download_sha256_verified": true,
+      "all_member_hashes_verified": true
+    },
+    {
+      "name": "cross-mission-v2-part-05-20261125.tar.gz",
+      "bytes": 73400338,
+      "sha256": "447109d17b4fb74e686a79d8ad425c958a8267b70b90c72628e70663885ca709",
+      "members": 6,
+      "download_sha256_verified": true,
+      "all_member_hashes_verified": true
+    },
+    {
+      "name": "cross-mission-v2-part-06-20261125.tar.gz",
+      "bytes": 220079471,
+      "sha256": "f894d3f4a26acad2afd66ec13a6f5bd3ee0e3833adad3c1f72f0f1015d070b66",
+      "members": 8,
+      "download_sha256_verified": true,
+      "all_member_hashes_verified": true
+    },
+    {
+      "name": "cross-mission-v2-part-07-20261125.tar.gz",
+      "bytes": 165631149,
+      "sha256": "cff08c7ee7176edcfee5d1c1001a4a7fbd8d7490e83e7b9421162b3f111947f6",
+      "members": 218,
+      "download_sha256_verified": true,
+      "all_member_hashes_verified": true
+    }
+  ],
+  "manifest_sha256": "8400646e3ee5fe867862728c717c79a6e64c7571b58bf718580b8e02a453f72f",
+  "checksums_sha256": "2432d42683e6755b5a62db95670ea02fc37ff6978c6d7d31f584a17e9bd580df",
+  "member_count": 1089
+}
